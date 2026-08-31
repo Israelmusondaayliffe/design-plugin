@@ -1,21 +1,21 @@
 # Plan Compliance Review
 
-Status: Waves 0 through 9 are qualified. Final plugin acceptance remains prohibited until Wave 10 and the benchmark gates are complete.
+Status: Wave 10 packaging and public repository publication passed. R04 and R22 remain partial. Final plugin acceptance remains prohibited until the activation limitation, Wave 11 benchmarks, and later acceptance gates are complete.
 
 This file is the acceptance ledger for Design Plugin Build Plan v1.0. Update it only from fresh repository and test evidence.
 
 Pre-Wave 10 commit and CI identifiers below are private-archive evidence with no public locator. Fresh public qualification begins with Wave 10.
 
-Latest private-archive runtime candidate: `a488da4694dedfe536ec1fd66f914a3eaa3c63b7`
+Latest public runtime candidate: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`, tree `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
 
-Private-archive CI evidence: Design Plugin CI run `33350739053`. Python 3.11 and Python 3.13 each passed compilation, corpus validation, catalog generation, 193 regression tests, both host builds, parity verification, and the pre-Wave 9 bundled entrypoint set. Independent local checks compiled and smoke-tested the Wave 9 runtime and all quality launchers in source and both distributions.
+Public CI evidence: Design Plugin CI run `33353752204`. Python 3.11 and Python 3.13 each passed compilation, corpus validation, catalog generation, 204 regression tests, both host builds, 125-file parity verification, installable package checks, lifecycle simulation, and bundled entrypoint checks.
 
 | Requirement | Planned location | Implemented location | Test | Evidence | Result |
 |---|---|---|---|---|---|
-| R01 | Host packaging | `hosts/`, `bundle-spec.json`, build script | Wave 1 packaging suite | Two generated host distributions. Live installation remains Wave 10. | Partial |
-| R02 | Shared core | `core/`, builder, verifier | Packaging through quality suites | 123 shared files are byte-identical. | Pass |
+| R01 | Host packaging | `hosts/`, `host-packaging.json`, builders, verifiers, `INSTALL.md`, `README.md` | Wave 1 and Wave 10 packaging suites plus isolated temporary-host qualification | Deterministic host distributions, installable packages, exact guidance, update, parity, fresh-process discovery, and scoped removal pass. No active-user installation was performed. | Pass |
+| R02 | Shared core | `core/`, builder, verifier | Packaging through host-qualification suites | 125 shared files are byte-identical. | Pass |
 | R03 | No Refero runtime dependency | Package boundary, corpus source policy, research runtime, validator | Packaging, corpus, and research suites | No MCP, Refero runtime call, copied Refero corpus, or full corpus is in either package. | Pass |
-| R04 | Activation | Host manifests and visible workflows | Packaging plus state and intake routing tests | Design, Design Audit, and Design Resume exist. Host activation evaluation remains later. | Partial |
+| R04 | Activation | Host manifests, visible workflows, activation policy, host parity contract | Packaging, state, intake, and Wave 10 host-qualification tests | Codex prompt input exposed installed routing descriptions and positive and negative probes. Claude reported installed components, but Claude prompt selection was not exercised. No external model inference was called. | Partial |
 | R05 | Grilling | `core/skills/grill`, intake runtime and schema | Wave 3 intake suite | Six-round protocol and question rules remain passing. | Pass |
 | R06 | Shared-understanding approval | State controller and approval schemas | Wave 2 plus Wave 3 suites | Canonical artifacts, user-supplied accepted phrases, rejection handling, staleness, direction-set binding, and acknowledged skip pass. | Pass |
 | R07 | Directions | `core/skills/research`, `core/skills/forensics`, `core/skills/directions`, research runtime and schemas | Wave 5 research suite | Traceable research, dossiers, 3 to 5 distinct directions, bounded source roles, and anti-averaging checks pass. | Pass |
@@ -30,10 +30,10 @@ Private-archive CI evidence: Design Plugin CI run `33350739053`. Python 3.11 and
 | R16 | Audited learning | Learn skill, quality runtime, proposal and privacy schemas | Wave 9 quality suite | Learning is proposal-only, requires distinct evidence from at least two projects, requires a privacy-review record declaring a human reviewer, rejects bounded private and benchmark markers, and has no activation command. Validation does not establish reviewer identity or authorship. | Pass |
 | R17 | External-action boundaries | Approval framework and owning skills | State, intake, system-definition, adapter, build-wave, and quality suites | Repository, installation, image, Figma, repair, learning, deployment, publication, purchase, account, destructive-change, and external-write boundaries retain their owning approvals. | Pass |
 | R18 | Progressive disclosure | Orchestrator, interview, corpus retrieval, research, directions, system artifacts, quality reports | Wave 2 through Wave 9 suites | Decision, expert, evidence, generated-system, QA-summary, category, finding, repair, deviation, and raw-evidence layers are separated. | Pass |
-| R19 | Lean package | Bundle contract, compact manifest, builder, verifier | Packaging through Wave 9 suites | OpenAI 619,496 bytes. Claude 619,057 bytes. 123 shared files. Generated bytecode, full corpus, Site, MCP, browser binaries, fonts, screenshots, and renders are excluded. | Pass |
+| R19 | Lean package | Bundle contracts, compact manifest, deterministic builders and verifiers | Packaging through Wave 10 suites | OpenAI 627,146 bytes. Claude 626,168 bytes. 125 shared files. Generated bytecode, full corpus, Site, MCP, browser binaries, fonts, screenshots, and renders are excluded. | Pass |
 | R20 | MIT | `LICENSE` | Provenance review | MIT license present. | Pass |
 | R21 | Refero attribution | `NOTICE`, `UPSTREAM_MAP.md`, `THIRD_PARTY_NOTICES.md` | Wave 0 provenance review | Pinned upstream and treatment map recorded. Wave 4 corpus uses independent primary sources. | Pass |
-| R22 | Plan compliance | This ledger, traceability, receipts, CI | 193 tests on two Python versions | Wave 1 through Wave 9 and repository-migration receipts are present. Wave 9 runtime attacks, exact-candidate Unslop, and integrated-ledger review passed. Later final review remains open. | Partial |
+| R22 | Plan compliance | This ledger, traceability, receipts, CI | 204 tests on two Python versions | Wave 1 through Wave 10 receipts, public CI, isolated host evidence, and independent review are present. Wave 11 benchmarks and later final review remain open. | Partial |
 
 ## Wave 1 exit review
 
@@ -188,16 +188,45 @@ A separate additive write stream appeared while Wave 4 was being authored. The q
 
 ## Repository migration review
 
-- Standalone repository: `Israelmusondaayliffe/design-plugin`.
+- Standalone public repository: `https://github.com/Israelmusondaayliffe/design-plugin`.
 - Canonical branch and path: `main`, repository root.
-- Initial source and destination Git trees: `9429d61ae7d1b2add1a0e02b093b868fd09956e5`, exact match.
+- Initial public snapshot commit: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`.
+- Initial public snapshot tree: `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`, exact source-tree match.
 - Full Design project, corpus source, Site source, tests, and provenance moved: Pass. The opaque historical staging payload is excluded and retained only in the private archive.
 - Unrelated monorepo files moved: No.
-- Temporary source repository changed: No.
-- Root-path CI: Pass.
+- Legacy history published: No. It remains in the private archive.
+- Anonymous clone: Pass.
+- Public root-path CI: Pass, run `33353752204`.
 - Generated Python bytecode exclusion and regression test: Pass.
-- Post-migration CI run `33341295869` passed 77 tests on Python 3.11 and Python 3.13: Pass.
+- Public root CI passed 204 tests on Python 3.11 and Python 3.13: Pass.
 - Evidence: `review/repository-migration-evidence.json`.
+
+## Wave 10 exit review
+
+- OpenAI and Claude host manifests and local marketplaces: Pass.
+- Deterministic host distributions and release archives: Pass.
+- Exact install, update, removal, and verification guidance for Codex and Claude Code: Pass.
+- Public CI filesystem lifecycle simulation: Pass. This is not direct host CLI lifecycle evidence.
+- Run, Audit, and Resume are the only user-visible workflows: Pass.
+- Nineteen internal skills are installed in both hosts: Pass.
+- Nine positive and six negative activation fixtures with Resume, Audit, Run precedence: Pass.
+- Isolated temporary-host install, update, discovery, cache parity, and removal: Pass.
+- Credentials copied: No. Active user registries changed: No. Temporary roots retained: No.
+- OpenAI distribution 627,146 bytes and Claude distribution 626,168 bytes: Pass.
+- 125 shared files byte-identical: Pass.
+- MCP, full corpus, Site, browser binaries, fonts, screenshots, renders, and bytecode bundled: No.
+- Public root commit, anonymous clone, and public CI: Pass.
+- Public CI run `33353752204` passed 204 tests on Python 3.11 and Python 3.13: Pass.
+- Codex prompt-input routing exposure: Pass.
+- Claude installed component discovery: Pass.
+- Claude prompt selection: Not exercised. R04 remains partial.
+- External model inference: Not called.
+- Active-user installation, deployment, release, or tag: None.
+- Wave 11 benchmark evidence: Not complete. R22 remains partial.
+- Next gate: Close the Wave 10 R04 model-selection evidence gap before beginning Wave 11.
+- Evidence: `review/wave-10-host-qualification-evidence.json`.
+
+The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
 
 ## Required final review passes
 

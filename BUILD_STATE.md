@@ -11,43 +11,49 @@ Historical commit IDs and CI run IDs in this ledger are private-archive evidence
 
 ## Current phase
 
-Checkpoint after Wave 9. Waves 0 through 9 are qualified. Wave 10 is next.
+Checkpoint after Wave 10 isolated host qualification and public repository publication. Packaging, guidance, parity, bloat, and isolated lifecycle checks passed. R04 remains partial because Claude prompt selection was not exercised. R22 remains partial until the Wave 11 benchmarks and later acceptance gates pass.
 
 ## Latest qualified runtime candidate
 
-- Candidate commit: `a488da4694dedfe536ec1fd66f914a3eaa3c63b7`
+- Public candidate commit: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`.
+- Public candidate tree: `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
 - CI workflow: `Design Plugin CI`
-- CI run: `33350739053`
+- Public CI run: `33353752204`.
 - Python 3.11 job: Pass.
 - Python 3.13 job: Pass.
-- Regression tests: 193 passed on each Python version.
+- Regression tests: 204 passed on each Python version.
 - Corpus validation: Pass, 12 cases.
 - Catalog generation: Pass.
-- OpenAI package: 619,496 bytes.
-- Claude package: 619,057 bytes.
-- Shared files: 123, byte-identical.
+- OpenAI distribution: 627,146 bytes, 130 files.
+- Claude distribution: 626,168 bytes, 129 files.
+- Shared files: 125, byte-identical.
+- OpenAI deterministic archive: 204,202 bytes.
+- Claude deterministic archive: 203,612 bytes.
 - Generated Python bytecode bundled: No.
 - MCP bundled: No.
 - Full corpus bundled: No.
 - Site bundled: No.
 - User-machine installations: 0.
-- Deployment or publishing: None.
+- Publication: Public GitHub repository.
+- Deployment, release, or tag: None.
 
-This candidate adds the evidence-bound Wave 9 render, QA, repair, audit, and proposal-only learning runtime. It does not claim that schema validation proves browser provenance, visual inspection, accessibility behavior, or reviewer competence. Those claims require the project-local evidence the runtime validates. Prior-wave authority repairs remain passing.
+The public candidate adds finalized host manifests, deterministic installable packages, exact Codex and Claude Code install guidance, activation fixtures, package bloat checks, and isolated temporary-host lifecycle qualification. Codex prompt input exposed installed routing descriptions and positive and negative probes. Claude reported the installed component inventory, but Claude prompt selection was not exercised. No external model inference was called.
 
-The private-archive repository workflow ran the complete 193-test suite, corpus checks, both host builds, parity checks, and the pre-Wave 9 bundled entrypoint set. Independent local checks compiled and smoke-tested the Wave 9 runtime and all quality launchers in source and both distributions. The Wave 9 evidence commit records those results. The user approved the token change, and GitHub confirmed the `workflow` scope was active.
+The public workflow ran the complete 204-test suite, corpus checks, host builds, parity checks, deterministic package checks, filesystem lifecycle simulation, and bundled entrypoint checks. The separate isolated host check used temporary configuration roots, copied no credentials, left active registries unchanged, and deleted its temporary roots. Neither check proves active-user installation, identical host routing, browser rendering, visual quality, accessibility behavior, or benchmark success.
 
 ## Repository migration result
 
 PASS. The complete Design project lives in its own GitHub repository.
 
 - Destination: `Israelmusondaayliffe/design-plugin`.
-- Visibility: Public publication pending Wave 10 qualification.
+- Visibility: Public.
 - Canonical branch: `main`.
-- Initial migrated commit: `89f9e00894b4f68f774af5ae9675cfb4ec8b5225`.
+- Initial public snapshot commit: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`.
+- Initial public snapshot tree: `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
 - Historical source locators: Retained only in the private archive.
-- Initial migration tree parity: Pass.
-- Root-path CI: Pass.
+- Public snapshot tree parity: Pass.
+- Anonymous clone: Pass.
+- Public root-path CI: Pass, run `33353752204`.
 - Full project moved: `core/`, `corpus/`, `hosts/`, `requirements/`, `review/`, `scripts/`, `site/`, tests, licenses, notices, plan, and state.
 - Opaque historical staging payload: Retained only in the private archive and excluded from the public project.
 - Temporary source repository changed: No.
@@ -278,11 +284,39 @@ PASS. Source, CI, Unslop, and independent integrated-ledger verification are com
 - Fresh exact-candidate Unslop review: Pass.
 - Evidence: `review/wave-9-quality-loop-evidence.json`.
 
-## Next planned wave
+## Wave 10 result
 
-Wave 10: Host packaging and internal qualification.
+PARTIAL. Host packaging and public repository publication passed. Automatic activation qualification remains partial.
 
-Wave 10 must finalize host manifests, automatic activation, internal skill visibility, install and removal guidance, cross-host behavior, bloat, and plan compliance. Live installation still requires separate approval.
+- OpenAI and Claude host manifests: Pass.
+- Deterministic distributions and installable archives: Pass.
+- Exact Codex and Claude Code install, update, removal, and verification guidance: Pass.
+- Only Design, Design Audit, and Design Resume are user-visible: Pass.
+- Nineteen internal skills are installed in both host packages: Pass.
+- Activation fixtures: 9 positive and 6 negative, with precedence Resume, Audit, Run.
+- Isolated temporary Codex and Claude lifecycle checks: Pass.
+- Prior test version to dev.10 update, cache parity, fresh-process discovery, and scoped removal: Pass.
+- Active user registries unchanged: Yes.
+- Credentials copied: No.
+- Shared files: 125, byte-identical.
+- OpenAI distribution: 627,146 bytes. Claude distribution: 626,168 bytes.
+- MCP, full corpus, Site, browser binaries, fonts, screenshots, renders, and bytecode bundled: No.
+- Public repository, anonymous clone, and first public CI on the exact root snapshot: Pass.
+- Public CI run `33353752204` passed 204 tests on Python 3.11 and Python 3.13.
+- Codex prompt-input routing exposure: Pass.
+- Claude installed component discovery: Pass.
+- Claude prompt selection: Not exercised. R04 remains partial.
+- External model inference: Not called.
+- User-machine active installation, deployment, release, or tag: None.
+- Evidence: `review/wave-10-host-qualification-evidence.json`.
+
+The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
+
+## Next required work
+
+Close the remaining Wave 10 activation evidence gap, then begin Wave 11: Personal alpha at 60 cases plus three benchmarks.
+
+R04 cannot pass until actual host model-selection behavior is exercised or the approved plan explicitly resolves that gap. After that gate, Wave 11 must complete the personal-alpha corpus milestone and the three approved benchmarks. Live installation still requires separate approval.
 
 ## Recovery instruction
 
@@ -291,13 +325,14 @@ After any context loss, read in this order:
 2. Repository `BUILD_STATE.md`.
 3. `PLAN.md`.
 4. `requirements/traceability.yaml`.
-5. `review/repository-migration-evidence.json`.
-6. `review/wave-9-quality-loop-evidence.json`.
-7. `review/wave-8-build-waves-evidence.json`.
-8. `review/wave-7-visual-adapters-evidence.json`.
-9. `review/wave-6-system-definition-evidence.json`.
-10. `review/wave-5-research-evidence.json`.
-11. Current `main` branch state and latest CI result.
-12. The active wave plan and completion criteria.
+5. `review/wave-10-host-qualification-evidence.json`.
+6. `review/repository-migration-evidence.json`.
+7. `review/wave-9-quality-loop-evidence.json`.
+8. `review/wave-8-build-waves-evidence.json`.
+9. `review/wave-7-visual-adapters-evidence.json`.
+10. `review/wave-6-system-definition-evidence.json`.
+11. `review/wave-5-research-evidence.json`.
+12. Current `main` branch state and latest CI result.
+13. The active wave plan and completion criteria.
 
 Do not infer progress from memory. Verify repository evidence and update this file before continuing.

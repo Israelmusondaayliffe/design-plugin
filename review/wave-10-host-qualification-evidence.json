@@ -1,0 +1,251 @@
+{
+  "schema_version": "1.0",
+  "wave": 10,
+  "name": "Host packaging and public qualification",
+  "status": "partial",
+  "qualified_at": "2026-08-31T03:28:29Z",
+  "qualified_runtime_commit": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+  "qualified_runtime_tree": "9f91c8747b5f59fc69763c61509ca3d95ae0fa9d",
+  "evidence_location": "public repository",
+  "public_locator": "https://github.com/Israelmusondaayliffe/design-plugin/blob/main/review/wave-10-host-qualification-evidence.json",
+  "qualified_runtime_locator": "https://github.com/Israelmusondaayliffe/design-plugin/tree/5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+  "historical_evidence": {
+    "location": "private archive",
+    "preserved": true,
+    "public_locator": null
+  },
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33353752204,
+    "run_url": "https://github.com/Israelmusondaayliffe/design-plugin/actions/runs/33353752204",
+    "head_sha": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "job_id": 99371876499,
+        "job_url": "https://github.com/Israelmusondaayliffe/design-plugin/actions/runs/33353752204/job/99371876499",
+        "conclusion": "success",
+        "tests": 204
+      },
+      {
+        "name": "Python 3.13",
+        "job_id": 99371876532,
+        "job_url": "https://github.com/Israelmusondaayliffe/design-plugin/actions/runs/33353752204/job/99371876532",
+        "conclusion": "success",
+        "tests": 204
+      }
+    ],
+    "bounded_claim": "Public CI ran compilation, corpus validation, catalog generation, regression tests, distribution builds, parity checks, deterministic installable-package checks, filesystem lifecycle simulation, and bundled entrypoint checks."
+  },
+  "packages": {
+    "version": "0.1.0-dev.10",
+    "size_ceiling_bytes": 1048576,
+    "shared_files": 125,
+    "shared_files_identical": true,
+    "distributions": {
+      "openai": {
+        "path": "dist/design-openai",
+        "size_bytes": 627146,
+        "file_count": 130
+      },
+      "claude": {
+        "path": "dist/design-claude",
+        "size_bytes": 626168,
+        "file_count": 129
+      }
+    },
+    "archives": {
+      "openai": {
+        "path": "dist/releases/design-openai-0.1.0-dev.10.zip",
+        "size_bytes": 204202,
+        "file_count": 130,
+        "sha256": "43d9d54bacaf5d64742d84e03758ad9f1d3914954be4fd83c1eeb5efa7611e05"
+      },
+      "claude": {
+        "path": "dist/releases/design-claude-0.1.0-dev.10.zip",
+        "size_bytes": 203612,
+        "file_count": 129,
+        "sha256": "d337f882ab37d135e0776e3a64d8706bbddfe569c50a42109d1b27da8e32e31f"
+      }
+    },
+    "bounded_absence_checks": {
+      "mcp_paths": [],
+      "mcp_manifest_keys": [],
+      "mcp_runtime_references": [],
+      "generated_python_bytecode": false,
+      "full_corpus": false,
+      "site": false,
+      "browser_binaries": false,
+      "fonts": false,
+      "screenshots": false,
+      "renders": false
+    }
+  },
+  "installation_guidance": {
+    "paths": [
+      "README.md",
+      "INSTALL.md"
+    ],
+    "codex_install_commands": [
+      "codex plugin marketplace add \"$PWD/dist/installable/openai\"",
+      "codex plugin add design@design-local-openai --json"
+    ],
+    "claude_install_commands": [
+      "claude plugin marketplace add \"$PWD/dist/installable/claude\" --scope user",
+      "claude plugin install design@design-local-claude --scope user"
+    ],
+    "includes_update_removal_and_verification": true
+  },
+  "isolated_host_qualification": {
+    "scope": "isolated temporary host configurations only",
+    "status": "pass",
+    "prior_version": "0.1.0-dev.9",
+    "updated_version": "0.1.0-dev.10",
+    "credentials_copied": false,
+    "active_user_registries_unchanged": true,
+    "temporary_host_roots_deleted": true,
+    "cache_source_parity": {
+      "openai": true,
+      "claude": true
+    },
+    "fresh_process_discovery": {
+      "openai": true,
+      "claude": true
+    },
+    "removal_cleared_registration": {
+      "openai": true,
+      "claude": true
+    }
+  },
+  "activation_policy": {
+    "positive_cases": 9,
+    "negative_cases": 6,
+    "routing_precedence": [
+      "resume",
+      "audit",
+      "run"
+    ],
+    "external_model_inference_called": false
+  },
+  "hosts": {
+    "openai": {
+      "visible_workflows": [
+        "audit",
+        "resume",
+        "run"
+      ],
+      "internal_skills": 19,
+      "automatic_activation_contract_loaded": true,
+      "prompt_input_exposed_routing_descriptions": true,
+      "positive_and_negative_probes_present": true,
+      "removal_cleanup": true
+    },
+    "claude": {
+      "visible_workflows": [
+        "audit",
+        "resume",
+        "run"
+      ],
+      "installed_internal_skills": 19,
+      "component_inventory_count": 22,
+      "mcp_servers": 0,
+      "prompt_selection_exercised": false,
+      "removal_cleanup": true
+    }
+  },
+  "proof_boundary": {
+    "proven": [
+      "Codex prompt input exposed installed routing descriptions and positive and negative probes",
+      "Claude reported installed components",
+      "temporary configuration lifecycle checks left active registries unchanged"
+    ],
+    "not_proven": [
+      "Claude prompt selection",
+      "identical host routing behavior",
+      "active-user installation",
+      "browser rendering",
+      "visual quality",
+      "accessibility behavior",
+      "benchmark success"
+    ],
+    "external_model_inference_called": false
+  },
+  "publication": {
+    "repository": "Israelmusondaayliffe/design-plugin",
+    "repository_url": "https://github.com/Israelmusondaayliffe/design-plugin",
+    "visibility": "public",
+    "default_branch": "main",
+    "initial_public_commit": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+    "initial_public_tree": "9f91c8747b5f59fc69763c61509ca3d95ae0fa9d",
+    "public_file_count_before_receipt": 265,
+    "fresh_parentless_history": true,
+    "anonymous_clone": "pass",
+    "legacy_commits_public": false,
+    "private_archive_preserved": true
+  },
+  "external_actions": {
+    "public_repository_created": true,
+    "repository_publication": true,
+    "plugin_marketplace_publication": false,
+    "site_deployment": false,
+    "release_created": false,
+    "tag_created": false,
+    "active_user_installation": false,
+    "isolated_temporary_plugin_installation": true,
+    "persistent_or_prerequisite_software_installed": false,
+    "paid_service_used": false
+  },
+  "work_roles": {
+    "implementation_worker": "root Codex worker",
+    "worker_is_a_verifier": false
+  },
+  "independent_reviews": [
+    {
+      "reviewer": "wave9_independent_verifier",
+      "model": "gpt-5.6-sol",
+      "effort": "xhigh",
+      "role": "independent verifier",
+      "scope": "public root source and history before the evidence-only ledger",
+      "result": "pass",
+      "reviewed_commit": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+      "reviewed_tree": "9f91c8747b5f59fc69763c61509ca3d95ae0fa9d",
+      "reviewed_snapshot_sha256": "305bbeb627eacc847ec7a3fab26f82c383a8f523b629cfa28adfa6e90bcef160"
+    },
+    {
+      "reviewer": "wave9_plan_verifier",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "role": "plan verifier",
+      "scope": "two-commit publication plan before the evidence-only ledger",
+      "result": "pass",
+      "reviewed_commit": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+      "reviewed_tree": "9f91c8747b5f59fc69763c61509ca3d95ae0fa9d",
+      "approved_public_commit_count": 2
+    },
+    {
+      "reviewer": "wave9_unslop",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "role": "Unslop reviewer",
+      "scope": "public root source prose before the evidence-only ledger",
+      "result": "pass",
+      "reviewed_commit": "5b5dccdd2e2405a46e60643914d2ccce46368b0f",
+      "reviewed_tree": "9f91c8747b5f59fc69763c61509ca3d95ae0fa9d",
+      "reviewed_plan_sha256": "9aba3d39af5ab3ab149cc7fe8ad9ee4437801c9f15c7622413ed6678e9677ce5"
+    }
+  ],
+  "acceptance": {
+    "R01": "pass",
+    "R04": "partial",
+    "R19": "pass",
+    "R22": "partial",
+    "package_and_publication_qualification": "pass",
+    "automatic_model_selection": "untested",
+    "final_plugin_acceptance": "prohibited",
+    "overall": "Wave 10 packaging and publication passed. Automatic model selection remains open before Wave 11 benchmarks begin."
+  },
+  "next_gate": "Close the remaining Wave 10 R04 model-selection evidence gap before beginning Wave 11.",
+  "evidence_commit_rule": "The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.",
+  "next_wave": 11
+}
