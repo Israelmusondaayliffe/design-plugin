@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/imagery-plan.schema.json",
+  "title": "Design Imagery Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_status",
+    "approved_direction_sha256",
+    "reference_lock_sha256",
+    "design_md_sha256",
+    "plan_id",
+    "medium_decision",
+    "generation_boundary",
+    "references",
+    "assets",
+    "series",
+    "repair_policy"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "artifact_status": {"enum": ["scaffold", "ready"]},
+    "approved_direction_sha256": {"$ref": "#/$defs/hash"},
+    "reference_lock_sha256": {"$ref": "#/$defs/hash"},
+    "design_md_sha256": {"$ref": "#/$defs/hash"},
+    "plan_id": {"type": "string", "minLength": 1},
+    "medium_decision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["selected", "considered", "reason"],
+      "properties": {
+        "selected": {"$ref": "#/$defs/medium"},
+        "considered": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"$ref": "#/$defs/medium"}},
+        "reason": {"type": "string", "minLength": 12}
+      }
+    },
+    "generation_boundary": {"$ref": "#/$defs/generationBoundary"},
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "locator", "rights_status"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["user-provided", "project-local", "public-source", "generated-parent"]},
+          "locator": {"type": "string", "minLength": 1},
+          "rights_status": {"$ref": "#/$defs/rights"}
+        }
+      }
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "role", "slot", "type", "dimensions", "source_hierarchy", "asset_lock", "prompts", "lineage", "rights_and_privacy"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "role": {"type": "string", "minLength": 5},
+          "slot": {"type": "string", "minLength": 3},
+          "type": {"enum": ["visual-direction-board", "hero-concept", "production-bitmap", "illustration", "texture", "editorial-graphic", "image-led-ui-asset", "prompt-only", "code-native", "screenshot", "icon", "chart"]},
+          "dimensions": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["width", "height"],
+            "properties": {"width": {"type": "integer", "minimum": 1}, "height": {"type": "integer", "minimum": 1}}
+          },
+          "source_hierarchy": {"$ref": "#/$defs/oneOrMoreStrings"},
+          "asset_lock": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["composition", "subject", "materials", "color", "lighting", "visible_text", "frozen_properties", "allowed_variation", "prohibited_drift", "verification_criteria"],
+            "properties": {
+              "composition": {"type": "string", "minLength": 3},
+              "subject": {"type": "string", "minLength": 3},
+              "materials": {"$ref": "#/$defs/oneOrMoreStrings"},
+              "color": {"type": "string", "minLength": 3},
+              "lighting": {"type": "string", "minLength": 3},
+              "visible_text": {"type": "string", "minLength": 3},
+              "frozen_properties": {"$ref": "#/$defs/threeOrMoreStrings"},
+              "allowed_variation": {"$ref": "#/$defs/oneOrMoreStrings"},
+              "prohibited_drift": {"$ref": "#/$defs/threeOrMoreStrings"},
+              "verification_criteria": {"$ref": "#/$defs/threeOrMoreStrings"}
+            }
+          },
+          "prompts": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["gpt_image_2", "midjourney", "not_applicable_reason"],
+            "properties": {
+              "gpt_image_2": {"type": ["string", "null"]},
+              "midjourney": {"type": ["string", "null"]},
+              "not_applicable_reason": {"type": ["string", "null"]}
+            }
+          },
+          "lineage": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["prompt_id", "prompt_parent_ids", "reference_ids", "source_asset_ids", "output_name"],
+            "properties": {
+              "prompt_id": {"type": "string", "minLength": 1},
+              "prompt_parent_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+              "reference_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+              "source_asset_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+              "output_name": {"$ref": "#/$defs/relativePath"}
+            }
+          },
+          "rights_and_privacy": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["rights_status", "privacy_review"],
+            "properties": {
+              "rights_status": {"$ref": "#/$defs/rights"},
+              "privacy_review": {"type": "string", "minLength": 8}
+            }
+          }
+        }
+      }
+    },
+    "series": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "shared_visual_dna", "frozen_properties", "allowed_variation", "batch_size", "naming_pattern", "prompt_lineage", "reference_lineage", "acceptance_criteria"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "shared_visual_dna": {"type": "string"},
+        "frozen_properties": {"type": "array", "items": {"type": "string"}},
+        "allowed_variation": {"type": "array", "items": {"type": "string"}},
+        "batch_size": {"type": "integer", "minimum": 0},
+        "naming_pattern": {"type": "string"},
+        "prompt_lineage": {"type": "array", "items": {"type": "string"}},
+        "reference_lineage": {"type": "array", "items": {"type": "string"}},
+        "acceptance_criteria": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "repair_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["targeted_repairs_only", "renewed_approval_for_material_batch", "max_automated_passes_per_state"],
+      "properties": {
+        "targeted_repairs_only": {"const": true},
+        "renewed_approval_for_material_batch": {"const": true},
+        "max_automated_passes_per_state": {"const": 3}
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "medium": {"enum": ["code-native", "actual-screenshot", "standard-icon", "chart", "bitmap-generation"]},
+    "rights": {"enum": ["owned", "licensed", "public-reference", "review-required"]},
+    "relativePath": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "oneOrMoreStrings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "threeOrMoreStrings": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}},
+    "generationBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["purpose", "status", "output_ceiling", "request_sha256", "approval_artifact", "approval_sha256"],
+      "properties": {
+        "purpose": {"enum": ["no-generation", "prompt-only", "direction-board", "production-batch", "repair-batch"]},
+        "status": {"enum": ["not-required", "awaiting-approval", "approved"]},
+        "output_ceiling": {"type": "integer", "minimum": 0, "maximum": 50},
+        "request_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-fA-F]{64}$"},
+        "approval_artifact": {"type": ["string", "null"]},
+        "approval_sha256": {"type": ["string", "null"]}
+      }
+    }
+  }
+}

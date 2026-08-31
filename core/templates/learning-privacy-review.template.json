@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "replace-with-proposal-id",
+  "reviewer": "replace-with-privacy-reviewer",
+  "reviewer_kind": "human",
+  "status": "pass",
+  "reviewed_artifacts": [
+    ".design/learning/proposals/replace-with-proposal-id.json",
+    ".design/learning/evidence/project-a.json",
+    ".design/learning/evidence/project-b.json"
+  ],
+  "checks": [
+    {"id": "private-details", "status": "pass", "method": "replace-with-review-method", "notes": "Record what was inspected and redacted."},
+    {"id": "absolute-paths", "status": "pass", "method": "replace-with-review-method", "notes": "Record the absolute-path check result."},
+    {"id": "secrets", "status": "pass", "method": "replace-with-review-method", "notes": "Record the secret-marker check result."},
+    {"id": "benchmark-data", "status": "pass", "method": "replace-with-review-method", "notes": "Record the benchmark-data check result."}
+  ],
+  "limitations": [],
+  "created_at": "1970-01-01T00:00:00Z"
+}

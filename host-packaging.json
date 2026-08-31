@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "plugin": "design",
+  "version": "0.1.0-dev.10",
+  "previous_test_version": "0.1.0-dev.9",
+  "visible_workflows": ["audit", "resume", "run"],
+  "internal_skills": [
+    "build-wave",
+    "design-md",
+    "directions",
+    "environment",
+    "figma",
+    "forensics",
+    "grill",
+    "imagery",
+    "learn",
+    "lock",
+    "mobile",
+    "plan",
+    "qa",
+    "render",
+    "repair",
+    "research",
+    "state-controller",
+    "tokens",
+    "ux"
+  ],
+  "activation_policy": "core/references/activation-policy.json",
+  "host_parity_reference": "core/references/host-parity.md",
+  "install_guide": "INSTALL.md",
+  "hosts": {
+    "openai": {
+      "distribution": "dist/design-openai",
+      "marketplace_root": "dist/installable/openai",
+      "marketplace_name": "design-local-openai",
+      "marketplace_manifest": ".agents/plugins/marketplace.json",
+      "explicit_invocations": ["$design:audit", "$design:resume", "$design:run"]
+    },
+    "claude": {
+      "distribution": "dist/design-claude",
+      "marketplace_root": "dist/installable/claude",
+      "marketplace_name": "design-local-claude",
+      "marketplace_manifest": ".claude-plugin/marketplace.json",
+      "explicit_invocations": ["/design:audit", "/design:resume", "/design:run"]
+    }
+  },
+  "release_root": "dist/releases"
+}

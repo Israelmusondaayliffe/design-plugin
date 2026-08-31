@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "automatic_workflow": "run",
+  "precedence": ["resume", "audit", "run"],
+  "positive_cases": [
+    {"id": "website", "prompt": "Design and build a website for this product.", "expected": "run"},
+    {"id": "chatgpt-site", "prompt": "Create a ChatGPT Site for this workshop.", "expected": "run"},
+    {"id": "claude-artifact", "prompt": "Turn this Claude Artifact into a finished site.", "expected": "run"},
+    {"id": "mobile", "prompt": "Design a mobile onboarding experience for this service.", "expected": "run"},
+    {"id": "dashboard", "prompt": "Design and implement this analytics dashboard.", "expected": "run"},
+    {"id": "redesign", "prompt": "Redesign this product interface and implement the approved direction.", "expected": "run"},
+    {"id": "design-system", "prompt": "Create a design system and apply it to this interface.", "expected": "run"},
+    {"id": "audit", "prompt": "Audit this existing interface for visual and interaction defects.", "expected": "audit"},
+    {"id": "resume", "prompt": "Resume the approved Design workflow from its saved state.", "expected": "resume"}
+  ],
+  "negative_cases": [
+    {"id": "backend", "prompt": "Fix this backend API timeout.", "expected": "none"},
+    {"id": "database", "prompt": "Design a database schema for these records.", "expected": "none"},
+    {"id": "general-programming", "prompt": "Refactor this command-line parser.", "expected": "none"},
+    {"id": "unrelated-image", "prompt": "Generate a standalone picture of a red fox.", "expected": "none"},
+    {"id": "deployment-only", "prompt": "Deploy the existing site without changing it.", "expected": "none"},
+    {"id": "document-summary", "prompt": "Summarize this document.", "expected": "none"}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/mobile-decision.schema.json",
+  "title": "Design Mobile Decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "artifact_status", "approved_understanding_sha256", "ux_definition_sha256", "design_md_sha256", "project_factors", "options", "requirements", "routing_result"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "artifact_status": {"enum": ["scaffold", "ready"]},
+    "approved_understanding_sha256": {"$ref": "#/$defs/hash"},
+    "ux_definition_sha256": {"$ref": "#/$defs/hash"},
+    "design_md_sha256": {"$ref": "#/$defs/hash"},
+    "project_factors": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["factor", "finding", "evidence", "confidence"],
+        "properties": {
+          "factor": {"enum": ["device-features", "app-store-requirements", "offline-behavior", "performance", "current-codebase", "team-ability", "budget", "maintenance", "desired-experience"]},
+          "finding": {"type": "string", "minLength": 8},
+          "evidence": {"type": "string", "minLength": 5},
+          "confidence": {"enum": ["high", "medium", "low"]}
+        }
+      }
+    },
+    "options": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "meaning", "consequences"],
+        "properties": {
+          "id": {"enum": ["responsive-web", "cross-platform", "native-mobile"]},
+          "meaning": {"type": "string", "minLength": 12},
+          "consequences": {
+            "type": "object",
+            "minProperties": 9,
+            "maxProperties": 9,
+            "additionalProperties": {"type": "string", "minLength": 8}
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "statement", "hard", "factor_ids", "compatibility"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "statement": {"type": "string", "minLength": 8},
+          "hard": {"type": "boolean"},
+          "factor_ids": {"type": "array", "minItems": 1, "items": {"enum": ["device-features", "app-store-requirements", "offline-behavior", "performance", "current-codebase", "team-ability", "budget", "maintenance", "desired-experience"]}},
+          "compatibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["responsive-web", "cross-platform", "native-mobile"],
+            "properties": {
+              "responsive-web": {"type": "boolean"},
+              "cross-platform": {"type": "boolean"},
+              "native-mobile": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    },
+    "routing_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "selected", "simplest_valid", "rationale", "questions", "framework_decision"],
+      "properties": {
+        "status": {"enum": ["recommendation", "return-to-grilling"]},
+        "selected": {"type": ["string", "null"], "enum": ["responsive-web", "cross-platform", "native-mobile", null]},
+        "simplest_valid": {"type": "boolean"},
+        "rationale": {"type": "string", "minLength": 12},
+        "questions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "framework_decision": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "name", "reason"],
+          "properties": {
+            "status": {"enum": ["deferred", "proposed"]},
+            "name": {"type": ["string", "null"]},
+            "reason": {"type": "string", "minLength": 8}
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}}
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/repair-plan.schema.json",
+  "title": "Design Repair Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "cycle_number", "pass_number", "worker_id", "qa_report", "repository_approval", "structured_plan", "reference_lock", "target_findings", "target_attempts", "allowed_files", "actions", "checks", "rerender_targets", "repository_baseline", "state_revision", "status", "started_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "cycle_number": {"type": "integer", "minimum": 1},
+    "pass_number": {"type": "integer", "minimum": 1, "maximum": 3},
+    "worker_id": {"type": "string", "minLength": 1},
+    "qa_report": {"$ref": "#/$defs/artifact"},
+    "repository_approval": {"$ref": "#/$defs/artifact"},
+    "structured_plan": {"$ref": "#/$defs/artifact"},
+    "reference_lock": {"$ref": "#/$defs/artifact"},
+    "target_findings": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/finding"}},
+    "target_attempts": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 3}},
+    "allowed_files": {"$ref": "#/$defs/strings"},
+    "actions": {"$ref": "#/$defs/strings"},
+    "checks": {"$ref": "#/$defs/strings"},
+    "rerender_targets": {"$ref": "#/$defs/strings"},
+    "repository_baseline": {"$ref": "#/$defs/baseline"},
+    "state_revision": {"type": "integer", "minimum": 0},
+    "status": {"const": "active"},
+    "started_at": {"type": "string", "format": "date-time"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "gitOid": {"type": "string", "pattern": "^([0-9a-f]{40}|[0-9a-f]{64})$"},
+    "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "artifact": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"$ref": "#/$defs/path"}, "sha256": {"$ref": "#/$defs/hash"}}},
+    "strings": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "finding": {
+      "type": "object", "additionalProperties": false, "required": ["finding_id", "target_id", "category", "severity", "expected", "repair_scope"],
+      "properties": {
+        "finding_id": {"type": "string", "minLength": 1}, "target_id": {"type": "string", "minLength": 1},
+        "category": {"enum": ["visual", "typography", "spacing", "color-roles", "media", "hierarchy", "responsive", "accessibility", "states", "overflow", "touch", "motion", "interaction", "content", "code", "reference"]},
+        "severity": {"enum": ["P0", "P1", "P2", "P3"]}, "expected": {"type": "string", "minLength": 1}, "repair_scope": {"$ref": "#/$defs/strings"}
+      }
+    },
+    "dirtyFile": {
+      "type": "object", "additionalProperties": false, "required": ["path", "status", "sha256"],
+      "properties": {"path": {"$ref": "#/$defs/path"}, "status": {"type": "string", "minLength": 1}, "sha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/hash"}]}}
+    },
+    "baseline": {
+      "type": "object", "additionalProperties": false, "required": ["head", "dirty_files", "recorded_at"],
+      "properties": {"head": {"$ref": "#/$defs/gitOid"}, "dirty_files": {"type": "array", "items": {"$ref": "#/$defs/dirtyFile"}}, "recorded_at": {"type": "string", "format": "date-time"}}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "target_id": "replace-with-target-id",
+  "performed_by": "replace-with-reviewer-or-tool",
+  "checks": [
+    {"id": "semantics", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "accessible-names", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "focus", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "contrast", "status": "blocked", "method": "replace-with-method", "truth_class": "measured", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "zoom-reflow", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "keyboard", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "touch-targets", "status": "blocked", "method": "replace-with-method", "truth_class": "measured", "result": "Replace with the current result.", "applicability_reason": null},
+    {"id": "reduced-motion", "status": "blocked", "method": "replace-with-method", "truth_class": "observed", "result": "Replace with the current result.", "applicability_reason": null}
+  ],
+  "limitations": ["Remove only after recording the current limitations."],
+  "created_at": "1970-01-01T00:00:00Z"
+}

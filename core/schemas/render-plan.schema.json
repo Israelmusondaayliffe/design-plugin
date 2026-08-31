@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/render-plan.schema.json",
+  "title": "Design Render Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "workflow", "state_binding", "origin", "server", "authority_artifacts", "targets", "applicable_checks", "capture_owner", "status", "created_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "workflow": {"enum": ["run", "audit"]},
+    "state_binding": {"$ref": "#/$defs/stateBinding"},
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "url"],
+      "properties": {"kind": {"enum": ["local", "external-read", "existing-captures"]}, "url": {"type": "string", "minLength": 1}}
+    },
+    "server": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "command", "cwd", "readiness_path", "limitations"],
+      "properties": {
+        "mode": {"enum": ["managed", "already-running", "not-applicable"]},
+        "command": {"type": "array", "items": {"type": "string"}},
+        "cwd": {"$ref": "#/$defs/path"},
+        "readiness_path": {"type": "string", "minLength": 1},
+        "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "authority_artifacts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/namedArtifact"}},
+    "targets": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/target"}},
+    "applicable_checks": {"type": "array", "minItems": 4, "uniqueItems": true, "items": {"$ref": "#/$defs/category"}},
+    "capture_owner": {"type": "string", "minLength": 1},
+    "status": {"const": "planned"},
+    "created_at": {"type": "string", "format": "date-time"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "category": {"enum": ["visual", "typography", "spacing", "color-roles", "media", "hierarchy", "responsive", "accessibility", "states", "overflow", "touch", "motion", "interaction", "content", "code", "reference"]},
+    "stateBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "revision", "workflow", "phase", "repair_cycle", "repair_pass", "repair_attempts"],
+      "properties": {
+        "path": {"const": ".design/state.json"}, "sha256": {"$ref": "#/$defs/hash"}, "revision": {"type": "integer", "minimum": 0},
+        "workflow": {"enum": ["run", "audit"]}, "phase": {"enum": ["rendering", "qa"]}, "repair_cycle": {"type": "integer", "minimum": 0}, "repair_pass": {"type": "integer", "minimum": 0, "maximum": 3},
+        "repair_attempts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 3}}
+      }
+    },
+    "namedArtifact": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "role"],
+      "properties": {"path": {"$ref": "#/$defs/path"}, "sha256": {"$ref": "#/$defs/hash"}, "role": {"type": "string", "minLength": 1}}
+    },
+    "viewport": {
+      "type": "object", "additionalProperties": false, "required": ["name", "width", "height", "device_scale_factor"],
+      "properties": {"name": {"type": "string", "minLength": 1}, "width": {"type": "integer", "minimum": 240, "maximum": 7680}, "height": {"type": "integer", "minimum": 240, "maximum": 12000}, "device_scale_factor": {"type": "number", "minimum": 0.5, "maximum": 4}}
+    },
+    "reference": {
+      "type": "object", "additionalProperties": false, "required": ["kind", "path", "sha256", "role", "comparison_dimensions"],
+      "properties": {
+        "kind": {"enum": ["reference-lock", "design-authority", "baseline-render", "bounded-external"]}, "path": {"$ref": "#/$defs/path"}, "sha256": {"$ref": "#/$defs/hash"},
+        "role": {"enum": ["screen", "flow", "style", "design-system", "baseline"]}, "comparison_dimensions": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "target": {
+      "type": "object", "additionalProperties": false, "required": ["id", "screen_id", "route", "source_url", "state", "viewport", "theme", "reduced_motion", "output", "required", "reference"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "screen_id": {"type": "string", "minLength": 1}, "route": {"type": "string", "minLength": 1}, "source_url": {"type": "string", "minLength": 1}, "state": {"type": "string", "minLength": 1},
+        "viewport": {"$ref": "#/$defs/viewport"}, "theme": {"enum": ["light", "dark", "system"]}, "reduced_motion": {"type": "boolean"}, "output": {"$ref": "#/$defs/path"}, "required": {"type": "boolean"}, "reference": {"$ref": "#/$defs/reference"}
+      }
+    }
+  }
+}

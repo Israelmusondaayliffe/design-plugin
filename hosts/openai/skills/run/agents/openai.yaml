@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design"
+  short_description: "Research, design, build, render, and repair interfaces"
+  default_prompt: "Use $design:run to lead this design project through shared understanding, research, approval gates, implementation waves, and visual verification."

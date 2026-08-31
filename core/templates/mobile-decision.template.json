@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "scaffold",
+  "approved_understanding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "ux_definition_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "design_md_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "project_factors": [
+    {"factor": "device-features", "finding": "Not assessed. Replace with the approved device-feature requirement.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "app-store-requirements", "finding": "Not assessed. Replace with the approved distribution requirement.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "offline-behavior", "finding": "Not assessed. Replace with the approved offline requirement.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "performance", "finding": "Not assessed. Replace with measured or approved performance needs.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "current-codebase", "finding": "Not assessed. Replace with current repository evidence.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "team-ability", "finding": "Not assessed. Replace with approved team constraints.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "budget", "finding": "Not assessed. Replace with approved budget constraints.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "maintenance", "finding": "Not assessed. Replace with approved maintenance constraints.", "evidence": "Not checked.", "confidence": "low"},
+    {"factor": "desired-experience", "finding": "Not assessed. Replace with the approved experience requirement.", "evidence": "Not checked.", "confidence": "low"}
+  ],
+  "options": [
+    {
+      "id": "responsive-web",
+      "meaning": "One website adapts its structure, controls, and content priority to mobile screens and input.",
+      "consequences": {
+        "device-features": "Browser-supported device features are available, while deep native integration is limited.",
+        "app-store-requirements": "The product is delivered by URL and does not require app-store review.",
+        "offline-behavior": "Selective caching and draft preservation are possible, but full offline behavior needs deliberate web support.",
+        "performance": "Ordinary product flows can perform well when the current web application is kept lean.",
+        "current-codebase": "The current web codebase and routing can be adapted instead of replaced.",
+        "team-ability": "The team can use its existing web skills and testing practices.",
+        "budget": "This path normally adds the least platform-specific build and review work.",
+        "maintenance": "One shared codebase and release path remain the main maintenance surface.",
+        "desired-experience": "The experience is linkable and broadly available, with less native platform character."
+      }
+    },
+    {
+      "id": "cross-platform",
+      "meaning": "One mobile application codebase targets iOS and Android and is distributed through app stores.",
+      "consequences": {
+        "device-features": "A framework bridge can expose many device capabilities, with platform-specific work for gaps.",
+        "app-store-requirements": "App-store packaging, review, signing, and release operations become required.",
+        "offline-behavior": "Local application storage can support deeper offline workflows with explicit synchronization design.",
+        "performance": "Most product flows can perform well, while intensive platform behavior may need native modules.",
+        "current-codebase": "Some product logic may be reused, but interface and platform integration need a mobile application layer.",
+        "team-ability": "The team needs framework, device, signing, and store-release competence.",
+        "budget": "Shared application code reduces duplication but adds mobile tooling, testing, and release cost.",
+        "maintenance": "One shared mobile layer still carries iOS, Android, framework, and store maintenance.",
+        "desired-experience": "The result can feel application-like while retaining some framework constraints."
+      }
+    },
+    {
+      "id": "native-mobile",
+      "meaning": "Separate native iOS or Android applications use each platform's own language, frameworks, and interface conventions.",
+      "consequences": {
+        "device-features": "The deepest platform integration and newest native APIs are available directly.",
+        "app-store-requirements": "Each platform needs its own signing, review, release, and compliance work.",
+        "offline-behavior": "Native storage and background behavior can support advanced offline requirements.",
+        "performance": "Native code offers direct control for demanding graphics, sensors, or low-latency behavior.",
+        "current-codebase": "The web interface cannot be reused directly and shared business logic needs an explicit boundary.",
+        "team-ability": "The team needs platform-specific engineering, testing, and release skill.",
+        "budget": "Separate platform work creates the highest build and staffing cost when both platforms are required.",
+        "maintenance": "Each platform, release train, and native dependency must be maintained over time.",
+        "desired-experience": "The product can match platform conventions most closely and use native behavior without a bridge."
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "id": "requirements-unresolved",
+      "statement": "Replace this scaffold with approved product requirements before selecting a platform path.",
+      "hard": true,
+      "factor_ids": ["device-features", "app-store-requirements", "offline-behavior", "performance", "current-codebase", "team-ability", "budget", "maintenance", "desired-experience"],
+      "compatibility": {
+        "responsive-web": false,
+        "cross-platform": false,
+        "native-mobile": false
+      }
+    }
+  ],
+  "routing_result": {
+    "status": "return-to-grilling",
+    "selected": null,
+    "simplest_valid": false,
+    "rationale": "The scaffold contains no approved compatibility evidence, so platform selection must return to shared understanding.",
+    "questions": ["Which delivery, device, offline, performance, team, budget, maintenance, and experience requirements are hard constraints?"],
+    "framework_decision": {
+      "status": "deferred",
+      "name": null,
+      "reason": "Framework selection remains deferred until approved product requirements support a valid platform path."
+    }
+  }
+}

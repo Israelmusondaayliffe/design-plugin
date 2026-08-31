@@ -1,0 +1,87 @@
+{
+  "wave": 4,
+  "name": "Corpus schema and Site engineering seed",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_candidate": "7666c1dc1b35f4090ee91984110dd0297a51839a",
+  "safety_branch_candidate": "84a242f674811969f3b1a45d9669dca4ae183ac5",
+  "ci_run": 33336630872,
+  "python": {
+    "3.11": {"status": "pass", "tests": 60},
+    "3.13": {"status": "pass", "tests": 60}
+  },
+  "corpus": {
+    "case_count": 12,
+    "validation": "pass",
+    "source_policy": "corpus/source-policy/SOURCE_POLICY.md",
+    "taxonomy": "corpus/taxonomy/taxonomy.json",
+    "schemas": [
+      "corpus/schemas/case.schema.json",
+      "corpus/schemas/evidence.schema.json",
+      "corpus/schemas/tokens.schema.json",
+      "corpus/schemas/review.schema.json"
+    ],
+    "seed_cases": [
+      "adobe-spectrum-2",
+      "apple-hig",
+      "atlassian-design-system",
+      "github-primer",
+      "govuk-design-system",
+      "ibm-carbon",
+      "material-3",
+      "microsoft-fluent-2",
+      "porsche-design-system",
+      "salesforce-slds-2",
+      "shopify-polaris",
+      "uswds"
+    ],
+    "refero_as_case_source": false,
+    "source_binary_assets_bundled": false,
+    "default_publication_status": "review"
+  },
+  "retrieval": {
+    "progressive_levels": [
+      "manifest",
+      "category-index",
+      "ranked-summaries",
+      "finalist-design-md",
+      "validation-evidence"
+    ],
+    "catalog_generation": "pass",
+    "offline_fallback": "pass",
+    "remote_unavailability_requires_lower_confidence": true
+  },
+  "site": {
+    "foundation": "pass",
+    "search": true,
+    "filters": true,
+    "compare_up_to": 5,
+    "deployed": false,
+    "published": false
+  },
+  "packaging": {
+    "version": "0.1.0-dev.4",
+    "openai_bytes": 181344,
+    "claude_bytes": 180905,
+    "shared_files": 42,
+    "shared_files_identical": true,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "deployment": false,
+    "publishing": false,
+    "purchases": false
+  },
+  "integration": {
+    "strategy": "qualified Wave 4 work was first isolated, then merged into the canonical development branch with a normal fast-forward merge commit",
+    "concurrent_canonical_stream_preserved": true,
+    "concurrent_stream_publication": "excluded; retained only in private archive",
+    "force_update_used": false,
+    "note": "A separate additive staging stream modified the canonical branch during Wave 4. Integration overlaid only verified Wave 4 trees. The opaque staging payload is excluded from the public project. Canonical CI then passed."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "wave": 5,
+  "name": "Research, forensics, and directions",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "d9ef0863955d4d79055428ef1764d969c61e9b54",
+  "qualification": {
+    "safety_branch": "private archive safety branch",
+    "safety_branch_ci_run": 33339101073,
+    "canonical_branch": "historical private development branch",
+    "canonical_ci_run": 33339143756,
+    "python_versions": ["3.11", "3.13"],
+    "tests_per_python": 76,
+    "corpus_cases": 12,
+    "catalog_generation": "pass",
+    "host_builds": "pass",
+    "shared_core_parity": "pass",
+    "bundled_entrypoints": "pass"
+  },
+  "packages": {
+    "version": "0.1.0-dev.5",
+    "openai_bytes": 291528,
+    "claude_bytes": 291089,
+    "shared_files": 60,
+    "shared_files_identical": true,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "implemented": [
+    "approved shared-understanding SHA-256 binding for research plans and direction sets",
+    "bounded substantial, repair, and audit research plans",
+    "progressive corpus retrieval with honest compact-manifest degradation",
+    "live-public research fallback owned by the host research capability",
+    "claim truth classes: observed, measured, inferred, estimated, recommended, unknown",
+    "candidate scoring: evidence 20%, craft 25%, project fit 40%, feasibility 15%",
+    "hard evidence and craft eligibility floors",
+    "nine-dimension forensic dossiers",
+    "explicit color, media, and density role invariants",
+    "3-5 substantial directions with one dominant primary foundation",
+    "narrow secondary-reference responsibilities",
+    "claim-level evidence references in directions",
+    "pairwise four-of-nine distinctness floor",
+    "anti-averaging forbidden-drift rules",
+    "decision, expert, and evidence progressive-disclosure layers",
+    "audit research mode with zero design directions"
+  ],
+  "wave_exit_test": {
+    "test": "test_exit_gate_traceable_substantial_project",
+    "candidate_count": 8,
+    "validated_dossiers": 5,
+    "validated_directions": 3,
+    "traceable_evidence": true,
+    "pairwise_distinctness_minimum": 4
+  },
+  "negative_tests": [
+    "invalid approved-understanding hash rejected",
+    "shallow substantial search plan rejected",
+    "audit direction target above zero rejected",
+    "low craft rejected despite high weighted score",
+    "unknown evidence class rejected",
+    "missing color/media/density role invariant rejected",
+    "missing forensic dimension rejected",
+    "broad secondary role rejected",
+    "reused substantial primary foundation rejected",
+    "cosmetic direction variants below four dimensions rejected",
+    "directions without traceable evidence rejected",
+    "directions without rejected-alternative reasoning rejected",
+    "compact manifest does not claim facet fit without detail"
+  ],
+  "integration": {
+    "contaminated_branch": "private archive rejected branch",
+    "contaminated_branch_used_as_base": false,
+    "issue": "The earlier draft was based on an old Wave 3 tree and would have deleted Wave 4 corpus/test/runtime changes.",
+    "containment": "Only new Wave 5 concepts were selectively reconstructed on a fresh branch based on current canonical Wave 4 state.",
+    "pre_integration_compare": {
+      "ahead_by": 21,
+      "behind_by": 0,
+      "wave4_deletions": 0
+    },
+    "canonical_update": "non-force fast-forward"
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "deployments": 0,
+    "publications": 0,
+    "purchases": 0,
+    "paid_accounts_created": 0
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "wave": 9,
+  "name": "Evidence-bound render, QA, repair, audit, and learning",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "a488da4694dedfe536ec1fd66f914a3eaa3c63b7",
+  "qualified_at": "2026-08-31T02:28:38Z",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33350739053,
+    "public_locator": null,
+    "conclusion": "success",
+    "jobs": [
+      {"name": "Python 3.11", "job_id": 99363467137, "conclusion": "success", "tests": 193},
+      {"name": "Python 3.13", "job_id": 99363467000, "conclusion": "success", "tests": 193}
+    ],
+    "corpus_cases": 12,
+    "catalog_generation": "pass",
+    "host_builds": "pass",
+    "shared_core_parity": "pass",
+    "pre_wave9_bundled_entrypoints": "pass",
+    "wave9_quality_entrypoints_independent_local": "pass"
+  },
+  "packages": {
+    "version": "0.1.0-dev.9",
+    "openai_bytes": 619496,
+    "claude_bytes": 619057,
+    "shared_files": 123,
+    "shared_files_identical": true,
+    "generated_python_bytecode_bundled": false,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "browser_binaries_bundled": false,
+    "fonts_bundled": false,
+    "screenshots_bundled": false,
+    "renders_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "implemented": {
+    "skills": [
+      "core/skills/render/SKILL.md",
+      "core/skills/qa/SKILL.md",
+      "core/skills/repair/SKILL.md",
+      "core/skills/learn/SKILL.md"
+    ],
+    "runtime": "core/scripts/design_quality.py",
+    "reference": "core/references/render-qa-repair.md",
+    "state_controller": "core/scripts/design_state_commands.py",
+    "tests": "tests/test_wave9_quality.py",
+    "schemas": [
+      "core/schemas/render-plan.schema.json",
+      "core/schemas/render-evidence.schema.json",
+      "core/schemas/accessibility-evidence.schema.json",
+      "core/schemas/qa-report.schema.json",
+      "core/schemas/repair-plan.schema.json",
+      "core/schemas/repair-handoff.schema.json",
+      "core/schemas/deviations-report.schema.json",
+      "core/schemas/quality-scorecard.schema.json",
+      "core/schemas/learning-proposal.schema.json",
+      "core/schemas/learning-privacy-review.schema.json"
+    ]
+  },
+  "proof_boundary": {
+    "validated": "record structure, artifact bindings, file integrity, declared evidence, state gates, repair scope, repair ceilings, bounded privacy-marker checks, packaging, and tested control behavior",
+    "not_established_by_schema_validation": [
+      "browser provenance",
+      "visual inspection quality",
+      "accessibility behavior",
+      "reviewer competence",
+      "reviewer identity or human authorship",
+      "privacy completeness"
+    ],
+    "actual_project_execution_required": true
+  },
+  "verified_behaviors": [
+    "render plans bind the exact approved quality targets and current UX definition",
+    "render evidence binds local relative paths, SHA-256 hashes, capture context, limitations, and terminal status",
+    "PNG validation checks signature, chunks, CRCs, decompression, dimensions, scanline length, and filter bytes",
+    "passing evidence cannot explicitly disclaim the required observation",
+    "QA findings preserve category, truth class, confidence, target, reproducible evidence, expected result, and severity",
+    "accessibility requires eight detailed checks and aggregate consistency",
+    "reference roles and dimensions remain bounded",
+    "repairs bind exact finding IDs, approved file scope, current repository authority, and unchanged rerender target IDs",
+    "file deletion and repair-scope widening are rejected",
+    "repair attempt four is rejected before state or file mutation",
+    "generic state transitions cannot bypass quality evidence",
+    "audit repair requires a bounded plan and current repository-change approval",
+    "learning is proposal-only, requires multi-project evidence and a privacy-review record, has no activation command, and cannot establish reviewer identity or authorship"
+  ],
+  "independent_reviews": {
+    "implementation_worker": "root",
+    "plan_contract_extractor": {"agent": "wave9_plan_verifier", "model": "gpt-5.6-sol", "reasoning_effort": "high", "result": "complete", "scope": "pre-implementation contract and risk extraction only"},
+    "source_verifier": {
+      "agent": "wave9_independent_verifier",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "xhigh",
+      "runtime_attack_result": "pass",
+      "integrated_ledger_result": "pass",
+      "integrated_ledger_findings": {"P0": 0, "P1": 0, "P2": 0, "P3": 0},
+      "reviewed_candidate_hashes": {
+        "BUILD_STATE.md": "9437e2c20dc193af375f66312924c675c1001ede70d8bcc4df5c69321bcddfa6",
+        "PLAN.md": "047d4347e3e9b5290fd8d1a481338ca116fb920fe00f908354574eb956dc92b2",
+        "requirements/traceability.yaml": "283922bc2e72781025a55d7f7ddc7046c862ca145ce7c63362bf8f8c162dfd62",
+        "review/plan-compliance.md": "434214eca91acad61c4cb2f4815cd202e441f5f076eda827a5a53396b8a94281",
+        "review/wave-9-quality-loop-evidence.json": "b82242d42a9a26649a63a214c24ebc84c3144df7b14dd0853466a99136e2c2c4",
+        ".github/workflows/design-plugin-ci.yml": "31297e3eebe38bbaece502f1616d795c580f4f962685cbf0363f350c2dd1418d"
+      }
+    },
+    "unslop_reviewer": {
+      "agent": "wave9_unslop",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "high",
+      "exact_candidate_result": "pass",
+      "integrated_ledger_result": "pass",
+      "reviewed_candidate_hashes": {
+        "BUILD_STATE.md": "3a4deb3240749a32133ad5c1bf2d0010e825713149d010f6c68dd897e19a89b0",
+        "PLAN.md": "9392f91f041edd72b852705a20eb5e85720fb2c87ac2e8e4b5b9339dcecfe29d",
+        "requirements/traceability.yaml": "50482bb6512504cfc68e417e7ccb857ebf3e9b8e08f4431dc9012d95db452f98",
+        "review/plan-compliance.md": "d932eec6743a22d9b85acedcf3fcb2754b51af601592513fdfbd4271fb6f3ee5",
+        "review/wave-9-quality-loop-evidence.json": "acefed9543d922d625cfb554948d292cd31e3f99e6c99291878f311ba715c5ab",
+        ".github/workflows/design-plugin-ci.yml": "31297e3eebe38bbaece502f1616d795c580f4f962685cbf0363f350c2dd1418d"
+      }
+    },
+    "worker_is_verifier": false,
+    "worker_is_unslop_reviewer": false
+  },
+  "workflow_hardening": {
+    "status": "ready_for_evidence_commit",
+    "reason": "The user approved the token change, and GitHub confirms the workflow scope is active.",
+    "account_scope_changed": true,
+    "source_qualification_impact": "The existing remote workflow ran the complete 193-test suite, both host builds, parity verification, and the pre-Wave 9 bundled entrypoint set. Independent local checks compiled and smoke-tested the Wave 9 runtime and all quality launchers in source and both distributions."
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "figma_writes": 0,
+    "deployments": 0,
+    "publications": 0,
+    "image_generations": 0,
+    "paid_services_used": 0,
+    "github_account_scope_changes": 1
+  },
+  "next_wave": 10
+}

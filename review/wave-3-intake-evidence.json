@@ -1,0 +1,78 @@
+{
+  "wave": 3,
+  "name": "Grilling and environment inspection",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "c848899cd1d9a3fe1c73c9f703affd8ce90cefc6",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33334572237,
+    "python_3_11": "pass",
+    "python_3_13": "pass",
+    "tests_per_python": 50
+  },
+  "package_verification": {
+    "version": "0.1.0-dev.3",
+    "openai_size_bytes": 178473,
+    "claude_size_bytes": 178034,
+    "shared_files": 41,
+    "shared_files_identical": true,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "size_ceiling_bytes": 1048576,
+    "openai_intake_entrypoint": "pass",
+    "claude_intake_entrypoint": "pass"
+  },
+  "implemented": [
+    "core/skills/environment/SKILL.md",
+    "core/skills/grill/SKILL.md",
+    "core/scripts/design_intake.py",
+    "core/skills/environment/scripts/design_intake.py",
+    "core/skills/grill/scripts/design_intake.py",
+    "core/templates/shared-understanding.template.md",
+    "core/templates/prerequisite-proposal.template.md",
+    "core/schemas/interview-session.schema.json",
+    "core/schemas/environment-report.schema.json",
+    "tests/test_wave3_intake.py"
+  ],
+  "behavior_proved": [
+    "local environment probe records read_only_probe=true, network_accessed=false, and software_installed=false",
+    "scaffolding writes only inside .design/ and preserves existing interview files",
+    "interview is capped at six rounds",
+    "ordinary rounds require three to six questions",
+    "high-impact questions must be asked one at a time",
+    "round numbering is sequential",
+    "assumption classifications are bounded to the approved ledger values",
+    "normal approval accepts only Approved or This understanding is approved",
+    "skip requires acknowledged risk warning",
+    "shared-understanding and environment artifacts validate before the approval gate",
+    "environment skill requires a separate explicit installation approval and an ELI5 prerequisite explanation"
+  ],
+  "qualification_history": [
+    {
+      "commit": "4ea5f9d00c7e328fbbccb1d4379a26f7f395bda6",
+      "run_id": 33334409030,
+      "result": "fail",
+      "cause": "bundle spec advanced to dev.3 while host manifests and a Wave 1 regression assertion still expected dev.2; all Wave 3 behavior tests passed"
+    },
+    {
+      "commit": "c848899cd1d9a3fe1c73c9f703affd8ce90cefc6",
+      "run_id": 33334572237,
+      "result": "pass",
+      "correction": "host manifests aligned to dev.3 and Wave 1 packaging regression made version-independent"
+    }
+  ],
+  "user_machine_installations": 0,
+  "deployments_or_publications": 0,
+  "exit_gate": {
+    "six_round_interview_protocol": "pass",
+    "three_to_six_questions_per_normal_round": "pass",
+    "high_impact_one_at_a_time": "pass",
+    "assumption_ledger": "pass",
+    "approval_and_acknowledged_skip": "pass",
+    "project_inspection_before_avoidable_questions": "pass",
+    "plain_language_prerequisite_explanation": "pass",
+    "explicit_install_permission": "pass"
+  }
+}

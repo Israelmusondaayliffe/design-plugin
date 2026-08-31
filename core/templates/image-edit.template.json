@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "scaffold",
+  "imagery_plan_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "asset_id": "hero-01",
+  "source_artifact": ".design/imagery/generated/hero-01.png",
+  "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "generation_boundary": {
+    "purpose": "repair-batch",
+    "status": "awaiting-approval",
+    "output_ceiling": 1,
+    "request_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "approval_artifact": null,
+    "approval_sha256": null
+  },
+  "repair_pass": 1,
+  "lock": ["Name every visual property that must remain unchanged."],
+  "change": ["Name the exact bounded modification."],
+  "verify": ["Name the visible check that proves the edit and detects drift."],
+  "prompt": "Apply only the stated change while preserving every locked property, then return one candidate for verification."
+}

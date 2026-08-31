@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "facets": {
+    "platforms": ["web", "responsive-web", "ios", "android", "mobile", "desktop", "cross-platform"],
+    "product_types": ["marketing", "editorial", "portfolio", "design-system", "saas", "dashboard", "admin", "productivity", "commerce", "media", "content-heavy", "onboarding", "forms", "settings", "checkout", "workflow", "data-visualization", "native-app"],
+    "industries": ["technology", "developer-tools", "government", "commerce", "enterprise", "creative-tools", "productivity", "crm", "automotive", "general"],
+    "archetypes": ["platform-native", "adaptive-expressive", "service-utilitarian", "enterprise-technical", "merchant-operational", "collaboration-system", "cross-platform-neutral", "creative-expressive", "developer-dense", "crm-guided", "federal-accessible", "premium-technical"],
+    "density": ["low", "medium", "high", "adaptive"],
+    "color_modes": ["light", "dark", "adaptive", "brand-variable"],
+    "interaction_complexity": ["low", "medium", "high"],
+    "evidence_quality": ["low", "medium", "high"],
+    "publication_status": ["private", "review", "public", "blocked"]
+  }
+}

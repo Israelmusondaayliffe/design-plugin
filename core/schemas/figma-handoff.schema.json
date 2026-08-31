@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/figma-handoff.schema.json",
+  "title": "Design Figma Handoff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "artifact_status", "design_md_sha256", "tokens_source_sha256", "capability", "mode", "external_write_boundary", "target_file", "destructive_action_classification", "direct_actions", "specification"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "artifact_status": {"enum": ["scaffold", "ready"]},
+    "design_md_sha256": {"$ref": "#/$defs/hash"},
+    "tokens_source_sha256": {"$ref": "#/$defs/hash"},
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "provider", "environment_report_path", "environment_report_sha256", "checked_surfaces", "evidence", "bundled_mcp_required"],
+      "properties": {
+        "status": {"enum": ["unavailable", "available-not-authorized", "available-authorized", "unknown"]},
+        "provider": {"type": ["string", "null"]},
+        "environment_report_path": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/path"}]},
+        "environment_report_sha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/hash"}]},
+        "checked_surfaces": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "evidence": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "bundled_mcp_required": {"const": false}
+      }
+    },
+    "mode": {"enum": ["specification", "direct-when-authorized"]},
+    "external_write_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "request_sha256", "approval_artifact", "approval_sha256"],
+      "properties": {
+        "status": {"enum": ["not-required", "awaiting-approval", "approved"]},
+        "request_sha256": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/hash"}]},
+        "approval_artifact": {"type": ["string", "null"]},
+        "approval_sha256": {"type": ["string", "null"]}
+      }
+    },
+    "target_file": {"type": ["string", "null"], "minLength": 3},
+    "destructive_action_classification": {"enum": ["not-applicable", "non-destructive", "contains-destructive-actions"]},
+    "direct_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "description", "target", "destructive"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "description": {"type": "string", "minLength": 8},
+          "target": {"type": "string", "minLength": 3},
+          "destructive": {"type": "boolean"}
+        }
+      }
+    },
+    "specification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frames", "grids", "variables", "components", "interaction_states", "responsive_rules", "content_guidance", "measurements", "asset_manifest"],
+      "properties": {
+        "frames": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "width", "height", "purpose"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "width": {"type": "integer", "minimum": 1},
+              "height": {"type": "integer", "minimum": 1},
+              "purpose": {"type": "string", "minLength": 8}
+            }
+          }
+        },
+        "grids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "columns", "gutter", "margin"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "columns": {"type": "integer", "minimum": 1},
+              "gutter": {"type": "integer", "minimum": 0},
+              "margin": {"type": "integer", "minimum": 0}
+            }
+          }
+        },
+        "variables": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["collection", "name", "type", "modes"],
+            "properties": {
+              "collection": {"type": "string", "minLength": 1},
+              "name": {"type": "string", "minLength": 1},
+              "type": {"enum": ["color", "number", "string", "boolean"]},
+              "modes": {"$ref": "#/$defs/oneOrMoreStrings"}
+            }
+          }
+        },
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "variants", "states"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "variants": {"$ref": "#/$defs/oneOrMoreStrings"},
+              "states": {"$ref": "#/$defs/oneOrMoreStrings"}
+            }
+          }
+        },
+        "interaction_states": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "responsive_rules": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "content_guidance": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "measurements": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "asset_manifest": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "type", "source", "rights_status"],
+            "properties": {
+              "id": {"type": "string", "minLength": 1},
+              "type": {"type": "string", "minLength": 1},
+              "source": {"type": "string", "minLength": 1},
+              "rights_status": {"enum": ["owned", "licensed", "public-reference", "review-required"]}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "oneOrMoreStrings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}

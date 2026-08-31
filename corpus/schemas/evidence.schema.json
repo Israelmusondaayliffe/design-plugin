@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/evidence.schema.json",
+  "title": "Design Corpus Evidence",
+  "type": "object",
+  "required": ["schema_version", "items"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "items": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "claim", "class", "source_url", "confidence", "captured_at"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^E[0-9]{2,}$"},
+          "claim": {"type": "string", "minLength": 10},
+          "class": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
+          "source_url": {"type": "string", "pattern": "^https://"},
+          "locator": {"type": "string"},
+          "confidence": {"enum": ["low", "medium", "high"]},
+          "captured_at": {"type": "string", "format": "date"},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

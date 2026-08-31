@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "approved_direction_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "reference_lock_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "ux_definition_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "design_md_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "quality_targets": [
+    {
+      "id": "home-default-small",
+      "screen_id": "home",
+      "route": "/",
+      "state": "default",
+      "viewport": {"name": "small", "width": 390, "height": 844, "device_scale_factor": 1},
+      "theme": "light",
+      "reduced_motion": true,
+      "required": true
+    }
+  ],
+  "repository_change_gate": "awaiting_approval",
+  "goal": "State the implemented product outcome this plan will deliver.",
+  "prohibited_scope": ["Name work that this plan must not perform."],
+  "waves": [
+    {
+      "id": "wave-1",
+      "dependencies": [],
+      "goal": "State one bounded, testable implementation outcome.",
+      "inputs": ["Name the approved artifact or repository evidence needed for this wave."],
+      "approved_requirements": ["Name the approved design requirement this wave must satisfy."],
+      "design_sections": ["Name the relevant DESIGN.md section."],
+      "allowed_files": ["src/approved-scope"],
+      "work_items": ["Name the required change."],
+      "render_targets": ["Name the viewport and state that must be rendered."],
+      "tests": ["Name the smallest check that directly tests this wave's completion criterion."],
+      "completion_criteria": ["State the observable exit condition."],
+      "rollback": ["State how to reverse this wave safely."],
+      "risks": ["State the main risk and pause condition."],
+      "status": "planned"
+    }
+  ],
+  "external_actions": [],
+  "approval_artifact": ".design/implementation/plan.md"
+}

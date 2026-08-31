@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "scaffold",
+  "approved_direction_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "reference_lock_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "design_md_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "plan_id": "project-imagery-v1",
+  "medium_decision": {
+    "selected": "bitmap-generation",
+    "considered": ["code-native", "actual-screenshot", "bitmap-generation"],
+    "reason": "The approved slot requires an original image-led concept rather than factual interface evidence or an editable diagram."
+  },
+  "generation_boundary": {
+    "purpose": "prompt-only",
+    "status": "not-required",
+    "output_ceiling": 0,
+    "request_sha256": null,
+    "approval_artifact": null,
+    "approval_sha256": null
+  },
+  "references": [
+    {
+      "id": "direction-primary",
+      "kind": "public-source",
+      "locator": ".design/research/dossiers/primary-reference.json#E1",
+      "rights_status": "public-reference"
+    }
+  ],
+  "assets": [
+    {
+      "id": "hero-01",
+      "role": "Primary narrative hero concept.",
+      "slot": "Home page hero",
+      "type": "prompt-only",
+      "dimensions": {"width": 1600, "height": 1000},
+      "source_hierarchy": ["approved direction", "project-local content", "public reference evidence"],
+      "asset_lock": {
+        "composition": "One dominant subject with asymmetrical negative space reserved for interface copy.",
+        "subject": "State the approved project-specific subject without adding unsupported people, products, or claims.",
+        "materials": ["Name the approved material language."],
+        "color": "Use the approved semantic color roles and preserve accent scarcity.",
+        "lighting": "Name the approved lighting direction and contrast behavior.",
+        "visible_text": "No generated text unless the exact words and placement are explicitly supplied.",
+        "frozen_properties": [
+          "Preserve the dominant composition.",
+          "Preserve the approved material character.",
+          "Preserve the semantic color-role hierarchy."
+        ],
+        "allowed_variation": ["Vary secondary detail without moving the subject or copy-safe region."],
+        "prohibited_drift": [
+          "Do not replace the approved composition with a centered stock-image layout.",
+          "Do not add decorative accent colors outside their semantic role.",
+          "Do not introduce unapproved logos, words, or product claims."
+        ],
+        "verification_criteria": [
+          "The primary subject and copy-safe region match the locked composition.",
+          "Color roles match DESIGN.md and the token source.",
+          "No unapproved text, logo, person, or product detail appears."
+        ]
+      },
+      "prompts": {
+        "gpt_image_2": "Create one image concept using the exact asset lock above. Preserve the dominant composition, material language, semantic color roles, copy-safe region, and all prohibited-drift rules.",
+        "midjourney": "Create one image concept with the locked subject hierarchy, asymmetric composition, approved material character, restrained semantic palette, and protected copy-safe region. Avoid all prohibited drift.",
+        "not_applicable_reason": null
+      },
+      "lineage": {
+        "prompt_id": "hero-01-prompt-v1",
+        "prompt_parent_ids": [],
+        "reference_ids": ["direction-primary"],
+        "source_asset_ids": [],
+        "output_name": ".design/imagery/generated/hero-01.png"
+      },
+      "rights_and_privacy": {
+        "rights_status": "review-required",
+        "privacy_review": "No private person, client data, or identifying project material may enter the prompt or output."
+      }
+    }
+  ],
+  "series": {
+    "enabled": false,
+    "shared_visual_dna": "",
+    "frozen_properties": [],
+    "allowed_variation": [],
+    "batch_size": 1,
+    "naming_pattern": "",
+    "prompt_lineage": [],
+    "reference_lineage": [],
+    "acceptance_criteria": []
+  },
+  "repair_policy": {
+    "targeted_repairs_only": true,
+    "renewed_approval_for_material_batch": true,
+    "max_automated_passes_per_state": 3
+  }
+}

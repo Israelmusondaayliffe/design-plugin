@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/interview-session.schema.json",
+  "title": "Design Interview Session",
+  "type": "object",
+  "required": ["schema_version", "status", "rounds", "assumptions", "approval", "skip"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["active", "awaiting_approval", "approved", "skipped"]},
+    "rounds": {
+      "type": "array", "maxItems": 6,
+      "items": {
+        "type": "object", "required": ["round", "questions"],
+        "properties": {
+          "round": {"type": "integer", "minimum": 1, "maximum": 6},
+          "theme": {"type": "string"},
+          "questions": {
+            "type": "array", "minItems": 1, "maxItems": 6,
+            "items": {
+              "type": "object", "required": ["id", "text", "impact"],
+              "properties": {
+                "id": {"type": "string", "minLength": 1},
+                "text": {"type": "string", "minLength": 1},
+                "impact": {"enum": ["normal", "high"]},
+                "answer": {"type": ["string", "null"]},
+                "status": {"enum": ["pending", "answered", "skipped"]}
+              },
+              "additionalProperties": true
+            }
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["item", "classification"],
+        "properties": {
+          "item": {"type": "string"},
+          "classification": {"enum": ["known", "confirmed", "assumed", "unresolved", "deferred", "out_of_scope", "contradictory"]},
+          "evidence": {"type": "string"},
+          "resolution": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "approval": {"type": ["object", "null"]},
+    "skip": {"type": ["object", "null"]}
+  },
+  "additionalProperties": true
+}

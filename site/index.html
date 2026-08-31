@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Design Reference Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="shell hero">
+    <p class="eyebrow">Design Knowledge Corpus</p>
+    <h1>Find design logic, not just looks.</h1>
+    <p class="lede">Search original case studies by platform, product type, archetype, density, or source. Compare up to five references without loading the full corpus at once.</p>
+  </header>
+  <main class="shell">
+    <section class="controls" aria-label="Catalog controls">
+      <label>Search <input id="search" type="search" placeholder="dashboard, government forms, mobile…"></label>
+      <label>Archetype <select id="archetype"><option value="">All</option></select></label>
+      <label>Platform <select id="platform"><option value="">All</option></select></label>
+    </section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="results" class="results" aria-label="Reference cases"></section>
+    <section class="compare" aria-labelledby="compare-title">
+      <div class="compare-head"><h2 id="compare-title">Compare</h2><button id="clear-compare" type="button">Clear</button></div>
+      <div id="comparison" class="comparison"><p>Select up to five cases.</p></div>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>

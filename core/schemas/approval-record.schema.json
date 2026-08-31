@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-plugin.local/schemas/approval-record.schema.json",
+  "title": "Design Approval Gate Record",
+  "type": "object",
+  "required": [
+    "gate",
+    "status",
+    "artifact_path",
+    "artifact_sha256",
+    "decided_at",
+    "decision_text",
+    "warning_acknowledged",
+    "scope",
+    "assumptions_accepted",
+    "stale_reason",
+    "stale_at"
+  ],
+  "properties": {
+    "gate": {
+      "enum": ["understanding", "direction", "repository_changes"]
+    },
+    "status": {
+      "enum": ["approved", "skipped", "stale", "revoked"]
+    },
+    "artifact_path": {
+      "type": "string",
+      "minLength": 1,
+      "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}
+    },
+    "artifact_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "decided_at": {"type": "string", "format": "date-time"},
+    "decision_text": {"type": "string", "minLength": 1},
+    "warning_acknowledged": {"type": "boolean"},
+    "scope": {"type": "string"},
+    "assumptions_accepted": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "stale_reason": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "minLength": 1}
+      ]
+    },
+    "stale_at": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "string", "format": "date-time"}
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {"status": {"enum": ["approved", "skipped"]}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "stale_reason": {"type": "null"},
+          "stale_at": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"status": {"enum": ["stale", "revoked"]}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "stale_reason": {"type": "string", "minLength": 1},
+          "stale_at": {"type": "string", "format": "date-time"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"status": {"const": "skipped"}},
+        "required": ["status"]
+      },
+      "then": {
+        "properties": {
+          "gate": {"const": "understanding"},
+          "warning_acknowledged": {"const": true}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {"gate": {"const": "understanding"}},
+        "required": ["gate"]
+      },
+      "then": {
+        "properties": {"artifact_path": {"const": ".design/shared-understanding.md"}}
+      }
+    },
+    {
+      "if": {
+        "properties": {"gate": {"const": "direction"}},
+        "required": ["gate"]
+      },
+      "then": {
+        "properties": {"artifact_path": {"const": ".design/directions/decision.md"}}
+      }
+    },
+    {
+      "if": {
+        "properties": {"gate": {"const": "repository_changes"}},
+        "required": ["gate"]
+      },
+      "then": {
+        "properties": {"artifact_path": {"const": ".design/implementation/plan.md"}}
+      }
+    }
+  ],
+  "additionalProperties": false
+}

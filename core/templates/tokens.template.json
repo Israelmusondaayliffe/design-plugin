@@ -1,0 +1,38 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$extensions": {
+    "com.houseofcuriosity.design": {
+      "approved_direction_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "existing_token_strategy": "new-project",
+      "existing_token_map": {}
+    }
+  },
+  "foundation": {
+    "color": {
+      "$type": "color",
+      "ink": {
+        "$value": {"colorSpace": "srgb", "components": [0.08, 0.08, 0.08], "alpha": 1},
+        "$description": "Foundation ink value."
+      },
+      "paper": {
+        "$value": {"colorSpace": "srgb", "components": [0.98, 0.98, 0.97], "alpha": 1},
+        "$description": "Foundation paper value."
+      }
+    },
+    "space": {
+      "$type": "dimension",
+      "unit": {"$value": {"value": 4, "unit": "px"}, "$description": "Base spacing unit."}
+    }
+  },
+  "semantic": {
+    "color": {
+      "$type": "color",
+      "text": {"$value": "{foundation.color.ink}", "$description": "Default readable text role."},
+      "canvas": {"$value": "{foundation.color.paper}", "$description": "Default page canvas role."}
+    },
+    "space": {
+      "$type": "dimension",
+      "control-gap": {"$value": "{foundation.space.unit}", "$description": "Gap between related controls."}
+    }
+  }
+}

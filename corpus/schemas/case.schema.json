@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/case.schema.json",
+  "title": "Design Corpus Case Metadata",
+  "type": "object",
+  "required": ["schema_version", "slug", "name", "source_name", "source_url", "source_kind", "studied_at", "platforms", "product_types", "industries", "archetypes", "density", "color_modes", "interaction_complexity", "evidence_quality", "publication_status", "rights_basis", "summary"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "source_name": {"type": "string", "minLength": 1},
+    "source_url": {"type": "string", "pattern": "^https://"},
+    "source_kind": {"enum": ["public-design-system", "public-website", "open-source", "user-owned", "client-authorized", "original"]},
+    "studied_at": {"type": "string", "format": "date"},
+    "platforms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "product_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "industries": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "archetypes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "density": {"type": "string"},
+    "color_modes": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+    "interaction_complexity": {"type": "string"},
+    "evidence_quality": {"type": "string"},
+    "publication_status": {"type": "string"},
+    "rights_basis": {"enum": ["original-analysis-public-source", "open-source", "user-authorized", "client-authorized", "original"]},
+    "summary": {"type": "string", "minLength": 40},
+    "signature_traits": {"type": "array", "items": {"type": "string"}},
+    "best_for": {"type": "array", "items": {"type": "string"}},
+    "avoid_for": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

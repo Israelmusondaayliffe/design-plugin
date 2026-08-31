@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "scaffold",
+  "design_md_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "tokens_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "capability": {
+    "status": "unknown",
+    "provider": null,
+    "environment_report_path": null,
+    "environment_report_sha256": null,
+    "checked_surfaces": ["Not checked yet. Replace this with the exact host surfaces inspected."],
+    "evidence": ["No capability claim is valid until environment inspection evidence is recorded."],
+    "bundled_mcp_required": false
+  },
+  "mode": "specification",
+  "external_write_boundary": {
+    "status": "not-required",
+    "request_sha256": null,
+    "approval_artifact": null,
+    "approval_sha256": null
+  },
+  "target_file": null,
+  "destructive_action_classification": "not-applicable",
+  "direct_actions": [],
+  "specification": {
+    "frames": [
+      {"name": "Desktop primary", "width": 1440, "height": 1024, "purpose": "Primary desktop route and its default state."},
+      {"name": "Mobile primary", "width": 390, "height": 844, "purpose": "Primary mobile route and its default state."}
+    ],
+    "grids": [
+      {"name": "Desktop grid", "columns": 12, "gutter": 24, "margin": 64},
+      {"name": "Mobile grid", "columns": 4, "gutter": 16, "margin": 20}
+    ],
+    "variables": [
+      {"collection": "Design semantic", "name": "color/text/default", "type": "color", "modes": ["Default"]}
+    ],
+    "components": [
+      {"name": "Primary action", "variants": ["Default", "Compact"], "states": ["Rest", "Hover", "Focus", "Disabled", "Loading"]}
+    ],
+    "interaction_states": ["Document default, hover, focus, active, disabled, loading, empty, error, and permission states where applicable."],
+    "responsive_rules": ["Map every structural breakpoint and content-priority change from the approved UX definition."],
+    "content_guidance": ["Use real approved labels and representative content lengths rather than placeholder copy."],
+    "measurements": ["Record frame padding, component gaps, hit areas, text measure, and alignment anchors."],
+    "asset_manifest": []
+  }
+}

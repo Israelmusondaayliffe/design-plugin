@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "reference_lock_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "information_architecture": [
+    {"id": "root", "label": "Product", "purpose": "Top-level product structure.", "parent_id": null}
+  ],
+  "screens": [
+    {
+      "id": "home",
+      "name": "Home",
+      "purpose": "Support the primary approved user job.",
+      "primary_tasks": ["Complete the primary task."],
+      "permissions": ["State who may access this screen."],
+      "responsive_behavior": "Describe structural adaptation by viewport and input mode."
+    }
+  ],
+  "flows": [
+    {
+      "id": "primary-flow",
+      "name": "Primary flow",
+      "entry_screen": "home",
+      "steps": ["home"],
+      "success_outcome": "Describe the observable successful result.",
+      "error_paths": ["Describe one error path and recovery action."]
+    }
+  ],
+  "states": [
+    {
+      "screen_id": "home",
+      "default": "Describe the ready state.",
+      "loading": "Describe the loading state.",
+      "empty": "Describe the empty state.",
+      "error": "Describe the error state and recovery.",
+      "permission_denied": "Describe the denied state and next action."
+    }
+  ],
+  "responsive_strategy": {
+    "mode": "responsive-web",
+    "breakpoints": [
+      {"name": "base", "min_width_px": 0},
+      {"name": "wide", "min_width_px": 1024}
+    ],
+    "content_priority": ["Name the content that survives first."],
+    "adaptation_rules": ["Describe a structural adaptation rather than uniform shrinking."]
+  },
+  "mobile_task_model": {
+    "primary_tasks": ["Name the task that must remain fast on mobile."],
+    "deferred_tasks": [],
+    "device_capabilities": [],
+    "offline_requirements": "State the offline requirement.",
+    "navigation_model": "State the mobile navigation model."
+  },
+  "accessibility": {
+    "target": "WCAG 2.2 AA",
+    "requirements": [
+      "Define keyboard and focus behavior.",
+      "Define contrast and non-color signaling.",
+      "Define names, roles, states, and error recovery."
+    ]
+  },
+  "figma_handoff": {
+    "mode": "not-applicable",
+    "reason": "State why direct Figma handoff is not part of this run."
+  }
+}

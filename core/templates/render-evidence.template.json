@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "status": "blocked",
+  "render_plan": {"path": ".design/renders/plan.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "capture_owner": "replace-with-capture-owner",
+  "server_result": {"status": "blocked", "method": "replace-with-observation-method", "evidence": "Record the missing local server or rendered-state evidence."},
+  "captures": [
+    {
+      "target_id": "replace-with-screen-state-viewport",
+      "status": "blocked",
+      "output": ".design/renders/captures/replace-with-screen-state-viewport.png",
+      "sha256": null,
+      "width": null,
+      "height": null,
+      "method": "replace-with-host-browser-or-capture-method",
+      "source_url": "http://127.0.0.1:3000/",
+      "evidence": "Record what was observed or why capture is blocked.",
+      "limitations": ["Replace with the exact limitation, or remove after a passing capture."]
+    }
+  ],
+  "limitations": [],
+  "captured_at": "1970-01-01T00:00:00Z"
+}

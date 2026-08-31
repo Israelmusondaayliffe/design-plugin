@@ -1,0 +1,39 @@
+{
+  "name": "design",
+  "version": "0.1.0-dev.10",
+  "description": "Research-grounded design operating system for shared understanding, visual direction, implementation, rendering, and repair.",
+  "author": {
+    "name": "Israel Ayliffe"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Israelmusondaayliffe/design-plugin",
+  "repository": "https://github.com/Israelmusondaayliffe/design-plugin",
+  "keywords": [
+    "codex",
+    "design",
+    "ui",
+    "ux",
+    "web",
+    "mobile",
+    "figma",
+    "image-generation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Design",
+    "shortDescription": "Research, design, build, render, and repair interfaces.",
+    "longDescription": "Reach shared understanding, research strong references, compare distinct directions, compile a project design system, implement in waves, and verify the rendered result.",
+    "developerName": "Israel Ayliffe",
+    "category": "Design",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Design and build this product.",
+      "Audit this interface.",
+      "Resume the approved Design workflow."
+    ]
+  }
+}

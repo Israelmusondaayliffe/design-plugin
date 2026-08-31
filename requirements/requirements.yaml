@@ -1,0 +1,48 @@
+version: 1.0
+status: approved
+approved_on: 2026-08-30
+requirements:
+  - id: R01
+    text: Two independently installable host packages, one Codex-first OpenAI plugin and one Claude Code plugin.
+  - id: R02
+    text: One canonical shared design core with host-specific packaging only where platform behavior differs.
+  - id: R03
+    text: No Refero MCP, Refero account, or Refero runtime dependency.
+  - id: R04
+    text: Support explicit invocation and automatic activation for unmistakable design work.
+  - id: R05
+    text: Every design task must pass a full shared-understanding grilling phase unless the user explicitly skips it.
+  - id: R06
+    text: Research starts only after explicit shared-understanding approval or a documented user skip.
+  - id: R07
+    text: Substantial projects present 3 to 5 research-backed and meaningfully distinct design directions.
+  - id: R08
+    text: A direction must be explicitly approved before the reference lock and system definition become authoritative.
+  - id: R09
+    text: Produce a project-specific DESIGN.md and durable reference lock as design authority.
+  - id: R10
+    text: Produce canonical design tokens plus CSS custom properties and Tailwind v4 output when applicable.
+  - id: R11
+    text: Support web, mobile routing, Figma-ready handoff, and direct Figma work only when an authorized connection is available.
+  - id: R12
+    text: Include a design-specific GPT Image 2 art-direction and prompting workflow that can use an available image tool.
+  - id: R13
+    text: Implement substantial projects in bounded waves with durable handoffs and phase state.
+  - id: R14
+    text: Ask before installing software and explain necessity, changes, approximate footprint, alternatives, removal, and exact command in plain language.
+  - id: R15
+    text: Render, visually inspect, run applicable QA, and perform no more than 3 targeted repair passes before reporting a blocker.
+  - id: R16
+    text: Keep project-local knowledge separate from audited broadly applicable learning; no learning becomes active without review and approval.
+  - id: R17
+    text: Never deploy, publish, purchase services, create paid accounts, or perform unspecified destructive changes without separate explicit approval.
+  - id: R18
+    text: Use progressive disclosure in interviews, research retrieval, directions, implementation detail, and evidence presentation.
+  - id: R19
+    text: Keep plugin packages lean; bundle only compact craft guidance and a small catalog manifest while the full corpus remains external.
+  - id: R20
+    text: License the plugin code under MIT.
+  - id: R21
+    text: Preserve required Refero MIT attribution for substantial reused or adapted material.
+  - id: R22
+    text: Review the finished plugins against the approved plan with requirement-to-implementation-to-test traceability before acceptance.

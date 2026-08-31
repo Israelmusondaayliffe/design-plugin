@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/reference-lock.schema.json",
+  "title": "Design Reference Lock",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "approved_understanding_sha256",
+    "approved_direction",
+    "dominant_reference",
+    "supporting_references",
+    "frozen_visual_traits",
+    "allowed_variation",
+    "prohibited_drift",
+    "evidence_links",
+    "assumptions",
+    "confidence"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "approved_understanding_sha256": {"$ref": "#/$defs/hash"},
+    "approved_direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "decision_artifact", "decision_sha256", "direction_set_artifact", "direction_set_sha256"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "decision_artifact": {"const": ".design/directions/decision.md"},
+        "decision_sha256": {"$ref": "#/$defs/hash"},
+        "direction_set_artifact": {"const": ".design/directions/direction-set.json"},
+        "direction_set_sha256": {"$ref": "#/$defs/hash"}
+      }
+    },
+    "dominant_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "responsibility"],
+      "properties": {
+        "slug": {"type": "string", "minLength": 1},
+        "responsibility": {"const": "dominant visual foundation"}
+      }
+    },
+    "supporting_references": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "responsibility", "scope"],
+        "properties": {
+          "slug": {"type": "string", "minLength": 1},
+          "responsibility": {
+            "enum": [
+              "navigation behavior",
+              "form behavior",
+              "data visualization",
+              "mobile behavior",
+              "content hierarchy",
+              "typography detail",
+              "imagery treatment",
+              "motion behavior",
+              "component anatomy",
+              "accessibility behavior",
+              "flow structure",
+              "density treatment"
+            ]
+          },
+          "scope": {"type": "string", "minLength": 6}
+        }
+      }
+    },
+    "frozen_visual_traits": {"$ref": "#/$defs/threeOrMoreStrings"},
+    "allowed_variation": {"$ref": "#/$defs/oneOrMoreStrings"},
+    "prohibited_drift": {"$ref": "#/$defs/threeOrMoreStrings"},
+    "evidence_links": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "evidence_id"],
+        "properties": {
+          "slug": {"type": "string", "minLength": 1},
+          "evidence_id": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "assumptions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "confidence": {"enum": ["high", "medium", "low"]}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "relativePath": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "oneOrMoreStrings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "threeOrMoreStrings": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}}
+  }
+}

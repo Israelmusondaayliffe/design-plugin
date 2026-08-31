@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "wave_id": "wave-1",
+  "wave_number": 1,
+  "status": "blocked",
+  "manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "changed_files": [],
+  "completed_checks": [
+    {"name": "Name the direct check for this wave.", "command": "replace-with-exact-command", "status": "blocked", "evidence": "Record why the check cannot pass yet."}
+  ],
+  "render_results": [
+    {"target": "Name the state and viewport to render.", "status": "blocked", "evidence": "Record the missing render evidence."}
+  ],
+  "completion_criteria": [
+    {"criterion": "State the observable completion condition.", "status": "blocked", "evidence": "Record the unresolved condition."}
+  ],
+  "known_deviations": [],
+  "new_risks": [],
+  "review_results": [
+    {"reviewer_id": "replace-with-independent-reviewer", "role": "independent-verifier", "status": "blocked", "evidence": "Record the independent review result. The worker cannot be this reviewer."},
+    {"reviewer_id": "replace-with-unslop-reviewer", "role": "unslop-reviewer", "status": "blocked", "evidence": "Record the independent Unslop review result. The worker cannot be this reviewer."}
+  ],
+  "next_inputs": ["Name the evidence or decision needed next."],
+  "rollback_notes": ["State how current changes can be reversed safely."],
+  "ended_at": "1970-01-01T00:00:00Z"
+}

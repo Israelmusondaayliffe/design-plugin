@@ -1,0 +1,103 @@
+{
+  "wave": 8,
+  "name": "Controlled build-wave engine",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "0d7988d08c569036b0563b958145c086e2bde234",
+  "qualified_head": "0d7988d08c569036b0563b958145c086e2bde234",
+  "qualified_at": "2026-08-31T01:08:24Z",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33346612875,
+    "public_locator": null,
+    "jobs": [
+      {"name": "Python 3.11", "job_id": 99351836391, "conclusion": "success", "tests": 162},
+      {"name": "Python 3.13", "job_id": 99351836540, "conclusion": "success", "tests": 162}
+    ],
+    "corpus_cases": 12,
+    "catalog_generation": "pass",
+    "host_builds": "pass",
+    "shared_core_parity": "pass",
+    "bundled_entrypoints": "pass"
+  },
+  "packages": {
+    "version": "0.1.0-dev.8",
+    "openai_bytes": 445826,
+    "claude_bytes": 445387,
+    "shared_files": 94,
+    "shared_files_identical": true,
+    "generated_python_bytecode_bundled": false,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "implemented": {
+    "skill": "core/skills/build-wave/SKILL.md",
+    "runtime": "core/scripts/design_build.py",
+    "portable_launcher": "core/skills/build-wave/scripts/design_build.py",
+    "schemas": ["core/schemas/wave-manifest.schema.json", "core/schemas/wave-handoff.schema.json"],
+    "templates": ["core/templates/wave-manifest.template.json", "core/templates/wave-handoff.template.json"],
+    "reference": "core/references/build-waves.md",
+    "state_controller": "core/scripts/design_state_commands.py",
+    "tests": "tests/test_wave8_build_waves.py"
+  },
+  "verified_behaviors": [
+    "approved structured plans contain one to seven waves and supply the authoritative total wave count",
+    "prepared manifests bind the exact approved plan, state, wave definition, scope, inputs, dependencies, tests, render targets, and completion criteria",
+    "manifest mutation after state binding is rejected",
+    "engine control artifacts are not misclassified as approved product scope",
+    "out-of-scope product changes and unverifiable change kinds are rejected",
+    "changed product files require current SHA-256 evidence and deleted files use an explicit deleted state",
+    "every planned test and completion criterion passes before a complete handoff is accepted",
+    "render targets pass or record an evidence-backed not-applicable result",
+    "structured handoff, readable handoff.md, verification receipt, and state bind each other by SHA-256",
+    "dependent waves recheck completed dependency product hashes and readable handoff bytes",
+    "implementation worker, independent verifier, and Unslop reviewer are distinct and all reviews pass",
+    "the state controller re-runs verification before closing a wave",
+    "the controller advances to the next approved wave or rendering and rejects a direct building-to-rendering transition"
+  ],
+  "negative_tests": [
+    "changed manifest after state binding rejected",
+    "changed approved plan cannot widen scope",
+    "forged minimal handoff rejected",
+    "missing planned test rejected",
+    "unverified change kind rejected",
+    "out-of-scope product change rejected",
+    "changed dependency product rejected",
+    "changed readable dependency handoff rejected",
+    "stale current readable handoff rejected",
+    "worker acting as verifier rejected",
+    "worker acting as Unslop reviewer rejected",
+    "direct building-to-rendering transition rejected",
+    "zero-wave plan rejected",
+    "eight-wave plan rejected"
+  ],
+  "independent_reviews": {
+    "implementation_workers": ["root"],
+    "source_verifier": {"agent": "final_source_verifier", "model": "gpt-5.6-sol", "reasoning_effort": "xhigh", "result": "pass"},
+    "unslop_reviewer": {"agent": "final_unslop", "model": "gpt-5.6-sol", "reasoning_effort": "high", "result": "pass"},
+    "worker_is_verifier": false,
+    "worker_is_unslop_reviewer": false
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "figma_writes": 0,
+    "deployments": 0,
+    "publications": 0,
+    "image_generations": 0,
+    "paid_services_used": 0
+  },
+  "exit_gate": {
+    "immutable_manifest": "pass",
+    "strict_scope": "pass",
+    "dependency_verification": "pass",
+    "durable_handoff": "pass",
+    "independent_verification": "pass",
+    "unslop_review": "pass",
+    "controller_owned_progression": "pass",
+    "resume_evidence": "pass",
+    "cross_host_runtime_parity": "pass"
+  }
+}

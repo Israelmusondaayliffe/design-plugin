@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "plugin": "design",
+  "revision": 0,
+  "workflow": "run",
+  "route": "standard",
+  "phase": "intake",
+  "status": "active",
+  "phase_before_block": null,
+  "gates": {
+    "understanding": null,
+    "direction": null,
+    "repository_changes": null
+  },
+  "artifacts": {},
+  "active_wave": null,
+  "repair_cycle": 0,
+  "repair_pass": 0,
+  "repair_attempts": {},
+  "blockers": [],
+  "history": [
+    {
+      "event": "initialized",
+      "at": "1970-01-01T00:00:00Z",
+      "workflow": "run",
+      "route": "standard"
+    }
+  ],
+  "created_at": "1970-01-01T00:00:00Z",
+  "updated_at": "1970-01-01T00:00:00Z"
+}

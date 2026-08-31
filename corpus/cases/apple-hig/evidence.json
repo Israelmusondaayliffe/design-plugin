@@ -1,0 +1,8 @@
+{
+  "schema_version":"1.0","items":[
+    {"id":"E01","claim":"Apple frames design around purpose, agency, and understanding what matters most to the people using the experience.","class":"observed","source_url":"https://developer.apple.com/design/human-interface-guidelines/design-principles","locator":"Design principles: Purpose and Agency","confidence":"high","captured_at":"2026-08-30","notes":"Primary-source design principle."},
+    {"id":"E02","claim":"Apple system colors are semantically defined, adapt across appearance contexts, and should not be reassigned to unrelated roles.","class":"observed","source_url":"https://developer.apple.com/design/human-interface-guidelines/color","locator":"System colors","confidence":"high","captured_at":"2026-08-30","notes":"Supports role-preserving token translation rather than copying hard-coded color values."},
+    {"id":"E03","claim":"Apple accessibility guidance treats sufficient foreground/background contrast and legibility as core interface requirements.","class":"observed","source_url":"https://developer.apple.com/design/human-interface-guidelines/accessibility","locator":"Visual accessibility guidance","confidence":"high","captured_at":"2026-08-30","notes":"Supports accessibility-first evaluation."},
+    {"id":"E04","claim":"The transferable design intelligence is adaptive semantic behavior and platform fit, not a fixed visual skin that can be pasted onto arbitrary web products.","class":"inferred","source_url":"https://developer.apple.com/design/human-interface-guidelines/","locator":"Cross-guideline synthesis","confidence":"high","captured_at":"2026-08-30","notes":"Original corpus interpretation."}
+  ]
+}

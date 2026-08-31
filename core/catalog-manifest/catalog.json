@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "mode": "development-seed",
+  "remote_corpus_bundled": false,
+  "case_count": 12,
+  "milestones": {"engineering_seed": 12, "alpha": 60, "team_beta": 150, "public_v1": 300},
+  "progressive_disclosure": ["manifest", "category-index", "ranked-summaries", "finalist-design-md", "validation-evidence"],
+  "routes": {
+    "human_site_base_url": null,
+    "repository_base_url": null,
+    "catalog_index": "/catalog/index.json",
+    "category_pattern": "/catalog/categories/{facet}/{value}.json",
+    "summary_pattern": "/cases/{slug}/summary.json",
+    "design_pattern": "/cases/{slug}/DESIGN.md",
+    "evidence_pattern": "/cases/{slug}/evidence.json",
+    "tokens_pattern": "/cases/{slug}/tokens.json"
+  },
+  "offline_fallback": {"continue": true, "use_bundled_craft_guidance": true, "use_user_references": true, "use_live_public_research_when_available": true, "state_remote_unavailability": true, "lower_confidence": true},
+  "seed_cases": ["apple-hig", "material-3", "govuk-design-system", "ibm-carbon", "shopify-polaris", "atlassian-design-system", "microsoft-fluent-2", "adobe-spectrum-2", "github-primer", "salesforce-slds-2", "uswds", "porsche-design-system"]
+}

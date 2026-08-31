@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/environment-report.schema.json",
+  "title": "Design Environment Report",
+  "type": "object",
+  "required": ["schema_version", "inspected_at", "project_root", "read_only_probe", "network_accessed", "software_installed", "project", "binaries", "host_connections", "permission_boundary"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "inspected_at": {"type": "string"},
+    "project_root": {"type": "string"},
+    "read_only_probe": {"const": true},
+    "network_accessed": {"const": false},
+    "software_installed": {"const": false},
+    "project": {"type": "object"},
+    "binaries": {"type": "object"},
+    "host_connections": {"type": "object"},
+    "permission_boundary": {
+      "type": "object",
+      "required": ["installation_authorized", "rule"],
+      "properties": {
+        "installation_authorized": {"const": false},
+        "rule": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

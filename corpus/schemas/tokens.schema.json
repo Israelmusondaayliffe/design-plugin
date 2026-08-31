@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/tokens.schema.json",
+  "title": "Normalized Design Roles",
+  "type": "object",
+  "required": ["schema_version", "tokens"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "tokens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "category", "role", "evidence_class", "source_evidence_ids"],
+        "properties": {
+          "name": {"type": "string"},
+          "category": {"enum": ["color", "typography", "spacing", "radius", "border", "shadow", "motion", "layout", "component", "media"]},
+          "role": {"type": "string"},
+          "value": {},
+          "exact": {"type": "boolean"},
+          "evidence_class": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
+          "source_evidence_ids": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/research-plan.schema.json",
+  "title": "Design Research Plan",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "approved_understanding_sha256",
+    "mode",
+    "decision_to_make",
+    "research_questions",
+    "search_axes",
+    "source_lanes",
+    "targets",
+    "thresholds",
+    "known_evidence_limitations",
+    "stop_conditions"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "approved_understanding_sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "mode": {"enum": ["substantial", "bounded-repair", "audit"]},
+    "decision_to_make": {"type": "string", "minLength": 8},
+    "research_questions": {"type": "array", "minItems": 1, "maxItems": 8, "items": {"type": "string", "minLength": 4}},
+    "search_axes": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}},
+    "source_lanes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["project-local", "user-provided", "corpus", "live-public"]}
+    },
+    "targets": {
+      "type": "object",
+      "required": ["candidates", "dossiers", "directions"],
+      "properties": {
+        "candidates": {"type": "integer", "minimum": 1, "maximum": 12},
+        "dossiers": {"type": "integer", "minimum": 1, "maximum": 8},
+        "directions": {"type": "integer", "minimum": 0, "maximum": 5}
+      },
+      "additionalProperties": false
+    },
+    "thresholds": {
+      "type": "object",
+      "required": ["evidence_quality", "craft_threshold"],
+      "properties": {
+        "evidence_quality": {"type": "number", "minimum": 40, "maximum": 100},
+        "craft_threshold": {"type": "number", "minimum": 55, "maximum": 100}
+      },
+      "additionalProperties": false
+    },
+    "known_evidence_limitations": {"type": "array", "items": {"type": "string"}},
+    "stop_conditions": {"type": "array", "items": {"type": "string"}}
+  }
+}

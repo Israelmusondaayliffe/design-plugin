@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/review.schema.json",
+  "title": "Corpus Editorial Review",
+  "type": "object",
+  "required": ["schema_version", "status", "originality_checked", "evidence_checked", "rights_checked", "assets_checked", "reviewed_at", "notes"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "status": {"enum": ["private", "review", "public", "blocked"]},
+    "originality_checked": {"type": "boolean"},
+    "evidence_checked": {"type": "boolean"},
+    "rights_checked": {"type": "boolean"},
+    "assets_checked": {"type": "boolean"},
+    "reviewed_at": {"type": "string", "format": "date"},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": false
+}

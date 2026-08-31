@@ -1,0 +1,111 @@
+{
+  "wave": 2,
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_candidate": "historical private source candidate",
+  "qualified_at": "2026-08-30T20:25:35Z",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "public_locator": null,
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "conclusion": "success"
+      },
+      {
+        "name": "Python 3.13",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "execution_boundary": {
+    "user_machine_installations": 0,
+    "pip_or_npm_installs": 0,
+    "state_controller_network_calls": 0,
+    "runtime": "Python standard library",
+    "state_write_scope": ".design/state.json inside the selected project root"
+  },
+  "implemented": {
+    "visible_workflows": [
+      "Design",
+      "Design Audit",
+      "Design Resume"
+    ],
+    "internal_skill": "state-controller",
+    "commands": [
+      "init",
+      "transition",
+      "record-gate",
+      "pause",
+      "resume",
+      "block",
+      "unblock",
+      "verify",
+      "show"
+    ],
+    "durable_state": ".design/state.json",
+    "approval_gates": [
+      "understanding",
+      "direction",
+      "repository_changes"
+    ],
+    "artifact_binding": "SHA-256",
+    "atomic_writes": true,
+    "maximum_repair_passes": 3
+  },
+  "tests": {
+    "complete_suite_tests": 35,
+    "wave_1_packaging_tests": 4,
+    "wave_2_skill_launcher_tests": 1,
+    "wave_2_state_tests": 30,
+    "conclusion": "pass"
+  },
+  "package_verification": {
+    "distribution_version": "0.1.0-dev.2",
+    "claude_size_bytes": 120411,
+    "openai_size_bytes": 120850,
+    "shared_files": 29,
+    "shared_files_identical": true,
+    "state_tool_bundled": true,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false
+  },
+  "verified_behaviors": [
+    "A standard run cannot research before approved or acknowledged-skipped shared understanding.",
+    "Only Approved or This understanding is approved satisfies the explicit understanding approval phrase.",
+    "Skipping shared understanding requires recorded risk-warning acknowledgement.",
+    "A standard run cannot define the system before direction approval.",
+    "A standard run cannot build before repository-change approval.",
+    "An audit cannot repair or modify the repository before repository-change approval.",
+    "Approval artifacts must live inside the selected project root.",
+    "Approval records bind to the exact artifact SHA-256.",
+    "Changed or missing approved artifacts become stale and block progress.",
+    "Understanding staleness cascades to direction and repository approvals.",
+    "Direction staleness cascades to repository approval.",
+    "Stale gates require explicit reapproval and never reactivate automatically.",
+    "A paused workflow can reapprove a changed artifact and then resume without manual state editing.",
+    "Pause and resume preserve the current phase.",
+    "Block and unblock preserve and restore the recovery phase.",
+    "Paused work must resume before a blocker is recorded.",
+    "Exactly one unresolved blocker is permitted while blocked.",
+    "Phase and status contradictions are rejected without overwriting corrupt state.",
+    "Initialization never overwrites existing state.",
+    "Initialization rejects a missing or non-directory project root.",
+    "Pre-build phases cannot carry an active implementation wave.",
+    "Building initializes active wave 1.",
+    "Repair pass four is rejected and leaves the workflow at QA.",
+    "Verification reports structural transitions separately from currently legal next actions.",
+    "Paused verification reports resume, blocked verification reports unblock, and stale verification reports reapproval requirements.",
+    "The skill-local state-controller launcher resolves the canonical bundled runtime.",
+    "Both host packages expose a functioning bundled state-controller entrypoint."
+  ],
+  "exit_gate": {
+    "start_stop_resume_from_repository_evidence": true,
+    "approval_gates_cannot_be_bypassed": true,
+    "stale_approvals_block_progress": true,
+    "ambiguous_or_corrupt_state_becomes_blocker": true,
+    "cross_host_runtime_parity": true,
+    "three_pass_repair_ceiling": true
+  }
+}

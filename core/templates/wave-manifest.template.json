@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "wave_id": "wave-1",
+  "wave_number": 1,
+  "worker_id": "replace-with-worker-identity",
+  "plan_json_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "approved_plan_artifact": ".design/implementation/plan.md",
+  "approved_plan_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "goal": "State the bounded implementation outcome for this wave.",
+  "declared_inputs": ["Name the approved inputs needed by this wave."],
+  "artifact_inputs": [
+    {"path": ".design/shared-understanding.md", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "purpose": "approved shared understanding"},
+    {"path": ".design/system/reference-lock.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "purpose": "approved reference lock"},
+    {"path": "DESIGN.md", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "purpose": "approved design system"},
+    {"path": ".design/implementation/plan.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "purpose": "structured implementation plan"},
+    {"path": ".design/implementation/plan.md", "sha256": "0000000000000000000000000000000000000000000000000000000000000000", "purpose": "approved compiled implementation plan"}
+  ],
+  "approved_requirements": ["Name the exact design requirement this wave must satisfy."],
+  "design_sections": ["Name the relevant DESIGN.md section."],
+  "dependencies": [],
+  "allowed_files": ["src/approved-scope"],
+  "work_items": ["Name one required implementation change."],
+  "render_targets": ["Name the state and viewport to render."],
+  "tests": ["Name the direct check for this wave."],
+  "completion_criteria": ["State the observable completion condition."],
+  "rollback": ["State how to reverse this wave safely."],
+  "planned_risks": ["State the known risk and pause condition."],
+  "control_files": [
+    ".design/implementation/waves/wave-1/manifest.json",
+    ".design/implementation/waves/wave-1/handoff.json",
+    ".design/implementation/waves/wave-1/handoff.md",
+    ".design/implementation/waves/wave-1/verification.json"
+  ],
+  "repository_baseline": {
+    "head": "0000000000000000000000000000000000000000000000000000000000000000",
+    "dirty_files": [],
+    "recorded_at": "1970-01-01T00:00:00Z"
+  },
+  "previous_handoff": null,
+  "status": "active",
+  "started_at": "1970-01-01T00:00:00Z"
+}

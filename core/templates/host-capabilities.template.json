@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "scaffold",
+  "inspected_at": "1970-01-01T00:00:00Z",
+  "inspector": "replace-with-host-inspector-identity",
+  "surfaces": ["Replace with the exact host-visible capability surface inspected."],
+  "figma": {
+    "status": "unknown",
+    "provider": null,
+    "evidence": ["Replace with direct evidence from host capability inspection."]
+  }
+}

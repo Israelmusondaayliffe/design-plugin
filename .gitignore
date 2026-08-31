@@ -1,0 +1,6 @@
+dist/
+corpus/generated/
+site/generated-data/
+__pycache__/
+*.pyc
+scripts/.wave4-payload/

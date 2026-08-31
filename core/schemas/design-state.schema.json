@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-plugin.local/schemas/design-state.schema.json",
+  "title": "Design Project Workflow State",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "plugin",
+    "revision",
+    "workflow",
+    "route",
+    "phase",
+    "status",
+    "phase_before_block",
+    "gates",
+    "artifacts",
+    "active_wave",
+    "repair_cycle",
+    "repair_pass",
+    "repair_attempts",
+    "blockers",
+    "history",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "plugin": {"const": "design"},
+    "revision": {"type": "integer", "minimum": 0},
+    "workflow": {"enum": ["run", "audit"]},
+    "route": {"enum": ["standard", "lightweight_repair"]},
+    "phase": {
+      "enum": [
+        "intake",
+        "interviewing",
+        "understanding_awaiting_approval",
+        "researching",
+        "directions_awaiting_approval",
+        "system_definition",
+        "implementation_plan_awaiting_approval",
+        "building",
+        "rendering",
+        "qa",
+        "repairing",
+        "complete",
+        "blocked"
+      ]
+    },
+    "status": {
+      "enum": ["active", "awaiting_approval", "paused", "blocked", "complete"]
+    },
+    "phase_before_block": {
+      "anyOf": [
+        {"type": "null"},
+        {
+          "enum": [
+            "intake",
+            "interviewing",
+            "understanding_awaiting_approval",
+            "researching",
+            "directions_awaiting_approval",
+            "system_definition",
+            "implementation_plan_awaiting_approval",
+            "building",
+            "rendering",
+            "qa",
+            "repairing",
+            "complete"
+          ]
+        }
+      ]
+    },
+    "gates": {
+      "type": "object",
+      "required": ["understanding", "direction", "repository_changes"],
+      "properties": {
+        "understanding": {
+          "anyOf": [
+            {"type": "null"},
+            {"$ref": "approval-record.schema.json"}
+          ]
+        },
+        "direction": {
+          "anyOf": [
+            {"type": "null"},
+            {"$ref": "approval-record.schema.json"}
+          ]
+        },
+        "repository_changes": {
+          "anyOf": [
+            {"type": "null"},
+            {"$ref": "approval-record.schema.json"}
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "artifacts": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "minLength": 1,
+        "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "active_wave": {
+      "anyOf": [
+        {"type": "null"},
+        {"type": "integer", "minimum": 1}
+      ]
+    },
+    "repair_cycle": {"type": "integer", "minimum": 0},
+    "repair_pass": {"type": "integer", "minimum": 0, "maximum": 3},
+    "repair_attempts": {
+      "type": "object",
+      "propertyNames": {"type": "string", "minLength": 1},
+      "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 3}
+    },
+    "blockers": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/blocker"}
+    },
+    "history": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/historyEvent"}
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "$defs": {
+    "blocker": {
+      "type": "object",
+      "required": ["reason", "created_at", "phase", "resolved_at", "resolution"],
+      "properties": {
+        "reason": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "format": "date-time"},
+        "phase": {
+          "enum": [
+            "intake",
+            "interviewing",
+            "understanding_awaiting_approval",
+            "researching",
+            "directions_awaiting_approval",
+            "system_definition",
+            "implementation_plan_awaiting_approval",
+            "building",
+            "rendering",
+            "qa",
+            "repairing",
+            "complete"
+          ]
+        },
+        "resolved_at": {
+          "anyOf": [
+            {"type": "null"},
+            {"type": "string", "format": "date-time"}
+          ]
+        },
+        "resolution": {
+          "anyOf": [
+            {"type": "null"},
+            {"type": "string", "minLength": 1}
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "historyEvent": {
+      "type": "object",
+      "required": ["event", "at"],
+      "properties": {
+        "event": {"type": "string", "minLength": 1},
+        "at": {"type": "string", "format": "date-time"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"phase": {"const": "blocked"}}, "required": ["phase"]},
+      "then": {
+        "properties": {
+          "status": {"const": "blocked"},
+          "phase_before_block": {"not": {"type": "null"}}
+        }
+      },
+      "else": {"properties": {"phase_before_block": {"type": "null"}}}
+    },
+    {
+      "if": {"properties": {"phase": {"const": "complete"}}, "required": ["phase"]},
+      "then": {"properties": {"status": {"const": "complete"}}}
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "enum": [
+              "understanding_awaiting_approval",
+              "directions_awaiting_approval",
+              "implementation_plan_awaiting_approval"
+            ]
+          }
+        },
+        "required": ["phase"]
+      },
+      "then": {"properties": {"status": {"enum": ["awaiting_approval", "paused"]}}}
+    },
+    {
+      "if": {"properties": {"phase": {"const": "building"}}, "required": ["phase"]},
+      "then": {"properties": {"active_wave": {"type": "integer", "minimum": 1}}}
+    }
+  ],
+  "additionalProperties": false
+}

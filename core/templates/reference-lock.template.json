@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "approved_understanding_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "approved_direction": {
+    "id": "direction-id",
+    "decision_artifact": ".design/directions/decision.md",
+    "decision_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "direction_set_artifact": ".design/directions/direction-set.json",
+    "direction_set_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "dominant_reference": {
+    "slug": "primary-reference",
+    "responsibility": "dominant visual foundation"
+  },
+  "supporting_references": [
+    {
+      "slug": "supporting-reference",
+      "responsibility": "mobile behavior",
+      "scope": "Describe the exact bounded behavior this source contributes."
+    }
+  ],
+  "frozen_visual_traits": [
+    "Name the first defining relationship that must survive.",
+    "Name the second defining relationship that must survive.",
+    "Name the third defining relationship that must survive."
+  ],
+  "allowed_variation": [
+    "Name one literal detail that may adapt without changing its role."
+  ],
+  "prohibited_drift": [
+    "Name the first unacceptable generic substitution.",
+    "Name the second unacceptable generic substitution.",
+    "Name the third unacceptable generic substitution."
+  ],
+  "evidence_links": [
+    {"slug": "primary-reference", "evidence_id": "E1"}
+  ],
+  "assumptions": [],
+  "confidence": "medium"
+}

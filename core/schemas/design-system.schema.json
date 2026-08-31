@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/design-system.schema.json",
+  "title": "Design System Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "approved_understanding_sha256",
+    "approved_direction_sha256",
+    "reference_lock_sha256",
+    "ux_definition_sha256",
+    "sections"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "approved_understanding_sha256": {"$ref": "#/$defs/hash"},
+    "approved_direction_sha256": {"$ref": "#/$defs/hash"},
+    "reference_lock_sha256": {"$ref": "#/$defs/hash"},
+    "ux_definition_sha256": {"$ref": "#/$defs/hash"},
+    "sections": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "Provenance and Confidence",
+        "Approved Shared Understanding",
+        "Design North Star",
+        "Product and User Principles",
+        "Reference Foundation",
+        "Reference Lock",
+        "Information Architecture",
+        "Screens and User Flows",
+        "Layout and Grid",
+        "Responsive Strategy",
+        "Typography",
+        "Color and Semantic Roles",
+        "Spacing and Density",
+        "Surfaces, Borders, Radius, and Elevation",
+        "Components and States",
+        "Navigation",
+        "Forms and Validation",
+        "Icons",
+        "Imagery and Media",
+        "Motion and Feedback",
+        "Accessibility",
+        "Content and Interface Copy",
+        "Mobile-Specific Rules",
+        "Figma Handoff Rules",
+        "Implementation Rules",
+        "Explicit Do Rules",
+        "Explicit Do-Not Rules",
+        "Decision Ledger",
+        "Known Deviations",
+        "Unknowns and Future Decisions"
+      ],
+      "patternProperties": {".*": {"$ref": "#/$defs/section"}}
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rules": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "not_applicable_reason": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      },
+      "oneOf": [
+        {"required": ["rules"], "not": {"required": ["not_applicable_reason"]}},
+        {"required": ["not_applicable_reason"], "not": {"required": ["rules"]}}
+      ]
+    }
+  }
+}

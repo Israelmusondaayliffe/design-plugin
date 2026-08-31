@@ -1,0 +1,127 @@
+{
+  "wave": 6,
+  "name": "Reference lock, UX, DESIGN.md, tokens, and planning",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "02be50a9f9faa068a1e07f63ff4cb8ed29070b12",
+  "qualified_head": "c6e937730909add7a24be3bf6ab60d3c10f7feb6",
+  "qualified_at": "2026-08-30T23:36:55Z",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33342232601,
+    "public_locator": null,
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "job_id": 99339869014,
+        "conclusion": "success",
+        "tests": 102
+      },
+      {
+        "name": "Python 3.13",
+        "job_id": 99339869051,
+        "conclusion": "success",
+        "tests": 102
+      }
+    ],
+    "corpus_cases": 12,
+    "catalog_generation": "pass",
+    "host_builds": "pass",
+    "shared_core_parity": "pass",
+    "bundled_entrypoints": "pass"
+  },
+  "packages": {
+    "version": "0.1.0-dev.6",
+    "openai_bytes": 252490,
+    "claude_bytes": 252051,
+    "shared_files": 68,
+    "shared_files_identical": true,
+    "generated_python_bytecode_bundled": false,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "implemented": {
+    "skills": [
+      "core/skills/lock/SKILL.md",
+      "core/skills/ux/SKILL.md",
+      "core/skills/design-md/SKILL.md",
+      "core/skills/tokens/SKILL.md",
+      "core/skills/plan/SKILL.md"
+    ],
+    "runtime": "core/scripts/design_system.py",
+    "schemas": [
+      "core/schemas/reference-lock.schema.json",
+      "core/schemas/ux-definition.schema.json",
+      "core/schemas/design-system.schema.json",
+      "core/schemas/implementation-plan.schema.json"
+    ],
+    "templates": [
+      "core/templates/reference-lock.template.json",
+      "core/templates/ux-definition.template.json",
+      "core/templates/design-system.template.json",
+      "core/templates/tokens.template.json",
+      "core/templates/implementation-plan.template.json"
+    ],
+    "reference": "core/references/system-definition.md",
+    "tests": "tests/test_wave6_system_definition.py"
+  },
+  "binding_chain": [
+    "approved understanding SHA-256",
+    "approved direction decision and direction-set SHA-256",
+    "reference lock SHA-256",
+    "UX definition SHA-256",
+    "structured design-system SHA-256 bindings",
+    "compiled DESIGN.md SHA-256",
+    "structured and compiled implementation plan"
+  ],
+  "verified_behaviors": [
+    "reference lock preserves one dominant visual foundation and no more than three narrow supporting responsibilities",
+    "changed direction and direction-set artifacts are rejected by hash",
+    "reference lock and direction set must use the same approved understanding",
+    "UX requires complete architecture, screens, flows, states, responsive rules, mobile task model, accessibility, and Figma handoff scope",
+    "DESIGN.md contains exactly 30 canonical sections in the approved order",
+    "DESIGN.md and plan.md are deterministic compiled outputs and stale copies fail aggregate verification",
+    "token source uses the stable DTCG 2025.10 schema URL",
+    "semantic tokens require role descriptions",
+    "unknown aliases, alias cycles, and alias type changes are rejected",
+    "Display P3, OKLCH, and other supported DTCG color spaces retain declared color-space meaning in CSS",
+    "existing token handling requires a new-project, preserve, or map strategy",
+    "token compilation writes canonical JSON, CSS, Tailwind, Figma, mobile, and projection-report outputs",
+    "px mobile projections are marked high confidence and rem projections remain estimated until root-size verification",
+    "implementation waves use earlier-only dependencies and relative file scopes",
+    "external actions retain separate-required approval",
+    "repository_change_gate accepts only awaiting_approval"
+  ],
+  "standard": {
+    "name": "Design Tokens Community Group Format",
+    "version": "2025.10",
+    "schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+    "validation_note": "The runtime is standard-library only and validates the primitive token forms it projects. Unsupported composite CSS projections are recorded instead of silently omitted."
+  },
+  "quality": {
+    "unslop_route": "validation",
+    "human_facing_skill_and_reference_files_checked": 7,
+    "harness_text_style_gate": "pass",
+    "plan_compliance_review": "pass"
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "deployments": 0,
+    "publications": 0,
+    "image_generations": 0,
+    "paid_services_used": 0
+  },
+  "exit_gate": {
+    "reference_lock": "pass",
+    "ux_definition": "pass",
+    "canonical_design_md": "pass",
+    "stable_dtcg_source": "pass",
+    "token_projections": "pass",
+    "bounded_implementation_plan": "pass",
+    "repository_change_gate_closed": "pass",
+    "cross_host_runtime_parity": "pass"
+  }
+}

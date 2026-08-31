@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "cycle_number": 1,
+  "pass_number": 1,
+  "status": "applied",
+  "repair_plan_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "changed_files": [],
+  "completed_actions": ["Copy the exact action from the active repair plan."],
+  "completed_checks": [
+    {"check": "Copy the exact check from the active repair plan.", "status": "pass", "evidence": "Record the current check evidence."}
+  ],
+  "target_results": [
+    {"finding_id": "replace-with-finding-id", "status": "implemented-awaiting-rerender", "evidence": "Record the implementation evidence. Do not claim resolution before rerendered QA."}
+  ],
+  "ended_at": "1970-01-01T00:00:00Z"
+}

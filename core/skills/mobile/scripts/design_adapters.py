@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+"""Run the shared Design adapter validator from the Mobile skill surface."""
+from pathlib import Path
+import runpy
+
+TARGET = Path(__file__).resolve().parents[3] / "scripts" / "design_adapters.py"
+runpy.run_path(str(TARGET), run_name="__main__")

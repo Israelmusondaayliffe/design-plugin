@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/ux-definition.schema.json",
+  "title": "Design UX Definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "reference_lock_sha256",
+    "information_architecture",
+    "screens",
+    "flows",
+    "states",
+    "responsive_strategy",
+    "mobile_task_model",
+    "accessibility",
+    "figma_handoff"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "reference_lock_sha256": {"$ref": "#/$defs/hash"},
+    "information_architecture": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "purpose", "parent_id"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "label": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 5},
+          "parent_id": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "screens": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "purpose", "primary_tasks", "permissions", "responsive_behavior"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 5},
+          "primary_tasks": {"$ref": "#/$defs/oneOrMoreStrings"},
+          "permissions": {"$ref": "#/$defs/oneOrMoreStrings"},
+          "responsive_behavior": {"type": "string", "minLength": 5}
+        }
+      }
+    },
+    "flows": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "entry_screen", "steps", "success_outcome", "error_paths"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "entry_screen": {"type": "string", "minLength": 1},
+          "steps": {"$ref": "#/$defs/oneOrMoreStrings"},
+          "success_outcome": {"type": "string", "minLength": 5},
+          "error_paths": {"$ref": "#/$defs/oneOrMoreStrings"}
+        }
+      }
+    },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["screen_id", "default", "loading", "empty", "error", "permission_denied"],
+        "properties": {
+          "screen_id": {"type": "string", "minLength": 1},
+          "default": {"type": "string", "minLength": 4},
+          "loading": {"type": "string", "minLength": 4},
+          "empty": {"type": "string", "minLength": 4},
+          "error": {"type": "string", "minLength": 4},
+          "permission_denied": {"type": "string", "minLength": 4}
+        }
+      }
+    },
+    "responsive_strategy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "breakpoints", "content_priority", "adaptation_rules"],
+      "properties": {
+        "mode": {"enum": ["responsive-web", "cross-platform", "native-mobile", "multi-surface"]},
+        "breakpoints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "min_width_px"],
+            "properties": {
+              "name": {"type": "string", "minLength": 1},
+              "min_width_px": {"type": "integer", "minimum": 0}
+            }
+          }
+        },
+        "content_priority": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "adaptation_rules": {"$ref": "#/$defs/oneOrMoreStrings"}
+      }
+    },
+    "mobile_task_model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_tasks", "deferred_tasks", "device_capabilities", "offline_requirements", "navigation_model"],
+      "properties": {
+        "primary_tasks": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "deferred_tasks": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "device_capabilities": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "offline_requirements": {"type": "string", "minLength": 3},
+        "navigation_model": {"type": "string", "minLength": 3}
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target", "requirements"],
+      "properties": {
+        "target": {"enum": ["WCAG 2.2 AA", "WCAG 2.2 AAA", "platform-native"]},
+        "requirements": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "figma_handoff": {
+      "type": "object",
+      "required": ["mode"],
+      "properties": {
+        "mode": {"enum": ["not-applicable", "specification", "direct-when-authorized"]},
+        "reason": {"type": "string", "minLength": 5},
+        "frames": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "components": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "variables": {"$ref": "#/$defs/oneOrMoreStrings"},
+        "interactions": {"$ref": "#/$defs/oneOrMoreStrings"}
+      }
+    }
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
+    "oneOrMoreStrings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
+  }
+}

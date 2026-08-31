@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "qa_report": {"path": ".design/qa/reports/cycle-0.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "overall": "blocked",
+  "dimensions": [
+    {"category": "visual", "status": "pass", "evidence_checks": ["replace-with-check-id"], "notes": "Replace with evidence-based notes."}
+  ],
+  "blockers": ["Remove only after every applicable dimension passes."],
+  "limitations": [],
+  "owner": "replace-with-owner",
+  "created_at": "1970-01-01T00:00:00Z"
+}

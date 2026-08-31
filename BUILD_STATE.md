@@ -1,0 +1,303 @@
+# Design Plugin Build State
+
+Last updated: 2026-08-30
+Approved plan: Design Plugin Build Plan v1.0
+Canonical development repository: `Israelmusondaayliffe/design-plugin`
+Canonical development path: repository root
+Branch: `main`
+Historical pre-migration source: Retained in a private archive outside the public project.
+
+Historical commit IDs and CI run IDs in this ledger are private-archive evidence with no public locator. Fresh public qualification begins with Wave 10.
+
+## Current phase
+
+Checkpoint after Wave 9. Waves 0 through 9 are qualified. Wave 10 is next.
+
+## Latest qualified runtime candidate
+
+- Candidate commit: `a488da4694dedfe536ec1fd66f914a3eaa3c63b7`
+- CI workflow: `Design Plugin CI`
+- CI run: `33350739053`
+- Python 3.11 job: Pass.
+- Python 3.13 job: Pass.
+- Regression tests: 193 passed on each Python version.
+- Corpus validation: Pass, 12 cases.
+- Catalog generation: Pass.
+- OpenAI package: 619,496 bytes.
+- Claude package: 619,057 bytes.
+- Shared files: 123, byte-identical.
+- Generated Python bytecode bundled: No.
+- MCP bundled: No.
+- Full corpus bundled: No.
+- Site bundled: No.
+- User-machine installations: 0.
+- Deployment or publishing: None.
+
+This candidate adds the evidence-bound Wave 9 render, QA, repair, audit, and proposal-only learning runtime. It does not claim that schema validation proves browser provenance, visual inspection, accessibility behavior, or reviewer competence. Those claims require the project-local evidence the runtime validates. Prior-wave authority repairs remain passing.
+
+The private-archive repository workflow ran the complete 193-test suite, corpus checks, both host builds, parity checks, and the pre-Wave 9 bundled entrypoint set. Independent local checks compiled and smoke-tested the Wave 9 runtime and all quality launchers in source and both distributions. The Wave 9 evidence commit records those results. The user approved the token change, and GitHub confirmed the `workflow` scope was active.
+
+## Repository migration result
+
+PASS. The complete Design project lives in its own GitHub repository.
+
+- Destination: `Israelmusondaayliffe/design-plugin`.
+- Visibility: Public publication pending Wave 10 qualification.
+- Canonical branch: `main`.
+- Initial migrated commit: `89f9e00894b4f68f774af5ae9675cfb4ec8b5225`.
+- Historical source locators: Retained only in the private archive.
+- Initial migration tree parity: Pass.
+- Root-path CI: Pass.
+- Full project moved: `core/`, `corpus/`, `hosts/`, `requirements/`, `review/`, `scripts/`, `site/`, tests, licenses, notices, plan, and state.
+- Opaque historical staging payload: Retained only in the private archive and excluded from the public project.
+- Temporary source repository changed: No.
+- Evidence: `review/repository-migration-evidence.json`.
+
+## Wave 0 result
+
+PASS. Provenance and requirement baseline is complete.
+
+- Approved plan persisted in Notion.
+- R01-R22 encoded.
+- Refero upstream pinned to `1d324d5be0492352e2c8702f70a4f9c386c2345f`.
+- Refero MIT attribution recorded.
+- Refero MCP, account dependency, branding dependency, and bulk catalog copying excluded.
+
+## Wave 1 result
+
+PASS. Repository and packaging generator is complete.
+
+- One canonical shared core with host-only overlays.
+- Deterministic standard-library package builder and verifier.
+- Host manifests isolated.
+- Shared files byte-identical across hosts.
+- 1 MiB package ceiling enforced.
+- MCP and full corpus excluded from distributions.
+
+Current packaging after Wave 8:
+- OpenAI: 445,826 bytes.
+- Claude: 445,387 bytes.
+- Shared files: 94.
+- Python bytecode and cache directories: Excluded.
+
+## Wave 2 result
+
+PASS. Orchestrator state foundation and resume system are complete.
+
+- Design, Design Audit, and Design Resume routes.
+- Durable `.design/state.json`.
+- Canonical artifact-bound understanding, direction, and repository approvals with user-supplied accepted phrases.
+- Direction approval also binds the exact direction-set SHA-256.
+- Approval staleness and downstream invalidation.
+- Pause, block, unblock, resume, and corruption rejection.
+- Audit repair approval boundary.
+- Maximum three repair passes.
+
+## Wave 3 result
+
+PASS. Grilling and environment inspection are complete.
+
+- Environment inspection before avoidable interview questions.
+- Local read-only probe with no network or software installation.
+- Six interview rounds maximum.
+- 3-6 questions per ordinary round.
+- High-impact questions one at a time.
+- Bounded assumption ledger.
+- Explicit `Approved` / `This understanding is approved` handling.
+- Acknowledged-risk skip path.
+- Plain-language prerequisite proposal and separate installation permission.
+
+## Wave 4 result
+
+PASS. Corpus schema and Site engineering seed are complete.
+
+Implemented:
+- `corpus/source-policy/SOURCE_POLICY.md`.
+- Canonical metadata, evidence, token, and review schemas.
+- Design taxonomy.
+- Standard-library corpus validator.
+- Standard-library progressive catalog generator.
+- Twelve original seed case studies:
+  - Adobe Spectrum 2
+  - Apple HIG
+  - Atlassian Design System
+  - GitHub Primer
+  - GOV.UK Design System
+  - IBM Carbon
+  - Material 3
+  - Microsoft Fluent 2
+  - Porsche Design System
+  - Salesforce SLDS 2
+  - Shopify Polaris
+  - USWDS
+- Each case contains original `DESIGN.md`, metadata, claim-level evidence, normalized roles, source notes, editorial review state, and original preview specification.
+- Refero domains are rejected as case sources by the validator.
+- Source screenshots, fonts, images, PDFs, and other binary source assets are not stored in canonical seed records.
+- Compact local manifest with 12 routing entries and 12/60/150/300 milestones.
+- Progressive retrieval sequence: manifest -> category index -> ranked summaries -> finalist `DESIGN.md` -> validation evidence/tokens.
+- Offline fallback that continues with bundled craft guidance, user references, and available public research while explicitly lowering confidence.
+- Dependency-free static reference Site foundation with search, archetype/platform filters, and comparison of up to five cases.
+- Site remains undeployed and unpublished.
+
+Wave 4 qualification:
+- Safety-branch candidate `84a242f674811969f3b1a45d9669dca4ae183ac5` passed first.
+- Qualified work was merged into canonical without force-updating.
+- A separate additive staging stream was retained in the private archive and excluded from the public project.
+- Canonical candidate `7666c1dc1b35f4090ee91984110dd0297a51839a` then passed CI run `33336630872`.
+- Corpus validator: 12 cases, pass.
+- Catalog generator: pass.
+- Full suite: 60 tests on Python 3.11 and 60 on Python 3.13, pass.
+- Both host builds and shared-core parity: pass.
+- MCP bundled: No.
+- Full corpus bundled: No.
+- Site bundled: No.
+
+Wave 4 exit gate:
+- Canonical case schemas: Pass.
+- Source and publication policy: Pass.
+- Design taxonomy: Pass.
+- 12 engineering seed cases: Pass.
+- Catalog generation and validation: Pass.
+- Progressive remote retrieval structure: Pass.
+- Small local catalog manifest: Pass.
+- Reference Site search and comparison foundation: Pass.
+- Offline fallback: Pass.
+
+## Wave 5 result
+
+PASS. Research, forensics, and directions are complete.
+
+- Research plans bind to the approved shared-understanding SHA-256.
+- Substantial, repair, and audit research modes have bounded targets.
+- Evidence uses the approved truth classes: observed, measured, inferred, estimated, recommended, and unknown.
+- Candidate scoring weights project fit highest and keeps hard evidence and craft floors.
+- Forensic dossiers cover the nine required design dimensions.
+- Color, media, and density roles record preserve, adapt, or reject decisions.
+- Substantial projects require 3 to 5 directions with one dominant primary reference per direction.
+- Secondary references have narrow named jobs.
+- Direction pairs must differ across at least four of nine dimensions.
+- Directions include traceable evidence, forbidden drift, and rejected nearby alternatives.
+- Progressive disclosure separates decision, expert, and evidence layers.
+- Audit mode produces no directions unless redesign is separately authorized.
+
+Historical Wave 5 qualification:
+- Source runtime commit: `d9ef0863955d4d79055428ef1764d969c61e9b54`.
+- Source evidence commit: `fac32c86c69d5b31e5c4e53280b5e7ce97241253`.
+- Source CI run: `33339143756`.
+- Tests: 76 on Python 3.11 and 76 on Python 3.13, pass.
+- Evidence: `review/wave-5-research-evidence.json`.
+
+Post-migration qualification:
+- Candidate commit: `12b7107580810f5bcd414d89ac18bd981aa409fe`.
+- CI run: `33341295869`.
+- Tests: 77 on Python 3.11 and 77 on Python 3.13, pass.
+- Both host builds, shared-core parity, corpus validation, catalog generation, and bundled runtime entrypoints: Pass.
+- MCP, full corpus, Site, screenshots, fonts, renders, and generated Python bytecode in packages: None.
+
+## Wave 6 result
+
+PASS. Reference lock, UX definition, canonical `DESIGN.md`, semantic tokens, and implementation planning are complete.
+
+- Five internal skills: Lock, UX, Design MD, Tokens, and Plan.
+- Standard-library `design_system.py` runtime and five portable skill launchers.
+- Reference lock binds the approved understanding, decision, direction set, dominant source, and bounded supporting roles by SHA-256.
+- UX definition requires complete information architecture, screens, flows, states, responsive behavior, mobile task priorities, accessibility, and explicit Figma handoff scope.
+- Structured design-system source compiles deterministic root `DESIGN.md` with 30 canonical sections and exact artifact bindings.
+- Stable DTCG 2025.10 token source validates semantic descriptions, aliases, cycles, types, and existing-token preserve or map strategy.
+- Token projections include canonical JSON, CSS variables, Tailwind theme values, Figma variable specification, mobile values, and a projection report.
+- Display P3 and other DTCG color spaces retain their color-space meaning instead of being flattened to sRGB.
+- Structured implementation plans define bounded waves, exact relative file scope, render targets, tests, completion criteria, rollback, risk, and separately approved external actions.
+- Plan validation accepts only `repository_change_gate: awaiting_approval` and verifies current compiled `plan.md`.
+- Research and system verification use current state-gate evidence instead of accepting free-standing digests when Design state exists.
+- The post-audit candidate passed CI run `33346612875` with 162 tests on Python 3.11 and Python 3.13.
+- Original Wave 6 host builds, 68-file shared-core parity, corpus validation, catalog generation, and bundled runtime entrypoints: Pass.
+- Evidence: `review/wave-6-system-definition-evidence.json`.
+
+## Wave 7 result
+
+PASS. Imagery, Figma, and mobile adapters are complete.
+
+- Three internal skills: Imagery, Figma, and Mobile.
+- Standard-library `design_adapters.py` runtime and three portable skill launchers.
+- Imagery planning binds the approved direction, reference lock, and `DESIGN.md` by SHA-256.
+- Medium selection distinguishes code-native graphics, screenshots, standard icons, charts, and bitmap generation.
+- Prompt-only work has an output ceiling of zero and cannot claim that assets were generated.
+- Direction, production, and repair batches require a purpose-specific approval state, exact output ceiling, complete canonical request hash, and byte-exact approval note.
+- Any prompt, output target, source, reference, asset lock, scope, purpose, or ceiling change makes imagery approval stale.
+- Asset locks cover composition, subject, materials, color, lighting, visible text, frozen properties, allowed variation, prohibited drift, and acceptance criteria.
+- Series work requires fixed shared visual DNA, batch size, naming, variation, and acceptance rules.
+- Targeted edits compile `LOCK`, `CHANGE`, and `VERIFY` and stop after three passes.
+- Figma capability is detected rather than assumed, and the plugin bundles no Figma MCP.
+- The Figma fallback is a structurally validated handoff scaffold. It is not claimed complete or rebuild-ready without separate project-specific coverage proof.
+- Direct Figma actions require an authorized connection, exact target file, structured action list, per-action destructive flags, aggregate destructive classification, and a byte-exact approval bound to the complete canonical request.
+- Mobile routing explains responsive web, cross-platform, and native options against nine required project factors.
+- Mobile routing chooses the simplest option satisfying every hard requirement and returns to grilling when none is viable.
+- Wave 7 aggregate verification first validates the complete current Wave 6 chain.
+- Post-audit CI run `33346612875` passed 162 tests on Python 3.11 and Python 3.13.
+- Both host builds, 94-file shared-core parity, corpus validation, catalog generation, and all bundled runtime entrypoints: Pass.
+- Evidence: `review/wave-7-visual-adapters-evidence.json`.
+
+## Wave 8 result
+
+PASS. The controlled build-wave engine is complete.
+
+- Internal Build Wave skill, standard-library runtime, schemas, templates, and reference contract.
+- One to seven waves are derived from the exact approved structured implementation plan.
+- Each prepared manifest is immutable, state-bound, plan-bound, scope-bounded, and dependency-checked.
+- The engine distinguishes product scope from its own control artifacts.
+- Changed product files require current SHA-256 evidence; deleted files use an explicit deleted state.
+- Every planned test, completion criterion, and render target must reach an allowed terminal result.
+- Readable `handoff.md`, structured handoff, verification receipt, and state all bind each other by hash.
+- Completed dependency product files and readable handoffs are rechecked before a dependent wave starts.
+- Implementation worker, independent verifier, and Unslop reviewer must be three distinct identities, and every review must pass.
+- The state controller re-runs verification before closing a wave and alone advances to the next wave or rendering.
+- Direct `building` to `rendering` transitions are forbidden.
+- CI run `33346612875` passed 162 tests on Python 3.11 and Python 3.13.
+- Both host builds, 94-file shared-core parity, corpus validation, catalog generation, and all bundled runtime entrypoints: Pass.
+- Evidence: `review/wave-8-build-waves-evidence.json`.
+
+## Wave 9 result
+
+PASS. Source, CI, Unslop, and independent integrated-ledger verification are complete.
+
+- Render plans bind the approved implementation plan, UX definition, exact quality targets, routes, states, viewports, themes, reduced-motion settings, and required status.
+- Render evidence validates local relative paths, SHA-256 hashes, standard non-interlaced PNG structure, CRCs, decodable image payloads, and exact dimensions.
+- Passing records cannot disclaim the required observation. Validation does not substitute for actual browser capture or inspection.
+- QA covers typography, spacing, color, media, hierarchy, responsive behavior, accessibility, states, overflow, touch, motion, interaction, content, and applicable code quality.
+- Accessibility evidence requires eight inner checks, aggregate consistency, measured evidence, and reasons for every not-applicable result.
+- Findings preserve audit category, truth class, confidence, target, evidence, expected result, and P0 to P3 severity.
+- Repairs bind exact finding IDs, approved repository scope, current authority, and exact rerender target IDs.
+- The fourth repair attempt is rejected before state or file mutation. Repair cannot delete files or widen scope.
+- Generic phase transitions cannot bypass render, QA, repair, deviation, or scorecard evidence.
+- Audit remains read-only until a bounded repair plan receives current repository-change approval.
+- Learning is proposal-only, requires distinct evidence from at least two projects plus a strict privacy review, and has no activation command.
+- CI run `33350739053` passed 193 tests on Python 3.11 and Python 3.13.
+- Both host builds, 123-file shared-core parity, corpus validation, catalog generation, and the pre-Wave 9 bundled entrypoint set in CI: Pass.
+- Wave 9 runtime and all quality launchers in source and both distributions: Independent local compile and smoke test pass.
+- Source verifier runtime attacks: Pass. Integrated ledger verdict: Pass.
+- Fresh exact-candidate Unslop review: Pass.
+- Evidence: `review/wave-9-quality-loop-evidence.json`.
+
+## Next planned wave
+
+Wave 10: Host packaging and internal qualification.
+
+Wave 10 must finalize host manifests, automatic activation, internal skill visibility, install and removal guidance, cross-host behavior, bloat, and plan compliance. Live installation still requires separate approval.
+
+## Recovery instruction
+
+After any context loss, read in this order:
+1. Notion `Design Plugin: Build Hub` and `Current Build State & Recovery Ledger`.
+2. Repository `BUILD_STATE.md`.
+3. `PLAN.md`.
+4. `requirements/traceability.yaml`.
+5. `review/repository-migration-evidence.json`.
+6. `review/wave-9-quality-loop-evidence.json`.
+7. `review/wave-8-build-waves-evidence.json`.
+8. `review/wave-7-visual-adapters-evidence.json`.
+9. `review/wave-6-system-definition-evidence.json`.
+10. `review/wave-5-research-evidence.json`.
+11. Current `main` branch state and latest CI result.
+12. The active wave plan and completion criteria.
+
+Do not infer progress from memory. Verify repository evidence and update this file before continuing.

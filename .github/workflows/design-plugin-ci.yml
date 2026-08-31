@@ -1,0 +1,157 @@
+# Qualification candidate: Design Waves 1-10 at repository root
+name: Design Plugin CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-plugin-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qualify:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version:
+          - "3.11"
+          - "3.13"
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPYCACHEPREFIX: /tmp/design-plugin-pycache-${{ matrix.python-version }}
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Compile Python sources
+        run: >-
+          python -m py_compile
+          scripts/build_distributions.py
+          scripts/build_installable_packages.py
+          scripts/run_isolated_host_checks.py
+          scripts/verify_distributions.py
+          scripts/verify_installable_packages.py
+          core/scripts/design_state.py
+          core/scripts/design_state_base.py
+          core/scripts/design_state_cli.py
+          core/scripts/design_state_commands.py
+          core/scripts/design_state_gates.py
+          core/scripts/design_state_validation.py
+          core/scripts/design_intake.py
+          core/scripts/design_research.py
+          core/scripts/design_system.py
+          core/scripts/design_adapters.py
+          core/scripts/design_build.py
+          core/scripts/design_quality.py
+          core/skills/environment/scripts/design_intake.py
+          core/skills/grill/scripts/design_intake.py
+          core/skills/research/scripts/design_research.py
+          core/skills/forensics/scripts/design_research.py
+          core/skills/directions/scripts/design_research.py
+          core/skills/lock/scripts/design_system.py
+          core/skills/ux/scripts/design_system.py
+          core/skills/design-md/scripts/design_system.py
+          core/skills/tokens/scripts/design_system.py
+          core/skills/plan/scripts/design_system.py
+          core/skills/imagery/scripts/design_adapters.py
+          core/skills/figma/scripts/design_adapters.py
+          core/skills/mobile/scripts/design_adapters.py
+          core/skills/build-wave/scripts/design_build.py
+          core/skills/render/scripts/design_quality.py
+          core/skills/qa/scripts/design_quality.py
+          core/skills/repair/scripts/design_quality.py
+          core/skills/learn/scripts/design_quality.py
+          corpus/scripts/validate_corpus.py
+          corpus/scripts/build_catalog.py
+
+      - name: Validate corpus source records
+        run: python corpus/scripts/validate_corpus.py
+
+      - name: Generate progressive catalog data
+        run: python corpus/scripts/build_catalog.py
+
+      - name: Run regression suite
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Build both host distributions
+        run: python scripts/build_distributions.py
+
+      - name: Verify host isolation and shared-core parity
+        run: python scripts/verify_distributions.py
+
+      - name: Build installable marketplaces and deterministic archives
+        run: python scripts/build_installable_packages.py
+
+      - name: Validate visibility metadata, activation fixtures, filesystem lifecycle simulation, MCP scan, and package size
+        run: python scripts/verify_installable_packages.py
+
+      - name: Verify bundled runtime entrypoints
+        run: |
+          python dist/design-openai/scripts/design_state.py --help
+          python dist/design-claude/scripts/design_state.py --help
+          python dist/design-openai/scripts/design_research.py --help
+          python dist/design-claude/scripts/design_research.py --help
+          python dist/design-openai/scripts/design_system.py --help
+          python dist/design-claude/scripts/design_system.py --help
+          python dist/design-openai/scripts/design_adapters.py --help
+          python dist/design-claude/scripts/design_adapters.py --help
+          python dist/design-openai/scripts/design_build.py --help
+          python dist/design-claude/scripts/design_build.py --help
+          python dist/design-openai/scripts/design_quality.py --help
+          python dist/design-claude/scripts/design_quality.py --help
+          python dist/design-openai/skills/environment/scripts/design_intake.py --help
+          python dist/design-claude/skills/environment/scripts/design_intake.py --help
+          python dist/design-openai/skills/grill/scripts/design_intake.py --help
+          python dist/design-claude/skills/grill/scripts/design_intake.py --help
+          python dist/design-openai/skills/research/scripts/design_research.py --help
+          python dist/design-claude/skills/research/scripts/design_research.py --help
+          python dist/design-openai/skills/forensics/scripts/design_research.py --help
+          python dist/design-claude/skills/forensics/scripts/design_research.py --help
+          python dist/design-openai/skills/directions/scripts/design_research.py --help
+          python dist/design-claude/skills/directions/scripts/design_research.py --help
+          python dist/design-openai/skills/lock/scripts/design_system.py --help
+          python dist/design-claude/skills/lock/scripts/design_system.py --help
+          python dist/design-openai/skills/ux/scripts/design_system.py --help
+          python dist/design-claude/skills/ux/scripts/design_system.py --help
+          python dist/design-openai/skills/design-md/scripts/design_system.py --help
+          python dist/design-claude/skills/design-md/scripts/design_system.py --help
+          python dist/design-openai/skills/tokens/scripts/design_system.py --help
+          python dist/design-claude/skills/tokens/scripts/design_system.py --help
+          python dist/design-openai/skills/plan/scripts/design_system.py --help
+          python dist/design-claude/skills/plan/scripts/design_system.py --help
+          python dist/design-openai/skills/imagery/scripts/design_adapters.py --help
+          python dist/design-claude/skills/imagery/scripts/design_adapters.py --help
+          python dist/design-openai/skills/figma/scripts/design_adapters.py --help
+          python dist/design-claude/skills/figma/scripts/design_adapters.py --help
+          python dist/design-openai/skills/mobile/scripts/design_adapters.py --help
+          python dist/design-claude/skills/mobile/scripts/design_adapters.py --help
+          python dist/design-openai/skills/build-wave/scripts/design_build.py --help
+          python dist/design-claude/skills/build-wave/scripts/design_build.py --help
+          python dist/design-openai/skills/render/scripts/design_quality.py --help
+          python dist/design-claude/skills/render/scripts/design_quality.py --help
+          python dist/design-openai/skills/qa/scripts/design_quality.py --help
+          python dist/design-claude/skills/qa/scripts/design_quality.py --help
+          python dist/design-openai/skills/repair/scripts/design_quality.py --help
+          python dist/design-claude/skills/repair/scripts/design_quality.py --help
+          python dist/design-openai/skills/learn/scripts/design_quality.py --help
+          python dist/design-claude/skills/learn/scripts/design_quality.py --help

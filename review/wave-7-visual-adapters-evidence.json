@@ -1,0 +1,99 @@
+{
+  "wave": 7,
+  "name": "Imagery, Figma, and mobile adapters",
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_runtime_commit": "0d7988d08c569036b0563b958145c086e2bde234",
+  "qualified_head": "0d7988d08c569036b0563b958145c086e2bde234",
+  "qualified_at": "2026-08-31T01:08:24Z",
+  "historical_qualification": {
+    "runtime_commit": "0525d28351d038b8ceea01b0d02640b7b7cfe70f",
+    "head": "ac74b982ef493698198e5c00d98449be7825de55",
+    "ci_run": 33342958324,
+    "tests_per_python": 126,
+    "superseded_reason": "Independent prior-wave review found incomplete approval authority, permissive Wave 6 inputs in the Wave 7 aggregate, and an overstated Figma fallback claim. The current qualification repairs and retests those defects."
+  },
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "run_id": 33346612875,
+    "public_locator": null,
+    "jobs": [
+      {"name": "Python 3.11", "job_id": 99351836391, "conclusion": "success", "tests": 162},
+      {"name": "Python 3.13", "job_id": 99351836540, "conclusion": "success", "tests": 162}
+    ],
+    "corpus_cases": 12,
+    "catalog_generation": "pass",
+    "host_builds": "pass",
+    "shared_core_parity": "pass",
+    "bundled_entrypoints": "pass"
+  },
+  "packages": {
+    "version": "0.1.0-dev.8",
+    "openai_bytes": 445826,
+    "claude_bytes": 445387,
+    "shared_files": 94,
+    "shared_files_identical": true,
+    "generated_python_bytecode_bundled": false,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "site_bundled": false,
+    "size_ceiling_bytes": 1048576
+  },
+  "implemented": {
+    "skills": ["core/skills/imagery/SKILL.md", "core/skills/figma/SKILL.md", "core/skills/mobile/SKILL.md"],
+    "runtime": "core/scripts/design_adapters.py",
+    "schemas": ["core/schemas/imagery-plan.schema.json", "core/schemas/image-edit.schema.json", "core/schemas/figma-handoff.schema.json", "core/schemas/mobile-decision.schema.json"],
+    "templates": ["core/templates/imagery-plan.template.json", "core/templates/image-edit.template.json", "core/templates/figma-handoff.template.json", "core/templates/mobile-decision.template.json"],
+    "reference": "core/references/visual-adapters.md",
+    "tests": "tests/test_wave7_visual_adapters.py"
+  },
+  "post_qualification_repairs": [
+    "state gates require canonical artifacts and user-supplied accepted approval phrases",
+    "direction approval binds the exact direction-set SHA-256",
+    "research and system validators use current state-gate evidence when state exists",
+    "Wave 7 aggregate verification first validates the complete Wave 6 chain",
+    "imagery and image-edit approvals bind a complete canonical request hash and byte-exact approval note",
+    "Figma approvals bind the target file, ordered actions, destructive classification, upstream hashes, full specification, request hash, and byte-exact approval note",
+    "Figma fallback claims are limited to a structurally validated handoff scaffold"
+  ],
+  "verified_behaviors": [
+    "imagery plans bind approved direction, reference lock, and DESIGN.md by SHA-256",
+    "prompt-only work consumes zero image outputs and never claims generation",
+    "prompt, output, source, reference, target, purpose, ceiling, and scope mutations invalidate imagery approval",
+    "recomputing a mutated imagery request hash cannot reuse unchanged approval bytes",
+    "asset and series records preserve lineage, locks, variation, drift, rights, privacy, and acceptance rules",
+    "targeted image edits bind the current source and compile LOCK, CHANGE, and VERIFY sections with a three-pass ceiling",
+    "Figma capability is detected from ready host evidence and no bundled Figma MCP is required",
+    "Figma target, action, specification, and destructive additions invalidate approval",
+    "recomputing a mutated Figma request hash cannot reuse unchanged approval bytes",
+    "Figma fallback output is a structurally validated scaffold and does not claim complete rebuild coverage",
+    "mobile routing uses nine required factors, selects the simplest valid path, and returns to grilling when none qualifies",
+    "the aggregate gate rejects malformed or stale Wave 6 inputs before validating adapters"
+  ],
+  "independent_reviews": {
+    "implementation_workers": ["root", "prior_waves_fixer"],
+    "source_verifier": {"agent": "final_source_verifier", "model": "gpt-5.6-sol", "reasoning_effort": "xhigh", "result": "pass"},
+    "unslop_reviewer": {"agent": "final_unslop", "model": "gpt-5.6-sol", "reasoning_effort": "high", "result": "pass"},
+    "worker_is_verifier": false,
+    "worker_is_unslop_reviewer": false
+  },
+  "external_actions": {
+    "user_machine_installations": 0,
+    "figma_writes": 0,
+    "deployments": 0,
+    "publications": 0,
+    "image_generations": 0,
+    "paid_services_used": 0
+  },
+  "exit_gate": {
+    "imagery_workflow": "pass",
+    "generation_boundary": "pass",
+    "targeted_edit_contract": "pass",
+    "figma_detection_and_structural_fallback": "pass",
+    "figma_external_write_boundary": "pass",
+    "mobile_decision_routing": "pass",
+    "complete_wave6_binding_chain": "pass",
+    "cross_host_runtime_parity": "pass"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/qa-report.schema.json",
+  "title": "Design QA Report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "workflow", "repair_cycle", "repair_pass", "state_binding", "render_evidence", "prior_qa", "repair_plan", "repair_evaluation", "checks", "findings", "summary", "qa_owner", "created_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "workflow": {"enum": ["run", "audit"]},
+    "repair_cycle": {"type": "integer", "minimum": 0},
+    "repair_pass": {"type": "integer", "minimum": 0, "maximum": 3},
+    "state_binding": {"$ref": "#/$defs/stateBinding"},
+    "render_evidence": {"$ref": "#/$defs/artifact"},
+    "prior_qa": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/artifact"}]},
+    "repair_plan": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/artifact"}]},
+    "repair_evaluation": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/repairEvaluation"}]},
+    "checks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/check"}},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/finding"}},
+    "summary": {"$ref": "#/$defs/summary"},
+    "qa_owner": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "path": {"type": "string", "minLength": 1, "not": {"pattern": "(^/|(^|/)\\.\\.(/|$)|^[A-Za-z]:)"}},
+    "artifact": {"type": "object", "additionalProperties": false, "required": ["path", "sha256"], "properties": {"path": {"$ref": "#/$defs/path"}, "sha256": {"$ref": "#/$defs/hash"}}},
+    "artifactList": {"type": "array", "items": {"$ref": "#/$defs/artifact"}},
+    "category": {"enum": ["visual", "typography", "spacing", "color-roles", "media", "hierarchy", "responsive", "accessibility", "states", "overflow", "touch", "motion", "interaction", "content", "code", "reference"]},
+    "truthClass": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
+    "confidence": {"enum": ["high", "medium", "low", "unknown"]},
+    "stateBinding": {
+      "type": "object", "additionalProperties": false, "required": ["path", "sha256", "revision", "workflow", "phase", "repair_cycle", "repair_pass", "repair_attempts"],
+      "properties": {
+        "path": {"const": ".design/state.json"}, "sha256": {"$ref": "#/$defs/hash"}, "revision": {"type": "integer", "minimum": 0}, "workflow": {"enum": ["run", "audit"]}, "phase": {"const": "qa"},
+        "repair_cycle": {"type": "integer", "minimum": 0}, "repair_pass": {"type": "integer", "minimum": 0, "maximum": 3}, "repair_attempts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 1, "maximum": 3}}
+      }
+    },
+    "check": {
+      "type": "object", "additionalProperties": false, "required": ["id", "target_id", "category", "status", "method", "truth_class", "confidence", "reference_role", "comparison_dimensions", "evidence", "notes"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "target_id": {"type": "string", "minLength": 1}, "category": {"$ref": "#/$defs/category"}, "status": {"enum": ["pass", "pass-with-deviation", "fail", "blocked"]},
+        "method": {"type": "string", "minLength": 1}, "truth_class": {"$ref": "#/$defs/truthClass"}, "confidence": {"$ref": "#/$defs/confidence"},
+        "reference_role": {"anyOf": [{"type": "null"}, {"enum": ["screen", "flow", "style", "design-system", "baseline"]}]}, "comparison_dimensions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "evidence": {"$ref": "#/$defs/artifactList"}, "notes": {"type": "string", "minLength": 1}
+      }
+    },
+    "finding": {
+      "type": "object", "additionalProperties": false, "required": ["id", "source_check_id", "target_id", "category", "finding_type", "severity", "status", "summary", "observed", "expected", "truth_class", "confidence", "evidence", "repair_scope"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1}, "source_check_id": {"type": "string", "minLength": 1}, "target_id": {"type": "string", "minLength": 1}, "category": {"$ref": "#/$defs/category"},
+        "finding_type": {"enum": ["implementation-defect", "usability-defect", "accessibility-defect", "responsive-defect", "design-system-drift", "content-defect", "evidence-limitation", "subjective-opportunity"]},
+        "severity": {"enum": ["P0", "P1", "P2", "P3"]}, "status": {"enum": ["open", "accepted-deviation"]}, "summary": {"type": "string", "minLength": 1}, "observed": {"type": "string", "minLength": 1}, "expected": {"type": "string", "minLength": 1},
+        "truth_class": {"$ref": "#/$defs/truthClass"}, "confidence": {"$ref": "#/$defs/confidence"}, "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/artifact"}}, "repair_scope": {"type": "array", "items": {"$ref": "#/$defs/path"}}
+      }
+    },
+    "repairEvaluation": {
+      "type": "object", "additionalProperties": false, "required": ["repair_plan", "prior_qa", "results"],
+      "properties": {
+        "repair_plan": {"$ref": "#/$defs/artifact"}, "prior_qa": {"$ref": "#/$defs/artifact"},
+        "results": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["finding_id", "status", "evidence", "notes"], "properties": {"finding_id": {"type": "string", "minLength": 1}, "status": {"enum": ["resolved", "unresolved", "regressed"]}, "evidence": {"$ref": "#/$defs/artifactList"}, "notes": {"type": "string", "minLength": 1}}}}
+      }
+    },
+    "summary": {
+      "type": "object", "additionalProperties": false, "required": ["status", "counts", "blockers", "limitations"],
+      "properties": {
+        "status": {"enum": ["pass", "repair-required", "blocked"]},
+        "counts": {"type": "object", "additionalProperties": false, "required": ["P0", "P1", "P2", "P3", "accepted_deviations", "blocked_checks"], "properties": {"P0": {"type": "integer", "minimum": 0}, "P1": {"type": "integer", "minimum": 0}, "P2": {"type": "integer", "minimum": 0}, "P3": {"type": "integer", "minimum": 0}, "accepted_deviations": {"type": "integer", "minimum": 0}, "blocked_checks": {"type": "integer", "minimum": 0}}},
+        "blockers": {"type": "array", "items": {"type": "string", "minLength": 1}}, "limitations": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}

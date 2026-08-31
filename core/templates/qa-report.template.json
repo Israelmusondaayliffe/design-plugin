@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "workflow": "run",
+  "repair_cycle": 0,
+  "repair_pass": 0,
+  "state_binding": {
+    "path": ".design/state.json",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "revision": 0,
+    "workflow": "run",
+    "phase": "qa",
+    "repair_cycle": 0,
+    "repair_pass": 0,
+    "repair_attempts": {}
+  },
+  "render_evidence": {"path": ".design/renders/evidence.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "prior_qa": null,
+  "repair_plan": null,
+  "repair_evaluation": null,
+  "checks": [
+    {
+      "id": "replace-with-check-id",
+      "target_id": "replace-with-target-id",
+      "category": "visual",
+      "status": "blocked",
+      "method": "replace-with-observation-or-measurement-method",
+      "truth_class": "unknown",
+      "confidence": "unknown",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [],
+      "notes": "Record the missing evidence. Add one check for every applicable target and category. Code checks use target_id project."
+    }
+  ],
+  "findings": [],
+  "summary": {
+    "status": "blocked",
+    "counts": {"P0": 0, "P1": 0, "P2": 0, "P3": 0, "accepted_deviations": 0, "blocked_checks": 1},
+    "blockers": ["Replace with the exact missing evidence."],
+    "limitations": []
+  },
+  "qa_owner": "replace-with-qa-owner",
+  "created_at": "1970-01-01T00:00:00Z"
+}

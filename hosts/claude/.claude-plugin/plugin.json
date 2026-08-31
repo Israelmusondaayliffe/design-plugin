@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "design",
+  "displayName": "Design",
+  "version": "0.1.0-dev.10",
+  "description": "Research-grounded design operating system for shared understanding, visual direction, implementation, rendering, and repair.",
+  "author": {
+    "name": "Israel Ayliffe"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "design",
+    "ui",
+    "ux",
+    "web",
+    "mobile",
+    "figma",
+    "image-generation"
+  ],
+  "skills": "./skills/"
+}

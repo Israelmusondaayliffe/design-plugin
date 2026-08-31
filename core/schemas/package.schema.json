@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-plugin.local/schemas/package.schema.json",
+  "title": "Design Plugin Distribution Receipt",
+  "type": "object",
+  "required": [
+    "plugin",
+    "host",
+    "version",
+    "shared_manifest"
+  ],
+  "properties": {
+    "plugin": {
+      "const": "design"
+    },
+    "host": {
+      "enum": [
+        "openai",
+        "claude"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shared_manifest": {
+      "const": "SHARED_MANIFEST.json"
+    }
+  },
+  "additionalProperties": false
+}

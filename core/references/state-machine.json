@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "awaiting_approval_phases": [
+    "understanding_awaiting_approval",
+    "directions_awaiting_approval",
+    "implementation_plan_awaiting_approval"
+  ],
+  "gate_requirements": {
+    "researching": {
+      "gate": "understanding",
+      "allowed_statuses": [
+        "approved",
+        "skipped"
+      ]
+    },
+    "system_definition": {
+      "gate": "direction",
+      "allowed_statuses": [
+        "approved"
+      ]
+    },
+    "building": {
+      "gate": "repository_changes",
+      "allowed_statuses": [
+        "approved"
+      ]
+    }
+  },
+  "workflow_gate_requirements": {
+    "audit": {
+      "repairing": {
+        "gate": "repository_changes",
+        "allowed_statuses": [
+          "approved"
+        ]
+      }
+    }
+  },
+  "gate_recording_phases": {
+    "understanding": "understanding_awaiting_approval",
+    "direction": "directions_awaiting_approval",
+    "repository_changes": "implementation_plan_awaiting_approval"
+  },
+  "evidence_bound_transitions": {
+    "rendering->qa": "accept-renders",
+    "qa->repairing": "begin-repair",
+    "repairing->rendering": "complete-repair",
+    "qa->complete": "complete-quality"
+  },
+  "transitions": {
+    "run": {
+      "intake": [
+        "interviewing"
+      ],
+      "interviewing": [
+        "understanding_awaiting_approval"
+      ],
+      "understanding_awaiting_approval": [
+        "researching"
+      ],
+      "researching": [
+        "directions_awaiting_approval"
+      ],
+      "directions_awaiting_approval": [
+        "system_definition"
+      ],
+      "system_definition": [
+        "implementation_plan_awaiting_approval"
+      ],
+      "implementation_plan_awaiting_approval": [
+        "building"
+      ],
+      "building": [],
+      "rendering": [
+        "qa"
+      ],
+      "qa": [
+        "repairing",
+        "complete"
+      ],
+      "repairing": [
+        "rendering"
+      ],
+      "complete": [],
+      "blocked": []
+    },
+    "audit": {
+      "intake": [
+        "interviewing"
+      ],
+      "interviewing": [
+        "understanding_awaiting_approval"
+      ],
+      "understanding_awaiting_approval": [
+        "researching"
+      ],
+      "researching": [
+        "qa"
+      ],
+      "qa": [
+        "implementation_plan_awaiting_approval",
+        "repairing",
+        "complete"
+      ],
+      "implementation_plan_awaiting_approval": [
+        "building"
+      ],
+      "building": [],
+      "rendering": [
+        "qa"
+      ],
+      "repairing": [
+        "rendering"
+      ],
+      "complete": [],
+      "blocked": [],
+      "directions_awaiting_approval": [],
+      "system_definition": []
+    }
+  }
+}

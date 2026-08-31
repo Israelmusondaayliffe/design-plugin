@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "proposal_id": "replace-with-proposal-id",
+  "status": "proposal-only",
+  "source_projects": [
+    {"opaque_id": "project-a", "visibility": "private", "evidence_ref": "evidence-a"},
+    {"opaque_id": "project-b", "visibility": "internal", "evidence_ref": "evidence-b"}
+  ],
+  "observations": [
+    {"source_project_id": "project-a", "statement": "Record a redacted observation from project A."},
+    {"source_project_id": "project-b", "statement": "Record a redacted observation from project B."}
+  ],
+  "evidence": [
+    {"id": "evidence-a", "source_project_id": "project-a", "artifact": {"path": ".design/learning/evidence/project-a.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"}, "summary": "Describe the redacted support from project A."},
+    {"id": "evidence-b", "source_project_id": "project-b", "artifact": {"path": ".design/learning/evidence/project-b.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"}, "summary": "Describe the redacted support from project B."}
+  ],
+  "proposed_rule": "State the narrow, reusable candidate rule without private project facts.",
+  "exceptions": ["State when the candidate rule should not apply."],
+  "risks": ["State how the candidate rule could mislead or overfit."],
+  "conflicting_rules": [],
+  "destination": {"kind": "none", "candidate": "No destination selected before review.", "write_performed": false},
+  "evaluation": ["Describe how the candidate rule will be tested on a separate project."],
+  "privacy_review": {
+    "status": "pass",
+    "reviewer": "replace-with-privacy-reviewer",
+    "redactions": [],
+    "review_artifact": {"path": ".design/learning/reviews/replace-with-proposal-id.json", "sha256": "0000000000000000000000000000000000000000000000000000000000000000"}
+  },
+  "approval": {"status": "pending", "decision_text": null, "decided_at": null},
+  "created_at": "1970-01-01T00:00:00Z"
+}

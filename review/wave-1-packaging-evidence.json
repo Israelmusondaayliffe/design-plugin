@@ -1,0 +1,66 @@
+{
+  "wave": 1,
+  "status": "pass",
+  "evidence_location": "private archive",
+  "public_locator": null,
+  "qualified_candidate": "historical private source candidate",
+  "qualified_at": "2026-08-30T20:25:35Z",
+  "ci": {
+    "workflow": "Design Plugin CI",
+    "public_locator": null,
+    "jobs": [
+      {
+        "name": "Python 3.11",
+        "conclusion": "success"
+      },
+      {
+        "name": "Python 3.13",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "execution_boundary": {
+    "user_machine_installations": 0,
+    "pip_or_npm_installs": 0,
+    "build_and_verification_network_calls": 0,
+    "runtime": "Python standard library",
+    "ci_location": "GitHub-hosted Ubuntu runner"
+  },
+  "commands": [
+    "python -m py_compile <Design Python sources>",
+    "python -m unittest discover -s tests -p test_*.py -v",
+    "python scripts/build_distributions.py",
+    "python scripts/verify_distributions.py",
+    "python dist/design-openai/scripts/design_state.py --help",
+    "python dist/design-claude/scripts/design_state.py --help"
+  ],
+  "results": {
+    "distribution_version": "0.1.0-dev.2",
+    "claude_size_bytes": 120411,
+    "openai_size_bytes": 120850,
+    "shared_files": 29,
+    "shared_files_identical": true,
+    "host_manifests_isolated": true,
+    "state_tool_bundled": true,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "package_size_ceiling_bytes": 1048576,
+    "package_size_ceiling_passed": true,
+    "packaging_regression_tests": 4,
+    "complete_suite_tests": 35,
+    "complete_suite_conclusion": "pass"
+  },
+  "exit_gate": {
+    "two_host_distributions_generated": true,
+    "shared_core_byte_identical": true,
+    "host_files_isolated": true,
+    "forbidden_paths_excluded": true,
+    "runtime_entrypoints_present": true,
+    "deterministic_receipts_verified": true
+  },
+  "deferred": {
+    "publishing_to_live_marketplaces": "Wave 10",
+    "publishing_generated_claude_release": "Wave 10",
+    "installing_on_user_machine": "Requires separate explicit approval"
+  }
+}
