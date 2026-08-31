@@ -1,6 +1,6 @@
 # Plan Compliance Review
 
-Status: Wave 10 packaging and public repository publication passed. R04 and R22 remain partial. Final plugin acceptance remains prohibited until the activation limitation, Wave 11 benchmarks, and later acceptance gates are complete.
+Status: Wave 10 packaging and public repository publication passed. R04 and R22 remain partial. Final plugin acceptance remains prohibited until harness-independent selection, Wave 11 benchmarks, and later acceptance gates are complete.
 
 This file is the acceptance ledger for Design Plugin Build Plan v1.0. Update it only from fresh repository and test evidence.
 
@@ -15,7 +15,7 @@ Public CI evidence: Design Plugin CI run `33353752204`. Python 3.11 and Python 3
 | R01 | Host packaging | `hosts/`, `host-packaging.json`, builders, verifiers, `INSTALL.md`, `README.md` | Wave 1 and Wave 10 packaging suites plus isolated temporary-host qualification | Deterministic host distributions, installable packages, exact guidance, update, parity, fresh-process discovery, and scoped removal pass. No active-user installation was performed. | Pass |
 | R02 | Shared core | `core/`, builder, verifier | Packaging through host-qualification suites | 125 shared files are byte-identical. | Pass |
 | R03 | No Refero runtime dependency | Package boundary, corpus source policy, research runtime, validator | Packaging, corpus, and research suites | No MCP, Refero runtime call, copied Refero corpus, or full corpus is in either package. | Pass |
-| R04 | Activation | Host manifests, visible workflows, activation policy, host parity contract | Packaging, state, intake, and Wave 10 host-qualification tests | Codex prompt input exposed installed routing descriptions and positive and negative probes. Claude reported installed components, but Claude prompt selection was not exercised. No external model inference was called. | Partial |
+| R04 | Activation | Host manifests, visible workflows, activation policy, host parity contract, fail-closed runtime probe | Packaging, state, intake, Wave 10 host qualification, and R04 probe regression tests | Static routing and discovery pass. A 20-case-per-host selection matrix is executable without the active harness, but clean model runs are blocked until a separate preauthenticated Codex home and bare-compatible Claude API-key path are supplied. Codex CLI 0.151 JSONL also lacks an accepted resolved-model field in the current evidence set. Subscription-login canaries receive no acceptance credit. | Partial |
 | R05 | Grilling | `core/skills/grill`, intake runtime and schema | Wave 3 intake suite | Six-round protocol and question rules remain passing. | Pass |
 | R06 | Shared-understanding approval | State controller and approval schemas | Wave 2 plus Wave 3 suites | Canonical artifacts, user-supplied accepted phrases, rejection handling, staleness, direction-set binding, and acknowledged skip pass. | Pass |
 | R07 | Directions | `core/skills/research`, `core/skills/forensics`, `core/skills/directions`, research runtime and schemas | Wave 5 research suite | Traceable research, dossiers, 3 to 5 distinct directions, bounded source roles, and anti-averaging checks pass. | Pass |
@@ -217,14 +217,15 @@ A separate additive write stream appeared while Wave 4 was being authored. The q
 - MCP, full corpus, Site, browser binaries, fonts, screenshots, renders, and bytecode bundled: No.
 - Public root commit, anonymous clone, and public CI: Pass.
 - Public CI run `33353752204` passed 204 tests on Python 3.11 and Python 3.13: Pass.
-- Codex prompt-input routing exposure: Pass.
-- Claude installed component discovery: Pass.
-- Claude prompt selection: Not exercised. R04 remains partial.
-- External model inference: Not called.
+- Codex prompt-input routing exposure: Pass, but model selection remains unproved.
+- Claude installed component discovery: Pass, but model selection remains unproved.
+- Harness-independent runtime selection preflight: Blocked on isolated authentication for both hosts.
+- Nonqualifying Claude method canaries: Excluded from acceptance because they used existing subscription state.
+- Clean qualification model inference: Not called. R04 remains partial.
 - Active-user installation, deployment, release, or tag: None.
 - Wave 11 benchmark evidence: Not complete. R22 remains partial.
-- Next gate: Close the Wave 10 R04 model-selection evidence gap before beginning Wave 11.
-- Evidence: `review/wave-10-host-qualification-evidence.json`.
+- Next gate: Close the Codex model-binding schema gap and pass all 40 harness-independent R04 model-selection runs before beginning Wave 11.
+- Evidence: `review/wave-10-host-qualification-evidence.json` and `review/r04-runtime-selection-preflight.json`.
 
 The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
 

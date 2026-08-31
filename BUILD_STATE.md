@@ -11,7 +11,7 @@ Historical commit IDs and CI run IDs in this ledger are private-archive evidence
 
 ## Current phase
 
-Checkpoint after Wave 10 isolated host qualification and public repository publication. Packaging, guidance, parity, bloat, and isolated lifecycle checks passed. R04 remains partial because Claude prompt selection was not exercised. R22 remains partial until the Wave 11 benchmarks and later acceptance gates pass.
+Checkpoint after Wave 10 isolated host qualification and public repository publication. Packaging, guidance, parity, bloat, and isolated lifecycle checks passed. R04 remains partial because neither host has harness-independent model-selection proof. R22 remains partial until R04, the Wave 11 benchmarks, and later acceptance gates pass.
 
 ## Latest qualified runtime candidate
 
@@ -37,7 +37,7 @@ Checkpoint after Wave 10 isolated host qualification and public repository publi
 - Publication: Public GitHub repository.
 - Deployment, release, or tag: None.
 
-The public candidate adds finalized host manifests, deterministic installable packages, exact Codex and Claude Code install guidance, activation fixtures, package bloat checks, and isolated temporary-host lifecycle qualification. Codex prompt input exposed installed routing descriptions and positive and negative probes. Claude reported the installed component inventory, but Claude prompt selection was not exercised. No external model inference was called.
+The public candidate adds finalized host manifests, deterministic installable packages, exact Codex and Claude Code install guidance, activation fixtures, package bloat checks, and isolated temporary-host lifecycle qualification. Codex prompt input exposed installed routing descriptions and Claude reported the installed component inventory, but those checks do not prove model selection. The R04 follow-up adds a fail-closed 20-case-per-host runner without adding qualification restrictions to either distributed plugin.
 
 The public workflow ran the complete 204-test suite, corpus checks, host builds, parity checks, deterministic package checks, filesystem lifecycle simulation, and bundled entrypoint checks. The separate isolated host check used temporary configuration roots, copied no credentials, left active registries unchanged, and deleted its temporary roots. Neither check proves active-user installation, identical host routing, browser rendering, visual quality, accessibility behavior, or benchmark success.
 
@@ -303,20 +303,21 @@ PARTIAL. Host packaging and public repository publication passed. Automatic acti
 - MCP, full corpus, Site, browser binaries, fonts, screenshots, renders, and bytecode bundled: No.
 - Public repository, anonymous clone, and first public CI on the exact root snapshot: Pass.
 - Public CI run `33353752204` passed 204 tests on Python 3.11 and Python 3.13.
-- Codex prompt-input routing exposure: Pass.
-- Claude installed component discovery: Pass.
-- Claude prompt selection: Not exercised. R04 remains partial.
-- External model inference: Not called.
+- Codex prompt-input routing exposure: Pass, but model selection is not proved.
+- Claude installed component discovery: Pass, but model selection is not proved.
+- Harness-independent runtime selection: Blocked. No separate preauthenticated Codex home or bare-compatible Claude API-key path was supplied. Codex CLI 0.151 JSONL has no accepted resolved-model field in the current evidence set.
+- Nonqualifying Claude method canaries: One positive native Skill selection and one negative boundary ran through the existing subscription login. They received no acceptance credit.
+- Clean qualification model inference: Not called.
 - User-machine active installation, deployment, release, or tag: None.
-- Evidence: `review/wave-10-host-qualification-evidence.json`.
+- Evidence: `review/wave-10-host-qualification-evidence.json` and `review/r04-runtime-selection-preflight.json`.
 
 The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
 
 ## Next required work
 
-Close the remaining Wave 10 activation evidence gap, then begin Wave 11: Personal alpha at 60 cases plus three benchmarks.
+Supply isolated authentication, close the Codex model-binding schema gap, pass the 20-case matrix independently on Codex and Claude Code, then begin Wave 11: Personal alpha at 60 cases plus three benchmarks.
 
-R04 cannot pass until actual host model-selection behavior is exercised or the approved plan explicitly resolves that gap. After that gate, Wave 11 must complete the personal-alpha corpus milestone and the three approved benchmarks. Live installation still requires separate approval.
+R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. After R04, Wave 11 must complete the personal-alpha corpus milestone and the three approved benchmarks.
 
 ## Recovery instruction
 

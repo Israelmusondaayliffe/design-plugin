@@ -103,10 +103,10 @@ Canonical corpus source: version-controlled Markdown and JSON. ChatGPT Site is t
 - Public root candidate: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`, tree `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
 - Public CI: Run `33353752204` passed 204 tests on Python 3.11 and Python 3.13, both host builds, 125-file shared-core parity, deterministic package checks, corpus validation, catalog generation, lifecycle simulation, and bundled entrypoint checks.
 - Isolated host qualification: Temporary Codex and Claude configuration roots installed the prior test version, updated to dev.10, discovered components in fresh processes, verified cache parity, removed registrations, and were deleted. No credentials were copied and active user registries were unchanged.
-- Activation boundary: Codex prompt input exposed installed routing descriptions and positive and negative probes. Claude reported installed components, but Claude prompt selection was not exercised. No external model inference was called. R04 remains partial.
+- Activation boundary: Static host qualification exposed Codex routing descriptions and Claude components, but neither host has harness-independent model-selection proof. A fail-closed 20-case-per-host runner and regression suite now exist. Clean qualification is blocked because no separate preauthenticated Codex home or bare-compatible Claude API-key path was supplied. Codex CLI 0.151 JSONL also lacks an accepted resolved-model field in the current evidence set. Two Claude method canaries used the existing subscription login, so they received no acceptance credit. R04 remains partial.
 - Acceptance boundary: R22 remains partial until Wave 11 benchmarks and later acceptance gates pass.
 - Historical pre-Wave 10 evidence remains in the private archive with no public locator.
-- Next: Close the remaining Wave 10 R04 model-selection evidence gap, then begin Wave 11 personal alpha at 60 cases plus three benchmarks. Live plugin installation is not approved.
+- Next: Supply the two isolated authentication paths, close the Codex model-binding schema gap, pass all 40 R04 selection runs, then begin Wave 11 personal alpha at 60 cases plus three benchmarks. Live plugin installation is not approved. Qualification restrictions are absent from the distributed runtime; normal multi-plugin compatibility is outside the R04 evidence boundary.
 
 ## Benchmarks
 

@@ -84,3 +84,33 @@ Restart Claude Code after installation or update. The visible slash commands sho
 ```bash
 python3 scripts/run_isolated_host_checks.py
 ```
+
+## Runtime selection qualification
+
+`scripts/run_r04_activation_probes.py` is a maintainer evidence tool. It is not bundled into either plugin runtime and is not required for installation or ordinary use. Its clean-room restrictions protect the evidence. They are not runtime rejection logic. The R04 runner does not test normal multi-plugin compatibility.
+
+The preflight refuses the active Codex home and Claude subscription or keychain state. Model runs require a fresh, separate, preauthenticated Codex qualification home containing only authentication files, plus bare-compatible Claude API-key authentication.
+
+Preflight only. This makes no model calls and always exits with status 2. Read each host's readiness from the JSON report.
+
+```bash
+python3 scripts/run_r04_activation_probes.py
+```
+
+Authorized full matrix. This makes 20 Codex and 20 Claude model calls. Codex usage applies. Claude allows at most $0.20 per case and $4.00 for the matrix. Set `ANTHROPIC_API_KEY` locally; never paste it into a command, issue, log, or evidence file.
+
+```bash
+python3 scripts/run_r04_activation_probes.py \
+  --execute \
+  --confirm-external-usage \
+  --codex-home /absolute/path/to/fresh-codex-r04-home \
+  --codex-model gpt-5.4-mini \
+  --claude-model haiku \
+  --claude-max-case-cost-usd 0.20 \
+  --claude-max-total-cost-usd 4.00 \
+  --output review/r04-runtime-selection-evidence.json
+```
+
+The runner does not fall back to active user state. It rejects a dirty Git candidate, non-auth files in the separate Codex home, and execution without the explicit usage confirmation.
+
+Codex CLI 0.151 JSONL has no accepted resolved-model field in the current evidence set. Codex cases therefore remain partial until a real non-acceptance schema canary establishes a host-native model field or another acceptance-grade binding method.

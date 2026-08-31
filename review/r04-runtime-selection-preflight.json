@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-08-31T13:01:04Z",
+  "requirement": "R04",
+  "status": "partial",
+  "scope": "harness-independent runtime selection qualification",
+  "source_commit_at_preflight": "d7924278605e761ca8b42d180381e7c9e7d6c9a4",
+  "source_tree_at_preflight": "161618d586d6dc63b26e62b3df645cfbe83ec933",
+  "candidate_worktree_clean": false,
+  "activation_policy_sha256": "b3969ff706cfbbf8fff2775b7c5716c5881029351ba477abcece1dc8a0984030",
+  "candidate_archives": {
+    "codex_sha256": "1caa814f558b6e6862a77e4ba6b987968140fedd5726060ce05c69f3ee061a4f",
+    "claude_sha256": "a639415e7428c1e5230396f6d869199e2db1b98ff598b09e16e575b6340d00bd"
+  },
+  "host_versions": {
+    "codex": "0.151.0-alpha.7.2",
+    "claude": "2.1.206"
+  },
+  "acceptance_matrix": {
+    "fresh_process_per_case": true,
+    "explicit_cases_per_host": 3,
+    "automatic_positive_cases_per_host": 9,
+    "automatic_negative_cases_per_host": 6,
+    "precedence_cases_per_host": 2,
+    "total_cases_per_host": 20,
+    "hosts": 2,
+    "required_total_model_runs": 40,
+    "precedence": [
+      "resume",
+      "audit",
+      "run"
+    ]
+  },
+  "qualification_preflight": {
+    "status": "blocked",
+    "external_model_inference_called": false,
+    "credential_handling": {
+      "copy_operation_present_in_runner": false,
+      "codex_auth_provenance": "operator-prepared; external attestation required",
+      "claude_auth_source": "sanitized ANTHROPIC_API_KEY environment entry"
+    },
+    "active_user_installation": false,
+    "active_user_registries_unchanged": true,
+    "codex": {
+      "status": "blocked",
+      "reason": "No separate preauthenticated CODEX_HOME was supplied. A temporary home is logged out, and the active home is forbidden for qualification."
+    },
+    "claude": {
+      "status": "blocked",
+      "reason": "ANTHROPIC_API_KEY is absent. Bare Claude qualification cannot use subscription, OAuth, keychain, user settings, or harness state."
+    }
+  },
+  "nonqualifying_method_canaries": {
+    "external_model_inference_called": true,
+    "acceptance_credit": "none",
+    "reason": "The canaries used the existing Claude subscription login rather than a bare temporary configuration, so personal state could not be excluded completely.",
+    "results": [
+      {
+        "case": "automatic-positive-website",
+        "native_selection_observation": "Claude emitted a Skill tool event for design:run.",
+        "terminal_result": "budget ceiling error after selection",
+        "accepted": false
+      },
+      {
+        "case": "automatic-negative-backend",
+        "native_selection_observation": "Claude emitted no Design Skill tool event.",
+        "terminal_result": "success",
+        "accepted": false
+      }
+    ],
+    "cleanup": "The three empty Claude project-memory directories created by exploratory calls were removed. No raw trace was promoted into the repository."
+  },
+  "implemented_probe_support": {
+    "runner": "scripts/run_r04_activation_probes.py",
+    "tests": "tests/test_wave10_r04_activation.py",
+    "runner_sha256": "7472a674fc28e0a9370ee97d96f91e4e7f7cdf9ea21adb4e2e04d9316c3a3a93",
+    "regression_test_sha256": "332c131681dd0677438990a09c43c9c9c6d90218d483e7024f6a82a11182f56c",
+    "fail_closed_rules": [
+      "reject the active ~/.codex home, descendants, and symlinked qualification state",
+      "do not copy or link credentials",
+      "require bare first-party Claude API-key authentication with provider variables sanitized",
+      "require a separate preauthenticated Codex home containing only allowlisted auth state",
+      "require a clean frozen Git candidate for model execution",
+      "use fresh temporary workspaces",
+      "use read-only Codex execution with user config ignored and only Design enabled",
+      "expose only the Claude Skill tool",
+      "ignore model prose as selection evidence",
+      "require successful correlated native events or an exact installed-cache skill-file load",
+      "reject malformed traces, failed terminals, missing observed models, and any unexpected Design route",
+      "require verified empty Codex plugin, marketplace, and cache post-state",
+      "leave active user registries unchanged"
+    ]
+  },
+  "installation_boundary": {
+    "qualification_only": true,
+    "bounded_fact": "The qualification runner and its rejection rules are absent from both distributed runtime directories.",
+    "normal_multi_plugin_compatibility": "not tested by the R04 runner",
+    "runtime_rejection_logic_added": false,
+    "qualification_runner_bundled_in_plugin": false
+  },
+  "requirements": {
+    "R04": "partial",
+    "R22": "partial",
+    "final_plugin_acceptance": "prohibited"
+  },
+  "next_authority_needed": [
+    "A separate preauthenticated Codex qualification home, without copying or linking the active auth store.",
+    "Bare-compatible Claude API-key authentication, with its billing authority understood."
+  ],
+  "additional_technical_blocker": "Codex CLI 0.151 JSONL has no accepted resolved-model field in the current evidence set. A real non-acceptance schema canary or another acceptance-grade model binding is required.",
+  "proof_boundary": "No clean-room model-selection case has run. Packaging, discovery, prompt exposure, method canaries, and this preflight do not satisfy R04."
+}
