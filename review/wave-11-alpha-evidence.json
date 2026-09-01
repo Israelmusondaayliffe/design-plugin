@@ -14,6 +14,11 @@
       "claude-code"
     ]
   },
+  "published_candidate": {
+    "public_commit": "93908428c8949cf57f77f374fab13659e803bd80",
+    "private_commit": "457c825f6498887b0e5bf43eaa964f2499e79de8",
+    "shared_source_parity": "pass"
+  },
   "corpus": {
     "case_count": 60,
     "publication_status": {
@@ -92,7 +97,24 @@
     "local_python": "3.9.6",
     "test_count": 242,
     "test_result": "pass",
-    "fresh_public_ci": "pending",
+    "fresh_public_ci": {
+      "status": "pass",
+      "run_id": 33548219494,
+      "python_versions": [
+        "3.11",
+        "3.13"
+      ],
+      "tests_per_version": 242
+    },
+    "fresh_private_ci": {
+      "status": "pass",
+      "run_id": 33548217993,
+      "python_versions": [
+        "3.11",
+        "3.13"
+      ],
+      "tests_per_version": 242
+    },
     "reviewers": {
       "implementation_worker": "root",
       "plan_verifier": {
@@ -125,7 +147,9 @@
     "site/README.md": "017840c44d28091f33dc0fd6f3d6d630c7400dffaa7a575d808205ca7d3a893c",
     "tests/test_wave11_site.py": "32dc0e000fa0d38b20e19ea3b0c0f2400db87300e53de640e876ffa0a78754cd",
     "corpus/README.md": "70035c83a8cce6fd83116b30a909f91accffa148c3232ae470e1b029217df1ec",
-    "PLAN.md": "72cbc6280ac76ba1b0042412b27cadb407bc7e63275e859faa5d749276c17656"
+    "PLAN.md": "d877c507ba8f4077677433db97d55be1019990741ceb064592c1c6c93f1ad12a",
+    "BUILD_STATE.md": "e35d260ff31b2978723810e57869b4a7bb146b15caf64b4be1247f4d6055323c",
+    "review/plan-compliance.md": "3dd0a684c0a23956327175dd12c56087943a89644115bbbcf379086518617298"
   },
   "open_gates": {
     "benchmarks_complete": 0,

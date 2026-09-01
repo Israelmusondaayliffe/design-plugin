@@ -24,6 +24,8 @@ Wave 11 is active by explicit user authorization. The 60-case personal-alpha cor
 - Local Site: Search, six lane filters, advanced facets, progressive case analysis and evidence, source retrieval dates, URL state, and up-to-five comparison pass.
 - Browser evidence: Desktop 1280 by 720 and mobile 390 by 844 pass with no page-level horizontal overflow and no console warnings or errors.
 - Local regression suite: 242 tests pass under the locally available Python 3.9.6.
+- Published candidate: Public commit `93908428c8949cf57f77f374fab13659e803bd80`; private counterpart `457c825f6498887b0e5bf43eaa964f2499e79de8`.
+- GitHub Actions: Public run `33548219494` and private run `33548217993` pass 242 tests on Python 3.11 and Python 3.13 plus both host builds and package qualification.
 - Public Site deployment: Not authorized and not performed.
 - Benchmarks complete: 0 of 3.
 - R04: Partial, deferred and nonblocking for this work by explicit user direction.
@@ -348,7 +350,9 @@ PARTIAL. The personal-alpha corpus and local reference Site are qualified. The t
 - Desktop browser: 60 cards, seven lane controls including All, detail routes, evidence routes, and five-case comparison pass at 1280 by 720. Page-level horizontal overflow: None. Console warnings or errors: None.
 - Mobile browser: Single-column cards and dialogs fit a 390 by 844 viewport. Page-level horizontal overflow: None. The wide comparison table scrolls inside its own container.
 - Site deployment: Not authorized and not performed.
-- Local tests: 242 passed under Python 3.9.6. Fresh public CI on Python 3.11 and Python 3.13 remains pending for this candidate.
+- Local tests: 242 passed under Python 3.9.6.
+- Public CI run `33548219494`: Pass, 242 tests on Python 3.11 and Python 3.13.
+- Private CI run `33548217993`: Pass, 242 tests on Python 3.11 and Python 3.13.
 - Independent technical Site review: Pass.
 - Independent Site writing and Unslop review: Pass after six exact wording repairs.
 - Independent plan review: Pass after source-date and durable-state repairs.
@@ -361,7 +365,7 @@ The evidence-only commit is accepted only when the public Design Plugin CI check
 
 ## Next required work
 
-Mirror the accepted corpus and Site source into the private repository, push the independently reviewed candidate to both repositories, and pass public CI. Then run the three approved Wave 11 benchmarks and repair any critical workflow failure within scope.
+Run the three approved Wave 11 benchmarks and repair any critical workflow failure within scope. Public Site deployment remains a separate authorization gate.
 
 R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. The user explicitly accepted this as a noncritical, nonblocking evidence gap for Wave 11 work. It remains partial and is not silently converted to a pass.
 

@@ -104,10 +104,11 @@ Canonical corpus source: version-controlled Markdown and JSON. ChatGPT Site is t
 - Wave 11: Active by explicit user authorization. The personal-alpha corpus milestone now contains 60 independently accepted original cases in the exact 15/15/10/8/7/5 lane allocation.
 - Corpus evidence: 80 of 80 owner URLs pass, locator mismatches and redirect collisions are zero, the originality audit passes, and no source binary assets are stored.
 - Local Site: Qualified against the accepted-only 60-case public catalog at desktop and mobile widths. Search, all six lanes, deeper filters, progressive analysis and evidence, source retrieval dates, URL state, and comparison of up to five cases pass. The Site remains undeployed.
-- Local regression suite: 242 tests pass under the locally available Python 3.9.6. A fresh two-version public CI result remains pending for this Wave 11 candidate.
+- Published Wave 11 candidate: Public commit `93908428c8949cf57f77f374fab13659e803bd80` and private counterpart `457c825f6498887b0e5bf43eaa964f2499e79de8` contain byte-identical shared project files.
+- Regression evidence: 242 tests pass locally under Python 3.9.6 and in both repositories under Python 3.11 and Python 3.13. Public CI run `33548219494` and private CI run `33548217993` pass.
 - Activation boundary: R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. The probe restrictions are not plugin runtime restrictions and cannot reject an ordinary installation.
 - Acceptance boundary: Wave 11 remains partial until all three benchmarks pass. R22 remains partial until those benchmarks and later acceptance gates pass.
-- Next: Publish the independently reviewed corpus and local Site source to the public and private repositories, pass public CI, then run the three approved benchmarks. Public Site deployment still requires separate authorization.
+- Next: Run the three approved benchmarks and repair any critical workflow failure within the authorized scope. Public Site deployment still requires separate authorization.
 
 ## Benchmarks
 
