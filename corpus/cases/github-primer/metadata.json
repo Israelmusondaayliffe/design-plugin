@@ -1,1 +1,64 @@
-{"schema_version":"1.0","slug":"github-primer","name":"GitHub Primer","source_name":"Primer Design System","source_url":"https://primer.style/","source_kind":"public-design-system","studied_at":"2026-08-30","platforms":["web","responsive-web"],"product_types":["design-system","saas","productivity","workflow"],"industries":["developer-tools","technology"],"archetypes":["developer-dense"],"density":"high","color_modes":["light","dark","adaptive"],"interaction_complexity":"high","evidence_quality":"high","publication_status":"review","rights_basis":"original-analysis-public-source","summary":"A developer-tool system built for dense technical workflows, where robust reusable foundations, responsive behavior, semantic color, and compact component patterns keep large amounts of state understandable.","signature_traits":["dense technical information","reusable foundation primitives","semantic status and interaction color","responsive utility","compact developer-oriented controls"],"best_for":["developer tools","code hosting and review workflows","technical dashboards","products with dense status and metadata"],"avoid_for":["luxury editorial experiences where technical compactness would flatten the intended mood","consumer products that need large touch-first expression rather than expert scanning"]}
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "developer-dense"
+  ],
+  "avoid_for": [
+    "luxury editorial experiences where technical compactness would flatten the intended mood",
+    "consumer products that need large touch-first expression rather than expert scanning"
+  ],
+  "best_for": [
+    "developer tools",
+    "code hosting and review workflows",
+    "technical dashboards",
+    "products with dense status and metadata"
+  ],
+  "brand_maturity": "mature",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "high",
+  "evidence_quality": "medium",
+  "industries": [
+    "developer-tools",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "monitor-operate"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "data-led",
+  "name": "GitHub Primer",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "design-system",
+    "saas",
+    "productivity",
+    "workflow"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "dense technical information",
+    "reusable foundation primitives",
+    "semantic status and interaction color",
+    "responsive utility",
+    "compact developer-oriented controls"
+  ],
+  "slug": "github-primer",
+  "source_kind": "public-design-system",
+  "source_name": "Primer Design System",
+  "source_url": "https://primer.style/",
+  "studied_at": "2026-08-30",
+  "summary": "A developer-tool system built for dense technical workflows, where reliable reusable foundations, responsive behavior, semantic color, and compact component patterns keep large amounts of state understandable.",
+  "typography_character": "technical-mono"
+}

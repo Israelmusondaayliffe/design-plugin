@@ -1,0 +1,57 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "merchant-operational",
+  "brand_posture": "A merchant-centered operational system that prioritizes familiar Shopify Admin patterns, semantic color roles, clear task hierarchy, and confidence in high-frequency commerce workflows.",
+  "category": "commerce-media-content-heavy",
+  "color": "Translate semantic roles first: canvas, surface, text, subdued text, border, primary action, critical, warning, success, and selected state. A merchant app can use its own identity selectively without reassigning these jobs.",
+  "components": "Resource lists, forms, banners, navigation, filters, and actions should preserve familiar behavior. Destructive and financial actions require explicit feedback and recovery where possible.",
+  "confidence": "medium",
+  "container": "Use containers that keep merchant task orientation legible across the supported platforms.",
+  "failure_modes": [
+    "Copying Shopify visual styling into an unrelated product and creating false platform expectations.",
+    "Using commerce status colors as decoration.",
+    "Replacing familiar admin patterns with novelty for its own sake.",
+    "Hiding critical state in pale text or color-only badges."
+  ],
+  "flows": "Destination test: Commerce administration. Evaluate the relationship across transactions and checkout, and creation and management.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Shopify Polaris, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is product evidence; no source imagery or visual assets are stored in the corpus.",
+  "industry": "commerce, technology",
+  "interaction": "Resource lists, forms, banners, navigation, filters, and actions should preserve familiar behavior. Destructive and financial actions require explicit feedback and recovery where possible.",
+  "lane_fit": "Lane assignment: Commerce administration. This case earns one commerce, media, and content-heavy quota credit through merchant task orientation and semantic state color.",
+  "layout": "Use moderate information density with clear grouping around resources, settings, and actions. Preserve room for status, secondary metadata, filters, and contextual actions without turning each group into a decorative card.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Shopify Polaris across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving merchant task orientation and semantic state color.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "merchant task orientation",
+    "semantic state color",
+    "familiar admin patterns",
+    "clear operational hierarchy",
+    "system consistency over app-specific decoration"
+  ],
+  "source": "https://shopify.dev/docs/apps/design",
+  "spacing": "Spacing should preserve the case's medium density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "commerce administration",
+    "merchant workflows",
+    "embedded apps inside an established host product",
+    "operational settings and resource management"
+  ],
+  "surfaces": "Translate semantic roles first: canvas, surface, text, subdued text, border, primary action, critical, warning, success, and selected state. A merchant app can use its own identity selectively without reassigning these jobs.",
+  "typography": "Typography should orient and report status more than express brand personality. Use strong page and section hierarchy, literal labels, and compact supporting text. Avoid marketing-style display typography inside operational screens.",
+  "unknowns": [
+    "The former public Polaris color-role and accessibility URLs now redirect to a general API page, so those historical claims are not treated as directly observed in this release.",
+    "Internal merchant-product evidence and unpublished Shopify design decisions were not inspected."
+  ],
+  "unsuitable_uses": [
+    "brand marketing pages that need independent art direction",
+    "products where copying Shopify Admin conventions would create false platform expectations"
+  ],
+  "visual_thesis": "The system is most valuable as an operational continuity model. Merchant-facing software should feel predictable inside Shopify Admin because actions, resource hierarchy, state language, and semantic color agree with conventions merchants already know."
+}

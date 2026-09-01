@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using friendly copy to soften a material financial warning.",
+  "archetype": "merchant-operational",
+  "brand_posture": "Plain hierarchy reduces intimidation around financial work. Friendly language and shape do not obscure accounting consequences.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Numbers and product views explain outcomes close to the relevant claim.",
+  "components": "Numbers and product views explain outcomes close to the relevant claim. Friendly language and shape do not obscure accounting consequences.",
+  "confidence": "medium",
+  "container": "Friendly business proof with a clear total, form, and product screenshot relationship. Numbers and product views explain outcomes close to the relevant claim.",
+  "failure_modes": [
+    "Using friendly copy to soften a material financial warning.",
+    "Carrying marketing illustration into dense reconciliation screens.",
+    "Hiding totals or status behind rounded decorative containers."
+  ],
+  "flows": "Destination test: Financial tools for non-specialists. Evaluate the relationship across evaluation and conversion, and creation and management.",
+  "forms": "During evaluation and conversion, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Plain hierarchy reduces intimidation around financial work. Marketing warmth gives way to disciplined tables, forms, and status.",
+  "imagery": "Friendly business proof with a clear total, form, and product screenshot relationship. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "commerce, productivity",
+  "interaction": "Friendly language and shape do not obscure accounting consequences.",
+  "lane_fit": "Lane assignment: Financial tools for non-specialists. This case earns one brand, editorial, portfolio, and marketing quota credit through small-business reassurance and brand-to-product bridge.",
+  "layout": "Warm narrative column paired with structured financial evidence.",
+  "motion": "Quiet confirmation and disclosure transitions.",
+  "navigation": "Plain hierarchy reduces intimidation around financial work. Warm narrative column paired with structured financial evidence.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Marketing warmth gives way to disciplined tables, forms, and status. Friendly language and shape do not obscure accounting consequences.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "small-business reassurance: Plain hierarchy reduces intimidation around financial work.",
+    "brand-to-product bridge: Marketing warmth gives way to disciplined tables, forms, and status.",
+    "guided evidence: Numbers and product views explain outcomes close to the relevant claim.",
+    "approachable utility: Friendly language and shape do not obscure accounting consequences."
+  ],
+  "source": "https://design.intuit.com/",
+  "spacing": "Plain hierarchy reduces intimidation around financial work. Marketing warmth gives way to disciplined tables, forms, and status.",
+  "states": "Friendly language and shape do not obscure accounting consequences. Quiet confirmation and disclosure transitions.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "financial tools for non-specialists",
+    "small-business platforms joining acquisition pages to complex product work"
+  ],
+  "surfaces": "Numbers and product views explain outcomes close to the relevant claim. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Marketing warmth gives way to disciplined tables, forms, and status.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "professional trading systems whose users expect maximal density and domain shorthand"
+  ],
+  "visual_thesis": "Plain hierarchy reduces intimidation around financial work. Marketing warmth gives way to disciplined tables, forms, and status."
+}

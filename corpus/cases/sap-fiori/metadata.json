@@ -1,0 +1,65 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "small editorial experiences where enterprise object structure would burden the content"
+  ],
+  "best_for": [
+    "large enterprise applications with role-specific workflows",
+    "systems spanning desktop and mobile business tasks"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "enterprise",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "monitor-operate"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "data-led",
+  "name": "SAP Fiori",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "desktop",
+    "cross-platform"
+  ],
+  "product_types": [
+    "saas",
+    "dashboard",
+    "admin",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "role-based focus",
+    "adaptive enterprise density",
+    "object-page structure",
+    "transaction continuity"
+  ],
+  "slug": "sap-fiori",
+  "source_kind": "public-design-system",
+  "source_name": "SAP Fiori",
+  "source_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html",
+  "studied_at": "2026-09-01",
+  "summary": "Pages foreground the work and information relevant to a user's business role. The same semantics survive compact, cozy, desktop, and mobile contexts.",
+  "typography_character": "neutral-sans"
+}

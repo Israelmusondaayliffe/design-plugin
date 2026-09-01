@@ -1,6 +1,6 @@
 # Design Plugin Build State
 
-Last updated: 2026-08-30
+Last updated: 2026-09-01
 Approved plan: Design Plugin Build Plan v1.0
 Canonical development repository: `Israelmusondaayliffe/design-plugin`
 Canonical development path: repository root
@@ -11,18 +11,35 @@ Historical commit IDs and CI run IDs in this ledger are private-archive evidence
 
 ## Current phase
 
-Checkpoint after Wave 10 isolated host qualification and public repository publication. Packaging, guidance, parity, bloat, and isolated lifecycle checks passed. R04 remains partial because neither host has harness-independent model-selection proof. R22 remains partial until R04, the Wave 11 benchmarks, and later acceptance gates pass.
+Wave 11 is active by explicit user authorization. The 60-case personal-alpha corpus and the local undeployed reference Site have passed their scoped qualification. The three approved benchmarks have not started, so Wave 11 is partial. R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. R22 remains partial until the benchmarks and later acceptance gates pass.
 
-## Latest qualified runtime candidate
+## Current Wave 11 candidate
 
-- Public candidate commit: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`.
-- Public candidate tree: `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
+- Canonical cases: 60, all independently accepted and marked public.
+- Lane allocation: 15 brand/editorial, 15 product UI, 10 mobile, 8 commerce, 7 flows/forms, and 5 design systems/data/experimental.
+- Owner-source audit: 80 of 80 URLs pass; zero locator mismatches; zero effective-URL collisions.
+- Originality audit: Pass across all 60 canonical records.
+- Source binary assets stored: None.
+- Accepted-only public catalog: 60 cases.
+- Local Site: Search, six lane filters, advanced facets, progressive case analysis and evidence, source retrieval dates, URL state, and up-to-five comparison pass.
+- Browser evidence: Desktop 1280 by 720 and mobile 390 by 844 pass with no page-level horizontal overflow and no console warnings or errors.
+- Local regression suite: 242 tests pass under the locally available Python 3.9.6.
+- Public Site deployment: Not authorized and not performed.
+- Benchmarks complete: 0 of 3.
+- R04: Partial, deferred and nonblocking for this work by explicit user direction.
+- R22: Partial.
+
+## Latest qualified installed runtime baseline
+
+- Public candidate commit: `41d849aeef0b0104cf0fe6ff1e0420843dbf172f`.
+- Public candidate tree: `58a6ce33015c852c443fe9ea1f411e88213c7458`.
+- Installed version: `0.1.0-dev.10` in Codex and Claude Code.
 - CI workflow: `Design Plugin CI`
 - Public CI run: `33353752204`.
 - Python 3.11 job: Pass.
 - Python 3.13 job: Pass.
 - Regression tests: 204 passed on each Python version.
-- Corpus validation: Pass, 12 cases.
+- Bundled-manifest corpus validation: Pass, 12 compact routing entries. The external Wave 11 corpus now contains 60 cases.
 - Catalog generation: Pass.
 - OpenAI distribution: 627,146 bytes, 130 files.
 - Claude distribution: 626,168 bytes, 129 files.
@@ -33,7 +50,7 @@ Checkpoint after Wave 10 isolated host qualification and public repository publi
 - MCP bundled: No.
 - Full corpus bundled: No.
 - Site bundled: No.
-- User-machine installations: 0.
+- User-machine installations: 2 current hosts, Codex and Claude Code, at the frozen runtime baseline above. The earlier Wave 10 qualification itself used only isolated temporary homes.
 - Publication: Public GitHub repository.
 - Deployment, release, or tag: None.
 
@@ -308,16 +325,45 @@ PARTIAL. Host packaging and public repository publication passed. Automatic acti
 - Harness-independent runtime selection: Blocked. No separate preauthenticated Codex home or bare-compatible Claude API-key path was supplied. Codex CLI 0.151 JSONL has no accepted resolved-model field in the current evidence set.
 - Nonqualifying Claude method canaries: One positive native Skill selection and one negative boundary ran through the existing subscription login. They received no acceptance credit.
 - Clean qualification model inference: Not called.
-- User-machine active installation, deployment, release, or tag: None.
+- At Wave 10 qualification time, user-machine active installation, deployment, release, or tag: None. The current dual-host installation happened afterward at the frozen baseline above.
 - Evidence: `review/wave-10-host-qualification-evidence.json` and `review/r04-runtime-selection-preflight.json`.
+
+## Wave 11 checkpoint
+
+PARTIAL. The personal-alpha corpus and local reference Site are qualified. The three benchmarks remain.
+
+- Authorization and lane contract: `review/wave-11-alpha-allocation.json`.
+- Canonical case count: 60.
+- Publication state: 60 public, zero review or draft cases.
+- Exact lane counts: 15/15/10/8/7/5, matching the approved alpha allocation.
+- Required files: Nine per case, present and schema-valid.
+- Owner-source audit: Pass, 80 of 80 URLs, zero locator mismatches, zero stored identity-hash mismatches, and zero effective-URL collisions.
+- Source-audit binding: `8d10eb6cdd7fdf65f50fde4f1f0c47105a180d6f81baefb710298fbc34ab96a2`.
+- Originality and writing audit: Pass across all 60 cases.
+- Originality binding: `d1b3144802fbc81ccee56688e75091fbe180797c456746367206e78472336e20`.
+- Source assets, screenshots, logos, fonts, and other owner binaries stored: None.
+- Public catalog generation: Pass, accepted-only, 60 cases.
+- Site features: Search, six lane filters, six advanced facets, sort, progressive case analysis and evidence, canonical source retrieval date, owner-source link, URL filter state, and comparison of two to five cases.
+- Site visual treatment: Original CSS-only abstract previews generated from canonical preview specifications. No remote visual dependency or source asset is loaded.
+- Desktop browser: 60 cards, seven lane controls including All, detail routes, evidence routes, and five-case comparison pass at 1280 by 720. Page-level horizontal overflow: None. Console warnings or errors: None.
+- Mobile browser: Single-column cards and dialogs fit a 390 by 844 viewport. Page-level horizontal overflow: None. The wide comparison table scrolls inside its own container.
+- Site deployment: Not authorized and not performed.
+- Local tests: 242 passed under Python 3.9.6. Fresh public CI on Python 3.11 and Python 3.13 remains pending for this candidate.
+- Independent technical Site review: Pass.
+- Independent Site writing and Unslop review: Pass after six exact wording repairs.
+- Independent plan review: Pass after source-date and durable-state repairs.
+- Benchmarks: 0 of 3 complete.
+- Wave 11: Partial.
+- R04: Partial, explicitly deferred as a nonblocking evidence gap for this work.
+- R22: Partial.
 
 The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
 
 ## Next required work
 
-Supply isolated authentication, close the Codex model-binding schema gap, pass the 20-case matrix independently on Codex and Claude Code, then begin Wave 11: Personal alpha at 60 cases plus three benchmarks.
+Mirror the accepted corpus and Site source into the private repository, push the independently reviewed candidate to both repositories, and pass public CI. Then run the three approved Wave 11 benchmarks and repair any critical workflow failure within scope.
 
-R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. After R04, Wave 11 must complete the personal-alpha corpus milestone and the three approved benchmarks.
+R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. The user explicitly accepted this as a noncritical, nonblocking evidence gap for Wave 11 work. It remains partial and is not silently converted to a pass.
 
 ## Recovery instruction
 
@@ -326,14 +372,15 @@ After any context loss, read in this order:
 2. Repository `BUILD_STATE.md`.
 3. `PLAN.md`.
 4. `requirements/traceability.yaml`.
-5. `review/wave-10-host-qualification-evidence.json`.
-6. `review/repository-migration-evidence.json`.
-7. `review/wave-9-quality-loop-evidence.json`.
-8. `review/wave-8-build-waves-evidence.json`.
-9. `review/wave-7-visual-adapters-evidence.json`.
-10. `review/wave-6-system-definition-evidence.json`.
-11. `review/wave-5-research-evidence.json`.
-12. Current `main` branch state and latest CI result.
-13. The active wave plan and completion criteria.
+5. `review/wave-11-alpha-allocation.json` and the current Wave 11 evidence receipts.
+6. `review/wave-10-host-qualification-evidence.json`.
+7. `review/repository-migration-evidence.json`.
+8. `review/wave-9-quality-loop-evidence.json`.
+9. `review/wave-8-build-waves-evidence.json`.
+10. `review/wave-7-visual-adapters-evidence.json`.
+11. `review/wave-6-system-definition-evidence.json`.
+12. `review/wave-5-research-evidence.json`.
+13. Current `main` branch state and latest CI result.
+14. The active wave plan and completion criteria.
 
 Do not infer progress from memory. Verify repository evidence and update this file before continuing.

@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Adding variants faster than the system can explain them.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Reusable primitives favor clear product assembly over visual novelty. Neutral surfaces let names, states, and actions carry emphasis.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Components expose options while retaining predictable defaults.",
+  "components": "Components expose options while retaining predictable defaults. Neutral surfaces let names, states, and actions carry emphasis.",
+  "confidence": "medium",
+  "container": "Quiet technical setup panel with explicit form state and bounded options. Components expose options while retaining predictable defaults.",
+  "failure_modes": [
+    "Adding variants faster than the system can explain them.",
+    "Hiding setup consequences in generic dialog copy.",
+    "Using quiet hierarchy as an excuse for pale text."
+  ],
+  "flows": "Destination test: Developer-facing SaaS with setup and administration workflows. Evaluate the relationship across onboarding and configuration, and creation and management.",
+  "forms": "During onboarding and configuration, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Reusable primitives favor clear product assembly over visual novelty. Forms, dialogs, tables, and feedback support technical setup tasks.",
+  "imagery": "Quiet technical setup panel with explicit form state and bounded options. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "developer-tools, technology",
+  "interaction": "Neutral surfaces let names, states, and actions carry emphasis.",
+  "lane_fit": "Lane assignment: Developer-facing SaaS with setup and administration workflows. This case earns one SaaS, dashboard, administration, and productivity quota credit through pragmatic composition and configuration clarity.",
+  "layout": "Compact application grid with focused configuration container.",
+  "motion": "Direct dialog and validation feedback.",
+  "navigation": "Reusable primitives favor clear product assembly over visual novelty. Compact application grid with focused configuration container.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Forms, dialogs, tables, and feedback support technical setup tasks. Neutral surfaces let names, states, and actions carry emphasis.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "pragmatic composition: Reusable primitives favor clear product assembly over visual novelty.",
+    "configuration clarity: Forms, dialogs, tables, and feedback support technical setup tasks.",
+    "bounded flexibility: Components expose options while retaining predictable defaults.",
+    "quiet hierarchy: Neutral surfaces let names, states, and actions carry emphasis."
+  ],
+  "source": "https://evergreen.segment.com/",
+  "spacing": "Reusable primitives favor clear product assembly over visual novelty. Forms, dialogs, tables, and feedback support technical setup tasks.",
+  "states": "Neutral surfaces let names, states, and actions carry emphasis. Direct dialog and validation feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "developer-facing SaaS with setup and administration workflows",
+    "teams needing a compact composable component foundation"
+  ],
+  "surfaces": "Components expose options while retaining predictable defaults. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Forms, dialogs, tables, and feedback support technical setup tasks.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "brand campaigns that depend on expressive media and irregular layout"
+  ],
+  "visual_thesis": "Reusable primitives favor clear product assembly over visual novelty. Forms, dialogs, tables, and feedback support technical setup tasks."
+}

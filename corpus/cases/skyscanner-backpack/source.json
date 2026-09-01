@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "5656269720ae985efb3a136fb4f502cecb7cb735a8685313dcc1d9dbfee9405e",
+  "effective_url": "https://www.skyscanner.design/latest",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://www.skyscanner.design/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://www.skyscanner.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "skyscanner-backpack",
+  "source_version": "live-public-source-2026-09-01:5656269720ae",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "work queue beside a focused conversation panel",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "quiet ownership and status feedback",
+  "pattern": "calm support queue with customer context and explicit service state",
+  "primary": "#f8f9f9",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#03363d"
+}

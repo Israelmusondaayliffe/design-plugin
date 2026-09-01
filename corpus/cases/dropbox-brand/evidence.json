@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Dropbox publishes a public brand site covering visual identity and brand assets.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://brand.dropbox.com/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://brand.dropbox.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The public presentation uses large color fields, expressive typography, and image-led examples.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://brand.dropbox.com/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://brand.dropbox.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Brand examples show identity working across varied compositions rather than one fixed page template.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://brand.dropbox.com/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://brand.dropbox.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The reusable idea is an art-directed composition system with strict supporting utility, not permission to scatter bright colors or imitate Dropbox assets.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Analyst synthesis recorded in DESIGN.md",
+      "notes": "Original corpus interpretation; not an owner claim.",
+      "source_url": "https://brand.dropbox.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

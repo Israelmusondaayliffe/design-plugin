@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "2d174b8edd6131fdd5d0ec1cb7251eedcec468e4e42142d4b7ed241bd56e8be2",
+  "effective_url": "https://brand.dropbox.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://brand.dropbox.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://brand.dropbox.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "dropbox-brand",
+  "source_version": "live-public-source-2026-09-01:2d174b8edd61",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

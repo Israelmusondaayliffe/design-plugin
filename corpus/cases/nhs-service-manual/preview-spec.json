@@ -1,0 +1,14 @@
+{
+  "layout": "narrow reading and form column with stable service navigation",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "near-static flow with immediate validation feedback",
+  "pattern": "plain health-service question page with one decision and field-level recovery",
+  "primary": "#f2f8fc",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#005eb8"
+}

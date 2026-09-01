@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original analysis of public USWDS guidance. No federal visual assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "30d1fed544078715e9a470b8ee6b2116a5599c93aa6d5f57ccbec9be6822d07a",
+    "coverage.json": "3c045c7945bb023bd45238c3fc7f6be7c4eff8a692b5b08f5d12de47e09066dd",
+    "evidence.json": "482bf83c160c592a1bed0b762f40954957b4d61a5122d9bc238e4ac68a5c6a76",
+    "metadata.json": "f227307200202202b85308b841702ec72c81eaade2df560a953f95b20153ca0b",
+    "preview-spec.json": "bb6e054aece7fd5a0e7d6ae8d944b1db83b065da3a12c740767968bde7caa750",
+    "source-notes.md": "25f1befbfc9086010495021d9f4330f554a8b5a763e9d2eab67ba925a36ffb2d",
+    "source.json": "4bac9034743d37cc10c7e6d140cfef89aa18d39a81d5a85e60da6f97ba7f2ebb",
+    "tokens.json": "19a4b167fc02598bb1fdb4b65b20b720223fd46ba94ccf1efed86a23ca255dd6"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

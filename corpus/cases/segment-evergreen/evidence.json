@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Segment Evergreen was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://evergreen.segment.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://evergreen.segment.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Reusable primitives favor clear product assembly over visual novelty.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://evergreen.segment.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://evergreen.segment.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Forms, dialogs, tables, and feedback support technical setup tasks. Components expose options while retaining predictable defaults.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://evergreen.segment.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://evergreen.segment.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For developer-facing SaaS with setup and administration workflows, preserve quiet hierarchy; reject the design if it starts adding variants faster than the system can explain them.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://evergreen.segment.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

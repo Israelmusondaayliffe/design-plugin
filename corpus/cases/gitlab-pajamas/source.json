@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "162f8ea8240d2a969748a58f7f6ac2d6ac0dd7ca37bd5ada23fd53e7b507af7c",
+  "effective_url": "https://design.gitlab.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://design.gitlab.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://design.gitlab.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "gitlab-pajamas",
+  "source_version": "live-public-source-2026-09-01:162f8ea8240d",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

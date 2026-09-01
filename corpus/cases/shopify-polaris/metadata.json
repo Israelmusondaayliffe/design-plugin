@@ -1,1 +1,63 @@
-{"schema_version":"1.0","slug":"shopify-polaris","name":"Shopify Polaris","source_name":"Shopify Polaris and App Design Guidance","source_url":"https://shopify.dev/docs/apps/design","source_kind":"public-design-system","studied_at":"2026-08-30","platforms":["web","responsive-web"],"product_types":["design-system","admin","commerce","workflow"],"industries":["commerce","technology"],"archetypes":["merchant-operational"],"density":"medium","color_modes":["light","adaptive"],"interaction_complexity":"high","evidence_quality":"high","publication_status":"review","rights_basis":"original-analysis-public-source","summary":"A merchant-centered operational system that prioritizes familiar Shopify Admin patterns, semantic color roles, clear task hierarchy, and confidence in high-frequency commerce workflows.","signature_traits":["merchant task orientation","semantic state color","familiar admin patterns","clear operational hierarchy","system consistency over app-specific decoration"],"best_for":["commerce administration","merchant workflows","embedded apps inside an established host product","operational settings and resource management"],"avoid_for":["brand marketing pages that need independent art direction","products where copying Shopify Admin conventions would create false platform expectations"]}
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "brand marketing pages that need independent art direction",
+    "products where copying Shopify Admin conventions would create false platform expectations"
+  ],
+  "best_for": [
+    "commerce administration",
+    "merchant workflows",
+    "embedded apps inside an established host product",
+    "operational settings and resource management"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "adaptive"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "transact-checkout",
+    "create-manage"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "product-evidence",
+  "name": "Shopify Polaris",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "design-system",
+    "admin",
+    "commerce",
+    "workflow"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "merchant task orientation",
+    "semantic state color",
+    "familiar admin patterns",
+    "clear operational hierarchy",
+    "system consistency over app-specific decoration"
+  ],
+  "slug": "shopify-polaris",
+  "source_kind": "public-design-system",
+  "source_name": "Shopify Polaris and App Design Guidance",
+  "source_url": "https://shopify.dev/docs/apps/design",
+  "studied_at": "2026-08-30",
+  "summary": "A merchant-centered operational system that prioritizes familiar Shopify Admin patterns, semantic color roles, clear task hierarchy, and confidence in high-frequency commerce workflows.",
+  "typography_character": "humanist-sans"
+}

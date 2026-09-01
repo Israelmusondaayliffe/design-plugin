@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Mailchimp Brand was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://mailchimp.com/about/brand-assets/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://mailchimp.com/about/brand-assets/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Unexpected composition and concise language give a familiar marketing tool a distinct voice.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://mailchimp.com/about/brand-assets/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://mailchimp.com/about/brand-assets/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Drawn media and typography share the narrative rather than decorate finished copy. A forceful brand pair creates identity while supporting colors stay secondary.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://mailchimp.com/about/brand-assets/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://mailchimp.com/about/brand-assets/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For creative marketing products with owned illustration and a confident voice, preserve imperfect geometry; reject the design if it starts using yellow across all backgrounds until calls to action disappear.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://mailchimp.com/about/brand-assets/"
+    }
+  ],
+  "schema_version": "1.0"
+}

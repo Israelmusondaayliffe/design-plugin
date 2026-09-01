@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Showing a low fare without the conditions that define it.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Search, itinerary, price, baggage, and disruption states share portable roles. Changes, delays, and booking problems expose next action and status.",
+  "category": "commerce-media-content-heavy",
+  "color": "Currency, language, date, and place variation influence layout and copy.",
+  "components": "Currency, language, date, and place variation influence layout and copy. Changes, delays, and booking problems expose next action and status.",
+  "confidence": "medium",
+  "container": "Localized itinerary and fare comparison with a visible disruption recovery state. Currency, language, date, and place variation influence layout and copy.",
+  "failure_modes": [
+    "Showing a low fare without the conditions that define it.",
+    "Designing only around short place names and one currency.",
+    "Hiding disruption recovery behind generic support links."
+  ],
+  "flows": "Destination test: International travel booking and itinerary products. Evaluate the relationship across browsing and discovery, and transactions and checkout.",
+  "forms": "During browsing and discovery, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Search, itinerary, price, baggage, and disruption states share portable roles. Components support web and mobile without erasing platform expectations.",
+  "imagery": "Localized itinerary and fare comparison with a visible disruption recovery state. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "commerce, technology",
+  "interaction": "Changes, delays, and booking problems expose next action and status.",
+  "lane_fit": "Lane assignment: International travel booking and itinerary products. This case earns one commerce, media, and content-heavy quota credit through travel-task consistency and cross-platform booking.",
+  "layout": "Responsive booking grid connected to itinerary detail.",
+  "motion": "Short search, selection, and recovery transitions.",
+  "navigation": "Search, itinerary, price, baggage, and disruption states share portable roles. Responsive booking grid connected to itinerary detail.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "Components support web and mobile without erasing platform expectations. Changes, delays, and booking problems expose next action and status.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "travel-task consistency: Search, itinerary, price, baggage, and disruption states share portable roles.",
+    "cross-platform booking: Components support web and mobile without erasing platform expectations.",
+    "localization depth: Currency, language, date, and place variation influence layout and copy.",
+    "recovery visibility: Changes, delays, and booking problems expose next action and status."
+  ],
+  "source": "https://github.com/kiwicom/orbit",
+  "spacing": "Search, itinerary, price, baggage, and disruption states share portable roles. Components support web and mobile without erasing platform expectations.",
+  "states": "Changes, delays, and booking problems expose next action and status. Short search, selection, and recovery transitions.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "international travel booking and itinerary products",
+    "commerce systems with volatile inventory and recovery needs"
+  ],
+  "surfaces": "Currency, language, date, and place variation influence layout and copy. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Components support web and mobile without erasing platform expectations.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "simple local catalogs with no itinerary or disruption state"
+  ],
+  "visual_thesis": "Search, itinerary, price, baggage, and disruption states share portable roles. Components support web and mobile without erasing platform expectations."
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "bold split field narrowing into exact transaction rows",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "fast state feedback with reduced-motion parity",
+  "pattern": "bright financial headline beside a compact rate and transfer proof module",
+  "primary": "#9fe870",
+  "radius": "10px",
+  "schema_version": "1.0",
+  "secondary": "#163300"
+}

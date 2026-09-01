@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "a52f220d1066d2044c66e2fc03fcee7943c0086f1c0fc39374ea84160a1bef1b",
+  "effective_url": "https://designsystem.porsche.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://designsystem.porsche.com/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://designsystem.porsche.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "porsche-design-system",
+  "source_version": "live-public-source-2026-09-01:a52f220d1066",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

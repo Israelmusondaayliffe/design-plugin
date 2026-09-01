@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "adaptive-expressive"
+  ],
+  "avoid_for": [
+    "static editorial pages with no recurring media or playback behavior"
+  ],
+  "best_for": [
+    "media ecosystems spanning many devices and audience modes",
+    "multi-brand products that need consistent controls around highly variable content"
+  ],
+  "brand_maturity": "multi-brand",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "creative-tools",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "create-manage"
+  ],
+  "layout_behavior": "grid-system",
+  "media_strategy": "mixed",
+  "name": "Spotify Encore",
+  "platforms": [
+    "web",
+    "mobile",
+    "desktop",
+    "cross-platform"
+  ],
+  "product_types": [
+    "media",
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "multi-platform rhythm",
+    "content-first color",
+    "modular identity",
+    "motion with musical timing"
+  ],
+  "slug": "spotify-encore",
+  "source_kind": "public-design-system",
+  "source_name": "Spotify Encore",
+  "source_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+  "studied_at": "2026-09-01",
+  "summary": "Shared roles adapt to listening contexts and device constraints. Artwork and media remain visually dominant while controls retain semantic stability.",
+  "typography_character": "mixed"
+}

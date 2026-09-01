@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "service-utilitarian"
+  ],
+  "avoid_for": [
+    "luxury marketing experiences where procedural clarity is not the main outcome"
+  ],
+  "best_for": [
+    "provincial or regional government services",
+    "bilingual public forms and information tasks"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light"
+  ],
+  "corpus_lane": "onboarding-forms-settings-flows",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "government",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "complete-service",
+    "browse-discover"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "none",
+  "name": "Ontario Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "forms",
+    "workflow",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "government task orientation",
+    "bilingual-ready structure",
+    "accessible form grammar",
+    "official but plain tone"
+  ],
+  "slug": "ontario-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "Ontario Design System",
+  "source_url": "https://designsystem.ontario.ca/",
+  "studied_at": "2026-09-01",
+  "summary": "Content and controls organize around completing a public service rather than promoting the agency. Layout and component behavior allow text expansion and language change.",
+  "typography_character": "humanist-sans"
+}

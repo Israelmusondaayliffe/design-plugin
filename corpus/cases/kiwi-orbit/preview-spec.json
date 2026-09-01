@@ -1,0 +1,14 @@
+{
+  "layout": "responsive booking grid connected to itinerary detail",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "short search, selection, and recovery transitions",
+  "pattern": "localized itinerary and fare comparison with a visible disruption recovery state",
+  "primary": "#f4f8f7",
+  "radius": "10px",
+  "schema_version": "1.0",
+  "secondary": "#00a991"
+}

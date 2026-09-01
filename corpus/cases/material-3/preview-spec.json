@@ -1,1 +1,14 @@
-{"primary":"#f7f2fa","secondary":"#6750a4","radius":"28px","pattern":"tonal nested surfaces with one expressive high-emphasis control"}
+{
+  "layout": "Original abstract composition based on tonal semantic color roles and named type scale from display to label.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Material 3 preview only when it clarifies tonal semantic color roles through feedback or continuity.",
+  "pattern": "tonal nested surfaces with one expressive high-emphasis control",
+  "primary": "#f7f2fa",
+  "radius": "28px",
+  "schema_version": "1.0",
+  "secondary": "#6750a4"
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Thumbtack Thumbprint was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://thumbprint.design/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://thumbprint.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Questions and results narrow a broad need into comparable local professionals.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://thumbprint.design/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://thumbprint.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Profiles, reviews, work imagery, and availability support trust before contact. The interface asks only what improves the match and explains why it matters.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://thumbprint.design/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://thumbprint.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For local-service marketplaces, preserve two-sided continuity; reject the design if it starts collecting personal details before showing value.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://thumbprint.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}

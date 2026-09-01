@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. No Salesforce visual assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "e91c20a1a30e278ad9ddd3e45f9fe9b558406725d35d50c6f06b976b4642949e",
+    "coverage.json": "667ff7af38929a2d8fae27b83d3a6de18fea3e63c48a725dd0961724f676cf58",
+    "evidence.json": "47700d8305d2e9bc721543a3a30254d538aedd88688c66f908f9b8da1ca026eb",
+    "metadata.json": "2d1770cd9633f270a4145c63a30c3343b46aa64b848b112fe1093df9c36cd4df",
+    "preview-spec.json": "15c515dec6b4db0ec61cdd468776f7e616c1fac20ba686ba783dee9a8cdfcf53",
+    "source-notes.md": "081088e2a50f8874e9e6faae6b6f37a7ffdbd406759bab8aee49f457cbeed52d",
+    "source.json": "1ecd5de5469ac8afe0fd95bb1b9ad43d8373993c1ab9dc1490e0d1a8a3152790",
+    "tokens.json": "ece44502c710d1e750b0e379f99f424f92467cbb893a7c19c48865ee251578df"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

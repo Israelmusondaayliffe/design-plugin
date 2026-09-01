@@ -1,0 +1,14 @@
+{
+  "layout": "stable service column with expandable language-safe regions",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "minimal state feedback without required animation",
+  "pattern": "bilingual-ready public service form with direct labels and accessible recovery",
+  "primary": "#f8f8f8",
+  "radius": "3px",
+  "schema_version": "1.0",
+  "secondary": "#1a1a1a"
+}

@@ -2,7 +2,7 @@
 
 ## Visual thesis
 
-USWDS is strongest as a public-service continuity system. It combines reusable components and tokens with journey patterns and explicit design principles so people can complete important tasks across agencies, devices, and levels of technical confidence.
+USWDS is strongest as a public-service continuity system. It combines reusable components and tokens with task path patterns and explicit design principles so people can complete important tasks across agencies, devices, and levels of technical confidence.
 
 ## Signature relationships
 
@@ -30,7 +30,7 @@ Forms, alerts, navigation, accordions, summaries, identifiers, and service patte
 
 ## Adaptation rules
 
-- Preserve accessibility, user-need hierarchy, mobile service quality, and journey continuity.
+- Preserve accessibility, user-need hierarchy, mobile service quality, and task path continuity.
 - Adapt identity through typography, illustration, and restrained brand roles without changing familiar control meaning.
 - Use pattern research for complex journeys rather than designing each step independently.
 
@@ -38,7 +38,7 @@ Forms, alerts, navigation, accordions, summaries, identifiers, and service patte
 
 - Treating public-sector design as a patriotic palette.
 - Compressing desktop service pages into unreadable mobile stacks.
-- Using reusable components without solving the journey between them.
+- Using reusable components without solving the task path between them.
 - Hiding validation, progress, or next actions in subtle styling.
 
 ## Evidence boundary

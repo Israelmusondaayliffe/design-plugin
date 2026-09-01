@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. No Porsche photography, fonts, logos, or screenshots bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "b8a91fe7c083b0478818a1f949a0c6a3626b43df5755046e1d40e5283d448323",
+    "coverage.json": "ee351ddff7779a51b7ed848fe419f22d8f69902103f836bc3e4051cbf579e804",
+    "evidence.json": "531724787c7fd3cb63be7fa0bf36bda75b6330d833afc67a62af9a93a0bc6e34",
+    "metadata.json": "465200c4b92a77244dce84abf20bc58971797dc3d7f6780126b1644f3e945830",
+    "preview-spec.json": "e8dc161e00447f01dac5bf7d6c239b97199985a9d00f8edc7a9248dfea250e74",
+    "source-notes.md": "79af32d3b9f4732d128a29cd9c922f5c7554f0c21f9b0d0ea454b8a7244696ab",
+    "source.json": "6e1cef06048496b2215807973abfac7dafb2b38a898d01db52392cdb35f4d11f",
+    "tokens.json": "417dadeb9ae7ccab223f5ab2b92fdb8b06e09ebf5d6d00b272cf5a4b7516871b"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

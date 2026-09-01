@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "adaptive-expressive"
+  ],
+  "avoid_for": [
+    "minimal product landing pages where newsroom density would add false complexity"
+  ],
+  "best_for": [
+    "news and cultural publishing with real editorial hierarchy",
+    "content-heavy products that need section identity and rapid scanning"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "general",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover"
+  ],
+  "layout_behavior": "editorial",
+  "media_strategy": "mixed",
+  "name": "Guardian Source",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "editorial",
+    "media",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "editorial priority",
+    "serif-sans division",
+    "section color roles",
+    "dense but legible rhythm"
+  ],
+  "slug": "guardian-source",
+  "source_kind": "public-design-system",
+  "source_name": "Guardian Source",
+  "source_url": "https://theguardian.design/",
+  "studied_at": "2026-09-01",
+  "summary": "Headline scale, grouping, and placement communicate what matters before decoration. Narrative and utility typography keep separate reading jobs.",
+  "typography_character": "editorial-serif"
+}

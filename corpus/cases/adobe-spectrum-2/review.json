@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. No Adobe icons, fonts, screenshots, or brand assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "8dbd6769ccb7208fe1508ab16c4d5580d40c4485d63bc638d8cd5f178157a469",
+    "coverage.json": "3c615759eb9bc5aa08c6096e815c5669e25d0b7570e30b95a86f3172ae83b928",
+    "evidence.json": "f756161ee26f8eb1b1bcf8a265f9238bb50c4bbd26cab97c93630938eb6420f9",
+    "metadata.json": "cca04c54f16d4505bb8b4aa2f59efcd3169289529d2ed9bcc5b5f046fd967008",
+    "preview-spec.json": "38b01e5e06c5fd1c94f63d33452ef8b8278a103125cc37d1eb26e011e469281e",
+    "source-notes.md": "996eb64be4c16f4e5920c3bc7f683a619e9d5be4cc48cf970ef9a3b8abe46c8c",
+    "source.json": "0aeb3850648c6765aabfe9550aa1c2082d8fbea91c893d8382a1f6cd39a90b69",
+    "tokens.json": "aa5e0666e3cf45e888124343e306b30f987dd37997f5003af32a02c47a854a89"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "alternating full-width and reading-width modules",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "light component feedback with no required spectacle",
+  "pattern": "modular editorial bands with bold type, one campaign color, and a bounded media feature",
+  "primary": "#fff7e8",
+  "radius": "2px",
+  "schema_version": "1.0",
+  "secondary": "#0060df"
+}

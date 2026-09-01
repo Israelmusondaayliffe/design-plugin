@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "43ce9b7341f08965e58e1551f8a046608d30d75c718c1c082d4683d1965939d6",
+  "effective_url": "https://design-system.service.gov.uk/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://design-system.service.gov.uk/",
+    "URL: https://design-system.service.gov.uk/components/",
+    "URL: https://design-system.service.gov.uk/styles/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://design-system.service.gov.uk/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "govuk-design-system",
+  "source_version": "live-public-source-2026-09-01:43ce9b7341f0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

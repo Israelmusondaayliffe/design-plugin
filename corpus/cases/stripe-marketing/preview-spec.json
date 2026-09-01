@@ -1,0 +1,14 @@
+{
+  "layout": "broad technical story alternating between diagrams and exact proof",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "smooth system transitions that remain skippable",
+  "pattern": "global infrastructure narrative with code, payment UI, and restrained spectral atmosphere",
+  "primary": "#f6f9fc",
+  "radius": "10px",
+  "schema_version": "1.0",
+  "secondary": "#635bff"
+}

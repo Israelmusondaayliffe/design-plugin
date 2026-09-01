@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "simple local catalogs with no itinerary or disruption state"
+  ],
+  "best_for": [
+    "international travel booking and itinerary products",
+    "commerce systems with volatile inventory and recovery needs"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "grid-system",
+  "media_strategy": "icon-led",
+  "name": "Kiwi.com Orbit",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "commerce",
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "travel-task consistency",
+    "cross-platform booking",
+    "localization depth",
+    "recovery visibility"
+  ],
+  "slug": "kiwi-orbit",
+  "source_kind": "public-design-system",
+  "source_name": "Kiwi.com Orbit",
+  "source_url": "https://github.com/kiwicom/orbit",
+  "studied_at": "2026-09-01",
+  "summary": "Search, itinerary, price, baggage, and disruption states share portable roles. Components support web and mobile without erasing platform expectations.",
+  "typography_character": "humanist-sans"
+}

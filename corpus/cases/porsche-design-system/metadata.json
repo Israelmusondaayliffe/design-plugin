@@ -1,1 +1,63 @@
-{"schema_version":"1.0","slug":"porsche-design-system","name":"Porsche Design System","source_name":"Porsche Design System","source_url":"https://designsystem.porsche.com/","source_kind":"public-design-system","studied_at":"2026-08-30","platforms":["web","responsive-web"],"product_types":["design-system","marketing","commerce"],"industries":["automotive","technology"],"archetypes":["premium-technical"],"density":"adaptive","color_modes":["light","dark","adaptive"],"interaction_complexity":"medium","evidence_quality":"high","publication_status":"review","rights_basis":"original-analysis-public-source","summary":"A premium technical system that combines framework-agnostic design tokens, restrained color roles, fluid vertical spacing, precise typography, and strong light-dark semantics without turning luxury into ornamental excess.","signature_traits":["framework-agnostic design tokens","restrained semantic color","fluid vertical rhythm","precise regular-weight typography","premium technical restraint"],"best_for":["premium product sites","automotive digital experiences","commerce with technical product detail","brand systems that need luxury without editorial softness"],"avoid_for":["playful social products where precision would feel cold","interfaces that equate premium with black backgrounds, gold accents, or excessive animation"]}
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "premium-technical"
+  ],
+  "avoid_for": [
+    "playful social products where precision would feel cold",
+    "interfaces that equate premium with black backgrounds, gold accents, or excessive animation"
+  ],
+  "best_for": [
+    "premium product sites",
+    "automotive digital experiences",
+    "commerce with technical product detail",
+    "brand systems that need luxury without editorial softness"
+  ],
+  "brand_maturity": "mature",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "automotive",
+    "technology"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "browse-discover",
+    "evaluate-convert"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "photography-led",
+  "name": "Porsche Design System",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "design-system",
+    "marketing",
+    "commerce"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "framework-agnostic design tokens",
+    "restrained semantic color",
+    "fluid vertical rhythm",
+    "precise regular-weight typography",
+    "premium technical restraint"
+  ],
+  "slug": "porsche-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "Porsche Design System",
+  "source_url": "https://designsystem.porsche.com/",
+  "studied_at": "2026-08-30",
+  "summary": "A premium technical system that combines framework-agnostic design tokens, restrained color roles, fluid vertical spacing, precise typography, and strong light-dark semantics without turning luxury into ornamental excess.",
+  "typography_character": "neutral-sans"
+}

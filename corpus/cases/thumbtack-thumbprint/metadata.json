@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "instant commodity checkout where a long match flow would add friction"
+  ],
+  "best_for": [
+    "local-service marketplaces",
+    "matching products that need qualification before price or availability"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "photography-led",
+  "name": "Thumbtack Thumbprint",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "commerce",
+    "forms",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "service-match clarity",
+    "human proof",
+    "progressive qualification",
+    "two-sided continuity"
+  ],
+  "slug": "thumbtack-thumbprint",
+  "source_kind": "public-design-system",
+  "source_name": "Thumbtack Thumbprint",
+  "source_url": "https://thumbprint.design/",
+  "studied_at": "2026-09-01",
+  "summary": "Questions and results narrow a broad need into comparable local professionals. Profiles, reviews, work imagery, and availability support trust before contact.",
+  "typography_character": "humanist-sans"
+}

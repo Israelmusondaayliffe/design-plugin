@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "baseline",
+  "archetypes": [
+    "collaboration-system"
+  ],
+  "avoid_for": [
+    "formal public services where a conversational brand posture could weaken authority"
+  ],
+  "best_for": [
+    "team products that need to communicate social coordination",
+    "workplace marketing with credible product conversation examples"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "productivity",
+    "technology"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "evaluate-convert",
+    "browse-discover"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "mixed",
+  "name": "Slack Brand",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "saas",
+    "productivity"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "collaboration warmth",
+    "brand mark discipline",
+    "proof through conversation",
+    "friendly directness"
+  ],
+  "slug": "slack-brand",
+  "source_kind": "public-website",
+  "source_name": "Slack Brand",
+  "source_url": "https://slack.com/media-kit",
+  "studied_at": "2026-09-01",
+  "summary": "Human language and color make workplace software feel social without hiding its utility. A recognizable multi-color identity stays bounded while text and surfaces remain quieter.",
+  "typography_character": "humanist-sans"
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Observable Plot was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://observablehq.github.io/plot/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://observablehq.github.io/plot/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Marks, transforms, scales, and facets express data relationships without manual pixel placement.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://observablehq.github.io/plot/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://observablehq.github.io/plot/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The library reduces setup while leaving important encoding decisions visible. Multiple marks and annotations can share one data space with explicit roles.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://observablehq.github.io/plot/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://observablehq.github.io/plot/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For exploratory data products and analytical publishing, preserve code-to-evidence continuity; reject the design if it starts choosing a mark because it is visually novel rather than suited to the question.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://observablehq.github.io/plot/"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "stacked views with platform-specific bars and safe areas",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "familiar push, sheet, and tab transitions",
+  "pattern": "native-like mobile navigation with tabs, sheet, and touch-first list",
+  "primary": "#f5f7fb",
+  "radius": "12px",
+  "schema_version": "1.0",
+  "secondary": "#007aff"
+}

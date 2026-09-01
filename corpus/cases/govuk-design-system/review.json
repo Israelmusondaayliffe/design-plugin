@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. Visual assets excluded."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "00be9716bb60e8b6c197427a9b6a634402ebb61db3c63dfb27959917c75f9f3a",
+    "coverage.json": "bf01bd3193de595cf7e1de3fd04de1f571feaa18adb38774f5ed8f8a23a1c90b",
+    "evidence.json": "cf2b67146951939faed499c4e749db56c6bcfd8e25afc09024f3a36b819d120f",
+    "metadata.json": "372c52d6c5721e05168dc426cfc05586ffd23c705f92b4339fc919ad71b800e9",
+    "preview-spec.json": "10efc02fb8e5f922e90bf17ff5b236ec998c299ddb5f489c52db56d42c8b5431",
+    "source-notes.md": "00b8492898423e6e8f11cb07d36f6910e7cefdf70a2bec92cfb75b8b769d4e46",
+    "source.json": "378cf1093569fa178dc00faf31e5ceb5ca1fd8f3d6b8b1ba85d0f505e11518fb",
+    "tokens.json": "82a5d406c321dfec2ef636b94f09ae90553de440601eabfa17ec6b8dae974489"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for REI Cedar was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://rei.github.io/rei-cedar-docs/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://rei.github.io/rei-cedar-docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Product and editorial imagery connect equipment to real environments and uses.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://rei.github.io/rei-cedar-docs/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://rei.github.io/rei-cedar-docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Fit, size, technical attributes, stock, and fulfillment remain easy to compare. Guidance and storytelling support product choice without burying purchase actions.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://rei.github.io/rei-cedar-docs/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://rei.github.io/rei-cedar-docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For outdoor and equipment commerce, preserve earthy restraint; reject the design if it starts using scenic photography without showing product evidence.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://rei.github.io/rei-cedar-docs/"
+    }
+  ],
+  "schema_version": "1.0"
+}

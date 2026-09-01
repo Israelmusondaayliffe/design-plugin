@@ -1,1 +1,60 @@
-{"schema_version":"1.0","slug":"material-3","name":"Material 3","source_name":"Material Design 3","source_url":"https://m3.material.io/","source_kind":"public-design-system","studied_at":"2026-08-30","platforms":["android","mobile","cross-platform"],"product_types":["design-system","native-app"],"industries":["technology","general"],"archetypes":["adaptive-expressive"],"density":"adaptive","color_modes":["adaptive","brand-variable"],"interaction_complexity":"high","evidence_quality":"high","publication_status":"review","rights_basis":"original-analysis-public-source","summary":"An adaptive and expressive system built from semantic color roles, a named type hierarchy, shape, and component theming that can change character without losing structural consistency.","signature_traits":["tonal semantic color roles","named type scale from display to label","theme subsystems for color typography and shape","expressive component shape","adaptive personalization"],"best_for":["Android products","cross-platform systems that need strong theming","consumer products where color and shape carry identity"],"avoid_for":["products that copy the baseline purple palette without brand reasoning","dense technical tools where oversized expressive surfaces reduce usable information density"]}
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "adaptive-expressive"
+  ],
+  "avoid_for": [
+    "products that copy the baseline purple palette without brand reasoning",
+    "dense technical tools where oversized expressive surfaces reduce usable information density"
+  ],
+  "best_for": [
+    "Android products",
+    "cross-platform systems that need strong theming",
+    "consumer products where color and shape carry identity"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "design-systems-data-experimental",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Material 3",
+  "platforms": [
+    "android",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "design-system",
+    "native-app"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "tonal semantic color roles",
+    "named type scale from display to label",
+    "theme subsystems for color typography and shape",
+    "expressive component shape",
+    "adaptive personalization"
+  ],
+  "slug": "material-3",
+  "source_kind": "public-design-system",
+  "source_name": "Material Design 3",
+  "source_url": "https://m3.material.io/",
+  "studied_at": "2026-08-30",
+  "summary": "An adaptive and expressive system built from semantic color roles, a named type hierarchy, shape, and component theming that can change character without losing structural consistency.",
+  "typography_character": "humanist-sans"
+}

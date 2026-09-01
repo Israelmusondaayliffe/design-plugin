@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "83d117c019ed805e1f4acfb06a56eb34fc8b2a144e009ecf801a7391fdf30aea",
+  "effective_url": "https://primer.style/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://primer.style/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://primer.style/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "github-primer",
+  "source_version": "live-public-source-2026-09-01:83d117c019ed",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

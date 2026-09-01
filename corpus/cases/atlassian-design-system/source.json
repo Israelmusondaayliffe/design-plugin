@@ -1,0 +1,23 @@
+{
+  "archive_url": null,
+  "content_sha256": "5cd9d12fae55db59fadfeb8bfdb90338f0db9370a016a206315f4bc738558124",
+  "effective_url": "https://atlassian.design/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://atlassian.design/",
+    "URL: https://atlassian.design/components/",
+    "URL: https://atlassian.design/foundations/",
+    "URL: https://atlassian.design/foundations/spacing/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://atlassian.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "atlassian-design-system",
+  "source_version": "live-public-source-2026-09-01:5cd9d12fae55",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

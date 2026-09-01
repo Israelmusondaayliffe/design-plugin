@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Ionic Components was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://ionicframework.com/docs/components",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://ionicframework.com/docs/components"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared components adapt their presentation to iOS and Material conventions.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://ionicframework.com/docs/components",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://ionicframework.com/docs/components"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Navigation, sheets, pickers, lists, forms, and feedback cover common app work. Components run through web technology while preserving mobile behavior.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://ionicframework.com/docs/components",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://ionicframework.com/docs/components"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For cross-platform mobile applications, preserve progressive platform fit; reject the design if it starts forcing one platform appearance everywhere.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://ionicframework.com/docs/components"
+    }
+  ],
+  "schema_version": "1.0"
+}

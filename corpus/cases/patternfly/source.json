@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "bc6b1fdb52c5a579bb5af2857a8038b365f356e87f461784f9021fd054285bd6",
+  "effective_url": "https://www.patternfly.org/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://www.patternfly.org/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://www.patternfly.org/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "patternfly",
+  "source_version": "live-public-source-2026-09-01:bc6b1fdb52c5",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

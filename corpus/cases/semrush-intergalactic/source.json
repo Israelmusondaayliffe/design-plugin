@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "1263ff9ab5d55f5968877d422da7c2b3876caafdbd0166d3c080f135d74c741e",
+  "effective_url": "https://developer.semrush.com/intergalactic/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.semrush.com/intergalactic/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://developer.semrush.com/intergalactic/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "semrush-intergalactic",
+  "source_version": "live-public-source-2026-09-01:1263ff9ab5d5",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

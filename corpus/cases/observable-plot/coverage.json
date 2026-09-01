@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Choosing a mark because it is visually novel rather than suited to the question.",
+  "archetype": "developer-dense",
+  "brand_posture": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. Concise specifications remain close to the chart they produce.",
+  "category": "design-systems-data-experimental",
+  "color": "Multiple marks and annotations can share one data space with explicit roles.",
+  "components": "Multiple marks and annotations can share one data space with explicit roles. Concise specifications remain close to the chart they produce.",
+  "confidence": "medium",
+  "container": "Declarative chart canvas with layered marks, facets, and a concise specification. Multiple marks and annotations can share one data space with explicit roles.",
+  "failure_modes": [
+    "Choosing a mark because it is visually novel rather than suited to the question.",
+    "Layering annotations until data becomes unreadable.",
+    "Treating defaults as proof that scales and accessibility are correct."
+  ],
+  "flows": "Destination test: Exploratory data products and analytical publishing. Evaluate the relationship across visual exploration, and browsing and discovery.",
+  "forms": "During visual exploration, and browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. The library reduces setup while leaving important encoding decisions visible.",
+  "imagery": "Declarative chart canvas with layered marks, facets, and a concise specification. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "technology, developer-tools",
+  "interaction": "Concise specifications remain close to the chart they produce.",
+  "lane_fit": "Lane assignment: Exploratory data products and analytical publishing. This case earns one design systems, data, and experimental quota credit through declarative visual grammar and sensible analytical defaults.",
+  "layout": "Data canvas paired with a narrow code and explanation rail.",
+  "motion": "Optional transition only when it explains data change.",
+  "navigation": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. Data canvas paired with a narrow code and explanation rail.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "The library reduces setup while leaving important encoding decisions visible. Concise specifications remain close to the chart they produce.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "declarative visual grammar: Marks, transforms, scales, and facets express data relationships without manual pixel placement.",
+    "sensible analytical defaults: The library reduces setup while leaving important encoding decisions visible.",
+    "layered composition: Multiple marks and annotations can share one data space with explicit roles.",
+    "code-to-evidence continuity: Concise specifications remain close to the chart they produce."
+  ],
+  "source": "https://observablehq.github.io/plot/",
+  "spacing": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. The library reduces setup while leaving important encoding decisions visible.",
+  "states": "Concise specifications remain close to the chart they produce. Optional transition only when it explains data change.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "exploratory data products and analytical publishing",
+    "teams needing reproducible chart specifications"
+  ],
+  "surfaces": "Multiple marks and annotations can share one data space with explicit roles. Preview surfaces use original study values.",
+  "typography": "Technical typography reserves monospace for code or values and keeps general interface reading calm. The library reduces setup while leaving important encoding decisions visible.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "interfaces where decorative charts would substitute for actual analysis"
+  ],
+  "visual_thesis": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. The library reduces setup while leaving important encoding decisions visible."
+}

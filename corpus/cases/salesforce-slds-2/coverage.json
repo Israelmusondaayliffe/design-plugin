@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "crm-guided",
+  "brand_posture": "A CRM-scale system that uses global styling hooks, adjustable density, intentional contrast, and a more modern expressive layer while preserving the predictable semantics required by complex enterprise workflows.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Build color through semantic hooks and tested themes. Brand expression can become more visible in navigation, highlights, or selected experiences, but status and action roles should remain stable.",
+  "components": "Complex enterprise components need predictable states and data relationships. Styling hooks should control appearance without requiring each component to fork its own visual system.",
+  "confidence": "high",
+  "container": "Use containers that keep global styling hooks legible across the supported platforms.",
+  "failure_modes": [
+    "Adding a new visual theme by overriding individual components one at a time.",
+    "Increasing whitespace without preserving information hierarchy.",
+    "Using brand color for every selected, status, and action state.",
+    "Copying Salesforce motifs into an unrelated product with no functional reason."
+  ],
+  "flows": "Destination test: CRM and enterprise workflow products. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Salesforce Lightning Design System 2, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is mixed; no source imagery or visual assets are stored in the corpus.",
+  "industry": "crm, enterprise, technology",
+  "interaction": "Complex enterprise components need predictable states and data relationships. Styling hooks should control appearance without requiring each component to fork its own visual system.",
+  "lane_fit": "Lane assignment: CRM and enterprise workflow products. This case earns one SaaS, dashboard, administration, and productivity quota credit through global styling hooks and density personalization.",
+  "layout": "Support complex records, dashboards, related data, filters, and actions without using a single density everywhere. Compact modes should increase throughput. Comfortable modes should improve readability and touch interaction without changing the underlying hierarchy.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Salesforce Lightning Design System 2 across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving global styling hooks and density personalization.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "global styling hooks",
+    "density personalization",
+    "intentional contrast",
+    "guided enterprise hierarchy",
+    "expressive motifs bounded by operational semantics"
+  ],
+  "source": "https://www.lightningdesignsystem.com/",
+  "spacing": "Spacing should preserve the case's adaptive density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "CRM and enterprise workflow products",
+    "large configurable business applications",
+    "systems that need user-selectable density",
+    "products with many repeated data and action patterns"
+  ],
+  "surfaces": "Build color through semantic hooks and tested themes. Brand expression can become more visible in navigation, highlights, or selected experiences, but status and action roles should remain stable.",
+  "typography": "Use highly legible product typography with clear roles for record titles, field labels, values, metadata, and actions. Large expressive typography should be limited to surfaces where it helps orientation or narrative.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "small editorial sites where enterprise configurability adds needless complexity",
+    "products that copy Salesforce motifs without the underlying workflow semantics"
+  ],
+  "visual_thesis": "SLDS 2 is useful as a model for evolving a very large enterprise product without losing the semantic stability users rely on. Styling hooks, density options, and repeated workflow patterns provide the control layer. A more expressive visual language can then be added selectively."
+}

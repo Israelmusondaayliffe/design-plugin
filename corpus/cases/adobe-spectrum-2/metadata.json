@@ -1,1 +1,65 @@
-{"schema_version":"1.0","slug":"adobe-spectrum-2","name":"Adobe Spectrum 2","source_name":"Adobe Spectrum 2","source_url":"https://spectrum.adobe.com/","source_kind":"public-design-system","studied_at":"2026-08-30","platforms":["web","desktop","mobile","cross-platform"],"product_types":["design-system","productivity","native-app"],"industries":["creative-tools","technology"],"archetypes":["creative-expressive"],"density":"adaptive","color_modes":["light","dark","adaptive","brand-variable"],"interaction_complexity":"high","evidence_quality":"high","publication_status":"review","rights_basis":"original-analysis-public-source","summary":"A creative-tool system that combines cross-platform usability with more expressive color, rounded iconography, depth, and attention hierarchy while keeping accessibility and content clarity as structural constraints.","signature_traits":["expressive but controlled color","rounded thicker icon language","clear attention hierarchy","separation of navigation and content","cross-platform accessibility"],"best_for":["creative tools","media applications","cross-platform creator products","products that need more expression than neutral enterprise systems"],"avoid_for":["highly conservative operational systems where expressive shape and color would distract","interfaces that copy Adobe's appearance without the supporting hierarchy and accessibility rules"]}
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "creative-expressive"
+  ],
+  "avoid_for": [
+    "highly conservative operational systems where expressive shape and color would distract",
+    "interfaces that copy Adobe's appearance without the supporting hierarchy and accessibility rules"
+  ],
+  "best_for": [
+    "creative tools",
+    "media applications",
+    "cross-platform creator products",
+    "products that need more expression than neutral enterprise systems"
+  ],
+  "brand_maturity": "multi-brand",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "design-systems-data-experimental",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "creative-tools",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "mixed",
+  "name": "Adobe Spectrum 2",
+  "platforms": [
+    "web",
+    "desktop",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "design-system",
+    "productivity",
+    "native-app"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "expressive but controlled color",
+    "rounded thicker icon language",
+    "clear attention hierarchy",
+    "separation of navigation and content",
+    "cross-platform accessibility"
+  ],
+  "slug": "adobe-spectrum-2",
+  "source_kind": "public-design-system",
+  "source_name": "Adobe Spectrum 2",
+  "source_url": "https://spectrum.adobe.com/",
+  "studied_at": "2026-08-30",
+  "summary": "A creative-tool system that combines cross-platform usability with more expressive color, rounded iconography, depth, and attention hierarchy while keeping accessibility and content clarity as structural constraints.",
+  "typography_character": "expressive-display"
+}

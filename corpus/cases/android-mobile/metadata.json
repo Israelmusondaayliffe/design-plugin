@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "fixed kiosk layouts that do not participate in Android navigation or window behavior"
+  ],
+  "best_for": [
+    "Android phone applications that must adapt across handheld window sizes",
+    "mobile workflows with recurring navigation, input, and system-state pressure"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "create-manage"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Android Mobile UI Guidance",
+  "platforms": [
+    "mobile",
+    "android"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "handheld task priority",
+    "adaptive mobile structure",
+    "system-aware surfaces",
+    "input and state reachability"
+  ],
+  "slug": "android-mobile",
+  "source_kind": "public-design-system",
+  "source_name": "Android Mobile UI Guidance",
+  "source_url": "https://developer.android.com/design/ui/mobile",
+  "studied_at": "2026-09-01",
+  "summary": "A small viewport exposes the next useful action without removing context or recovery. Window size, posture, orientation, and device variation change arrangement before they change meaning.",
+  "typography_character": "humanist-sans"
+}

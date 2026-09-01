@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Compressing dense screens without preserving headings and landmarks.",
+  "archetype": "developer-dense",
+  "brand_posture": "Large development workflows remain scannable through clear grouping and page structure. Reusable patterns support change without requiring every screen to be rebuilt at once.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Content, focus, keyboard behavior, and alternative input are treated as product requirements.",
+  "components": "Content, focus, keyboard behavior, and alternative input are treated as product requirements. Reusable patterns support change without requiring every screen to be rebuilt at once.",
+  "confidence": "medium",
+  "container": "Dense developer workflow with explicit status, navigation, and task grouping. Content, focus, keyboard behavior, and alternative input are treated as product requirements.",
+  "failure_modes": [
+    "Compressing dense screens without preserving headings and landmarks.",
+    "Using status colors without text or shape reinforcement.",
+    "Adding one-off component variants that bypass the shared semantics."
+  ],
+  "flows": "Destination test: Complex developer and operations platforms. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "During creation and management, and monitoring and operations, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Large development workflows remain scannable through clear grouping and page structure. Color and spacing roles stay predictable across many features and teams.",
+  "imagery": "Dense developer workflow with explicit status, navigation, and task grouping. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "developer-tools, enterprise",
+  "interaction": "Reusable patterns support change without requiring every screen to be rebuilt at once.",
+  "lane_fit": "Lane assignment: Complex developer and operations platforms. This case earns one SaaS, dashboard, administration, and productivity quota credit through dense task hierarchy and semantic token discipline.",
+  "layout": "Application shell with layered content regions.",
+  "motion": "Minimal feedback for state and navigation.",
+  "navigation": "Large development workflows remain scannable through clear grouping and page structure. Application shell with layered content regions.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Color and spacing roles stay predictable across many features and teams. Reusable patterns support change without requiring every screen to be rebuilt at once.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "dense task hierarchy: Large development workflows remain scannable through clear grouping and page structure.",
+    "semantic token discipline: Color and spacing roles stay predictable across many features and teams.",
+    "inclusive interaction: Content, focus, keyboard behavior, and alternative input are treated as product requirements.",
+    "incremental consistency: Reusable patterns support change without requiring every screen to be rebuilt at once."
+  ],
+  "source": "https://design.gitlab.com/",
+  "spacing": "Large development workflows remain scannable through clear grouping and page structure. Color and spacing roles stay predictable across many features and teams.",
+  "states": "Reusable patterns support change without requiring every screen to be rebuilt at once. Minimal feedback for state and navigation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "complex developer and operations platforms",
+    "large product families with many contributors and recurring workflow patterns"
+  ],
+  "surfaces": "Content, focus, keyboard behavior, and alternative input are treated as product requirements. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Color and spacing roles stay predictable across many features and teams.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "small expressive campaigns where dense application conventions would overpower the story"
+  ],
+  "visual_thesis": "Large development workflows remain scannable through clear grouping and page structure. Color and spacing roles stay predictable across many features and teams."
+}

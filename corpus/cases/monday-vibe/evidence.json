@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for monday Vibe was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://vibe.monday.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://vibe.monday.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Color labels work as team metadata only when text and placement preserve meaning.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://vibe.monday.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://vibe.monday.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "High-level status and item detail remain connected across views. Repeated building blocks support different team processes without losing behavior.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://vibe.monday.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://vibe.monday.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For collaborative planning and project platforms, preserve energetic utility; reject the design if it starts using color labels without text or stable semantics.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://vibe.monday.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

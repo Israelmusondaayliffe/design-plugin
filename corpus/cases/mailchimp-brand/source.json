@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "617e55f66400b74f5ca4c6fac14c8576068cd3f2c561ec2d5fdeef96d12650dd",
+  "effective_url": "https://mailchimp.com/about/brand-assets/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://mailchimp.com/about/brand-assets/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://mailchimp.com/about/brand-assets/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "mailchimp-brand",
+  "source_version": "live-public-source-2026-09-01:617e55f66400",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

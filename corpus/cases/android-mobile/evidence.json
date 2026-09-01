@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Android Mobile UI Guidance was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://developer.android.com/design/ui/mobile",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://developer.android.com/design/ui/mobile"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "A small viewport exposes the next useful action without removing context or recovery.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://developer.android.com/design/ui/mobile",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://developer.android.com/design/ui/mobile"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Window size, posture, orientation, and device variation change arrangement before they change meaning. Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://developer.android.com/design/ui/mobile",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://developer.android.com/design/ui/mobile"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For Android phone applications that must adapt across handheld window sizes, preserve input and state reachability; reject the design if it starts assuming one phone size is the Android layout.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://developer.android.com/design/ui/mobile"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Spotify Encore was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared roles adapt to listening contexts and device constraints.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Artwork and media remain visually dominant while controls retain semantic stability. System parts support multiple product expressions without one rigid skin.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For media ecosystems spanning many devices and audience modes, preserve motion with musical timing; reject the design if it starts letting album art colors overwrite action and status semantics.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+    }
+  ],
+  "schema_version": "1.0"
+}

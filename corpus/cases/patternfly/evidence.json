@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for PatternFly was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://www.patternfly.org/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://www.patternfly.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Navigation and page regions orient users inside long-running administrative work.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://www.patternfly.org/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://www.patternfly.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Health, warning, progress, and action states remain distinguishable at scale. Components are joined into workflows instead of presented as isolated widgets.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://www.patternfly.org/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://www.patternfly.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For infrastructure consoles and administrative platforms, preserve responsive complexity; reject the design if it starts turning every status into a colored badge with no hierarchy.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://www.patternfly.org/"
+    }
+  ],
+  "schema_version": "1.0"
+}

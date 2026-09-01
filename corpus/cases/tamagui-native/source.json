@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "9be38221391d55960c3d7c63f9aa3de251b21bac0ce337760e877c1227c467ca",
+  "effective_url": "https://tamagui.dev/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://tamagui.dev/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://tamagui.dev/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "tamagui-native",
+  "source_version": "live-public-source-2026-09-01:9be38221391d",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

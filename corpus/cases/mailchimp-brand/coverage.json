@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using yellow across all backgrounds until calls to action disappear.",
+  "archetype": "creative-expressive",
+  "brand_posture": "Unexpected composition and concise language give a familiar marketing tool a distinct voice. Handmade edge and type choices add character inside a controlled layout.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "A forceful brand pair creates identity while supporting colors stay secondary.",
+  "components": "A forceful brand pair creates identity while supporting colors stay secondary. Handmade edge and type choices add character inside a controlled layout.",
+  "confidence": "medium",
+  "container": "Editorial yellow field with offbeat display type and one purposeful illustration slot. A forceful brand pair creates identity while supporting colors stay secondary.",
+  "failure_modes": [
+    "Using yellow across all backgrounds until calls to action disappear.",
+    "Adding quirky illustration with no relation to the message.",
+    "Applying handmade type treatments to dense controls or data."
+  ],
+  "flows": "Destination test: Creative marketing products with owned illustration and a confident voice. Evaluate the relationship across browsing and discovery, and evaluation and conversion.",
+  "forms": "During browsing and discovery, and evaluation and conversion, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Unexpected composition and concise language give a familiar marketing tool a distinct voice. Drawn media and typography share the narrative rather than decorate finished copy.",
+  "imagery": "Editorial yellow field with offbeat display type and one purposeful illustration slot. Illustration must teach, motivate, or report state; decorative filler does not qualify. No source asset is stored.",
+  "industry": "commerce, creative-tools",
+  "interaction": "Handmade edge and type choices add character inside a controlled layout.",
+  "lane_fit": "Lane assignment: Creative marketing products with owned illustration and a confident voice. This case earns one brand, editorial, portfolio, and marketing quota credit through editorial wit and illustration partnership.",
+  "layout": "Asymmetric story blocks with generous reading intervals.",
+  "motion": "Small characterful reveals that never gate content.",
+  "navigation": "Unexpected composition and concise language give a familiar marketing tool a distinct voice. Asymmetric story blocks with generous reading intervals.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Drawn media and typography share the narrative rather than decorate finished copy. Handmade edge and type choices add character inside a controlled layout.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "editorial wit: Unexpected composition and concise language give a familiar marketing tool a distinct voice.",
+    "illustration partnership: Drawn media and typography share the narrative rather than decorate finished copy.",
+    "yellow-black anchor: A forceful brand pair creates identity while supporting colors stay secondary.",
+    "imperfect geometry: Handmade edge and type choices add character inside a controlled layout."
+  ],
+  "source": "https://mailchimp.com/about/brand-assets/",
+  "spacing": "Unexpected composition and concise language give a familiar marketing tool a distinct voice. Drawn media and typography share the narrative rather than decorate finished copy.",
+  "states": "Handmade edge and type choices add character inside a controlled layout. Small characterful reveals that never gate content.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "creative marketing products with owned illustration and a confident voice",
+    "editorial campaigns that can support irregular composition"
+  ],
+  "surfaces": "A forceful brand pair creates identity while supporting colors stay secondary. Preview surfaces use original study values.",
+  "typography": "Display, reading, and utility voices remain distinct instead of competing for emphasis. Drawn media and typography share the narrative rather than decorate finished copy.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "regulated task interfaces where expressive irregularity could obscure state or instructions"
+  ],
+  "visual_thesis": "Unexpected composition and concise language give a familiar marketing tool a distinct voice. Drawn media and typography share the narrative rather than decorate finished copy."
+}

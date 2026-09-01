@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "3dad91aee761a4638383aa2ef107c87521f65fd2fa428f85b94deac1c62fedbe",
+  "effective_url": "https://fluent2.microsoft.design/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://fluent2.microsoft.design/color",
+    "URL: https://fluent2.microsoft.design/layout",
+    "URL: https://fluent2.microsoft.design/typography"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://fluent2.microsoft.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "microsoft-fluent-2",
+  "source_version": "live-public-source-2026-09-01:3dad91aee761",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

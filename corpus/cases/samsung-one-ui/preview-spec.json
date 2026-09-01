@@ -1,0 +1,14 @@
+{
+  "layout": "vertically separated viewing and action zones",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "platform-consistent feedback with reduced-motion support",
+  "pattern": "reach-aware mobile screen with orientation above and primary action below",
+  "primary": "#f7f8fb",
+  "radius": "18px",
+  "schema_version": "1.0",
+  "secondary": "#3e75ff"
+}

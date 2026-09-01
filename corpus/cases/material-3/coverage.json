@@ -1,0 +1,55 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "An adaptive and expressive system built from semantic color roles, a named type hierarchy, shape, and component theming that can change character without losing structural consistency.",
+  "category": "design-systems-data-experimental",
+  "color": "Start from semantic relationships, not the baseline sample hues. If a product brand is orange, green, monochrome, or another direction, rebuild the tonal roles around that identity while preserving readable on-colors and surface hierarchy.",
+  "components": "Components should inherit theme color, typography, and shape. Interaction states need to remain systematic across buttons, navigation, selection controls, dialogs, and surfaces.",
+  "confidence": "high",
+  "container": "Use containers that keep tonal semantic color roles legible across the supported platforms.",
+  "failure_modes": [
+    "Copying baseline purple and large rounded cards as the definition of Material.",
+    "Using different radii and colors per component because theming was bypassed.",
+    "Mixing expressive display typography into operational UI labels.",
+    "Applying elevation and container color decoratively instead of to hierarchy or state."
+  ],
+  "flows": "Destination test: Android products. Evaluate the relationship across creation and management.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Material 3, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is icon led; no source imagery or visual assets are stored in the corpus.",
+  "industry": "technology, general",
+  "interaction": "Components should inherit theme color, typography, and shape. Interaction states need to remain systematic across buttons, navigation, selection controls, dialogs, and surfaces.",
+  "lane_fit": "Lane assignment: Android products. This case earns one design systems, data, and experimental quota credit through tonal semantic color roles and named type scale from display to label.",
+  "layout": "Material can support both roomy consumer surfaces and denser application patterns. The mistake is to apply large expressive containers to every task. Match component scale to frequency and information density.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Material 3 across the listed platforms.",
+  "platform": "android, mobile, cross-platform",
+  "responsive_behavior": "Reorder by task and content priority while preserving tonal semantic color roles and named type scale from display to label.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "tonal semantic color roles",
+    "named type scale from display to label",
+    "theme subsystems for color typography and shape",
+    "expressive component shape",
+    "adaptive personalization"
+  ],
+  "source": "https://m3.material.io/",
+  "spacing": "Spacing should preserve the case's adaptive density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "Android products",
+    "cross-platform systems that need strong theming",
+    "consumer products where color and shape carry identity"
+  ],
+  "surfaces": "Start from semantic relationships, not the baseline sample hues. If a product brand is orange, green, monochrome, or another direction, rebuild the tonal roles around that identity while preserving readable on-colors and surface hierarchy.",
+  "typography": "Use the named hierarchy to keep display expression separate from operational labels and body text. A large display style should be rare inside dense product workflows.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "products that copy the baseline purple palette without brand reasoning",
+    "dense technical tools where oversized expressive surfaces reduce usable information density"
+  ],
+  "visual_thesis": "Material 3 is a themable component language, not a purple palette. Its useful structure is the relationship between semantic color roles, a named typography hierarchy, shape, elevation, and component behavior. Expression can change substantially while the system remains coherent."
+}

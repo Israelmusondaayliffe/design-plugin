@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "fixed single-column experiences that ignore multitasking and external input"
+  ],
+  "best_for": [
+    "tablet productivity and creative applications",
+    "mobile products that must scale into serious workspace use"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "productivity"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "browse-discover"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "product-evidence",
+  "name": "Apple iPadOS Guidance",
+  "platforms": [
+    "ios",
+    "mobile"
+  ],
+  "product_types": [
+    "native-app",
+    "productivity",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "multi-input fluency",
+    "adaptive workspace",
+    "content over chrome",
+    "desktop-class depth"
+  ],
+  "slug": "apple-ipados",
+  "source_kind": "public-design-system",
+  "source_name": "Apple iPadOS Guidance",
+  "source_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+  "studied_at": "2026-09-01",
+  "summary": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Layouts respond to window size, multitasking, and device orientation.",
+  "typography_character": "neutral-sans"
+}

@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "b26eb3fe49b7990700907d57214e22b201a3fd30b850643549d393d109057766",
+  "effective_url": "https://carbondesignsystem.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://carbondesignsystem.com/elements/typography/overview/",
+    "URL: https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications",
+    "URL: https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://carbondesignsystem.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "ibm-carbon",
+  "source_version": "live-public-source-2026-09-01:b26eb3fe49b7",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

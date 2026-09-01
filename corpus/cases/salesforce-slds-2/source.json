@@ -1,0 +1,21 @@
+{
+  "archive_url": null,
+  "content_sha256": "c8da4d851c0c0e1e7ae8d9ed945cd973381c88077fc1d8ad94b12b2614a62f49",
+  "effective_url": "https://www.lightningdesignsystem.com/2e1ef8501",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://help.salesforce.com/s/articleView?id=xcloud.customize_ui_enhancedlex.htm&language=en_US",
+    "URL: https://www.lightningdesignsystem.com/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://www.lightningdesignsystem.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "salesforce-slds-2",
+  "source_version": "live-public-source-2026-09-01:c8da4d851c0c",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

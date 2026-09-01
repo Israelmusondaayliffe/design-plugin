@@ -1,0 +1,14 @@
+{
+  "layout": "centered progress path with offset illustration zones",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "reward feedback that can be reduced without hiding status",
+  "pattern": "playful lesson path with a character-led progress moment and one obvious action",
+  "primary": "#f7fff2",
+  "radius": "18px",
+  "schema_version": "1.0",
+  "secondary": "#58cc02"
+}

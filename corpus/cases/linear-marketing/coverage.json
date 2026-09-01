@@ -1,0 +1,51 @@
+{
+  "accessibility": "Test semantic order, focus, contrast, keyboard and touch parity, reflow, non-color state cues, and reduced motion. Using dark mode as a fashionable default without sufficient product evidence.",
+  "archetype": "premium-technical",
+  "brand_posture": "Low-chroma surfaces create room for interface evidence. Short statements keep the pace closer to a product demo than a brochure.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Light and glow guide focus without becoming a general effect.",
+  "components": "Light and glow guide focus without becoming a general effect.",
+  "confidence": "high",
+  "container": "Container changes follow task priority during evaluation and conversion, plus browsing and discovery; they do not imitate the source page frame.",
+  "failure_modes": [
+    "Using dark mode as a fashionable default without sufficient product evidence.",
+    "Covering screenshots with haze until the content becomes unreadable.",
+    "Animating every section instead of revealing only meaningful relationships."
+  ],
+  "flows": "Destination test: Workflow SaaS with a polished product worth showing. Evaluate the relationship across evaluation and conversion, and browsing and discovery.",
+  "forms": "Use literal labels, persistent input, visible validation, and recovery suited to evaluation and conversion, plus browsing and discovery.",
+  "grid": "The grid must preserve quiet dark canvas while supporting staggered proof windows along a narrow story column.",
+  "imagery": "Dark product narrative with cropped interface evidence and one restrained luminous focus. The required media role is real product evidence beside its supporting claim. No source asset is carried into the case.",
+  "industry": "technology, productivity",
+  "interaction": "Light and glow guide focus without becoming a general effect. Short statements keep the pace closer to a product demo than a brochure.",
+  "lane_fit": "Lane assignment: Workflow SaaS with a polished product worth showing. This case earns one brand, editorial, portfolio, and marketing quota credit through Quiet dark canvas and Product-led narrative.",
+  "layout": "Staggered proof windows along a narrow story column.",
+  "motion": "Short staged reveals tied to section entry.",
+  "navigation": "Navigation must keep the user's place during evaluation and conversion, plus browsing and discovery. Low-chroma surfaces create room for interface evidence.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder around evaluation and conversion, plus browsing and discovery. Keep compressed copy visible when the viewport or device changes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Quiet dark canvas: Low-chroma surfaces create room for interface evidence.",
+    "Product-led narrative: Screens appear at the exact point where a claim needs proof.",
+    "Controlled luminosity: Light and glow guide focus without becoming a general effect.",
+    "Compressed copy: Short statements keep the pace closer to a product demo than a brochure."
+  ],
+  "source": "https://linear.app/",
+  "spacing": "Spacing should expose the relationship between quiet dark canvas and product-led narrative at medium density.",
+  "states": "Short statements keep the pace closer to a product demo than a brochure.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "workflow SaaS with a polished product worth showing",
+    "technical products that need a premium but not luxury-coded posture"
+  ],
+  "surfaces": "Light and glow guide focus without becoming a general effect. Preview surfaces are original study material, not sampled owner assets.",
+  "typography": "Use a neutral sans hierarchy. Screens appear at the exact point where a claim needs proof.",
+  "unknowns": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "content-heavy services where readers need long explanations and daylight reading comfort"
+  ],
+  "visual_thesis": "Low-chroma surfaces create room for interface evidence. Screens appear at the exact point where a claim needs proof."
+}

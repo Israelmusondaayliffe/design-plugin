@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using charts without accessible names or tabular alternatives.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Filters, charts, tables, and query controls stay close to the evidence they affect. Technical copy favors clear terms, scan structure, and explicit outcomes.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Panels and layout primitives support many data arrangements without inventing new chrome.",
+  "components": "Panels and layout primitives support many data arrangements without inventing new chrome. Technical copy favors clear terms, scan structure, and explicit outcomes.",
+  "confidence": "medium",
+  "container": "Data workspace with filter spine, accessible chart, and compact evidence table. Panels and layout primitives support many data arrangements without inventing new chrome.",
+  "failure_modes": [
+    "Using charts without accessible names or tabular alternatives.",
+    "Fading secondary text until dense pages become unreadable.",
+    "Separating filters from the data state they control."
+  ],
+  "flows": "Destination test: Observability, security, and analytics interfaces. Evaluate the relationship across monitoring and operations, and visual exploration.",
+  "forms": "During monitoring and operations, and visual exploration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Filters, charts, tables, and query controls stay close to the evidence they affect. Headings, landmarks, focus, names, and keyboard behavior shape complex pages.",
+  "imagery": "Data workspace with filter spine, accessible chart, and compact evidence table. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "developer-tools, enterprise",
+  "interaction": "Technical copy favors clear terms, scan structure, and explicit outcomes.",
+  "lane_fit": "Lane assignment: Observability, security, and analytics interfaces. This case earns one SaaS, dashboard, administration, and productivity quota credit through data-first composition and accessible application structure.",
+  "layout": "Modular analysis grid around persistent query context.",
+  "motion": "State announcements and restrained loading feedback.",
+  "navigation": "Filters, charts, tables, and query controls stay close to the evidence they affect. Modular analysis grid around persistent query context.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Headings, landmarks, focus, names, and keyboard behavior shape complex pages. Technical copy favors clear terms, scan structure, and explicit outcomes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "data-first composition: Filters, charts, tables, and query controls stay close to the evidence they affect.",
+    "accessible application structure: Headings, landmarks, focus, names, and keyboard behavior shape complex pages.",
+    "composable density: Panels and layout primitives support many data arrangements without inventing new chrome.",
+    "content precision: Technical copy favors clear terms, scan structure, and explicit outcomes."
+  ],
+  "source": "https://eui.elastic.co/",
+  "spacing": "Filters, charts, tables, and query controls stay close to the evidence they affect. Headings, landmarks, focus, names, and keyboard behavior shape complex pages.",
+  "states": "Technical copy favors clear terms, scan structure, and explicit outcomes. State announcements and restrained loading feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "observability, security, and analytics interfaces",
+    "data-heavy tools needing both charts and operational controls"
+  ],
+  "surfaces": "Panels and layout primitives support many data arrangements without inventing new chrome. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Headings, landmarks, focus, names, and keyboard behavior shape complex pages.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "low-information marketing pages where dense application framing would add unnecessary machinery"
+  ],
+  "visual_thesis": "Filters, charts, tables, and query controls stay close to the evidence they affect. Headings, landmarks, focus, names, and keyboard behavior shape complex pages."
+}

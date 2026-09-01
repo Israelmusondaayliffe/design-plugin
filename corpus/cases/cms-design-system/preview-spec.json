@@ -1,0 +1,14 @@
+{
+  "layout": "form and result columns collapsing into a guided mobile sequence",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "clear calculation and validation feedback",
+  "pattern": "health program comparison with linked inputs, outcomes, and next steps",
+  "primary": "#f7f9fb",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#0071bc"
+}

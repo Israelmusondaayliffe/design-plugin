@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Shrinking a desktop composition until it technically fits a phone.",
+  "archetype": "platform-native",
+  "brand_posture": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task.",
+  "category": "mobile",
+  "color": "System controls support the current task while content keeps visual priority.",
+  "components": "System controls support the current task while content keeps visual priority. Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task.",
+  "confidence": "medium",
+  "container": "Handheld task view with clear navigation, one reachable action, and adaptive text. System controls support the current task while content keeps visual priority.",
+  "failure_modes": [
+    "Shrinking a desktop composition until it technically fits a phone.",
+    "Hiding the user's location behind ornamental transitions.",
+    "Treating large text or alternate input as an edge case."
+  ],
+  "flows": "Destination test: Touch-first iPhone applications with platform-native interaction. Evaluate the relationship across browsing and discovery, and onboarding and configuration.",
+  "forms": "During browsing and discovery, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model.",
+  "imagery": "Handheld task view with clear navigation, one reachable action, and adaptive text. Product, photography, illustration, and data each receive a separate job. No source asset is stored.",
+  "industry": "technology, general",
+  "interaction": "Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task.",
+  "lane_fit": "Lane assignment: Touch-first iPhone applications with platform-native interaction. This case earns one mobile quota credit through touch-first hierarchy and platform-shaped navigation.",
+  "layout": "Single mobile reading spine with bounded sheets and bars.",
+  "motion": "Short continuity cues with full reduced-motion parity.",
+  "navigation": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Single mobile reading spine with bounded sheets and bars.",
+  "platform": "mobile, ios",
+  "responsive_behavior": "Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model. Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "touch-first hierarchy: Primary actions remain reachable, legible, and physically credible on a handheld screen.",
+    "platform-shaped navigation: Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model.",
+    "content-led chrome: System controls support the current task while content keeps visual priority.",
+    "adaptive input: Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task."
+  ],
+  "source": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+  "spacing": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model.",
+  "states": "Touch, keyboard, pointer, orientation, text size, and assistive technology can change without breaking the task. Short continuity cues with full reduced-motion parity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "touch-first iPhone applications with platform-native interaction",
+    "mobile products that need familiar navigation and adaptive input"
+  ],
+  "surfaces": "System controls support the current task while content keeps visual priority. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "desktop-first workspaces whose core task requires persistent wide-screen comparison"
+  ],
+  "visual_thesis": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model."
+}

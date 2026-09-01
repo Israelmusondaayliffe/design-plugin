@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Adding mascot reactions without a real learning or state job.",
+  "archetype": "creative-expressive",
+  "brand_posture": "Mascot and illustration behavior make progress feel social rather than abstract. Playfulness remains subordinate to the next learning action.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Success, streak, and correction states visibly change the learner's emotional momentum.",
+  "components": "Success, streak, and correction states visibly change the learner's emotional momentum. Playfulness remains subordinate to the next learning action.",
+  "confidence": "medium",
+  "container": "Playful lesson path with a character-led progress moment and one obvious action. Success, streak, and correction states visibly change the learner's emotional momentum.",
+  "failure_modes": [
+    "Adding mascot reactions without a real learning or state job.",
+    "Making every control equally playful and losing task priority.",
+    "Using reward color for errors or destructive actions."
+  ],
+  "flows": "Destination test: Learning products that need motivation and repeated return. Evaluate the relationship across learning and progress, and onboarding and configuration.",
+  "forms": "During learning and progress, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Mascot and illustration behavior make progress feel social rather than abstract. Type, controls, and shapes share approachable weight and clear touch affordance.",
+  "imagery": "Playful lesson path with a character-led progress moment and one obvious action. Illustration must teach, motivate, or report state; decorative filler does not qualify. No source asset is stored.",
+  "industry": "technology, general",
+  "interaction": "Playfulness remains subordinate to the next learning action.",
+  "lane_fit": "Lane assignment: Learning products that need motivation and repeated return. This case earns one brand, editorial, portfolio, and marketing quota credit through character-led motivation and rounded physicality.",
+  "layout": "Centered progress path with offset illustration zones.",
+  "motion": "Reward feedback that can be reduced without hiding status.",
+  "navigation": "Mascot and illustration behavior make progress feel social rather than abstract. Centered progress path with offset illustration zones.",
+  "platform": "web, mobile, ios, android",
+  "responsive_behavior": "Type, controls, and shapes share approachable weight and clear touch affordance. Playfulness remains subordinate to the next learning action.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "character-led motivation: Mascot and illustration behavior make progress feel social rather than abstract.",
+    "rounded physicality: Type, controls, and shapes share approachable weight and clear touch affordance.",
+    "feedback as reward: Success, streak, and correction states visibly change the learner's emotional momentum.",
+    "lesson-first hierarchy: Playfulness remains subordinate to the next learning action."
+  ],
+  "source": "https://design.duolingo.com/",
+  "spacing": "Mascot and illustration behavior make progress feel social rather than abstract. Type, controls, and shapes share approachable weight and clear touch affordance.",
+  "states": "Playfulness remains subordinate to the next learning action. Reward feedback that can be reduced without hiding status.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "learning products that need motivation and repeated return",
+    "consumer onboarding where feedback can build confidence"
+  ],
+  "surfaces": "Success, streak, and correction states visibly change the learner's emotional momentum. Preview surfaces use original study values.",
+  "typography": "Expressive display type may carry identity; quieter utility type must retain operational clarity. Type, controls, and shapes share approachable weight and clear touch affordance.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "high-stakes workflows where character animation could weaken seriousness or delay action"
+  ],
+  "visual_thesis": "Mascot and illustration behavior make progress feel social rather than abstract. Type, controls, and shapes share approachable weight and clear touch affordance."
+}

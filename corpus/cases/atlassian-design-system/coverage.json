@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "collaboration-system",
+  "brand_posture": "A collaboration-oriented product system built from explicit foundations, an 8-pixel spacing base, semantic tokens, and reusable interaction patterns that must work across a large family of products.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Color should be tokenized by role and state. Brand color can be visible in navigation or primary emphasis, but status, selection, focus, and text roles must remain semantically stable.",
+  "components": "Components should inherit shared tokens and preserve predictable behavior across dialogs, menus, tables, navigation, forms, and collaboration patterns. A local exception should be justified by a distinct job, not taste drift.",
+  "confidence": "high",
+  "container": "Use containers that keep 8-pixel spatial rhythm legible across the supported platforms.",
+  "failure_modes": [
+    "Treating 8 pixels as a magic number while ignoring hierarchy.",
+    "Mixing local colors and radii that bypass semantic tokens.",
+    "Making each product area visually unique at the cost of recognizability.",
+    "Copying Atlassian blue or components without the underlying interaction grammar."
+  ],
+  "flows": "Destination test: Collaboration software. Evaluate the relationship across creation and management.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Atlassian Design System, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is none; no source imagery or visual assets are stored in the corpus.",
+  "industry": "technology, productivity, enterprise",
+  "interaction": "Components should inherit shared tokens and preserve predictable behavior across dialogs, menus, tables, navigation, forms, and collaboration patterns. A local exception should be justified by a distinct job, not taste drift.",
+  "lane_fit": "Lane assignment: Collaboration software. This case earns one SaaS, dashboard, administration, and productivity quota credit through 8-pixel spatial rhythm and semantic design tokens.",
+  "layout": "Use a repeatable spacing rhythm and grid to support medium-to-high product density. Reserve large spacing jumps for real hierarchy. Avoid a card for every grouping when alignment and section structure already communicate relationships.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Atlassian Design System across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving 8-pixel spatial rhythm and semantic design tokens.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "8-pixel spatial rhythm",
+    "semantic design tokens",
+    "cross-product consistency",
+    "clear interactive states",
+    "foundation-to-component traceability"
+  ],
+  "source": "https://atlassian.design/",
+  "spacing": "Spacing should preserve the case's medium density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "collaboration software",
+    "multi-product SaaS families",
+    "workflow applications",
+    "systems that need a stable shared grammar across many teams"
+  ],
+  "surfaces": "Color should be tokenized by role and state. Brand color can be visible in navigation or primary emphasis, but status, selection, focus, and text roles must remain semantically stable.",
+  "typography": "Typography should support rapid scanning in collaborative workflows. Separate page hierarchy, control labels, metadata, and long-form content. Do not use display treatments to make routine operational surfaces feel more branded.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single-purpose brand sites where product-family consistency is not a constraint",
+    "designs that need irregular handcrafted spacing as a core expressive device"
+  ],
+  "visual_thesis": "Atlassian's transferable strength is product-family coherence. Foundations, tokens, and components create a grammar that can serve different collaboration products without every team inventing spacing, states, or interaction patterns again."
+}

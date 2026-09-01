@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Turning every status into a colored badge with no hierarchy.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Navigation and page regions orient users inside long-running administrative work. Dense controls reorganize without erasing the user's operational context.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Components are joined into workflows instead of presented as isolated widgets.",
+  "components": "Components are joined into workflows instead of presented as isolated widgets. Dense controls reorganize without erasing the user's operational context.",
+  "confidence": "medium",
+  "container": "Operations console with health states, task navigation, and bounded data panels. Components are joined into workflows instead of presented as isolated widgets.",
+  "failure_modes": [
+    "Turning every status into a colored badge with no hierarchy.",
+    "Collapsing responsive navigation without preserving location.",
+    "Building from components while ignoring the documented workflow pattern."
+  ],
+  "flows": "Destination test: Infrastructure consoles and administrative platforms. Evaluate the relationship across monitoring and operations, and creation and management.",
+  "forms": "During monitoring and operations, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Navigation and page regions orient users inside long-running administrative work. Health, warning, progress, and action states remain distinguishable at scale.",
+  "imagery": "Operations console with health states, task navigation, and bounded data panels. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "enterprise, developer-tools",
+  "interaction": "Dense controls reorganize without erasing the user's operational context.",
+  "lane_fit": "Lane assignment: Infrastructure consoles and administrative platforms. This case earns one SaaS, dashboard, administration, and productivity quota credit through operations shell and status-rich components.",
+  "layout": "Persistent shell supporting responsive work regions.",
+  "motion": "Progress and status continuity only.",
+  "navigation": "Navigation and page regions orient users inside long-running administrative work. Persistent shell supporting responsive work regions.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Health, warning, progress, and action states remain distinguishable at scale. Dense controls reorganize without erasing the user's operational context.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "operations shell: Navigation and page regions orient users inside long-running administrative work.",
+    "status-rich components: Health, warning, progress, and action states remain distinguishable at scale.",
+    "pattern-level guidance: Components are joined into workflows instead of presented as isolated widgets.",
+    "responsive complexity: Dense controls reorganize without erasing the user's operational context."
+  ],
+  "source": "https://www.patternfly.org/",
+  "spacing": "Navigation and page regions orient users inside long-running administrative work. Health, warning, progress, and action states remain distinguishable at scale.",
+  "states": "Dense controls reorganize without erasing the user's operational context. Progress and status continuity only.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "infrastructure consoles and administrative platforms",
+    "enterprise systems with long-running operations and many statuses"
+  ],
+  "surfaces": "Components are joined into workflows instead of presented as isolated widgets. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Health, warning, progress, and action states remain distinguishable at scale.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "consumer discovery products whose main value comes from media or emotional storytelling"
+  ],
+  "visual_thesis": "Navigation and page regions orient users inside long-running administrative work. Health, warning, progress, and action states remain distinguishable at scale."
+}

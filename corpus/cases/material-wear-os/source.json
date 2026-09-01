@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "099c6988c66b2274634804c703394ecc725ec3f6174af9b0945a548656da9755",
+  "effective_url": "https://developer.android.com/design/ui/wear",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.android.com/design/ui/wear"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://developer.android.com/design/ui/wear",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "material-wear-os",
+  "source_version": "live-public-source-2026-09-01:099c6988c66b",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

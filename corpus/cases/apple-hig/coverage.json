@@ -1,0 +1,55 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "platform-native",
+  "brand_posture": "A platform-native system where semantic roles, adaptive appearance, clear hierarchy, and respect for user agency matter more than decorative consistency across every device.",
+  "category": "mobile",
+  "color": "Translate colors by semantic purpose. If adapting the system outside Apple platforms, define roles such as primary label, secondary label, canvas, grouped surface, separator, action, destructive, and focus. Do not import literal system-color values and pretend the resulting product is native.",
+  "components": "Prefer controls that behave exactly as users expect on the target platform. When a custom control is necessary, its states, focus behavior, disabled behavior, and accessibility semantics need the same rigor as its shape.",
+  "confidence": "high",
+  "container": "Use containers that keep semantic dynamic color roles legible across the supported platforms.",
+  "failure_modes": [
+    "Hard-coding a captured system color and calling it an Apple-like palette.",
+    "Copying rounded native controls into a web product without native behavior.",
+    "Treating minimalism as the system's defining trait while ignoring platform conventions and accessibility.",
+    "Using translucency, blur, or sparse chrome as decoration without a hierarchy reason."
+  ],
+  "flows": "Destination test: Native Apple-platform products. Evaluate the relationship across creation and management, and browsing and discovery.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Apple Human Interface Guidelines, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is mixed; no source imagery or visual assets are stored in the corpus.",
+  "industry": "technology, general",
+  "interaction": "Prefer controls that behave exactly as users expect on the target platform. When a custom control is necessary, its states, focus behavior, disabled behavior, and accessibility semantics need the same rigor as its shape.",
+  "lane_fit": "Lane assignment: Native Apple-platform products. This case earns one mobile quota credit through semantic dynamic color roles and platform-aware adaptation.",
+  "layout": "Use density appropriate to the platform and task. Preserve comfortable touch interaction on mobile, readable content widths, and native navigation expectations. Do not force desktop information density into a touch surface merely to maintain visual sameness.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Apple Human Interface Guidelines across the listed platforms.",
+  "platform": "ios, mobile, desktop, cross-platform",
+  "responsive_behavior": "Reorder by task and content priority while preserving semantic dynamic color roles and platform-aware adaptation.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "semantic dynamic color roles",
+    "platform-aware adaptation",
+    "purpose before decoration",
+    "legibility and accessibility as system behavior",
+    "strong continuity with native controls"
+  ],
+  "source": "https://developer.apple.com/design/human-interface-guidelines/",
+  "spacing": "Spacing should preserve the case's adaptive density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "native Apple-platform products",
+    "cross-device products that should feel at home on Apple hardware",
+    "interfaces where system behavior and accessibility should lead visual styling"
+  ],
+  "surfaces": "Translate colors by semantic purpose. If adapting the system outside Apple platforms, define roles such as primary label, secondary label, canvas, grouped surface, separator, action, destructive, and focus. Do not import literal system-color values and pretend the resulting product is native.",
+  "typography": "Use a clear hierarchy and allow platform typography to participate in accessibility features. Avoid fragile treatments that collapse when type size grows or when stronger contrast is requested.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "brand experiences that require ignoring platform conventions",
+    "visual clones that hard-code system colors or imitate native chrome without native behavior"
+  ],
+  "visual_thesis": "The useful lesson is not to make every interface look like an Apple settings screen. The system is strongest when an experience feels native to its platform because visual choices, control behavior, hierarchy, accessibility, and system adaptation all agree. Purpose and agency come before decorative signature."
+}

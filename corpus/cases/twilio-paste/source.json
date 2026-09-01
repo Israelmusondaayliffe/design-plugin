@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "155eacd53c663eec6d2a9988d4c8ac86a75b96c9c9f39ebc56c1d43bee507149",
+  "effective_url": "https://github.com:443/twilio-labs/paste",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://paste.twilio.design/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://paste.twilio.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "twilio-paste",
+  "source_version": "live-public-source-2026-09-01:155eacd53c66",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

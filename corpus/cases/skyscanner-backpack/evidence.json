@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Backpack is presented as Skyscanner's design system across web and native products.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://www.skyscanner.design/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://www.skyscanner.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The public system documents foundations, components, accessibility, and content guidance.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://www.skyscanner.design/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://www.skyscanner.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Travel-oriented examples connect brand expression with search and booking interface needs.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://www.skyscanner.design/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://www.skyscanner.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Backpack's useful pattern is the handoff from emotion to structured decision-making under localization pressure, not a travel-blue visual skin.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Analyst synthesis recorded in DESIGN.md",
+      "notes": "Original corpus interpretation; not an owner claim.",
+      "source_url": "https://www.skyscanner.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}

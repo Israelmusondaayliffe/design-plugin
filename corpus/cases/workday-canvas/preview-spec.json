@@ -1,0 +1,14 @@
+{
+  "layout": "responsive work area with layered record disclosure",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "calm progression and confirmation",
+  "pattern": "people-centered enterprise task with guided detail and inclusive controls",
+  "primary": "#f7f9fb",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#0875e1"
+}

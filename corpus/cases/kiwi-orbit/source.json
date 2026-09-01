@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "c5a5ab3640b0858bc70ebed0df29fd4d403e5e94992b88c44f4df0efd6bfa29d",
+  "effective_url": "https://github.com/kiwicom/orbit",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://github.com/kiwicom/orbit"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://github.com/kiwicom/orbit",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "kiwi-orbit",
+  "source_version": "live-public-source-2026-09-01:c5a5ab3640b0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

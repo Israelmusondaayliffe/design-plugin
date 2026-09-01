@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for PayPal Checkout Guidance was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://developer.paypal.com/platforms/checkout/standard/customize/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://developer.paypal.com/platforms/checkout/standard/customize/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Payment options are shown as choices with recognizable identity and consequence.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://developer.paypal.com/platforms/checkout/standard/customize/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://developer.paypal.com/platforms/checkout/standard/customize/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Checkout can fit a merchant context while preserving PayPal trust markers. Exit, validation, retry, and return paths are planned as part of the flow.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://developer.paypal.com/platforms/checkout/standard/customize/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://developer.paypal.com/platforms/checkout/standard/customize/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For checkout flows supporting several funding methods, preserve responsive completion; reject the design if it starts preselecting a funding method without clear user intent.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://developer.paypal.com/platforms/checkout/standard/customize/"
+    }
+  ],
+  "schema_version": "1.0"
+}

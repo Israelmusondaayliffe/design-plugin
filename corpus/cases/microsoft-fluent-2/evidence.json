@@ -1,1 +1,45 @@
-{"schema_version":"1.0","items":[{"id":"E01","claim":"Fluent 2 typography defines a structured type ramp and encourages sentence case and readable hierarchy across interface text.","class":"observed","source_url":"https://fluent2.microsoft.design/typography","locator":"Typography guidance","confidence":"high","captured_at":"2026-08-30","notes":"Primary Fluent 2 guidance."},{"id":"E02","claim":"Fluent layout guidance uses a global spacing ramp centered on compact repeatable increments and adapts layout for responsive and touch contexts.","class":"observed","source_url":"https://fluent2.microsoft.design/layout","locator":"Spacing and responsive layout","confidence":"high","captured_at":"2026-08-30","notes":"Supports adaptive density rather than one fixed spacing mode."},{"id":"E03","claim":"Fluent color guidance separates neutral, shared, and brand palettes and assigns color by role rather than by decorative preference.","class":"observed","source_url":"https://fluent2.microsoft.design/color","locator":"Color palettes and roles","confidence":"high","captured_at":"2026-08-30","notes":"Primary color guidance."},{"id":"E04","claim":"The system's neutral visual tone is valuable because it allows many product types to coexist, but strong product identity must come from content, structure, and bounded brand expression.","class":"inferred","source_url":"https://fluent2.microsoft.design/","locator":"Cross-system synthesis","confidence":"medium","captured_at":"2026-08-30","notes":"Original corpus interpretation."}]}
+{
+  "items": [
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Fluent 2 typography defines a structured type ramp and encourages sentence case and readable hierarchy across interface text.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://fluent2.microsoft.design/typography",
+      "notes": "Primary Fluent 2 guidance.",
+      "source_url": "https://fluent2.microsoft.design/typography"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Fluent layout guidance uses a global spacing ramp centered on compact repeatable increments and adapts layout for responsive and touch contexts.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://fluent2.microsoft.design/layout",
+      "notes": "Supports adaptive density rather than one fixed spacing mode.",
+      "source_url": "https://fluent2.microsoft.design/layout"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Fluent color guidance separates neutral, shared, and brand palettes and assigns color by role rather than by decorative preference.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://fluent2.microsoft.design/color",
+      "notes": "Primary color guidance.",
+      "source_url": "https://fluent2.microsoft.design/color"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "The system's neutral visual tone is valuable because it allows many product types to coexist, but strong product identity must come from content, structure, and bounded brand expression.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "Cross-system synthesis",
+      "notes": "Original corpus interpretation.",
+      "source_url": "https://fluent2.microsoft.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}

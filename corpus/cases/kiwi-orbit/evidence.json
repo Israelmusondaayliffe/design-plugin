@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Kiwi.com Orbit was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://github.com/kiwicom/orbit",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://github.com/kiwicom/orbit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Search, itinerary, price, baggage, and disruption states share portable roles.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://github.com/kiwicom/orbit",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://github.com/kiwicom/orbit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Components support web and mobile without erasing platform expectations. Currency, language, date, and place variation influence layout and copy.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://github.com/kiwicom/orbit",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://github.com/kiwicom/orbit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For international travel booking and itinerary products, preserve recovery visibility; reject the design if it starts showing a low fare without the conditions that define it.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://github.com/kiwicom/orbit"
+    }
+  ],
+  "schema_version": "1.0"
+}

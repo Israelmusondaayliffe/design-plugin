@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Decathlon Vitamin was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://github.com/Decathlon/vitamin-web",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://github.com/Decathlon/vitamin-web"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared components serve many activities, product categories, and levels of expertise.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://github.com/Decathlon/vitamin-web",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://github.com/Decathlon/vitamin-web"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Product purpose, technical detail, price, and availability stay distinct. Browse, compare, select, and fulfillment patterns survive narrow screens.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://github.com/Decathlon/vitamin-web",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://github.com/Decathlon/vitamin-web"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For large multi-category retail platforms, preserve brand restraint; reject the design if it starts giving every sport a separate control language.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://github.com/Decathlon/vitamin-web"
+    }
+  ],
+  "schema_version": "1.0"
+}

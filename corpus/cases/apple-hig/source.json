@@ -1,0 +1,23 @@
+{
+  "archive_url": null,
+  "content_sha256": "766a2debcfea7ad9d8d1c8a3f07c888ae0b34ab613d436365db2f195289c446d",
+  "effective_url": "https://developer.apple.com/design/human-interface-guidelines/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.apple.com/design/human-interface-guidelines/",
+    "URL: https://developer.apple.com/design/human-interface-guidelines/accessibility",
+    "URL: https://developer.apple.com/design/human-interface-guidelines/color",
+    "URL: https://developer.apple.com/design/human-interface-guidelines/design-principles"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://developer.apple.com/design/human-interface-guidelines/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "apple-hig",
+  "source_version": "live-public-source-2026-09-01:766a2debcfea",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

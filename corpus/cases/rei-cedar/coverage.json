@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using scenic photography without showing product evidence.",
+  "archetype": "merchant-operational",
+  "brand_posture": "Product and editorial imagery connect equipment to real environments and uses. Brand color and texture support the outdoor subject rather than simulate nature decoratively.",
+  "category": "commerce-media-content-heavy",
+  "color": "Guidance and storytelling support product choice without burying purchase actions.",
+  "components": "Guidance and storytelling support product choice without burying purchase actions. Brand color and texture support the outdoor subject rather than simulate nature decoratively.",
+  "confidence": "medium",
+  "container": "Outdoor product image paired with exact fit, stock, and technical details. Guidance and storytelling support product choice without burying purchase actions.",
+  "failure_modes": [
+    "Using scenic photography without showing product evidence.",
+    "Hiding fit or fulfillment details below brand storytelling.",
+    "Turning natural color into low-contrast earth-tone decoration."
+  ],
+  "flows": "Destination test: Outdoor and equipment commerce. Evaluate the relationship across browsing and discovery, and transactions and checkout.",
+  "forms": "During browsing and discovery, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Product and editorial imagery connect equipment to real environments and uses. Fit, size, technical attributes, stock, and fulfillment remain easy to compare.",
+  "imagery": "Outdoor product image paired with exact fit, stock, and technical details. Photography needs an explicit subject, crop, rights basis, and decision role. No source asset is stored.",
+  "industry": "commerce, general",
+  "interaction": "Brand color and texture support the outdoor subject rather than simulate nature decoratively.",
+  "lane_fit": "Lane assignment: Outdoor and equipment commerce. This case earns one commerce, media, and content-heavy quota credit through outdoor context and specification clarity.",
+  "layout": "Media-rich browse grid leading to structured product specification.",
+  "motion": "Quiet variant and inventory feedback.",
+  "navigation": "Product and editorial imagery connect equipment to real environments and uses. Media-rich browse grid leading to structured product specification.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Fit, size, technical attributes, stock, and fulfillment remain easy to compare. Brand color and texture support the outdoor subject rather than simulate nature decoratively.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "outdoor context: Product and editorial imagery connect equipment to real environments and uses.",
+    "specification clarity: Fit, size, technical attributes, stock, and fulfillment remain easy to compare.",
+    "commerce-content bridge: Guidance and storytelling support product choice without burying purchase actions.",
+    "earthy restraint: Brand color and texture support the outdoor subject rather than simulate nature decoratively."
+  ],
+  "source": "https://rei.github.io/rei-cedar-docs/",
+  "spacing": "Product and editorial imagery connect equipment to real environments and uses. Fit, size, technical attributes, stock, and fulfillment remain easy to compare.",
+  "states": "Brand color and texture support the outdoor subject rather than simulate nature decoratively. Quiet variant and inventory feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "outdoor and equipment commerce",
+    "retailers joining educational content with technical product comparison"
+  ],
+  "surfaces": "Guidance and storytelling support product choice without burying purchase actions. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Fit, size, technical attributes, stock, and fulfillment remain easy to compare.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "pure digital subscriptions with no meaningful product media or physical specifications"
+  ],
+  "visual_thesis": "Product and editorial imagery connect equipment to real environments and uses. Fit, size, technical attributes, stock, and fulfillment remain easy to compare."
+}

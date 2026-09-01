@@ -1,0 +1,7 @@
+{
+  "route": "rewrite",
+  "operation": "Rewrite the 60 alpha corpus cases for direct, varied, source-bounded prose without changing evidence classes, source claims, or required coverage.",
+  "audience": "Design practitioners using the local corpus Site and reviewers assessing Wave 11",
+  "rationale": "The corpus draft exists and the user explicitly requested an Unslop pass, so a claim-preserving rewrite is the smallest sufficient route.",
+  "claim_check_required": true
+}

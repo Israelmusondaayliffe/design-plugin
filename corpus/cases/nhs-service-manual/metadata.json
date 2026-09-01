@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "service-utilitarian"
+  ],
+  "avoid_for": [
+    "expressive campaign pages where a strict service rhythm would suppress the intended voice"
+  ],
+  "best_for": [
+    "public health and high-stakes service flows",
+    "forms used by broad audiences under variable cognitive load"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light"
+  ],
+  "corpus_lane": "onboarding-forms-settings-flows",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "government",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "complete-service",
+    "onboard-configure"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "none",
+  "name": "NHS Service Manual",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "forms",
+    "workflow",
+    "onboarding",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "health-service clarity",
+    "one-decision pacing",
+    "error recovery beside input",
+    "service-wide consistency"
+  ],
+  "slug": "nhs-service-manual",
+  "source_kind": "public-design-system",
+  "source_name": "NHS Service Manual",
+  "source_url": "https://service-manual.nhs.uk/design-system",
+  "studied_at": "2026-09-01",
+  "summary": "Questions and instructions use plain language under stress and uncertainty. Pages limit competing actions so users can understand what is being asked.",
+  "typography_character": "humanist-sans"
+}

@@ -1,1 +1,14 @@
-{"primary":"#fafafa","secondary":"#0f6cbd","radius":"8px","pattern":"neutral enterprise canvas with compact four-pixel rhythm and one bounded brand-blue selection"}
+{
+  "layout": "Original abstract composition based on cross-platform neutrality and semantic neutral and brand palettes.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Microsoft Fluent 2 preview only when it clarifies cross-platform neutrality through feedback or continuity.",
+  "pattern": "neutral enterprise canvas with compact four-pixel rhythm and one bounded brand-blue selection",
+  "primary": "#fafafa",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#0f6cbd"
+}

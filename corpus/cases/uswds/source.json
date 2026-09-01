@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "9f7b378331a00da0a09e28b77147d85d3333cce4ca2b3b588ec390a9ff1e8b0d",
+  "effective_url": "https://designsystem.digital.gov/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://designsystem.digital.gov/",
+    "URL: https://designsystem.digital.gov/design-principles/",
+    "URL: https://designsystem.digital.gov/patterns/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://designsystem.digital.gov/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "uswds",
+  "source_version": "live-public-source-2026-09-01:9f7b378331a0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

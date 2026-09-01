@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "27d894729d7f40180b5a1dd8de1fc90fbf7b0b0a0a8179ce109bd0507ed90532",
+  "effective_url": "https://developer.paypal.com/platforms/checkout/standard/customize/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.paypal.com/platforms/checkout/standard/customize/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://developer.paypal.com/platforms/checkout/standard/customize/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "paypal-checkout",
+  "source_version": "live-public-source-2026-09-01:27d894729d7f",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

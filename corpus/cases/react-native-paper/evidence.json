@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for React Native Paper was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://github.com/callstack/react-native-paper",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://github.com/callstack/react-native-paper"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "React Native components carry Material roles into mobile implementation.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://github.com/callstack/react-native-paper",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://github.com/callstack/react-native-paper"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Color, typography, shape, and elevation can adapt while semantic jobs remain stable. Press, focus, disabled, loading, and selection behavior are explicit.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://github.com/callstack/react-native-paper",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://github.com/callstack/react-native-paper"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For React Native products using a Material foundation, preserve cross-platform pragmatism; reject the design if it starts applying theme colors outside their semantic roles.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://github.com/callstack/react-native-paper"
+    }
+  ],
+  "schema_version": "1.0"
+}

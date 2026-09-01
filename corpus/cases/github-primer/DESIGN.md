@@ -30,7 +30,7 @@ Tables, lists, navigation, filters, menus, code-related controls, dialogs, and s
 
 ## Adaptation rules
 
-- Preserve compact clarity, semantic state, robust repeated patterns, and responsive technical context.
+- Preserve compact clarity, semantic state, reliable repeated patterns, and responsive technical context.
 - Change brand palette and typeface only while retaining comparable technical legibility.
 - Use developer-specific visual cues only when they correspond to real code or workflow content.
 

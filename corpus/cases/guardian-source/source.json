@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "33e52f32c88953be619cb9ebb1451ebe464aeba8eefc98ab784164891bb3e799",
+  "effective_url": "https://theguardian.design/2a1e5182b",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://theguardian.design/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://theguardian.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "guardian-source",
+  "source_version": "live-public-source-2026-09-01:33e52f32c889",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_sha256": {
+    "DESIGN.md": "379ff5de912d54f2d83f79221b238a9691e9c3e2487a8da15d1e864b904c112e",
+    "coverage.json": "46694111f6275b4d63d8ccf556ca19f80b47db9a9dae05654e17ae7755ad3670",
+    "evidence.json": "2daafbc1a91a94bbec47785dbd32a4872f256ebd411f7bfd17b5e231b781d751",
+    "metadata.json": "6aa73bd76ab2ebd3117c58c9aeb3cc3c00d35da089c446844128d78c863422eb",
+    "preview-spec.json": "dbdf0cccab1f84af67eca59d62758e9310a2c1017d09c8c8f06dba5883ee823f",
+    "source-notes.md": "4da6d86c28270e82b7adf0e0a98221161e159668be1abdf88b117dddaba8d5da",
+    "source.json": "d90e12ff53534dfffc2f3393e1022829343806c06e7cc407cc8888652244e244",
+    "tokens.json": "dfcc5eca944d011793ce48cf4626408979d2b27ecd12b6c68da54d195f7d621a"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

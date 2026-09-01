@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/preview.schema.json",
+  "title": "Original Abstract Corpus Preview",
+  "type": "object",
+  "required": ["schema_version", "primary", "secondary", "radius", "pattern", "layout", "motion", "lineage"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "primary": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+    "secondary": {"type": "string", "pattern": "^#[0-9a-fA-F]{6}$"},
+    "radius": {"type": "string", "pattern": "^[0-9]+px$"},
+    "pattern": {"type": "string", "minLength": 20},
+    "layout": {"type": "string", "minLength": 10},
+    "motion": {"type": "string", "minLength": 10},
+    "lineage": {
+      "type": "object",
+      "required": ["origin", "source_assets_used", "generated_asset"],
+      "properties": {
+        "origin": {"const": "original-abstract-spec"},
+        "source_assets_used": {"const": false},
+        "generated_asset": {"const": false}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

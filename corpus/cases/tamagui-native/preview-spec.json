@@ -1,0 +1,14 @@
+{
+  "layout": "token-linked phone panes with deliberate platform differences",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "matched state intent with platform-appropriate timing",
+  "pattern": "cross-platform mobile screen pair sharing roles while respecting native structure",
+  "primary": "#f5f2ff",
+  "radius": "14px",
+  "schema_version": "1.0",
+  "secondary": "#7b3ff2"
+}

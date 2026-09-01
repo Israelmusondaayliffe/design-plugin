@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. No Microsoft visual assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "2443bffc1b195f446426466833eeca37885a072500cdbd32f7007e9cd5e9e667",
+    "coverage.json": "a57fe69cc130685c12d029bdee926bcee8f59769a2064f363f224f106be3f80b",
+    "evidence.json": "4b5134581b2e2cda6c31d3e4d843884e5ca82f1632a535038c292772a2f8d9ee",
+    "metadata.json": "f75eba2340184026e112c177082c0801571df021315bd145ce9a79e95bd6b760",
+    "preview-spec.json": "94dbebc310f35112c748d9774693107bbce09114792af12230fe428f262de2e5",
+    "source-notes.md": "66cf7c29dadcc8493b6d8452febeb739e141bbd2794cc093d562bb503b53c258",
+    "source.json": "68c7a5a6c40b6d356d9e4f0cda2a072c2bda5dc4b9b42ef8610417f9b623df2a",
+    "tokens.json": "8be8feead35bd0419ea7b93ee23bc8302efdcaf389bedeb16869cc42557cbf6c"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

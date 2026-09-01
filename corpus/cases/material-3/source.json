@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "10101af789378a940f2ae0ff34216c29fcc7c552e0d22bfba49812f5eda9e23b",
+  "effective_url": "https://m3.material.io/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://codelabs.developers.google.com/jetpack-compose-theming",
+    "URL: https://developer.android.com/develop/ui/compose/designsystems/material3",
+    "URL: https://m3.material.io/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://m3.material.io/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "material-3",
+  "source_version": "live-public-source-2026-09-01:10101af78937",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

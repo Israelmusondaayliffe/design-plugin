@@ -1,0 +1,14 @@
+{
+  "layout": "unequal split composition with edge-aligned media",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct swaps and crops with restrained easing",
+  "pattern": "asymmetric editorial field with oversized type and one dominant image slot",
+  "primary": "#ffafa3",
+  "radius": "0px",
+  "schema_version": "1.0",
+  "secondary": "#1e1919"
+}

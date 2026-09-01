@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "0af89856850e074bc1a35edd73c12cf730c045dc9b4ca80b23c5af566057b576",
+  "effective_url": "https://baseweb.design/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://baseweb.design/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://baseweb.design/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "uber-base-web",
+  "source_version": "live-public-source-2026-09-01:0af89856850e",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

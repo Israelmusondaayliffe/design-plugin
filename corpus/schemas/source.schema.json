@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/source.schema.json",
+  "title": "Design Corpus Source Record",
+  "type": "object",
+  "required": ["schema_version", "source_scope_id", "owner_url", "effective_url", "retrieved_at", "http_status", "content_sha256", "inspected_locators", "source_version", "terms_or_license_url", "permitted_use_basis", "archive_url", "limitations", "third_party_assets_stored"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "source_scope_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "owner_url": {"type": "string", "pattern": "^https://"},
+    "effective_url": {"type": "string", "pattern": "^https://"},
+    "retrieved_at": {"type": "string", "format": "date"},
+    "http_status": {"type": "integer", "minimum": 200, "maximum": 399},
+    "content_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "inspected_locators": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 3}},
+    "source_version": {"type": "string", "minLength": 3},
+    "terms_or_license_url": {"type": ["string", "null"]},
+    "permitted_use_basis": {"const": "original-analysis-from-ordinary-public-access"},
+    "archive_url": {"type": ["string", "null"]},
+    "limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+    "third_party_assets_stored": {"const": false}
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using color labels without text or stable semantics.",
+  "archetype": "collaboration-system",
+  "brand_posture": "Color labels work as team metadata only when text and placement preserve meaning. A bright brand tone coexists with dense project information.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Repeated building blocks support different team processes without losing behavior.",
+  "components": "Repeated building blocks support different team processes without losing behavior. A bright brand tone coexists with dense project information.",
+  "confidence": "medium",
+  "container": "Color-coded work board connected to focused item detail. Repeated building blocks support different team processes without losing behavior.",
+  "failure_modes": [
+    "Using color labels without text or stable semantics.",
+    "Separating item detail from board context.",
+    "Adding bright accents to every control and losing priority."
+  ],
+  "flows": "Destination test: Collaborative planning and project platforms. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "During creation and management, and monitoring and operations, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Color labels work as team metadata only when text and placement preserve meaning. High-level status and item detail remain connected across views.",
+  "imagery": "Color-coded work board connected to focused item detail. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "productivity, enterprise",
+  "interaction": "A bright brand tone coexists with dense project information.",
+  "lane_fit": "Lane assignment: Collaborative planning and project platforms. This case earns one SaaS, dashboard, administration, and productivity quota credit through color-coded coordination and board-to-detail continuity.",
+  "layout": "Configurable board grid with persistent context.",
+  "motion": "Direct drag, status, and detail continuity.",
+  "navigation": "Color labels work as team metadata only when text and placement preserve meaning. Configurable board grid with persistent context.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "High-level status and item detail remain connected across views. A bright brand tone coexists with dense project information.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "color-coded coordination: Color labels work as team metadata only when text and placement preserve meaning.",
+    "board-to-detail continuity: High-level status and item detail remain connected across views.",
+    "flexible work grammar: Repeated building blocks support different team processes without losing behavior.",
+    "energetic utility: A bright brand tone coexists with dense project information."
+  ],
+  "source": "https://vibe.monday.com/",
+  "spacing": "Color labels work as team metadata only when text and placement preserve meaning. High-level status and item detail remain connected across views.",
+  "states": "A bright brand tone coexists with dense project information. Direct drag, status, and detail continuity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "collaborative planning and project platforms",
+    "configurable work products with recurring board and item views"
+  ],
+  "surfaces": "Repeated building blocks support different team processes without losing behavior. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. High-level status and item detail remain connected across views.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "formal reporting products that require subdued immutable presentation"
+  ],
+  "visual_thesis": "Color labels work as team metadata only when text and placement preserve meaning. High-level status and item detail remain connected across views."
+}

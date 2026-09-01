@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Showing progress that does not match saved state.",
+  "archetype": "federal-accessible",
+  "brand_posture": "Complex eligibility and application work is broken into understandable decisions. Interaction patterns address assistive technology and broad device conditions.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "Long forms preserve location, completion state, and routes back to work.",
+  "components": "Long forms preserve location, completion state, and routes back to work. Interaction patterns address assistive technology and broad device conditions.",
+  "confidence": "medium",
+  "container": "Long-form benefits task with honest progress, save state, and sensitive recovery. Long forms preserve location, completion state, and routes back to work.",
+  "failure_modes": [
+    "Showing progress that does not match saved state.",
+    "Using generic error text for eligibility consequences.",
+    "Requiring users to re-enter verified information."
+  ],
+  "flows": "Destination test: Benefits, eligibility, and long public applications. Evaluate the relationship across service completion, and onboarding and configuration.",
+  "forms": "During service completion, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Complex eligibility and application work is broken into understandable decisions. Copy, validation, and support recognize the consequences of mistakes and uncertainty.",
+  "imagery": "Long-form benefits task with honest progress, save state, and sensitive recovery. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "government, general",
+  "interaction": "Interaction patterns address assistive technology and broad device conditions.",
+  "lane_fit": "Lane assignment: Benefits, eligibility, and long public applications. This case earns one onboarding, forms, settings, and flows quota credit through benefit-task guidance and sensitive-context respect.",
+  "layout": "Guided application column with persistent progress context.",
+  "motion": "Direct save and validation confirmation.",
+  "navigation": "Complex eligibility and application work is broken into understandable decisions. Guided application column with persistent progress context.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Copy, validation, and support recognize the consequences of mistakes and uncertainty. Interaction patterns address assistive technology and broad device conditions.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "benefit-task guidance: Complex eligibility and application work is broken into understandable decisions.",
+    "sensitive-context respect: Copy, validation, and support recognize the consequences of mistakes and uncertainty.",
+    "progress and save continuity: Long forms preserve location, completion state, and routes back to work.",
+    "federal accessibility: Interaction patterns address assistive technology and broad device conditions."
+  ],
+  "source": "https://design.va.gov/",
+  "spacing": "Complex eligibility and application work is broken into understandable decisions. Copy, validation, and support recognize the consequences of mistakes and uncertainty.",
+  "states": "Interaction patterns address assistive technology and broad device conditions. Direct save and validation confirmation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "benefits, eligibility, and long public applications",
+    "services where users may need to pause and resume"
+  ],
+  "surfaces": "Long forms preserve location, completion state, and routes back to work. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Copy, validation, and support recognize the consequences of mistakes and uncertainty.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "short impulse-purchase flows with no need for save or evidence handling"
+  ],
+  "visual_thesis": "Complex eligibility and application work is broken into understandable decisions. Copy, validation, and support recognize the consequences of mistakes and uncertainty."
+}

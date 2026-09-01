@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "service-utilitarian"
+  ],
+  "avoid_for": [
+    "highly branded entertainment products with no cross-agency consistency need"
+  ],
+  "best_for": [
+    "government portals spanning many agencies",
+    "mobile-first public information and service tasks"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light"
+  ],
+  "corpus_lane": "onboarding-forms-settings-flows",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "government",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "complete-service",
+    "browse-discover"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "none",
+  "name": "California Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "forms",
+    "workflow",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "statewide service consistency",
+    "mobile public access",
+    "plain information hierarchy",
+    "accessible defaults"
+  ],
+  "slug": "california-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "California Design System",
+  "source_url": "https://designsystem.webstandards.ca.gov/",
+  "studied_at": "2026-09-01",
+  "summary": "Common components and content patterns reduce variation across agencies. Tasks remain usable on small screens and constrained connections.",
+  "typography_character": "humanist-sans"
+}

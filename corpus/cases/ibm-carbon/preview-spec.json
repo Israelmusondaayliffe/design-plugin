@@ -1,1 +1,14 @@
-{"primary":"#f4f4f4","secondary":"#0f62fe","radius":"0px","pattern":"dense technical grid with black type, thin rules, and one precise blue interaction line"}
+{
+  "layout": "Original abstract composition based on productive versus expressive type strategy and ibm plex family hierarchy.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the IBM Carbon Design System preview only when it clarifies productive versus expressive type strategy through feedback or continuity.",
+  "pattern": "dense technical grid with black type, thin rules, and one precise blue interaction line",
+  "primary": "#f4f4f4",
+  "radius": "0px",
+  "schema_version": "1.0",
+  "secondary": "#0f62fe"
+}

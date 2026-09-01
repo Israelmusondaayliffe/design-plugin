@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using the brand color as a fill for every transactional surface.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "Large literal messages make cost and movement of money understandable. Layouts and wording anticipate currencies, countries, and language variation.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Rates, fees, timing, and product UI appear beside the decision they support.",
+  "components": "Rates, fees, timing, and product UI appear beside the decision they support. Layouts and wording anticipate currencies, countries, and language variation.",
+  "confidence": "medium",
+  "container": "Bright financial headline beside a compact rate and transfer proof module. Rates, fees, timing, and product UI appear beside the decision they support.",
+  "failure_modes": [
+    "Using the brand color as a fill for every transactional surface.",
+    "Writing playful copy where legal or fee detail must be exact.",
+    "Showing lifestyle imagery instead of rates, timing, and transfer state."
+  ],
+  "flows": "Destination test: International financial products that must explain value before conversion. Evaluate the relationship across evaluation and conversion, and transactions and checkout.",
+  "forms": "During evaluation and conversion, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Large literal messages make cost and movement of money understandable. A vivid brand field is balanced by blunt dark type and quiet transaction surfaces.",
+  "imagery": "Bright financial headline beside a compact rate and transfer proof module. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "commerce, technology",
+  "interaction": "Layouts and wording anticipate currencies, countries, and language variation.",
+  "lane_fit": "Lane assignment: International financial products that must explain value before conversion. This case earns one brand, editorial, portfolio, and marketing quota credit through direct financial voice and high-energy brand contrast.",
+  "layout": "Bold split field narrowing into exact transaction rows.",
+  "motion": "Fast state feedback with reduced-motion parity.",
+  "navigation": "Large literal messages make cost and movement of money understandable. Bold split field narrowing into exact transaction rows.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "A vivid brand field is balanced by blunt dark type and quiet transaction surfaces. Layouts and wording anticipate currencies, countries, and language variation.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "direct financial voice: Large literal messages make cost and movement of money understandable.",
+    "high-energy brand contrast: A vivid brand field is balanced by blunt dark type and quiet transaction surfaces.",
+    "proof near action: Rates, fees, timing, and product UI appear beside the decision they support.",
+    "global adaptability: Layouts and wording anticipate currencies, countries, and language variation."
+  ],
+  "source": "https://wise.design/",
+  "spacing": "Large literal messages make cost and movement of money understandable. A vivid brand field is balanced by blunt dark type and quiet transaction surfaces.",
+  "states": "Layouts and wording anticipate currencies, countries, and language variation. Fast state feedback with reduced-motion parity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "international financial products that must explain value before conversion",
+    "brands that can pair a strong public voice with exact transaction detail"
+  ],
+  "surfaces": "Rates, fees, timing, and product UI appear beside the decision they support. Preview surfaces use original study values.",
+  "typography": "Expressive display type may carry identity; quieter utility type must retain operational clarity. A vivid brand field is balanced by blunt dark type and quiet transaction surfaces.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "anonymous white-label utilities whose identity must remain invisible"
+  ],
+  "visual_thesis": "Large literal messages make cost and movement of money understandable. A vivid brand field is balanced by blunt dark type and quiet transaction surfaces."
+}

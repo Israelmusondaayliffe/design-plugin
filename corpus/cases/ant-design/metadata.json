@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "brand-first editorial sites that need irregular composition and strong media authorship"
+  ],
+  "best_for": [
+    "enterprise dashboards with many repeated controls",
+    "administration products requiring broad component and state coverage"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "high",
+  "evidence_quality": "medium",
+  "industries": [
+    "enterprise",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "monitor-operate"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "none",
+  "name": "Ant Design",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "dashboard",
+    "admin",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "enterprise information order",
+    "component state breadth",
+    "compact data utility",
+    "systematic feedback"
+  ],
+  "slug": "ant-design",
+  "source_kind": "public-design-system",
+  "source_name": "Ant Design",
+  "source_url": "https://ant.design/docs/spec/introduce",
+  "studied_at": "2026-09-01",
+  "summary": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Controls account for loading, validation, selection, warning, and destructive states.",
+  "typography_character": "neutral-sans"
+}

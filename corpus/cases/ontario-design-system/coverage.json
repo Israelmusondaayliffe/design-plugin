@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Designing around one language length.",
+  "archetype": "service-utilitarian",
+  "brand_posture": "Content and controls organize around completing a public service rather than promoting the agency. Visual authority comes from consistency and clarity rather than ceremony.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "Labels, help, validation, and status remain explicit through the full task.",
+  "components": "Labels, help, validation, and status remain explicit through the full task. Visual authority comes from consistency and clarity rather than ceremony.",
+  "confidence": "medium",
+  "container": "Bilingual-ready public service form with direct labels and accessible recovery. Labels, help, validation, and status remain explicit through the full task.",
+  "failure_modes": [
+    "Designing around one language length.",
+    "Using official tone as permission for bureaucratic copy.",
+    "Moving validation away from the field and summary context."
+  ],
+  "flows": "Destination test: Provincial or regional government services. Evaluate the relationship across service completion, and browsing and discovery.",
+  "forms": "During service completion, and browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Content and controls organize around completing a public service rather than promoting the agency. Layout and component behavior allow text expansion and language change.",
+  "imagery": "Bilingual-ready public service form with direct labels and accessible recovery. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "government, general",
+  "interaction": "Visual authority comes from consistency and clarity rather than ceremony.",
+  "lane_fit": "Lane assignment: Provincial or regional government services. This case earns one onboarding, forms, settings, and flows quota credit through government task orientation and bilingual-ready structure.",
+  "layout": "Stable service column with expandable language-safe regions.",
+  "motion": "Minimal state feedback without required animation.",
+  "navigation": "Content and controls organize around completing a public service rather than promoting the agency. Stable service column with expandable language-safe regions.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Layout and component behavior allow text expansion and language change. Visual authority comes from consistency and clarity rather than ceremony.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "government task orientation: Content and controls organize around completing a public service rather than promoting the agency.",
+    "bilingual-ready structure: Layout and component behavior allow text expansion and language change.",
+    "accessible form grammar: Labels, help, validation, and status remain explicit through the full task.",
+    "official but plain tone: Visual authority comes from consistency and clarity rather than ceremony."
+  ],
+  "source": "https://designsystem.ontario.ca/",
+  "spacing": "Content and controls organize around completing a public service rather than promoting the agency. Layout and component behavior allow text expansion and language change.",
+  "states": "Visual authority comes from consistency and clarity rather than ceremony. Minimal state feedback without required animation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "provincial or regional government services",
+    "bilingual public forms and information tasks"
+  ],
+  "surfaces": "Labels, help, validation, and status remain explicit through the full task. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Layout and component behavior allow text expansion and language change.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "luxury marketing experiences where procedural clarity is not the main outcome"
+  ],
+  "visual_thesis": "Content and controls organize around completing a public service rather than promoting the agency. Layout and component behavior allow text expansion and language change."
+}

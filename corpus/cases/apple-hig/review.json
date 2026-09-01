@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original analysis of public Apple guidance. No third-party visual assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "8da3a85e644c594d0daff2a6cf0688e32fd9c8c8ced34ec2eca3a329698dcc8d",
+    "coverage.json": "faad5bc8aa04e8646cbd68b068e0de61931f7221d8a23bd7f2273a2cb4f7436a",
+    "evidence.json": "5143957b1202005b551a27e25d476d3c787840049efbdbb27295d6196cb46e72",
+    "metadata.json": "ab0b55cf95f37653fd4f94a6ffd4bd434d42805b851fccfcdf252fa3dd8c61fe",
+    "preview-spec.json": "9a8aae191c1fe877a7d6c3edc67321376fb82e4f5e174305d60d62ccf4d2c8ec",
+    "source-notes.md": "3f75f2cb012eb1e1355d8d68512de72c862b7bb8092d494679e2e1e73dfe352e",
+    "source.json": "1a5d0d5912df9d564875b2d066786ef142dbf70eab911262a33ee3cbd9791978",
+    "tokens.json": "a06ab7a49c7f90318590250024e2471b4f499969fd20d774eabe39a26221c96f"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "2ae428efe9445705ae5297be7ab98c130074c3b24e999bba36802c42d1308fec",
+  "effective_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.apple.com/design/human-interface-guidelines/designing-for-ios"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "apple-ios",
+  "source_version": "live-public-source-2026-09-01:2ae428efe944",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

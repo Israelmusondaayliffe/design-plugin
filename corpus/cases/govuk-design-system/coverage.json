@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "service-utilitarian",
+  "brand_posture": "A service-first system that earns trust through consistency, plain hierarchy, reliable form patterns, strong accessibility, and strict preservation of familiar component and color meanings.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "Use color sparingly and semantically. The page does not need multiple decorative surfaces to create hierarchy. White space, type, rules, and control states do most of the work.",
+  "components": "Forms, radios, checkboxes, date input, summary lists, error summaries, buttons, and navigation should use a repeatable service grammar. Error recovery and keyboard focus must be designed, not implied.",
+  "confidence": "high",
+  "container": "Use containers that keep service content before brand spectacle legible across the supported platforms.",
+  "failure_modes": [
+    "Styling the page like GOV.UK while inventing unfamiliar interaction behavior.",
+    "Adding card grids, gradients, and decorative badges that make the service hierarchy less clear.",
+    "Using color alone to communicate validation or status.",
+    "Optimizing for visual novelty over completion confidence."
+  ],
+  "flows": "Destination test: Government and civic services. Evaluate the relationship across service completion.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For GOV.UK Design System, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is none; no source imagery or visual assets are stored in the corpus.",
+  "industry": "government",
+  "interaction": "Forms, radios, checkboxes, date input, summary lists, error summaries, buttons, and navigation should use a repeatable service grammar. Error recovery and keyboard focus must be designed, not implied.",
+  "lane_fit": "Lane assignment: Government and civic services. This case earns one onboarding, forms, settings, and flows quota credit through service content before brand spectacle and convention-heavy form patterns.",
+  "layout": "Favor a clear reading column, strong headings, obvious page progression, and enough space around questions to prevent accidental grouping. Dense dashboards are not the model. Multi-step service pages should make the current task unmistakable.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for GOV.UK Design System across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving service content before brand spectacle and convention-heavy form patterns.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "service content before brand spectacle",
+    "convention-heavy form patterns",
+    "high-clarity typography and controls",
+    "strict role consistency",
+    "task completion over decoration"
+  ],
+  "source": "https://design-system.service.gov.uk/",
+  "spacing": "Spacing should preserve the case's medium density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "government and civic services",
+    "high-stakes forms",
+    "eligibility and application journeys",
+    "content-heavy public services"
+  ],
+  "surfaces": "Use color sparingly and semantically. The page does not need multiple decorative surfaces to create hierarchy. White space, type, rules, and control states do most of the work.",
+  "typography": "Typography should be plain, high contrast, and structurally meaningful. Large headings establish task context. Body copy explains only what the user needs. Labels and error text should remain visible and literal.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "luxury or entertainment marketing where emotional art direction is primary",
+    "interfaces that need high-density expert tooling rather than guided service completion"
+  ],
+  "visual_thesis": "This system is designed to make public services understandable, predictable, and usable under pressure. Its taste is not minimalism for its own sake. It is disciplined refusal to make a citizen relearn controls, color meaning, or page structure while trying to complete an important task."
+}

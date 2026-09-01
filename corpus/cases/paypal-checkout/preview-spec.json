@@ -1,0 +1,14 @@
+{
+  "layout": "single transaction column with bounded merchant context",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct payment-state feedback with no decorative delay",
+  "pattern": "focused checkout with funding choices, clear amount, and visible cancel and retry paths",
+  "primary": "#f7f8fa",
+  "radius": "14px",
+  "schema_version": "1.0",
+  "secondary": "#0070ba"
+}

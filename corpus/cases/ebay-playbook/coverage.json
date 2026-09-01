@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Hiding condition or seller context behind visual polish.",
+  "archetype": "merchant-operational",
+  "brand_posture": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Layouts tolerate uneven photography, long titles, and sparse or rich item data.",
+  "category": "commerce-media-content-heavy",
+  "color": "Policies, status, and safeguards appear close to consequential actions.",
+  "components": "Policies, status, and safeguards appear close to consequential actions. Layouts tolerate uneven photography, long titles, and sparse or rich item data.",
+  "confidence": "medium",
+  "container": "Marketplace listing rhythm with item image, price, trust, and delivery hierarchy. Policies, status, and safeguards appear close to consequential actions.",
+  "failure_modes": [
+    "Hiding condition or seller context behind visual polish.",
+    "Letting inconsistent imagery break scan order.",
+    "Using promotional color for transaction status."
+  ],
+  "flows": "Destination test: Large marketplaces with variable inventory. Evaluate the relationship across browsing and discovery, and transactions and checkout.",
+  "forms": "During browsing and discovery, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Shared patterns support two roles with different decisions and responsibilities.",
+  "imagery": "Marketplace listing rhythm with item image, price, trust, and delivery hierarchy. Photography needs an explicit subject, crop, rights basis, and decision role. No source asset is stored.",
+  "industry": "commerce, technology",
+  "interaction": "Layouts tolerate uneven photography, long titles, and sparse or rich item data.",
+  "lane_fit": "Lane assignment: Large marketplaces with variable inventory. This case earns one commerce, media, and content-heavy quota credit through marketplace scan and buyer-seller symmetry.",
+  "layout": "Responsive inventory grid opening into dense item detail.",
+  "motion": "Direct save, bid, and transaction feedback.",
+  "navigation": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Responsive inventory grid opening into dense item detail.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Shared patterns support two roles with different decisions and responsibilities. Layouts tolerate uneven photography, long titles, and sparse or rich item data.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "marketplace scan: Price, condition, seller, delivery, and trust information remain separable in repeated listings.",
+    "buyer-seller symmetry: Shared patterns support two roles with different decisions and responsibilities.",
+    "trust near transaction: Policies, status, and safeguards appear close to consequential actions.",
+    "inventory variability: Layouts tolerate uneven photography, long titles, and sparse or rich item data."
+  ],
+  "source": "https://playbook.ebay.com/",
+  "spacing": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Shared patterns support two roles with different decisions and responsibilities.",
+  "states": "Layouts tolerate uneven photography, long titles, and sparse or rich item data. Direct save, bid, and transaction feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "large marketplaces with variable inventory",
+    "commerce products serving both buyers and sellers"
+  ],
+  "surfaces": "Policies, status, and safeguards appear close to consequential actions. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Shared patterns support two roles with different decisions and responsibilities.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single-product luxury storytelling where marketplace density would weaken focus"
+  ],
+  "visual_thesis": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Shared patterns support two roles with different decisions and responsibilities."
+}

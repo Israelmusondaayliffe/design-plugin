@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for GitLab Pajamas was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.gitlab.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.gitlab.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Large development workflows remain scannable through clear grouping and page structure.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.gitlab.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.gitlab.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Color and spacing roles stay predictable across many features and teams. Content, focus, keyboard behavior, and alternative input are treated as product requirements.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.gitlab.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.gitlab.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For complex developer and operations platforms, preserve incremental consistency; reject the design if it starts compressing dense screens without preserving headings and landmarks.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.gitlab.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

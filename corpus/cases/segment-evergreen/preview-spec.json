@@ -1,0 +1,14 @@
+{
+  "layout": "compact application grid with focused configuration container",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct dialog and validation feedback",
+  "pattern": "quiet technical setup panel with explicit form state and bounded options",
+  "primary": "#f7f8fa",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#1070ca"
+}

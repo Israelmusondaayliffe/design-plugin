@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "federal-accessible"
+  ],
+  "avoid_for": [
+    "small editorial sites with no account, eligibility, or comparison state"
+  ],
+  "best_for": [
+    "health enrollment and coverage comparison",
+    "multi-program public services sharing a component foundation"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "onboarding-forms-settings-flows",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "government",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "complete-service",
+    "onboard-configure"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "data-led",
+  "name": "CMS Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "forms",
+    "workflow",
+    "dashboard",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "health-program precision",
+    "multi-brand service reuse",
+    "form-and-data continuity",
+    "accessible comparison"
+  ],
+  "slug": "cms-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "CMS Design System",
+  "source_url": "https://design.cms.gov/",
+  "studied_at": "2026-09-01",
+  "summary": "Plan, eligibility, coverage, and account information retain explicit relationships. Shared behavior supports several government health programs without hiding program identity.",
+  "typography_character": "humanist-sans"
+}

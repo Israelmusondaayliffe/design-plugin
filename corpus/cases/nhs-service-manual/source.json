@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "fcfb6c7df8d9ed1e50ebd7f57083ed03e4ca2a894bf13be1fc618eca39491cf7",
+  "effective_url": "https://service-manual.nhs.uk/design-system",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://service-manual.nhs.uk/design-system"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://service-manual.nhs.uk/design-system",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "nhs-service-manual",
+  "source_version": "live-public-source-2026-09-01:fcfb6c7df8d9",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

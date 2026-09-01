@@ -1,0 +1,14 @@
+{
+  "layout": "editorial grid with variable story weight",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "minimal live-state feedback with reduced-motion support",
+  "pattern": "responsive news hierarchy with one live marker and distinct text-media roles",
+  "primary": "#f7f7f7",
+  "radius": "0px",
+  "schema_version": "1.0",
+  "secondary": "#b80000"
+}

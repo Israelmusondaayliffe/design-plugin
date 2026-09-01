@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Placing frequent actions outside comfortable reach.",
+  "archetype": "platform-native",
+  "brand_posture": "Information and controls account for large screens and one-handed use. Layouts expand without merely stretching a phone column.",
+  "category": "mobile",
+  "color": "Settings, navigation, and feedback reuse familiar Samsung behavior.",
+  "components": "Settings, navigation, and feedback reuse familiar Samsung behavior. Layouts expand without merely stretching a phone column.",
+  "confidence": "medium",
+  "container": "Reach-aware mobile screen with orientation above and primary action below. Settings, navigation, and feedback reuse familiar Samsung behavior.",
+  "failure_modes": [
+    "Placing frequent actions outside comfortable reach.",
+    "Scaling phone layouts without rethinking large screens.",
+    "Inventing gestures that conflict with platform behavior."
+  ],
+  "flows": "Destination test: Android applications for Samsung devices. Evaluate the relationship across creation and management, and onboarding and configuration.",
+  "forms": "During creation and management, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Information and controls account for large screens and one-handed use. Upper regions orient while lower regions concentrate frequent interaction.",
+  "imagery": "Reach-aware mobile screen with orientation above and primary action below. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "technology, general",
+  "interaction": "Layouts expand without merely stretching a phone column.",
+  "lane_fit": "Lane assignment: Android applications for Samsung devices. This case earns one mobile quota credit through reach-aware composition and view-action separation.",
+  "layout": "Vertically separated viewing and action zones.",
+  "motion": "Platform-consistent feedback with reduced-motion support.",
+  "navigation": "Information and controls account for large screens and one-handed use. Vertically separated viewing and action zones.",
+  "platform": "android, mobile",
+  "responsive_behavior": "Upper regions orient while lower regions concentrate frequent interaction. Layouts expand without merely stretching a phone column.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "reach-aware composition: Information and controls account for large screens and one-handed use.",
+    "view-action separation: Upper regions orient while lower regions concentrate frequent interaction.",
+    "platform continuity: Settings, navigation, and feedback reuse familiar Samsung behavior.",
+    "large-screen adaptation: Layouts expand without merely stretching a phone column."
+  ],
+  "source": "https://developer.samsung.com/one-ui",
+  "spacing": "Information and controls account for large screens and one-handed use. Upper regions orient while lower regions concentrate frequent interaction.",
+  "states": "Layouts expand without merely stretching a phone column. Platform-consistent feedback with reduced-motion support.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "Android applications for Samsung devices",
+    "mobile products needing one-handed and large-screen behavior"
+  ],
+  "surfaces": "Settings, navigation, and feedback reuse familiar Samsung behavior. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Upper regions orient while lower regions concentrate frequent interaction.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "dense desktop tools whose main interaction depends on pointer precision"
+  ],
+  "visual_thesis": "Information and controls account for large screens and one-handed use. Upper regions orient while lower regions concentrate frequent interaction."
+}

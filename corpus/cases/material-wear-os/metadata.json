@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "long-form content, complex configuration, or data entry"
+  ],
+  "best_for": [
+    "wearable health, navigation, and notification tasks",
+    "companion experiences with brief repeat interactions"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "low",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "monitor-operate",
+    "complete-service"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Material for Wear OS",
+  "platforms": [
+    "android",
+    "mobile"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "glanceable hierarchy",
+    "round-screen composition",
+    "short interaction loops",
+    "ambient continuity"
+  ],
+  "slug": "material-wear-os",
+  "source_kind": "public-design-system",
+  "source_name": "Material for Wear OS",
+  "source_url": "https://developer.android.com/design/ui/wear",
+  "studied_at": "2026-09-01",
+  "summary": "Critical state and next action fit into a brief wrist-level view. Curved boundaries and edge behavior influence content placement.",
+  "typography_character": "humanist-sans"
+}

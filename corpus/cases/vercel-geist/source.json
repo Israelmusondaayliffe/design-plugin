@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "79b3c116b1f3729b9646defe87ff9dde4fdac7c94b41e0042bd6ded185d02ce4",
+  "effective_url": "https://vercel.com/geist/introduction",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://vercel.com/geist/introduction"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://vercel.com/geist/introduction",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "vercel-geist",
+  "source_version": "live-public-source-2026-09-01:79b3c116b1f3",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

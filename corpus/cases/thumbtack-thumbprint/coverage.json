@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Collecting personal details before showing value.",
+  "archetype": "merchant-operational",
+  "brand_posture": "Questions and results narrow a broad need into comparable local professionals. Customer requests and professional responses remain connected through status.",
+  "category": "commerce-media-content-heavy",
+  "color": "The interface asks only what improves the match and explains why it matters.",
+  "components": "The interface asks only what improves the match and explains why it matters. Customer requests and professional responses remain connected through status.",
+  "confidence": "medium",
+  "container": "Service match flow with human proof, progressive questions, and clear request state. The interface asks only what improves the match and explains why it matters.",
+  "failure_modes": [
+    "Collecting personal details before showing value.",
+    "Using reviews without enough job context.",
+    "Losing request state between customer and provider views."
+  ],
+  "flows": "Destination test: Local-service marketplaces. Evaluate the relationship across browsing and discovery, and transactions and checkout.",
+  "forms": "During browsing and discovery, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Questions and results narrow a broad need into comparable local professionals. Profiles, reviews, work imagery, and availability support trust before contact.",
+  "imagery": "Service match flow with human proof, progressive questions, and clear request state. Photography needs an explicit subject, crop, rights basis, and decision role. No source asset is stored.",
+  "industry": "commerce, general",
+  "interaction": "Customer requests and professional responses remain connected through status.",
+  "lane_fit": "Lane assignment: Local-service marketplaces. This case earns one commerce, media, and content-heavy quota credit through service-match clarity and human proof.",
+  "layout": "Guided question container opening into comparable professional profiles.",
+  "motion": "Step continuity and visible request feedback.",
+  "navigation": "Questions and results narrow a broad need into comparable local professionals. Guided question container opening into comparable professional profiles.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Profiles, reviews, work imagery, and availability support trust before contact. Customer requests and professional responses remain connected through status.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "service-match clarity: Questions and results narrow a broad need into comparable local professionals.",
+    "human proof: Profiles, reviews, work imagery, and availability support trust before contact.",
+    "progressive qualification: The interface asks only what improves the match and explains why it matters.",
+    "two-sided continuity: Customer requests and professional responses remain connected through status."
+  ],
+  "source": "https://thumbprint.design/",
+  "spacing": "Questions and results narrow a broad need into comparable local professionals. Profiles, reviews, work imagery, and availability support trust before contact.",
+  "states": "Customer requests and professional responses remain connected through status. Step continuity and visible request feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "local-service marketplaces",
+    "matching products that need qualification before price or availability"
+  ],
+  "surfaces": "The interface asks only what improves the match and explains why it matters. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Profiles, reviews, work imagery, and availability support trust before contact.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "instant commodity checkout where a long match flow would add friction"
+  ],
+  "visual_thesis": "Questions and results narrow a broad need into comparable local professionals. Profiles, reviews, work imagery, and availability support trust before contact."
+}

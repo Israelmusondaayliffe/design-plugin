@@ -1,0 +1,52 @@
+{
+  "accessibility": "Test semantic order, focus, contrast, keyboard and touch parity, reflow, non-color state cues, and reduced motion. Reducing the system to random bright rectangles.",
+  "archetype": "creative-expressive",
+  "brand_posture": "Large color fields create memorable pairings rather than soft atmosphere. Unequal columns and edge relationships create tension without disorder.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Creative work and imagery carry the story.",
+  "components": "Creative work and imagery carry the story.",
+  "confidence": "high",
+  "container": "Container changes follow task priority during browsing and discovery, plus evaluation and conversion; they do not imitate the source page frame.",
+  "failure_modes": [
+    "Reducing the system to random bright rectangles.",
+    "Using expressive display type for operational labels.",
+    "Replacing art-directed media with weak gradients or abstract blobs.",
+    "Centering every section until the composition loses tension."
+  ],
+  "flows": "Destination test: Creative collaboration brands with strong owned media. Evaluate the relationship across browsing and discovery, and evaluation and conversion.",
+  "forms": "Use literal labels, persistent input, visible validation, and recovery suited to browsing and discovery, plus evaluation and conversion.",
+  "grid": "The grid must preserve color confrontation while supporting unequal split composition with edge-aligned media.",
+  "imagery": "Asymmetric editorial field with oversized type and one dominant image slot. The required media role is separate product, photography, illustration, and data roles. No source asset is carried into the case.",
+  "industry": "technology, creative-tools",
+  "interaction": "Creative work and imagery carry the story. Unequal columns and edge relationships create tension without disorder.",
+  "lane_fit": "Lane assignment: Creative collaboration brands with strong owned media. This case earns one brand, editorial, portfolio, and marketing quota credit through Color confrontation and Display-led identity.",
+  "layout": "Unequal split composition with edge-aligned media.",
+  "motion": "Direct swaps and crops with restrained easing.",
+  "navigation": "Navigation must keep the user's place during browsing and discovery, plus evaluation and conversion. Large color fields create memorable pairings rather than soft atmosphere.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder around browsing and discovery, plus evaluation and conversion. Keep asymmetric balance visible when the viewport or device changes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Color confrontation: Large color fields create memorable pairings rather than soft atmosphere.",
+    "Display-led identity: Typography participates in the composition instead of sitting above it.",
+    "Media as subject: Creative work and imagery carry the story.",
+    "Asymmetric balance: Unequal columns and edge relationships create tension without disorder."
+  ],
+  "source": "https://brand.dropbox.com/",
+  "spacing": "Spacing should expose the relationship between color confrontation and display-led identity at low density.",
+  "states": "Unequal columns and edge relationships create tension without disorder.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "creative collaboration brands with strong owned media",
+    "portfolios and campaigns that can sustain art direction"
+  ],
+  "surfaces": "Creative work and imagery carry the story. Preview surfaces are original study material, not sampled owner assets.",
+  "typography": "Use expressive display type with quieter utility text. Typography participates in the composition instead of sitting above it.",
+  "unknowns": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "dense administration interfaces where strong fields and display type would compete with repeated tasks"
+  ],
+  "visual_thesis": "Large color fields create memorable pairings rather than soft atmosphere. Typography participates in the composition instead of sitting above it."
+}

@@ -1,1 +1,45 @@
-{"schema_version":"1.0","items":[{"id":"E01","claim":"Shopify design guidance asks apps to align with established Shopify Admin visual and interaction patterns so merchants can use familiar conventions.","class":"observed","source_url":"https://shopify.dev/docs/apps/design","locator":"App design guidance","confidence":"high","captured_at":"2026-08-30","notes":"Primary Shopify developer guidance."},{"id":"E02","claim":"Polaris color guidance organizes color around roles and interaction meaning rather than treating palette swatches as decorative choices.","class":"observed","source_url":"https://polaris.shopify.com/design/colors/color-roles","locator":"Color roles","confidence":"high","captured_at":"2026-08-30","notes":"Supports semantic token preservation."},{"id":"E03","claim":"Polaris accessibility guidance requires color relationships to maintain usable contrast and not rely on color alone for meaning.","class":"observed","source_url":"https://polaris.shopify.com/foundations/accessibility","locator":"Accessibility foundation","confidence":"high","captured_at":"2026-08-30","notes":"Accessibility is part of operational trust."},{"id":"E04","claim":"The strongest transferable quality is continuity with the user's working environment, not a standalone Shopify-looking skin.","class":"inferred","source_url":"https://shopify.dev/docs/apps/design","locator":"Cross-guidance synthesis","confidence":"high","captured_at":"2026-08-30","notes":"Original corpus interpretation."}]}
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shopify publishes an owner-controlled app design guidance page at the recorded URL.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://shopify.dev/docs/apps/design",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://shopify.dev/docs/apps/design"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The corpus treats continuity with the host admin environment as the useful design relationship, because familiar task structure can reduce merchant relearning.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://shopify.dev/docs/apps/design",
+      "notes": "Source-bounded analyst interpretation; not a direct Shopify claim.",
+      "source_url": "https://shopify.dev/docs/apps/design"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Semantic status roles and non-color redundancy remain destination requirements in this case, but the current public page does not independently prove the earlier archived Polaris accessibility claim.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://shopify.dev/docs/apps/design",
+      "notes": "The claim was narrowed after the former Polaris foundation URLs redirected to a different page.",
+      "source_url": "https://shopify.dev/docs/apps/design"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For embedded commerce administration, preserve merchant task orientation and explicit state meaning; reject any adaptation that merely paints a standalone product to resemble Shopify.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://shopify.dev/docs/apps/design"
+    }
+  ],
+  "schema_version": "1.0"
+}

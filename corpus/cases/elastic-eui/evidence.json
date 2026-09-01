@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Elastic UI Framework was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://eui.elastic.co/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://eui.elastic.co/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Filters, charts, tables, and query controls stay close to the evidence they affect.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://eui.elastic.co/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://eui.elastic.co/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Headings, landmarks, focus, names, and keyboard behavior shape complex pages. Panels and layout primitives support many data arrangements without inventing new chrome.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://eui.elastic.co/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://eui.elastic.co/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For observability, security, and analytics interfaces, preserve content precision; reject the design if it starts using charts without accessible names or tabular alternatives.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://eui.elastic.co/"
+    }
+  ],
+  "schema_version": "1.0"
+}

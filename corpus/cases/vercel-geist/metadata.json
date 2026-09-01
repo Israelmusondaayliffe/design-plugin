@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "developer-dense"
+  ],
+  "avoid_for": [
+    "image-led consumer brands that need warmth or human storytelling before technical proof"
+  ],
+  "best_for": [
+    "developer platforms that need marketing and documentation to feel continuous",
+    "technical launches where product proof must carry the argument"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "developer-tools",
+    "technology"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "evaluate-convert",
+    "browse-discover"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "product-evidence",
+  "name": "Vercel Geist",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Monochrome authority",
+    "Scale contrast",
+    "Evidence frames",
+    "Exact geometry",
+    "Sparse accent"
+  ],
+  "slug": "vercel-geist",
+  "source_kind": "public-design-system",
+  "source_name": "Vercel Geist",
+  "source_url": "https://vercel.com/geist/introduction",
+  "studied_at": "2026-09-01",
+  "summary": "Neutral surfaces let technical content and product proof lead. Display statements and utility labels occupy deliberately different registers.",
+  "typography_character": "neutral-sans"
+}

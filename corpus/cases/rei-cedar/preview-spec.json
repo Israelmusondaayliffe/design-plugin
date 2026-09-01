@@ -1,0 +1,14 @@
+{
+  "layout": "media-rich browse grid leading to structured product specification",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "quiet variant and inventory feedback",
+  "pattern": "outdoor product image paired with exact fit, stock, and technical details",
+  "primary": "#f4f1e8",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#1f5132"
+}

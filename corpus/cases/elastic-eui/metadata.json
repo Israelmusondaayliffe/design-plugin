@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "low-information marketing pages where dense application framing would add unnecessary machinery"
+  ],
+  "best_for": [
+    "observability, security, and analytics interfaces",
+    "data-heavy tools needing both charts and operational controls"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "high",
+  "evidence_quality": "medium",
+  "industries": [
+    "developer-tools",
+    "enterprise"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "monitor-operate",
+    "visualize-explore"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "data-led",
+  "name": "Elastic UI Framework",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "dashboard",
+    "admin",
+    "data-visualization",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "data-first composition",
+    "accessible application structure",
+    "composable density",
+    "content precision"
+  ],
+  "slug": "elastic-eui",
+  "source_kind": "public-design-system",
+  "source_name": "Elastic UI Framework",
+  "source_url": "https://eui.elastic.co/",
+  "studied_at": "2026-09-01",
+  "summary": "Filters, charts, tables, and query controls stay close to the evidence they affect. Headings, landmarks, focus, names, and keyboard behavior shape complex pages.",
+  "typography_character": "neutral-sans"
+}

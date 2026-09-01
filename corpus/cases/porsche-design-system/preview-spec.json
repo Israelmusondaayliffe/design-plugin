@@ -1,1 +1,14 @@
-{"primary":"#ffffff","secondary":"#010205","radius":"4px","pattern":"premium technical composition with fluid vertical spacing, exact black-white contrast, and a narrow restrained accent"}
+{
+  "layout": "Original abstract composition based on framework-agnostic design tokens and restrained semantic color.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Porsche Design System preview only when it clarifies framework-agnostic design tokens through feedback or continuity.",
+  "pattern": "premium technical composition with fluid vertical spacing, exact black-white contrast, and a narrow restrained accent",
+  "primary": "#ffffff",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#010205"
+}

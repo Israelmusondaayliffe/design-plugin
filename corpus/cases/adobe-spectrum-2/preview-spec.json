@@ -1,1 +1,14 @@
-{"primary":"#f8f8f8","secondary":"#6c4df6","radius":"14px","pattern":"creative workspace with quiet chrome, rounded controls, selective depth, and one expressive focus color"}
+{
+  "layout": "Original abstract composition based on expressive but controlled color and rounded thicker icon language.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Adobe Spectrum 2 preview only when it clarifies expressive but controlled color through feedback or continuity.",
+  "pattern": "creative workspace with quiet chrome, rounded controls, selective depth, and one expressive focus color",
+  "primary": "#f8f8f8",
+  "radius": "14px",
+  "schema_version": "1.0",
+  "secondary": "#6c4df6"
+}

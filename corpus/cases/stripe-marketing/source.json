@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "a3e5d8ef8e32f1d70d853a32f46f3d4bdb074a2a0af5ab4304c7073f873fc996",
+  "effective_url": "https://stripe.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://stripe.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://stripe.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "stripe-marketing",
+  "source_version": "live-public-source-2026-09-01:a3e5d8ef8e32",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

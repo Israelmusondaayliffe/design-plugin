@@ -1,0 +1,14 @@
+{
+  "layout": "application shell with layered content regions",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "minimal feedback for state and navigation",
+  "pattern": "dense developer workflow with explicit status, navigation, and task grouping",
+  "primary": "#fbfafd",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#7759c2"
+}

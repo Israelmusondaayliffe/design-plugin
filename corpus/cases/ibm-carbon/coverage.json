@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "A technical enterprise system that separates productive UI density from expressive moments, uses IBM Plex as a structured typographic family, and treats component states and contextual tokens with specification-level precision.",
+  "category": "design-systems-data-experimental",
+  "color": "Neutral text and layered surfaces should carry most of the interface. Semantic and interactive colors remain tied to states and actions. Contextual layer tokens are especially useful when the same component appears on different surface depths.",
+  "components": "Treat each component as a state machine with exact anatomy. Hover, focus, selected, disabled, read-only, error, and loading states need explicit token relationships. Do not reduce Carbon to square gray boxes and blue buttons.",
+  "confidence": "high",
+  "container": "Use containers that keep productive versus expressive type strategy legible across the supported platforms.",
+  "failure_modes": [
+    "Using expressive display scale throughout a dense product.",
+    "Applying blue as decoration because Carbon is associated with IBM blue.",
+    "Copying component geometry while ignoring contextual layer tokens and state behavior.",
+    "Treating enterprise density as permission for weak spacing or tiny illegible text."
+  ],
+  "flows": "Destination test: Enterprise software. Evaluate the relationship across monitoring and operations, and visual exploration.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For IBM Carbon Design System, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is data led; no source imagery or visual assets are stored in the corpus.",
+  "industry": "enterprise, technology",
+  "interaction": "Treat each component as a state machine with exact anatomy. Hover, focus, selected, disabled, read-only, error, and loading states need explicit token relationships. Do not reduce Carbon to square gray boxes and blue buttons.",
+  "lane_fit": "Lane assignment: Enterprise software. This case earns one design systems, data, and experimental quota credit through productive versus expressive type strategy and IBM Plex family hierarchy.",
+  "layout": "Carbon is comfortable with high information density. Use compact spacing where repeated actions and scanning dominate, but restore expressive scale for major narrative or brand moments. Dense does not mean cramped. Alignment and tokenized spacing must remain visible.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for IBM Carbon Design System across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving productive versus expressive type strategy and ibm plex family hierarchy.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "productive versus expressive type strategy",
+    "IBM Plex family hierarchy",
+    "compact enterprise components",
+    "contextual semantic tokens",
+    "measured component specifications"
+  ],
+  "source": "https://carbondesignsystem.com/",
+  "spacing": "Spacing should preserve the case's high density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "enterprise software",
+    "data-heavy dashboards",
+    "developer and infrastructure tools",
+    "complex admin workflows"
+  ],
+  "surfaces": "Neutral text and layered surfaces should carry most of the interface. Semantic and interactive colors remain tied to states and actions. Contextual layer tokens are especially useful when the same component appears on different surface depths.",
+  "typography": "Use productive styles for tables, controls, labels, structured lists, filters, and working surfaces. Use expressive scale selectively for page-level storytelling. Mono belongs to code or technical values, not as general decoration.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "consumer marketing that needs playful informality",
+    "interfaces where the Carbon visual language would overpower a very different established brand"
+  ],
+  "visual_thesis": "Carbon's transferable strength is precision under complexity. It can hold dense enterprise information because typography, spacing, component anatomy, state color, and data presentation are systematized. It also explicitly separates productive application moments from more expressive editorial moments."
+}

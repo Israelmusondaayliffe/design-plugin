@@ -3,29 +3,159 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="A reviewed library of design systems, product interfaces, mobile patterns, and editorial references.">
   <title>Design Reference Library</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="shell hero">
-    <p class="eyebrow">Design Knowledge Corpus</p>
-    <h1>Find design logic, not just looks.</h1>
-    <p class="lede">Search original case studies by platform, product type, archetype, density, or source. Compare up to five references without loading the full corpus at once.</p>
+  <a class="skip-link" href="#catalog">Skip to the reference catalog</a>
+
+  <header class="hero shell">
+    <nav class="masthead" aria-label="Site">
+      <a class="wordmark" href="./" aria-label="Design Reference Library home">
+        <span class="wordmark-mark" aria-hidden="true">DR</span>
+        <span>Reference Library</span>
+      </a>
+      <a class="method-link" href="#method">Method</a>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Reviewed design corpus / alpha</p>
+        <h1>Borrow the<br><em>relationship,</em><br>not the skin.</h1>
+      </div>
+      <div class="hero-copy">
+        <p class="lede">A working library of design systems, product interfaces, mobile patterns, and editorial references. Each case turns public evidence into original, reusable design reasoning.</p>
+        <dl class="hero-stats" aria-label="Corpus status">
+          <div><dt id="case-count">60</dt><dd>reviewed cases</dd></div>
+          <div><dt>6</dt><dd>coverage lanes</dd></div>
+          <div><dt>0</dt><dd>copied assets</dd></div>
+        </dl>
+      </div>
+    </div>
   </header>
-  <main class="shell">
-    <section class="controls" aria-label="Catalog controls">
-      <label>Search <input id="search" type="search" placeholder="dashboard, government forms, mobile…"></label>
-      <label>Archetype <select id="archetype"><option value="">All</option></select></label>
-      <label>Platform <select id="platform"><option value="">All</option></select></label>
+
+  <main id="catalog" class="shell" tabindex="-1">
+    <section class="catalog-intro" aria-labelledby="catalog-title">
+      <p class="section-number" aria-hidden="true">01</p>
+      <div>
+        <p class="kicker">Explore the corpus</p>
+        <h2 id="catalog-title">Find a useful starting point.</h2>
+      </div>
+      <p>Search by a design problem, narrow by evidence and context, then open a case to inspect what transfers and what does not.</p>
     </section>
-    <p id="status" role="status" aria-live="polite"></p>
-    <section id="results" class="results" aria-label="Reference cases"></section>
-    <section class="compare" aria-labelledby="compare-title">
-      <div class="compare-head"><h2 id="compare-title">Compare</h2><button id="clear-compare" type="button">Clear</button></div>
-      <div id="comparison" class="comparison"><p>Select up to five cases.</p></div>
+
+    <section class="catalog-tools" aria-label="Catalog controls">
+      <div class="search-wrap">
+        <label for="search">Search all 60 cases</label>
+        <div class="search-field">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="search" type="search" autocomplete="off" placeholder="Try dashboard, civic service, mobile commerce">
+          <button id="clear-search" class="clear-search" type="button" hidden>Clear</button>
+        </div>
+      </div>
+
+      <div id="lane-filters" class="lane-filters" aria-label="Corpus lanes"></div>
+
+      <details class="advanced-filters">
+        <summary>
+          <span>More filters</span>
+          <span id="active-filter-count" class="filter-count" hidden>0</span>
+        </summary>
+        <div class="filter-grid">
+          <label for="platform">Platform<select id="platform"><option value="">All platforms</option></select></label>
+          <label for="product-type">Product type<select id="product-type"><option value="">All product types</option></select></label>
+          <label for="archetype">Archetype<select id="archetype"><option value="">All archetypes</option></select></label>
+          <label for="media">Media strategy<select id="media"><option value="">All media strategies</option></select></label>
+          <label for="density">Density<select id="density"><option value="">All densities</option></select></label>
+          <label for="evidence">Evidence<select id="evidence"><option value="">All evidence levels</option></select></label>
+        </div>
+        <button id="reset-filters" class="text-button" type="button">Reset every filter</button>
+      </details>
+    </section>
+
+    <div class="results-head">
+      <p id="status" role="status" aria-live="polite">Loading the reviewed catalog...</p>
+      <label class="sort-control" for="sort">Sort<select id="sort"><option value="name">A to Z</option><option value="lane">Coverage lane</option><option value="evidence">Evidence quality</option></select></label>
+    </div>
+
+    <section id="results" class="results" aria-label="Reference cases" aria-busy="true"></section>
+    <div id="empty-state" class="empty-state" hidden>
+      <p class="kicker">No match</p>
+      <h2>Try a wider search.</h2>
+      <p>Remove one filter or search for a broader design problem.</p>
+      <button id="empty-reset" class="button" type="button">Show all cases</button>
+    </div>
+
+    <section id="method" class="method" aria-labelledby="method-title">
+      <p class="section-number" aria-hidden="true">02</p>
+      <div class="method-title">
+        <p class="kicker">How to use this library</p>
+        <h2 id="method-title">Evidence in.<br>Design judgment out.</h2>
+      </div>
+      <ol class="method-steps">
+        <li><span>01</span><div><h3>Observe the owner source</h3><p>Record visible behavior, structure, and system choices without copying its assets.</p></div></li>
+        <li><span>02</span><div><h3>Name the relationship</h3><p>Explain why the parts work together, including limits and failure modes.</p></div></li>
+        <li><span>03</span><div><h3>Adapt with intent</h3><p>Transfer the useful logic into a new context. Do not reproduce the original surface.</p></div></li>
+      </ol>
+      <p class="method-note">Every case links back to its owner-published source. Inferences are labeled separately from observations.</p>
     </section>
   </main>
+
+  <aside id="compare-tray" class="compare-tray" aria-label="Comparison selection" hidden>
+    <div>
+      <p><strong id="compare-count">0</strong> of 5 selected</p>
+      <div id="comparison" class="comparison" aria-live="polite"></div>
+    </div>
+    <div class="compare-actions">
+      <button id="clear-compare" class="text-button" type="button">Clear</button>
+      <button id="open-compare" class="button button-dark" type="button">Compare cases</button>
+    </div>
+  </aside>
+
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title">
+    <div class="dialog-shell">
+      <div class="dialog-topbar">
+        <p id="case-lane" class="kicker"></p>
+        <button class="icon-button" type="button" data-close="case-dialog" aria-label="Close case">Close</button>
+      </div>
+      <div id="case-preview" class="detail-preview" aria-hidden="true"></div>
+      <header class="case-heading">
+        <div><p id="case-source" class="source-line"></p><h2 id="case-title"></h2></div>
+        <button id="dialog-compare" class="button" type="button"></button>
+      </header>
+      <div class="dialog-tabs" role="tablist" aria-label="Case sections">
+        <button id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
+        <button id="tab-analysis" type="button" role="tab" aria-selected="false" aria-controls="panel-analysis" tabindex="-1">Analysis</button>
+        <button id="tab-evidence" type="button" role="tab" aria-selected="false" aria-controls="panel-evidence" tabindex="-1">Evidence</button>
+      </div>
+      <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
+      <div id="panel-analysis" class="tab-panel prose" role="tabpanel" aria-labelledby="tab-analysis" hidden></div>
+      <div id="panel-evidence" class="tab-panel" role="tabpanel" aria-labelledby="tab-evidence" hidden></div>
+    </div>
+  </dialog>
+
+  <dialog id="compare-dialog" class="compare-dialog" aria-labelledby="compare-title">
+    <div class="dialog-shell">
+      <div class="dialog-topbar">
+        <p class="kicker">Side by side</p>
+        <button class="icon-button" type="button" data-close="compare-dialog" aria-label="Close comparison">Close</button>
+      </div>
+      <header class="compare-heading"><h2 id="compare-title">Compare selected cases</h2><p>Look for compatible relationships, not a collection of surface traits.</p></header>
+      <div id="compare-table" class="compare-table"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer shell">
+    <p>Design Reference Library</p>
+    <p>Original analysis of public owner sources. No source assets are stored.</p>
+  </footer>
+
+  <template id="loading-template">
+    <article class="case-card skeleton" aria-hidden="true"><div></div><span></span><span></span><span></span></article>
+  </template>
+
   <script src="app.js" defer></script>
 </body>
 </html>

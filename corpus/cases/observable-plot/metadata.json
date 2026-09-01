@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "developer-dense"
+  ],
+  "avoid_for": [
+    "interfaces where decorative charts would substitute for actual analysis"
+  ],
+  "best_for": [
+    "exploratory data products and analytical publishing",
+    "teams needing reproducible chart specifications"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "design-systems-data-experimental",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "developer-tools"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "visualize-explore",
+    "browse-discover"
+  ],
+  "layout_behavior": "data-canvas",
+  "media_strategy": "data-led",
+  "name": "Observable Plot",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "data-visualization",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "declarative visual grammar",
+    "sensible analytical defaults",
+    "layered composition",
+    "code-to-evidence continuity"
+  ],
+  "slug": "observable-plot",
+  "source_kind": "open-source",
+  "source_name": "Observable Plot",
+  "source_url": "https://observablehq.github.io/plot/",
+  "studied_at": "2026-09-01",
+  "summary": "Marks, transforms, scales, and facets express data relationships without manual pixel placement. The library reduces setup while leaving important encoding decisions visible.",
+  "typography_character": "technical-mono"
+}

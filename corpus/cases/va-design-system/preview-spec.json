@@ -1,0 +1,14 @@
+{
+  "layout": "guided application column with persistent progress context",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct save and validation confirmation",
+  "pattern": "long-form benefits task with honest progress, save state, and sensitive recovery",
+  "primary": "#f4f7fb",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#005ea8"
+}

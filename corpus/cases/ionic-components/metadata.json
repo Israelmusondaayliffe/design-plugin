@@ -1,0 +1,62 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "apps requiring deeply custom platform-native controls unavailable through the component layer"
+  ],
+  "best_for": [
+    "cross-platform mobile applications",
+    "teams using web technology for native-like interfaces"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "developer-tools"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "onboard-configure",
+    "create-manage"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Ionic Components",
+  "platforms": [
+    "ios",
+    "android",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "native-app",
+    "forms",
+    "settings",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "mode-aware components",
+    "mobile interaction breadth",
+    "web-native implementation",
+    "progressive platform fit"
+  ],
+  "slug": "ionic-components",
+  "source_kind": "public-design-system",
+  "source_name": "Ionic Components",
+  "source_url": "https://ionicframework.com/docs/components",
+  "studied_at": "2026-09-01",
+  "summary": "Shared components adapt their presentation to iOS and Material conventions. Navigation, sheets, pickers, lists, forms, and feedback cover common app work.",
+  "typography_character": "neutral-sans"
+}

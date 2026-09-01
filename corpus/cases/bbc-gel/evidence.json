@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for BBC Global Experience Language was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://www.bbc.co.uk/gel/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://www.bbc.co.uk/gel/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Navigation and content order support broad audiences and urgent contexts.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://www.bbc.co.uk/gel/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://www.bbc.co.uk/gel/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Story prominence changes without breaking reading sequence. Text, audio, video, live information, and imagery keep distinct roles.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://www.bbc.co.uk/gel/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://www.bbc.co.uk/gel/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For large public media services, preserve accessibility as structure; reject the design if it starts using equal card grids that erase editorial priority.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://www.bbc.co.uk/gel/"
+    }
+  ],
+  "schema_version": "1.0"
+}

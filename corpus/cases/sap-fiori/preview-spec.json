@@ -1,0 +1,14 @@
+{
+  "layout": "shell and object hierarchy shifting by density mode",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "short continuity cues for navigation and transactions",
+  "pattern": "adaptive business object page with role-based actions and layered detail",
+  "primary": "#f7f7f7",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#0070f2"
+}

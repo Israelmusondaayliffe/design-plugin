@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Zendesk Garden was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://garden.zendesk.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://garden.zendesk.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://garden.zendesk.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://garden.zendesk.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Friendly shape and language soften complexity without masking status. Common controls keep the same behavior across many support contexts.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://garden.zendesk.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://garden.zendesk.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For support tools and service operations, preserve service-state emphasis; reject the design if it starts using friendly surfaces to downplay urgency.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://garden.zendesk.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

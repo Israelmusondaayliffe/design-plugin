@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for VA Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.va.gov/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.va.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Complex eligibility and application work is broken into understandable decisions.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.va.gov/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.va.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Copy, validation, and support recognize the consequences of mistakes and uncertainty. Long forms preserve location, completion state, and routes back to work.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.va.gov/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.va.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For benefits, eligibility, and long public applications, preserve federal accessibility; reject the design if it starts showing progress that does not match saved state.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.va.gov/"
+    }
+  ],
+  "schema_version": "1.0"
+}

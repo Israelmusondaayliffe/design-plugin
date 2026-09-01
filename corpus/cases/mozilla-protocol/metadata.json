@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "adaptive-expressive"
+  ],
+  "avoid_for": [
+    "single-screen tools that need dense operational controls more than publishing flexibility"
+  ],
+  "best_for": [
+    "multi-property organizations publishing campaigns and product stories",
+    "public-interest technology brands with both editorial and conversion needs"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "browse-discover",
+    "evaluate-convert"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "mixed",
+  "name": "Mozilla Protocol",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "editorial",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Publishing grammar",
+    "Voice without sameness",
+    "Editorial range",
+    "Bounded expression",
+    "Implementation continuity"
+  ],
+  "slug": "mozilla-protocol",
+  "source_kind": "public-design-system",
+  "source_name": "Mozilla Protocol",
+  "source_url": "https://protocol.mozilla.org/",
+  "studied_at": "2026-09-01",
+  "summary": "Reusable modules support several kinds of public communication. Brand character survives without one rigid page template.",
+  "typography_character": "mixed"
+}

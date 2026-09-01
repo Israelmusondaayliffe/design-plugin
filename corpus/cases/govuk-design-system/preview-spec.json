@@ -1,1 +1,14 @@
-{"primary":"#ffffff","secondary":"#1d70b8","radius":"0px","pattern":"single service column with black rule, strong blue action, and yellow focus cue"}
+{
+  "layout": "Original abstract composition based on service content before brand spectacle and convention-heavy form patterns.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the GOV.UK Design System preview only when it clarifies service content before brand spectacle through feedback or continuity.",
+  "pattern": "single service column with black rule, strong blue action, and yellow focus cue",
+  "primary": "#ffffff",
+  "radius": "0px",
+  "schema_version": "1.0",
+  "secondary": "#1d70b8"
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "compact mobile pane that reorders by window size and task",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "predictable state changes that remain interruptible",
+  "pattern": "adaptive Android phone task with visible system context and reachable controls",
+  "primary": "#f7f3fb",
+  "radius": "16px",
+  "schema_version": "1.0",
+  "secondary": "#65558f"
+}

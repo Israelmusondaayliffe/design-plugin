@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for California Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://designsystem.webstandards.ca.gov/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://designsystem.webstandards.ca.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Common components and content patterns reduce variation across agencies.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://designsystem.webstandards.ca.gov/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://designsystem.webstandards.ca.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Tasks remain usable on small screens and constrained connections. Headings, summaries, lists, and actions support quick public-service scanning.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://designsystem.webstandards.ca.gov/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://designsystem.webstandards.ca.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For government portals spanning many agencies, preserve accessible defaults; reject the design if it starts letting agencies fork behavior while keeping only shared colors.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://designsystem.webstandards.ca.gov/"
+    }
+  ],
+  "schema_version": "1.0"
+}

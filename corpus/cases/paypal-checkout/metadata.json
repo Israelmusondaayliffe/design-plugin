@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "non-transactional forms where payment branding would confuse the task"
+  ],
+  "best_for": [
+    "checkout flows supporting several funding methods",
+    "merchant payment integrations requiring recognizable external trust"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "low",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "transact-checkout"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "icon-led",
+  "name": "PayPal Checkout Guidance",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "commerce",
+    "checkout",
+    "forms"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "funding-source clarity",
+    "merchant-brand balance",
+    "cancellation and recovery",
+    "responsive completion"
+  ],
+  "slug": "paypal-checkout",
+  "source_kind": "public-design-system",
+  "source_name": "PayPal Checkout Guidance",
+  "source_url": "https://developer.paypal.com/platforms/checkout/standard/customize/",
+  "studied_at": "2026-09-01",
+  "summary": "Payment options are shown as choices with recognizable identity and consequence. Checkout can fit a merchant context while preserving PayPal trust markers.",
+  "typography_character": "neutral-sans"
+}

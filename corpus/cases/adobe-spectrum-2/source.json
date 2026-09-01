@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "3c4ce3230be0a47242d14f5b100574447a0faaa72496af64e7ef80762b5721d2",
+  "effective_url": "https://spectrum.adobe.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://s2.spectrum.adobe.com/"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://spectrum.adobe.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "adobe-spectrum-2",
+  "source_version": "live-public-source-2026-09-01:3c4ce3230be0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

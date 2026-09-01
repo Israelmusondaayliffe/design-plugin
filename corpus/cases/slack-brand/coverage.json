@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Scattering all brand colors across controls and status states.",
+  "archetype": "collaboration-system",
+  "brand_posture": "Human language and color make workplace software feel social without hiding its utility. Calls to action and explanations reduce formality without becoming vague.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Product examples show exchange, coordination, and shared context instead of generic dashboards.",
+  "components": "Product examples show exchange, coordination, and shared context instead of generic dashboards. Calls to action and explanations reduce formality without becoming vague.",
+  "confidence": "medium",
+  "container": "Warm collaboration story with a real conversation proof strip and bounded brand color. Product examples show exchange, coordination, and shared context instead of generic dashboards.",
+  "failure_modes": [
+    "Scattering all brand colors across controls and status states.",
+    "Using playful copy where permissions or data handling need precision.",
+    "Showing decorative chat bubbles without real workflow proof."
+  ],
+  "flows": "Destination test: Team products that need to communicate social coordination. Evaluate the relationship across evaluation and conversion, and browsing and discovery.",
+  "forms": "During evaluation and conversion, and browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Human language and color make workplace software feel social without hiding its utility. A recognizable multi-color identity stays bounded while text and surfaces remain quieter.",
+  "imagery": "Warm collaboration story with a real conversation proof strip and bounded brand color. Product, photography, illustration, and data each receive a separate job. No source asset is stored.",
+  "industry": "productivity, technology",
+  "interaction": "Calls to action and explanations reduce formality without becoming vague.",
+  "lane_fit": "Lane assignment: Team products that need to communicate social coordination. This case earns one brand, editorial, portfolio, and marketing quota credit through collaboration warmth and brand mark discipline.",
+  "layout": "Friendly narrative blocks anchored by product conversation evidence.",
+  "motion": "Subtle message and state transitions.",
+  "navigation": "Human language and color make workplace software feel social without hiding its utility. Friendly narrative blocks anchored by product conversation evidence.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "A recognizable multi-color identity stays bounded while text and surfaces remain quieter. Calls to action and explanations reduce formality without becoming vague.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "collaboration warmth: Human language and color make workplace software feel social without hiding its utility.",
+    "brand mark discipline: A recognizable multi-color identity stays bounded while text and surfaces remain quieter.",
+    "proof through conversation: Product examples show exchange, coordination, and shared context instead of generic dashboards.",
+    "friendly directness: Calls to action and explanations reduce formality without becoming vague."
+  ],
+  "source": "https://slack.com/media-kit",
+  "spacing": "Human language and color make workplace software feel social without hiding its utility. A recognizable multi-color identity stays bounded while text and surfaces remain quieter.",
+  "states": "Calls to action and explanations reduce formality without becoming vague. Subtle message and state transitions.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "team products that need to communicate social coordination",
+    "workplace marketing with credible product conversation examples"
+  ],
+  "surfaces": "Product examples show exchange, coordination, and shared context instead of generic dashboards. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. A recognizable multi-color identity stays bounded while text and surfaces remain quieter.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "formal public services where a conversational brand posture could weaken authority"
+  ],
+  "visual_thesis": "Human language and color make workplace software feel social without hiding its utility. A recognizable multi-color identity stays bounded while text and surfaces remain quieter."
+}

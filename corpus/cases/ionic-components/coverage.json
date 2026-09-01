@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Forcing one platform appearance everywhere.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Shared components adapt their presentation to iOS and Material conventions. A common product can retain shared logic without forcing identical skins.",
+  "category": "mobile",
+  "color": "Components run through web technology while preserving mobile behavior.",
+  "components": "Components run through web technology while preserving mobile behavior. A common product can retain shared logic without forcing identical skins.",
+  "confidence": "medium",
+  "container": "Cross-platform mobile shell with native-aware list, sheet, and form states. Components run through web technology while preserving mobile behavior.",
+  "failure_modes": [
+    "Forcing one platform appearance everywhere.",
+    "Using mobile components without touch and safe-area checks.",
+    "Assuming component availability guarantees a coherent information architecture."
+  ],
+  "flows": "Destination test: Cross-platform mobile applications. Evaluate the relationship across onboarding and configuration, and creation and management.",
+  "forms": "During onboarding and configuration, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Shared components adapt their presentation to iOS and Material conventions. Navigation, sheets, pickers, lists, forms, and feedback cover common app work.",
+  "imagery": "Cross-platform mobile shell with native-aware list, sheet, and form states. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "technology, developer-tools",
+  "interaction": "A common product can retain shared logic without forcing identical skins.",
+  "lane_fit": "Lane assignment: Cross-platform mobile applications. This case earns one mobile quota credit through mode-aware components and mobile interaction breadth.",
+  "layout": "Safe-area mobile stack adapting by platform mode.",
+  "motion": "Native-like transitions that remain interruptible.",
+  "navigation": "Shared components adapt their presentation to iOS and Material conventions. Safe-area mobile stack adapting by platform mode.",
+  "platform": "ios, android, mobile, cross-platform",
+  "responsive_behavior": "Navigation, sheets, pickers, lists, forms, and feedback cover common app work. A common product can retain shared logic without forcing identical skins.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "mode-aware components: Shared components adapt their presentation to iOS and Material conventions.",
+    "mobile interaction breadth: Navigation, sheets, pickers, lists, forms, and feedback cover common app work.",
+    "web-native implementation: Components run through web technology while preserving mobile behavior.",
+    "progressive platform fit: A common product can retain shared logic without forcing identical skins."
+  ],
+  "source": "https://ionicframework.com/docs/components",
+  "spacing": "Shared components adapt their presentation to iOS and Material conventions. Navigation, sheets, pickers, lists, forms, and feedback cover common app work.",
+  "states": "A common product can retain shared logic without forcing identical skins. Native-like transitions that remain interruptible.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "cross-platform mobile applications",
+    "teams using web technology for native-like interfaces"
+  ],
+  "surfaces": "Components run through web technology while preserving mobile behavior. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Navigation, sheets, pickers, lists, forms, and feedback cover common app work.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "apps requiring deeply custom platform-native controls unavailable through the component layer"
+  ],
+  "visual_thesis": "Shared components adapt their presentation to iOS and Material conventions. Navigation, sheets, pickers, lists, forms, and feedback cover common app work."
+}

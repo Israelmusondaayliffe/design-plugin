@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Separating calculated results from the inputs that produced them.",
+  "archetype": "federal-accessible",
+  "brand_posture": "Plan, eligibility, coverage, and account information retain explicit relationships. Dense choices can be compared without relying on color or visual memory alone.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "User input, calculated outcomes, and next steps stay connected.",
+  "components": "User input, calculated outcomes, and next steps stay connected. Dense choices can be compared without relying on color or visual memory alone.",
+  "confidence": "medium",
+  "container": "Health program comparison with linked inputs, outcomes, and next steps. User input, calculated outcomes, and next steps stay connected.",
+  "failure_modes": [
+    "Separating calculated results from the inputs that produced them.",
+    "Using program branding to change component meaning.",
+    "Compressing plan comparison until key differences disappear."
+  ],
+  "flows": "Destination test: Health enrollment and coverage comparison. Evaluate the relationship across service completion, and onboarding and configuration.",
+  "forms": "During service completion, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Plan, eligibility, coverage, and account information retain explicit relationships. Shared behavior supports several government health programs without hiding program identity.",
+  "imagery": "Health program comparison with linked inputs, outcomes, and next steps. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "government, general",
+  "interaction": "Dense choices can be compared without relying on color or visual memory alone.",
+  "lane_fit": "Lane assignment: Health enrollment and coverage comparison. This case earns one onboarding, forms, settings, and flows quota credit through health-program precision and multi-brand service reuse.",
+  "layout": "Form and result columns collapsing into a guided mobile sequence.",
+  "motion": "Clear calculation and validation feedback.",
+  "navigation": "Plan, eligibility, coverage, and account information retain explicit relationships. Form and result columns collapsing into a guided mobile sequence.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Shared behavior supports several government health programs without hiding program identity. Dense choices can be compared without relying on color or visual memory alone.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "health-program precision: Plan, eligibility, coverage, and account information retain explicit relationships.",
+    "multi-brand service reuse: Shared behavior supports several government health programs without hiding program identity.",
+    "form-and-data continuity: User input, calculated outcomes, and next steps stay connected.",
+    "accessible comparison: Dense choices can be compared without relying on color or visual memory alone."
+  ],
+  "source": "https://design.cms.gov/",
+  "spacing": "Plan, eligibility, coverage, and account information retain explicit relationships. Shared behavior supports several government health programs without hiding program identity.",
+  "states": "Dense choices can be compared without relying on color or visual memory alone. Clear calculation and validation feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "health enrollment and coverage comparison",
+    "multi-program public services sharing a component foundation"
+  ],
+  "surfaces": "User input, calculated outcomes, and next steps stay connected. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Shared behavior supports several government health programs without hiding program identity.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "small editorial sites with no account, eligibility, or comparison state"
+  ],
+  "visual_thesis": "Plan, eligibility, coverage, and account information retain explicit relationships. Shared behavior supports several government health programs without hiding program identity."
+}

@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "f038bd6be42b6d06be51ebe72928e27b309e47a972bb1f7d6e437671bf0ae4ac",
+  "effective_url": "https://ionicframework.com/docs/components",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://ionicframework.com/docs/components"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://ionicframework.com/docs/components",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "ionic-components",
+  "source_version": "live-public-source-2026-09-01:f038bd6be42b",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

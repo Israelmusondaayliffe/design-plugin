@@ -8,19 +8,19 @@
     "schema_version": {"const": "1.0"},
     "items": {
       "type": "array",
-      "minItems": 3,
+      "minItems": 4,
       "items": {
         "type": "object",
-        "required": ["id", "claim", "class", "source_url", "confidence", "captured_at"],
+        "required": ["id", "claim", "class", "source_url", "locator", "confidence", "captured_at", "notes"],
         "properties": {
           "id": {"type": "string", "pattern": "^E[0-9]{2,}$"},
-          "claim": {"type": "string", "minLength": 10},
+          "claim": {"type": "string", "minLength": 30},
           "class": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
           "source_url": {"type": "string", "pattern": "^https://"},
-          "locator": {"type": "string"},
+          "locator": {"type": "string", "minLength": 3},
           "confidence": {"enum": ["low", "medium", "high"]},
           "captured_at": {"type": "string", "format": "date"},
-          "notes": {"type": "string"}
+          "notes": {"type": "string", "minLength": 3}
         },
         "additionalProperties": false
       }

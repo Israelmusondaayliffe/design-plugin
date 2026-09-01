@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "collaboration-system"
+  ],
+  "avoid_for": [
+    "formal reporting products that require subdued immutable presentation"
+  ],
+  "best_for": [
+    "collaborative planning and project platforms",
+    "configurable work products with recurring board and item views"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "productivity",
+    "enterprise"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "monitor-operate"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "data-led",
+  "name": "monday Vibe",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "dashboard",
+    "productivity",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "color-coded coordination",
+    "board-to-detail continuity",
+    "flexible work grammar",
+    "energetic utility"
+  ],
+  "slug": "monday-vibe",
+  "source_kind": "public-design-system",
+  "source_name": "monday Vibe",
+  "source_url": "https://vibe.monday.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Color labels work as team metadata only when text and placement preserve meaning. High-level status and item detail remain connected across views.",
+  "typography_character": "humanist-sans"
+}

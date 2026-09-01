@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Uber Base Web was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://baseweb.design/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://baseweb.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Component semantics survive substantial visual and brand variation.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://baseweb.design/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://baseweb.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Inputs, navigation, dates, maps, and transactions account for real operational conditions. A broad component library stays visually restrained so products can establish their own identity.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://baseweb.design/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://baseweb.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For multi-product platforms requiring themeable components, preserve predictable interaction; reject the design if it starts changing component behavior while applying a theme.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://baseweb.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Linear's public site places product interface views alongside short statements about planning and product development.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://linear.app/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://linear.app/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The presentation uses a predominantly dark, restrained visual field with selective luminous accents.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://linear.app/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://linear.app/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Feature sections progressively expose workflow relationships rather than presenting one undifferentiated feature list.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://linear.app/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://linear.app/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Linear's transferable strength is disciplined product proof inside a controlled narrative, not dark mode or glow as isolated style tokens.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Analyst synthesis recorded in DESIGN.md",
+      "notes": "Original corpus interpretation; not an owner claim.",
+      "source_url": "https://linear.app/"
+    }
+  ],
+  "schema_version": "1.0"
+}

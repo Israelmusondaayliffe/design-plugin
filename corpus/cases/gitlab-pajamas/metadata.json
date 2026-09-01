@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "developer-dense"
+  ],
+  "avoid_for": [
+    "small expressive campaigns where dense application conventions would overpower the story"
+  ],
+  "best_for": [
+    "complex developer and operations platforms",
+    "large product families with many contributors and recurring workflow patterns"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "high",
+  "evidence_quality": "medium",
+  "industries": [
+    "developer-tools",
+    "enterprise"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "monitor-operate"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "product-evidence",
+  "name": "GitLab Pajamas",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "dashboard",
+    "admin",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "dense task hierarchy",
+    "semantic token discipline",
+    "inclusive interaction",
+    "incremental consistency"
+  ],
+  "slug": "gitlab-pajamas",
+  "source_kind": "public-design-system",
+  "source_name": "GitLab Pajamas",
+  "source_url": "https://design.gitlab.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Large development workflows remain scannable through clear grouping and page structure. Color and spacing roles stay predictable across many features and teams.",
+  "typography_character": "neutral-sans"
+}

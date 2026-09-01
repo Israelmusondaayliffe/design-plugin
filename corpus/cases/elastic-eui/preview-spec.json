@@ -1,0 +1,14 @@
+{
+  "layout": "modular analysis grid around persistent query context",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "state announcements and restrained loading feedback",
+  "pattern": "data workspace with filter spine, accessible chart, and compact evidence table",
+  "primary": "#f8fafc",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#00bfb3"
+}

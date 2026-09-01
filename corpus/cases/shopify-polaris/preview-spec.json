@@ -1,1 +1,14 @@
-{"primary":"#f7f7f8","secondary":"#008060","radius":"8px","pattern":"merchant workspace with restrained surfaces, green action cue, and compact status rows"}
+{
+  "layout": "Original abstract composition based on merchant task orientation and semantic state color.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Shopify Polaris preview only when it clarifies merchant task orientation through feedback or continuity.",
+  "pattern": "merchant workspace with restrained surfaces, green action cue, and compact status rows",
+  "primary": "#f7f7f8",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#008060"
+}

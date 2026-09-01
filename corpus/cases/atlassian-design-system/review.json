@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original public-source analysis. No Atlassian screenshots or brand assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "5640774a47511ce5698e1d83234c5ed3e6c922f45a0b71cc277d5ac6d6fedac3",
+    "coverage.json": "238ed1ca7c52ce6c2b2814eb069897b3c9d83775c54b8031bef513cfa0561590",
+    "evidence.json": "4dc7ba6b50bde6331a6aa417ee1ae0ed3e3c553a00e944eab75272713e501424",
+    "metadata.json": "f4b5686e95908a10c2dc08edc685a8af05f20585b353e244ccbe7e7ada2f4044",
+    "preview-spec.json": "8dfbd488d9d6a1ade2d6c034d8a540d5824dc12a0cd6f33035aaa15b15082159",
+    "source-notes.md": "ffd35d69049d3d0aa4a8cdeea3eda23bd17fc403514a008a747960df08449582",
+    "source.json": "1badf524760369dd5bca72e40939f02cd4a100581fc91265db9e26b3b5066ea2",
+    "tokens.json": "564a927713569d039fc239c4b0b4eda1348f6da8800d60feed8288fff1c0828a"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

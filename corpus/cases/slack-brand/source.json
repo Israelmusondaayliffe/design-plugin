@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "824d0a43209717591a3df5bc8070af5f4da779dfd171c1a2428ba309f3ab06e9",
+  "effective_url": "https://slack.com/media-kit",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://slack.com/media-kit"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://slack.com/media-kit",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "slack-brand",
+  "source_version": "live-public-source-2026-09-01:824d0a432097",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

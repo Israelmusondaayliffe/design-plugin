@@ -1,0 +1,14 @@
+{
+  "layout": "wide media header narrowing into responsive task columns",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "brief state transitions for search and selection",
+  "pattern": "travel discovery image above a structured search and fare comparison rhythm",
+  "primary": "#f1f2f8",
+  "radius": "12px",
+  "schema_version": "1.0",
+  "secondary": "#0770e3"
+}

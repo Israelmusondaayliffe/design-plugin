@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "4b9dab76fa1ff955f1812088cb4e7da3121522763b9bfd3b1ea8f560a079a618",
+  "effective_url": "https://linear.app/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://linear.app/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://linear.app/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "linear-marketing",
+  "source_version": "live-public-source-2026-09-01:4b9dab76fa1f",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

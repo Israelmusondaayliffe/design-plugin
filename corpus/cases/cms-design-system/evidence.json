@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for CMS Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.cms.gov/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.cms.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Plan, eligibility, coverage, and account information retain explicit relationships.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.cms.gov/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.cms.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared behavior supports several government health programs without hiding program identity. User input, calculated outcomes, and next steps stay connected.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.cms.gov/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.cms.gov/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For health enrollment and coverage comparison, preserve accessible comparison; reject the design if it starts separating calculated results from the inputs that produced them.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.cms.gov/"
+    }
+  ],
+  "schema_version": "1.0"
+}

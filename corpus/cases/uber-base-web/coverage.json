@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Changing component behavior while applying a theme.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Component semantics survive substantial visual and brand variation. Shared behavior lowers risk across many teams and user journeys.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "A broad component library stays visually restrained so products can establish their own identity.",
+  "components": "A broad component library stays visually restrained so products can establish their own identity. Shared behavior lowers risk across many teams and user journeys.",
+  "confidence": "medium",
+  "container": "Themeable platform shell with restrained controls and explicit transaction state. A broad component library stays visually restrained so products can establish their own identity.",
+  "failure_modes": [
+    "Changing component behavior while applying a theme.",
+    "Using a broad library as permission to place every component on one screen.",
+    "Mistaking visual neutrality for a complete brand direction."
+  ],
+  "flows": "Destination test: Multi-product platforms requiring themeable components. Evaluate the relationship across creation and management, and transactions and checkout.",
+  "forms": "During creation and management, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Component semantics survive substantial visual and brand variation. Inputs, navigation, dates, maps, and transactions account for real operational conditions.",
+  "imagery": "Themeable platform shell with restrained controls and explicit transaction state. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "technology, enterprise",
+  "interaction": "Shared behavior lowers risk across many teams and user journeys.",
+  "lane_fit": "Lane assignment: Multi-product platforms requiring themeable components. This case earns one SaaS, dashboard, administration, and productivity quota credit through themeable primitives and transport-scale state coverage.",
+  "layout": "Neutral composition grid adapting to multiple product contexts.",
+  "motion": "Predictable state feedback with no ornamental layer.",
+  "navigation": "Component semantics survive substantial visual and brand variation. Neutral composition grid adapting to multiple product contexts.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "Inputs, navigation, dates, maps, and transactions account for real operational conditions. Shared behavior lowers risk across many teams and user journeys.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "themeable primitives: Component semantics survive substantial visual and brand variation.",
+    "transport-scale state coverage: Inputs, navigation, dates, maps, and transactions account for real operational conditions.",
+    "composition over ornament: A broad component library stays visually restrained so products can establish their own identity.",
+    "predictable interaction: Shared behavior lowers risk across many teams and user journeys."
+  ],
+  "source": "https://baseweb.design/",
+  "spacing": "Component semantics survive substantial visual and brand variation. Inputs, navigation, dates, maps, and transactions account for real operational conditions.",
+  "states": "Shared behavior lowers risk across many teams and user journeys. Predictable state feedback with no ornamental layer.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "multi-product platforms requiring themeable components",
+    "transactional systems with many teams and recurring control patterns"
+  ],
+  "surfaces": "A broad component library stays visually restrained so products can establish their own identity. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Inputs, navigation, dates, maps, and transactions account for real operational conditions.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single editorial properties where a large component surface adds maintenance without benefit"
+  ],
+  "visual_thesis": "Component semantics survive substantial visual and brand variation. Inputs, navigation, dates, maps, and transactions account for real operational conditions."
+}

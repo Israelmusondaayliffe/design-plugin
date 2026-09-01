@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Combining iOS and Material patterns inside one unexplained screen.",
+  "archetype": "platform-native",
+  "brand_posture": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. A broad toolkit can move quickly when its conventions match the product.",
+  "category": "mobile",
+  "color": "Gestures and mobile states are built into the component model.",
+  "components": "Gestures and mobile states are built into the component model. A broad toolkit can move quickly when its conventions match the product.",
+  "confidence": "medium",
+  "container": "Native-like mobile navigation with tabs, sheet, and touch-first list. Gestures and mobile states are built into the component model.",
+  "failure_modes": [
+    "Combining iOS and Material patterns inside one unexplained screen.",
+    "Using every available panel and modal because the toolkit exposes it.",
+    "Forgetting keyboard and assistive access behind touch gestures."
+  ],
+  "flows": "Destination test: Mobile web and hybrid apps needing native-like navigation. Evaluate the relationship across browsing and discovery, and creation and management.",
+  "forms": "During browsing and discovery, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. Routers, views, tabs, panels, and modals support app-like hierarchy.",
+  "imagery": "Native-like mobile navigation with tabs, sheet, and touch-first list. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "developer-tools, technology",
+  "interaction": "A broad toolkit can move quickly when its conventions match the product.",
+  "lane_fit": "Lane assignment: Mobile web and hybrid apps needing native-like navigation. This case earns one mobile quota credit through platform visual modes and mobile navigation depth.",
+  "layout": "Stacked views with platform-specific bars and safe areas.",
+  "motion": "Familiar push, sheet, and tab transitions.",
+  "navigation": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. Stacked views with platform-specific bars and safe areas.",
+  "platform": "ios, android, mobile, cross-platform",
+  "responsive_behavior": "Routers, views, tabs, panels, and modals support app-like hierarchy. A broad toolkit can move quickly when its conventions match the product.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "platform visual modes: iOS and Material presentations retain familiar bars, lists, sheets, and controls.",
+    "mobile navigation depth: Routers, views, tabs, panels, and modals support app-like hierarchy.",
+    "touch-first components: Gestures and mobile states are built into the component model.",
+    "prototype-to-product range: A broad toolkit can move quickly when its conventions match the product."
+  ],
+  "source": "https://framework7.io/docs/",
+  "spacing": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. Routers, views, tabs, panels, and modals support app-like hierarchy.",
+  "states": "A broad toolkit can move quickly when its conventions match the product. Familiar push, sheet, and tab transitions.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "mobile web and hybrid apps needing native-like navigation",
+    "rapid prototypes that still need coherent touch patterns"
+  ],
+  "surfaces": "Gestures and mobile states are built into the component model. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Routers, views, tabs, panels, and modals support app-like hierarchy.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "products requiring a narrow bespoke interaction language with little platform resemblance"
+  ],
+  "visual_thesis": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. Routers, views, tabs, panels, and modals support app-like hierarchy."
+}

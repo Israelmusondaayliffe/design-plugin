@@ -1,0 +1,14 @@
+{
+  "layout": "asymmetric story blocks with generous reading intervals",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "small characterful reveals that never gate content",
+  "pattern": "editorial yellow field with offbeat display type and one purposeful illustration slot",
+  "primary": "#ffe01b",
+  "radius": "2px",
+  "schema_version": "1.0",
+  "secondary": "#241c15"
+}

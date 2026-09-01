@@ -1,0 +1,57 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "developer-dense",
+  "brand_posture": "A developer-tool system built for dense technical workflows, where reliable reusable foundations, responsive behavior, semantic color, and compact component patterns keep large amounts of state understandable.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Keep canvas and surfaces restrained so status and interaction colors remain legible. Dark mode should preserve role hierarchy and contrast rather than merely reverse values.",
+  "components": "Tables, lists, navigation, filters, menus, code-related controls, dialogs, and status indicators should reuse stable patterns. Keyboard and focus behavior are especially important in high-frequency expert workflows.",
+  "confidence": "medium",
+  "container": "Use containers that keep dense technical information legible across the supported platforms.",
+  "failure_modes": [
+    "Making every surface dark because the product is for developers.",
+    "Using monospace everywhere to signal technical credibility.",
+    "Compressing spacing without improving alignment or hierarchy.",
+    "Hiding critical metadata on mobile instead of prioritizing and reflowing it."
+  ],
+  "flows": "Destination test: Developer tools. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For GitHub Primer, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is data led; no source imagery or visual assets are stored in the corpus.",
+  "industry": "developer-tools, technology",
+  "interaction": "Tables, lists, navigation, filters, menus, code-related controls, dialogs, and status indicators should reuse stable patterns. Keyboard and focus behavior are especially important in high-frequency expert workflows.",
+  "lane_fit": "Lane assignment: Developer tools. This case earns one SaaS, dashboard, administration, and productivity quota credit through dense technical information and reusable foundation primitives.",
+  "layout": "Favor efficient grids, compact rows, aligned metadata, and clear grouping. Use whitespace to separate conceptual regions, not to make an expert tool artificially airy. Collapse secondary information only when priority is understood.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for GitHub Primer across the listed platforms.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder by task and content priority while preserving dense technical information and reusable foundation primitives.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "dense technical information",
+    "reusable foundation primitives",
+    "semantic status and interaction color",
+    "responsive utility",
+    "compact developer-oriented controls"
+  ],
+  "source": "https://primer.style/",
+  "spacing": "Spacing should preserve the case's high density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "developer tools",
+    "code hosting and review workflows",
+    "technical dashboards",
+    "products with dense status and metadata"
+  ],
+  "surfaces": "Keep canvas and surfaces restrained so status and interaction colors remain legible. Dark mode should preserve role hierarchy and contrast rather than merely reverse values.",
+  "typography": "Use compact readable body and control text with clear hierarchy for page titles, section headings, code, labels, and metadata. Monospace should be reserved for code and technical identifiers rather than used as a generic developer aesthetic.",
+  "unknowns": [
+    "Former Primer foundation and product paths now resolve to the root site, so archived page-specific claims are not treated as direct current observations.",
+    "GitHub product metrics, internal design decisions, and unpublished implementation guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "luxury editorial experiences where technical compactness would flatten the intended mood",
+    "consumer products that need large touch-first expression rather than expert scanning"
+  ],
+  "visual_thesis": "Primer shows how a technical product can remain dense without becoming visually chaotic. The system relies on stable foundations, compact components, explicit status, responsive behavior, and repeated patterns that expert users can learn once and reuse."
+}

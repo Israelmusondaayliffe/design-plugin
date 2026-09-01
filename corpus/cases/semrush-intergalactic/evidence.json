@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Semrush Intergalactic was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://developer.semrush.com/intergalactic/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://developer.semrush.com/intergalactic/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Rankings, trends, filters, and recommendations remain separable at high density.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://developer.semrush.com/intergalactic/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://developer.semrush.com/intergalactic/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Brand color helps locate action and insight without recoloring every metric. Repeated chart, table, and recommendation structures reduce relearning.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://developer.semrush.com/intergalactic/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://developer.semrush.com/intergalactic/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For marketing analytics and recommendation products, preserve actionable explanation; reject the design if it starts coloring every metric and destroying comparison.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://developer.semrush.com/intergalactic/"
+    }
+  ],
+  "schema_version": "1.0"
+}

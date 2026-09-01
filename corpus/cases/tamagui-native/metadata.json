@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "platform-exclusive products whose value depends on a fully bespoke native control language"
+  ],
+  "best_for": [
+    "cross-platform mobile products sharing roles across iOS and Android",
+    "React Native teams that also need a related web expression"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "developer-tools"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "onboard-configure"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "none",
+  "name": "Tamagui Native UI",
+  "platforms": [
+    "mobile",
+    "ios",
+    "android",
+    "cross-platform"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "native-web role parity",
+    "responsive props as grammar",
+    "theme semantics",
+    "composition before catalog size"
+  ],
+  "slug": "tamagui-native",
+  "source_kind": "open-source",
+  "source_name": "Tamagui Native UI",
+  "source_url": "https://tamagui.dev/",
+  "studied_at": "2026-09-01",
+  "summary": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. Layout changes are expressed through a shared system instead of one-off mobile overrides.",
+  "typography_character": "neutral-sans"
+}

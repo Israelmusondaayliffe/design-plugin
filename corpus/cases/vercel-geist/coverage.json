@@ -1,0 +1,53 @@
+{
+  "accessibility": "Test semantic order, focus, contrast, keyboard and touch parity, reflow, non-color state cues, and reduced motion. Adding soft card stacks until the grid loses tension.",
+  "archetype": "developer-dense",
+  "brand_posture": "Neutral surfaces let technical content and product proof lead. Color appears when it has an interaction or identity job.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Code and interface views are treated as proof, not decoration.",
+  "components": "Code and interface views are treated as proof, not decoration.",
+  "confidence": "high",
+  "container": "Container changes follow task priority during evaluation and conversion, plus browsing and discovery; they do not imitate the source page frame.",
+  "failure_modes": [
+    "Adding soft card stacks until the grid loses tension.",
+    "Turning monochrome restraint into low-contrast gray text.",
+    "Using fake code or fabricated product screenshots as proof.",
+    "Adding a bright accent to every section instead of assigning it a job."
+  ],
+  "flows": "Destination test: Developer platforms that need marketing and documentation to feel continuous. Evaluate the relationship across evaluation and conversion, and browsing and discovery.",
+  "forms": "Use literal labels, persistent input, visible validation, and recovery suited to evaluation and conversion, plus browsing and discovery.",
+  "grid": "The grid must preserve monochrome authority while supporting wide proof band crossing a strict editorial grid.",
+  "imagery": "Precise monochrome grid with a sharp proof window and sparse high-contrast controls. The required media role is real product evidence beside its supporting claim. No source asset is carried into the case.",
+  "industry": "developer-tools, technology",
+  "interaction": "Code and interface views are treated as proof, not decoration. Color appears when it has an interaction or identity job.",
+  "lane_fit": "Lane assignment: Developer platforms that need marketing and documentation to feel continuous. This case earns one brand, editorial, portfolio, and marketing quota credit through Monochrome authority and Scale contrast.",
+  "layout": "Wide proof band crossing a strict editorial grid.",
+  "motion": "Brief opacity and position changes that clarify state.",
+  "navigation": "Navigation must keep the user's place during evaluation and conversion, plus browsing and discovery. Neutral surfaces let technical content and product proof lead.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder around evaluation and conversion, plus browsing and discovery. Keep sparse accent visible when the viewport or device changes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Monochrome authority: Neutral surfaces let technical content and product proof lead.",
+    "Scale contrast: Display statements and utility labels occupy deliberately different registers.",
+    "Evidence frames: Code and interface views are treated as proof, not decoration.",
+    "Exact geometry: Rules, alignment, and edge treatment make speed feel controlled.",
+    "Sparse accent: Color appears when it has an interaction or identity job."
+  ],
+  "source": "https://vercel.com/geist/introduction",
+  "spacing": "Spacing should expose the relationship between monochrome authority and scale contrast at adaptive density.",
+  "states": "Color appears when it has an interaction or identity job.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "developer platforms that need marketing and documentation to feel continuous",
+    "technical launches where product proof must carry the argument"
+  ],
+  "surfaces": "Code and interface views are treated as proof, not decoration. Preview surfaces are original study material, not sampled owner assets.",
+  "typography": "Use a neutral sans hierarchy. Display statements and utility labels occupy deliberately different registers.",
+  "unknowns": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "image-led consumer brands that need warmth or human storytelling before technical proof"
+  ],
+  "visual_thesis": "Neutral surfaces let technical content and product proof lead. Display statements and utility labels occupy deliberately different registers."
+}

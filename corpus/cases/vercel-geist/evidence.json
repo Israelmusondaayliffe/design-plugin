@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Geist publishes foundations, components, icons, and examples as a design system for Vercel interfaces.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://vercel.com/geist/introduction",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://vercel.com/geist/introduction"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The public system presents high-contrast neutral themes alongside typography and component guidance.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://vercel.com/geist/introduction",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://vercel.com/geist/introduction"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The documentation connects reusable interface primitives with production implementation examples.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://vercel.com/geist/introduction",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://vercel.com/geist/introduction"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The portable lesson is not black-and-white styling by itself; it is the continuity between technical proof, interface geometry, and the marketing hierarchy.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Analyst synthesis recorded in DESIGN.md",
+      "notes": "Original corpus interpretation; not an owner claim.",
+      "source_url": "https://vercel.com/geist/introduction"
+    }
+  ],
+  "schema_version": "1.0"
+}

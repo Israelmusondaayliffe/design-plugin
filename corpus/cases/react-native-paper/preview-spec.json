@@ -1,0 +1,14 @@
+{
+  "layout": "Material mobile stack with adaptive component grouping",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "touch feedback and state continuity",
+  "pattern": "themeable mobile surface with explicit press, selection, and loading states",
+  "primary": "#f8f7fb",
+  "radius": "16px",
+  "schema_version": "1.0",
+  "secondary": "#6750a4"
+}

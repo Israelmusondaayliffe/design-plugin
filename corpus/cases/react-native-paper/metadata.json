@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "strongly iOS-native products that should not inherit Material interaction character"
+  ],
+  "best_for": [
+    "React Native products using a Material foundation",
+    "mobile teams needing themeable accessible components"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "developer-tools"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "onboard-configure"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "React Native Paper",
+  "platforms": [
+    "ios",
+    "android",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Material-native grammar",
+    "theme continuity",
+    "stateful touch controls",
+    "cross-platform pragmatism"
+  ],
+  "slug": "react-native-paper",
+  "source_kind": "public-design-system",
+  "source_name": "React Native Paper",
+  "source_url": "https://github.com/callstack/react-native-paper",
+  "studied_at": "2026-09-01",
+  "summary": "React Native components carry Material roles into mobile implementation. Color, typography, shape, and elevation can adapt while semantic jobs remain stable.",
+  "typography_character": "neutral-sans"
+}

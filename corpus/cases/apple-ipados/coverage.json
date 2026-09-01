@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Designing only for full-screen portrait.",
+  "archetype": "platform-native",
+  "brand_posture": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Productivity features expand while preserving direct manipulation and platform familiarity.",
+  "category": "mobile",
+  "color": "Controls remain discoverable without crowding the working canvas.",
+  "components": "Controls remain discoverable without crowding the working canvas. Productivity features expand while preserving direct manipulation and platform familiarity.",
+  "confidence": "medium",
+  "container": "Adaptive tablet workspace with content-first canvas and multi-input controls. Controls remain discoverable without crowding the working canvas.",
+  "failure_modes": [
+    "Designing only for full-screen portrait.",
+    "Adding pointer-only precision to touch-critical actions.",
+    "Letting tool chrome overpower the content workspace."
+  ],
+  "flows": "Destination test: Tablet productivity and creative applications. Evaluate the relationship across creation and management, and browsing and discovery.",
+  "forms": "During creation and management, and browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Layouts respond to window size, multitasking, and device orientation.",
+  "imagery": "Adaptive tablet workspace with content-first canvas and multi-input controls. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "technology, productivity",
+  "interaction": "Productivity features expand while preserving direct manipulation and platform familiarity.",
+  "lane_fit": "Lane assignment: Tablet productivity and creative applications. This case earns one mobile quota credit through multi-input fluency and adaptive workspace.",
+  "layout": "Resizable split workspace responding to window class.",
+  "motion": "Platform continuity for windows, panels, and direct manipulation.",
+  "navigation": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Resizable split workspace responding to window class.",
+  "platform": "ios, mobile, native-app",
+  "responsive_behavior": "Layouts respond to window size, multitasking, and device orientation. Productivity features expand while preserving direct manipulation and platform familiarity.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "multi-input fluency: Touch, keyboard, pointer, pencil, and accessibility input share the same task model.",
+    "adaptive workspace: Layouts respond to window size, multitasking, and device orientation.",
+    "content over chrome: Controls remain discoverable without crowding the working canvas.",
+    "desktop-class depth: Productivity features expand while preserving direct manipulation and platform familiarity."
+  ],
+  "source": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+  "spacing": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Layouts respond to window size, multitasking, and device orientation.",
+  "states": "Productivity features expand while preserving direct manipulation and platform familiarity. Platform continuity for windows, panels, and direct manipulation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "tablet productivity and creative applications",
+    "mobile products that must scale into serious workspace use"
+  ],
+  "surfaces": "Controls remain discoverable without crowding the working canvas. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Layouts respond to window size, multitasking, and device orientation.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "fixed single-column experiences that ignore multitasking and external input"
+  ],
+  "visual_thesis": "Touch, keyboard, pointer, pencil, and accessibility input share the same task model. Layouts respond to window size, multitasking, and device orientation."
+}

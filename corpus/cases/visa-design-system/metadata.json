@@ -1,0 +1,62 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "pure editorial content with no transaction or identity state"
+  ],
+  "best_for": [
+    "payment and financial service interfaces",
+    "merchant integrations that need trusted branded components"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "enterprise"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "transact-checkout",
+    "onboard-configure"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "icon-led",
+  "name": "Visa Product Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "commerce",
+    "forms",
+    "checkout",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "transaction trust",
+    "accessible financial controls",
+    "brand-safe integration",
+    "state certainty"
+  ],
+  "slug": "visa-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "Visa Product Design System",
+  "source_url": "https://design.visa.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Identity, amount, method, status, and next action remain explicit around payment. Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery.",
+  "typography_character": "neutral-sans"
+}

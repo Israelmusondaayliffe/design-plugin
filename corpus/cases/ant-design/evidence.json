@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Ant Design was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://ant.design/docs/spec/introduce",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://ant.design/docs/spec/introduce"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Navigation, data, forms, and actions follow stable hierarchy across large applications.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://ant.design/docs/spec/introduce",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://ant.design/docs/spec/introduce"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Controls account for loading, validation, selection, warning, and destructive states. Tables and repeated controls prioritize scan speed without abandoning spacing rhythm.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://ant.design/docs/spec/introduce",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://ant.design/docs/spec/introduce"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For enterprise dashboards with many repeated controls, preserve systematic feedback; reject the design if it starts copying component appearance without the state and information rules.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://ant.design/docs/spec/introduce"
+    }
+  ],
+  "schema_version": "1.0"
+}

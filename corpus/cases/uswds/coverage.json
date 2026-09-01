@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "federal-accessible",
+  "brand_posture": "A federal service system centered on accessible, mobile-friendly public experiences, reusable components, design tokens, and patterns that keep user needs and clear next actions visible across complex government journeys.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "Use color semantically for links, actions, status, validation, and emphasis. Do not turn patriotic or agency colors into a decorative substitute for hierarchy.",
+  "components": "Forms, alerts, navigation, accordions, summaries, identifiers, and service patterns should expose visible focus, validation, and recovery. Multi-step work should make progress and consequences understandable.",
+  "confidence": "high",
+  "container": "Use containers that keep accessible federal service patterns legible across the supported platforms.",
+  "failure_modes": [
+    "Treating public-sector design as a patriotic palette.",
+    "Compressing desktop service pages into unreadable mobile stacks.",
+    "Using reusable components without solving the task path between them.",
+    "Hiding validation, progress, or next actions in subtle styling."
+  ],
+  "flows": "Destination test: Public-sector services. Evaluate the relationship across service completion, and browsing and discovery.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For U.S. Web Design System, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is none; no source imagery or visual assets are stored in the corpus.",
+  "industry": "government",
+  "interaction": "Forms, alerts, navigation, accordions, summaries, identifiers, and service patterns should expose visible focus, validation, and recovery. Multi-step work should make progress and consequences understandable.",
+  "lane_fit": "Lane assignment: Public-sector services. This case earns one onboarding, forms, settings, and flows quota credit through accessible federal service patterns and mobile-first public usability.",
+  "layout": "Use clear reading order, strong headings, literal actions, and enough spacing to distinguish questions and sections. On mobile, preserve task context and next action while reducing secondary complexity thoughtfully.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for U.S. Web Design System across the listed platforms.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Reorder by task and content priority while preserving accessible federal service patterns and mobile-first public usability.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "accessible federal service patterns",
+    "mobile-first public usability",
+    "clear next-action hierarchy",
+    "tokenized components",
+    "continuity across multi-step journeys"
+  ],
+  "source": "https://designsystem.digital.gov/",
+  "spacing": "Spacing should preserve the case's medium density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "public-sector services",
+    "benefits and application flows",
+    "content-heavy government sites",
+    "mobile-friendly forms and multi-step journeys"
+  ],
+  "surfaces": "Use color semantically for links, actions, status, validation, and emphasis. Do not turn patriotic or agency colors into a decorative substitute for hierarchy.",
+  "typography": "Typography should prioritize readability, scanning, and plain-language hierarchy. Use headings to tell people where they are in the service and labels to state exactly what is required.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "highly expressive entertainment marketing",
+    "expert-only technical workbenches where service guidance would create unnecessary handholding"
+  ],
+  "visual_thesis": "USWDS is strongest as a public-service continuity system. It combines reusable components and tokens with task path patterns and explicit design principles so people can complete important tasks across agencies, devices, and levels of technical confidence."
+}

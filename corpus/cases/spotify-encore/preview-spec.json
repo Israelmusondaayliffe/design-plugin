@@ -1,0 +1,14 @@
+{
+  "layout": "modular content rails around a persistent control spine",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "rhythmic but interruptible state continuity",
+  "pattern": "media-led dark canvas with stable playback controls and variable content color",
+  "primary": "#121212",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#1ed760"
+}

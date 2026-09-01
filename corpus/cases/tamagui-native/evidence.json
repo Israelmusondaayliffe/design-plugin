@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Tamagui Native UI was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://tamagui.dev/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://tamagui.dev/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://tamagui.dev/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://tamagui.dev/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Layout changes are expressed through a shared system instead of one-off mobile overrides. Color and space respond to mode and brand while state meaning remains stable.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://tamagui.dev/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://tamagui.dev/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For cross-platform mobile products sharing roles across iOS and Android, preserve composition before catalog size; reject the design if it starts forcing pixel identity across iOS, Android, and web.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://tamagui.dev/"
+    }
+  ],
+  "schema_version": "1.0"
+}

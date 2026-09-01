@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "01abb4a0f2866247d8e566197067417d79c4159c8a2af39bb8ff0a418c02fa21",
+  "effective_url": "https://evergreen.segment.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://evergreen.segment.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://evergreen.segment.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "segment-evergreen",
+  "source_version": "live-public-source-2026-09-01:01abb4a0f286",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

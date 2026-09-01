@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "creative-expressive",
+  "brand_posture": "A creative-tool system that combines cross-platform usability with more expressive color, rounded iconography, depth, and attention hierarchy while keeping accessibility and content clarity as structural constraints.",
+  "category": "design-systems-data-experimental",
+  "color": "Allow more chromatic range than a neutral enterprise system, but maintain explicit attention order. Strong accents should identify actions, selection, status, or creative content rather than become ambient decoration everywhere.",
+  "components": "Icons, controls, panels, menus, and overlays should share one visual language. Rounded iconography and depth should not be mixed randomly with thin unrelated symbols or arbitrary shadows.",
+  "confidence": "high",
+  "container": "Use containers that keep expressive but controlled color legible across the supported platforms.",
+  "failure_modes": [
+    "Treating bright color as permission for multiple competing accents.",
+    "Adding rounded icons without matching stroke, weight, and control geometry.",
+    "Using elevation on every panel until hierarchy disappears.",
+    "Copying Adobe-like visual details while ignoring the content and workspace structure."
+  ],
+  "flows": "Destination test: Creative tools. Evaluate the relationship across creation and management.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Adobe Spectrum 2, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is mixed; no source imagery or visual assets are stored in the corpus.",
+  "industry": "creative-tools, technology",
+  "interaction": "Icons, controls, panels, menus, and overlays should share one visual language. Rounded iconography and depth should not be mixed randomly with thin unrelated symbols or arbitrary shadows.",
+  "lane_fit": "Lane assignment: Creative tools. This case earns one design systems, data, and experimental quota credit through expressive but controlled color and rounded thicker icon language.",
+  "layout": "Creative tools often need dense working areas plus visually quieter navigation and chrome. Use depth and region separation to distinguish workspace, tools, panels, and transient overlays. Do not give every panel equal visual weight.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Adobe Spectrum 2 across the listed platforms.",
+  "platform": "web, desktop, mobile, cross-platform",
+  "responsive_behavior": "Reorder by task and content priority while preserving expressive but controlled color and rounded thicker icon language.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "expressive but controlled color",
+    "rounded thicker icon language",
+    "clear attention hierarchy",
+    "separation of navigation and content",
+    "cross-platform accessibility"
+  ],
+  "source": "https://spectrum.adobe.com/",
+  "spacing": "Spacing should preserve the case's adaptive density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "creative tools",
+    "media applications",
+    "cross-platform creator products",
+    "products that need more expression than neutral enterprise systems"
+  ],
+  "surfaces": "Allow more chromatic range than a neutral enterprise system, but maintain explicit attention order. Strong accents should identify actions, selection, status, or creative content rather than become ambient decoration everywhere.",
+  "typography": "Use type to distinguish working labels, content, and expressive moments. A refreshed brand face can coexist with compact product text, but operational controls should remain highly legible.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "highly conservative operational systems where expressive shape and color would distract",
+    "interfaces that copy Adobe's appearance without the supporting hierarchy and accessibility rules"
+  ],
+  "visual_thesis": "Spectrum 2 demonstrates that a professional system can become more expressive without becoming less disciplined. Brighter color, friendlier geometry, icon changes, depth, and refreshed type are useful only because they sit inside a deliberate attention hierarchy and accessibility model."
+}

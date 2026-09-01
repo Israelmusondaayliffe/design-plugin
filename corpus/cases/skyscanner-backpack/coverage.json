@@ -1,0 +1,53 @@
+{
+  "accessibility": "Test semantic order, focus, contrast, keyboard and touch parity, reflow, non-color state cues, and reduced motion. Letting destination media push search controls below the useful first view.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Inspiration gives way to structured search and comparison. Photography establishes place and desire without becoming booking evidence.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Shared roles survive different native and web conventions.",
+  "components": "Shared roles survive different native and web conventions.",
+  "confidence": "high",
+  "container": "Container changes follow task priority during browsing and discovery, plus transactions and checkout; they do not imitate the source page frame.",
+  "failure_modes": [
+    "Letting destination media push search controls below the useful first view.",
+    "Using brand blue for every piece of metadata and losing action hierarchy.",
+    "Designing around short English labels only.",
+    "Hiding fare or date state behind decorative animation."
+  ],
+  "flows": "Destination test: Travel discovery and booking products. Evaluate the relationship across browsing and discovery, and transactions and checkout.",
+  "forms": "Use literal labels, persistent input, visible validation, and recovery suited to browsing and discovery, plus transactions and checkout.",
+  "grid": "The grid must preserve discovery-to-decision bridge while supporting wide media header narrowing into responsive task columns.",
+  "imagery": "Travel discovery image above a structured search and fare comparison rhythm. The required media role is photography with deliberate subject, crop, and rights handling. No source asset is carried into the case.",
+  "industry": "commerce, technology",
+  "interaction": "Shared roles survive different native and web conventions. Photography establishes place and desire without becoming booking evidence.",
+  "lane_fit": "Lane assignment: Travel discovery and booking products. This case earns one brand, editorial, portfolio, and marketing quota credit through Discovery-to-decision bridge and Localization tolerance.",
+  "layout": "Wide media header narrowing into responsive task columns.",
+  "motion": "Brief state transitions for search and selection.",
+  "navigation": "Navigation must keep the user's place during browsing and discovery, plus transactions and checkout. Inspiration gives way to structured search and comparison.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "Reorder around browsing and discovery, plus transactions and checkout. Keep travel media role visible when the viewport or device changes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Discovery-to-decision bridge: Inspiration gives way to structured search and comparison.",
+    "Localization tolerance: Layouts anticipate longer labels, currencies, and varied scripts.",
+    "Cross-platform continuity: Shared roles survive different native and web conventions.",
+    "Brand-action discipline: Optimistic color remains tied to selection and progress.",
+    "Travel media role: Photography establishes place and desire without becoming booking evidence."
+  ],
+  "source": "https://www.skyscanner.design/",
+  "spacing": "Spacing should expose the relationship between discovery-to-decision bridge and localization tolerance at adaptive density.",
+  "states": "Photography establishes place and desire without becoming booking evidence.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "travel discovery and booking products",
+    "international services balancing brand media with transaction clarity"
+  ],
+  "surfaces": "Shared roles survive different native and web conventions. Preview surfaces are original study material, not sampled owner assets.",
+  "typography": "Use a humanist sans hierarchy. Layouts anticipate longer labels, currencies, and varied scripts.",
+  "unknowns": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single-market utilities with no visual discovery or cross-platform pressure"
+  ],
+  "visual_thesis": "Inspiration gives way to structured search and comparison. Layouts anticipate longer labels, currencies, and varied scripts."
+}

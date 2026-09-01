@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Preselecting a funding method without clear user intent.",
+  "archetype": "merchant-operational",
+  "brand_posture": "Payment options are shown as choices with recognizable identity and consequence. The payment task remains focused and tappable on small screens.",
+  "category": "commerce-media-content-heavy",
+  "color": "Exit, validation, retry, and return paths are planned as part of the flow.",
+  "components": "Exit, validation, retry, and return paths are planned as part of the flow. The payment task remains focused and tappable on small screens.",
+  "confidence": "medium",
+  "container": "Focused checkout with funding choices, clear amount, and visible cancel and retry paths. Exit, validation, retry, and return paths are planned as part of the flow.",
+  "failure_modes": [
+    "Preselecting a funding method without clear user intent.",
+    "Removing cancellation or retry context.",
+    "Changing branded elements until recognition and trust weaken."
+  ],
+  "flows": "Destination test: Checkout flows supporting several funding methods. Evaluate the relationship across transactions and checkout.",
+  "forms": "During transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Payment options are shown as choices with recognizable identity and consequence. Checkout can fit a merchant context while preserving PayPal trust markers.",
+  "imagery": "Focused checkout with funding choices, clear amount, and visible cancel and retry paths. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "commerce, technology",
+  "interaction": "The payment task remains focused and tappable on small screens.",
+  "lane_fit": "Lane assignment: Checkout flows supporting several funding methods. This case earns one commerce, media, and content-heavy quota credit through funding-source clarity and merchant-brand balance.",
+  "layout": "Single transaction column with bounded merchant context.",
+  "motion": "Direct payment-state feedback with no decorative delay.",
+  "navigation": "Payment options are shown as choices with recognizable identity and consequence. Single transaction column with bounded merchant context.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Checkout can fit a merchant context while preserving PayPal trust markers. The payment task remains focused and tappable on small screens.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "funding-source clarity: Payment options are shown as choices with recognizable identity and consequence.",
+    "merchant-brand balance: Checkout can fit a merchant context while preserving PayPal trust markers.",
+    "cancellation and recovery: Exit, validation, retry, and return paths are planned as part of the flow.",
+    "responsive completion: The payment task remains focused and tappable on small screens."
+  ],
+  "source": "https://developer.paypal.com/platforms/checkout/standard/customize/",
+  "spacing": "Payment options are shown as choices with recognizable identity and consequence. Checkout can fit a merchant context while preserving PayPal trust markers.",
+  "states": "The payment task remains focused and tappable on small screens. Direct payment-state feedback with no decorative delay.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "checkout flows supporting several funding methods",
+    "merchant payment integrations requiring recognizable external trust"
+  ],
+  "surfaces": "Exit, validation, retry, and return paths are planned as part of the flow. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Checkout can fit a merchant context while preserving PayPal trust markers.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "non-transactional forms where payment branding would confuse the task"
+  ],
+  "visual_thesis": "Payment options are shown as choices with recognizable identity and consequence. Checkout can fit a merchant context while preserving PayPal trust markers."
+}

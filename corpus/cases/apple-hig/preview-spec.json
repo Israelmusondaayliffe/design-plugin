@@ -1,1 +1,14 @@
-{"primary":"#f5f5f7","secondary":"#1d1d1f","radius":"18px","pattern":"layered neutral fields with a small semantic blue action accent"}
+{
+  "layout": "Original abstract composition based on semantic dynamic color roles and platform-aware adaptation.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Apple Human Interface Guidelines preview only when it clarifies semantic dynamic color roles through feedback or continuity.",
+  "pattern": "layered neutral fields with a small semantic blue action accent",
+  "primary": "#f5f5f7",
+  "radius": "18px",
+  "schema_version": "1.0",
+  "secondary": "#1d1d1f"
+}

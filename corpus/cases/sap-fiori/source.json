@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "bb3b7463e1e8ab5871f0495d4e644b740725f1f31e0156078fdd37bb974ef6fd",
+  "effective_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "sap-fiori",
+  "source_version": "live-public-source-2026-09-01:bb3b7463e1e8",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

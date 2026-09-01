@@ -1,6 +1,45 @@
-{"schema_version":"1.0","items":[
-{"id":"E01","claim":"Carbon uses IBM Plex and a calibrated type system to create hierarchy across IBM products and experiences.","class":"observed","source_url":"https://carbondesignsystem.com/elements/typography/overview/","locator":"Typography overview","confidence":"high","captured_at":"2026-08-30","notes":"Official Carbon documentation."},
-{"id":"E02","claim":"Carbon distinguishes productive type styles for product design from expressive styles intended for more editorial web moments.","class":"observed","source_url":"https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies","locator":"Productive and expressive use cases","confidence":"high","captured_at":"2026-08-30","notes":"Useful density routing principle."},
-{"id":"E03","claim":"Carbon component specifications expose contextual color tokens, typography tokens, and explicit spacing measurements for states and anatomy.","class":"observed","source_url":"https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications","locator":"Color Typography Structure","confidence":"high","captured_at":"2026-08-30","notes":"Representative component specification."},
-{"id":"E04","claim":"Carbon uses neutral running text and reserves core blue for primary actions and links rather than using color decoratively in normal text.","class":"observed","source_url":"https://carbondesignsystem.com/elements/typography/overview/","locator":"Type color","confidence":"high","captured_at":"2026-08-30","notes":"Supports accent discipline."}
-]}
+{
+  "items": [
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Carbon uses IBM Plex and a calibrated type system to create hierarchy across IBM products and experiences.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://carbondesignsystem.com/elements/typography/overview/",
+      "notes": "Official Carbon documentation.",
+      "source_url": "https://carbondesignsystem.com/elements/typography/overview/"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Carbon distinguishes productive type styles for product design from expressive styles intended for more editorial web moments.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies",
+      "notes": "Useful density routing principle.",
+      "source_url": "https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Carbon component specifications expose contextual color tokens, typography tokens, and explicit spacing measurements for states and anatomy.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications",
+      "notes": "Representative component specification.",
+      "source_url": "https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Carbon uses neutral running text and reserves core blue for primary actions and links rather than using color decoratively in normal text.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "URL: https://carbondesignsystem.com/elements/typography/overview/",
+      "notes": "Supports accent discipline.",
+      "source_url": "https://carbondesignsystem.com/elements/typography/overview/"
+    }
+  ],
+  "schema_version": "1.0"
+}

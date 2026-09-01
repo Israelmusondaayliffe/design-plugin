@@ -1,0 +1,14 @@
+{
+  "layout": "neutral composition grid adapting to multiple product contexts",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "predictable state feedback with no ornamental layer",
+  "pattern": "themeable platform shell with restrained controls and explicit transaction state",
+  "primary": "#f6f6f6",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#000000"
+}

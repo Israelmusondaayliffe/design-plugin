@@ -1,0 +1,14 @@
+{
+  "layout": "warm narrative column paired with structured financial evidence",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "quiet confirmation and disclosure transitions",
+  "pattern": "friendly business proof with a clear total, form, and product screenshot relationship",
+  "primary": "#eef9f1",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#2ca01c"
+}

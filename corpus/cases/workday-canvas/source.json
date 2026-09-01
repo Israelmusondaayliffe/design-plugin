@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "7e39aa40977e999771c9e0b7d0d53a9a365cb706887f367ba1bd672b66db2a4e",
+  "effective_url": "https://github.com/Workday/canvas-kit",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://github.com/Workday/canvas-kit"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://github.com/Workday/canvas-kit",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "workday-canvas",
+  "source_version": "live-public-source-2026-09-01:7e39aa40977e",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

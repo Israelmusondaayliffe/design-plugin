@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "boutique editorial commerce where a single category owns the full visual world"
+  ],
+  "best_for": [
+    "large multi-category retail platforms",
+    "commerce systems with technical products and varied customer expertise"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "grid-system",
+  "media_strategy": "photography-led",
+  "name": "Decathlon Vitamin",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "commerce",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "sport-family breadth",
+    "performance hierarchy",
+    "responsive retail utility",
+    "brand restraint"
+  ],
+  "slug": "decathlon-vitamin",
+  "source_kind": "public-design-system",
+  "source_name": "Decathlon Vitamin",
+  "source_url": "https://github.com/Decathlon/vitamin-web",
+  "studied_at": "2026-09-01",
+  "summary": "Shared components serve many activities, product categories, and levels of expertise. Product purpose, technical detail, price, and availability stay distinct.",
+  "typography_character": "neutral-sans"
+}

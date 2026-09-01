@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "2813d53694d5bf82723667a1a6548788542fc2b76cb45da977924c56c8baf892",
+  "effective_url": "https://design.cms.gov/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://design.cms.gov/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://design.cms.gov/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "cms-design-system",
+  "source_version": "live-public-source-2026-09-01:2813d53694d5",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

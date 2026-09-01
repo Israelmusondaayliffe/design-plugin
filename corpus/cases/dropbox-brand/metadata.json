@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "baseline",
+  "archetypes": [
+    "creative-expressive"
+  ],
+  "avoid_for": [
+    "dense administration interfaces where strong fields and display type would compete with repeated tasks"
+  ],
+  "best_for": [
+    "creative collaboration brands with strong owned media",
+    "portfolios and campaigns that can sustain art direction"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "low",
+  "evidence_quality": "high",
+  "industries": [
+    "technology",
+    "creative-tools"
+  ],
+  "interaction_complexity": "low",
+  "journey": [
+    "browse-discover",
+    "evaluate-convert"
+  ],
+  "layout_behavior": "editorial",
+  "media_strategy": "mixed",
+  "name": "Dropbox Brand",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "editorial",
+    "portfolio"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Color confrontation",
+    "Display-led identity",
+    "Media as subject",
+    "Asymmetric balance"
+  ],
+  "slug": "dropbox-brand",
+  "source_kind": "public-website",
+  "source_name": "Dropbox Brand",
+  "source_url": "https://brand.dropbox.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Large color fields create memorable pairings rather than soft atmosphere. Typography participates in the composition instead of sitting above it.",
+  "typography_character": "expressive-display"
+}

@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Copying component appearance without the state and information rules.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Status and response patterns make complex operations legible.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Tables and repeated controls prioritize scan speed without abandoning spacing rhythm.",
+  "components": "Tables and repeated controls prioritize scan speed without abandoning spacing rhythm. Status and response patterns make complex operations legible.",
+  "confidence": "medium",
+  "container": "Compact enterprise shell with table, form, and explicit multi-state controls. Tables and repeated controls prioritize scan speed without abandoning spacing rhythm.",
+  "failure_modes": [
+    "Copying component appearance without the state and information rules.",
+    "Using high density before the task actually requires it.",
+    "Treating default tokens as an identity rather than adapting semantic roles."
+  ],
+  "flows": "Destination test: Enterprise dashboards with many repeated controls. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "During creation and management, and monitoring and operations, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Controls account for loading, validation, selection, warning, and destructive states.",
+  "imagery": "Compact enterprise shell with table, form, and explicit multi-state controls. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "enterprise, technology",
+  "interaction": "Status and response patterns make complex operations legible.",
+  "lane_fit": "Lane assignment: Enterprise dashboards with many repeated controls. This case earns one SaaS, dashboard, administration, and productivity quota credit through enterprise information order and component state breadth.",
+  "layout": "Dense grid with stable sidebar and task panel.",
+  "motion": "Brief system feedback and loading continuity.",
+  "navigation": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Dense grid with stable sidebar and task panel.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Controls account for loading, validation, selection, warning, and destructive states. Status and response patterns make complex operations legible.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "enterprise information order: Navigation, data, forms, and actions follow stable hierarchy across large applications.",
+    "component state breadth: Controls account for loading, validation, selection, warning, and destructive states.",
+    "compact data utility: Tables and repeated controls prioritize scan speed without abandoning spacing rhythm.",
+    "systematic feedback: Status and response patterns make complex operations legible."
+  ],
+  "source": "https://ant.design/docs/spec/introduce",
+  "spacing": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Controls account for loading, validation, selection, warning, and destructive states.",
+  "states": "Status and response patterns make complex operations legible. Brief system feedback and loading continuity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "enterprise dashboards with many repeated controls",
+    "administration products requiring broad component and state coverage"
+  ],
+  "surfaces": "Tables and repeated controls prioritize scan speed without abandoning spacing rhythm. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Controls account for loading, validation, selection, warning, and destructive states.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "brand-first editorial sites that need irregular composition and strong media authorship"
+  ],
+  "visual_thesis": "Navigation, data, forms, and actions follow stable hierarchy across large applications. Controls account for loading, validation, selection, warning, and destructive states."
+}

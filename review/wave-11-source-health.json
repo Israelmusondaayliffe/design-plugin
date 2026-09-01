@@ -1,0 +1,1608 @@
+{
+  "audit_date": "2026-09-01",
+  "bound_files": [
+    "metadata.json",
+    "evidence.json",
+    "source.json"
+  ],
+  "canonical_effective_collision_count": 0,
+  "canonical_effective_collisions": [],
+  "case_bindings": {
+    "adobe-spectrum-2": {
+      "evidence.json": "f756161ee26f8eb1b1bcf8a265f9238bb50c4bbd26cab97c93630938eb6420f9",
+      "metadata.json": "cca04c54f16d4505bb8b4aa2f59efcd3169289529d2ed9bcc5b5f046fd967008",
+      "source.json": "0aeb3850648c6765aabfe9550aa1c2082d8fbea91c893d8382a1f6cd39a90b69"
+    },
+    "android-mobile": {
+      "evidence.json": "5ffb5adc3a20a74ef40d0c490ccb92ecca81800e0502d83d0a9babb4de086dbd",
+      "metadata.json": "ee6f07d4519bea312b15702308d9ca067951fe9218807634eeaf5e4ca20fe651",
+      "source.json": "5e350123e18ab1f1733a530eb6f12e1fc71e72a23bb908b4f8818f570cb59aeb"
+    },
+    "ant-design": {
+      "evidence.json": "58a1fb85d3f6d51db7ac426af2efd87201ad1dc5436efefba61c326868c3deb9",
+      "metadata.json": "245002ab1f3da05b195d2d45bb59e1ff6a66f568e78b331d88c46aba6dfe3505",
+      "source.json": "0740156e162adce7a0fc2809fafaf2db357a48c355706723ef2c7d7d75db1615"
+    },
+    "apple-hig": {
+      "evidence.json": "5143957b1202005b551a27e25d476d3c787840049efbdbb27295d6196cb46e72",
+      "metadata.json": "ab0b55cf95f37653fd4f94a6ffd4bd434d42805b851fccfcdf252fa3dd8c61fe",
+      "source.json": "1a5d0d5912df9d564875b2d066786ef142dbf70eab911262a33ee3cbd9791978"
+    },
+    "apple-ios": {
+      "evidence.json": "49174b31a7fd4746635b5d76a075a83c3143aacbf9fa93fb5f2c9c9aeb36a5d6",
+      "metadata.json": "8118f5cc12c511a40feddc73a9a59fdcc1248dd2bc157e0badb06975c9bd735f",
+      "source.json": "c9434b46a722b3b307a0e4c5974f29142bc073255fa0ed99e29ea2dda5570f6a"
+    },
+    "apple-ipados": {
+      "evidence.json": "a52f2ff1d582b7b922af520fdbb1c9bf4c581049a643b240d6938cfa5948a97c",
+      "metadata.json": "b4d47c33bd7b437128611bdf254ab24a2de0ff881f33933ec595357af78adad1",
+      "source.json": "838c28217d9add270b3b5f495b06c74df59655cde8faa7907dab5a9c1ee13c24"
+    },
+    "atlassian-design-system": {
+      "evidence.json": "4dc7ba6b50bde6331a6aa417ee1ae0ed3e3c553a00e944eab75272713e501424",
+      "metadata.json": "f4b5686e95908a10c2dc08edc685a8af05f20585b353e244ccbe7e7ada2f4044",
+      "source.json": "1badf524760369dd5bca72e40939f02cd4a100581fc91265db9e26b3b5066ea2"
+    },
+    "bbc-gel": {
+      "evidence.json": "6216d969cc602a942a8f2d3eb29b97e1279f90e0ff078d2cb98f4d42c58dcf2d",
+      "metadata.json": "cc71f9d7b715b67d0d41a1ef038fd532d7ac94daf3bcf7e490f1503078c19504",
+      "source.json": "3621af111fe6b5b3897195865f69d8a09a9ba3b5f6feda21df4635c543e1dac6"
+    },
+    "california-design-system": {
+      "evidence.json": "e794e1d97762659ac0e992b5f16e81366f6398f5ba2a8b8e66ccde4d3ecd797a",
+      "metadata.json": "cebb6e617e8d411c5aef779688d73787d8eee87467be2bae6b0acfdccea2e1e0",
+      "source.json": "5b46935c90906e72a7b09d208f7ca9e6321e667aba4ecf1ae43001e3e8cc0356"
+    },
+    "cms-design-system": {
+      "evidence.json": "19dcd849a4d4ade6323df73c34bfad0f0ffa88801706e03b0676a7335d61c189",
+      "metadata.json": "90c700d48c3081bade0589239b91526ce37dc53c78c3b229f3a0b80980768925",
+      "source.json": "5501c512250ff03e56a08d882a38d7c747b1286dc267b17cf9ce4378edc235be"
+    },
+    "decathlon-vitamin": {
+      "evidence.json": "ccdf43c2d94e1c7827a0528f39659c82d5b96ec21dd6b6d90719f96c784bd4b1",
+      "metadata.json": "45d72b1fdcb9e3396cacd35969841cbdd8cb8ee1e95581d41f29885bf6384eaa",
+      "source.json": "58b60aba357efd77dc0b8d8a8d01d01bb7219408d753cefc13dff68e14611c7a"
+    },
+    "dropbox-brand": {
+      "evidence.json": "f9050b2e4aa4002dcbf51f5536f561512662e3eb0bc644bfb00b4812a0bfa120",
+      "metadata.json": "c46f07d4432173ed150e700d675e2d569afa8f2fa371ff28050141917e363620",
+      "source.json": "799ad2385a78f5aa31ae0df3dcdefd1a45b2f341548ad8009e90f3216145c56e"
+    },
+    "duolingo-design": {
+      "evidence.json": "4c81b181d3194c1fdfdc4f1339f395b1286baf8370de309c87e1bf9f1aa569f9",
+      "metadata.json": "e1313e1b1ec74b0662e95dc75f6801b1a3981cfa3314bde3c23ef0a0c2fde14f",
+      "source.json": "342e4b01635bf374fdcf7e6e1f5e68410355a72fa19109d4e92760b24d2cb7d7"
+    },
+    "ebay-playbook": {
+      "evidence.json": "84d71b8b3c2c85618cc093ab0b444d0dee1355da8b55f5643f34f429d4295999",
+      "metadata.json": "71a46e878b68980949fed3eef5f88484864088889285032c776b716d6cb45a1a",
+      "source.json": "102546f2e141e346dcccb2542ac3d950671651e4bc53250b7a82522ade67e48c"
+    },
+    "elastic-eui": {
+      "evidence.json": "01a7bacba36a3e270c7c21164f93437490c78ae7838d2409255a8f888a3dad53",
+      "metadata.json": "9ca964fa5796b8f5ea20419011278141cd3a0f4039687e629a4622a93e8e8fdf",
+      "source.json": "e16b26c3befdfdf6f4130616dac1e248d533b87ef9db88855b44260f1f343fed"
+    },
+    "framework7": {
+      "evidence.json": "808df240ccc165c15e056b88ff4aed039181472c9df53b9ab7e9e920132a1de4",
+      "metadata.json": "f2d03d5c073f2f6ee490a0bb29b93be11c8fa891745e24061d53d9f6f6964705",
+      "source.json": "3ce10e1ffbffd7712178b9bac8f12e74f47080fadd8f30081e5a7cb20cb25077"
+    },
+    "github-primer": {
+      "evidence.json": "cbf4da42d6771dcc6119db98d4987ff18d64355fff11758c9d942be7016b8508",
+      "metadata.json": "ef47afb543654cbc2a7f2aff7d95070b22ac319632179b244687970e601c93af",
+      "source.json": "2b125fcdf222c69ae98b7ea7d076f52755b57b62dd6bfefa0efa707af152b4bb"
+    },
+    "gitlab-pajamas": {
+      "evidence.json": "892df5fe3017be8c9d9599adfcf8d1a4eca5b483411caebe31bd996146c8eaf2",
+      "metadata.json": "3bedc1f0e8b919f0906753d8044cd4e2e8a3a0729a23c0491ea0b4f52b47cfff",
+      "source.json": "63c8aa744f6e2df00f5c15972cf7087509d734a2aee1375ead6810abceb45e72"
+    },
+    "govuk-design-system": {
+      "evidence.json": "cf2b67146951939faed499c4e749db56c6bcfd8e25afc09024f3a36b819d120f",
+      "metadata.json": "372c52d6c5721e05168dc426cfc05586ffd23c705f92b4339fc919ad71b800e9",
+      "source.json": "378cf1093569fa178dc00faf31e5ceb5ca1fd8f3d6b8b1ba85d0f505e11518fb"
+    },
+    "guardian-source": {
+      "evidence.json": "c66ec4b90102400475d439b5b18d1eb21c8e59d8ff3ae3b5dd5cc3ce3383ccc3",
+      "metadata.json": "7113efa9fb2ed2d3a8c5fbcb02fce126a092cc9b376f9055228caff8345ae940",
+      "source.json": "c5bbcb89e3bc665eb0244ab02404dcf12f10651f0edd4c5399c360e38d21d743"
+    },
+    "ibm-carbon": {
+      "evidence.json": "7560e5cb89de334d1cec740a59fb0e04bae54fa470c03d5667822c6ac860cca4",
+      "metadata.json": "77758df0564a27d27f2ea3b8eb17a12c0b19903cda632274384ecc6c77841d5d",
+      "source.json": "9053c956da9d100c3ed3c506ac4b7e01b055035d5e7f7819643c28986a893ba1"
+    },
+    "ionic-components": {
+      "evidence.json": "012c2893c235130c3ecfd20884864a38246cd0c5f4bd4ccf679ad68391f46421",
+      "metadata.json": "a2782a5c4b30ff0c547b8bf4efe4ac3832fd72ba0ee139ea04e8a6102e380545",
+      "source.json": "8145b4fca09ec2d320d859b9e05fe369e49463b0a2f5ff4180bf2c3475d9a882"
+    },
+    "kiwi-orbit": {
+      "evidence.json": "3491e8d46c00c539b1e8725646cc558889dc3464676e0182058e92c043e9b083",
+      "metadata.json": "ff14e2a59dd61f94024f462586b80b6a02e408cb39a3770b5b7698e40737e87e",
+      "source.json": "2e6abd93f332834c5b32f97357d5f5b55b904de7e5564a05c8dd23793f26d737"
+    },
+    "linear-marketing": {
+      "evidence.json": "ce066a2a638711c35f688f61631eb58c967887e2c133fa4db995018e60ecabf1",
+      "metadata.json": "6c45ff67ff5863f65df1a65d7cf2780776db293d50d5d73fc9a947203a721835",
+      "source.json": "0bdd6791ed9f48f134bfa2e50a516cae4b8604fd8254ffa107eff4664a60df19"
+    },
+    "mailchimp-brand": {
+      "evidence.json": "e4e874717594f96b9b3d11bece04fc203f23735bb90995132dd4cc1d2d03fd98",
+      "metadata.json": "7fd852d5c92f6bd0dd5bacd8f6505e936669d807907c18b07424cd2fe3db790d",
+      "source.json": "65dbdab370a412c618ec7b8e6802507584ae78ed5dd984e1e5fb8c1cd22eec69"
+    },
+    "material-3": {
+      "evidence.json": "a700f517045b41767feb539a7fea93c929450dbb5438f7d41fcc5c26f1d256db",
+      "metadata.json": "dea89ff649003a03324e96c06ee7849dcb0446da803469657085565b3de6d48c",
+      "source.json": "dda55db652a4405b3fafc65d6c76665a77ebd50f39767f25791d0e9a82bbe65b"
+    },
+    "material-wear-os": {
+      "evidence.json": "404c2cb6974092dd3bbc646fe093e6006d0f60a68fee295cf38fe1ec3651ba6c",
+      "metadata.json": "e8ea6dbda5ea7398a78b2c86d719d5de45da713d7406c6ae88109ef51d16257c",
+      "source.json": "c4022f8800c49e864ebeb78abe6d66a03df7537cadd5ff8c9c74304ce2020641"
+    },
+    "microsoft-fluent-2": {
+      "evidence.json": "4b5134581b2e2cda6c31d3e4d843884e5ca82f1632a535038c292772a2f8d9ee",
+      "metadata.json": "f75eba2340184026e112c177082c0801571df021315bd145ce9a79e95bd6b760",
+      "source.json": "68c7a5a6c40b6d356d9e4f0cda2a072c2bda5dc4b9b42ef8610417f9b623df2a"
+    },
+    "monday-vibe": {
+      "evidence.json": "297188b28115487f97991fc769018d857b84eba91ca60589368da3939b673a66",
+      "metadata.json": "3d28694db65d588a7c06fe7c1a4ffdc66290dce864f090e287a967c0e556fbe0",
+      "source.json": "6863da64d0fc2353280244758196ec298cd77bee73745124866ef8f11da1047c"
+    },
+    "mozilla-protocol": {
+      "evidence.json": "3a85f71c95d7c9edfc2dbcb70d35cdcd6fe3b2a6ca15e3160788482487d27e6e",
+      "metadata.json": "765770d7d28c803d96f49aaa2d01ed6a909372319042d88e8c41f2d3612ba925",
+      "source.json": "708582b34d38db2ff59b79e66561f8865a13f46bf5bcd00608b13b0270f454ca"
+    },
+    "nhs-service-manual": {
+      "evidence.json": "a17146ba44ce66997f9a1902fe979c98f80fc98043591fbf03b1b144f8a7241b",
+      "metadata.json": "9280b89c6fd1b937ab2e27b704c6bc2392c3b7854b30d202c647b61022a6d0e5",
+      "source.json": "425732bcb83185c6adcdfb612c56ee27671eba712ad7f447753fd7f68d922cd7"
+    },
+    "observable-plot": {
+      "evidence.json": "e065b0e06e76947039547f55908a9af7517613e8683a6a5c90f51b50b2df578c",
+      "metadata.json": "758fbe733c2c74f02ece3880b3e9ba1cce1d0d4b737dd6f52cecb701cb3d3224",
+      "source.json": "3cf503d41ffcf9d282ae7e2bcc5dd5a8a989441cf290e3d5674ace34d37a8bee"
+    },
+    "ontario-design-system": {
+      "evidence.json": "dbaded8242c74a52fd5e2172337ac45284d61e8fb7dc78b167145b1540a98cfe",
+      "metadata.json": "36a1f78470acafb3f8d2c440be8967f2f6cd23b2101ef94c423781984c2b48fe",
+      "source.json": "5d360675aa48361ccdc638db1336ae77114b9fc8ab38eabe133f5798c8640d60"
+    },
+    "patternfly": {
+      "evidence.json": "d9fa4de5fb10c22bbef0155a731b4667e6178bdbc2b0a94c6bf387d5d53d536f",
+      "metadata.json": "1ca87d9e9c4a3db36abc440809c1074b95cc0591078e397f56a07f25dba08748",
+      "source.json": "690755c78951c3aed23d8c4df5302507a1b299033c79c3d718645d4f106424e2"
+    },
+    "paypal-checkout": {
+      "evidence.json": "2daafbc1a91a94bbec47785dbd32a4872f256ebd411f7bfd17b5e231b781d751",
+      "metadata.json": "6aa73bd76ab2ebd3117c58c9aeb3cc3c00d35da089c446844128d78c863422eb",
+      "source.json": "d90e12ff53534dfffc2f3393e1022829343806c06e7cc407cc8888652244e244"
+    },
+    "porsche-design-system": {
+      "evidence.json": "531724787c7fd3cb63be7fa0bf36bda75b6330d833afc67a62af9a93a0bc6e34",
+      "metadata.json": "465200c4b92a77244dce84abf20bc58971797dc3d7f6780126b1644f3e945830",
+      "source.json": "6e1cef06048496b2215807973abfac7dafb2b38a898d01db52392cdb35f4d11f"
+    },
+    "quickbooks-design-system": {
+      "evidence.json": "48def24117d9dc42c63f19324a8be446e6b4729addddef81265b22c462be4e4c",
+      "metadata.json": "fdcd740a90b1bd26a6e6c46784933d2e1e60a617a71edc660c0224958da2a3de",
+      "source.json": "fd71654d0ad8654d9009b960c09f2f8e6f52870f923455a9dfce11ce3ea3da78"
+    },
+    "react-native-paper": {
+      "evidence.json": "7b23a7059d0dbaaa037c8d9a81aa56986c5e475f915df8a2a0a3003f4cafe488",
+      "metadata.json": "0311d5aa13eeb493276ebaa4c5e255985ad84b86898cd576fa7f1c2edccc5a67",
+      "source.json": "cd9f07ceb45263aa222749bb81aa2ca8943377f8aa2ed2e85283bbe74add022d"
+    },
+    "rei-cedar": {
+      "evidence.json": "12896e7979a5eafb7dd7a6b0e5941490a26090e8514796cd6c8637f9f7d0da3e",
+      "metadata.json": "775f2a05ea4be0a63847a6aba84fe4e9701558ef2014ffd99a88cb1c925b6dc7",
+      "source.json": "0afc6c00ff05f9ef69a731d060d6b88e2ca43d3eda690b01222675a346ef1c3c"
+    },
+    "salesforce-slds-2": {
+      "evidence.json": "47700d8305d2e9bc721543a3a30254d538aedd88688c66f908f9b8da1ca026eb",
+      "metadata.json": "2d1770cd9633f270a4145c63a30c3343b46aa64b848b112fe1093df9c36cd4df",
+      "source.json": "1ecd5de5469ac8afe0fd95bb1b9ad43d8373993c1ab9dc1490e0d1a8a3152790"
+    },
+    "samsung-one-ui": {
+      "evidence.json": "eca7a4abc3ab5cb13cd0a7c010bd093c203708fc65914b183a62ba46073f5c39",
+      "metadata.json": "74420af5b07a0e790367b6a8fb5dac907f85bb6a4dda480daa9b4702e89a7953",
+      "source.json": "41d77b5709f62f791e2732ca699a5da85e6499979fd26e4d2214668b5fd40462"
+    },
+    "sap-fiori": {
+      "evidence.json": "e0ebb077084594b2e4a97e8de3d3ff0481045a9b465d7f05bf9166c0b621bfc1",
+      "metadata.json": "3d451e63306cd601d69e11c20154974927d551aaae7fa3b7322983c382a48cd3",
+      "source.json": "11e94805562cf96aef6619587d82411288299e8fa0ca226ad08aec222560a61f"
+    },
+    "segment-evergreen": {
+      "evidence.json": "feccd206e704f184e5c33499ead2cd9216f0e727987df0d375ad9a08b59d989c",
+      "metadata.json": "7cb37068e715678c22d2c1edf78ea967e046dbd263f853537f1df1dd0788f60c",
+      "source.json": "c08aa987270ad308af69afe5a1d2036c26ac685137b5b515a7f3036f6771f510"
+    },
+    "semrush-intergalactic": {
+      "evidence.json": "4229c1696dcfb11a64f0c89dfd95d8d092c12eff67a74f5df84036044929215b",
+      "metadata.json": "c2be8e7c24519c38a83f9bdc59ef4be3129926aae6d18ac56ed439dd14c532ac",
+      "source.json": "3501de21d2a09374daf295277b35d5aa624528d07b844068c97cf024166253c8"
+    },
+    "shopify-polaris": {
+      "evidence.json": "729fc047c6ccaaaaa3dfc3f26e7c2ea70c5a52daa2f49e00e6cd482e7b5ca973",
+      "metadata.json": "bf95c43a092c85ca64a53033d16a44217966c7f9cda2ee4bd280a1079d7eaba6",
+      "source.json": "926ad170718f8b0c5188ca8225d0fb70cb072788af34d8c7ea533b8a972849ca"
+    },
+    "skyscanner-backpack": {
+      "evidence.json": "1f4a55be2d18d5a763f4fb91e9a0c1f8ecbf82359c68eeb94cf772e40914a506",
+      "metadata.json": "1b7905d879cd27e226201522bd8bc82108fb7439aa735072ad3c6963fe528e1d",
+      "source.json": "e28ba5c29821e42edd2e9e8ca94bb25d5133eca5fea92b547d4309ed2034b945"
+    },
+    "slack-brand": {
+      "evidence.json": "fd082699b2935acf278c92174ec812707b94ef555d83f5e222c21a46a3d473e9",
+      "metadata.json": "6e9d40a8c19baecf46f8dbe99a26ba838fee6da003b90817cfdc0b54af071c62",
+      "source.json": "8d7c2f3c23bff3f5787d046ad30640e439db4effa60970ee7b7e44b0f777fd7c"
+    },
+    "spotify-encore": {
+      "evidence.json": "70da1684680b9af1f7849416ca1dee01810f53ebe7e6dda1392bb3c4496a966b",
+      "metadata.json": "8fb4cd877a0833393bf341e02a2d4b8e0e617132c1e2ac04a208f0ba59676a51",
+      "source.json": "57d7883c01c80b411cfd55a58c733d68767d0318077813d67a64c9f285213047"
+    },
+    "stripe-marketing": {
+      "evidence.json": "1405692e18edf4d90d371ae6e01e14b5aa6e5429753283cf39a8335765e63b32",
+      "metadata.json": "5c1dbd99ba5e9205861f12af2808a6204aa1101db5af74f1a244839c3216fe4b",
+      "source.json": "8aba81118386b28d58eb7fa4fb98968769f06a1020fee61c22a1104a3ca326f6"
+    },
+    "tamagui-native": {
+      "evidence.json": "3e24cc10a48aaee974ba75f4e733cc80e63b4904be770110a9fa573f9afbb522",
+      "metadata.json": "668aaf3cb6850b855bf61f650a5f147dbc3070bcbc2b8330174d7829099d3692",
+      "source.json": "1a15a69d419021fd2ee3848e9ec6b10584f991a395426dd83778766ffacbae9b"
+    },
+    "thumbtack-thumbprint": {
+      "evidence.json": "18ce2a5bede52fc70f5d9b625acc91fd1337127ba4d5eaa3a0e890a2bb879108",
+      "metadata.json": "0e799f23839d0874966c7be63243b3c34ab2f2765c5e394eeb4b6925288585ee",
+      "source.json": "b1cd7f809699356e8c1d30077245f6b28bfab37f34ce0b2ce8455023bcb32402"
+    },
+    "twilio-paste": {
+      "evidence.json": "c12a073df76edd431d1a26f95bb18bd349f0a77aba7672c4688991118b623165",
+      "metadata.json": "0781e418c817d1f31afd41d419457caf28fa11012ac64950849ae0be53833bf9",
+      "source.json": "e54fa3efdb1a721970845c5f1c0bc48f243cacb65dcab6be2a84aeb29b220e5a"
+    },
+    "uber-base-web": {
+      "evidence.json": "b3812d1c78dd78bd98ddc1ac6244bc157aa38b81feccfcc1e6c71684e7b1857d",
+      "metadata.json": "365fa6e440bd896dd7569b10d2f167ceaf35d9b95826043055b781415842b9a4",
+      "source.json": "3cb18b74cc94f1a876cd0babd3cd922a6950be7c16fe8f2baa38dfde729e9c4d"
+    },
+    "uswds": {
+      "evidence.json": "482bf83c160c592a1bed0b762f40954957b4d61a5122d9bc238e4ac68a5c6a76",
+      "metadata.json": "f227307200202202b85308b841702ec72c81eaade2df560a953f95b20153ca0b",
+      "source.json": "4bac9034743d37cc10c7e6d140cfef89aa18d39a81d5a85e60da6f97ba7f2ebb"
+    },
+    "va-design-system": {
+      "evidence.json": "ab7e3d1e4c5e23571b53deaefefa46ef0cfb1717cf9b14a6d9ee6b1ff43d3e1f",
+      "metadata.json": "ef943dffd5f00732b89c81217299d5c12a00313969b01d106fdbfe7a373d8224",
+      "source.json": "dc74e76193a1034cb795c1c016596b6f85bdcfd1f3f5e789d5915eb1603981a9"
+    },
+    "vercel-geist": {
+      "evidence.json": "767e61b3591ab9d478fdf25483ad84b0cb444fa703a9a0f1c365263fc8fdb971",
+      "metadata.json": "ee354f709067eb015efb6ace721890ace1bd83186a1b6c9b911fba01b1d1f785",
+      "source.json": "802ed22b1bd208b701e0a5612ff59da6cf048a325176fd5d52fb8b5837a9a620"
+    },
+    "visa-design-system": {
+      "evidence.json": "43868b30c520ca45a277e5905aec2c3701f6ec30d89746b7891267b3bc1baab6",
+      "metadata.json": "4a68b3cacf981902a31e3f3f410a21def9bff02e7a55cf7610a3f13a92b54124",
+      "source.json": "08779971591f160e955498e629e6dc5b880b456b34811adce9ed499184a0c6a5"
+    },
+    "wise-design": {
+      "evidence.json": "3f3d79fe2f0a28edcc270c0754c35e465c6fce4d6b46c9e2e9b9699ff10e4309",
+      "metadata.json": "d16b8607dacd508fa9c7e8d7ae4b8c068836ee128c1a9001101222a710d05949",
+      "source.json": "b71fa15689058517690b12878d808d4a431f7b952d2c442301cb3d36109df813"
+    },
+    "workday-canvas": {
+      "evidence.json": "6236b1d069e896dc442b965a28931af0fe40433d5cfc9e92e1db845521f1bab6",
+      "metadata.json": "f09af1086de93866817537269cc2dd32325d7c5d03920d22714cebc23c6ef214",
+      "source.json": "91ececcb675ae7f2249673b2ca17003fa031f1f5ae22cba4c8524d703531276e"
+    },
+    "zendesk-garden": {
+      "evidence.json": "a408944724e079067cff23f633f07f4a3976208067d7b48456d579f9ace8163a",
+      "metadata.json": "b888dfa286b6726f03b6b9591bc06574b7dfeeb909ecd86efda628d26bb2928e",
+      "source.json": "dafef5cf2fe1a32d21cf1b75c3624ca5e09541230cad3494a34dba8249b7434f"
+    }
+  },
+  "case_count": 60,
+  "corpus_binding_sha256": "8d10eb6cdd7fdf65f50fde4f1f0c47105a180d6f81baefb710298fbc34ab96a2",
+  "failing_url_count": 0,
+  "hash_kind": "canonical-source-identity-v1",
+  "hash_method": "SHA-256 of the requested owner URL plus the first available stable source-identity field: HTML title, description, heading, or a bounded visible-text fallback. Redirect destinations are recorded and collision-checked separately, so harmless routing changes cannot alter the identity hash. The value is not a claim-support or full-page change detector. Raw response hashes remain diagnostic only.",
+  "locator_mismatch_count": 0,
+  "locator_mismatches": [],
+  "method": "Ordinary public HTTPS GET with redirects, retries, a named user agent, response hashing, and no retained source payloads.",
+  "passing_url_count": 80,
+  "results": [
+    {
+      "canonical_text_bytes": 64,
+      "case_slugs": [
+        "ant-design"
+      ],
+      "content_bytes": 229160,
+      "content_sha256": "8bfb20b7041422d18df9e34fe59e4bc7b283f5867ffec12ca2fe5f04954d1960",
+      "curl_exit_code": 0,
+      "effective_url": "https://ant.design/docs/spec/introduce/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "42504679acf20084bf6cb4779f564a43f3f1235eba1b7aab3a102fa1f063c09a",
+      "url": "https://ant.design/docs/spec/introduce"
+    },
+    {
+      "canonical_text_bytes": 42,
+      "case_slugs": [
+        "atlassian-design-system"
+      ],
+      "content_bytes": 520354,
+      "content_sha256": "5cd9d12fae55db59fadfeb8bfdb90338f0db9370a016a206315f4bc738558124",
+      "curl_exit_code": 0,
+      "effective_url": "https://atlassian.design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "46b69ee1e9b0f53d5b036712c36d3a8a479c329513db41fb17a40c09e04c4840",
+      "url": "https://atlassian.design/"
+    },
+    {
+      "canonical_text_bytes": 77,
+      "case_slugs": [
+        "atlassian-design-system"
+      ],
+      "content_bytes": 776956,
+      "content_sha256": "3e7fe54c690b06535f685c0c02eb41d0eb3ead1289ff3f186e13198d86e5652a",
+      "curl_exit_code": 0,
+      "effective_url": "https://atlassian.design/components/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "025ec01f5872e2d230424cc2ea399d6fd2aeba1c850e0e14c02c7293a3ed03b3",
+      "url": "https://atlassian.design/components/"
+    },
+    {
+      "canonical_text_bytes": 79,
+      "case_slugs": [
+        "atlassian-design-system"
+      ],
+      "content_bytes": 570403,
+      "content_sha256": "58bb6a46a6487061bdcc4ab5e94a4d4e4c09193bf059bde24ecd02bc0cf20a04",
+      "curl_exit_code": 0,
+      "effective_url": "https://atlassian.design/foundations/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "e3d326b012e3def2fa7b137ea920b42d9e00ed8b75b378afc928b95a6795f056",
+      "url": "https://atlassian.design/foundations/"
+    },
+    {
+      "canonical_text_bytes": 83,
+      "case_slugs": [
+        "atlassian-design-system"
+      ],
+      "content_bytes": 540106,
+      "content_sha256": "d38a1709bd8b2c66acfc9f23e87b80cc5d043bcb614c91cb692ab630850d73fb",
+      "curl_exit_code": 0,
+      "effective_url": "https://atlassian.design/foundations/spacing/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "b0faf1b5b17eafe3689cbcd11fd962789a908df0a42225369ab0a335d39cd759",
+      "url": "https://atlassian.design/foundations/spacing/"
+    },
+    {
+      "canonical_text_bytes": 23,
+      "case_slugs": [
+        "uber-base-web"
+      ],
+      "content_bytes": 5249,
+      "content_sha256": "0af89856850e074bc1a35edd73c12cf730c045dc9b4ca80b23c5af566057b576",
+      "curl_exit_code": 0,
+      "effective_url": "https://baseweb.design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "00a46b53f0ebdb3d784c5a3b8b37e395f08015b6e7e2f432aa6517223d319907",
+      "url": "https://baseweb.design/"
+    },
+    {
+      "canonical_text_bytes": 51,
+      "case_slugs": [
+        "dropbox-brand"
+      ],
+      "content_bytes": 103819,
+      "content_sha256": "2d174b8edd6131fdd5d0ec1cb7251eedcec468e4e42142d4b7ed241bd56e8be2",
+      "curl_exit_code": 0,
+      "effective_url": "https://brand.dropbox.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "4d31b8c07902aab6bb4bd93b062f799e0a56635f6267daca293269c6277f88c6",
+      "url": "https://brand.dropbox.com/"
+    },
+    {
+      "canonical_text_bytes": 295,
+      "case_slugs": [
+        "ibm-carbon"
+      ],
+      "content_bytes": 2944645,
+      "content_sha256": "b26eb3fe49b7990700907d57214e22b201a3fd30b850643549d393d109057766",
+      "curl_exit_code": 0,
+      "effective_url": "https://carbondesignsystem.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "2a44ea8007d84fb802936e55eca450acb18715b06d2b86072f523c4b9a0eaa53",
+      "url": "https://carbondesignsystem.com/"
+    },
+    {
+      "canonical_text_bytes": 324,
+      "case_slugs": [
+        "ibm-carbon"
+      ],
+      "content_bytes": 2954304,
+      "content_sha256": "bb341eb3c1201dfefc29e9345d43a4b35258611ba7326efc2746897f22acb204",
+      "curl_exit_code": 0,
+      "effective_url": "https://carbondesignsystem.com/elements/typography/overview/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "3d70c74955950472c5ee11236c29aad6f37faf5622639fdc3c75d58d108cc3e1",
+      "url": "https://carbondesignsystem.com/elements/typography/overview/"
+    },
+    {
+      "canonical_text_bytes": 115,
+      "case_slugs": [
+        "material-3"
+      ],
+      "content_bytes": 233605,
+      "content_sha256": "b4d5e2a18292cce0d2e6d0b3db70a750ffa63c5f22b15ff2e24dcac1c310456e",
+      "curl_exit_code": 0,
+      "effective_url": "https://codelabs.developers.google.com/jetpack-compose-theming",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "2c6cd18a8cf6d5d723cde67cabf90c6cac5cbb6dda30626e01b259114e08287c",
+      "url": "https://codelabs.developers.google.com/jetpack-compose-theming"
+    },
+    {
+      "canonical_text_bytes": 67,
+      "case_slugs": [
+        "govuk-design-system"
+      ],
+      "content_bytes": 51834,
+      "content_sha256": "43ce9b7341f08965e58e1551f8a046608d30d75c718c1c082d4683d1965939d6",
+      "curl_exit_code": 0,
+      "effective_url": "https://design-system.service.gov.uk/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0fc517ca4dc77d55aad8eabb2c0d8f1a508ab649348d3035434b426ebc322ac8",
+      "url": "https://design-system.service.gov.uk/"
+    },
+    {
+      "canonical_text_bytes": 84,
+      "case_slugs": [
+        "govuk-design-system"
+      ],
+      "content_bytes": 60218,
+      "content_sha256": "e33534d033133318962918ee3b919ca19aa82d7b23856906aa3ecaf7b49ed408",
+      "curl_exit_code": 0,
+      "effective_url": "https://design-system.service.gov.uk/components/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "a5a163bc774714261e475895598fc27345576b7f487064f0f95f38bcce37c8e2",
+      "url": "https://design-system.service.gov.uk/components/"
+    },
+    {
+      "canonical_text_bytes": 76,
+      "case_slugs": [
+        "govuk-design-system"
+      ],
+      "content_bytes": 50762,
+      "content_sha256": "03e7b0a67fa50e02e70c6b59c2d89a64048ce671142e18c1e9e3140c1b092790",
+      "curl_exit_code": 0,
+      "effective_url": "https://design-system.service.gov.uk/styles/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "71fedd93c9a79690426c9ad71452bde04bfaa7984ad4f22600afcb63d9f23dee",
+      "url": "https://design-system.service.gov.uk/styles/"
+    },
+    {
+      "canonical_text_bytes": 56,
+      "case_slugs": [
+        "cms-design-system"
+      ],
+      "content_bytes": 391992,
+      "content_sha256": "2813d53694d5bf82723667a1a6548788542fc2b76cb45da977924c56c8baf892",
+      "curl_exit_code": 0,
+      "effective_url": "https://design.cms.gov/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "5a81c3fcfd6867ddc4f6f8c718b51f9ae830ebcdcfcdab3dedc725a115f5d9f2",
+      "url": "https://design.cms.gov/"
+    },
+    {
+      "canonical_text_bytes": 50,
+      "case_slugs": [
+        "duolingo-design"
+      ],
+      "content_bytes": 92722,
+      "content_sha256": "7ee80d740765448da04a197ce02b4a4f1eaebb205ff7371bc3394ba98996e0b8",
+      "curl_exit_code": 0,
+      "effective_url": "https://blog.duolingo.com/hub/design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "6d84fa96595fd3051f57c28c0ca17a6eb0657a73c8d5d5a6dbd2a15e764c41ff",
+      "url": "https://design.duolingo.com/"
+    },
+    {
+      "canonical_text_bytes": 48,
+      "case_slugs": [
+        "gitlab-pajamas"
+      ],
+      "content_bytes": 73243,
+      "content_sha256": "162f8ea8240d2a969748a58f7f6ac2d6ac0dd7ca37bd5ada23fd53e7b507af7c",
+      "curl_exit_code": 0,
+      "effective_url": "https://design.gitlab.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "4d5256a232523abbdffa34b90b01519255fa03e8c8513d801f2bdbe019b82b01",
+      "url": "https://design.gitlab.com/"
+    },
+    {
+      "canonical_text_bytes": 51,
+      "case_slugs": [
+        "quickbooks-design-system"
+      ],
+      "content_bytes": 142079,
+      "content_sha256": "61692d36d48cb6ea179c6df5747778b8b59b3674f459cd3335a5657daed2d1f2",
+      "curl_exit_code": 0,
+      "effective_url": "https://design.intuit.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "762152e7c5dadd16163825397b66b2db8b11337f4f658d81b2bbade1b2eb072d",
+      "url": "https://design.intuit.com/"
+    },
+    {
+      "canonical_text_bytes": 43,
+      "case_slugs": [
+        "va-design-system"
+      ],
+      "content_bytes": 74563,
+      "content_sha256": "80b7681210935f15d324fb157273f3c07a38f4f239bca15af29cf2c5b6ad7642",
+      "curl_exit_code": 0,
+      "effective_url": "https://design.va.gov/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "440a7aa1f8e29c208ed1e559cf2f61b77da0335638f43d732eb4a9ef9c2c949e",
+      "url": "https://design.va.gov/"
+    },
+    {
+      "canonical_text_bytes": 51,
+      "case_slugs": [
+        "visa-design-system"
+      ],
+      "content_bytes": 3066838,
+      "content_sha256": "f4497ae45757894244c8f544493a4354a6c74a3a3d29723673a7d5e90f73aecd",
+      "curl_exit_code": 0,
+      "effective_url": "https://design.visa.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "a46f028f7509840a55885072b08d7e8fe8c69a1b5aea250d77a444d7983f411c",
+      "url": "https://design.visa.com/"
+    },
+    {
+      "canonical_text_bytes": 109,
+      "case_slugs": [
+        "uswds"
+      ],
+      "content_bytes": 44854,
+      "content_sha256": "9f7b378331a00da0a09e28b77147d85d3333cce4ca2b3b588ec390a9ff1e8b0d",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.digital.gov/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0bfc1ad3ed76440209562beee265cbd6430ecad808c1bd1876a1032ebcf020aa",
+      "url": "https://designsystem.digital.gov/"
+    },
+    {
+      "canonical_text_bytes": 102,
+      "case_slugs": [
+        "uswds"
+      ],
+      "content_bytes": 69080,
+      "content_sha256": "5376465e766479a724ff902cba9c80abfc166e7a73b683ae20c01b1ce727071c",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.digital.gov/design-principles/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "be3a757715e547ecf2e1546930f9e14fe49c55fca45abf658b258de01c10fdbd",
+      "url": "https://designsystem.digital.gov/design-principles/"
+    },
+    {
+      "canonical_text_bytes": 84,
+      "case_slugs": [
+        "uswds"
+      ],
+      "content_bytes": 47439,
+      "content_sha256": "41abb25a547a867bdfd258577998137559144485030fcab805bc18df65a7bda1",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.digital.gov/patterns/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "4975f93c7e73ccda99ac105dfda01fc0c7e84ed9e300576a46fcd9e49cd4fc8d",
+      "url": "https://designsystem.digital.gov/patterns/"
+    },
+    {
+      "canonical_text_bytes": 54,
+      "case_slugs": [
+        "ontario-design-system"
+      ],
+      "content_bytes": 20102,
+      "content_sha256": "49d2a48208f988ed2f2cb99b0d21f4bc41ac0bbb01f4efb34f93898bf9caf504",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.ontario.ca/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "80e46998b315f01e56c974baf54cd0391959afbf5892e7460ea7778b0fe61f53",
+      "url": "https://designsystem.ontario.ca/"
+    },
+    {
+      "canonical_text_bytes": 55,
+      "case_slugs": [
+        "porsche-design-system"
+      ],
+      "content_bytes": 416,
+      "content_sha256": "a52f220d1066d2044c66e2fc03fcee7943c0086f1c0fc39374ea84160a1bef1b",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.porsche.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "2e60bfa849d953aa5e7697add133a51dcbffa6a4160027bff9dd18049d35a942",
+      "url": "https://designsystem.porsche.com/"
+    },
+    {
+      "canonical_text_bytes": 66,
+      "case_slugs": [
+        "california-design-system"
+      ],
+      "content_bytes": 4048,
+      "content_sha256": "0bb7e9f414cef5a5498f88b3f8313a39cb1352bed66f795a5092b68dbee84ce6",
+      "curl_exit_code": 0,
+      "effective_url": "https://designsystem.ca.gov/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "3558543c30316130382312fa6ebc2a453ccc893ed43c471dbbdb27b4210d080a",
+      "url": "https://designsystem.webstandards.ca.gov/"
+    },
+    {
+      "canonical_text_bytes": 86,
+      "case_slugs": [
+        "android-mobile"
+      ],
+      "content_bytes": 308212,
+      "content_sha256": "71d054d43e4ddd10e269bef3c39c0a6e788d1a195af3dfe4501cde48d835bd34",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.android.com/design/ui/mobile",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "726b42f2807c048142b7a313d7793143bb1d607ed636cd8b1a944352dd4949c6",
+      "url": "https://developer.android.com/design/ui/mobile"
+    },
+    {
+      "canonical_text_bytes": 82,
+      "case_slugs": [
+        "material-wear-os"
+      ],
+      "content_bytes": 308730,
+      "content_sha256": "099c6988c66b2274634804c703394ecc725ec3f6174af9b0945a548656da9755",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.android.com/design/ui/wear",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "87bc2e9e8e8fd839c1e8c05a55240538b7d1017a9a382919ec3625bdeae07e98",
+      "url": "https://developer.android.com/design/ui/wear"
+    },
+    {
+      "canonical_text_bytes": 140,
+      "case_slugs": [
+        "material-3"
+      ],
+      "content_bytes": 466996,
+      "content_sha256": "5b8c804dc4180805b6664bf3a1a777b18f85b94189511a0a5e9065f86a33194d",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.android.com/develop/ui/compose/designsystems/material3",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "595644ddac29f2a8206afa766febe4ef6d5bff6fce05e1135720b0133f03f5e0",
+      "url": "https://developer.android.com/develop/ui/compose/designsystems/material3"
+    },
+    {
+      "canonical_text_bytes": 121,
+      "case_slugs": [
+        "apple-hig"
+      ],
+      "content_bytes": 17681,
+      "content_sha256": "766a2debcfea7ad9d8d1c8a3f07c888ae0b34ab613d436365db2f195289c446d",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "df1ebc77d27bea72edbcddbad438f349d496ab7a437ef652679f74c3f62928e6",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/"
+    },
+    {
+      "canonical_text_bytes": 121,
+      "case_slugs": [
+        "apple-hig"
+      ],
+      "content_bytes": 17683,
+      "content_sha256": "29f8f872c4f16478f190d121eb6d1a67e5fe4e28ac9040946bd6d5c32425d47f",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/accessibility",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "e1e024dd76f83e2be395493bda1c03da0589a5b367902cb9d62088ef210cc848",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/accessibility"
+    },
+    {
+      "canonical_text_bytes": 105,
+      "case_slugs": [
+        "apple-hig"
+      ],
+      "content_bytes": 17825,
+      "content_sha256": "07d73fc3f93356ea2996b04472315c3b831e33aa6bc56c8042cdf48f4a710128",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/color",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "c0abf7dba2f7594ad22f7d7bd7f70ac6c9abd8a1e2322b55d1f3d98e6c6b68cf",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/color"
+    },
+    {
+      "canonical_text_bytes": 129,
+      "case_slugs": [
+        "apple-hig"
+      ],
+      "content_bytes": 17660,
+      "content_sha256": "29ee62517173c2786a36ca7a4c666ffed958366027b9d70971f0137d49495121",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/design-principles",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "ccd1a06a2ce9a93eb678589f9dfde444a2abcda1cc7d21de76e1913ca431296b",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/design-principles"
+    },
+    {
+      "canonical_text_bytes": 129,
+      "case_slugs": [
+        "apple-ios"
+      ],
+      "content_bytes": 17927,
+      "content_sha256": "2ae428efe9445705ae5297be7ab98c130074c3b24e999bba36802c42d1308fec",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "e41d503d0777bcb355266145e36b98b3efe450abd1cf1ebdb96924e87d2d9abb",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios"
+    },
+    {
+      "canonical_text_bytes": 135,
+      "case_slugs": [
+        "apple-ipados"
+      ],
+      "content_bytes": 17960,
+      "content_sha256": "dafecc071f89cf81c5f39f285df8a7947934937724fa7e5651fd76a5d40a3200",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "fd9ce539760189a0b80fb95fbbf5eedd23da85a90e7e2d60bda857bc1c6d9131",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados"
+    },
+    {
+      "canonical_text_bytes": 120,
+      "case_slugs": [
+        "paypal-checkout"
+      ],
+      "content_bytes": 159899,
+      "content_sha256": "27d894729d7f40180b5a1dd8de1fc90fbf7b0b0a0a8179ce109bd0507ed90532",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.paypal.com/platforms/checkout/standard/customize/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "30907015eb48e909ee25240f7053c33f0bc822f6c5c20555c604c281455ee2d9",
+      "url": "https://developer.paypal.com/platforms/checkout/standard/customize/"
+    },
+    {
+      "canonical_text_bytes": 63,
+      "case_slugs": [
+        "samsung-one-ui"
+      ],
+      "content_bytes": 76540,
+      "content_sha256": "8292cd3445e45a7e8c6cc99b4023475e240da9405bc9ab00d64dec2980605650",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.samsung.com/one-ui",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "a4fba1d23e1cf71f0f2d65f4770c8ce37d275d5c66affcdd5b66024e7feab3d4",
+      "url": "https://developer.samsung.com/one-ui"
+    },
+    {
+      "canonical_text_bytes": 72,
+      "case_slugs": [
+        "semrush-intergalactic"
+      ],
+      "content_bytes": 68069,
+      "content_sha256": "1263ff9ab5d55f5968877d422da7c2b3876caafdbd0166d3c080f135d74c741e",
+      "curl_exit_code": 0,
+      "effective_url": "https://developer.semrush.com/intergalactic/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0edb06ba9a3ec8d42a60772f8dd9847c85eef657da555687bf2949c1be64e1d8",
+      "url": "https://developer.semrush.com/intergalactic/"
+    },
+    {
+      "canonical_text_bytes": 166,
+      "case_slugs": [
+        "spotify-encore"
+      ],
+      "content_bytes": 117769,
+      "content_sha256": "0290a0eef673aafc5144a52fd3be2a6dc64149a6aedba876769c25303adc15a1",
+      "curl_exit_code": 0,
+      "effective_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "c4da67dbd942f4eb32d337748b54f4c5e7a4fd33db669a418abbee45b1200246",
+      "url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+    },
+    {
+      "canonical_text_bytes": 67,
+      "case_slugs": [
+        "elastic-eui"
+      ],
+      "content_bytes": 628050,
+      "content_sha256": "db5783f0765181ba754e507e14137b27f0c6ec241416db6a2c407b8b409debda",
+      "curl_exit_code": 0,
+      "effective_url": "https://eui.elastic.co/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "d34d5fc5c6beaa1535263bdcc031fdf368a2e66eeb2f314b36b3f59f97e99b4f",
+      "url": "https://eui.elastic.co/"
+    },
+    {
+      "canonical_text_bytes": 40,
+      "case_slugs": [
+        "segment-evergreen"
+      ],
+      "content_bytes": 77116,
+      "content_sha256": "01abb4a0f2866247d8e566197067417d79c4159c8a2af39bb8ff0a418c02fa21",
+      "curl_exit_code": 0,
+      "effective_url": "https://evergreen.segment.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "82b9dff65af4de651209e229e5edda0193d63dc00c3bb415291f78cf1cec3060",
+      "url": "https://evergreen.segment.com/"
+    },
+    {
+      "canonical_text_bytes": 63,
+      "case_slugs": [
+        "microsoft-fluent-2"
+      ],
+      "content_bytes": 113141,
+      "content_sha256": "3dad91aee761a4638383aa2ef107c87521f65fd2fa428f85b94deac1c62fedbe",
+      "curl_exit_code": 0,
+      "effective_url": "https://fluent2.microsoft.design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "c9d0da6402a78e53b477d01f8dbe09a7e25fe8adfc237e1b1cfe45582549f7a6",
+      "url": "https://fluent2.microsoft.design/"
+    },
+    {
+      "canonical_text_bytes": 69,
+      "case_slugs": [
+        "microsoft-fluent-2"
+      ],
+      "content_bytes": 167839,
+      "content_sha256": "498f6123961cb6db9e8d8544ae0041b6c1c4c440ce42472b19720cc89a96af0c",
+      "curl_exit_code": 0,
+      "effective_url": "https://fluent2.microsoft.design/color",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "42f58d996794bdbca4d5229f27d9acd64482ebcb0e56ebfd5bc86135352f565c",
+      "url": "https://fluent2.microsoft.design/color"
+    },
+    {
+      "canonical_text_bytes": 71,
+      "case_slugs": [
+        "microsoft-fluent-2"
+      ],
+      "content_bytes": 127748,
+      "content_sha256": "8eef4e07fd5ba1f29bd5240ad69f3f5131aa7b2f30ea6c83f4df74a48ef38a34",
+      "curl_exit_code": 0,
+      "effective_url": "https://fluent2.microsoft.design/layout",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "e42b39465ab6735df13752d6b4669b7bf307741d406c65e4a20d036554371c55",
+      "url": "https://fluent2.microsoft.design/layout"
+    },
+    {
+      "canonical_text_bytes": 79,
+      "case_slugs": [
+        "microsoft-fluent-2"
+      ],
+      "content_bytes": 116930,
+      "content_sha256": "f89f598ba4d0e07743b4c9ebc4c86a01eeff1a20afa2e4b6d4ad65234d4e5ef4",
+      "curl_exit_code": 0,
+      "effective_url": "https://fluent2.microsoft.design/typography",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0a788a24f1236a4acc97068923e35c53cae6a19c9936662c1e026178cd0d804c",
+      "url": "https://fluent2.microsoft.design/typography"
+    },
+    {
+      "canonical_text_bytes": 52,
+      "case_slugs": [
+        "framework7"
+      ],
+      "content_bytes": 21062,
+      "content_sha256": "19e74cd3c20f6506f5ad4640addef6d3365363cc6450a0f5984290f9036aa56d",
+      "curl_exit_code": 0,
+      "effective_url": "https://framework7.io/docs/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "937ae694c09a500a84606aed568cbfb4db2554b8ac42c47ac51cb27b5eba22de",
+      "url": "https://framework7.io/docs/"
+    },
+    {
+      "canonical_text_bytes": 42,
+      "case_slugs": [
+        "zendesk-garden"
+      ],
+      "content_bytes": 113763,
+      "content_sha256": "49fa19a42620ac11aa866505b468c2d97e14026b3f160e2806400416fb9eff91",
+      "curl_exit_code": 0,
+      "effective_url": "https://garden.zendesk.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "ec5e7782e8c6d626bffeaffc1d3e9d8f3db0909c6ab6f9e0f0dc419fc02cf853",
+      "url": "https://garden.zendesk.com/"
+    },
+    {
+      "canonical_text_bytes": 141,
+      "case_slugs": [
+        "decathlon-vitamin"
+      ],
+      "content_bytes": 509972,
+      "content_sha256": "ae9e0f3347f0aa5833585672c081a53b649e37407cce09b49edbe4b622a549ed",
+      "curl_exit_code": 0,
+      "effective_url": "https://github.com/Decathlon/vitamin-web",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "cb6c0cdb3b045cb2e2e79b8886461cc3dd7064d6ad8c9cef6857f67f76482127",
+      "url": "https://github.com/Decathlon/vitamin-web"
+    },
+    {
+      "canonical_text_bytes": 213,
+      "case_slugs": [
+        "workday-canvas"
+      ],
+      "content_bytes": 415731,
+      "content_sha256": "7e39aa40977e999771c9e0b7d0d53a9a365cb706887f367ba1bd672b66db2a4e",
+      "curl_exit_code": 0,
+      "effective_url": "https://github.com/Workday/canvas-kit",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "c602ae368e557f1be1f4f9491dd15509737205cf30bb7fc4e6a91aabbf6a57b9",
+      "url": "https://github.com/Workday/canvas-kit"
+    },
+    {
+      "canonical_text_bytes": 145,
+      "case_slugs": [
+        "react-native-paper"
+      ],
+      "content_bytes": 373154,
+      "content_sha256": "1590493aef013c81206a6b235eb0f29794d8da897cdeab15a470a8c1da13e3ff",
+      "curl_exit_code": 0,
+      "effective_url": "https://github.com/callstack/react-native-paper",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "d435982ae1091189b51f382b1c5b3de9e2eb4dde341930db87b2484be1f54bfe",
+      "url": "https://github.com/callstack/react-native-paper"
+    },
+    {
+      "canonical_text_bytes": 130,
+      "case_slugs": [
+        "kiwi-orbit"
+      ],
+      "content_bytes": 354164,
+      "content_sha256": "c5a5ab3640b0858bc70ebed0df29fd4d403e5e94992b88c44f4df0efd6bfa29d",
+      "curl_exit_code": 0,
+      "effective_url": "https://github.com/kiwicom/orbit",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "23b4caa23d29fab7b536a1ea4df02d5e8c4380b8d053aa0722cd213b84baeb94",
+      "url": "https://github.com/kiwicom/orbit"
+    },
+    {
+      "canonical_text_bytes": 111,
+      "case_slugs": [
+        "salesforce-slds-2"
+      ],
+      "content_bytes": 203357,
+      "content_sha256": "519611ebd897fabe5223111c15d1ed1d2c7feb976cfd39b5212163010cb92fe6",
+      "curl_exit_code": 0,
+      "effective_url": "https://help.salesforce.com/s/articleView?id=xcloud.customize_ui_enhancedlex.htm&language=en_US",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "d5262b76146045d1f16e3cce0e74e77968bf45593feb9c1b9dfe78b58aa8fc93",
+      "url": "https://help.salesforce.com/s/articleView?id=xcloud.customize_ui_enhancedlex.htm&language=en_US"
+    },
+    {
+      "canonical_text_bytes": 152,
+      "case_slugs": [
+        "sap-fiori"
+      ],
+      "content_bytes": 1160,
+      "content_sha256": "bb3b7463e1e8ab5871f0495d4e644b740725f1f31e0156078fdd37bb974ef6fd",
+      "curl_exit_code": 0,
+      "effective_url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "b1521f3a5a6b3b76555a2a38d99b13a22a9ba809921d977e4ebe397decaed2c7",
+      "url": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html"
+    },
+    {
+      "canonical_text_bytes": 105,
+      "case_slugs": [
+        "ionic-components"
+      ],
+      "content_bytes": 73513,
+      "content_sha256": "f038bd6be42b6d06be51ebe72928e27b309e47a972bb1f7d6e437671bf0ae4ac",
+      "curl_exit_code": 0,
+      "effective_url": "https://ionicframework.com/docs/components",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "3e7fa5b5da5242945ed216f678ad2c18ad99d6ac8ceda4256a547b721906b829",
+      "url": "https://ionicframework.com/docs/components"
+    },
+    {
+      "canonical_text_bytes": 65,
+      "case_slugs": [
+        "linear-marketing"
+      ],
+      "content_bytes": 1266934,
+      "content_sha256": "4b9dab76fa1ff955f1812088cb4e7da3121522763b9bfd3b1ea8f560a079a618",
+      "curl_exit_code": 0,
+      "effective_url": "https://linear.app/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "d91847a5edd514211d2a11e44a7f99bf68ba079c9f70ac8eb2cb16adc354d7a6",
+      "url": "https://linear.app/"
+    },
+    {
+      "canonical_text_bytes": 39,
+      "case_slugs": [
+        "material-3"
+      ],
+      "content_bytes": 62132,
+      "content_sha256": "10101af789378a940f2ae0ff34216c29fcc7c552e0d22bfba49812f5eda9e23b",
+      "curl_exit_code": 0,
+      "effective_url": "https://m3.material.io/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "918b8c8af255c3809020e6376e126dd31c569cb0ed09fae3fccac095ed0e03f5",
+      "url": "https://m3.material.io/"
+    },
+    {
+      "canonical_text_bytes": 101,
+      "case_slugs": [
+        "mailchimp-brand"
+      ],
+      "content_bytes": 269084,
+      "content_sha256": "617e55f66400b74f5ca4c6fac14c8576068cd3f2c561ec2d5fdeef96d12650dd",
+      "curl_exit_code": 0,
+      "effective_url": "https://mailchimp.com/about/brand-assets/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "455b0884fb64a9587388ed18e276345c4a415f03ff8f1c4bb394643bfb2e1069",
+      "url": "https://mailchimp.com/about/brand-assets/"
+    },
+    {
+      "canonical_text_bytes": 101,
+      "case_slugs": [
+        "observable-plot"
+      ],
+      "content_bytes": 66916,
+      "content_sha256": "f1b56b4223b04d068771ef64c222a2e4a39733f3ae8873ca83b5e53bec5aa5e4",
+      "curl_exit_code": 0,
+      "effective_url": "https://observablehq.github.io/plot/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "5871b027f71a45b0bc0f5d58b2c9b543ab5a87514bc7135afd826ba39e183291",
+      "url": "https://observablehq.github.io/plot/"
+    },
+    {
+      "canonical_text_bytes": 152,
+      "case_slugs": [
+        "twilio-paste"
+      ],
+      "content_bytes": 391810,
+      "content_sha256": "155eacd53c663eec6d2a9988d4c8ac86a75b96c9c9f39ebc56c1d43bee507149",
+      "curl_exit_code": 0,
+      "effective_url": "https://github.com:443/twilio-labs/paste",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "15f56e7ae60c257f9ae8d6e6c277d22f2c5aed586151a093fa3d27a19c062793",
+      "url": "https://paste.twilio.design/"
+    },
+    {
+      "canonical_text_bytes": 77,
+      "case_slugs": [
+        "ebay-playbook"
+      ],
+      "content_bytes": 876103,
+      "content_sha256": "066c26f55b8609e5c7d5f71ad1691caddc1db1ece3aaa0c71c59609edb58b807",
+      "curl_exit_code": 0,
+      "effective_url": "https://playbook.ebay.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "00c93379d4579d6e1568b349cb05bdcc7dcd08687a2b3b0ba5790940dc961919",
+      "url": "https://playbook.ebay.com/"
+    },
+    {
+      "canonical_text_bytes": 122,
+      "case_slugs": [
+        "ibm-carbon"
+      ],
+      "content_bytes": 284328,
+      "content_sha256": "e50b109b1415495d97e22c99ebd123253058a28136ceaa87e417bfd44d1248a9",
+      "curl_exit_code": 0,
+      "effective_url": "https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "1a0c9997ed9ec44075008083053d401dcab2ec8cc2947d30de96f449668d938a",
+      "url": "https://preview.carbondesignsystem.com/building-blocks/core/components/toggle/specifications"
+    },
+    {
+      "canonical_text_bytes": 128,
+      "case_slugs": [
+        "ibm-carbon"
+      ],
+      "content_bytes": 231815,
+      "content_sha256": "5a0285b36324ea8bb433ebe4d59ce1a1f13ee3dea07c8590a642f8df33a5ba23",
+      "curl_exit_code": 0,
+      "effective_url": "https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "8b6a5676533bf8118b5f7e03a3c3c49f3330d65b7067dff81c77b3f48ffed554",
+      "url": "https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies"
+    },
+    {
+      "canonical_text_bytes": 28,
+      "case_slugs": [
+        "github-primer"
+      ],
+      "content_bytes": 215729,
+      "content_sha256": "83d117c019ed805e1f4acfb06a56eb34fc8b2a144e009ecf801a7391fdf30aea",
+      "curl_exit_code": 0,
+      "effective_url": "https://primer.style/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "96b269aa5fb10f26867bcf30210fb9bd0485e5005589f98540965b674b5b9a98",
+      "url": "https://primer.style/"
+    },
+    {
+      "canonical_text_bytes": 46,
+      "case_slugs": [
+        "mozilla-protocol"
+      ],
+      "content_bytes": 101867,
+      "content_sha256": "4d7e3fbbe54cf005dfab2963baa87dea28ab0c84bf94431407f8f3b6aa0301d8",
+      "curl_exit_code": 0,
+      "effective_url": "https://protocol.mozilla.org/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "701a5075a5954c88be07397f451b579b46411720eac661d9a5d9e73b2ac36de4",
+      "url": "https://protocol.mozilla.org/"
+    },
+    {
+      "canonical_text_bytes": 69,
+      "case_slugs": [
+        "rei-cedar"
+      ],
+      "content_bytes": 150100,
+      "content_sha256": "00e6d8eb0bc8a6cbdca6e36771fe407480ec34a84fd813b464e2d9bf33b21072",
+      "curl_exit_code": 0,
+      "effective_url": "https://rei.github.io/rei-cedar-docs/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "97741f0e6919bdc043d1defb11f5c445ab03546df23090ede0800302f2009e55",
+      "url": "https://rei.github.io/rei-cedar-docs/"
+    },
+    {
+      "canonical_text_bytes": 41,
+      "case_slugs": [
+        "adobe-spectrum-2"
+      ],
+      "content_bytes": 22343,
+      "content_sha256": "65c6678da1ccf0ba5e3d37a05fbaaaefb3a47943b356844a5823e63c64b8b86d",
+      "curl_exit_code": 0,
+      "effective_url": "https://s2.spectrum.adobe.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "2595928784705eb09b44b40a3480dc4e5ceb1ccc7446a96ad3197606ca92aacc",
+      "url": "https://s2.spectrum.adobe.com/"
+    },
+    {
+      "canonical_text_bytes": 88,
+      "case_slugs": [
+        "nhs-service-manual"
+      ],
+      "content_bytes": 13779,
+      "content_sha256": "fcfb6c7df8d9ed1e50ebd7f57083ed03e4ca2a894bf13be1fc618eca39491cf7",
+      "curl_exit_code": 0,
+      "effective_url": "https://service-manual.nhs.uk/design-system",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0e5833897ee57d2628ddcc81da3c418f4eb62f6b11a12daac033ef053e9ef03a",
+      "url": "https://service-manual.nhs.uk/design-system"
+    },
+    {
+      "canonical_text_bytes": 58,
+      "case_slugs": [
+        "shopify-polaris"
+      ],
+      "content_bytes": 314162,
+      "content_sha256": "ca2ae2dbe90dc60d69d7ac204ab3a17c7a3b1f3767397a0bb70f1ace541bd3e9",
+      "curl_exit_code": 0,
+      "effective_url": "https://shopify.dev/docs/apps/design",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "83b761ceb7e427f4043139856afba1bb6ce891e7e93321230ea71932deb91ddb",
+      "url": "https://shopify.dev/docs/apps/design"
+    },
+    {
+      "canonical_text_bytes": 45,
+      "case_slugs": [
+        "slack-brand"
+      ],
+      "content_bytes": 138559,
+      "content_sha256": "824d0a43209717591a3df5bc8070af5f4da779dfd171c1a2428ba309f3ab06e9",
+      "curl_exit_code": 0,
+      "effective_url": "https://slack.com/media-kit",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "70c616fcd89917fc036f8deea20894a0ab5535f3387c962b0264fb794827003f",
+      "url": "https://slack.com/media-kit"
+    },
+    {
+      "canonical_text_bytes": 61,
+      "case_slugs": [
+        "adobe-spectrum-2"
+      ],
+      "content_bytes": 13620,
+      "content_sha256": "3c4ce3230be0a47242d14f5b100574447a0faaa72496af64e7ef80762b5721d2",
+      "curl_exit_code": 0,
+      "effective_url": "https://spectrum.adobe.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "ca742868d7ecfa7926f05b376c7549dfb30531e7818558afa7f329e85116c75f",
+      "url": "https://spectrum.adobe.com/"
+    },
+    {
+      "canonical_text_bytes": 74,
+      "case_slugs": [
+        "stripe-marketing"
+      ],
+      "content_bytes": 661303,
+      "content_sha256": "a3e5d8ef8e32f1d70d853a32f46f3d4bdb074a2a0af5ab4304c7073f873fc996",
+      "curl_exit_code": 0,
+      "effective_url": "https://stripe.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "457e791248b4f226f48a753813de6b8d80a926d6e7fc29d844132db29876f05c",
+      "url": "https://stripe.com/"
+    },
+    {
+      "canonical_text_bytes": 28,
+      "case_slugs": [
+        "tamagui-native"
+      ],
+      "content_bytes": 450143,
+      "content_sha256": "9be38221391d55960c3d7c63f9aa3de251b21bac0ce337760e877c1227c467ca",
+      "curl_exit_code": 0,
+      "effective_url": "https://tamagui.dev/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "b5d3f1a09eedf055f84dcf16f418fff426a9e70dc85341848aa7634373d2b6cc",
+      "url": "https://tamagui.dev/"
+    },
+    {
+      "canonical_text_bytes": 38,
+      "case_slugs": [
+        "guardian-source"
+      ],
+      "content_bytes": 50876,
+      "content_sha256": "33e52f32c88953be619cb9ebb1451ebe464aeba8eefc98ab784164891bb3e799",
+      "curl_exit_code": 0,
+      "effective_url": "https://theguardian.design/2a1e5182b",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "6cc2812d47ce739be70b05acf3a8069ef26a3ed225bce8b99a792bb650774f41",
+      "url": "https://theguardian.design/"
+    },
+    {
+      "canonical_text_bytes": 37,
+      "case_slugs": [
+        "thumbtack-thumbprint"
+      ],
+      "content_bytes": 73360,
+      "content_sha256": "e1799b93651ddd1210fd245f5d92a6bcc368c133a977ddd747fae96b3f44bd0a",
+      "curl_exit_code": 0,
+      "effective_url": "https://thumbprint.design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "18923bc997b1f821bb77ef42f5ac5943d09bca9d96df26f1f1dbaae9ffe9bdb5",
+      "url": "https://thumbprint.design/"
+    },
+    {
+      "canonical_text_bytes": 43,
+      "case_slugs": [
+        "vercel-geist"
+      ],
+      "content_bytes": 204949,
+      "content_sha256": "79b3c116b1f3729b9646defe87ff9dde4fdac7c94b41e0042bd6ded185d02ce4",
+      "curl_exit_code": 0,
+      "effective_url": "https://vercel.com/geist/introduction",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "fbbb43e6822b3b8ed28a390b20bad76730460235718bbf967fce29331bf1c5c0",
+      "url": "https://vercel.com/geist/introduction"
+    },
+    {
+      "canonical_text_bytes": 43,
+      "case_slugs": [
+        "monday-vibe"
+      ],
+      "content_bytes": 12962,
+      "content_sha256": "88a707cae96f45c8800108461fdca6719544adceed1b544ebcd3a16014688484",
+      "curl_exit_code": 0,
+      "effective_url": "https://vibe.monday.com/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "c9df02c17f020f2bb112c129cfc53a5c4199b1bdb49c59c33485f87ae1abfa02",
+      "url": "https://vibe.monday.com/"
+    },
+    {
+      "canonical_text_bytes": 75,
+      "case_slugs": [
+        "wise-design"
+      ],
+      "content_bytes": 39064,
+      "content_sha256": "4cf8ad094314830ca280c9a98c855756cde9049fd9451fe32b8e0f10d22dd485",
+      "curl_exit_code": 0,
+      "effective_url": "https://wise.design/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "b6ccfa77af208ed9eb3418a6dbaeece17eb3aa1330ff2e4ce0191f75c68f21a0",
+      "url": "https://wise.design/"
+    },
+    {
+      "canonical_text_bytes": 45,
+      "case_slugs": [
+        "bbc-gel"
+      ],
+      "content_bytes": 225620,
+      "content_sha256": "3b674d4dc7cfd26c4d7ed9affaa8837ac5ea1b531bb677e4f108440e8d69abf2",
+      "curl_exit_code": 0,
+      "effective_url": "https://www.bbc.co.uk/gel",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "f16c64221d429e73e1dbabfd088a8b59ef274577275f2a3239ecf2e13a6ea639",
+      "url": "https://www.bbc.co.uk/gel/"
+    },
+    {
+      "canonical_text_bytes": 64,
+      "case_slugs": [
+        "salesforce-slds-2"
+      ],
+      "content_bytes": 99811,
+      "content_sha256": "c8da4d851c0c0e1e7ae8d9ed945cd973381c88077fc1d8ad94b12b2614a62f49",
+      "curl_exit_code": 0,
+      "effective_url": "https://www.lightningdesignsystem.com/2e1ef8501",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "5d5037764696f20e669ee024388bf8eaa60e06b01b8b73159026a262f68bee3a",
+      "url": "https://www.lightningdesignsystem.com/"
+    },
+    {
+      "canonical_text_bytes": 38,
+      "case_slugs": [
+        "patternfly"
+      ],
+      "content_bytes": 130897,
+      "content_sha256": "bc6b1fdb52c5a579bb5af2857a8038b365f356e87f461784f9021fd054285bd6",
+      "curl_exit_code": 0,
+      "effective_url": "https://www.patternfly.org/",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "9441fdf1dac8897a613316d0dafc0ad90c8c2315575295ee68ca495ab308a51d",
+      "url": "https://www.patternfly.org/"
+    },
+    {
+      "canonical_text_bytes": 50,
+      "case_slugs": [
+        "skyscanner-backpack"
+      ],
+      "content_bytes": 2152,
+      "content_sha256": "5656269720ae985efb3a136fb4f502cecb7cb735a8685313dcc1d9dbfee9405e",
+      "curl_exit_code": 0,
+      "effective_url": "https://www.skyscanner.design/latest",
+      "error": null,
+      "hash_kind": "canonical-source-identity-v1",
+      "http_status": 200,
+      "pass": true,
+      "raw_response_sha256": "0adb146602152ebcd298bee2e1550b15c9cd59b0139a8be82913013097b3860d",
+      "url": "https://www.skyscanner.design/"
+    }
+  ],
+  "schema_version": "1.0",
+  "status": "pass",
+  "stored_hash_mismatch_count": 0,
+  "stored_hash_mismatch_slugs": [],
+  "unique_url_count": 80
+}

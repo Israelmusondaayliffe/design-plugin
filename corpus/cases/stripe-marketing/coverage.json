@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using gradients as a substitute for product proof.",
+  "archetype": "premium-technical",
+  "brand_posture": "Large global claims are anchored by specific payment and developer evidence. Geography, platforms, and economic participation become visible information structures.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Gradient and color atmosphere frame the story while transactional states remain semantic.",
+  "components": "Gradient and color atmosphere frame the story while transactional states remain semantic. Geography, platforms, and economic participation become visible information structures.",
+  "confidence": "medium",
+  "container": "Global infrastructure narrative with code, payment UI, and restrained spectral atmosphere. Gradient and color atmosphere frame the story while transactional states remain semantic.",
+  "failure_modes": [
+    "Using gradients as a substitute for product proof.",
+    "Inventing economic metrics or customer outcomes.",
+    "Mixing code colors into general controls and decoration."
+  ],
+  "flows": "Destination test: Infrastructure companies with real technical and economic proof. Evaluate the relationship across evaluation and conversion, and transactions and checkout.",
+  "forms": "During evaluation and conversion, and transactions and checkout, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Large global claims are anchored by specific payment and developer evidence. Interface, code, diagrams, and numbers show different parts of the same system.",
+  "imagery": "Global infrastructure narrative with code, payment UI, and restrained spectral atmosphere. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "commerce, technology",
+  "interaction": "Geography, platforms, and economic participation become visible information structures.",
+  "lane_fit": "Lane assignment: Infrastructure companies with real technical and economic proof. This case earns one brand, editorial, portfolio, and marketing quota credit through technical ambition and layered product proof.",
+  "layout": "Broad technical story alternating between diagrams and exact proof.",
+  "motion": "Smooth system transitions that remain skippable.",
+  "navigation": "Large global claims are anchored by specific payment and developer evidence. Broad technical story alternating between diagrams and exact proof.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Interface, code, diagrams, and numbers show different parts of the same system. Geography, platforms, and economic participation become visible information structures.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "technical ambition: Large global claims are anchored by specific payment and developer evidence.",
+    "layered product proof: Interface, code, diagrams, and numbers show different parts of the same system.",
+    "controlled spectrum: Gradient and color atmosphere frame the story while transactional states remain semantic.",
+    "global scale narrative: Geography, platforms, and economic participation become visible information structures."
+  ],
+  "source": "https://stripe.com/",
+  "spacing": "Large global claims are anchored by specific payment and developer evidence. Interface, code, diagrams, and numbers show different parts of the same system.",
+  "states": "Geography, platforms, and economic participation become visible information structures. Smooth system transitions that remain skippable.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "infrastructure companies with real technical and economic proof",
+    "global commerce platforms joining developer and executive audiences"
+  ],
+  "surfaces": "Gradient and color atmosphere frame the story while transactional states remain semantic. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Interface, code, diagrams, and numbers show different parts of the same system.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "early products without enough evidence to support a large-scale narrative"
+  ],
+  "visual_thesis": "Large global claims are anchored by specific payment and developer evidence. Interface, code, diagrams, and numbers show different parts of the same system."
+}

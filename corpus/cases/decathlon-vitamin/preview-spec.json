@@ -1,0 +1,14 @@
+{
+  "layout": "responsive category grid narrowing into product decision structure",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct variant and fulfillment feedback",
+  "pattern": "multi-sport catalog with technical fit, price, and fulfillment hierarchy",
+  "primary": "#f5f7fa",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#3643ba"
+}

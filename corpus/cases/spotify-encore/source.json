@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "0290a0eef673aafc5144a52fd3be2a6dc64149a6aedba876769c25303adc15a1",
+  "effective_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "spotify-encore",
+  "source_version": "live-public-source-2026-09-01:0290a0eef673",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

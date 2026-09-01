@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Letting agencies fork behavior while keeping only shared colors.",
+  "archetype": "service-utilitarian",
+  "brand_posture": "Common components and content patterns reduce variation across agencies. Semantics, focus, contrast, and form guidance are part of the baseline.",
+  "category": "onboarding-forms-settings-flows",
+  "color": "Headings, summaries, lists, and actions support quick public-service scanning.",
+  "components": "Headings, summaries, lists, and actions support quick public-service scanning. Semantics, focus, contrast, and form guidance are part of the baseline.",
+  "confidence": "medium",
+  "container": "Mobile-ready state service page with plain hierarchy and accessible form action. Headings, summaries, lists, and actions support quick public-service scanning.",
+  "failure_modes": [
+    "Letting agencies fork behavior while keeping only shared colors.",
+    "Building desktop-first forms that require horizontal scanning.",
+    "Using generic headings that do not preview task outcomes."
+  ],
+  "flows": "Destination test: Government portals spanning many agencies. Evaluate the relationship across service completion, and browsing and discovery.",
+  "forms": "During service completion, and browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Common components and content patterns reduce variation across agencies. Tasks remain usable on small screens and constrained connections.",
+  "imagery": "Mobile-ready state service page with plain hierarchy and accessible form action. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "government, general",
+  "interaction": "Semantics, focus, contrast, and form guidance are part of the baseline.",
+  "lane_fit": "Lane assignment: Government portals spanning many agencies. This case earns one onboarding, forms, settings, and flows quota credit through statewide service consistency and mobile public access.",
+  "layout": "Single public-task spine with responsive agency context.",
+  "motion": "Minimal direct feedback suited to constrained devices.",
+  "navigation": "Common components and content patterns reduce variation across agencies. Single public-task spine with responsive agency context.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Tasks remain usable on small screens and constrained connections. Semantics, focus, contrast, and form guidance are part of the baseline.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "statewide service consistency: Common components and content patterns reduce variation across agencies.",
+    "mobile public access: Tasks remain usable on small screens and constrained connections.",
+    "plain information hierarchy: Headings, summaries, lists, and actions support quick public-service scanning.",
+    "accessible defaults: Semantics, focus, contrast, and form guidance are part of the baseline."
+  ],
+  "source": "https://designsystem.webstandards.ca.gov/",
+  "spacing": "Common components and content patterns reduce variation across agencies. Tasks remain usable on small screens and constrained connections.",
+  "states": "Semantics, focus, contrast, and form guidance are part of the baseline. Minimal direct feedback suited to constrained devices.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "government portals spanning many agencies",
+    "mobile-first public information and service tasks"
+  ],
+  "surfaces": "Headings, summaries, lists, and actions support quick public-service scanning. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Tasks remain usable on small screens and constrained connections.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "highly branded entertainment products with no cross-agency consistency need"
+  ],
+  "visual_thesis": "Common components and content patterns reduce variation across agencies. Tasks remain usable on small screens and constrained connections."
+}

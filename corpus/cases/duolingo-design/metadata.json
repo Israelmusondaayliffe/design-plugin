@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "creative-expressive"
+  ],
+  "avoid_for": [
+    "high-stakes workflows where character animation could weaken seriousness or delay action"
+  ],
+  "best_for": [
+    "learning products that need motivation and repeated return",
+    "consumer onboarding where feedback can build confidence"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "learn-progress",
+    "onboard-configure"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "illustration-led",
+  "name": "Duolingo Design",
+  "platforms": [
+    "web",
+    "mobile",
+    "ios",
+    "android"
+  ],
+  "product_types": [
+    "marketing",
+    "native-app",
+    "onboarding"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "character-led motivation",
+    "rounded physicality",
+    "feedback as reward",
+    "lesson-first hierarchy"
+  ],
+  "slug": "duolingo-design",
+  "source_kind": "public-design-system",
+  "source_name": "Duolingo Design",
+  "source_url": "https://design.duolingo.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Mascot and illustration behavior make progress feel social rather than abstract. Type, controls, and shapes share approachable weight and clear touch affordance.",
+  "typography_character": "expressive-display"
+}

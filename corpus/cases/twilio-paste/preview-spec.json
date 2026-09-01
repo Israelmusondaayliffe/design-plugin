@@ -1,0 +1,14 @@
+{
+  "layout": "adaptive configuration grid with help close to action",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct feedback with announced state changes",
+  "pattern": "communication setup flow with exact labels, visible validation, and themeable states",
+  "primary": "#f4f4f6",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#f22f46"
+}

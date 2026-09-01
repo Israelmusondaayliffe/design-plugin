@@ -1,0 +1,14 @@
+{
+  "layout": "single public-task spine with responsive agency context",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "minimal direct feedback suited to constrained devices",
+  "pattern": "mobile-ready state service page with plain hierarchy and accessible form action",
+  "primary": "#f8f8f6",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#046b99"
+}

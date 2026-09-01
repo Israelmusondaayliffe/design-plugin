@@ -2,7 +2,7 @@
 
 Status: Approved 2026-08-30
 
-Canonical detailed plan and recovery ledger live in Notion under `Design Plugin — Build Hub`. This repository copy is intentionally concise and records the non-negotiable sequence needed to recover after context loss.
+The canonical detailed plan and recovery ledger live in the Design Plugin Build Hub in Notion. This repository copy is intentionally concise and records the non-negotiable sequence needed to recover after context loss.
 
 ## Product
 
@@ -100,17 +100,18 @@ Canonical corpus source: version-controlled Markdown and JSON. ChatGPT Site is t
 - Waves 0 through 9: Qualified.
 - Wave 10 host packaging and public repository publication: Passed.
 - Public repository: `https://github.com/Israelmusondaayliffe/design-plugin`.
-- Public root candidate: `5b5dccdd2e2405a46e60643914d2ccce46368b0f`, tree `9f91c8747b5f59fc69763c61509ca3d95ae0fa9d`.
-- Public CI: Run `33353752204` passed 204 tests on Python 3.11 and Python 3.13, both host builds, 125-file shared-core parity, deterministic package checks, corpus validation, catalog generation, lifecycle simulation, and bundled entrypoint checks.
-- Isolated host qualification: Temporary Codex and Claude configuration roots installed the prior test version, updated to dev.10, discovered components in fresh processes, verified cache parity, removed registrations, and were deleted. No credentials were copied and active user registries were unchanged.
-- Activation boundary: Static host qualification exposed Codex routing descriptions and Claude components, but neither host has harness-independent model-selection proof. A fail-closed 20-case-per-host runner and regression suite now exist. Clean qualification is blocked because no separate preauthenticated Codex home or bare-compatible Claude API-key path was supplied. Codex CLI 0.151 JSONL also lacks an accepted resolved-model field in the current evidence set. Two Claude method canaries used the existing subscription login, so they received no acceptance credit. R04 remains partial.
-- Acceptance boundary: R22 remains partial until Wave 11 benchmarks and later acceptance gates pass.
-- Historical pre-Wave 10 evidence remains in the private archive with no public locator.
-- Next: Supply the two isolated authentication paths, close the Codex model-binding schema gap, pass all 40 R04 selection runs, then begin Wave 11 personal alpha at 60 cases plus three benchmarks. Live plugin installation is not approved. Qualification restrictions are absent from the distributed runtime; normal multi-plugin compatibility is outside the R04 evidence boundary.
+- Installed host baseline: Public commit `41d849aeef0b0104cf0fe6ff1e0420843dbf172f`, version `0.1.0-dev.10`, is installed in Codex and Claude Code. Installation does not count as harness-independent selection proof.
+- Wave 11: Active by explicit user authorization. The personal-alpha corpus milestone now contains 60 independently accepted original cases in the exact 15/15/10/8/7/5 lane allocation.
+- Corpus evidence: 80 of 80 owner URLs pass, locator mismatches and redirect collisions are zero, the originality audit passes, and no source binary assets are stored.
+- Local Site: Qualified against the accepted-only 60-case public catalog at desktop and mobile widths. Search, all six lanes, deeper filters, progressive analysis and evidence, source retrieval dates, URL state, and comparison of up to five cases pass. The Site remains undeployed.
+- Local regression suite: 242 tests pass under the locally available Python 3.9.6. A fresh two-version public CI result remains pending for this Wave 11 candidate.
+- Activation boundary: R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. The probe restrictions are not plugin runtime restrictions and cannot reject an ordinary installation.
+- Acceptance boundary: Wave 11 remains partial until all three benchmarks pass. R22 remains partial until those benchmarks and later acceptance gates pass.
+- Next: Publish the independently reviewed corpus and local Site source to the public and private repositories, pass public CI, then run the three approved benchmarks. Public Site deployment still requires separate authorization.
 
 ## Benchmarks
 
-The persistent benchmark suite lives in Notion under `Design Plugin — Validation Projects`:
+The persistent benchmark suite lives in the Design Plugin Validation Projects section in Notion:
 1. The House of Curiosity Website.
 2. Forensic Reference Extraction to Original Design System.
 3. Curiosity Atlas: AI Visual Production OS.

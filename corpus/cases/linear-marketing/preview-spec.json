@@ -1,0 +1,14 @@
+{
+  "layout": "staggered proof windows along a narrow story column",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "short staged reveals tied to section entry",
+  "pattern": "dark product narrative with cropped interface evidence and one restrained luminous focus",
+  "primary": "#0c0d10",
+  "radius": "10px",
+  "schema_version": "1.0",
+  "secondary": "#8b93ff"
+}

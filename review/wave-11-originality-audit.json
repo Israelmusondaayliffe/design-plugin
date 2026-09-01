@@ -1,0 +1,462 @@
+{
+  "banned_phrases": [],
+  "bound_files": [
+    "DESIGN.md",
+    "metadata.json",
+    "evidence.json",
+    "coverage.json",
+    "preview-spec.json"
+  ],
+  "case_bindings": {
+    "adobe-spectrum-2": {
+      "DESIGN.md": "8dbd6769ccb7208fe1508ab16c4d5580d40c4485d63bc638d8cd5f178157a469",
+      "coverage.json": "3c615759eb9bc5aa08c6096e815c5669e25d0b7570e30b95a86f3172ae83b928",
+      "evidence.json": "f756161ee26f8eb1b1bcf8a265f9238bb50c4bbd26cab97c93630938eb6420f9",
+      "metadata.json": "cca04c54f16d4505bb8b4aa2f59efcd3169289529d2ed9bcc5b5f046fd967008",
+      "preview-spec.json": "38b01e5e06c5fd1c94f63d33452ef8b8278a103125cc37d1eb26e011e469281e"
+    },
+    "android-mobile": {
+      "DESIGN.md": "7b5903c707e1cbe5930dcab902e6c7721b33d0958408f5dd5c350e740d1b48d0",
+      "coverage.json": "7ceb5af30b920f0c0985395027810e4ab93c33c0c0774117d25b8cd0dd80d59b",
+      "evidence.json": "5ffb5adc3a20a74ef40d0c490ccb92ecca81800e0502d83d0a9babb4de086dbd",
+      "metadata.json": "ee6f07d4519bea312b15702308d9ca067951fe9218807634eeaf5e4ca20fe651",
+      "preview-spec.json": "38c29ba5816c576abae2f3d24f120d20052e265bcafe3e8e6cac8b1428f04864"
+    },
+    "ant-design": {
+      "DESIGN.md": "7f34ec8f81aac8737b3dde59f67f3cbcbd4b3522e9fa715776421bb4003fbbe3",
+      "coverage.json": "9562f12625ba29c69e35faf69efc29ef69c96c91563dd381e3f1bd025b1315e1",
+      "evidence.json": "58a1fb85d3f6d51db7ac426af2efd87201ad1dc5436efefba61c326868c3deb9",
+      "metadata.json": "245002ab1f3da05b195d2d45bb59e1ff6a66f568e78b331d88c46aba6dfe3505",
+      "preview-spec.json": "ecad47cf532b393df7c31b1db6d8e07b534db244a2a96d38e0ef3c9fd089624e"
+    },
+    "apple-hig": {
+      "DESIGN.md": "8da3a85e644c594d0daff2a6cf0688e32fd9c8c8ced34ec2eca3a329698dcc8d",
+      "coverage.json": "faad5bc8aa04e8646cbd68b068e0de61931f7221d8a23bd7f2273a2cb4f7436a",
+      "evidence.json": "5143957b1202005b551a27e25d476d3c787840049efbdbb27295d6196cb46e72",
+      "metadata.json": "ab0b55cf95f37653fd4f94a6ffd4bd434d42805b851fccfcdf252fa3dd8c61fe",
+      "preview-spec.json": "9a8aae191c1fe877a7d6c3edc67321376fb82e4f5e174305d60d62ccf4d2c8ec"
+    },
+    "apple-ios": {
+      "DESIGN.md": "f259dadf9c01323541cebc9e986b234cecc0a918eee95fe7e086e78438685126",
+      "coverage.json": "5c80ffb57b0d179b72bb1752b303d98de8bebf2f1df8c38ae7040055b452c47c",
+      "evidence.json": "49174b31a7fd4746635b5d76a075a83c3143aacbf9fa93fb5f2c9c9aeb36a5d6",
+      "metadata.json": "8118f5cc12c511a40feddc73a9a59fdcc1248dd2bc157e0badb06975c9bd735f",
+      "preview-spec.json": "c2aa35a6be5e169f9540b7badaa241fe0b894969d0e3725dd3f6adfb9f19e8dd"
+    },
+    "apple-ipados": {
+      "DESIGN.md": "3ed44c95ebbaef2f1f9e8e72543b80cc537afc38d46b1c05ad57c01ca6332fef",
+      "coverage.json": "8499d79ea61a6f7d382f3d877889bbff131f9bf4b0eb83d006fb91b900f49984",
+      "evidence.json": "a52f2ff1d582b7b922af520fdbb1c9bf4c581049a643b240d6938cfa5948a97c",
+      "metadata.json": "b4d47c33bd7b437128611bdf254ab24a2de0ff881f33933ec595357af78adad1",
+      "preview-spec.json": "0b7b6d1f69e4a9e162b3c11b1aeb7ba829315ba892061ec8d2c84a4b4ba095cd"
+    },
+    "atlassian-design-system": {
+      "DESIGN.md": "5640774a47511ce5698e1d83234c5ed3e6c922f45a0b71cc277d5ac6d6fedac3",
+      "coverage.json": "238ed1ca7c52ce6c2b2814eb069897b3c9d83775c54b8031bef513cfa0561590",
+      "evidence.json": "4dc7ba6b50bde6331a6aa417ee1ae0ed3e3c553a00e944eab75272713e501424",
+      "metadata.json": "f4b5686e95908a10c2dc08edc685a8af05f20585b353e244ccbe7e7ada2f4044",
+      "preview-spec.json": "8dfbd488d9d6a1ade2d6c034d8a540d5824dc12a0cd6f33035aaa15b15082159"
+    },
+    "bbc-gel": {
+      "DESIGN.md": "16d4541d7fb367182b80fc9b8bc4a2c569de5a23ca5d341c8115ad85d94f547e",
+      "coverage.json": "b23dd248ad656998a1ebb9e62d25cc466a7143d442178ce21f263886fdf39b6c",
+      "evidence.json": "6216d969cc602a942a8f2d3eb29b97e1279f90e0ff078d2cb98f4d42c58dcf2d",
+      "metadata.json": "cc71f9d7b715b67d0d41a1ef038fd532d7ac94daf3bcf7e490f1503078c19504",
+      "preview-spec.json": "d364862770fc27ef1c6987a4f9a8a6066bd54077f7fc917fef0d214487cd05b7"
+    },
+    "california-design-system": {
+      "DESIGN.md": "f717fd08ad39e0b463020d4b9b7a15c2e915b508f572da782626fe3fce68d094",
+      "coverage.json": "22a10bc9bef317e96a6d8f01450276b314b0f6851c38555e35626a00ab24f399",
+      "evidence.json": "e794e1d97762659ac0e992b5f16e81366f6398f5ba2a8b8e66ccde4d3ecd797a",
+      "metadata.json": "cebb6e617e8d411c5aef779688d73787d8eee87467be2bae6b0acfdccea2e1e0",
+      "preview-spec.json": "004fd00c506726a400340a5be64a426c3f856056d87fda730e58fc5a06fba22b"
+    },
+    "cms-design-system": {
+      "DESIGN.md": "2419ba9ef3c3dd92375e83f5fe7d6c647be1201d590afd0a2fab08a3920566c8",
+      "coverage.json": "89cbe33f5b0424d4ced66f3bfcd9cc11bc05e7ca622a32b3d379b3211db281ce",
+      "evidence.json": "19dcd849a4d4ade6323df73c34bfad0f0ffa88801706e03b0676a7335d61c189",
+      "metadata.json": "90c700d48c3081bade0589239b91526ce37dc53c78c3b229f3a0b80980768925",
+      "preview-spec.json": "e935e5dec02672decdb7e6f8598f41b7cbadb81e6f84a45760aea6f993497d7d"
+    },
+    "decathlon-vitamin": {
+      "DESIGN.md": "fed323584d0601958b2b3c380d2d62586b138d653163cea80a80fa15ef84018b",
+      "coverage.json": "52ddd949361c8ecbf79c8b964bfc9026bc10ed78f78106a5e4c3a6ad7bcd24f3",
+      "evidence.json": "ccdf43c2d94e1c7827a0528f39659c82d5b96ec21dd6b6d90719f96c784bd4b1",
+      "metadata.json": "45d72b1fdcb9e3396cacd35969841cbdd8cb8ee1e95581d41f29885bf6384eaa",
+      "preview-spec.json": "2e4b6484a72f18eb99b463acc276d1b85c398a9bc325c15ca30802c04a365958"
+    },
+    "dropbox-brand": {
+      "DESIGN.md": "cce366b91127c1cf87c24ac1b041d88d2ea2bccf28f300ddaca4da5cb975d0df",
+      "coverage.json": "7aa161798ef309e29709d4b4515352a4a75e199650c1e19e24f03d1d3bd5c6dc",
+      "evidence.json": "f9050b2e4aa4002dcbf51f5536f561512662e3eb0bc644bfb00b4812a0bfa120",
+      "metadata.json": "c46f07d4432173ed150e700d675e2d569afa8f2fa371ff28050141917e363620",
+      "preview-spec.json": "070537b7c3af54fc8d68d1dc86b0cd949a3a0b3a7801c9984ff5a9980c5ac304"
+    },
+    "duolingo-design": {
+      "DESIGN.md": "24fcdb652c43b671d6fca0e37c51dbb557fe6b2406564ee455ef8230f4a9edd3",
+      "coverage.json": "a6123d0f1d03a6bc209e7e5694665a1334d37ecfd8d10701495992535d04b4f4",
+      "evidence.json": "4c81b181d3194c1fdfdc4f1339f395b1286baf8370de309c87e1bf9f1aa569f9",
+      "metadata.json": "e1313e1b1ec74b0662e95dc75f6801b1a3981cfa3314bde3c23ef0a0c2fde14f",
+      "preview-spec.json": "48c531fc28b11666dc0e9119d68ce1edda664e146023f20a28dfe9400dd2edb3"
+    },
+    "ebay-playbook": {
+      "DESIGN.md": "a4f8d8a405135f296b7c6de452458ecb65ca0d0eb956054fd83559b446ac7d87",
+      "coverage.json": "1cf644aa8635dae430151b6689b08eae15e7f9897686d00526f3fdd31ca3b4c8",
+      "evidence.json": "84d71b8b3c2c85618cc093ab0b444d0dee1355da8b55f5643f34f429d4295999",
+      "metadata.json": "71a46e878b68980949fed3eef5f88484864088889285032c776b716d6cb45a1a",
+      "preview-spec.json": "5aba00e12a59d6e8ae95fa604906f6ebb320f592de05a5f53dfb4b3ee95e3349"
+    },
+    "elastic-eui": {
+      "DESIGN.md": "52a2fbb46da14ef045ad43602ac259b873a3df2365503879f1163140ab73e25b",
+      "coverage.json": "c53e50685b9a4e0acdf38cfca8af22d0364d9e13af542ae3a512c78e71f72e56",
+      "evidence.json": "01a7bacba36a3e270c7c21164f93437490c78ae7838d2409255a8f888a3dad53",
+      "metadata.json": "9ca964fa5796b8f5ea20419011278141cd3a0f4039687e629a4622a93e8e8fdf",
+      "preview-spec.json": "0b7ec65955aa5ad082501e8c6735d51ce674e5d9b2c3c8680f75d0d2ac7cac8f"
+    },
+    "framework7": {
+      "DESIGN.md": "b2a3a6cdb27c59a006334435264aeddb3d22713cf202fd8be57c2e608f14f682",
+      "coverage.json": "b250234f516df4156efeb79368564b36e11b2059bff91de10d29888e8b4b8f34",
+      "evidence.json": "808df240ccc165c15e056b88ff4aed039181472c9df53b9ab7e9e920132a1de4",
+      "metadata.json": "f2d03d5c073f2f6ee490a0bb29b93be11c8fa891745e24061d53d9f6f6964705",
+      "preview-spec.json": "721d5fe494fe9942e68a89968b91b094b7a495f6f480263b01c9126f84139766"
+    },
+    "github-primer": {
+      "DESIGN.md": "1e4dfa9183dd1397b602475aa75bdfbc8d8ee8636a1483a5fe2b42401e81fb7d",
+      "coverage.json": "1075837de76e96bf1fb85a6e0ebe4cfbd4b56231c30b3cd4d9ff859c948a4bca",
+      "evidence.json": "cbf4da42d6771dcc6119db98d4987ff18d64355fff11758c9d942be7016b8508",
+      "metadata.json": "ef47afb543654cbc2a7f2aff7d95070b22ac319632179b244687970e601c93af",
+      "preview-spec.json": "ceb6dfbacffc5bcc1febb74b9dbb71abdaaa515b8ee2341001ee8ef95d4cb4ed"
+    },
+    "gitlab-pajamas": {
+      "DESIGN.md": "db0e2c371d3e80ba00134f3640e3d4dd642c9d0cf79668878da0ac7a88706471",
+      "coverage.json": "ca15ea9bd461b65300dcdc1566bc8e8cefda66a2d405563a5037375d24394174",
+      "evidence.json": "892df5fe3017be8c9d9599adfcf8d1a4eca5b483411caebe31bd996146c8eaf2",
+      "metadata.json": "3bedc1f0e8b919f0906753d8044cd4e2e8a3a0729a23c0491ea0b4f52b47cfff",
+      "preview-spec.json": "49ce0aebde09968aa5e5dd8048921870c6bd5be7b57554a9bbab7f9abdfb3137"
+    },
+    "govuk-design-system": {
+      "DESIGN.md": "00be9716bb60e8b6c197427a9b6a634402ebb61db3c63dfb27959917c75f9f3a",
+      "coverage.json": "bf01bd3193de595cf7e1de3fd04de1f571feaa18adb38774f5ed8f8a23a1c90b",
+      "evidence.json": "cf2b67146951939faed499c4e749db56c6bcfd8e25afc09024f3a36b819d120f",
+      "metadata.json": "372c52d6c5721e05168dc426cfc05586ffd23c705f92b4339fc919ad71b800e9",
+      "preview-spec.json": "10efc02fb8e5f922e90bf17ff5b236ec998c299ddb5f489c52db56d42c8b5431"
+    },
+    "guardian-source": {
+      "DESIGN.md": "30a34b97e7ccb87612d9d63f568dd4153238ed5dc0920d716f8a21b49f15ddfe",
+      "coverage.json": "1845fa40ac30ed722a4bef404c4726a8a5a3ea906bbc4a658d51b2b4643263d4",
+      "evidence.json": "c66ec4b90102400475d439b5b18d1eb21c8e59d8ff3ae3b5dd5cc3ce3383ccc3",
+      "metadata.json": "7113efa9fb2ed2d3a8c5fbcb02fce126a092cc9b376f9055228caff8345ae940",
+      "preview-spec.json": "9856ffc5056ac864b3fe550f65e610039754c3757f8018c2d2ef8b2e49410890"
+    },
+    "ibm-carbon": {
+      "DESIGN.md": "137322afb6126ea9cef01f2952892890d466996e8deb5f7aad384aa31c854ccb",
+      "coverage.json": "0c4c0d1cbe0897bcca897554ae92a5ce63dfc6b7770e07f6cd24acf7ced70265",
+      "evidence.json": "7560e5cb89de334d1cec740a59fb0e04bae54fa470c03d5667822c6ac860cca4",
+      "metadata.json": "77758df0564a27d27f2ea3b8eb17a12c0b19903cda632274384ecc6c77841d5d",
+      "preview-spec.json": "15b146a53ecd180b90edce5d0938916e1aedf2262f10ba2fc9f01f1b809d462d"
+    },
+    "ionic-components": {
+      "DESIGN.md": "90bb4c52a7845a7e7e0ca1f958e170298c5b293c9b3435f470140fc5c3ac94e0",
+      "coverage.json": "fa7f6dfb64600c4f7f3dc4a1cca94bd5aece889e1e2bc9dfb7d7d0ce851f9e39",
+      "evidence.json": "012c2893c235130c3ecfd20884864a38246cd0c5f4bd4ccf679ad68391f46421",
+      "metadata.json": "a2782a5c4b30ff0c547b8bf4efe4ac3832fd72ba0ee139ea04e8a6102e380545",
+      "preview-spec.json": "218cd0c35a4584cdf1eca400ed3e6aa9b29d6b375d51f6989d4ed9086fd58a68"
+    },
+    "kiwi-orbit": {
+      "DESIGN.md": "a9d2341143c983709284dfe1b223d2fc6157cf9d0e450ee83b00d9778f815dde",
+      "coverage.json": "db963201186455df561f17d0fce42b4bcc0b041bcc4fc0de5d58b0b842661a73",
+      "evidence.json": "3491e8d46c00c539b1e8725646cc558889dc3464676e0182058e92c043e9b083",
+      "metadata.json": "ff14e2a59dd61f94024f462586b80b6a02e408cb39a3770b5b7698e40737e87e",
+      "preview-spec.json": "91b4c02ce246cfcaa576f2a7863998a1cee1ad9bf7e5be880702a6d84e905b2b"
+    },
+    "linear-marketing": {
+      "DESIGN.md": "9a20d86e7a262148b31d11f7c84cdb77ea1eac1b5cc757f6a0dd0ea17e558c97",
+      "coverage.json": "9377891a1685840b46b25a2ac17c2fc3bb9903b887811d8fd812e362641c7624",
+      "evidence.json": "ce066a2a638711c35f688f61631eb58c967887e2c133fa4db995018e60ecabf1",
+      "metadata.json": "6c45ff67ff5863f65df1a65d7cf2780776db293d50d5d73fc9a947203a721835",
+      "preview-spec.json": "7c9b8ca2d4a46f1a89088a3b1873434bc5856032dc75ab99e756595bc8a01502"
+    },
+    "mailchimp-brand": {
+      "DESIGN.md": "637e00429bc5383267cf74b2bae94f86a50aa4f59a64e973b0fc48f79d4fe811",
+      "coverage.json": "4639dcdc37b40d1b0d423eedec082537e73d366a1b4142da60c74fd45fd0c219",
+      "evidence.json": "e4e874717594f96b9b3d11bece04fc203f23735bb90995132dd4cc1d2d03fd98",
+      "metadata.json": "7fd852d5c92f6bd0dd5bacd8f6505e936669d807907c18b07424cd2fe3db790d",
+      "preview-spec.json": "01ecca90a900983e764ddc4e916e735dff049619717dccc44144003c268787c2"
+    },
+    "material-3": {
+      "DESIGN.md": "023d4389575b37165eb39d0c23ec47720e3dc5f46ca9a73722b32653d96129ad",
+      "coverage.json": "73aef79dcf91f9383cda52290d1a08bf7aa6f147be0f96acd79afe4143f859ee",
+      "evidence.json": "a700f517045b41767feb539a7fea93c929450dbb5438f7d41fcc5c26f1d256db",
+      "metadata.json": "dea89ff649003a03324e96c06ee7849dcb0446da803469657085565b3de6d48c",
+      "preview-spec.json": "60b325f9b6bcba7f3d99e9dcdc8e8c8062db7c7c2b30013f9c353968b34ddbb6"
+    },
+    "material-wear-os": {
+      "DESIGN.md": "0a1389dfb0998a17feb4a99ef2fab0ca779a8993c600982b8c086d46cea4730a",
+      "coverage.json": "ae630df4b5565c88615a8a9e83927fa03567e79fde69099465114bd295097e2b",
+      "evidence.json": "404c2cb6974092dd3bbc646fe093e6006d0f60a68fee295cf38fe1ec3651ba6c",
+      "metadata.json": "e8ea6dbda5ea7398a78b2c86d719d5de45da713d7406c6ae88109ef51d16257c",
+      "preview-spec.json": "810362cc75c08dcd274e51b7e8d6a5aecb97a6feb33dbb21c59b615ef6c41b7b"
+    },
+    "microsoft-fluent-2": {
+      "DESIGN.md": "2443bffc1b195f446426466833eeca37885a072500cdbd32f7007e9cd5e9e667",
+      "coverage.json": "a57fe69cc130685c12d029bdee926bcee8f59769a2064f363f224f106be3f80b",
+      "evidence.json": "4b5134581b2e2cda6c31d3e4d843884e5ca82f1632a535038c292772a2f8d9ee",
+      "metadata.json": "f75eba2340184026e112c177082c0801571df021315bd145ce9a79e95bd6b760",
+      "preview-spec.json": "94dbebc310f35112c748d9774693107bbce09114792af12230fe428f262de2e5"
+    },
+    "monday-vibe": {
+      "DESIGN.md": "30938c2680315f0de87a475300f98fa2656cb06d2c140b45fd21bbad0c04dcbf",
+      "coverage.json": "7acd4ce3c22a06bcf38324a08c0ac296f91ca47ad06793cb74063e5e753a13d5",
+      "evidence.json": "297188b28115487f97991fc769018d857b84eba91ca60589368da3939b673a66",
+      "metadata.json": "3d28694db65d588a7c06fe7c1a4ffdc66290dce864f090e287a967c0e556fbe0",
+      "preview-spec.json": "621da162145636ed58b2ad5fa0fe068458d134474bd4e9bd7a11b1efed2e6167"
+    },
+    "mozilla-protocol": {
+      "DESIGN.md": "46199ca4cb63f16bec4cc7742714623def6163a947c97e6eef4830ba6a8c3e74",
+      "coverage.json": "72843e533908577a6f7d931cf3293d58fcfae667bf0d292277e656fde25a5e85",
+      "evidence.json": "3a85f71c95d7c9edfc2dbcb70d35cdcd6fe3b2a6ca15e3160788482487d27e6e",
+      "metadata.json": "765770d7d28c803d96f49aaa2d01ed6a909372319042d88e8c41f2d3612ba925",
+      "preview-spec.json": "8b88fd376d981808ddaa17664d9210374279b55f7b088b6be553bfdca88979c1"
+    },
+    "nhs-service-manual": {
+      "DESIGN.md": "8899518238f1fc1384ba4cd3f4704819680dc6ad8d77df741cf419bd9052d743",
+      "coverage.json": "ed1a68a99d2c508fc7076acb9764c91418b9c047e7f0b6fb1aae940b69220550",
+      "evidence.json": "a17146ba44ce66997f9a1902fe979c98f80fc98043591fbf03b1b144f8a7241b",
+      "metadata.json": "9280b89c6fd1b937ab2e27b704c6bc2392c3b7854b30d202c647b61022a6d0e5",
+      "preview-spec.json": "ddc3e2c183c3681642d09100ba3b89da2338b6e1d6401b356e05a936ff1d2fe3"
+    },
+    "observable-plot": {
+      "DESIGN.md": "89b5f9e5dcdb8f33df7047d82b12334770d0b395e9f023a919933860f29ebc6a",
+      "coverage.json": "32f8486d0dc1476ff433b7f51501f0b19670f6726de192cf908eae824edc44ca",
+      "evidence.json": "e065b0e06e76947039547f55908a9af7517613e8683a6a5c90f51b50b2df578c",
+      "metadata.json": "758fbe733c2c74f02ece3880b3e9ba1cce1d0d4b737dd6f52cecb701cb3d3224",
+      "preview-spec.json": "cc2f320bdcffb86d125971ec28bc2966e4da040da1bde8e09e87616b3283efc5"
+    },
+    "ontario-design-system": {
+      "DESIGN.md": "9553a08d49ac61ecd8aeafdab99ba3be35fc3c2853c6de7aebce3af405d577f5",
+      "coverage.json": "e67fabaf6118baf0d7f8195bad3e8477a8ecc5b07826540f0509c5e237fb0973",
+      "evidence.json": "dbaded8242c74a52fd5e2172337ac45284d61e8fb7dc78b167145b1540a98cfe",
+      "metadata.json": "36a1f78470acafb3f8d2c440be8967f2f6cd23b2101ef94c423781984c2b48fe",
+      "preview-spec.json": "124093fd8e0cf6c67168d7fd8b19addc409d0649f562a25e4c9a2a0fb15d79fa"
+    },
+    "patternfly": {
+      "DESIGN.md": "3a554b56edd45a82b07a34f6a41eb2ed227198addaa805f8314217a57529b738",
+      "coverage.json": "52037a83d77d884c3684c4e804f3be04b4e61750a0190c96d1cf64abba8d12b5",
+      "evidence.json": "d9fa4de5fb10c22bbef0155a731b4667e6178bdbc2b0a94c6bf387d5d53d536f",
+      "metadata.json": "1ca87d9e9c4a3db36abc440809c1074b95cc0591078e397f56a07f25dba08748",
+      "preview-spec.json": "8b6a40aec7a3d0e27c6d0ba17104eb2e695f1a3f577bc527927786cbca484d8b"
+    },
+    "paypal-checkout": {
+      "DESIGN.md": "379ff5de912d54f2d83f79221b238a9691e9c3e2487a8da15d1e864b904c112e",
+      "coverage.json": "46694111f6275b4d63d8ccf556ca19f80b47db9a9dae05654e17ae7755ad3670",
+      "evidence.json": "2daafbc1a91a94bbec47785dbd32a4872f256ebd411f7bfd17b5e231b781d751",
+      "metadata.json": "6aa73bd76ab2ebd3117c58c9aeb3cc3c00d35da089c446844128d78c863422eb",
+      "preview-spec.json": "dbdf0cccab1f84af67eca59d62758e9310a2c1017d09c8c8f06dba5883ee823f"
+    },
+    "porsche-design-system": {
+      "DESIGN.md": "b8a91fe7c083b0478818a1f949a0c6a3626b43df5755046e1d40e5283d448323",
+      "coverage.json": "ee351ddff7779a51b7ed848fe419f22d8f69902103f836bc3e4051cbf579e804",
+      "evidence.json": "531724787c7fd3cb63be7fa0bf36bda75b6330d833afc67a62af9a93a0bc6e34",
+      "metadata.json": "465200c4b92a77244dce84abf20bc58971797dc3d7f6780126b1644f3e945830",
+      "preview-spec.json": "e8dc161e00447f01dac5bf7d6c239b97199985a9d00f8edc7a9248dfea250e74"
+    },
+    "quickbooks-design-system": {
+      "DESIGN.md": "63e3251d962b0a2ceebda0226ea601f79efa35cee701ede110b1e4856859f09f",
+      "coverage.json": "632931614531a7bab52e0de0342a5b63297a82be2c5b817566e22be7f4567eee",
+      "evidence.json": "48def24117d9dc42c63f19324a8be446e6b4729addddef81265b22c462be4e4c",
+      "metadata.json": "fdcd740a90b1bd26a6e6c46784933d2e1e60a617a71edc660c0224958da2a3de",
+      "preview-spec.json": "68b4c403e31a9ff00cf9d0e60a86a6d4b1bfaa37390cc4efb929e6927622e672"
+    },
+    "react-native-paper": {
+      "DESIGN.md": "afc92c22a0e0a29e7154c7b6f37fe0b1f295f3906aa750a6d814f143e35629ae",
+      "coverage.json": "895411e76805fee7080d7003b227daa171c75fce0ab8ce2131bfa5ccf47eb0a2",
+      "evidence.json": "7b23a7059d0dbaaa037c8d9a81aa56986c5e475f915df8a2a0a3003f4cafe488",
+      "metadata.json": "0311d5aa13eeb493276ebaa4c5e255985ad84b86898cd576fa7f1c2edccc5a67",
+      "preview-spec.json": "a94d863ebf1718680faed6c662741713550b2fe0bacc47424197b36b48d6acee"
+    },
+    "rei-cedar": {
+      "DESIGN.md": "30c949e5aca425e29e2300ca4228d0b838c9c7ef47cb4edcca990c4402486fe2",
+      "coverage.json": "17e5106593a8121bc73752ba63edec4685d0c6e2da84774a3932e0651f804496",
+      "evidence.json": "12896e7979a5eafb7dd7a6b0e5941490a26090e8514796cd6c8637f9f7d0da3e",
+      "metadata.json": "775f2a05ea4be0a63847a6aba84fe4e9701558ef2014ffd99a88cb1c925b6dc7",
+      "preview-spec.json": "fbf17ea70aed95c1cb99eb0a1febfd20f888ece9cda728e09d271b1fe2997649"
+    },
+    "salesforce-slds-2": {
+      "DESIGN.md": "e91c20a1a30e278ad9ddd3e45f9fe9b558406725d35d50c6f06b976b4642949e",
+      "coverage.json": "667ff7af38929a2d8fae27b83d3a6de18fea3e63c48a725dd0961724f676cf58",
+      "evidence.json": "47700d8305d2e9bc721543a3a30254d538aedd88688c66f908f9b8da1ca026eb",
+      "metadata.json": "2d1770cd9633f270a4145c63a30c3343b46aa64b848b112fe1093df9c36cd4df",
+      "preview-spec.json": "15c515dec6b4db0ec61cdd468776f7e616c1fac20ba686ba783dee9a8cdfcf53"
+    },
+    "samsung-one-ui": {
+      "DESIGN.md": "81dbc31a4fba6265af7369b57c9bb5467f543595dc8c14f4a1778050a4d30e24",
+      "coverage.json": "60d0711fb4bd0a4f9e0cd1e056f76ea3ec9ddefbaef88a0384d39946ace4629b",
+      "evidence.json": "eca7a4abc3ab5cb13cd0a7c010bd093c203708fc65914b183a62ba46073f5c39",
+      "metadata.json": "74420af5b07a0e790367b6a8fb5dac907f85bb6a4dda480daa9b4702e89a7953",
+      "preview-spec.json": "3153328aff22a71a3275d6648e95251109ea32d3ae0e0c7d1eeefc8b7883cf64"
+    },
+    "sap-fiori": {
+      "DESIGN.md": "3a464b7bd895f984d7c577277435d89a619db7b1307a03bd398ceef41821cf84",
+      "coverage.json": "70b416bf794506760ab268dbda7e26cfa374a134180c445d0b06df997c346ce2",
+      "evidence.json": "e0ebb077084594b2e4a97e8de3d3ff0481045a9b465d7f05bf9166c0b621bfc1",
+      "metadata.json": "3d451e63306cd601d69e11c20154974927d551aaae7fa3b7322983c382a48cd3",
+      "preview-spec.json": "4bf419d732086d139af115a7b42173cdfcda73a0bc5bb44d0626d0510238ca8a"
+    },
+    "segment-evergreen": {
+      "DESIGN.md": "eafd5e039694d66fa382d399e6338f11e12ba8c7c13efcadd28b3eafaef5bc7b",
+      "coverage.json": "6c5a8f187a01d9db2beee221f608e189df653b9fb0c535e05eb2085b7ec93b81",
+      "evidence.json": "feccd206e704f184e5c33499ead2cd9216f0e727987df0d375ad9a08b59d989c",
+      "metadata.json": "7cb37068e715678c22d2c1edf78ea967e046dbd263f853537f1df1dd0788f60c",
+      "preview-spec.json": "325a70cb350863d7db7b544d9e5d7c9d1ee66cbcb0046a2ea0a0784522a758e8"
+    },
+    "semrush-intergalactic": {
+      "DESIGN.md": "97fac96d0ab10a92258e35237598cfd49139694372fc7258cd75497d412ad7b5",
+      "coverage.json": "20f00f581b2bda12d5022fe9636f94bdbadb94b3d4ef65c19f65236dbb857e17",
+      "evidence.json": "4229c1696dcfb11a64f0c89dfd95d8d092c12eff67a74f5df84036044929215b",
+      "metadata.json": "c2be8e7c24519c38a83f9bdc59ef4be3129926aae6d18ac56ed439dd14c532ac",
+      "preview-spec.json": "5ccd13d8c1eea07f5e7d76ec82498d623458f0d92197c1fcaf977c639f60d9e2"
+    },
+    "shopify-polaris": {
+      "DESIGN.md": "e91126bf709e8ad0959c33f782b9aceb79fa6f63303f540373737fa83fe738c1",
+      "coverage.json": "307c8276c46bd6950c2ec74f3b1fda8238f74ec9938873232dfe5571e0f2dcda",
+      "evidence.json": "729fc047c6ccaaaaa3dfc3f26e7c2ea70c5a52daa2f49e00e6cd482e7b5ca973",
+      "metadata.json": "bf95c43a092c85ca64a53033d16a44217966c7f9cda2ee4bd280a1079d7eaba6",
+      "preview-spec.json": "87d4c86d1b107136bc04e6d19a9332122c02ac786b72765a7be9557ae016dfcc"
+    },
+    "skyscanner-backpack": {
+      "DESIGN.md": "5459dc7681095106ab2e3bb9564301633f188894e74416c4fa55abd5df932a7b",
+      "coverage.json": "e176ff3df5bbf8cc5be7365f14f0275298709dee9f6dd83e16b7a124c16aba0f",
+      "evidence.json": "1f4a55be2d18d5a763f4fb91e9a0c1f8ecbf82359c68eeb94cf772e40914a506",
+      "metadata.json": "1b7905d879cd27e226201522bd8bc82108fb7439aa735072ad3c6963fe528e1d",
+      "preview-spec.json": "577cccdae71cce2126c8b7168d586fa5ba656110b9574b7efcc1e61bd29097c4"
+    },
+    "slack-brand": {
+      "DESIGN.md": "29e5c2210f80d41767783d0da2bb6aa75ebf45e11a90c1bb98511e6a3d7c021a",
+      "coverage.json": "02d132046993425f5e046c7f5f5c3f87d00d039b658285dfcfe2df61e9f81dc2",
+      "evidence.json": "fd082699b2935acf278c92174ec812707b94ef555d83f5e222c21a46a3d473e9",
+      "metadata.json": "6e9d40a8c19baecf46f8dbe99a26ba838fee6da003b90817cfdc0b54af071c62",
+      "preview-spec.json": "2c1c24bd70db3596d7e9ae713dac1ce52de92dac476f110ae4b878a1c83b4501"
+    },
+    "spotify-encore": {
+      "DESIGN.md": "14a5e565cc0c36ecc73fd70df620fe13ab6948eada18a18cbd9e68ebe9b95aba",
+      "coverage.json": "2608f96065371354fc45ca438d3216c42786abbee2c97a311c5b57971292371a",
+      "evidence.json": "70da1684680b9af1f7849416ca1dee01810f53ebe7e6dda1392bb3c4496a966b",
+      "metadata.json": "8fb4cd877a0833393bf341e02a2d4b8e0e617132c1e2ac04a208f0ba59676a51",
+      "preview-spec.json": "15a86b05b9fb720807af9c9e0903d28d6ec3d1dc95f7a78df5212a3f837c8343"
+    },
+    "stripe-marketing": {
+      "DESIGN.md": "1badb17c64c28908a6e866a4d3a06ef83d7457b23e10673e3281248224d24ad9",
+      "coverage.json": "c533c4770ea2134fa5101c7323187f4fadb4225012298721ec918abacddb16bb",
+      "evidence.json": "1405692e18edf4d90d371ae6e01e14b5aa6e5429753283cf39a8335765e63b32",
+      "metadata.json": "5c1dbd99ba5e9205861f12af2808a6204aa1101db5af74f1a244839c3216fe4b",
+      "preview-spec.json": "b173963a08082729d467d1ede9457efd7c904c5b627e18a041fa591aaaa51c5e"
+    },
+    "tamagui-native": {
+      "DESIGN.md": "ad9a4c1e2b8f4b44e84c53ff8a4979769414c62f6bb785a881877307f1c9ec56",
+      "coverage.json": "a51aacd8bb55e43c4433e2d83545122b8da4872877748635c6df000c5d2acbad",
+      "evidence.json": "3e24cc10a48aaee974ba75f4e733cc80e63b4904be770110a9fa573f9afbb522",
+      "metadata.json": "668aaf3cb6850b855bf61f650a5f147dbc3070bcbc2b8330174d7829099d3692",
+      "preview-spec.json": "2de3276b02ef149af349043c4781d2b3d088f4c34b980826c9ad4583394e55f8"
+    },
+    "thumbtack-thumbprint": {
+      "DESIGN.md": "945040f448755a28eec4cec9bfd2ea31ff9489b2f16139be5a99cd9063dbb245",
+      "coverage.json": "c60c108f6b7b758cb7ea21151f4753db05c5303bd25ec9b40864ee37195fd125",
+      "evidence.json": "18ce2a5bede52fc70f5d9b625acc91fd1337127ba4d5eaa3a0e890a2bb879108",
+      "metadata.json": "0e799f23839d0874966c7be63243b3c34ab2f2765c5e394eeb4b6925288585ee",
+      "preview-spec.json": "042af9febed0a6263a2c2b110cfaade92acd143153213f214972bab50f1584b6"
+    },
+    "twilio-paste": {
+      "DESIGN.md": "b295a0e03901f35991a5bbe61e15eff0f22147804325eaf347c7b84703720120",
+      "coverage.json": "4f16a71fc3a15c4ecd441d4ef3249e2dbc97c30d58e9823bbfd85fb9600b1294",
+      "evidence.json": "c12a073df76edd431d1a26f95bb18bd349f0a77aba7672c4688991118b623165",
+      "metadata.json": "0781e418c817d1f31afd41d419457caf28fa11012ac64950849ae0be53833bf9",
+      "preview-spec.json": "a0217896087cb71dca2604c0e092e8b26536d2e6f870f0a5c6105aa7dbf2ede3"
+    },
+    "uber-base-web": {
+      "DESIGN.md": "31c98142aeda66185236ee4fe359a37aa04c0c6db90ddb35978e1b2031d5fc9c",
+      "coverage.json": "d1733e4292c43711444c3899150572e6dd25f7eb4854ebe840f44e41704daf38",
+      "evidence.json": "b3812d1c78dd78bd98ddc1ac6244bc157aa38b81feccfcc1e6c71684e7b1857d",
+      "metadata.json": "365fa6e440bd896dd7569b10d2f167ceaf35d9b95826043055b781415842b9a4",
+      "preview-spec.json": "67ce52d085bac7610c4232dcbb43f02ebe51935ae21103fcd00599b9fa1dae0c"
+    },
+    "uswds": {
+      "DESIGN.md": "30d1fed544078715e9a470b8ee6b2116a5599c93aa6d5f57ccbec9be6822d07a",
+      "coverage.json": "3c045c7945bb023bd45238c3fc7f6be7c4eff8a692b5b08f5d12de47e09066dd",
+      "evidence.json": "482bf83c160c592a1bed0b762f40954957b4d61a5122d9bc238e4ac68a5c6a76",
+      "metadata.json": "f227307200202202b85308b841702ec72c81eaade2df560a953f95b20153ca0b",
+      "preview-spec.json": "bb6e054aece7fd5a0e7d6ae8d944b1db83b065da3a12c740767968bde7caa750"
+    },
+    "va-design-system": {
+      "DESIGN.md": "3745072b069bcd191235bc7465f273b57b8e7e254fa00028bbc0f7c342edffcc",
+      "coverage.json": "12f367f8ce75e2803e74f96ce6765589edcda9a70eb80a32ec0f1562a0732170",
+      "evidence.json": "ab7e3d1e4c5e23571b53deaefefa46ef0cfb1717cf9b14a6d9ee6b1ff43d3e1f",
+      "metadata.json": "ef943dffd5f00732b89c81217299d5c12a00313969b01d106fdbfe7a373d8224",
+      "preview-spec.json": "cbcacda86500ab92c017a98557b12cef68c519976008738842b00ee510c0a3fa"
+    },
+    "vercel-geist": {
+      "DESIGN.md": "ec80e1bf69c00d4388b8960ccd14020db65184391e69057d963410fe67d153aa",
+      "coverage.json": "d107738e6f11a103cc95e471f4bdddc19994104d6cd01131f3c86c269a3307c2",
+      "evidence.json": "767e61b3591ab9d478fdf25483ad84b0cb444fa703a9a0f1c365263fc8fdb971",
+      "metadata.json": "ee354f709067eb015efb6ace721890ace1bd83186a1b6c9b911fba01b1d1f785",
+      "preview-spec.json": "0bdd42eee9f3d71777cfe4d91e51b9a2732cdc0abf63ab7f26ef3b3870c2081f"
+    },
+    "visa-design-system": {
+      "DESIGN.md": "008cc8f683f1d5c46b11c261201bf0c45c506352ae94ceec79f3dcd430eded33",
+      "coverage.json": "0ceca7a92780a0695957fe36c517642f717ed1e798d9c67bb73d6801c4a35502",
+      "evidence.json": "43868b30c520ca45a277e5905aec2c3701f6ec30d89746b7891267b3bc1baab6",
+      "metadata.json": "4a68b3cacf981902a31e3f3f410a21def9bff02e7a55cf7610a3f13a92b54124",
+      "preview-spec.json": "4131830b2b742ff10d496b1c422e7ed64bfb848256735ef7a0860b1710644a7c"
+    },
+    "wise-design": {
+      "DESIGN.md": "93e845221a56848899486c9c206bf39177cfb5457bd71d0dd9c7deae4bbcea84",
+      "coverage.json": "b4347bb6ad5c5c7cba6ff7aa0b5902c43d66cba55b4ca6ab2edb6aa8e1662f0b",
+      "evidence.json": "3f3d79fe2f0a28edcc270c0754c35e465c6fce4d6b46c9e2e9b9699ff10e4309",
+      "metadata.json": "d16b8607dacd508fa9c7e8d7ae4b8c068836ee128c1a9001101222a710d05949",
+      "preview-spec.json": "08711f1c992f344079addcb289d5a81abf236a239ba3026450b2fdb2f57bda71"
+    },
+    "workday-canvas": {
+      "DESIGN.md": "fc0658ec0a7039e0a4f2d0370af232e90addf0a309241c465cf5719ac5abb75d",
+      "coverage.json": "d3cd8ede8da50501828005b74f566a6ab87c8ab95e392555b668581c919b275f",
+      "evidence.json": "6236b1d069e896dc442b965a28931af0fe40433d5cfc9e92e1db845521f1bab6",
+      "metadata.json": "f09af1086de93866817537269cc2dd32325d7c5d03920d22714cebc23c6ef214",
+      "preview-spec.json": "124a1a0c430545add66f6eae0a0c032fe07654b0cd4125652b7b15c1e3604604"
+    },
+    "zendesk-garden": {
+      "DESIGN.md": "9597954035f01184a8ab82e9c82e13964d3778ae97260e940f6ca5c7aac0bf6d",
+      "coverage.json": "972f4079e2dc59fde90f9590710217d64f205fdade57835bfc5b9a2f76873988",
+      "evidence.json": "a408944724e079067cff23f633f07f4a3976208067d7b48456d579f9ace8163a",
+      "metadata.json": "b888dfa286b6726f03b6b9591bc06574b7dfeeb909ecd86efda628d26bb2928e",
+      "preview-spec.json": "1541fcc054adf73793ca1e9c4cba96fd6b69cff1e6d5df7df6e4b6ec7636ab0c"
+    }
+  },
+  "case_count": 60,
+  "corpus_binding_sha256": "d1b3144802fbc81ccee56688e75091fbe180797c456746367206e78472336e20",
+  "degenerate_normalizations": [],
+  "dominant_structure_profiles": [],
+  "entity_normalized_templates": [],
+  "mechanical_prose_findings": [],
+  "method": "Literal repetition plus strict normalization of case identity, source identity, URLs, and locators only. Complete traits, uses, failures, visual thesis, and preview copy remain visible to repetition scoring. Every human-authored string in the case, including lane_fit and flows, is scanned for banned language and mechanical defects. Fixed confidence and rights disclosures are excluded only from repetition scoring.",
+  "new_case_count": 48,
+  "repeated_eight_word_phrases": [],
+  "repeated_narrative_sentences": [],
+  "rules": {
+    "banned_phrase_count": 0,
+    "degenerate_normalization_count": 0,
+    "dominant_structure_profile_count": 0,
+    "dominant_summary_lead": {
+      "count": 12,
+      "fails": false,
+      "word": "a"
+    },
+    "entity_normalized_template_count": 0,
+    "literal_repeat_case_threshold": 6,
+    "mechanical_prose_finding_count": 0,
+    "normalized_template_case_threshold": 3,
+    "repeated_eight_word_phrase_count": 0,
+    "repeated_narrative_sentence_count": 0,
+    "uniform_optional_heading_count": 0
+  },
+  "schema_version": "1.0",
+  "status": "pass",
+  "uniform_optional_headings": []
+}

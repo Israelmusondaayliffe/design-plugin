@@ -1,10 +1,17 @@
 {
   "schema_version": "1.0",
   "facets": {
+    "corpus_lane": ["brand-editorial-portfolio-marketing", "saas-dashboard-admin-productivity", "mobile", "commerce-media-content-heavy", "onboarding-forms-settings-flows", "design-systems-data-experimental"],
     "platforms": ["web", "responsive-web", "ios", "android", "mobile", "desktop", "cross-platform"],
     "product_types": ["marketing", "editorial", "portfolio", "design-system", "saas", "dashboard", "admin", "productivity", "commerce", "media", "content-heavy", "onboarding", "forms", "settings", "checkout", "workflow", "data-visualization", "native-app"],
     "industries": ["technology", "developer-tools", "government", "commerce", "enterprise", "creative-tools", "productivity", "crm", "automotive", "general"],
     "archetypes": ["platform-native", "adaptive-expressive", "service-utilitarian", "enterprise-technical", "merchant-operational", "collaboration-system", "cross-platform-neutral", "creative-expressive", "developer-dense", "crm-guided", "federal-accessible", "premium-technical"],
+    "typography_character": ["neutral-sans", "humanist-sans", "editorial-serif", "technical-mono", "expressive-display", "mixed"],
+    "media_strategy": ["none", "product-evidence", "photography-led", "illustration-led", "data-led", "icon-led", "mixed"],
+    "layout_behavior": ["editorial", "grid-system", "dense-application", "responsive-marketing", "mobile-native", "service-flow", "spatial", "data-canvas"],
+    "journey": ["browse-discover", "evaluate-convert", "create-manage", "monitor-operate", "learn-progress", "transact-checkout", "onboard-configure", "complete-service", "visualize-explore"],
+    "brand_maturity": ["defined", "mature", "multi-brand", "system-led"],
+    "accessibility_maturity": ["unknown", "baseline", "documented", "advanced"],
     "density": ["low", "medium", "high", "adaptive"],
     "color_modes": ["light", "dark", "adaptive", "brand-variable"],
     "interaction_complexity": ["low", "medium", "high"],

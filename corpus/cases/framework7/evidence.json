@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Framework7 was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://framework7.io/docs/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://framework7.io/docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "iOS and Material presentations retain familiar bars, lists, sheets, and controls.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://framework7.io/docs/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://framework7.io/docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Routers, views, tabs, panels, and modals support app-like hierarchy. Gestures and mobile states are built into the component model.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://framework7.io/docs/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://framework7.io/docs/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For mobile web and hybrid apps needing native-like navigation, preserve prototype-to-product range; reject the design if it starts combining iOS and Material patterns inside one unexplained screen.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://framework7.io/docs/"
+    }
+  ],
+  "schema_version": "1.0"
+}

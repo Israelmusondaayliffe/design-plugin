@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "1590493aef013c81206a6b235eb0f29794d8da897cdeab15a470a8c1da13e3ff",
+  "effective_url": "https://github.com/callstack/react-native-paper",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://github.com/callstack/react-native-paper"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://github.com/callstack/react-native-paper",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "react-native-paper",
+  "source_version": "live-public-source-2026-09-01:1590493aef01",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

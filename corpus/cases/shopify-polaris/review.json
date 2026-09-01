@@ -1,1 +1,25 @@
-{"schema_version":"1.0","status":"review","originality_checked":true,"evidence_checked":true,"rights_checked":true,"assets_checked":true,"reviewed_at":"2026-08-30","notes":"Original analysis of public Shopify guidance. No third-party visual assets bundled."}
+{
+  "artifact_sha256": {
+    "DESIGN.md": "e91126bf709e8ad0959c33f782b9aceb79fa6f63303f540373737fa83fe738c1",
+    "coverage.json": "307c8276c46bd6950c2ec74f3b1fda8238f74ec9938873232dfe5571e0f2dcda",
+    "evidence.json": "729fc047c6ccaaaaa3dfc3f26e7c2ea70c5a52daa2f49e00e6cd482e7b5ca973",
+    "metadata.json": "bf95c43a092c85ca64a53033d16a44217966c7f9cda2ee4bd280a1079d7eaba6",
+    "preview-spec.json": "87d4c86d1b107136bc04e6d19a9332122c02ac786b72765a7be9557ae016dfcc",
+    "source-notes.md": "4bd0bfbf71bafb49daafe632c68e783d958382ae083406fa7ad8768dbd5cbf52",
+    "source.json": "926ad170718f8b0c5188ca8225d0fb70cb072788af34d8c7ea533b8a972849ca",
+    "tokens.json": "8e450c118e549e187f7ece91b05c5a9664754823b3f97848d4c2c9c291fca6c8"
+  },
+  "assets_checked": true,
+  "author": "root-codex-worker",
+  "evidence_checked": true,
+  "independent": true,
+  "method": "Three independent reviewers separately checked writing quality, technical and evidence integrity, and plan compliance. Final public artifacts were hashed after source and originality receipts were refreshed.",
+  "notes": "Accepted for public corpus inclusion. This is original source-bounded analysis; no Refero record, owner asset, screenshot, font, product copy, or proprietary binary is stored.",
+  "originality_checked": true,
+  "result": "pass",
+  "reviewed_at": "2026-09-01",
+  "reviewer": "claude_install_verifier; codex_install_verifier; wave11_gate_verifier",
+  "rights_checked": true,
+  "schema_version": "1.0",
+  "status": "public"
+}

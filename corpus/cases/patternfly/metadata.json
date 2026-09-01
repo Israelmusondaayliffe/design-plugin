@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "consumer discovery products whose main value comes from media or emotional storytelling"
+  ],
+  "best_for": [
+    "infrastructure consoles and administrative platforms",
+    "enterprise systems with long-running operations and many statuses"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "high",
+  "evidence_quality": "medium",
+  "industries": [
+    "enterprise",
+    "developer-tools"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "monitor-operate",
+    "create-manage"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "data-led",
+  "name": "PatternFly",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "dashboard",
+    "admin",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "operations shell",
+    "status-rich components",
+    "pattern-level guidance",
+    "responsive complexity"
+  ],
+  "slug": "patternfly",
+  "source_kind": "public-design-system",
+  "source_name": "PatternFly",
+  "source_url": "https://www.patternfly.org/",
+  "studied_at": "2026-09-01",
+  "summary": "Navigation and page regions orient users inside long-running administrative work. Health, warning, progress, and action states remain distinguishable at scale.",
+  "typography_character": "neutral-sans"
+}

@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using friendly surfaces to downplay urgency.",
+  "archetype": "service-utilitarian",
+  "brand_posture": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Ownership, urgency, response, and resolution remain easy to distinguish.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Common controls keep the same behavior across many support contexts.",
+  "components": "Common controls keep the same behavior across many support contexts. Ownership, urgency, response, and resolution remain easy to distinguish.",
+  "confidence": "medium",
+  "container": "Calm support queue with customer context and explicit service state. Common controls keep the same behavior across many support contexts.",
+  "failure_modes": [
+    "Using friendly surfaces to downplay urgency.",
+    "Breaking common control behavior in one support channel.",
+    "Letting customer context disappear inside queue density."
+  ],
+  "flows": "Destination test: Support tools and service operations. Evaluate the relationship across creation and management, and service completion.",
+  "forms": "During creation and management, and service completion, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Friendly shape and language soften complexity without masking status.",
+  "imagery": "Calm support queue with customer context and explicit service state. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "enterprise, technology",
+  "interaction": "Ownership, urgency, response, and resolution remain easy to distinguish.",
+  "lane_fit": "Lane assignment: Support tools and service operations. This case earns one SaaS, dashboard, administration, and productivity quota credit through support-work calm and approachable utility.",
+  "layout": "Work queue beside a focused conversation panel.",
+  "motion": "Quiet ownership and status feedback.",
+  "navigation": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Work queue beside a focused conversation panel.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Friendly shape and language soften complexity without masking status. Ownership, urgency, response, and resolution remain easy to distinguish.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "support-work calm: Repeated tickets, queues, and customer details use quiet hierarchy under pressure.",
+    "approachable utility: Friendly shape and language soften complexity without masking status.",
+    "component predictability: Common controls keep the same behavior across many support contexts.",
+    "service-state emphasis: Ownership, urgency, response, and resolution remain easy to distinguish."
+  ],
+  "source": "https://garden.zendesk.com/",
+  "spacing": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Friendly shape and language soften complexity without masking status.",
+  "states": "Ownership, urgency, response, and resolution remain easy to distinguish. Quiet ownership and status feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "support tools and service operations",
+    "workflow products balancing human context with queue efficiency"
+  ],
+  "surfaces": "Common controls keep the same behavior across many support contexts. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Friendly shape and language soften complexity without masking status.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "immersive entertainment products where operational calm is not the goal"
+  ],
+  "visual_thesis": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Friendly shape and language soften complexity without masking status."
+}

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Protocol publishes reusable CSS, components, templates, and documentation for Mozilla web properties.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://protocol.mozilla.org/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://protocol.mozilla.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The system includes marketing and editorial patterns rather than limiting itself to application controls.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://protocol.mozilla.org/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://protocol.mozilla.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Its public guidance connects responsive components with brand, typography, and content needs.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://protocol.mozilla.org/",
+      "notes": "Direct visual or documentary observation from the owner-published source.",
+      "source_url": "https://protocol.mozilla.org/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Protocol shows how a brand system can standardize structural behavior while leaving visual emphasis and editorial rhythm responsive to the message.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Analyst synthesis recorded in DESIGN.md",
+      "notes": "Original corpus interpretation; not an owner claim.",
+      "source_url": "https://protocol.mozilla.org/"
+    }
+  ],
+  "schema_version": "1.0"
+}

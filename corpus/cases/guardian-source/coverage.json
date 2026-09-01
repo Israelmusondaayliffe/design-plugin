@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Copying newspaper styling without editorial prioritization.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "Headline scale, grouping, and placement communicate what matters before decoration. High information volume is separated by rules, labels, and consistent measure.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Color identifies editorial context and status rather than filling space arbitrarily.",
+  "components": "Color identifies editorial context and status rather than filling space arbitrarily. High information volume is separated by rules, labels, and consistent measure.",
+  "confidence": "medium",
+  "container": "Dense editorial grid with serif headlines, utility labels, and section color. Color identifies editorial context and status rather than filling space arbitrarily.",
+  "failure_modes": [
+    "Copying newspaper styling without editorial prioritization.",
+    "Using section colors as decorative gradients.",
+    "Letting dense lists lose headline, timestamp, and byline relationships."
+  ],
+  "flows": "Destination test: News and cultural publishing with real editorial hierarchy. Evaluate the relationship across browsing and discovery.",
+  "forms": "During browsing and discovery, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Headline scale, grouping, and placement communicate what matters before decoration. Narrative and utility typography keep separate reading jobs.",
+  "imagery": "Dense editorial grid with serif headlines, utility labels, and section color. Product, photography, illustration, and data each receive a separate job. No source asset is stored.",
+  "industry": "general, technology",
+  "interaction": "High information volume is separated by rules, labels, and consistent measure.",
+  "lane_fit": "Lane assignment: News and cultural publishing with real editorial hierarchy. This case earns one brand, editorial, portfolio, and marketing quota credit through editorial priority and serif-sans division.",
+  "layout": "Multi-column story hierarchy collapsing to a single reading spine.",
+  "motion": "Near-static presentation with direct state feedback.",
+  "navigation": "Headline scale, grouping, and placement communicate what matters before decoration. Multi-column story hierarchy collapsing to a single reading spine.",
+  "platform": "web, responsive-web, mobile",
+  "responsive_behavior": "Narrative and utility typography keep separate reading jobs. High information volume is separated by rules, labels, and consistent measure.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "editorial priority: Headline scale, grouping, and placement communicate what matters before decoration.",
+    "serif-sans division: Narrative and utility typography keep separate reading jobs.",
+    "section color roles: Color identifies editorial context and status rather than filling space arbitrarily.",
+    "dense but legible rhythm: High information volume is separated by rules, labels, and consistent measure."
+  ],
+  "source": "https://theguardian.design/",
+  "spacing": "Headline scale, grouping, and placement communicate what matters before decoration. Narrative and utility typography keep separate reading jobs.",
+  "states": "High information volume is separated by rules, labels, and consistent measure. Near-static presentation with direct state feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "news and cultural publishing with real editorial hierarchy",
+    "content-heavy products that need section identity and rapid scanning"
+  ],
+  "surfaces": "Color identifies editorial context and status rather than filling space arbitrarily. Preview surfaces use original study values.",
+  "typography": "Editorial serif carries narrative emphasis while sans serif handles navigation, metadata, and action. Narrative and utility typography keep separate reading jobs.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "minimal product landing pages where newsroom density would add false complexity"
+  ],
+  "visual_thesis": "Headline scale, grouping, and placement communicate what matters before decoration. Narrative and utility typography keep separate reading jobs."
+}

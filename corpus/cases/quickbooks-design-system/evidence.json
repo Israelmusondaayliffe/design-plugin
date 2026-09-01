@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for QuickBooks Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.intuit.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.intuit.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Plain hierarchy reduces intimidation around financial work.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.intuit.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.intuit.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Marketing warmth gives way to disciplined tables, forms, and status. Numbers and product views explain outcomes close to the relevant claim.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.intuit.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.intuit.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For financial tools for non-specialists, preserve approachable utility; reject the design if it starts using friendly copy to soften a material financial warning.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.intuit.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

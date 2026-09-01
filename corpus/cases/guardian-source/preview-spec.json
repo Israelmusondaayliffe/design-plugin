@@ -1,0 +1,14 @@
+{
+  "layout": "multi-column story hierarchy collapsing to a single reading spine",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "near-static presentation with direct state feedback",
+  "pattern": "dense editorial grid with serif headlines, utility labels, and section color",
+  "primary": "#f6f6f6",
+  "radius": "0px",
+  "schema_version": "1.0",
+  "secondary": "#052962"
+}

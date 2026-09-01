@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "service-utilitarian"
+  ],
+  "avoid_for": [
+    "immersive entertainment products where operational calm is not the goal"
+  ],
+  "best_for": [
+    "support tools and service operations",
+    "workflow products balancing human context with queue efficiency"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "enterprise",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "complete-service"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "icon-led",
+  "name": "Zendesk Garden",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "admin",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "support-work calm",
+    "approachable utility",
+    "component predictability",
+    "service-state emphasis"
+  ],
+  "slug": "zendesk-garden",
+  "source_kind": "public-design-system",
+  "source_name": "Zendesk Garden",
+  "source_url": "https://garden.zendesk.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Repeated tickets, queues, and customer details use quiet hierarchy under pressure. Friendly shape and language soften complexity without masking status.",
+  "typography_character": "humanist-sans"
+}

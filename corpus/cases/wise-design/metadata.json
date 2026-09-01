@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "adaptive-expressive"
+  ],
+  "avoid_for": [
+    "anonymous white-label utilities whose identity must remain invisible"
+  ],
+  "best_for": [
+    "international financial products that must explain value before conversion",
+    "brands that can pair a strong public voice with exact transaction detail"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "evaluate-convert",
+    "transact-checkout"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "product-evidence",
+  "name": "Wise Design",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "marketing",
+    "commerce",
+    "native-app"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "direct financial voice",
+    "high-energy brand contrast",
+    "proof near action",
+    "global adaptability"
+  ],
+  "slug": "wise-design",
+  "source_kind": "public-design-system",
+  "source_name": "Wise Design",
+  "source_url": "https://wise.design/",
+  "studied_at": "2026-09-01",
+  "summary": "Large literal messages make cost and movement of money understandable. A vivid brand field is balanced by blunt dark type and quiet transaction surfaces.",
+  "typography_character": "expressive-display"
+}

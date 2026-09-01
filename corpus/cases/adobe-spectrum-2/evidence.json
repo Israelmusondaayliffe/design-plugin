@@ -1,1 +1,45 @@
-{"schema_version":"1.0","items":[{"id":"E01","claim":"Adobe describes Spectrum 2 as more expressive, approachable, inclusive, and accessible while remaining at home across platforms.","class":"observed","source_url":"https://blog.adobe.com/en/publish/2024/02/21/introducing-spectrum-2","locator":"Spectrum 2 introduction","confidence":"high","captured_at":"2026-08-30","notes":"Official Adobe design-system announcement."},{"id":"E02","claim":"Spectrum 2 updates include brighter color, thicker and more rounded icons, refreshed typography, and a more expressive visual language.","class":"observed","source_url":"https://blog.adobe.com/en/publish/2024/02/21/introducing-spectrum-2","locator":"Visual system changes","confidence":"high","captured_at":"2026-08-30","notes":"Official source."},{"id":"E03","claim":"Adobe describes color, contrast, navigation/content separation, and depth as tools for attention hierarchy and accessibility rather than decoration alone.","class":"observed","source_url":"https://blog.adobe.com/en/publish/2024/06/11/designing-spectrum-2-for-the-future-of-adobe-products","locator":"Accessibility and hierarchy discussion","confidence":"high","captured_at":"2026-08-30","notes":"Official Adobe design article."},{"id":"E04","claim":"The transferable lesson is expressive control: visual personality can increase when hierarchy and accessibility rules become more deliberate, not less.","class":"inferred","source_url":"https://spectrum.adobe.com/","locator":"Cross-system synthesis","confidence":"high","captured_at":"2026-08-30","notes":"Original corpus interpretation."}]}
+{
+  "items": [
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Adobe describes Spectrum 2 as more expressive, approachable, inclusive, and accessible while remaining at home across platforms.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://s2.spectrum.adobe.com/",
+      "notes": "Official Adobe Spectrum 2 source.",
+      "source_url": "https://s2.spectrum.adobe.com/"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Spectrum 2 updates include brighter color, thicker and more rounded icons, refreshed typography, and a more expressive visual language.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E02",
+      "locator": "URL: https://s2.spectrum.adobe.com/",
+      "notes": "Official Adobe Spectrum 2 source.",
+      "source_url": "https://s2.spectrum.adobe.com/"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "Adobe describes color, contrast, scale, and contextual flexibility as tools for inclusive and accessible product experiences.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E03",
+      "locator": "URL: https://s2.spectrum.adobe.com/",
+      "notes": "Claim narrowed to the current official Spectrum 2 source.",
+      "source_url": "https://s2.spectrum.adobe.com/"
+    },
+    {
+      "captured_at": "2026-08-30",
+      "claim": "The transferable lesson is expressive control: visual personality can increase when hierarchy and accessibility rules become more deliberate, not less.",
+      "class": "inferred",
+      "confidence": "high",
+      "id": "E04",
+      "locator": "Cross-system synthesis",
+      "notes": "Original corpus interpretation.",
+      "source_url": "https://spectrum.adobe.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "filter rail feeding charts, table, and recommendation panel",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "short query and result-state feedback",
+  "pattern": "marketing analytics grid with a bounded insight accent and explicit next action",
+  "primary": "#fff7f3",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#ff642d"
+}

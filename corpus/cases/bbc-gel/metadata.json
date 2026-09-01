@@ -1,0 +1,62 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "service-utilitarian"
+  ],
+  "avoid_for": [
+    "small campaign sites that do not need a system for continuous high-volume publishing"
+  ],
+  "best_for": [
+    "large public media services",
+    "content platforms balancing breaking information with deep archives"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "general",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "complete-service"
+  ],
+  "layout_behavior": "editorial",
+  "media_strategy": "mixed",
+  "name": "BBC Global Experience Language",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "editorial",
+    "media",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "public-service clarity",
+    "responsive editorial grid",
+    "media diversity",
+    "accessibility as structure"
+  ],
+  "slug": "bbc-gel",
+  "source_kind": "public-design-system",
+  "source_name": "BBC Global Experience Language",
+  "source_url": "https://www.bbc.co.uk/gel/",
+  "studied_at": "2026-09-01",
+  "summary": "Navigation and content order support broad audiences and urgent contexts. Story prominence changes without breaking reading sequence.",
+  "typography_character": "humanist-sans"
+}

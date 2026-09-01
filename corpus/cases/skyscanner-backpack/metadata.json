@@ -1,0 +1,63 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "single-market utilities with no visual discovery or cross-platform pressure"
+  ],
+  "best_for": [
+    "travel discovery and booking products",
+    "international services balancing brand media with transaction clarity"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "high",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "photography-led",
+  "name": "Skyscanner Backpack",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "marketing",
+    "commerce",
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Discovery-to-decision bridge",
+    "Localization tolerance",
+    "Cross-platform continuity",
+    "Brand-action discipline",
+    "Travel media role"
+  ],
+  "slug": "skyscanner-backpack",
+  "source_kind": "public-design-system",
+  "source_name": "Skyscanner Backpack",
+  "source_url": "https://www.skyscanner.design/",
+  "studied_at": "2026-09-01",
+  "summary": "Inspiration gives way to structured search and comparison. Layouts anticipate longer labels, currencies, and varied scripts.",
+  "typography_character": "humanist-sans"
+}

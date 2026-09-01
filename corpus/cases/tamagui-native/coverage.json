@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Forcing pixel identity across iOS, Android, and web.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. A small set of primitives earns value by forming coherent screens, not by maximizing component count.",
+  "category": "mobile",
+  "color": "Color and space respond to mode and brand while state meaning remains stable.",
+  "components": "Color and space respond to mode and brand while state meaning remains stable. A small set of primitives earns value by forming coherent screens, not by maximizing component count.",
+  "confidence": "medium",
+  "container": "Cross-platform mobile screen pair sharing roles while respecting native structure. Color and space respond to mode and brand while state meaning remains stable.",
+  "failure_modes": [
+    "Forcing pixel identity across iOS, Android, and web.",
+    "Adding responsive exceptions with no token or component rule.",
+    "Mistaking a large primitive set for a finished product direction."
+  ],
+  "flows": "Destination test: Cross-platform mobile products sharing roles across iOS and Android. Evaluate the relationship across creation and management, and onboarding and configuration.",
+  "forms": "During creation and management, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. Layout changes are expressed through a shared system instead of one-off mobile overrides.",
+  "imagery": "Cross-platform mobile screen pair sharing roles while respecting native structure. The relationship does not require a media layer. No source asset is stored.",
+  "industry": "technology, developer-tools",
+  "interaction": "A small set of primitives earns value by forming coherent screens, not by maximizing component count.",
+  "lane_fit": "Lane assignment: Cross-platform mobile products sharing roles across iOS and Android. This case earns one mobile quota credit through native-web role parity and responsive props as grammar.",
+  "layout": "Token-linked phone panes with deliberate platform differences.",
+  "motion": "Matched state intent with platform-appropriate timing.",
+  "navigation": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. Token-linked phone panes with deliberate platform differences.",
+  "platform": "mobile, ios, android, cross-platform",
+  "responsive_behavior": "Layout changes are expressed through a shared system instead of one-off mobile overrides. A small set of primitives earns value by forming coherent screens, not by maximizing component count.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "native-web role parity: Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering.",
+    "responsive props as grammar: Layout changes are expressed through a shared system instead of one-off mobile overrides.",
+    "theme semantics: Color and space respond to mode and brand while state meaning remains stable.",
+    "composition before catalog size: A small set of primitives earns value by forming coherent screens, not by maximizing component count."
+  ],
+  "source": "https://tamagui.dev/",
+  "spacing": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. Layout changes are expressed through a shared system instead of one-off mobile overrides.",
+  "states": "A small set of primitives earns value by forming coherent screens, not by maximizing component count. Matched state intent with platform-appropriate timing.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "cross-platform mobile products sharing roles across iOS and Android",
+    "React Native teams that also need a related web expression"
+  ],
+  "surfaces": "Color and space respond to mode and brand while state meaning remains stable. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Layout changes are expressed through a shared system instead of one-off mobile overrides.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "platform-exclusive products whose value depends on a fully bespoke native control language"
+  ],
+  "visual_thesis": "Tokens and component roles stay recognizable across iOS, Android, and web without forcing identical rendering. Layout changes are expressed through a shared system instead of one-off mobile overrides."
+}

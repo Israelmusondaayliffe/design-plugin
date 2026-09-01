@@ -1,0 +1,14 @@
+{
+  "layout": "configurable board grid with persistent context",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct drag, status, and detail continuity",
+  "pattern": "color-coded work board connected to focused item detail",
+  "primary": "#f6f7fb",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#6161ff"
+}

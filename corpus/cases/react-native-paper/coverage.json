@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Applying theme colors outside their semantic roles.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "React Native components carry Material roles into mobile implementation. Shared code supports both platforms while leaving room for platform-specific decisions.",
+  "category": "mobile",
+  "color": "Press, focus, disabled, loading, and selection behavior are explicit.",
+  "components": "Press, focus, disabled, loading, and selection behavior are explicit. Shared code supports both platforms while leaving room for platform-specific decisions.",
+  "confidence": "medium",
+  "container": "Themeable mobile surface with explicit press, selection, and loading states. Press, focus, disabled, loading, and selection behavior are explicit.",
+  "failure_modes": [
+    "Applying theme colors outside their semantic roles.",
+    "Treating Android and iOS behavior as automatically identical.",
+    "Ignoring loading and disabled states in touch controls."
+  ],
+  "flows": "Destination test: React Native products using a Material foundation. Evaluate the relationship across creation and management, and onboarding and configuration.",
+  "forms": "During creation and management, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "React Native components carry Material roles into mobile implementation. Color, typography, shape, and elevation can adapt while semantic jobs remain stable.",
+  "imagery": "Themeable mobile surface with explicit press, selection, and loading states. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "technology, developer-tools",
+  "interaction": "Shared code supports both platforms while leaving room for platform-specific decisions.",
+  "lane_fit": "Lane assignment: React Native products using a Material foundation. This case earns one mobile quota credit through Material-native grammar and theme continuity.",
+  "layout": "Material mobile stack with adaptive component grouping.",
+  "motion": "Touch feedback and state continuity.",
+  "navigation": "React Native components carry Material roles into mobile implementation. Material mobile stack with adaptive component grouping.",
+  "platform": "ios, android, mobile, cross-platform",
+  "responsive_behavior": "Color, typography, shape, and elevation can adapt while semantic jobs remain stable. Shared code supports both platforms while leaving room for platform-specific decisions.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Material-native grammar: React Native components carry Material roles into mobile implementation.",
+    "theme continuity: Color, typography, shape, and elevation can adapt while semantic jobs remain stable.",
+    "stateful touch controls: Press, focus, disabled, loading, and selection behavior are explicit.",
+    "cross-platform pragmatism: Shared code supports both platforms while leaving room for platform-specific decisions."
+  ],
+  "source": "https://github.com/callstack/react-native-paper",
+  "spacing": "React Native components carry Material roles into mobile implementation. Color, typography, shape, and elevation can adapt while semantic jobs remain stable.",
+  "states": "Shared code supports both platforms while leaving room for platform-specific decisions. Touch feedback and state continuity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "React Native products using a Material foundation",
+    "mobile teams needing themeable accessible components"
+  ],
+  "surfaces": "Press, focus, disabled, loading, and selection behavior are explicit. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Color, typography, shape, and elevation can adapt while semantic jobs remain stable.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "strongly iOS-native products that should not inherit Material interaction character"
+  ],
+  "visual_thesis": "React Native components carry Material roles into mobile implementation. Color, typography, shape, and elevation can adapt while semantic jobs remain stable."
+}

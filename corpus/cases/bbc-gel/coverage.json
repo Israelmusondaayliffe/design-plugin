@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using equal card grids that erase editorial priority.",
+  "archetype": "service-utilitarian",
+  "brand_posture": "Navigation and content order support broad audiences and urgent contexts. Semantics, input modes, and legibility shape the system rather than decorate it.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Text, audio, video, live information, and imagery keep distinct roles.",
+  "components": "Text, audio, video, live information, and imagery keep distinct roles. Semantics, input modes, and legibility shape the system rather than decorate it.",
+  "confidence": "medium",
+  "container": "Responsive news hierarchy with one live marker and distinct text-media roles. Text, audio, video, live information, and imagery keep distinct roles.",
+  "failure_modes": [
+    "Using equal card grids that erase editorial priority.",
+    "Treating accessibility as a final contrast check.",
+    "Letting live or promotional modules interrupt the main reading order."
+  ],
+  "flows": "Destination test: Large public media services. Evaluate the relationship across browsing and discovery, and service completion.",
+  "forms": "During browsing and discovery, and service completion, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Navigation and content order support broad audiences and urgent contexts. Story prominence changes without breaking reading sequence.",
+  "imagery": "Responsive news hierarchy with one live marker and distinct text-media roles. Product, photography, illustration, and data each receive a separate job. No source asset is stored.",
+  "industry": "general, technology",
+  "interaction": "Semantics, input modes, and legibility shape the system rather than decorate it.",
+  "lane_fit": "Lane assignment: Large public media services. This case earns one brand, editorial, portfolio, and marketing quota credit through public-service clarity and responsive editorial grid.",
+  "layout": "Editorial grid with variable story weight.",
+  "motion": "Minimal live-state feedback with reduced-motion support.",
+  "navigation": "Navigation and content order support broad audiences and urgent contexts. Editorial grid with variable story weight.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "Story prominence changes without breaking reading sequence. Semantics, input modes, and legibility shape the system rather than decorate it.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "public-service clarity: Navigation and content order support broad audiences and urgent contexts.",
+    "responsive editorial grid: Story prominence changes without breaking reading sequence.",
+    "media diversity: Text, audio, video, live information, and imagery keep distinct roles.",
+    "accessibility as structure: Semantics, input modes, and legibility shape the system rather than decorate it."
+  ],
+  "source": "https://www.bbc.co.uk/gel/",
+  "spacing": "Navigation and content order support broad audiences and urgent contexts. Story prominence changes without breaking reading sequence.",
+  "states": "Semantics, input modes, and legibility shape the system rather than decorate it. Minimal live-state feedback with reduced-motion support.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "large public media services",
+    "content platforms balancing breaking information with deep archives"
+  ],
+  "surfaces": "Text, audio, video, live information, and imagery keep distinct roles. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Story prominence changes without breaking reading sequence.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "small campaign sites that do not need a system for continuous high-volume publishing"
+  ],
+  "visual_thesis": "Navigation and content order support broad audiences and urgent contexts. Story prominence changes without breaking reading sequence."
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "single mobile reading spine with bounded sheets and bars",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "short continuity cues with full reduced-motion parity",
+  "pattern": "handheld task view with clear navigation, one reachable action, and adaptive text",
+  "primary": "#f4f5f7",
+  "radius": "18px",
+  "schema_version": "1.0",
+  "secondary": "#1769e0"
+}

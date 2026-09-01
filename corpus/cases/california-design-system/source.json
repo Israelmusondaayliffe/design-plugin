@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "0bb7e9f414cef5a5498f88b3f8313a39cb1352bed66f795a5092b68dbee84ce6",
+  "effective_url": "https://designsystem.ca.gov/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://designsystem.webstandards.ca.gov/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://designsystem.webstandards.ca.gov/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "california-design-system",
+  "source_version": "live-public-source-2026-09-01:0bb7e9f414ce",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

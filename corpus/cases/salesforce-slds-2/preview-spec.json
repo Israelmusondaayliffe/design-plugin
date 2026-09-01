@@ -1,1 +1,14 @@
-{"primary":"#f7f9fb","secondary":"#0176d3","radius":"16px","pattern":"enterprise record surface with adjustable density, strong hierarchy, and one rounded branded focus motif"}
+{
+  "layout": "Original abstract composition based on global styling hooks and density personalization.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the Salesforce Lightning Design System 2 preview only when it clarifies global styling hooks through feedback or continuity.",
+  "pattern": "enterprise record surface with adjustable density, strong hierarchy, and one rounded branded focus motif",
+  "primary": "#f7f9fb",
+  "radius": "16px",
+  "schema_version": "1.0",
+  "secondary": "#0176d3"
+}

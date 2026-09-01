@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "baseline",
+  "archetypes": [
+    "premium-technical"
+  ],
+  "avoid_for": [
+    "early products without enough evidence to support a large-scale narrative"
+  ],
+  "best_for": [
+    "infrastructure companies with real technical and economic proof",
+    "global commerce platforms joining developer and executive audiences"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "evaluate-convert",
+    "transact-checkout"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "product-evidence",
+  "name": "Stripe Marketing",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "commerce",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "technical ambition",
+    "layered product proof",
+    "controlled spectrum",
+    "global scale narrative"
+  ],
+  "slug": "stripe-marketing",
+  "source_kind": "public-website",
+  "source_name": "Stripe Marketing",
+  "source_url": "https://stripe.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Large global claims are anchored by specific payment and developer evidence. Interface, code, diagrams, and numbers show different parts of the same system.",
+  "typography_character": "neutral-sans"
+}

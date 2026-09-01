@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Showing every available field instead of role-relevant information.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Pages foreground the work and information relevant to a user's business role. Long business processes preserve state, validation, and recovery.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Complex records expose overview, detail, action, and related information in layers.",
+  "components": "Complex records expose overview, detail, action, and related information in layers. Long business processes preserve state, validation, and recovery.",
+  "confidence": "medium",
+  "container": "Adaptive business object page with role-based actions and layered detail. Complex records expose overview, detail, action, and related information in layers.",
+  "failure_modes": [
+    "Showing every available field instead of role-relevant information.",
+    "Changing action semantics between density modes.",
+    "Breaking long transactions when the viewport or device changes."
+  ],
+  "flows": "Destination test: Large enterprise applications with role-specific workflows. Evaluate the relationship across creation and management, and monitoring and operations.",
+  "forms": "During creation and management, and monitoring and operations, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Pages foreground the work and information relevant to a user's business role. The same semantics survive compact, cozy, desktop, and mobile contexts.",
+  "imagery": "Adaptive business object page with role-based actions and layered detail. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "enterprise, technology",
+  "interaction": "Long business processes preserve state, validation, and recovery.",
+  "lane_fit": "Lane assignment: Large enterprise applications with role-specific workflows. This case earns one SaaS, dashboard, administration, and productivity quota credit through role-based focus and adaptive enterprise density.",
+  "layout": "Shell and object hierarchy shifting by density mode.",
+  "motion": "Short continuity cues for navigation and transactions.",
+  "navigation": "Pages foreground the work and information relevant to a user's business role. Shell and object hierarchy shifting by density mode.",
+  "platform": "web, responsive-web, mobile, desktop, cross-platform",
+  "responsive_behavior": "The same semantics survive compact, cozy, desktop, and mobile contexts. Long business processes preserve state, validation, and recovery.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "role-based focus: Pages foreground the work and information relevant to a user's business role.",
+    "adaptive enterprise density: The same semantics survive compact, cozy, desktop, and mobile contexts.",
+    "object-page structure: Complex records expose overview, detail, action, and related information in layers.",
+    "transaction continuity: Long business processes preserve state, validation, and recovery."
+  ],
+  "source": "https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/85f167b1da3d46d98e26cf4cac4430f8.html",
+  "spacing": "Pages foreground the work and information relevant to a user's business role. The same semantics survive compact, cozy, desktop, and mobile contexts.",
+  "states": "Long business processes preserve state, validation, and recovery. Short continuity cues for navigation and transactions.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "large enterprise applications with role-specific workflows",
+    "systems spanning desktop and mobile business tasks"
+  ],
+  "surfaces": "Complex records expose overview, detail, action, and related information in layers. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. The same semantics survive compact, cozy, desktop, and mobile contexts.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "small editorial experiences where enterprise object structure would burden the content"
+  ],
+  "visual_thesis": "Pages foreground the work and information relevant to a user's business role. The same semantics survive compact, cozy, desktop, and mobile contexts."
+}

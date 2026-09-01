@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "8bfb20b7041422d18df9e34fe59e4bc7b283f5867ffec12ca2fe5f04954d1960",
+  "effective_url": "https://ant.design/docs/spec/introduce/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://ant.design/docs/spec/introduce"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://ant.design/docs/spec/introduce",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "ant-design",
+  "source_version": "live-public-source-2026-09-01:8bfb20b70414",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

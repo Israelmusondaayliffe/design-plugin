@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Letting album art colors overwrite action and status semantics.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "Shared roles adapt to listening contexts and device constraints. Transitions can carry tempo and continuity when they do not delay playback tasks.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "System parts support multiple product expressions without one rigid skin.",
+  "components": "System parts support multiple product expressions without one rigid skin. Transitions can carry tempo and continuity when they do not delay playback tasks.",
+  "confidence": "medium",
+  "container": "Media-led dark canvas with stable playback controls and variable content color. System parts support multiple product expressions without one rigid skin.",
+  "failure_modes": [
+    "Letting album art colors overwrite action and status semantics.",
+    "Using motion as atmosphere during urgent playback controls.",
+    "Forcing one visual theme across every platform context."
+  ],
+  "flows": "Destination test: Media ecosystems spanning many devices and audience modes. Evaluate the relationship across browsing and discovery, and creation and management.",
+  "forms": "During browsing and discovery, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Shared roles adapt to listening contexts and device constraints. Artwork and media remain visually dominant while controls retain semantic stability.",
+  "imagery": "Media-led dark canvas with stable playback controls and variable content color. Product, photography, illustration, and data each receive a separate job. No source asset is stored.",
+  "industry": "creative-tools, technology",
+  "interaction": "Transitions can carry tempo and continuity when they do not delay playback tasks.",
+  "lane_fit": "Lane assignment: Media ecosystems spanning many devices and audience modes. This case earns one brand, editorial, portfolio, and marketing quota credit through multi-platform rhythm and content-first color.",
+  "layout": "Modular content rails around a persistent control spine.",
+  "motion": "Rhythmic but interruptible state continuity.",
+  "navigation": "Shared roles adapt to listening contexts and device constraints. Modular content rails around a persistent control spine.",
+  "platform": "web, mobile, desktop, cross-platform",
+  "responsive_behavior": "Artwork and media remain visually dominant while controls retain semantic stability. Transitions can carry tempo and continuity when they do not delay playback tasks.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "multi-platform rhythm: Shared roles adapt to listening contexts and device constraints.",
+    "content-first color: Artwork and media remain visually dominant while controls retain semantic stability.",
+    "modular identity: System parts support multiple product expressions without one rigid skin.",
+    "motion with musical timing: Transitions can carry tempo and continuity when they do not delay playback tasks."
+  ],
+  "source": "https://engineering.atspotify.com/2024/02/applying-the-facade-pattern-on-spotify-for-artists/",
+  "spacing": "Shared roles adapt to listening contexts and device constraints. Artwork and media remain visually dominant while controls retain semantic stability.",
+  "states": "Transitions can carry tempo and continuity when they do not delay playback tasks. Rhythmic but interruptible state continuity.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "media ecosystems spanning many devices and audience modes",
+    "multi-brand products that need consistent controls around highly variable content"
+  ],
+  "surfaces": "System parts support multiple product expressions without one rigid skin. Preview surfaces use original study values.",
+  "typography": "Display, reading, and utility voices remain distinct instead of competing for emphasis. Artwork and media remain visually dominant while controls retain semantic stability.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "static editorial pages with no recurring media or playback behavior"
+  ],
+  "visual_thesis": "Shared roles adapt to listening contexts and device constraints. Artwork and media remain visually dominant while controls retain semantic stability."
+}

@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "00e6d8eb0bc8a6cbdca6e36771fe407480ec34a84fd813b464e2d9bf33b21072",
+  "effective_url": "https://rei.github.io/rei-cedar-docs/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://rei.github.io/rei-cedar-docs/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://rei.github.io/rei-cedar-docs/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "rei-cedar",
+  "source_version": "live-public-source-2026-09-01:00e6d8eb0bc8",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

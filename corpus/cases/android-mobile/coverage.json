@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Assuming one phone size is the Android layout.",
+  "archetype": "platform-native",
+  "brand_posture": "A small viewport exposes the next useful action without removing context or recovery. Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use.",
+  "category": "mobile",
+  "color": "Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior.",
+  "components": "Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior. Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use.",
+  "confidence": "medium",
+  "container": "Adaptive Android phone task with visible system context and reachable controls. Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior.",
+  "failure_modes": [
+    "Assuming one phone size is the Android layout.",
+    "Using gesture-only actions without visible alternatives.",
+    "Letting edge-to-edge decoration obscure system state or controls."
+  ],
+  "flows": "Destination test: Android phone applications that must adapt across handheld window sizes. Evaluate the relationship across browsing and discovery, and creation and management.",
+  "forms": "During browsing and discovery, and creation and management, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "A small viewport exposes the next useful action without removing context or recovery. Window size, posture, orientation, and device variation change arrangement before they change meaning.",
+  "imagery": "Adaptive Android phone task with visible system context and reachable controls. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "technology, general",
+  "interaction": "Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use.",
+  "lane_fit": "Lane assignment: Android phone applications that must adapt across handheld window sizes. This case earns one mobile quota credit through handheld task priority and adaptive mobile structure.",
+  "layout": "Compact mobile pane that reorders by window size and task.",
+  "motion": "Predictable state changes that remain interruptible.",
+  "navigation": "A small viewport exposes the next useful action without removing context or recovery. Compact mobile pane that reorders by window size and task.",
+  "platform": "mobile, android",
+  "responsive_behavior": "Window size, posture, orientation, and device variation change arrangement before they change meaning. Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "handheld task priority: A small viewport exposes the next useful action without removing context or recovery.",
+    "adaptive mobile structure: Window size, posture, orientation, and device variation change arrangement before they change meaning.",
+    "system-aware surfaces: Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior.",
+    "input and state reachability: Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use."
+  ],
+  "source": "https://developer.android.com/design/ui/mobile",
+  "spacing": "A small viewport exposes the next useful action without removing context or recovery. Window size, posture, orientation, and device variation change arrangement before they change meaning.",
+  "states": "Touch targets, focus, gestures, keyboard paths, and visible state survive one-handed and assistive use. Predictable state changes that remain interruptible.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "Android phone applications that must adapt across handheld window sizes",
+    "mobile workflows with recurring navigation, input, and system-state pressure"
+  ],
+  "surfaces": "Navigation, system bars, sheets, and edge treatment remain coherent with Android behavior. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Window size, posture, orientation, and device variation change arrangement before they change meaning.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "fixed kiosk layouts that do not participate in Android navigation or window behavior"
+  ],
+  "visual_thesis": "A small viewport exposes the next useful action without removing context or recovery. Window size, posture, orientation, and device variation change arrangement before they change meaning."
+}

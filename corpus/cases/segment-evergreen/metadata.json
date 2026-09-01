@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "cross-platform-neutral"
+  ],
+  "avoid_for": [
+    "brand campaigns that depend on expressive media and irregular layout"
+  ],
+  "best_for": [
+    "developer-facing SaaS with setup and administration workflows",
+    "teams needing a compact composable component foundation"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "developer-tools",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "onboard-configure",
+    "create-manage"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "none",
+  "name": "Segment Evergreen",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "admin",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "pragmatic composition",
+    "configuration clarity",
+    "bounded flexibility",
+    "quiet hierarchy"
+  ],
+  "slug": "segment-evergreen",
+  "source_kind": "public-design-system",
+  "source_name": "Segment Evergreen",
+  "source_url": "https://evergreen.segment.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Reusable primitives favor clear product assembly over visual novelty. Forms, dialogs, tables, and feedback support technical setup tasks.",
+  "typography_character": "neutral-sans"
+}

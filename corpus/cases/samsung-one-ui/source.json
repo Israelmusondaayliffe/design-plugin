@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "8292cd3445e45a7e8c6cc99b4023475e240da9405bc9ab00d64dec2980605650",
+  "effective_url": "https://developer.samsung.com/one-ui",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.samsung.com/one-ui"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://developer.samsung.com/one-ui",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "samsung-one-ui",
+  "source_version": "live-public-source-2026-09-01:8292cd3445e4",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

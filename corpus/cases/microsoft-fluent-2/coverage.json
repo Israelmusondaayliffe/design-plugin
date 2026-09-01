@@ -1,0 +1,56 @@
+{
+  "accessibility": "The source record is classified advanced; any adaptation still requires direct checks for semantics, focus, contrast, reflow, keyboard or touch behavior, and reduced motion.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "A cross-platform system that uses neutral and brand palettes, a structured typography scale, responsive layout, and compact spacing rules to keep enterprise experiences familiar across different Microsoft surfaces.",
+  "category": "design-systems-data-experimental",
+  "color": "Build a neutral surface hierarchy first. Add semantic shared colors for status and feedback. Brand color should identify and emphasize, not repaint every component. Dark mode needs its own tested relationships rather than simple inversion.",
+  "components": "Buttons, menus, navigation, inputs, dialogs, and data surfaces should share predictable focus, hover, selected, and disabled behavior. Cross-platform implementations may vary in anatomy when platform conventions demand it.",
+  "confidence": "high",
+  "container": "Use containers that keep cross-platform neutrality legible across the supported platforms.",
+  "failure_modes": [
+    "Mistaking neutral styling for lack of hierarchy.",
+    "Painting status states with brand color.",
+    "Using desktop spacing unchanged on touch surfaces.",
+    "Copying Microsoft visual cues into unrelated products without ecosystem or interaction continuity."
+  ],
+  "flows": "Destination test: Cross-platform enterprise products. Evaluate the relationship across creation and management.",
+  "forms": "Use explicit labels, visible validation, and recovery that preserves entered work when forms are part of the adapted product.",
+  "grid": "For Microsoft Fluent 2, the grid must preserve the layout and density relationship described in the analysis rather than imitate source dimensions.",
+  "imagery": "The recorded media strategy is mixed; no source imagery or visual assets are stored in the corpus.",
+  "industry": "technology, enterprise, productivity",
+  "interaction": "Buttons, menus, navigation, inputs, dialogs, and data surfaces should share predictable focus, hover, selected, and disabled behavior. Cross-platform implementations may vary in anatomy when platform conventions demand it.",
+  "lane_fit": "Lane assignment: Cross-platform enterprise products. This case earns one design systems, data, and experimental quota credit through cross-platform neutrality and semantic neutral and brand palettes.",
+  "layout": "Start compact for high-frequency desktop work, then expand touch targets and spacing when the device or interaction mode requires it. Keep alignment, navigation hierarchy, and component roles stable across modes.",
+  "motion": "Motion was not treated as a measured source token in the seed record; use it only for feedback, continuity, or hierarchy and mark further detail unknown.",
+  "navigation": "Navigation should preserve location and the layout priority described for Microsoft Fluent 2 across the listed platforms.",
+  "platform": "web, desktop, cross-platform",
+  "responsive_behavior": "Reorder by task and content priority while preserving cross-platform neutrality and semantic neutral and brand palettes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "cross-platform neutrality",
+    "semantic neutral and brand palettes",
+    "structured typography hierarchy",
+    "4-pixel-oriented spacing ramp",
+    "responsive and touch-aware layout"
+  ],
+  "source": "https://fluent2.microsoft.design/",
+  "spacing": "Spacing should preserve the case's adaptive density and make the documented hierarchy visible without adding decorative gaps.",
+  "states": "Interactive states must keep the component roles in this case visible, including focus, selection, loading, error, and completion where applicable.",
+  "study_date": "2026-08-30",
+  "suitable_uses": [
+    "cross-platform enterprise products",
+    "productivity software",
+    "desktop and web families",
+    "applications balancing compact controls with touch support"
+  ],
+  "surfaces": "Build a neutral surface hierarchy first. Add semantic shared colors for status and feedback. Brand color should identify and emphasize, not repaint every component. Dark mode needs its own tested relationships rather than simple inversion.",
+  "typography": "Use a clear ramp for page title, section heading, body, caption, and control text. Sentence case supports calm operational scanning. Reserve dramatic display typography for actual narrative surfaces, not routine work areas.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and source implementation details beyond the cited public guidance were not inspected."
+  ],
+  "unsuitable_uses": [
+    "highly expressive brand experiences where platform neutrality would erase identity",
+    "interfaces that imitate Microsoft chrome without matching behavior or ecosystem context"
+  ],
+  "visual_thesis": "Fluent 2 is useful when a product must feel coherent across web, desktop, and a broad enterprise ecosystem. Its visual neutrality is supported by disciplined palette roles, compact spacing, clear typography, and adaptive layout rather than by a single signature decoration."
+}

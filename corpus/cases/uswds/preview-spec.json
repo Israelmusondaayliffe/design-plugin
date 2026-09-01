@@ -1,1 +1,14 @@
-{"primary":"#ffffff","secondary":"#005ea8","radius":"4px","pattern":"accessible service page with strong reading order, clear blue action, and visible focus and validation cues"}
+{
+  "layout": "Original abstract composition based on accessible federal service patterns and mobile-first public usability.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the U.S. Web Design System preview only when it clarifies accessible federal service patterns through feedback or continuity.",
+  "pattern": "accessible service page with strong reading order, clear blue action, and visible focus and validation cues",
+  "primary": "#ffffff",
+  "radius": "4px",
+  "schema_version": "1.0",
+  "secondary": "#005ea8"
+}

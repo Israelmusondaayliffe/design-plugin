@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "wave": 11,
+  "name": "Personal alpha corpus and local Site qualification",
+  "recorded_at": "2026-09-01",
+  "scope_result": "pass",
+  "wave_result": "partial",
+  "baseline": {
+    "public_commit": "41d849aeef0b0104cf0fe6ff1e0420843dbf172f",
+    "public_tree": "58a6ce33015c852c443fe9ea1f411e88213c7458",
+    "installed_version": "0.1.0-dev.10",
+    "installed_hosts": [
+      "codex",
+      "claude-code"
+    ]
+  },
+  "corpus": {
+    "case_count": 60,
+    "publication_status": {
+      "public": 60,
+      "review": 0
+    },
+    "lane_counts": {
+      "brand-editorial-portfolio-marketing": 15,
+      "saas-dashboard-admin-productivity": 15,
+      "mobile": 10,
+      "commerce-media-content-heavy": 8,
+      "onboarding-forms-settings-flows": 7,
+      "design-systems-data-experimental": 5
+    },
+    "required_files_per_case": 9,
+    "source_assets_stored": false,
+    "source_audit": {
+      "status": "pass",
+      "unique_url_count": 80,
+      "passing_url_count": 80,
+      "failing_url_count": 0,
+      "locator_mismatch_count": 0,
+      "stored_hash_mismatch_count": 0,
+      "effective_url_collision_count": 0,
+      "corpus_binding_sha256": "8d10eb6cdd7fdf65f50fde4f1f0c47105a180d6f81baefb710298fbc34ab96a2"
+    },
+    "originality_audit": {
+      "status": "pass",
+      "corpus_binding_sha256": "d1b3144802fbc81ccee56688e75091fbe180797c456746367206e78472336e20"
+    }
+  },
+  "site": {
+    "status": "pass-local-undeployed",
+    "catalog_visibility": "public",
+    "catalog_case_count": 60,
+    "catalog_index_sha256": "a54bb0e351099723e4f0c72da629c930e17a296e89e644e340ee2ef431ffa712",
+    "features": [
+      "full-text search",
+      "six corpus lane filters",
+      "six advanced facets",
+      "sorting",
+      "progressive Overview Analysis and Evidence records",
+      "canonical source retrieval dates",
+      "owner-source links",
+      "URL filter and comparison state",
+      "comparison of two to five cases",
+      "keyboard-accessible case tabs",
+      "reduced-motion support"
+    ],
+    "visual_boundary": {
+      "preview_kind": "original-css-only-abstract",
+      "remote_visual_dependencies": false,
+      "source_assets_loaded": false
+    },
+    "browser_checks": {
+      "desktop": {
+        "viewport": "1280x720",
+        "rendered_cards": 60,
+        "lane_controls_including_all": 7,
+        "page_horizontal_overflow": false
+      },
+      "mobile": {
+        "viewport": "390x844",
+        "rendered_cards": 60,
+        "page_horizontal_overflow": false,
+        "comparison_table_scrolls_internally": true
+      },
+      "console_warning_or_error_count": 0,
+      "catalog_http_result": "200-or-cached-304",
+      "detail_route_http_result": 200
+    },
+    "deployment_authorized": false,
+    "deployment_performed": false
+  },
+  "verification": {
+    "local_python": "3.9.6",
+    "test_count": 242,
+    "test_result": "pass",
+    "fresh_public_ci": "pending",
+    "reviewers": {
+      "implementation_worker": "root",
+      "plan_verifier": {
+        "agent": "wave11_gate_verifier",
+        "initial_result": "fail",
+        "repairs": [
+          "render canonical source retrieval dates",
+          "refresh durable Wave 11 state without completion or deployment overclaim"
+        ],
+        "final_result": "pass"
+      },
+      "technical_verifier": {
+        "agent": "codex_install_verifier",
+        "initial_result": "fail",
+        "repair": "rebuild and preserve the accepted-only generated catalog after the full test teardown",
+        "final_result": "pass"
+      },
+      "unslop_reviewer": {
+        "agent": "claude_install_verifier",
+        "initial_result": "fail",
+        "repair_count": 6,
+        "final_result": "pass"
+      }
+    }
+  },
+  "artifact_sha256": {
+    "site/index.html": "7daf9ad1a165c492dce32ed2dde74278529a1b6204c73a005b203072337d7adc",
+    "site/app.js": "879bd2850830feedf40ba4c49e0210df544c1256b074fc44702a817cd7e84222",
+    "site/styles.css": "27f4f0101b0c7d58bd53f5819c270523e8fdfd067275e686906742bf8e4ed835",
+    "site/README.md": "017840c44d28091f33dc0fd6f3d6d630c7400dffaa7a575d808205ca7d3a893c",
+    "tests/test_wave11_site.py": "32dc0e000fa0d38b20e19ea3b0c0f2400db87300e53de640e876ffa0a78754cd",
+    "corpus/README.md": "70035c83a8cce6fd83116b30a909f91accffa148c3232ae470e1b029217df1ec",
+    "PLAN.md": "72cbc6280ac76ba1b0042412b27cadb407bc7e63275e859faa5d749276c17656"
+  },
+  "open_gates": {
+    "benchmarks_complete": 0,
+    "benchmarks_required": 3,
+    "R04": "partial-deferred-nonblocking",
+    "R22": "partial",
+    "wave_11": "partial"
+  }
+}

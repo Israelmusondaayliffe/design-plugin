@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "49fa19a42620ac11aa866505b468c2d97e14026b3f160e2806400416fb9eff91",
+  "effective_url": "https://garden.zendesk.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://garden.zendesk.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://garden.zendesk.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "zendesk-garden",
+  "source_version": "live-public-source-2026-09-01:49fa19a42620",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

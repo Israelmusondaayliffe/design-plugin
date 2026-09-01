@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Reducing people to dense rows without context.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Human resources and finance tasks keep identity and consequence visible. Dense records and processes are disclosed in steps instead of one wall of fields.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Accessibility and international use constrain control and layout decisions.",
+  "components": "Accessibility and international use constrain control and layout decisions. Dense records and processes are disclosed in steps instead of one wall of fields.",
+  "confidence": "medium",
+  "container": "People-centered enterprise task with guided detail and inclusive controls. Accessibility and international use constrain control and layout decisions.",
+  "failure_modes": [
+    "Reducing people to dense rows without context.",
+    "Forking component behavior for one department.",
+    "Showing every field before the user needs it."
+  ],
+  "flows": "Destination test: HR, finance, and workforce applications. Evaluate the relationship across creation and management, and service completion.",
+  "forms": "During creation and management, and service completion, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Human resources and finance tasks keep identity and consequence visible. Shared React components and tokens support consistent enterprise behavior.",
+  "imagery": "People-centered enterprise task with guided detail and inclusive controls. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "enterprise, productivity",
+  "interaction": "Dense records and processes are disclosed in steps instead of one wall of fields.",
+  "lane_fit": "Lane assignment: HR, finance, and workforce applications. This case earns one SaaS, dashboard, administration, and productivity quota credit through people-centered enterprise work and systematic components.",
+  "layout": "Responsive work area with layered record disclosure.",
+  "motion": "Calm progression and confirmation.",
+  "navigation": "Human resources and finance tasks keep identity and consequence visible. Responsive work area with layered record disclosure.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Shared React components and tokens support consistent enterprise behavior. Dense records and processes are disclosed in steps instead of one wall of fields.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "people-centered enterprise work: Human resources and finance tasks keep identity and consequence visible.",
+    "systematic components: Shared React components and tokens support consistent enterprise behavior.",
+    "inclusive defaults: Accessibility and international use constrain control and layout decisions.",
+    "guided complexity: Dense records and processes are disclosed in steps instead of one wall of fields."
+  ],
+  "source": "https://github.com/Workday/canvas-kit",
+  "spacing": "Human resources and finance tasks keep identity and consequence visible. Shared React components and tokens support consistent enterprise behavior.",
+  "states": "Dense records and processes are disclosed in steps instead of one wall of fields. Calm progression and confirmation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "HR, finance, and workforce applications",
+    "enterprise products requiring inclusive reusable components"
+  ],
+  "surfaces": "Accessibility and international use constrain control and layout decisions. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Shared React components and tokens support consistent enterprise behavior.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "media-led discovery pages with little structured work"
+  ],
+  "visual_thesis": "Human resources and finance tasks keep identity and consequence visible. Shared React components and tokens support consistent enterprise behavior."
+}

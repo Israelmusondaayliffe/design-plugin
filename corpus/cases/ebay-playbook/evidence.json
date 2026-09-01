@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for eBay Playbook was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://playbook.ebay.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://playbook.ebay.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Price, condition, seller, delivery, and trust information remain separable in repeated listings.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://playbook.ebay.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://playbook.ebay.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared patterns support two roles with different decisions and responsibilities. Policies, status, and safeguards appear close to consequential actions.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://playbook.ebay.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://playbook.ebay.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For large marketplaces with variable inventory, preserve inventory variability; reject the design if it starts hiding condition or seller context behind visual polish.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://playbook.ebay.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

@@ -1,0 +1,14 @@
+{
+  "layout": "friendly narrative blocks anchored by product conversation evidence",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "subtle message and state transitions",
+  "pattern": "warm collaboration story with a real conversation proof strip and bounded brand color",
+  "primary": "#f4ede4",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#611f69"
+}

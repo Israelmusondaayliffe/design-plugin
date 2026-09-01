@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Shrinking a phone layout onto a watch.",
+  "archetype": "platform-native",
+  "brand_posture": "Critical state and next action fit into a brief wrist-level view. Low-power and inactive states preserve essential information without full intensity.",
+  "category": "mobile",
+  "color": "Tasks minimize steps, text entry, and sustained attention.",
+  "components": "Tasks minimize steps, text entry, and sustained attention. Low-power and inactive states preserve essential information without full intensity.",
+  "confidence": "medium",
+  "container": "Round glanceable display with one metric, one status, and one reachable action. Tasks minimize steps, text entry, and sustained attention.",
+  "failure_modes": [
+    "Shrinking a phone layout onto a watch.",
+    "Placing key text against curved clipping zones.",
+    "Requiring long attention or multi-step typing."
+  ],
+  "flows": "Destination test: Wearable health, navigation, and notification tasks. Evaluate the relationship across monitoring and operations, and service completion.",
+  "forms": "During monitoring and operations, and service completion, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Critical state and next action fit into a brief wrist-level view. Curved boundaries and edge behavior influence content placement.",
+  "imagery": "Round glanceable display with one metric, one status, and one reachable action. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "technology, general",
+  "interaction": "Low-power and inactive states preserve essential information without full intensity.",
+  "lane_fit": "Lane assignment: Wearable health, navigation, and notification tasks. This case earns one mobile quota credit through glanceable hierarchy and round-screen composition.",
+  "layout": "Radial-safe stack centered inside curved bounds.",
+  "motion": "Brief wrist-appropriate confirmation.",
+  "navigation": "Critical state and next action fit into a brief wrist-level view. Radial-safe stack centered inside curved bounds.",
+  "platform": "android, mobile",
+  "responsive_behavior": "Curved boundaries and edge behavior influence content placement. Low-power and inactive states preserve essential information without full intensity.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "glanceable hierarchy: Critical state and next action fit into a brief wrist-level view.",
+    "round-screen composition: Curved boundaries and edge behavior influence content placement.",
+    "short interaction loops: Tasks minimize steps, text entry, and sustained attention.",
+    "ambient continuity: Low-power and inactive states preserve essential information without full intensity."
+  ],
+  "source": "https://developer.android.com/design/ui/wear",
+  "spacing": "Critical state and next action fit into a brief wrist-level view. Curved boundaries and edge behavior influence content placement.",
+  "states": "Low-power and inactive states preserve essential information without full intensity. Brief wrist-appropriate confirmation.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "wearable health, navigation, and notification tasks",
+    "companion experiences with brief repeat interactions"
+  ],
+  "surfaces": "Tasks minimize steps, text entry, and sustained attention. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Curved boundaries and edge behavior influence content placement.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "long-form content, complex configuration, or data entry"
+  ],
+  "visual_thesis": "Critical state and next action fit into a brief wrist-level view. Curved boundaries and edge behavior influence content placement."
+}

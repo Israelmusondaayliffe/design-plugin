@@ -1,0 +1,61 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "enterprise-technical"
+  ],
+  "avoid_for": [
+    "media-led discovery pages with little structured work"
+  ],
+  "best_for": [
+    "HR, finance, and workforce applications",
+    "enterprise products requiring inclusive reusable components"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "saas-dashboard-admin-productivity",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "enterprise",
+    "productivity"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "complete-service"
+  ],
+  "layout_behavior": "dense-application",
+  "media_strategy": "icon-led",
+  "name": "Workday Canvas",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "saas",
+    "dashboard",
+    "admin",
+    "workflow",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "people-centered enterprise work",
+    "systematic components",
+    "inclusive defaults",
+    "guided complexity"
+  ],
+  "slug": "workday-canvas",
+  "source_kind": "public-design-system",
+  "source_name": "Workday Canvas",
+  "source_url": "https://github.com/Workday/canvas-kit",
+  "studied_at": "2026-09-01",
+  "summary": "Human resources and finance tasks keep identity and consequence visible. Shared React components and tokens support consistent enterprise behavior.",
+  "typography_character": "humanist-sans"
+}

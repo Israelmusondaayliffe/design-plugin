@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "professional trading systems whose users expect maximal density and domain shorthand"
+  ],
+  "best_for": [
+    "financial tools for non-specialists",
+    "small-business platforms joining acquisition pages to complex product work"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "adaptive",
+    "brand-variable"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "productivity"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "evaluate-convert",
+    "create-manage"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "product-evidence",
+  "name": "QuickBooks Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "marketing",
+    "saas",
+    "dashboard"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "small-business reassurance",
+    "brand-to-product bridge",
+    "guided evidence",
+    "approachable utility"
+  ],
+  "slug": "quickbooks-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "QuickBooks Design System",
+  "source_url": "https://design.intuit.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Plain hierarchy reduces intimidation around financial work. Marketing warmth gives way to disciplined tables, forms, and status.",
+  "typography_character": "humanist-sans"
+}

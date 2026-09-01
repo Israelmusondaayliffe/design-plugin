@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "db5783f0765181ba754e507e14137b27f0c6ec241416db6a2c407b8b409debda",
+  "effective_url": "https://eui.elastic.co/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://eui.elastic.co/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://eui.elastic.co/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "elastic-eui",
+  "source_version": "live-public-source-2026-09-01:db5783f07651",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

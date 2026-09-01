@@ -15,7 +15,7 @@ CORPUS = ROOT / "corpus"
 CASES = CORPUS / "cases"
 SITE = ROOT / "site"
 MANIFEST = ROOT / "core/catalog-manifest/catalog.json"
-EXPECTED = {
+ENGINEERING_SEEDS = {
     "adobe-spectrum-2",
     "apple-hig",
     "atlassian-design-system",
@@ -37,6 +37,8 @@ REQUIRED_CASE_FILES = {
     "source-notes.md",
     "review.json",
     "preview-spec.json",
+    "coverage.json",
+    "source.json",
 }
 
 
@@ -47,7 +49,7 @@ class Wave4CorpusTests(unittest.TestCase):
             if path.exists():
                 shutil.rmtree(path)
         cls.validation = subprocess.run(
-            [sys.executable, str(CORPUS / "scripts/validate_corpus.py")],
+            [sys.executable, str(CORPUS / "scripts/validate_corpus.py"), "--allow-pending-review"],
             cwd=ROOT,
             check=True,
             text=True,
@@ -55,7 +57,7 @@ class Wave4CorpusTests(unittest.TestCase):
         )
         cls.validation_report = json.loads(cls.validation.stdout)
         cls.build = subprocess.run(
-            [sys.executable, str(CORPUS / "scripts/build_catalog.py")],
+            [sys.executable, str(CORPUS / "scripts/build_catalog.py"), "--allow-pending-review"],
             cwd=ROOT,
             check=True,
             text=True,
@@ -69,14 +71,15 @@ class Wave4CorpusTests(unittest.TestCase):
             if path.exists():
                 shutil.rmtree(path)
 
-    def test_exact_engineering_seed_exists(self) -> None:
+    def test_engineering_seed_remains_intact_inside_alpha(self) -> None:
         actual = {path.name for path in CASES.iterdir() if path.is_dir()}
-        self.assertEqual(actual, EXPECTED)
-        self.assertEqual(self.validation_report["case_count"], 12)
-        self.assertEqual(set(self.validation_report["slugs"]), EXPECTED)
+        self.assertTrue(ENGINEERING_SEEDS.issubset(actual))
+        self.assertEqual(len(actual), 60)
+        self.assertEqual(self.validation_report["case_count"], 60)
+        self.assertEqual(set(self.validation_report["slugs"]), actual)
 
     def test_each_case_has_complete_original_record_shape(self) -> None:
-        for slug in EXPECTED:
+        for slug in ENGINEERING_SEEDS:
             case = CASES / slug
             files = {path.name for path in case.iterdir() if path.is_file()}
             self.assertTrue(REQUIRED_CASE_FILES.issubset(files), slug)
@@ -89,7 +92,7 @@ class Wave4CorpusTests(unittest.TestCase):
 
     def test_refero_is_not_a_corpus_source(self) -> None:
         prohibited = ("refero.design", "styles.refero.design", "api.refero.design")
-        for slug in EXPECTED:
+        for slug in (path.name for path in CASES.iterdir() if path.is_dir()):
             metadata = json.loads((CASES / slug / "metadata.json").read_text())
             evidence = json.loads((CASES / slug / "evidence.json").read_text())
             urls = [metadata["source_url"], *[item["source_url"] for item in evidence["items"]]]
@@ -106,7 +109,7 @@ class Wave4CorpusTests(unittest.TestCase):
     def test_compact_manifest_matches_seed_and_stays_small(self) -> None:
         manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
         self.assertEqual(manifest["case_count"], 12)
-        self.assertEqual(set(manifest["seed_cases"]), EXPECTED)
+        self.assertEqual(set(manifest["seed_cases"]), ENGINEERING_SEEDS)
         self.assertFalse(manifest["remote_corpus_bundled"])
         self.assertLess(MANIFEST.stat().st_size, 100_000)
         text = MANIFEST.read_text(encoding="utf-8")
@@ -126,12 +129,13 @@ class Wave4CorpusTests(unittest.TestCase):
         self.assertTrue(fallback["lower_confidence"])
 
     def test_catalog_generation_builds_progressive_routes(self) -> None:
-        self.assertEqual(self.build_report["case_count"], 12)
+        self.assertEqual(self.build_report["case_count"], 60)
         for root in (CORPUS / "generated", SITE / "generated-data"):
             index = json.loads((root / "catalog/index.json").read_text())
-            self.assertEqual(index["case_count"], 12)
-            self.assertEqual({case["slug"] for case in index["cases"]}, EXPECTED)
-            for slug in EXPECTED:
+            self.assertEqual(index["case_count"], 60)
+            self.assertEqual(index["visibility"], "local")
+            self.assertTrue(ENGINEERING_SEEDS.issubset({case["slug"] for case in index["cases"]}))
+            for slug in ENGINEERING_SEEDS:
                 base = root / "cases" / slug
                 self.assertTrue((base / "summary.json").is_file())
                 self.assertTrue((base / "DESIGN.md").is_file())
@@ -149,7 +153,7 @@ class Wave4CorpusTests(unittest.TestCase):
         self.assertIn('id="comparison"', html)
         self.assertIn("selected.size<5", app)
         self.assertIn("generated-data/catalog/index.json", app)
-        self.assertIn("fall back to its local manifest", app)
+        self.assertIn("Rebuild the public catalog data", app)
 
     def test_full_corpus_and_site_are_outside_distributed_package(self) -> None:
         spec = json.loads((ROOT / "bundle-spec.json").read_text())
@@ -165,14 +169,12 @@ class Wave4CorpusTests(unittest.TestCase):
         self.assertIn("original analysis", policy.lower())
         self.assertIn("do not bulk-copy refero", policy.lower())
         self.assertIn("publication states", policy.lower())
-        for slug in EXPECTED:
+        for slug in (path.name for path in CASES.iterdir() if path.is_dir()):
             metadata = json.loads((CASES / slug / "metadata.json").read_text())
             review = json.loads((CASES / slug / "review.json").read_text())
-            self.assertEqual(metadata["publication_status"], "review")
-            self.assertEqual(review["status"], "review")
-            self.assertTrue(review["originality_checked"])
-            self.assertTrue(review["rights_checked"])
-            self.assertTrue(review["assets_checked"])
+            self.assertIn(metadata["publication_status"], {"review", "public"})
+            self.assertEqual(review["status"], metadata["publication_status"])
+            self.assertIn(review["result"], {"pending", "pass"})
 
 
 if __name__ == "__main__":

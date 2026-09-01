@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Duolingo Design was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.duolingo.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.duolingo.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Mascot and illustration behavior make progress feel social rather than abstract.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.duolingo.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.duolingo.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Type, controls, and shapes share approachable weight and clear touch affordance. Success, streak, and correction states visibly change the learner's emotional momentum.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.duolingo.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.duolingo.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For learning products that need motivation and repeated return, preserve lesson-first hierarchy; reject the design if it starts adding mascot reactions without a real learning or state job.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.duolingo.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

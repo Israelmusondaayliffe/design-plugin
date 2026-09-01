@@ -1,1 +1,14 @@
-{"primary":"#f6f8fa","secondary":"#24292f","radius":"6px","pattern":"dense repository workspace with aligned metadata, restrained surfaces, and one semantic state accent"}
+{
+  "layout": "Original abstract composition based on dense technical information and reusable foundation primitives.",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "Use motion in the GitHub Primer preview only when it clarifies dense technical information through feedback or continuity.",
+  "pattern": "dense repository workspace with aligned metadata, restrained surfaces, and one semantic state accent",
+  "primary": "#f6f8fa",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#24292f"
+}

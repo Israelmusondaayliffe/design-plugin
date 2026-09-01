@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "desktop-first workspaces whose core task requires persistent wide-screen comparison"
+  ],
+  "best_for": [
+    "touch-first iPhone applications with platform-native interaction",
+    "mobile products that need familiar navigation and adaptive input"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "onboard-configure"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "mixed",
+  "name": "Apple iOS Guidance",
+  "platforms": [
+    "mobile",
+    "ios"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "touch-first hierarchy",
+    "platform-shaped navigation",
+    "content-led chrome",
+    "adaptive input"
+  ],
+  "slug": "apple-ios",
+  "source_kind": "public-design-system",
+  "source_name": "Apple iOS Guidance",
+  "source_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ios",
+  "studied_at": "2026-09-01",
+  "summary": "Primary actions remain reachable, legible, and physically credible on a handheld screen. Bars, sheets, tabs, and transitions preserve location without imitating a desktop window model.",
+  "typography_character": "neutral-sans"
+}

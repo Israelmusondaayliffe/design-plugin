@@ -1,0 +1,14 @@
+{
+  "layout": "dense grid with stable sidebar and task panel",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "brief system feedback and loading continuity",
+  "pattern": "compact enterprise shell with table, form, and explicit multi-state controls",
+  "primary": "#f5f7fa",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#1677ff"
+}

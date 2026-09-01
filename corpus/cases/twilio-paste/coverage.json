@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Changing token meanings while applying a new theme.",
+  "archetype": "cross-platform-neutral",
+  "brand_posture": "Labels, help, errors, and confirmation support technical setup without jargon drift. Documentation connects design intent with implementation detail.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Keyboard, focus, names, and status behavior are part of component use.",
+  "components": "Keyboard, focus, names, and status behavior are part of component use. Documentation connects design intent with implementation detail.",
+  "confidence": "medium",
+  "container": "Communication setup flow with exact labels, visible validation, and themeable states. Keyboard, focus, names, and status behavior are part of component use.",
+  "failure_modes": [
+    "Changing token meanings while applying a new theme.",
+    "Hiding configuration errors in generic banners.",
+    "Treating documentation examples as finished product copy."
+  ],
+  "flows": "Destination test: Communications platforms with technical configuration. Evaluate the relationship across creation and management, and onboarding and configuration.",
+  "forms": "During creation and management, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Labels, help, errors, and confirmation support technical setup without jargon drift. Tokens preserve roles across products and branded contexts.",
+  "imagery": "Communication setup flow with exact labels, visible validation, and themeable states. Product evidence sits beside the claim it proves. No source asset is stored.",
+  "industry": "technology, enterprise",
+  "interaction": "Documentation connects design intent with implementation detail.",
+  "lane_fit": "Lane assignment: Communications platforms with technical configuration. This case earns one SaaS, dashboard, administration, and productivity quota credit through communication clarity and themeable semantics.",
+  "layout": "Adaptive configuration grid with help close to action.",
+  "motion": "Direct feedback with announced state changes.",
+  "navigation": "Labels, help, errors, and confirmation support technical setup without jargon drift. Adaptive configuration grid with help close to action.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Tokens preserve roles across products and branded contexts. Documentation connects design intent with implementation detail.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "communication clarity: Labels, help, errors, and confirmation support technical setup without jargon drift.",
+    "themeable semantics: Tokens preserve roles across products and branded contexts.",
+    "accessible component contracts: Keyboard, focus, names, and status behavior are part of component use.",
+    "developer-designer continuity: Documentation connects design intent with implementation detail."
+  ],
+  "source": "https://paste.twilio.design/",
+  "spacing": "Labels, help, errors, and confirmation support technical setup without jargon drift. Tokens preserve roles across products and branded contexts.",
+  "states": "Documentation connects design intent with implementation detail. Direct feedback with announced state changes.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "communications platforms with technical configuration",
+    "multi-product SaaS needing themeable but stable behavior"
+  ],
+  "surfaces": "Keyboard, focus, names, and status behavior are part of component use. Preview surfaces use original study values.",
+  "typography": "Humanist sans type keeps instructions and repeated controls approachable without softening their meaning. Tokens preserve roles across products and branded contexts.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single-purpose brand pages with little application state"
+  ],
+  "visual_thesis": "Labels, help, errors, and confirmation support technical setup without jargon drift. Tokens preserve roles across products and branded contexts."
+}

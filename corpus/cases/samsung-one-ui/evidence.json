@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Samsung One UI was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://developer.samsung.com/one-ui",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://developer.samsung.com/one-ui"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Information and controls account for large screens and one-handed use.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://developer.samsung.com/one-ui",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://developer.samsung.com/one-ui"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Upper regions orient while lower regions concentrate frequent interaction. Settings, navigation, and feedback reuse familiar Samsung behavior.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://developer.samsung.com/one-ui",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://developer.samsung.com/one-ui"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For Android applications for Samsung devices, preserve large-screen adaptation; reject the design if it starts placing frequent actions outside comfortable reach.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://developer.samsung.com/one-ui"
+    }
+  ],
+  "schema_version": "1.0"
+}

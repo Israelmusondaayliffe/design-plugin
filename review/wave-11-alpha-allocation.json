@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "wave": 11,
+  "name": "Personal alpha corpus allocation and acceptance contract",
+  "status": "active",
+  "authorized_at": "2026-09-01",
+  "baseline": {
+    "public_commit": "41d849aeef0b0104cf0fe6ff1e0420843dbf172f",
+    "case_count": 12,
+    "r04": "partial-deferred-nonblocking",
+    "r22": "partial"
+  },
+  "scope": {
+    "first": "expand the canonical corpus from 12 to 60 reviewed original cases",
+    "second": "build and qualify the local undeployed reference Site against the 60-case catalog",
+    "later_in_wave": "run the three approved validation projects and correct workflow failures"
+  },
+  "boundaries": {
+    "refero_catalog_copying": false,
+    "refero_runtime_dependency": false,
+    "source_binary_assets": false,
+    "site_deployment": false,
+    "active_host_update": false,
+    "image_generation_batch": false,
+    "figma_write": false
+  },
+  "plan_reconciliation": {
+    "stale_notion_path": "preview-card.webp",
+    "implemented_path": "preview-spec.json",
+    "decision": "Keep the qualified binary-free preview specification. Do not add copied or generated source-card binaries to canonical cases.",
+    "publication_status_meaning": "review cases remain local and uncommitted while clearance is pending. Independently accepted original cases are promoted to public before any public-repository commit. Public Site deployment remains a separate, unauthorized action."
+  },
+  "quota": {
+    "brand-editorial-portfolio-marketing": 15,
+    "saas-dashboard-admin-productivity": 15,
+    "mobile": 10,
+    "commerce-media-content-heavy": 8,
+    "onboarding-forms-settings-flows": 7,
+    "design-systems-data-experimental": 5
+  },
+  "seed_credit": {
+    "brand-editorial-portfolio-marketing": ["porsche-design-system"],
+    "saas-dashboard-admin-productivity": ["atlassian-design-system", "github-primer", "salesforce-slds-2"],
+    "mobile": ["apple-hig"],
+    "commerce-media-content-heavy": ["shopify-polaris"],
+    "onboarding-forms-settings-flows": ["govuk-design-system", "uswds"],
+    "design-systems-data-experimental": ["adobe-spectrum-2", "ibm-carbon", "material-3", "microsoft-fluent-2"]
+  },
+  "new_cases": {
+    "brand-editorial-portfolio-marketing": [
+      "vercel-geist", "linear-marketing", "mozilla-protocol", "dropbox-brand", "skyscanner-backpack", "wise-design", "duolingo-design", "quickbooks-design-system", "mailchimp-brand", "spotify-encore", "bbc-gel", "guardian-source", "slack-brand", "stripe-marketing"
+    ],
+    "saas-dashboard-admin-productivity": [
+      "gitlab-pajamas", "ant-design", "elastic-eui", "patternfly", "twilio-paste", "zendesk-garden", "sap-fiori", "monday-vibe", "workday-canvas", "semrush-intergalactic", "segment-evergreen", "uber-base-web"
+    ],
+    "mobile": [
+      "samsung-one-ui", "ionic-components", "react-native-paper", "framework7", "apple-ios", "material-wear-os", "android-mobile", "tamagui-native", "apple-ipados"
+    ],
+    "commerce-media-content-heavy": [
+      "ebay-playbook", "rei-cedar", "thumbtack-thumbprint", "kiwi-orbit", "decathlon-vitamin", "visa-design-system", "paypal-checkout"
+    ],
+    "onboarding-forms-settings-flows": [
+      "nhs-service-manual", "ontario-design-system", "va-design-system", "cms-design-system", "california-design-system"
+    ],
+    "design-systems-data-experimental": ["observable-plot"]
+  },
+  "case_acceptance": {
+    "required_files": ["DESIGN.md", "metadata.json", "evidence.json", "tokens.json", "source-notes.md", "review.json", "preview-spec.json", "coverage.json", "source.json"],
+    "minimum_evidence_items": 4,
+    "minimum_normalized_roles": 4,
+    "minimum_design_characters": 1200,
+    "all_review_checks_true": true,
+    "source_and_study_date_bound_to_coverage": true,
+    "explicit_confidence_and_unknowns": true,
+    "single_quota_credit": true,
+    "lane_fit_rationale": true,
+    "source_health_bound_to_candidate": true,
+    "originality_audit_normalizes_case_slots": true
+  },
+  "wave_exit": {
+    "corpus_case_count": 60,
+    "quota_exact": true,
+    "local_site_qualified": true,
+    "validation_projects_required": 3,
+    "unresolved_critical_workflow_failures": 0,
+    "r22_before_benchmarks": "partial"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "88a707cae96f45c8800108461fdca6719544adceed1b544ebcd3a16014688484",
+  "effective_url": "https://vibe.monday.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://vibe.monday.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://vibe.monday.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "monday-vibe",
+  "source_version": "live-public-source-2026-09-01:88a707cae96f",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

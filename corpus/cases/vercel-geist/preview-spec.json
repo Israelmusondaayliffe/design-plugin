@@ -1,0 +1,14 @@
+{
+  "layout": "wide proof band crossing a strict editorial grid",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "brief opacity and position changes that clarify state",
+  "pattern": "precise monochrome grid with a sharp proof window and sparse high-contrast controls",
+  "primary": "#fafafa",
+  "radius": "6px",
+  "schema_version": "1.0",
+  "secondary": "#111111"
+}

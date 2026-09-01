@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Ontario Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://designsystem.ontario.ca/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://designsystem.ontario.ca/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Content and controls organize around completing a public service rather than promoting the agency.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://designsystem.ontario.ca/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://designsystem.ontario.ca/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Layout and component behavior allow text expansion and language change. Labels, help, validation, and status remain explicit through the full task.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://designsystem.ontario.ca/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://designsystem.ontario.ca/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For provincial or regional government services, preserve official but plain tone; reject the design if it starts designing around one language length.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://designsystem.ontario.ca/"
+    }
+  ],
+  "schema_version": "1.0"
+}

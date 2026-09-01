@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "61692d36d48cb6ea179c6df5747778b8b59b3674f459cd3335a5657daed2d1f2",
+  "effective_url": "https://design.intuit.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://design.intuit.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://design.intuit.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "quickbooks-design-system",
+  "source_version": "live-public-source-2026-09-01:61692d36d48c",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

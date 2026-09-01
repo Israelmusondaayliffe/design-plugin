@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "066c26f55b8609e5c7d5f71ad1691caddc1db1ece3aaa0c71c59609edb58b807",
+  "effective_url": "https://playbook.ebay.com/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://playbook.ebay.com/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://playbook.ebay.com/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "ebay-playbook",
+  "source_version": "live-public-source-2026-09-01:066c26f55b86",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

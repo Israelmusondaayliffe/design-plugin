@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Stripe Marketing was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://stripe.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://stripe.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Large global claims are anchored by specific payment and developer evidence.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://stripe.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://stripe.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Interface, code, diagrams, and numbers show different parts of the same system. Gradient and color atmosphere frame the story while transactional states remain semantic.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://stripe.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://stripe.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For infrastructure companies with real technical and economic proof, preserve global scale narrative; reject the design if it starts using gradients as a substitute for product proof.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://stripe.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

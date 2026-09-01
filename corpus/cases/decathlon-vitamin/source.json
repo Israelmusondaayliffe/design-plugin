@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "ae9e0f3347f0aa5833585672c081a53b649e37407cce09b49edbe4b622a549ed",
+  "effective_url": "https://github.com/Decathlon/vitamin-web",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://github.com/Decathlon/vitamin-web"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://github.com/Decathlon/vitamin-web",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "decathlon-vitamin",
+  "source_version": "live-public-source-2026-09-01:ae9e0f3347f0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

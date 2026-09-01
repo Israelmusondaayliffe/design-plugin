@@ -1,0 +1,20 @@
+{
+  "archive_url": null,
+  "content_sha256": "71d054d43e4ddd10e269bef3c39c0a6e788d1a195af3dfe4501cde48d835bd34",
+  "effective_url": "https://developer.android.com/design/ui/mobile",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.android.com/design/ui/mobile"
+  ],
+  "limitations": [
+    "The live public source may change after the recorded response hash."
+  ],
+  "owner_url": "https://developer.android.com/design/ui/mobile",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "android-mobile",
+  "source_version": "live-public-source-2026-09-01:71d054d43e4d",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

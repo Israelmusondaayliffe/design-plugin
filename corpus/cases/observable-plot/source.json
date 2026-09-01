@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "f1b56b4223b04d068771ef64c222a2e4a39733f3ae8873ca83b5e53bec5aa5e4",
+  "effective_url": "https://observablehq.github.io/plot/",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://observablehq.github.io/plot/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://observablehq.github.io/plot/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "observable-plot",
+  "source_version": "live-public-source-2026-09-01:f1b56b4223b0",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

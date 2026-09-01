@@ -1,0 +1,14 @@
+{
+  "layout": "data canvas paired with a narrow code and explanation rail",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "optional transition only when it explains data change",
+  "pattern": "declarative chart canvas with layered marks, facets, and a concise specification",
+  "primary": "#f8f8f8",
+  "radius": "2px",
+  "schema_version": "1.0",
+  "secondary": "#3b7dd8"
+}

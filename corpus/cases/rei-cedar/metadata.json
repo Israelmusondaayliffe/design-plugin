@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "pure digital subscriptions with no meaningful product media or physical specifications"
+  ],
+  "best_for": [
+    "outdoor and equipment commerce",
+    "retailers joining educational content with technical product comparison"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "photography-led",
+  "name": "REI Cedar",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "commerce",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "outdoor context",
+    "specification clarity",
+    "commerce-content bridge",
+    "earthy restraint"
+  ],
+  "slug": "rei-cedar",
+  "source_kind": "public-design-system",
+  "source_name": "REI Cedar",
+  "source_url": "https://rei.github.io/rei-cedar-docs/",
+  "studied_at": "2026-09-01",
+  "summary": "Product and editorial imagery connect equipment to real environments and uses. Fit, size, technical attributes, stock, and fulfillment remain easy to compare.",
+  "typography_character": "humanist-sans"
+}

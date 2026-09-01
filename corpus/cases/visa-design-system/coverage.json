@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Using payment brand color as a generic merchant accent.",
+  "archetype": "enterprise-technical",
+  "brand_posture": "Identity, amount, method, status, and next action remain explicit around payment. Pending, approved, declined, and retry conditions are visually and verbally distinct.",
+  "category": "commerce-media-content-heavy",
+  "color": "Visa identity can appear within merchant products without taking over the host interface.",
+  "components": "Visa identity can appear within merchant products without taking over the host interface. Pending, approved, declined, and retry conditions are visually and verbally distinct.",
+  "confidence": "medium",
+  "container": "Trusted payment form with explicit amount, method, status, and recovery. Visa identity can appear within merchant products without taking over the host interface.",
+  "failure_modes": [
+    "Using payment brand color as a generic merchant accent.",
+    "Showing failure without a recovery action.",
+    "Hiding amount, funding source, or status during confirmation."
+  ],
+  "flows": "Destination test: Payment and financial service interfaces. Evaluate the relationship across transactions and checkout, and onboarding and configuration.",
+  "forms": "During transactions and checkout, and onboarding and configuration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Identity, amount, method, status, and next action remain explicit around payment. Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery.",
+  "imagery": "Trusted payment form with explicit amount, method, status, and recovery. Icons identify action or state and never carry meaning alone. No source asset is stored.",
+  "industry": "commerce, enterprise",
+  "interaction": "Pending, approved, declined, and retry conditions are visually and verbally distinct.",
+  "lane_fit": "Lane assignment: Payment and financial service interfaces. This case earns one commerce, media, and content-heavy quota credit through transaction trust and accessible financial controls.",
+  "layout": "Focused transaction container inside a quiet host shell.",
+  "motion": "Short secure-state confirmation and error feedback.",
+  "navigation": "Identity, amount, method, status, and next action remain explicit around payment. Focused transaction container inside a quiet host shell.",
+  "platform": "web, responsive-web, mobile, cross-platform",
+  "responsive_behavior": "Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery. Pending, approved, declined, and retry conditions are visually and verbally distinct.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "transaction trust: Identity, amount, method, status, and next action remain explicit around payment.",
+    "accessible financial controls: Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery.",
+    "brand-safe integration: Visa identity can appear within merchant products without taking over the host interface.",
+    "state certainty: Pending, approved, declined, and retry conditions are visually and verbally distinct."
+  ],
+  "source": "https://design.visa.com/",
+  "spacing": "Identity, amount, method, status, and next action remain explicit around payment. Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery.",
+  "states": "Pending, approved, declined, and retry conditions are visually and verbally distinct. Short secure-state confirmation and error feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "payment and financial service interfaces",
+    "merchant integrations that need trusted branded components"
+  ],
+  "surfaces": "Visa identity can appear within merchant products without taking over the host interface. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "pure editorial content with no transaction or identity state"
+  ],
+  "visual_thesis": "Identity, amount, method, status, and next action remain explicit around payment. Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery."
+}

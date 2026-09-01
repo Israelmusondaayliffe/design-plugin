@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "advanced",
+  "archetypes": [
+    "federal-accessible"
+  ],
+  "avoid_for": [
+    "short impulse-purchase flows with no need for save or evidence handling"
+  ],
+  "best_for": [
+    "benefits, eligibility, and long public applications",
+    "services where users may need to pause and resume"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light"
+  ],
+  "corpus_lane": "onboarding-forms-settings-flows",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "government",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "complete-service",
+    "onboard-configure"
+  ],
+  "layout_behavior": "service-flow",
+  "media_strategy": "none",
+  "name": "VA Design System",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "forms",
+    "workflow",
+    "settings",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "benefit-task guidance",
+    "sensitive-context respect",
+    "progress and save continuity",
+    "federal accessibility"
+  ],
+  "slug": "va-design-system",
+  "source_kind": "public-design-system",
+  "source_name": "VA Design System",
+  "source_url": "https://design.va.gov/",
+  "studied_at": "2026-09-01",
+  "summary": "Complex eligibility and application work is broken into understandable decisions. Copy, validation, and support recognize the consequences of mistakes and uncertainty.",
+  "typography_character": "humanist-sans"
+}

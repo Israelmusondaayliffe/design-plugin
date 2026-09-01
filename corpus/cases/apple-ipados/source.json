@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "dafecc071f89cf81c5f39f285df8a7947934937724fa7e5651fd76a5d40a3200",
+  "effective_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://developer.apple.com/design/human-interface-guidelines/designing-for-ipados",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "apple-ipados",
+  "source_version": "live-public-source-2026-09-01:dafecc071f89",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

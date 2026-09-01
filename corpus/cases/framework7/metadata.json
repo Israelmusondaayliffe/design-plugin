@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "baseline",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "products requiring a narrow bespoke interaction language with little platform resemblance"
+  ],
+  "best_for": [
+    "mobile web and hybrid apps needing native-like navigation",
+    "rapid prototypes that still need coherent touch patterns"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "medium",
+  "evidence_quality": "medium",
+  "industries": [
+    "developer-tools",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "create-manage"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Framework7",
+  "platforms": [
+    "ios",
+    "android",
+    "mobile",
+    "cross-platform"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "platform visual modes",
+    "mobile navigation depth",
+    "touch-first components",
+    "prototype-to-product range"
+  ],
+  "slug": "framework7",
+  "source_kind": "public-design-system",
+  "source_name": "Framework7",
+  "source_url": "https://framework7.io/docs/",
+  "studied_at": "2026-09-01",
+  "summary": "iOS and Material presentations retain familiar bars, lists, sheets, and controls. Routers, views, tabs, panels, and modals support app-like hierarchy.",
+  "typography_character": "neutral-sans"
+}

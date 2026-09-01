@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Visa Product Design System was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://design.visa.com/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://design.visa.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Identity, amount, method, status, and next action remain explicit around payment.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://design.visa.com/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://design.visa.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Inputs and feedback are designed for keyboard, assistive technology, and clear error recovery. Visa identity can appear within merchant products without taking over the host interface.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://design.visa.com/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://design.visa.com/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For payment and financial service interfaces, preserve state certainty; reject the design if it starts using payment brand color as a generic merchant accent.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://design.visa.com/"
+    }
+  ],
+  "schema_version": "1.0"
+}

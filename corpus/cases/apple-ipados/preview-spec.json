@@ -1,0 +1,14 @@
+{
+  "layout": "resizable split workspace responding to window class",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "platform continuity for windows, panels, and direct manipulation",
+  "pattern": "adaptive tablet workspace with content-first canvas and multi-input controls",
+  "primary": "#f2f3f5",
+  "radius": "16px",
+  "schema_version": "1.0",
+  "secondary": "#0a84ff"
+}

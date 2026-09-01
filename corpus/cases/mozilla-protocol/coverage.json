@@ -1,0 +1,53 @@
+{
+  "accessibility": "Test semantic order, focus, contrast, keyboard and touch parity, reflow, non-color state cues, and reduced motion. Treating every module as interchangeable and losing editorial emphasis.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "Reusable modules support several kinds of public communication. Design guidance and front-end components are presented as one working system.",
+  "category": "brand-editorial-portfolio-marketing",
+  "color": "Long reading, campaigns, and product explanation share compatible foundations.",
+  "components": "Long reading, campaigns, and product explanation share compatible foundations.",
+  "confidence": "high",
+  "container": "Container changes follow task priority during browsing and discovery, plus evaluation and conversion; they do not imitate the source page frame.",
+  "failure_modes": [
+    "Treating every module as interchangeable and losing editorial emphasis.",
+    "Using campaign color across utility content until reading hierarchy collapses.",
+    "Copying Mozilla voice or imagery instead of adapting the structural grammar.",
+    "Ignoring localization when display type and modules compress."
+  ],
+  "flows": "Destination test: Multi-property organizations publishing campaigns and product stories. Evaluate the relationship across browsing and discovery, and evaluation and conversion.",
+  "forms": "Use literal labels, persistent input, visible validation, and recovery suited to browsing and discovery, plus evaluation and conversion.",
+  "grid": "The grid must preserve publishing grammar while supporting alternating full-width and reading-width modules.",
+  "imagery": "Modular editorial bands with bold type, one campaign color, and a bounded media feature. The required media role is separate product, photography, illustration, and data roles. No source asset is carried into the case.",
+  "industry": "technology, general",
+  "interaction": "Long reading, campaigns, and product explanation share compatible foundations. Design guidance and front-end components are presented as one working system.",
+  "lane_fit": "Lane assignment: Multi-property organizations publishing campaigns and product stories. This case earns one brand, editorial, portfolio, and marketing quota credit through Publishing grammar and Voice without sameness.",
+  "layout": "Alternating full-width and reading-width modules.",
+  "motion": "Light component feedback with no required spectacle.",
+  "navigation": "Navigation must keep the user's place during browsing and discovery, plus evaluation and conversion. Reusable modules support several kinds of public communication.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Reorder around browsing and discovery, plus evaluation and conversion. Keep implementation continuity visible when the viewport or device changes.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "Publishing grammar: Reusable modules support several kinds of public communication.",
+    "Voice without sameness: Brand character survives without one rigid page template.",
+    "Editorial range: Long reading, campaigns, and product explanation share compatible foundations.",
+    "Bounded expression: Color and media can become loud in named roles while utility remains stable.",
+    "Implementation continuity: Design guidance and front-end components are presented as one working system."
+  ],
+  "source": "https://protocol.mozilla.org/",
+  "spacing": "Spacing should expose the relationship between publishing grammar and voice without sameness at adaptive density.",
+  "states": "Design guidance and front-end components are presented as one working system.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "multi-property organizations publishing campaigns and product stories",
+    "public-interest technology brands with both editorial and conversion needs"
+  ],
+  "surfaces": "Long reading, campaigns, and product explanation share compatible foundations. Preview surfaces are original study material, not sampled owner assets.",
+  "typography": "Use distinct display, reading, and utility voices. Brand character survives without one rigid page template.",
+  "unknowns": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "single-screen tools that need dense operational controls more than publishing flexibility"
+  ],
+  "visual_thesis": "Reusable modules support several kinds of public communication. Brand character survives without one rigid page template."
+}

@@ -1,0 +1,22 @@
+{
+  "archive_url": null,
+  "content_sha256": "3b674d4dc7cfd26c4d7ed9affaa8837ac5ea1b531bb677e4f108440e8d69abf2",
+  "effective_url": "https://www.bbc.co.uk/gel",
+  "http_status": 200,
+  "inspected_locators": [
+    "URL: https://www.bbc.co.uk/gel/"
+  ],
+  "limitations": [
+    "Internal product metrics, unpublished design decisions, and closed-source implementation details were not inspected.",
+    "The response hash proves retrieval of the owner source; evidence classification and review determine what the source supports.",
+    "The live public source may change after this study date."
+  ],
+  "owner_url": "https://www.bbc.co.uk/gel/",
+  "permitted_use_basis": "original-analysis-from-ordinary-public-access",
+  "retrieved_at": "2026-09-01",
+  "schema_version": "1.0",
+  "source_scope_id": "bbc-gel",
+  "source_version": "live-public-source-2026-09-01:3b674d4dc7cf",
+  "terms_or_license_url": null,
+  "third_party_assets_stored": false
+}

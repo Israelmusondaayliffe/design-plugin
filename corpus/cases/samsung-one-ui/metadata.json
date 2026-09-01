@@ -1,0 +1,59 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "platform-native"
+  ],
+  "avoid_for": [
+    "dense desktop tools whose main interaction depends on pointer precision"
+  ],
+  "best_for": [
+    "Android applications for Samsung devices",
+    "mobile products needing one-handed and large-screen behavior"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "mobile",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "technology",
+    "general"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "create-manage",
+    "onboard-configure"
+  ],
+  "layout_behavior": "mobile-native",
+  "media_strategy": "icon-led",
+  "name": "Samsung One UI",
+  "platforms": [
+    "android",
+    "mobile"
+  ],
+  "product_types": [
+    "native-app",
+    "design-system",
+    "settings"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "reach-aware composition",
+    "view-action separation",
+    "platform continuity",
+    "large-screen adaptation"
+  ],
+  "slug": "samsung-one-ui",
+  "source_kind": "public-design-system",
+  "source_name": "Samsung One UI",
+  "source_url": "https://developer.samsung.com/one-ui",
+  "studied_at": "2026-09-01",
+  "summary": "Information and controls account for large screens and one-handed use. Upper regions orient while lower regions concentrate frequent interaction.",
+  "typography_character": "humanist-sans"
+}

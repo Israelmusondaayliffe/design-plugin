@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Workday Canvas was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://github.com/Workday/canvas-kit",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://github.com/Workday/canvas-kit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Human resources and finance tasks keep identity and consequence visible.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://github.com/Workday/canvas-kit",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://github.com/Workday/canvas-kit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Shared React components and tokens support consistent enterprise behavior. Accessibility and international use constrain control and layout decisions.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://github.com/Workday/canvas-kit",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://github.com/Workday/canvas-kit"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For HR, finance, and workforce applications, preserve guided complexity; reject the design if it starts reducing people to dense rows without context.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://github.com/Workday/canvas-kit"
+    }
+  ],
+  "schema_version": "1.0"
+}

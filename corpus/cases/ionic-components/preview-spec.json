@@ -1,0 +1,14 @@
+{
+  "layout": "safe-area mobile stack adapting by platform mode",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "native-like transitions that remain interruptible",
+  "pattern": "cross-platform mobile shell with native-aware list, sheet, and form states",
+  "primary": "#f7f9fc",
+  "radius": "14px",
+  "schema_version": "1.0",
+  "secondary": "#3880ff"
+}

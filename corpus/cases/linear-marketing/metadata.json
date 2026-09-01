@@ -1,0 +1,58 @@
+{
+  "accessibility_maturity": "baseline",
+  "archetypes": [
+    "premium-technical"
+  ],
+  "avoid_for": [
+    "content-heavy services where readers need long explanations and daylight reading comfort"
+  ],
+  "best_for": [
+    "workflow SaaS with a polished product worth showing",
+    "technical products that need a premium but not luxury-coded posture"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "dark",
+    "adaptive"
+  ],
+  "corpus_lane": "brand-editorial-portfolio-marketing",
+  "density": "medium",
+  "evidence_quality": "high",
+  "industries": [
+    "technology",
+    "productivity"
+  ],
+  "interaction_complexity": "medium",
+  "journey": [
+    "evaluate-convert",
+    "browse-discover"
+  ],
+  "layout_behavior": "responsive-marketing",
+  "media_strategy": "product-evidence",
+  "name": "Linear Marketing Site",
+  "platforms": [
+    "web",
+    "responsive-web"
+  ],
+  "product_types": [
+    "marketing",
+    "saas",
+    "productivity"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "Quiet dark canvas",
+    "Product-led narrative",
+    "Controlled luminosity",
+    "Compressed copy"
+  ],
+  "slug": "linear-marketing",
+  "source_kind": "public-website",
+  "source_name": "Linear Marketing Site",
+  "source_url": "https://linear.app/",
+  "studied_at": "2026-09-01",
+  "summary": "Low-chroma surfaces create room for interface evidence. Screens appear at the exact point where a claim needs proof.",
+  "typography_character": "neutral-sans"
+}

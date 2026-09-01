@@ -1,1 +1,45 @@
-{"schema_version":"1.0","items":[{"id":"E01","claim":"Primer foundations cover color, content, icons, layout, responsive behavior, typography, and other primitives beneath product components.","class":"observed","source_url":"https://primer.style/foundations/","locator":"Foundations overview","confidence":"high","captured_at":"2026-08-30","notes":"Primary Primer documentation."},{"id":"E02","claim":"Primer emphasizes reusable and robust patterns so similar product problems can be solved consistently rather than recreated independently.","class":"observed","source_url":"https://primer.style/product/","locator":"Product guidance","confidence":"high","captured_at":"2026-08-30","notes":"Supports pattern reuse and audit of similar interactions."},{"id":"E03","claim":"Primer supports responsive layouts and multiple color modes while preserving semantic relationships and component behavior.","class":"observed","source_url":"https://primer.style/foundations/","locator":"Responsive and color foundations","confidence":"high","captured_at":"2026-08-30","notes":"Useful for dense developer products across viewports."},{"id":"E04","claim":"Its distinctive design intelligence is compact clarity under technical complexity rather than a black-and-gray GitHub visual skin.","class":"inferred","source_url":"https://primer.style/","locator":"Cross-system synthesis","confidence":"high","captured_at":"2026-08-30","notes":"Original corpus interpretation."}]}
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "GitHub publishes the Primer design-system site at the recorded owner URL.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://primer.style/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://primer.style/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "The corpus reads Primer as a reusable-foundation system for dense technical products, where recurrence should be solved with shared behavior rather than isolated styling.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://primer.style/",
+      "notes": "Source-bounded analyst interpretation after the former product path was found to redirect.",
+      "source_url": "https://primer.style/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Responsive utility and semantic color modes are retained as adaptation requirements, not as claims that the current root page documents every former foundation detail.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://primer.style/",
+      "notes": "The statement deliberately separates corpus judgment from direct observation.",
+      "source_url": "https://primer.style/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "In developer tools, preserve compact clarity, status legibility, and reliable interaction; do not treat GitHub's neutral palette as the transferable system.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://primer.style/"
+    }
+  ],
+  "schema_version": "1.0"
+}

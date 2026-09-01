@@ -8,18 +8,19 @@
     "schema_version": {"const": "1.0"},
     "tokens": {
       "type": "array",
+      "minItems": 4,
       "items": {
         "type": "object",
-        "required": ["name", "category", "role", "evidence_class", "source_evidence_ids"],
+        "required": ["name", "category", "role", "value", "exact", "evidence_class", "source_evidence_ids", "notes"],
         "properties": {
-          "name": {"type": "string"},
+          "name": {"type": "string", "minLength": 3},
           "category": {"enum": ["color", "typography", "spacing", "radius", "border", "shadow", "motion", "layout", "component", "media"]},
-          "role": {"type": "string"},
+          "role": {"type": "string", "minLength": 20},
           "value": {},
           "exact": {"type": "boolean"},
           "evidence_class": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
-          "source_evidence_ids": {"type": "array", "items": {"type": "string"}},
-          "notes": {"type": "string"}
+          "source_evidence_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string"}},
+          "notes": {"type": "string", "minLength": 3}
         },
         "additionalProperties": false
       }

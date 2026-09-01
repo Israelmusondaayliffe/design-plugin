@@ -1,0 +1,60 @@
+{
+  "accessibility_maturity": "documented",
+  "archetypes": [
+    "merchant-operational"
+  ],
+  "avoid_for": [
+    "single-product luxury storytelling where marketplace density would weaken focus"
+  ],
+  "best_for": [
+    "large marketplaces with variable inventory",
+    "commerce products serving both buyers and sellers"
+  ],
+  "brand_maturity": "system-led",
+  "color_modes": [
+    "light",
+    "dark",
+    "brand-variable"
+  ],
+  "corpus_lane": "commerce-media-content-heavy",
+  "density": "adaptive",
+  "evidence_quality": "medium",
+  "industries": [
+    "commerce",
+    "technology"
+  ],
+  "interaction_complexity": "high",
+  "journey": [
+    "browse-discover",
+    "transact-checkout"
+  ],
+  "layout_behavior": "grid-system",
+  "media_strategy": "photography-led",
+  "name": "eBay Playbook",
+  "platforms": [
+    "web",
+    "responsive-web",
+    "mobile"
+  ],
+  "product_types": [
+    "commerce",
+    "content-heavy",
+    "design-system"
+  ],
+  "publication_status": "public",
+  "rights_basis": "original-analysis-public-source",
+  "schema_version": "1.0",
+  "signature_traits": [
+    "marketplace scan",
+    "buyer-seller symmetry",
+    "trust near transaction",
+    "inventory variability"
+  ],
+  "slug": "ebay-playbook",
+  "source_kind": "public-design-system",
+  "source_name": "eBay Playbook",
+  "source_url": "https://playbook.ebay.com/",
+  "studied_at": "2026-09-01",
+  "summary": "Price, condition, seller, delivery, and trust information remain separable in repeated listings. Shared patterns support two roles with different decisions and responsibilities.",
+  "typography_character": "humanist-sans"
+}

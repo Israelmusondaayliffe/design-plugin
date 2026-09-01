@@ -1,0 +1,14 @@
+{
+  "layout": "responsive inventory grid opening into dense item detail",
+  "lineage": {
+    "generated_asset": false,
+    "origin": "original-abstract-spec",
+    "source_assets_used": false
+  },
+  "motion": "direct save, bid, and transaction feedback",
+  "pattern": "marketplace listing rhythm with item image, price, trust, and delivery hierarchy",
+  "primary": "#f7f7f7",
+  "radius": "8px",
+  "schema_version": "1.0",
+  "secondary": "#3665f3"
+}

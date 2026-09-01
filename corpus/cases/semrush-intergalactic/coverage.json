@@ -1,0 +1,51 @@
+{
+  "accessibility": "Verify semantic order, visible focus, input parity, reflow, non-color cues, and reduced motion against this stop condition: Coloring every metric and destroying comparison.",
+  "archetype": "adaptive-expressive",
+  "brand_posture": "Rankings, trends, filters, and recommendations remain separable at high density. Data views connect findings to a next step rather than stopping at display.",
+  "category": "saas-dashboard-admin-productivity",
+  "color": "Repeated chart, table, and recommendation structures reduce relearning.",
+  "components": "Repeated chart, table, and recommendation structures reduce relearning. Data views connect findings to a next step rather than stopping at display.",
+  "confidence": "medium",
+  "container": "Marketing analytics grid with a bounded insight accent and explicit next action. Repeated chart, table, and recommendation structures reduce relearning.",
+  "failure_modes": [
+    "Coloring every metric and destroying comparison.",
+    "Showing recommendations without the evidence that produced them.",
+    "Separating filters from the chart or table they change."
+  ],
+  "flows": "Destination test: Marketing analytics and recommendation products. Evaluate the relationship across monitoring and operations, and visual exploration.",
+  "forms": "During monitoring and operations, and visual exploration, labels, validation, persistence, and recovery must remain explicit.",
+  "grid": "Rankings, trends, filters, and recommendations remain separable at high density. Brand color helps locate action and insight without recoloring every metric.",
+  "imagery": "Marketing analytics grid with a bounded insight accent and explicit next action. Charts and diagrams are evidence, with labels and alternatives that keep them interpretable. No source asset is stored.",
+  "industry": "technology, enterprise",
+  "interaction": "Data views connect findings to a next step rather than stopping at display.",
+  "lane_fit": "Lane assignment: Marketing analytics and recommendation products. This case earns one SaaS, dashboard, administration, and productivity quota credit through marketing-data scan and expressive data accents.",
+  "layout": "Filter rail feeding charts, table, and recommendation panel.",
+  "motion": "Short query and result-state feedback.",
+  "navigation": "Rankings, trends, filters, and recommendations remain separable at high density. Filter rail feeding charts, table, and recommendation panel.",
+  "platform": "web, responsive-web",
+  "responsive_behavior": "Brand color helps locate action and insight without recoloring every metric. Data views connect findings to a next step rather than stopping at display.",
+  "schema_version": "1.0",
+  "signature_moves": [
+    "marketing-data scan: Rankings, trends, filters, and recommendations remain separable at high density.",
+    "expressive data accents: Brand color helps locate action and insight without recoloring every metric.",
+    "patterned analysis: Repeated chart, table, and recommendation structures reduce relearning.",
+    "actionable explanation: Data views connect findings to a next step rather than stopping at display."
+  ],
+  "source": "https://developer.semrush.com/intergalactic/",
+  "spacing": "Rankings, trends, filters, and recommendations remain separable at high density. Brand color helps locate action and insight without recoloring every metric.",
+  "states": "Data views connect findings to a next step rather than stopping at display. Short query and result-state feedback.",
+  "study_date": "2026-09-01",
+  "suitable_uses": [
+    "marketing analytics and recommendation products",
+    "dense SaaS where data must lead directly to action"
+  ],
+  "surfaces": "Repeated chart, table, and recommendation structures reduce relearning. Preview surfaces use original study values.",
+  "typography": "Neutral sans type separates task labels, reading text, and compact values. Brand color helps locate action and insight without recoloring every metric.",
+  "unknowns": [
+    "Internal metrics, unpublished design decisions, and closed-source implementation details were not inspected."
+  ],
+  "unsuitable_uses": [
+    "simple storytelling pages with no need for filters or repeated metrics"
+  ],
+  "visual_thesis": "Rankings, trends, filters, and recommendations remain separable at high density. Brand color helps locate action and insight without recoloring every metric."
+}

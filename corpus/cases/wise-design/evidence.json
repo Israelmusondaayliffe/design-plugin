@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Wise Design was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://wise.design/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://wise.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Large literal messages make cost and movement of money understandable.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://wise.design/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://wise.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "A vivid brand field is balanced by blunt dark type and quiet transaction surfaces. Rates, fees, timing, and product UI appear beside the decision they support.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://wise.design/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://wise.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For international financial products that must explain value before conversion, preserve global adaptability; reject the design if it starts using the brand color as a fill for every transactional surface.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://wise.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}

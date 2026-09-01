@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Public owner material for Guardian Source was reachable at the exact URL recorded for this case.",
+      "class": "observed",
+      "confidence": "high",
+      "id": "E01",
+      "locator": "URL: https://theguardian.design/",
+      "notes": "This establishes source identity and public availability only.",
+      "source_url": "https://theguardian.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Headline scale, grouping, and placement communicate what matters before decoration.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E02",
+      "locator": "URL: https://theguardian.design/",
+      "notes": "Source-bounded analyst interpretation; not an owner claim.",
+      "source_url": "https://theguardian.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "Narrative and utility typography keep separate reading jobs. Color identifies editorial context and status rather than filling space arbitrarily.",
+      "class": "inferred",
+      "confidence": "medium",
+      "id": "E03",
+      "locator": "URL: https://theguardian.design/",
+      "notes": "The claim combines two case relationships and remains analyst judgment.",
+      "source_url": "https://theguardian.design/"
+    },
+    {
+      "captured_at": "2026-09-01",
+      "claim": "For news and cultural publishing with real editorial hierarchy, preserve dense but legible rhythm; reject the design if it starts copying newspaper styling without editorial prioritization.",
+      "class": "recommended",
+      "confidence": "medium",
+      "id": "E04",
+      "locator": "DESIGN.md: Adaptation rules and Failure modes",
+      "notes": "Original downstream recommendation, not an owner claim.",
+      "source_url": "https://theguardian.design/"
+    }
+  ],
+  "schema_version": "1.0"
+}
