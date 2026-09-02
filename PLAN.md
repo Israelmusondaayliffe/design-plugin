@@ -103,12 +103,12 @@ Canonical corpus source: version-controlled Markdown and JSON. ChatGPT Site is t
 - Installed host baseline: Public commit `41d849aeef0b0104cf0fe6ff1e0420843dbf172f`, version `0.1.0-dev.10`, is installed in Codex and Claude Code. Installation does not count as harness-independent selection proof.
 - Wave 11: Active by explicit user authorization. Benchmark 2 has passed all five implementation waves with a state-bound handoff. Benchmarks 1 and 3 have not started.
 - Corpus evidence: 80 of 80 owner URLs pass, locator mismatches and redirect collisions are zero, the originality audit passes, and no source binary assets are stored.
-- Reference Site: Qualified against the accepted-only 60-case public catalog across 21 required routes, five native keyboard and focus flows, and nine reduced-motion targets. Search, all six lanes, deeper filters, progressive analysis and evidence, source retrieval dates, URL state, downloads, recovery, and comparison of up to five cases pass. Public deployment is authorized and pending production verification.
+- Reference Site: Public at `https://israelmusondaayliffe.github.io/design-plugin/`. The accepted-only 60-case catalog passes 21 required local routes, five native keyboard and focus flows, nine reduced-motion targets, anonymous production retrieval, rendered production review, both download formats, and inert public-host diagnostics.
 - Benchmark 2 candidate: `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff` passed all three independent same-hash reviews.
-- Regression evidence: 45 focused tests and 288 complete tests pass locally under Python 3.9.6 and Python 3.12.13 with zero failures, errors, or skips. New public CI evidence is required for the publication commit.
+- Regression evidence: 45 focused tests and 288 complete tests pass locally under Python 3.9.6 and Python 3.12.13 with zero failures, errors, or skips. Public CI run `33592409531` passes the complete suite and host qualification on Python 3.11 and Python 3.13. Pages run `33592409670` passes the 288-test release build, 60/60/60 payload check, and deployment.
 - Activation boundary: R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. The probe restrictions are not plugin runtime restrictions and cannot reject an ordinary installation.
 - Acceptance boundary: Benchmark 2 passes. Wave 11 remains partial until Benchmarks 1 and 3 and the later acceptance gates pass. R22 remains partial.
-- Next: Publish and anonymously verify the Reference Site under the existing authorization. Do not start Benchmarks 1 or 3 as part of that release step.
+- Next: Preserve the verified public release. Benchmarks 1 and 3 remain unstarted and require their own bounded work.
 
 ## Benchmarks
 

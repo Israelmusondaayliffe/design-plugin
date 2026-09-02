@@ -4,6 +4,12 @@ Design is a research-grounded design operating system for Codex and Claude Code.
 
 This directory is the canonical source package. Do not edit generated files under `dist/` by hand.
 
+## Public Reference Library
+
+[Open the Design Reference Library](https://israelmusondaayliffe.github.io/design-plugin/) to study 60 public design cases with their evidence, limitations, reusable relationships, and matching readable and structured downloads.
+
+The Site is a study and download surface. It does not bundle source assets, certify an adaptation, or guarantee an outcome.
+
 ## Install
 
 Clone the repository and build the two generated local marketplaces:

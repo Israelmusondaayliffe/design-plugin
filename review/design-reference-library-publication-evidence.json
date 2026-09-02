@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "public-site-publication-evidence",
+  "status": "pass",
+  "recorded_at": "2026-09-02T04:55:56Z",
+  "public_url": "https://israelmusondaayliffe.github.io/design-plugin/",
+  "repository": {
+    "name": "Israelmusondaayliffe/design-plugin",
+    "visibility": "public",
+    "branch": "main",
+    "publication_commit": "9ea8b41b4f8ba346278a585ff0104435ee32f840",
+    "pages_build_type": "workflow",
+    "https_enforced": true
+  },
+  "accepted_benchmark_candidate": {
+    "candidate_id": "ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff",
+    "acceptance_receipt_sha256": "f0cd6ce62261e6217f81350149565c9eca805c4ad9599be85cb2396ce99ddbac",
+    "wave_5_handoff_sha256": "17768ce8ed9aba882bdb9e5711aecec99344c93a84ace827edcf6829564f4404"
+  },
+  "initial_publication_attempt": {
+    "commit": "610b3dbbec0fb7f9d3690bbb106c576847f0ff22",
+    "pages_run_id": 33592145806,
+    "workflow_conclusion": "success",
+    "public_acceptance": "fail",
+    "finding": "The regression suite removed generated Site data after the catalog build. The uploaded artifact contained the interface but not generated-data, so catalog and package URLs returned 404.",
+    "repair": "Move the deployable catalog build after the regression suite and assert 60 readable files, 60 structured files, and 60 manifests before upload."
+  },
+  "final_workflows": {
+    "pages": {
+      "run_id": 33592409670,
+      "conclusion": "success",
+      "checks": [
+        "accepted corpus validation",
+        "originality audit",
+        "Site JavaScript syntax",
+        "288-test regression suite",
+        "post-test public catalog and package build",
+        "60 readable files",
+        "60 structured files",
+        "60 manifests",
+        "Pages artifact upload",
+        "Pages deployment"
+      ]
+    },
+    "plugin_ci": {
+      "run_id": 33592409531,
+      "conclusion": "success",
+      "python_versions": [
+        "3.11",
+        "3.13"
+      ],
+      "tests_per_version": 288,
+      "host_builds": "pass",
+      "shared_core_parity": "pass",
+      "installable_package_qualification": "pass",
+      "bundled_entrypoints": "pass"
+    }
+  },
+  "anonymous_http": {
+    "catalog_index": {
+      "status": 200,
+      "bytes": 156266,
+      "case_count": 60,
+      "visibility": "public"
+    },
+    "ibm_carbon_structured": {
+      "status": 200,
+      "bytes": 10533
+    },
+    "ibm_carbon_manifest": {
+      "status": 200,
+      "bytes": 1018
+    },
+    "ibm_carbon_readable": {
+      "status": 200,
+      "bytes": 9189
+    }
+  },
+  "fresh_rendered_production": {
+    "title": "Design Reference Library",
+    "catalog_case_rows": 60,
+    "lane_controls_including_all": 7,
+    "results_aria_busy": "false",
+    "root_overflow_css_px": 0,
+    "visual_treatment": "cool neutral canvas, graphite type, and restrained rust emphasis; no yellow canvas treatment",
+    "ibm_carbon_package": {
+      "dialog_open": true,
+      "package_visible": true,
+      "verified_file_rows": 2,
+      "readable_download_name": "ibm-carbon-design-reference.md",
+      "structured_download_name": "ibm-carbon-design-reference.json",
+      "root_overflow_css_px": 0
+    }
+  },
+  "public_host_boundaries": {
+    "loopback_catalog_error_parameter": "inert; the public catalog still loads 60 cases",
+    "private_sentinel": "unavailable public case with zero enabled downloads and zero Blob links",
+    "private_identifiers_exposed": false,
+    "gmail_address_exposed": false
+  },
+  "known_nonblocking_warnings": [
+    "The pinned actions/configure-pages v5 release emits a Node.js 20 deprecation annotation while GitHub forces it to Node.js 24. Both build and deployment pass."
+  ],
+  "remaining_limits": [
+    "R04 remains partial and accepted as nonblocking for this work.",
+    "R22 remains partial.",
+    "Wave 11 Benchmarks 1 and 3 have not started."
+  ]
+}

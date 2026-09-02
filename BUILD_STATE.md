@@ -7,7 +7,7 @@ Canonical development path: repository root
 Branch: `main`
 ## Current phase
 
-Wave 11 is active by explicit user authorization. Benchmark 2 passes all five implementation waves with verified state-bound handoffs. The Design state is now in `rendering`, with no active build wave. The 60-case public corpus, Evidence Exchange interface, package downloads, responsive behavior, accessibility work, reader-facing copy, deterministic builds, two-version regression, 21-target browser matrix, fresh keyboard and focus flow, nine-target reduced-motion matrix, and feedback ledger pass on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`. All three independent reviewers passed and confirmed the final acceptance receipt. Public Site publication is authorized and is the next release step. Benchmark 2 is complete; Benchmarks 1 and 3 have not started. Wave 11, R04, and R22 remain partial.
+Wave 11 is active by explicit user authorization. Benchmark 2 passes all five implementation waves with verified state-bound handoffs. The Design state is now in `rendering`, with no active build wave. The 60-case public corpus, Evidence Exchange interface, package downloads, responsive behavior, accessibility work, reader-facing copy, deterministic builds, two-version regression, 21-target browser matrix, fresh keyboard and focus flow, nine-target reduced-motion matrix, and feedback ledger pass on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`. All three independent reviewers passed and confirmed the final acceptance receipt. The Reference Library is public and anonymously verified at `https://israelmusondaayliffe.github.io/design-plugin/`. Benchmark 2 is complete; Benchmarks 1 and 3 have not started. Wave 11, R04, and R22 remain partial.
 
 ## Current Wave 11 candidate
 
@@ -25,10 +25,27 @@ Wave 11 is active by explicit user authorization. Benchmark 2 passes all five im
 - Feedback and build friction: Seven product feedback items and 18 build-friction items are preserved in a public-safe improvement ledger; every named repair has terminal evidence.
 - Historical public candidate: Commit `93908428c8949cf57f77f374fab13659e803bd80`.
 - Historical GitHub Actions: Public run `33548219494` passed 242 tests on Python 3.11 and Python 3.13 plus both host builds and package qualification.
-- Public Site deployment: Authorized; production release and anonymous verification are pending.
+- Public Site deployment: Pass at `https://israelmusondaayliffe.github.io/design-plugin/`. Pages run `33592409670` and public CI run `33592409531` pass on repair commit `9ea8b41b4f8ba346278a585ff0104435ee32f840`.
 - Benchmarks complete: 1 of 3.
 - R04: Partial, deferred and nonblocking for this work by explicit user direction.
 - R22: Partial.
+
+## Public Reference Library publication
+
+PASS. The 60-case Reference Library is public and anonymously verified.
+
+- Public URL: `https://israelmusondaayliffe.github.io/design-plugin/`.
+- Repository visibility: Public.
+- Final publication commit: `9ea8b41b4f8ba346278a585ff0104435ee32f840`.
+- Pages run `33592409670`: Pass. The workflow ran the 288-test suite, rebuilt the deployable catalog afterward, asserted 60 readable files, 60 structured files, and 60 manifests, uploaded the Site, and deployed it.
+- Plugin CI run `33592409531`: Pass on Python 3.11 and Python 3.13, including the regression suite, corpus generation, both host builds, parity, package qualification, lifecycle simulation, and bundled entrypoints.
+- Anonymous HTTP: Catalog index, IBM Carbon readable file, structured file, and manifest return 200. The public catalog contains 60 public cases.
+- Fresh rendered production review: 60 case rows, seven lane controls including All, zero root overflow, IBM Carbon package title and two verified file rows, and both download names pass.
+- Public-host diagnostics: The loopback catalog-error parameter is inert and still loads 60 cases. The private-sentinel request exposes no file, Blob, or enabled download.
+- First Pages run `33592145806`: Workflow success but public acceptance failure. The regression teardown removed generated data before upload, so the catalog and downloads returned 404.
+- Repair: Commit `9ea8b41b4f8ba346278a585ff0104435ee32f840` moved the deployable build after the regression suite and added the 60/60/60 payload assertion.
+- Nonblocking warning: The current pinned `actions/configure-pages` release emits a Node.js 20 deprecation annotation while GitHub forces it to Node.js 24. The workflow and deployment pass.
+- Evidence: `review/design-reference-library-publication-evidence.json`.
 
 ## Wave 11 Benchmark 2 validator repair
 
@@ -379,7 +396,7 @@ PARTIAL. Host packaging and public repository publication passed. Automatic acti
 
 ## Wave 11 checkpoint
 
-PARTIAL. The 60-case public corpus and local reference Site are qualified as the current Wave 5 review candidate. Benchmark 2 remains pending until the three independent same-hash reviews and state-bound handoff pass.
+PARTIAL. Benchmark 2 passes. The 60-case public corpus, five implementation waves, public Reference Library, publication workflow, and production checks pass. Benchmarks 1 and 3 remain unstarted.
 
 - Authorization and lane contract: `review/wave-11-alpha-allocation.json`.
 - Canonical case count: 60.
@@ -397,19 +414,20 @@ PARTIAL. The 60-case public corpus and local reference Site are qualified as the
 - Browser matrix: All 21 exact routes pass at approved wide, tablet, and mobile viewports. Page-level horizontal overflow, console warnings, console errors, duplicate IDs, missing accessible names, broken ARIA references, heading jumps, visible hidden-focusable controls, and dialog-label failures: None.
 - Keyboard and focus: Search, lane selection, case navigation, evidence navigation, package selection, exact readable download, failure retry, return, dialog close, two-case selection, comparison open, and comparison close pass in a fresh native-keyboard run. A comparison rerender focus defect was repaired and regression-covered.
 - Reduced motion: All nine required mobile targets pass with the preference active, 0.01 millisecond maximum visible animation and transition durations, and zero root overflow.
-- Site deployment: Authorized after Wave 5 completion and not yet performed.
+- Site deployment: Pass at `https://israelmusondaayliffe.github.io/design-plugin/`; Pages run `33592409670` and anonymous production checks pass.
 - Local tests: 45 focused tests and 288 complete-suite tests pass under Python 3.9.6 and Python 3.12.13 with zero failures, errors, or skips.
-- Independent Wave 5 reviews: Pending for plan fidelity, technical evidence, and Unslop/public copy on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`.
-- Benchmarks: 0 of 3 complete.
+- Independent Wave 5 reviews: Plan, technical, and Unslop pass on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`; all three confirm acceptance receipt SHA-256 `f0cd6ce62261e6217f81350149565c9eca805c4ad9599be85cb2396ce99ddbac`.
+- Public CI: Run `33592409531` passes on Python 3.11 and Python 3.13.
+- Benchmarks: 1 of 3 complete.
 - Wave 11: Partial.
 - R04: Partial, explicitly deferred as a nonblocking evidence gap for this work.
 - R22: Partial.
 
-The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.
+The public Design Plugin CI and Pages checks attached to publication repair commit `9ea8b41b4f8ba346278a585ff0104435ee32f840` pass.
 
 ## Next required work
 
-Obtain three independent same-hash reviews of the repaired Wave 5 candidate, close the state-bound handoff, publish the Site under the user’s explicit approval, verify anonymous production access, and record the public URL and deployment evidence. The other two approved Wave 11 benchmarks remain unstarted.
+Preserve the accepted Benchmark 2 candidate and verified public release. Benchmarks 1 and 3 remain unstarted and require their own bounded implementation and acceptance work.
 
 R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. The user explicitly accepted this as a noncritical, nonblocking evidence gap for Wave 11 work. It remains partial and is not silently converted to a pass.
 
