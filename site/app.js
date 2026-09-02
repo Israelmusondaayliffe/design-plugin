@@ -324,6 +324,8 @@ function previewMarkup(item, size = "row") {
     flow: "guided task",
   }[family];
   const focus = item.signature_traits?.[0] ?? item.summary;
+  const shortName = String(item.name ?? "Design case").split(/\s+/).slice(0, 5).join(" ");
+  const focusExcerpt = String(focus ?? "Study the relationship").split(/\s+/).slice(0, 10).join(" ");
   const description = `Original ${family} study for ${item.name}, derived from the public case fields. It is an interpretation, not the source product or evidence.`;
   const studyStyle = [
     `--study-rail:${13 + (seed & 15)}%`,
@@ -332,15 +334,20 @@ function previewMarkup(item, size = "row") {
     `--study-action:${18 + ((seed >>> 13) & 15)}%`,
     `--study-gap:${3 + ((seed >>> 17) & 7)}%`,
     `--study-inset:${3 + ((seed >>> 20) & 7)}%`,
+    `--study-x:${12 + ((seed >>> 6) & 31)}%`,
+    `--study-y:${18 + ((seed >>> 11) & 31)}%`,
+    `--study-turn:${-9 + ((seed >>> 16) & 15)}deg`,
   ].join(";");
   return `
     <figure class="visual-study study-${family} density-${density} variant-${variant} ${size === "detail" ? "study-detail" : ""}" data-study-signature="${family}-${density}-${variant}-${seed.toString(36)}" style="${studyStyle}" aria-label="${esc(description)}">
       <div class="study-canvas" aria-hidden="true">
+        <div class="study-atmosphere"><i></i><i></i><i></i><i></i></div>
         <div class="study-window-bar"><span></span><span></span><span></span><b>${esc(caseType)}</b></div>
         <div class="study-interface">
           <div class="study-rail"><i></i><i></i><i></i><i></i><i></i></div>
           <div class="study-stage">
             <div class="study-toolbar"><i></i><i></i><b></b></div>
+            <div class="study-voice"><small>${esc(caseType)}</small><strong>${esc(shortName)}</strong><span>${esc(focusExcerpt)}</span></div>
             <div class="study-feature"><i></i><div><b></b><span></span><span></span></div></div>
             <div class="study-content-grid">
               <i></i><i></i><i></i><i></i><i></i><i></i>

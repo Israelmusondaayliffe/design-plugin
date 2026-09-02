@@ -24,67 +24,67 @@
     "color": {
       "$type": "color",
       "canvas": {
-        "$value": {"colorSpace": "srgb", "components": [0.953, 0.957, 0.949], "alpha": 1, "hex": "#F3F4F2"},
-        "$description": "Cool neutral page foundation."
+        "$value": {"colorSpace": "srgb", "components": [0.035, 0.043, 0.039], "alpha": 1, "hex": "#090B0A"},
+        "$description": "Graphite-black page foundation for the expressive evidence interface."
       },
       "surface-1": {
-        "$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"},
-        "$description": "Primary reading and working surface."
+        "$value": {"colorSpace": "srgb", "components": [0.067, 0.078, 0.071], "alpha": 1, "hex": "#111412"},
+        "$description": "Primary dark reading and working surface."
       },
       "surface-2": {
-        "$value": {"colorSpace": "srgb", "components": [0.91, 0.925, 0.914], "alpha": 1, "hex": "#E8ECE9"},
-        "$description": "Secondary contextual surface."
+        "$value": {"colorSpace": "srgb", "components": [0.102, 0.118, 0.106], "alpha": 1, "hex": "#1A1E1B"},
+        "$description": "Secondary graphite contextual surface."
       },
       "ink": {
-        "$value": {"colorSpace": "srgb", "components": [0.114, 0.145, 0.133], "alpha": 1, "hex": "#1D2522"},
-        "$description": "Primary text and strong boundary color."
+        "$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"},
+        "$description": "Primary text color on the graphite canvas."
       },
       "muted": {
-        "$value": {"colorSpace": "srgb", "components": [0.345, 0.38, 0.365], "alpha": 1, "hex": "#58615D"},
+        "$value": {"colorSpace": "srgb", "components": [0.682, 0.714, 0.69], "alpha": 1, "hex": "#AEB6B0"},
         "$description": "Secondary text color for supporting information."
       },
       "border": {
-        "$value": {"colorSpace": "srgb", "components": [0.78, 0.804, 0.792], "alpha": 1, "hex": "#C7CDCA"},
-        "$description": "Default boundary on cool neutral surfaces."
+        "$value": {"colorSpace": "srgb", "components": [0.204, 0.227, 0.212], "alpha": 1, "hex": "#343A36"},
+        "$description": "Default boundary on graphite surfaces."
       },
       "border-strong": {
-        "$value": {"colorSpace": "srgb", "components": [0.467, 0.506, 0.486], "alpha": 1, "hex": "#77817C"},
+        "$value": {"colorSpace": "srgb", "components": [0.392, 0.427, 0.404], "alpha": 1, "hex": "#646D67"},
         "$description": "Strong boundary and selected-region divider."
       },
       "action": {
-        "$value": {"colorSpace": "srgb", "components": [0.545, 0.227, 0.106], "alpha": 1, "hex": "#8B3A1B"},
-        "$description": "Restrained rust action color for the original project palette."
+        "$value": {"colorSpace": "srgb", "components": [0.176, 0.384, 1], "alpha": 1, "hex": "#2D62FF"},
+        "$description": "Cobalt primary action color for the expressive evidence interface."
       },
       "action-hover": {
-        "$value": {"colorSpace": "srgb", "components": [0.392, 0.157, 0.059], "alpha": 1, "hex": "#64280F"},
+        "$value": {"colorSpace": "srgb", "components": [0.09, 0.275, 0.831], "alpha": 1, "hex": "#1746D4"},
         "$description": "Darker action color for pointer hover and active feedback."
       },
       "focus": {
-        "$value": {"colorSpace": "srgb", "components": [0, 0.384, 0.471], "alpha": 1, "hex": "#006278"},
+        "$value": {"colorSpace": "srgb", "components": [0.722, 0.945, 0.231], "alpha": 1, "hex": "#B8F13B"},
         "$description": "Focus indicator and keyboard location color."
       },
       "ready": {
-        "$value": {"colorSpace": "srgb", "components": [0.169, 0.42, 0.271], "alpha": 1, "hex": "#2B6B45"},
+        "$value": {"colorSpace": "srgb", "components": [0.659, 0.875, 0.196], "alpha": 1, "hex": "#A8DF32"},
         "$description": "Ready or successful validation color."
       },
       "incomplete": {
-        "$value": {"colorSpace": "srgb", "components": [0.463, 0.349, 0], "alpha": 1, "hex": "#765900"},
+        "$value": {"colorSpace": "srgb", "components": [1, 0.42, 0.275], "alpha": 1, "hex": "#FF6B46"},
         "$description": "Incomplete content or pending requirement color."
       },
       "unavailable": {
-        "$value": {"colorSpace": "srgb", "components": [0.345, 0.38, 0.365], "alpha": 1, "hex": "#58615D"},
+        "$value": {"colorSpace": "srgb", "components": [0.682, 0.714, 0.69], "alpha": 1, "hex": "#AEB6B0"},
         "$description": "Unavailable or intentionally disabled state color."
       },
       "stale": {
-        "$value": {"colorSpace": "srgb", "components": [0.478, 0.298, 0.529], "alpha": 1, "hex": "#7A4C87"},
+        "$value": {"colorSpace": "srgb", "components": [1, 0.361, 0.659], "alpha": 1, "hex": "#FF5CA8"},
         "$description": "Stale evidence or outdated source state color."
       },
       "warning": {
-        "$value": {"colorSpace": "srgb", "components": [0.576, 0.376, 0], "alpha": 1, "hex": "#936000"},
+        "$value": {"colorSpace": "srgb", "components": [1, 0.42, 0.275], "alpha": 1, "hex": "#FF6B46"},
         "$description": "Warning state color that requires text support."
       },
       "error": {
-        "$value": {"colorSpace": "srgb", "components": [0.631, 0.184, 0.184], "alpha": 1, "hex": "#A12F2F"},
+        "$value": {"colorSpace": "srgb", "components": [1, 0.318, 0.271], "alpha": 1, "hex": "#FF5145"},
         "$description": "Error and blocking validation state color."
       },
       "white": {

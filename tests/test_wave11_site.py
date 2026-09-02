@@ -157,14 +157,14 @@ class Wave11SiteTests(unittest.TestCase):
 
     def test_approved_original_tokens_grid_and_reading_measure_are_encoded(self) -> None:
         required_tokens = {
-            "--color-canvas": "#f3f4f2",
-            "--color-surface-primary": "#ffffff",
-            "--color-surface-secondary": "#e8ece9",
-            "--color-text-primary": "#1d2522",
-            "--color-action-primary": "#8b3a1b",
-            "--color-focus": "#006278",
-            "--color-status-ready": "#2b6b45",
-            "--color-status-error": "#a12f2f",
+            "--color-canvas": "#090b0a",
+            "--color-surface-primary": "#111412",
+            "--color-surface-secondary": "#1a1e1b",
+            "--color-text-primary": "#ffffff",
+            "--color-action-primary": "#2d62ff",
+            "--color-focus": "#b8f13b",
+            "--color-status-ready": "#a8df32",
+            "--color-status-error": "#ff5145",
         }
         for token, value in required_tokens.items():
             self.assertIn(f"{token}: {value};", self.css)
@@ -220,20 +220,22 @@ class Wave11SiteTests(unittest.TestCase):
 
     def test_first_visit_explains_design_for_a_non_designer(self) -> None:
         for phrase in (
-            "You do not need to be a designer",
-            "Design is how choices shape what people",
+            "You already make design decisions",
+            "Design shapes",
+            "Every form, room, service, tool, and screen",
             "Start with a problem",
             "What are you trying to make clearer?",
-            "Design, made visible",
+            "Four things design shapes",
         ):
             self.assertIn(phrase, self.html)
         self.assertEqual(self.html.count('data-starter-lane="'), 4)
         self.assertIn('aria-label="Start from an everyday design problem"', self.html)
         self.assertIn('id="featured-studies"', self.html)
         self.assertIn('id="hero-study"', self.html)
-        self.assertIn("One case from the atlas", self.html)
+        self.assertIn("A designed relationship, made visible", self.html)
         self.assertIn("renderFeaturedStudies()", self.app)
-        self.assertIn("See the choices before you learn their names", self.html)
+        self.assertIn("A relationship becomes useful when you can see it", self.html)
+        self.assertLess(self.html.index('id="catalog-screen"'), self.html.index('id="featured-studies"'))
 
     def test_each_case_receives_a_source_safe_original_visual_study(self) -> None:
         for field in (
@@ -419,7 +421,7 @@ class Wave11SiteTests(unittest.TestCase):
     def test_visual_study_boundary_label_uses_accessible_text_color(self) -> None:
         self.assertRegex(
             self.css,
-            r"\.visual-study figcaption small\s*\{[^}]*color:\s*#46524d",
+            r"\.visual-study figcaption small\s*\{[^}]*color:\s*#aeb6b0",
         )
 
     def test_site_has_no_remote_visual_dependencies_or_source_assets(self) -> None:

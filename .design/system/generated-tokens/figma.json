@@ -3,28 +3,28 @@
   "variables": [
     {
       "collection": "Design foundation",
-      "description": "Primary action color for the original project palette.",
+      "description": "Cobalt primary action color for the expressive evidence interface.",
       "name": "foundation/color/action",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.608,
-          0.243,
-          0.071
+          0.176,
+          0.384,
+          1
         ],
-        "hex": "#9B3E12"
+        "hex": "#2D62FF"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.608,
-          0.243,
-          0.071
+          0.176,
+          0.384,
+          1
         ],
-        "hex": "#9B3E12"
+        "hex": "#2D62FF"
       }
     },
     {
@@ -35,48 +35,48 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.447,
-          0.169,
-          0.039
+          0.09,
+          0.275,
+          0.831
         ],
-        "hex": "#722B0A"
+        "hex": "#1746D4"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.447,
-          0.169,
-          0.039
+          0.09,
+          0.275,
+          0.831
         ],
-        "hex": "#722B0A"
+        "hex": "#1746D4"
       }
     },
     {
       "collection": "Design foundation",
-      "description": "Default boundary on warm neutral surfaces.",
+      "description": "Default boundary on graphite surfaces.",
       "name": "foundation/color/border",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.725,
-          0.678,
-          0.616
+          0.204,
+          0.227,
+          0.212
         ],
-        "hex": "#B9AD9D"
+        "hex": "#343A36"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.725,
-          0.678,
-          0.616
+          0.204,
+          0.227,
+          0.212
         ],
-        "hex": "#B9AD9D"
+        "hex": "#343A36"
       }
     },
     {
@@ -87,48 +87,48 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.455,
-          0.412,
-          0.357
+          0.392,
+          0.427,
+          0.404
         ],
-        "hex": "#74695B"
+        "hex": "#646D67"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.455,
-          0.412,
-          0.357
+          0.392,
+          0.427,
+          0.404
         ],
-        "hex": "#74695B"
+        "hex": "#646D67"
       }
     },
     {
       "collection": "Design foundation",
-      "description": "Warm neutral page foundation.",
+      "description": "Graphite-black page foundation for the expressive evidence interface.",
       "name": "foundation/color/canvas",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.965,
-          0.945,
-          0.91
+          0.035,
+          0.043,
+          0.039
         ],
-        "hex": "#F6F1E8"
+        "hex": "#090B0A"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.965,
-          0.945,
-          0.91
+          0.035,
+          0.043,
+          0.039
         ],
-        "hex": "#F6F1E8"
+        "hex": "#090B0A"
       }
     },
     {
@@ -139,22 +139,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.663,
-          0.176,
-          0.176
+          1,
+          0.318,
+          0.271
         ],
-        "hex": "#A92D2D"
+        "hex": "#FF5145"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.663,
-          0.176,
-          0.176
+          1,
+          0.318,
+          0.271
         ],
-        "hex": "#A92D2D"
+        "hex": "#FF5145"
       }
     },
     {
@@ -165,22 +165,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0,
-          0.357,
-          0.471
+          0.722,
+          0.945,
+          0.231
         ],
-        "hex": "#005B78"
+        "hex": "#B8F13B"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0,
-          0.357,
-          0.471
+          0.722,
+          0.945,
+          0.231
         ],
-        "hex": "#005B78"
+        "hex": "#B8F13B"
       }
     },
     {
@@ -191,48 +191,48 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.549,
-          0.357,
-          0
+          1,
+          0.42,
+          0.275
         ],
-        "hex": "#8C5B00"
+        "hex": "#FF6B46"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.549,
-          0.357,
-          0
+          1,
+          0.42,
+          0.275
         ],
-        "hex": "#8C5B00"
+        "hex": "#FF6B46"
       }
     },
     {
       "collection": "Design foundation",
-      "description": "Primary text and strong boundary color.",
+      "description": "Primary text color on the graphite canvas.",
       "name": "foundation/color/ink",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.129,
-          0.122,
-          0.106
+          1,
+          1,
+          1
         ],
-        "hex": "#211F1B"
+        "hex": "#FFFFFF"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.129,
-          0.122,
-          0.106
+          1,
+          1,
+          1
         ],
-        "hex": "#211F1B"
+        "hex": "#FFFFFF"
       }
     },
     {
@@ -243,22 +243,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       }
     },
     {
@@ -269,22 +269,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.169,
-          0.42,
-          0.271
+          0.659,
+          0.875,
+          0.196
         ],
-        "hex": "#2B6B45"
+        "hex": "#A8DF32"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.169,
-          0.42,
-          0.271
+          0.659,
+          0.875,
+          0.196
         ],
-        "hex": "#2B6B45"
+        "hex": "#A8DF32"
       }
     },
     {
@@ -295,74 +295,74 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.478,
-          0.298,
-          0.529
+          1,
+          0.361,
+          0.659
         ],
-        "hex": "#7A4C87"
+        "hex": "#FF5CA8"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.478,
-          0.298,
-          0.529
+          1,
+          0.361,
+          0.659
         ],
-        "hex": "#7A4C87"
+        "hex": "#FF5CA8"
       }
     },
     {
       "collection": "Design foundation",
-      "description": "Primary reading and working surface.",
+      "description": "Primary dark reading and working surface.",
       "name": "foundation/color/surface-1",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          1,
-          0.992,
-          0.973
+          0.067,
+          0.078,
+          0.071
         ],
-        "hex": "#FFFDF8"
+        "hex": "#111412"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          1,
-          0.992,
-          0.973
+          0.067,
+          0.078,
+          0.071
         ],
-        "hex": "#FFFDF8"
+        "hex": "#111412"
       }
     },
     {
       "collection": "Design foundation",
-      "description": "Secondary contextual surface.",
+      "description": "Secondary graphite contextual surface.",
       "name": "foundation/color/surface-2",
       "resolved_value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.933,
-          0.898,
-          0.843
+          0.102,
+          0.118,
+          0.106
         ],
-        "hex": "#EEE5D7"
+        "hex": "#1A1E1B"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.933,
-          0.898,
-          0.843
+          0.102,
+          0.118,
+          0.106
         ],
-        "hex": "#EEE5D7"
+        "hex": "#1A1E1B"
       }
     },
     {
@@ -373,22 +373,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       }
     },
     {
@@ -399,22 +399,22 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.702,
+          1,
           0.42,
-          0
+          0.275
         ],
-        "hex": "#B36B00"
+        "hex": "#FF6B46"
       },
       "type": "color",
       "value": {
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.702,
+          1,
           0.42,
-          0
+          0.275
         ],
-        "hex": "#B36B00"
+        "hex": "#FF6B46"
       }
     },
     {
@@ -519,16 +519,16 @@
     },
     {
       "collection": "Design foundation",
-      "description": "Status and compact selected-filter radius.",
+      "description": "Compact status and selected-filter radius.",
       "name": "foundation/radius/pill",
       "resolved_value": {
         "unit": "px",
-        "value": 999
+        "value": 2
       },
       "type": "dimension",
       "value": {
         "unit": "px",
-        "value": 999
+        "value": 2
       }
     },
     {
@@ -708,16 +708,18 @@
       "description": "Original interface and body stack with system fallbacks.",
       "name": "foundation/type/family/sans",
       "resolved_value": [
-        "Inter",
         "ui-sans-serif",
-        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
         "sans-serif"
       ],
       "type": "fontFamily",
       "value": [
-        "Inter",
         "ui-sans-serif",
-        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
         "sans-serif"
       ]
     },
@@ -881,11 +883,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.447,
-          0.169,
-          0.039
+          0.09,
+          0.275,
+          0.831
         ],
-        "hex": "#722B0A"
+        "hex": "#1746D4"
       },
       "type": "color",
       "value": "{foundation.color.action-hover}"
@@ -898,11 +900,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.608,
-          0.243,
-          0.071
+          0.176,
+          0.384,
+          1
         ],
-        "hex": "#9B3E12"
+        "hex": "#2D62FF"
       },
       "type": "color",
       "value": "{foundation.color.action}"
@@ -915,11 +917,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.725,
-          0.678,
-          0.616
+          0.204,
+          0.227,
+          0.212
         ],
-        "hex": "#B9AD9D"
+        "hex": "#343A36"
       },
       "type": "color",
       "value": "{foundation.color.border}"
@@ -932,11 +934,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.455,
-          0.412,
-          0.357
+          0.392,
+          0.427,
+          0.404
         ],
-        "hex": "#74695B"
+        "hex": "#646D67"
       },
       "type": "color",
       "value": "{foundation.color.border-strong}"
@@ -949,11 +951,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.965,
-          0.945,
-          0.91
+          0.035,
+          0.043,
+          0.039
         ],
-        "hex": "#F6F1E8"
+        "hex": "#090B0A"
       },
       "type": "color",
       "value": "{foundation.color.canvas}"
@@ -966,11 +968,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0,
-          0.357,
-          0.471
+          0.722,
+          0.945,
+          0.231
         ],
-        "hex": "#005B78"
+        "hex": "#B8F13B"
       },
       "type": "color",
       "value": "{foundation.color.focus}"
@@ -983,11 +985,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.663,
-          0.176,
-          0.176
+          1,
+          0.318,
+          0.271
         ],
-        "hex": "#A92D2D"
+        "hex": "#FF5145"
       },
       "type": "color",
       "value": "{foundation.color.error}"
@@ -1000,11 +1002,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.549,
-          0.357,
-          0
+          1,
+          0.42,
+          0.275
         ],
-        "hex": "#8C5B00"
+        "hex": "#FF6B46"
       },
       "type": "color",
       "value": "{foundation.color.incomplete}"
@@ -1017,11 +1019,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.169,
-          0.42,
-          0.271
+          0.659,
+          0.875,
+          0.196
         ],
-        "hex": "#2B6B45"
+        "hex": "#A8DF32"
       },
       "type": "color",
       "value": "{foundation.color.ready}"
@@ -1034,11 +1036,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.478,
-          0.298,
-          0.529
+          1,
+          0.361,
+          0.659
         ],
-        "hex": "#7A4C87"
+        "hex": "#FF5CA8"
       },
       "type": "color",
       "value": "{foundation.color.stale}"
@@ -1051,11 +1053,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       },
       "type": "color",
       "value": "{foundation.color.unavailable}"
@@ -1068,11 +1070,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.702,
+          1,
           0.42,
-          0
+          0.275
         ],
-        "hex": "#B36B00"
+        "hex": "#FF6B46"
       },
       "type": "color",
       "value": "{foundation.color.warning}"
@@ -1085,11 +1087,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          1,
-          0.992,
-          0.973
+          0.067,
+          0.078,
+          0.071
         ],
-        "hex": "#FFFDF8"
+        "hex": "#111412"
       },
       "type": "color",
       "value": "{foundation.color.surface-1}"
@@ -1102,11 +1104,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.933,
-          0.898,
-          0.843
+          0.102,
+          0.118,
+          0.106
         ],
-        "hex": "#EEE5D7"
+        "hex": "#1A1E1B"
       },
       "type": "color",
       "value": "{foundation.color.surface-2}"
@@ -1119,11 +1121,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.384,
-          0.357,
-          0.314
+          0.682,
+          0.714,
+          0.69
         ],
-        "hex": "#625B50"
+        "hex": "#AEB6B0"
       },
       "type": "color",
       "value": "{foundation.color.muted}"
@@ -1153,11 +1155,11 @@
         "alpha": 1,
         "colorSpace": "srgb",
         "components": [
-          0.129,
-          0.122,
-          0.106
+          1,
+          1,
+          1
         ],
-        "hex": "#211F1B"
+        "hex": "#FFFFFF"
       },
       "type": "color",
       "value": "{foundation.color.ink}"
@@ -1236,7 +1238,7 @@
       "name": "semantic/radius/status",
       "resolved_value": {
         "unit": "px",
-        "value": 999
+        "value": 2
       },
       "type": "dimension",
       "value": "{foundation.radius.pill}"
@@ -1361,9 +1363,10 @@
       "description": "Body copy, controls, navigation, and labels.",
       "name": "semantic/type/family-interface",
       "resolved_value": [
-        "Inter",
         "ui-sans-serif",
-        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
         "sans-serif"
       ],
       "type": "fontFamily",

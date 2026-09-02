@@ -2,7 +2,7 @@
 
 This dependency-free static Site teaches design through 60 reviewed public cases. It is written for curious makers, founders, developers, product owners, designers, and tools. A reader can begin with an everyday problem, inspect an original visual study, see what relationship is worth noticing, check the evidence, and download the same case as readable Markdown or structured JSON.
 
-The Site uses a plain definition: design is how choices shape what people notice, understand, trust, and do. It does not require the reader to know design-system language before they can find value.
+The Site uses a plain definition: design arranges attention, choices, and consequences. It shapes what people notice, understand, feel, and do. Beauty matters because people must want to approach and return to what we make. The opening uses familiar forms, rooms, services, tools, and screens before introducing design-system language.
 
 The five task regions are:
 
@@ -12,7 +12,7 @@ The five task regions are:
 4. Comparison: two to five public cases kept distinct in one bounded table.
 5. Method: truth classes, originality limits, privacy exclusions, and responsible package use.
 
-Each case receives an original explanatory UI or composition study. The deterministic renderer uses only approved public fields, including lane, platform, archetype, use stage, density, pattern, layout, motion, and documented relationships. These visuals explain the library's reading. They are not the source product, evidence, or a copy of the source identity. The Site does not load or store source screenshots, logos, fonts, branded colors, or other owner assets.
+Each case receives an original explanatory UI or composition study. The deterministic renderer uses only approved public fields, including lane, platform, archetype, use stage, density, pattern, layout, motion, and documented relationships. Six visual families share one graphite, white, cobalt, lime, hot-pink, and tomato evidence frame while changing their composition for systems, dashboards, editorial work, mobile, commerce, and flows. These visuals explain the library's reading. They are not the source product, evidence, or a copy of the source identity. The Site does not load or store source screenshots, logos, fonts, branded colors, or other owner assets.
 
 ## Build the public data
 

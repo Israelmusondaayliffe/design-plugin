@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="dark">
   <meta name="description" content="Learn what design is through 60 visual case studies. See the problem, the design choice, the evidence, and what you can borrow without copying.">
   <title>Design Reference Library</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=benchmark2-reader-repair">
+  <link rel="stylesheet" href="styles.css?v=benchmark2-final-visual">
 </head>
 <body>
   <a class="skip-link" href="#catalog-screen">Skip to the public catalog</a>
@@ -26,29 +26,32 @@
     </nav>
 
     <div class="shell hero-grid">
-      <div class="hero-index technical-label" aria-hidden="true">A field guide to how things work</div>
+      <div class="hero-index technical-label">A public atlas for anyone shaping an experience</div>
       <div class="hero-title">
-        <p class="kicker">You do not need to be a designer</p>
-        <h1>Design is how choices shape what people <em>notice, understand, trust, and do.</em></h1>
+        <p class="kicker">You already make design decisions</p>
+        <h1>Design shapes <em>what happens next.</em></h1>
+        <p class="hero-deck">Every form, room, service, tool, and screen arranges attention, choices, and consequences. That arrangement is design.</p>
       </div>
       <div class="hero-copy">
-        <p>If a form feels confusing, a dashboard feels noisy, or a purchase feels risky, design choices are already shaping the moment. This library helps you see those choices, check the evidence behind them, and borrow the useful relationship without copying the look.</p>
+        <p>Design shapes what people notice, understand, feel, and do. Beauty belongs to the work because people must want to approach and return to what we make.</p>
+        <p>Use 60 public cases to see the relationship, check the evidence, and download a human or tool-ready reference.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#starter-paths">Start with a problem</a>
-          <a class="text-link" href="#method">How the evidence works</a>
+          <a class="text-link" href="#catalog-screen">Browse all 60 cases</a>
         </div>
       </div>
       <aside class="hero-study" aria-label="A case from the 60-case visual atlas">
-        <p class="technical-label">One case from the atlas</p>
+        <p class="technical-label">A designed relationship, made visible</p>
         <div id="hero-study" aria-live="polite"></div>
-        <a class="text-link" href="#starter-paths">Find a case for your problem</a>
+        <a class="text-link" href="#method">How to read the evidence</a>
       </aside>
-      <aside class="design-explainer" aria-label="Design explained in three parts">
-        <p class="technical-label">Design, made visible</p>
+      <aside class="design-explainer" aria-label="Four things design shapes">
+        <p class="technical-label">Four things design shapes</p>
         <ol>
-          <li><span>01</span><div><strong>Intent</strong><p>What is someone trying to do?</p></div></li>
-          <li><span>02</span><div><strong>Choice</strong><p>What should they notice, understand, or act on?</p></div></li>
-          <li><span>03</span><div><strong>Evidence</strong><p>What supports the choice, and where does that support stop?</p></div></li>
+          <li><span>01</span><div><strong>Attention</strong><p>What enters the foreground?</p></div></li>
+          <li><span>02</span><div><strong>Understanding</strong><p>What feels clear, connected, and possible?</p></div></li>
+          <li><span>03</span><div><strong>Feeling</strong><p>What creates care, confidence, delight, or caution?</p></div></li>
+          <li><span>04</span><div><strong>Action</strong><p>What happens next, for whom, and with what consequence?</p></div></li>
         </ol>
       </aside>
     </div>
@@ -62,16 +65,6 @@
   </header>
 
   <main>
-    <section class="sample-screen shell" aria-labelledby="sample-title">
-      <div class="sample-heading">
-        <p class="technical-label">Three cases, three kinds of choice</p>
-        <h2 id="sample-title">See the choices before you learn their names.</h2>
-        <p>You can start by looking. Each study turns public case fields into an original interface or composition, then tells you what relationship to inspect.</p>
-      </div>
-      <div id="featured-studies" class="featured-studies" aria-live="polite"></div>
-      <p class="sample-boundary">These are our visual interpretations. They are not screenshots of the source products and they do not count as evidence.</p>
-    </section>
-
     <section id="catalog-screen" class="screen shell" data-screen="catalog" aria-labelledby="catalog-title" tabindex="-1">
       <header id="starter-paths" class="section-heading grid-12">
         <p class="section-index technical-label">01 / Catalog</p>
@@ -160,6 +153,16 @@
         <p>The active filters remain intact. Clear them to return to all 60 public cases.</p>
         <button id="empty-reset" class="button" type="button">Show all public cases</button>
       </div>
+    </section>
+
+    <section class="sample-screen shell" aria-labelledby="sample-title">
+      <div class="sample-heading">
+        <p class="technical-label">Three cases, three different visual worlds</p>
+        <h2 id="sample-title">A relationship becomes useful when you can see it.</h2>
+        <p>Each study translates approved public case fields into a new interface or composition. The visual does not prove the case. It gives you something concrete to inspect before reading the evidence.</p>
+      </div>
+      <div id="featured-studies" class="featured-studies" aria-live="polite"></div>
+      <p class="sample-boundary">These are original interpretations, not screenshots of the source products and not evidence of how those products work.</p>
     </section>
 
     <section id="method" class="screen method-screen" data-screen="method" aria-labelledby="method-title">
@@ -378,6 +381,6 @@
     <article class="case-row skeleton" role="listitem" aria-hidden="true"><span></span><div></div><div></div><span></span></article>
   </template>
 
-  <script src="app.js?v=benchmark2-reader-repair" defer></script>
+  <script src="app.js?v=benchmark2-final-visual" defer></script>
 </body>
 </html>
