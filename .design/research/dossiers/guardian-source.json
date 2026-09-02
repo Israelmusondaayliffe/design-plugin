@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "guardian-source",
+    "source_url": "https://theguardian.design/",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "GUARDIAN-E01",
+      "class": "observed",
+      "claim": "The owner repository identifies Source as The Guardian Design System and separates foundations, typography, color system, design principles, and brand sections.",
+      "source_locator": "https://github.com/guardian/theguardian.design/blob/main/index.html",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GUARDIAN-E02",
+      "class": "observed",
+      "claim": "The Source page states that its color system is based on editorial sections and that each color represents a journalism pillar.",
+      "source_locator": "https://github.com/guardian/theguardian.design/blob/main/index.html",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GUARDIAN-E03",
+      "class": "observed",
+      "claim": "Guardian's web-font guidance exposes separate headline, text Egyptian, and text sans families mapped to Source typography helpers.",
+      "source_locator": "https://github.com/guardian/fonts",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GUARDIAN-E04",
+      "class": "inferred",
+      "claim": "Separate headline, reading-text, and utility-sans families support distinct editorial and interface jobs rather than one undifferentiated type treatment.",
+      "source_locator": "GUARDIAN-E01 and GUARDIAN-E03; project synthesis",
+      "confidence": "medium"
+    },
+    {
+      "evidence_id": "GUARDIAN-E05",
+      "class": "recommended",
+      "claim": "Use Guardian Source only to strengthen long-form case hierarchy and bounded category color roles without copying fonts, journalism pillars, or newspaper styling.",
+      "source_locator": "GUARDIAN-E01 through GUARDIAN-E04; project recommendation",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "Long-form case pages should lead with a clear editorial thesis, then move through context, intent, value, evidence, limitations, and adaptation guidance in a stable reading sequence.",
+      "evidence_ids": ["GUARDIAN-E01", "GUARDIAN-E04", "GUARDIAN-E05"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    },
+    "typography": {
+      "finding": "Narrative headings, sustained reading text, and utility labels need visibly separate roles; Guardian's actual font families are rejected.",
+      "evidence_ids": ["GUARDIAN-E03", "GUARDIAN-E04", "GUARDIAN-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "color": {
+      "finding": "A small category color set may identify stable corpus lanes, but each color must keep one meaning and avoid decorative spread.",
+      "evidence_ids": ["GUARDIAN-E02", "GUARDIAN-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "density": {
+      "finding": "Case analysis may be information-rich when typography and section hierarchy preserve reading rhythm; newspaper-like compression is not required.",
+      "evidence_ids": ["GUARDIAN-E04", "GUARDIAN-E05"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    },
+    "imagery": {
+      "finding": "No transferable imagery rule was established from the inspected Source and font repositories.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "No consequential motion rule was established from the inspected Guardian sources.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "interaction": {
+      "finding": "No broad interaction system is transferred; only reading hierarchy and category-signaling roles may influence the target.",
+      "evidence_ids": ["GUARDIAN-E05"],
+      "confidence": "high",
+      "trait_status": "incidental"
+    },
+    "hierarchy": {
+      "finding": "Headline, reading, and utility registers should make the case thesis and evidence priority understandable before decorative treatment.",
+      "evidence_ids": ["GUARDIAN-E03", "GUARDIAN-E04", "GUARDIAN-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "surfaces": {
+      "finding": "Section boundaries may use rules and narrow category accents, but the evidence does not support copying a newspaper page or Guardian brand surface.",
+      "evidence_ids": ["GUARDIAN-E01", "GUARDIAN-E02", "GUARDIAN-E05"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    }
+  },
+  "essential_traits": [
+    "Separate narrative, reading, and utility typography roles",
+    "Editorial priority visible before decoration",
+    "Category color with stable bounded meaning",
+    "Dense information organized for sustained reading"
+  ],
+  "incidental_traits": [
+    "Guardian Headline, Guardian Text Egyptian, and Guardian Text Sans",
+    "Guardian section colors and journalism pillar names",
+    "Guardian logos, editorial copy, and newspaper identity"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Color identifies stable editorial sections or pillars.",
+      "target_role": "Original accent colors may identify stable corpus lanes and nothing broader.",
+      "action": "adapt",
+      "reason": "The category relationship transfers, while Guardian's hues and meanings do not."
+    },
+    {
+      "domain": "media",
+      "source_role": "The inspected evidence did not establish a transferable media rule.",
+      "target_role": "Case reading must work without borrowed photography, illustration, or editorial assets.",
+      "action": "reject",
+      "reason": "Inventing a media rule would exceed the evidence and risk source imitation."
+    },
+    {
+      "domain": "density",
+      "source_role": "Multiple editorial roles organize substantial information into a readable hierarchy.",
+      "target_role": "Case analysis remains detailed but uses clear thesis, section, paragraph, metadata, and evidence levels.",
+      "action": "adapt",
+      "reason": "The hierarchy, not newspaper compression, is useful."
+    },
+    {
+      "domain": "typography",
+      "source_role": "Headline, reading text, and utility sans type perform distinct jobs.",
+      "target_role": "Original font choices and tokens preserve those three jobs.",
+      "action": "preserve",
+      "reason": "This is Guardian Source's strongest narrow contribution."
+    }
+  ],
+  "misuse_risks": [
+    "Copying Guardian fonts, section colors, newspaper grids, or editorial identity.",
+    "Using a serif everywhere and calling it editorial hierarchy.",
+    "Coloring every section until category color loses meaning.",
+    "Compressing long-form analysis into an unreadable news-like density."
+  ],
+  "evidence_limitations": [
+    "The public Source site could not be parsed directly, so owner-controlled repositories were inspected.",
+    "Composition and density findings include labeled inference.",
+    "No imagery, motion, or broad interaction rule is transferred."
+  ],
+  "confidence": "medium"
+}

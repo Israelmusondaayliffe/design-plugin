@@ -1,0 +1,1487 @@
+{
+  "format": "figma-ready-variable-spec",
+  "variables": [
+    {
+      "collection": "Design foundation",
+      "description": "Primary action color for the original project palette.",
+      "name": "foundation/color/action",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.608,
+          0.243,
+          0.071
+        ],
+        "hex": "#9B3E12"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.608,
+          0.243,
+          0.071
+        ],
+        "hex": "#9B3E12"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Darker action color for pointer hover and active feedback.",
+      "name": "foundation/color/action-hover",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.447,
+          0.169,
+          0.039
+        ],
+        "hex": "#722B0A"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.447,
+          0.169,
+          0.039
+        ],
+        "hex": "#722B0A"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Default boundary on warm neutral surfaces.",
+      "name": "foundation/color/border",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.725,
+          0.678,
+          0.616
+        ],
+        "hex": "#B9AD9D"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.725,
+          0.678,
+          0.616
+        ],
+        "hex": "#B9AD9D"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Strong boundary and selected-region divider.",
+      "name": "foundation/color/border-strong",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.455,
+          0.412,
+          0.357
+        ],
+        "hex": "#74695B"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.455,
+          0.412,
+          0.357
+        ],
+        "hex": "#74695B"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Warm neutral page foundation.",
+      "name": "foundation/color/canvas",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.965,
+          0.945,
+          0.91
+        ],
+        "hex": "#F6F1E8"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.965,
+          0.945,
+          0.91
+        ],
+        "hex": "#F6F1E8"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Error and blocking validation state color.",
+      "name": "foundation/color/error",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.663,
+          0.176,
+          0.176
+        ],
+        "hex": "#A92D2D"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.663,
+          0.176,
+          0.176
+        ],
+        "hex": "#A92D2D"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Focus indicator and keyboard location color.",
+      "name": "foundation/color/focus",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.357,
+          0.471
+        ],
+        "hex": "#005B78"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.357,
+          0.471
+        ],
+        "hex": "#005B78"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Incomplete content or pending requirement color.",
+      "name": "foundation/color/incomplete",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.549,
+          0.357,
+          0
+        ],
+        "hex": "#8C5B00"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.549,
+          0.357,
+          0
+        ],
+        "hex": "#8C5B00"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Primary text and strong boundary color.",
+      "name": "foundation/color/ink",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.129,
+          0.122,
+          0.106
+        ],
+        "hex": "#211F1B"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.129,
+          0.122,
+          0.106
+        ],
+        "hex": "#211F1B"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Secondary text color for supporting information.",
+      "name": "foundation/color/muted",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Ready or successful validation color.",
+      "name": "foundation/color/ready",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.169,
+          0.42,
+          0.271
+        ],
+        "hex": "#2B6B45"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.169,
+          0.42,
+          0.271
+        ],
+        "hex": "#2B6B45"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Stale evidence or outdated source state color.",
+      "name": "foundation/color/stale",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.478,
+          0.298,
+          0.529
+        ],
+        "hex": "#7A4C87"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.478,
+          0.298,
+          0.529
+        ],
+        "hex": "#7A4C87"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Primary reading and working surface.",
+      "name": "foundation/color/surface-1",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.992,
+          0.973
+        ],
+        "hex": "#FFFDF8"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.992,
+          0.973
+        ],
+        "hex": "#FFFDF8"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Secondary contextual surface.",
+      "name": "foundation/color/surface-2",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.933,
+          0.898,
+          0.843
+        ],
+        "hex": "#EEE5D7"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.933,
+          0.898,
+          0.843
+        ],
+        "hex": "#EEE5D7"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Unavailable or intentionally disabled state color.",
+      "name": "foundation/color/unavailable",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Warning state color that requires text support.",
+      "name": "foundation/color/warning",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.702,
+          0.42,
+          0
+        ],
+        "hex": "#B36B00"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.702,
+          0.42,
+          0
+        ],
+        "hex": "#B36B00"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "White value for text or controls on dark action colors.",
+      "name": "foundation/color/white",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#FFFFFF"
+      },
+      "type": "color",
+      "value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#FFFFFF"
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Direct control feedback.",
+      "name": "foundation/motion/duration/fast",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 120
+      },
+      "type": "duration",
+      "value": {
+        "unit": "ms",
+        "value": 120
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "No-motion state change.",
+      "name": "foundation/motion/duration/instant",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 0
+      },
+      "type": "duration",
+      "value": {
+        "unit": "ms",
+        "value": 0
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Larger bounded region feedback.",
+      "name": "foundation/motion/duration/moderate",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 200
+      },
+      "type": "duration",
+      "value": {
+        "unit": "ms",
+        "value": 200
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Direct state-change easing without flourish.",
+      "name": "foundation/motion/easing/standard",
+      "resolved_value": [
+        0.2,
+        0,
+        0,
+        1
+      ],
+      "type": "cubicBezier",
+      "value": [
+        0.2,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Square structural region radius.",
+      "name": "foundation/radius/none",
+      "resolved_value": {
+        "unit": "px",
+        "value": 0
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 0
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Status and compact selected-filter radius.",
+      "name": "foundation/radius/pill",
+      "resolved_value": {
+        "unit": "px",
+        "value": 999
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 999
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Small control and dialog radius.",
+      "name": "foundation/radius/small",
+      "resolved_value": {
+        "unit": "px",
+        "value": 4
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 4
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Compact control and metadata gap.",
+      "name": "foundation/space/12",
+      "resolved_value": {
+        "unit": "px",
+        "value": 12
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 12
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Default component gap.",
+      "name": "foundation/space/16",
+      "resolved_value": {
+        "unit": "px",
+        "value": 16
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 16
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Fine alignment step.",
+      "name": "foundation/space/2",
+      "resolved_value": {
+        "unit": "px",
+        "value": 2
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 2
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Package and component-group gap.",
+      "name": "foundation/space/24",
+      "resolved_value": {
+        "unit": "px",
+        "value": 24
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 24
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Small section gap.",
+      "name": "foundation/space/32",
+      "resolved_value": {
+        "unit": "px",
+        "value": 32
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 32
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Base spacing unit.",
+      "name": "foundation/space/4",
+      "resolved_value": {
+        "unit": "px",
+        "value": 4
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 4
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Minimum primary mobile target size.",
+      "name": "foundation/space/44",
+      "resolved_value": {
+        "unit": "px",
+        "value": 44
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 44
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Default section gap.",
+      "name": "foundation/space/48",
+      "resolved_value": {
+        "unit": "px",
+        "value": 48
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 48
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Major transition between information jobs.",
+      "name": "foundation/space/64",
+      "resolved_value": {
+        "unit": "px",
+        "value": 64
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 64
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Tight related-content gap.",
+      "name": "foundation/space/8",
+      "resolved_value": {
+        "unit": "px",
+        "value": 8
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 8
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Exact identifiers, filenames, and machine values stack.",
+      "name": "foundation/type/family/mono",
+      "resolved_value": [
+        "SFMono-Regular",
+        "Consolas",
+        "Liberation Mono",
+        "monospace"
+      ],
+      "type": "fontFamily",
+      "value": [
+        "SFMono-Regular",
+        "Consolas",
+        "Liberation Mono",
+        "monospace"
+      ]
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Original interface and body stack with system fallbacks.",
+      "name": "foundation/type/family/sans",
+      "resolved_value": [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ],
+      "type": "fontFamily",
+      "value": [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ]
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Original human explanation and thesis stack.",
+      "name": "foundation/type/family/serif",
+      "resolved_value": [
+        "Iowan Old Style",
+        "Palatino Linotype",
+        "Book Antiqua",
+        "Palatino",
+        "serif"
+      ],
+      "type": "fontFamily",
+      "value": [
+        "Iowan Old Style",
+        "Palatino Linotype",
+        "Book Antiqua",
+        "Palatino",
+        "serif"
+      ]
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Compact metadata and heading line height.",
+      "name": "foundation/type/line-height/compact",
+      "resolved_value": 1.25,
+      "type": "number",
+      "value": 1.25
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Control and interface line height.",
+      "name": "foundation/type/line-height/interface",
+      "resolved_value": 1.4,
+      "type": "number",
+      "value": 1.4
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Human explanation line height.",
+      "name": "foundation/type/line-height/reading",
+      "resolved_value": 1.6,
+      "type": "number",
+      "value": 1.6
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Compact metadata size.",
+      "name": "foundation/type/size/12",
+      "resolved_value": {
+        "unit": "px",
+        "value": 12
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 12
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Control and supporting text size.",
+      "name": "foundation/type/size/14",
+      "resolved_value": {
+        "unit": "px",
+        "value": 14
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 14
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Default readable body size.",
+      "name": "foundation/type/size/16",
+      "resolved_value": {
+        "unit": "px",
+        "value": 16
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 16
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Compact section title size.",
+      "name": "foundation/type/size/20",
+      "resolved_value": {
+        "unit": "px",
+        "value": 20
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 20
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Screen title size.",
+      "name": "foundation/type/size/28",
+      "resolved_value": {
+        "unit": "px",
+        "value": 28
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 28
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Wide case thesis size.",
+      "name": "foundation/type/size/44",
+      "resolved_value": {
+        "unit": "px",
+        "value": 44
+      },
+      "type": "dimension",
+      "value": {
+        "unit": "px",
+        "value": 44
+      }
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Strong heading and status emphasis.",
+      "name": "foundation/type/weight/bold",
+      "resolved_value": 700,
+      "type": "fontWeight",
+      "value": 700
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Control and label emphasis.",
+      "name": "foundation/type/weight/medium",
+      "resolved_value": 550,
+      "type": "fontWeight",
+      "value": 550
+    },
+    {
+      "collection": "Design foundation",
+      "description": "Default reading weight.",
+      "name": "foundation/type/weight/regular",
+      "resolved_value": 400,
+      "type": "fontWeight",
+      "value": 400
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Hover and active feedback for the primary action.",
+      "name": "semantic/color/action-hover",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.447,
+          0.169,
+          0.039
+        ],
+        "hex": "#722B0A"
+      },
+      "type": "color",
+      "value": "{foundation.color.action-hover}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Primary download and direct action role.",
+      "name": "semantic/color/action-primary",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.608,
+          0.243,
+          0.071
+        ],
+        "hex": "#9B3E12"
+      },
+      "type": "color",
+      "value": "{foundation.color.action}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default region and control boundary.",
+      "name": "semantic/color/border-default",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.725,
+          0.678,
+          0.616
+        ],
+        "hex": "#B9AD9D"
+      },
+      "type": "color",
+      "value": "{foundation.color.border}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Selected, emphasized, or major section boundary.",
+      "name": "semantic/color/border-strong",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.455,
+          0.412,
+          0.357
+        ],
+        "hex": "#74695B"
+      },
+      "type": "color",
+      "value": "{foundation.color.border-strong}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Page canvas behind all library content.",
+      "name": "semantic/color/canvas",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.965,
+          0.945,
+          0.91
+        ],
+        "hex": "#F6F1E8"
+      },
+      "type": "color",
+      "value": "{foundation.color.canvas}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Visible keyboard focus indicator on every approved surface.",
+      "name": "semantic/color/focus",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0,
+          0.357,
+          0.471
+        ],
+        "hex": "#005B78"
+      },
+      "type": "color",
+      "value": "{foundation.color.focus}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Blocking error status that names the problem and recovery action.",
+      "name": "semantic/color/status-error",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.663,
+          0.176,
+          0.176
+        ],
+        "hex": "#A92D2D"
+      },
+      "type": "color",
+      "value": "{foundation.color.error}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Incomplete package or unmet requirement status, always paired with text.",
+      "name": "semantic/color/status-incomplete",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.549,
+          0.357,
+          0
+        ],
+        "hex": "#8C5B00"
+      },
+      "type": "color",
+      "value": "{foundation.color.incomplete}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Ready or successful validation status, always paired with text.",
+      "name": "semantic/color/status-ready",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.169,
+          0.42,
+          0.271
+        ],
+        "hex": "#2B6B45"
+      },
+      "type": "color",
+      "value": "{foundation.color.ready}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Stale evidence status, always paired with text and retrieval context.",
+      "name": "semantic/color/status-stale",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.478,
+          0.298,
+          0.529
+        ],
+        "hex": "#7A4C87"
+      },
+      "type": "color",
+      "value": "{foundation.color.stale}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Unavailable or disabled status, always paired with text.",
+      "name": "semantic/color/status-unavailable",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      },
+      "type": "color",
+      "value": "{foundation.color.unavailable}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Warning status that names the risk and required decision.",
+      "name": "semantic/color/status-warning",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.702,
+          0.42,
+          0
+        ],
+        "hex": "#B36B00"
+      },
+      "type": "color",
+      "value": "{foundation.color.warning}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Primary reading and working region.",
+      "name": "semantic/color/surface-primary",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.992,
+          0.973
+        ],
+        "hex": "#FFFDF8"
+      },
+      "type": "color",
+      "value": "{foundation.color.surface-1}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Evidence, limitation, manifest, or contextual region.",
+      "name": "semantic/color/surface-secondary",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.933,
+          0.898,
+          0.843
+        ],
+        "hex": "#EEE5D7"
+      },
+      "type": "color",
+      "value": "{foundation.color.surface-2}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Supporting text that must still meet contrast requirements.",
+      "name": "semantic/color/text-muted",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.384,
+          0.357,
+          0.314
+        ],
+        "hex": "#625B50"
+      },
+      "type": "color",
+      "value": "{foundation.color.muted}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Text and icon color on the primary action surface.",
+      "name": "semantic/color/text-on-action",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#FFFFFF"
+      },
+      "type": "color",
+      "value": "{foundation.color.white}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default human explanation and interface text.",
+      "name": "semantic/color/text-primary",
+      "resolved_value": {
+        "alpha": 1,
+        "colorSpace": "srgb",
+        "components": [
+          0.129,
+          0.122,
+          0.106
+        ],
+        "hex": "#211F1B"
+      },
+      "type": "color",
+      "value": "{foundation.color.ink}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Direct control and selection feedback duration.",
+      "name": "semantic/motion/duration-control",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 120
+      },
+      "type": "duration",
+      "value": "{foundation.motion.duration.fast}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Reduced-motion replacement for every optional transition.",
+      "name": "semantic/motion/duration-instant",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 0
+      },
+      "type": "duration",
+      "value": "{foundation.motion.duration.instant}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Bounded region disclosure or dialog feedback duration.",
+      "name": "semantic/motion/duration-region",
+      "resolved_value": {
+        "unit": "ms",
+        "value": 200
+      },
+      "type": "duration",
+      "value": "{foundation.motion.duration.moderate}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "State change easing that avoids decorative overshoot.",
+      "name": "semantic/motion/easing-state",
+      "resolved_value": [
+        0.2,
+        0,
+        0,
+        1
+      ],
+      "type": "cubicBezier",
+      "value": "{foundation.motion.easing.standard}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Small-radius input, button, and dialog controls.",
+      "name": "semantic/radius/control",
+      "resolved_value": {
+        "unit": "px",
+        "value": 4
+      },
+      "type": "dimension",
+      "value": "{foundation.radius.small}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Square structural catalog, evidence, and action regions.",
+      "name": "semantic/radius/region",
+      "resolved_value": {
+        "unit": "px",
+        "value": 0
+      },
+      "type": "dimension",
+      "value": "{foundation.radius.none}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Compact status or selected-filter label only.",
+      "name": "semantic/radius/status",
+      "resolved_value": {
+        "unit": "px",
+        "value": 999
+      },
+      "type": "dimension",
+      "value": "{foundation.radius.pill}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default gap inside a component group.",
+      "name": "semantic/space/component-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 16
+      },
+      "type": "dimension",
+      "value": "{foundation.space.16}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Gap between compact related controls.",
+      "name": "semantic/space/control-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 12
+      },
+      "type": "dimension",
+      "value": "{foundation.space.12}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Fine alignment or border offset.",
+      "name": "semantic/space/fine",
+      "resolved_value": {
+        "unit": "px",
+        "value": 2
+      },
+      "type": "dimension",
+      "value": "{foundation.space.2}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Gap between a label, value, icon, or related inline control.",
+      "name": "semantic/space/inline-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 8
+      },
+      "type": "dimension",
+      "value": "{foundation.space.8}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Largest transition between catalog, evidence, and action regions.",
+      "name": "semantic/space/major-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 64
+      },
+      "type": "dimension",
+      "value": "{foundation.space.64}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Gap between package contract regions.",
+      "name": "semantic/space/package-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 24
+      },
+      "type": "dimension",
+      "value": "{foundation.space.24}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default transition between major information jobs.",
+      "name": "semantic/space/section-gap",
+      "resolved_value": {
+        "unit": "px",
+        "value": 48
+      },
+      "type": "dimension",
+      "value": "{foundation.space.48}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Minimum width and height for primary mobile controls.",
+      "name": "semantic/space/touch-target",
+      "resolved_value": {
+        "unit": "px",
+        "value": 44
+      },
+      "type": "dimension",
+      "value": "{foundation.space.44}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Evidence IDs, filenames, hashes, paths, and machine values.",
+      "name": "semantic/type/family-code",
+      "resolved_value": [
+        "SFMono-Regular",
+        "Consolas",
+        "Liberation Mono",
+        "monospace"
+      ],
+      "type": "fontFamily",
+      "value": "{foundation.type.family.mono}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Case thesis and restrained human explanation emphasis.",
+      "name": "semantic/type/family-human",
+      "resolved_value": [
+        "Iowan Old Style",
+        "Palatino Linotype",
+        "Book Antiqua",
+        "Palatino",
+        "serif"
+      ],
+      "type": "fontFamily",
+      "value": "{foundation.type.family.serif}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Body copy, controls, navigation, and labels.",
+      "name": "semantic/type/family-interface",
+      "resolved_value": [
+        "Inter",
+        "ui-sans-serif",
+        "system-ui",
+        "sans-serif"
+      ],
+      "type": "fontFamily",
+      "value": "{foundation.type.family.sans}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Compact heading, evidence ID, and metadata line height.",
+      "name": "semantic/type/line-height-compact",
+      "resolved_value": 1.25,
+      "type": "number",
+      "value": "{foundation.type.line-height.compact}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Control and interface copy line height.",
+      "name": "semantic/type/line-height-interface",
+      "resolved_value": 1.4,
+      "type": "number",
+      "value": "{foundation.type.line-height.interface}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Human explanation and method reading line height.",
+      "name": "semantic/type/line-height-reading",
+      "resolved_value": 1.6,
+      "type": "number",
+      "value": "{foundation.type.line-height.reading}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default readable explanation size.",
+      "name": "semantic/type/size-body",
+      "resolved_value": {
+        "unit": "px",
+        "value": 16
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.16}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Control, label, and supporting text size.",
+      "name": "semantic/type/size-control",
+      "resolved_value": {
+        "unit": "px",
+        "value": 14
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.14}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Compact metadata and evidence identifier size.",
+      "name": "semantic/type/size-metadata",
+      "resolved_value": {
+        "unit": "px",
+        "value": 12
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.12}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Screen and package title size.",
+      "name": "semantic/type/size-screen",
+      "resolved_value": {
+        "unit": "px",
+        "value": 28
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.28}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Compact section-heading size.",
+      "name": "semantic/type/size-section",
+      "resolved_value": {
+        "unit": "px",
+        "value": 20
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.20}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Wide case thesis size that must scale down responsively.",
+      "name": "semantic/type/size-thesis",
+      "resolved_value": {
+        "unit": "px",
+        "value": 44
+      },
+      "type": "dimension",
+      "value": "{foundation.type.size.44}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Strong heading and blocking-status emphasis.",
+      "name": "semantic/type/weight-bold",
+      "resolved_value": 700,
+      "type": "fontWeight",
+      "value": "{foundation.type.weight.bold}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Label, control, and metadata emphasis.",
+      "name": "semantic/type/weight-medium",
+      "resolved_value": 550,
+      "type": "fontWeight",
+      "value": "{foundation.type.weight.medium}"
+    },
+    {
+      "collection": "Design semantic",
+      "description": "Default reading weight.",
+      "name": "semantic/type/weight-regular",
+      "resolved_value": 400,
+      "type": "fontWeight",
+      "value": "{foundation.type.weight.regular}"
+    }
+  ]
+}

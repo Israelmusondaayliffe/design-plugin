@@ -1,0 +1,7 @@
+{
+  "route": "validation",
+  "operation": "Validate the Benchmark 2 research artifacts and direction-validator repair proposal against the approved brief, evidence boundaries, and plain-language quality requirements.",
+  "audience": "The project owner and independent reviewers",
+  "rationale": "The artifacts already exist; the remaining writing task is to verify their claims, clarity, and scope without inventing new facts.",
+  "claim_check_required": true
+}

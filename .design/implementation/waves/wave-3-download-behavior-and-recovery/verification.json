@@ -1,0 +1,20 @@
+{
+  "changed_files": [
+    "site/README.md",
+    "site/app.js",
+    "site/index.html",
+    "site/styles.css",
+    "tests/test_wave11_site.py"
+  ],
+  "handoff": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.json",
+  "handoff_markdown": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.md",
+  "handoff_markdown_sha256": "da3b4a736a06f136ea6e43274c0cce76be927ac54cf40f5e1047534ad1746dff",
+  "handoff_sha256": "6048fff7cb74b317789790467d6ae737081972e035b47b7e7fe271b04bceeec0",
+  "manifest": ".design/implementation/waves/wave-3-download-behavior-and-recovery/manifest.json",
+  "manifest_sha256": "bdede0a8dd98b54744d821e737bb8997f16593dcf79715ca777deaabca3aed01",
+  "next_state_command": "design_state.py complete-wave",
+  "ready_for_state_completion": true,
+  "status": "pass",
+  "wave_id": "wave-3-download-behavior-and-recovery",
+  "wave_number": 3
+}

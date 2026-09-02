@@ -42,6 +42,7 @@ DIRECTION_DIMENSIONS = (
     "hierarchy",
     "surfaces",
 )
+DIRECTION_STRATEGIES = {"distinct-primary-foundations", "single-foundation-adaptations"}
 ROLE_DOMAINS = {"color", "media", "density", "typography", "component", "motion", "interaction", "layout"}
 REQUIRED_ROLE_DOMAINS = {"color", "media", "density"}
 ROLE_ACTIONS = {"preserve", "adapt", "reject"}
@@ -432,6 +433,18 @@ def validate_direction_set(
 
     mode = payload.get("mode")
     _require(mode in {"substantial", "bounded-repair"}, "direction set mode is invalid")
+    if "direction_strategy" in payload:
+        direction_strategy = payload["direction_strategy"]
+        _require(
+            isinstance(direction_strategy, str) and direction_strategy in DIRECTION_STRATEGIES,
+            f"direction_strategy must be one of {sorted(DIRECTION_STRATEGIES)}",
+        )
+    else:
+        direction_strategy = "distinct-primary-foundations"
+    _require(
+        not (mode == "bounded-repair" and direction_strategy == "single-foundation-adaptations"),
+        "single-foundation-adaptations is allowed only for substantial direction sets",
+    )
     directions = payload.get("directions")
     _require(isinstance(directions, list), "directions must be a list")
     if mode == "substantial":
@@ -441,14 +454,29 @@ def validate_direction_set(
 
     ids: set[str] = set()
     primary_slugs: set[str] = set()
-    for direction in directions:
+    adaptation_axes: set[str] = set()
+    for index, direction in enumerate(directions):
         validate_direction(direction)
         _require(direction["id"] not in ids, "direction ids must be unique")
         ids.add(direction["id"])
         slug = direction["primary_reference"]["slug"]
-        if mode == "substantial":
+        if mode == "substantial" and direction_strategy == "distinct-primary-foundations":
             _require(slug not in primary_slugs, "substantial directions must use distinct primary foundations")
         primary_slugs.add(slug)
+        if direction_strategy == "single-foundation-adaptations":
+            axis = _text(direction.get("adaptation_axis"), f"directions[{index}].adaptation_axis")
+            normalized_axis = axis.casefold()
+            _require(
+                normalized_axis not in adaptation_axes,
+                "single-foundation adaptation axes must be unique after trimming and case folding",
+            )
+            adaptation_axes.add(normalized_axis)
+
+    if direction_strategy == "single-foundation-adaptations":
+        _require(
+            len(primary_slugs) == 1,
+            "single-foundation adaptations must share exactly one primary foundation",
+        )
 
     if mode == "substantial":
         for left in range(len(directions)):

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "benchmark-acceptance-evidence",
+  "benchmark": "Wave 11 Benchmark 2: Forensic Reference Extraction",
+  "wave_id": "wave-5-integration-render-and-independent-review",
+  "status": "pass",
+  "visibility": "public",
+  "prepared_at": "2026-09-02T04:37:45Z",
+  "accepted_at": "2026-09-02T04:40:59Z",
+  "worker_id": "root",
+  "candidate_id": "ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff",
+  "candidate_id_definition": "SHA-256 of the UTF-8 bytes of the minified, key-sorted JSON map in bound_artifacts, with no trailing newline. The map excludes this mutable acceptance receipt and BUILD_STATE.md.",
+  "plan_binding": {
+    "plan_json_sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412",
+    "plan_md_sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+    "wave_manifest_sha256": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff"
+  },
+  "bound_artifacts": {
+    ".design/implementation/plan.json": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412",
+    ".design/implementation/plan.md": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+    ".design/quality/benchmark-2-feedback-and-friction-ledger.md": "6ccd53520fe64ea1460851b0e65dd916486df14c4d546b00e75c83d9af65d0be",
+    ".design/quality/wave-5-browser-acceptance.json": "8debca0183c8bc1416b872b2f6dc731208ea24203d5c26e69c9caf31d5b9ed6c",
+    ".design/quality/wave-5-deterministic-builds.json": "731c9d824a408e895ed19b85a941393de74f2077a89ccd8d77c99a2ab7aa262b",
+    ".design/system/tokens.source.json": "1dbe108e4280c7ed2503c100f47ab94c77a29b1c8ab19c6675b0e0000383b190",
+    "corpus/README.md": "413cf14f3b6a3cd7d77c234eaeb6432a58a1306e50fc5fb4a4ca52a382ee7972",
+    "corpus/schemas/public-case-package.schema.json": "24a301a100d2178925ef68bf73c18bf28b88c98d8f4b1d9b54a2d7d7ca0dd614",
+    "corpus/scripts/build_catalog.py": "eb0bb2591f7bf84f90de68b72adbb473485b3e68600b63ebe43592d1110e981e",
+    "corpus/scripts/build_public_packages.py": "0608944c8654a3bbc986c48a2c9b377c7187e08de69e095ad8b07fb5462e6cfa",
+    "review/wave-11-source-health.json": "f9317df981930184325d4f7d842c79ad40ce6546a523f7d77799a344d12e0c88",
+    "site/README.md": "f23ff1a04c3621f147dc45b5691db11eb930e423ff073a586bc9928f3b5a4df0",
+    "site/app.js": "67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be",
+    "site/index.html": "62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249",
+    "site/styles.css": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1",
+    "tests/test_wave11_evidence_exchange.py": "8e3ec74795ba69fb4146f051f2a9145f8469b58a6eba9667ed10548069ce32d6",
+    "tests/test_wave11_site.py": "a25f6ca6f2689978f4e0da28bdd08acaaa2fa3765c55327718372f5b7b985379"
+  },
+  "corpus_acceptance": {
+    "status": "pass",
+    "accepted_public_cases": 60,
+    "lane_counts": {
+      "brand-editorial": 15,
+      "commerce": 8,
+      "design-systems-data-experimental": 5,
+      "flows-forms": 7,
+      "mobile": 10,
+      "product-ui": 15
+    },
+    "readable_downloads": 60,
+    "structured_downloads": 60,
+    "matching_manifests": 60,
+    "public_only_projection": "pass",
+    "semantic_parity": "pass",
+    "prohibited_field_scan": "pass",
+    "originality_audit": "pass"
+  },
+  "source_acceptance": {
+    "status": "pass",
+    "cases": 60,
+    "unique_urls": 80,
+    "passing_urls": 80,
+    "failing_urls": 0,
+    "canonical_effective_url_collisions": 0,
+    "receipt": "review/wave-11-source-health.json"
+  },
+  "deterministic_build_acceptance": {
+    "status": "pass",
+    "clean_builds": 2,
+    "combined_files_per_build": 1766,
+    "corpus_tree_files": 883,
+    "site_tree_files": 883,
+    "downloadable_files_per_site_tree": 120,
+    "relative_paths_equal": true,
+    "bytes_and_hashes_equal": true,
+    "tree_sha256_a": "bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e",
+    "tree_sha256_b": "bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e",
+    "receipt": ".design/quality/wave-5-deterministic-builds.json"
+  },
+  "token_acceptance": {
+    "status": "pass",
+    "durable_source_matches_site_css": true,
+    "compiled_total_tokens": 96,
+    "compiled_semantic_tokens": 47,
+    "isolated_output_root": true,
+    "rendered_palette": "cool neutral surfaces, graphite text, rust actions, and no yellow canvas treatment"
+  },
+  "test_acceptance": {
+    "status": "pass",
+    "focused": {
+      "command": "python3 -m unittest tests.test_wave11_evidence_exchange tests.test_wave11_site",
+      "tests": 45,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "python_3_9_6": {
+      "command": "python3 -m unittest discover -s tests -p 'test_*.py'",
+      "tests": 288,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "python_3_12_13": {
+      "command": "python3.12 -m unittest discover -s tests -p 'test_*.py'",
+      "tests": 288,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "rendered_acceptance": {
+    "status": "pass",
+    "fresh_required_targets": 21,
+    "passing_targets": 21,
+    "root_overflow_failures": 0,
+    "console_errors": 0,
+    "console_warnings": 0,
+    "unresolved_accessibility_blockers": 0,
+    "direction_fidelity": "pass",
+    "copied_identity_exclusions": "pass",
+    "exact_download_binding": "pass",
+    "receipt": ".design/quality/wave-5-browser-acceptance.json",
+    "fresh_keyboard_and_focus": "pass",
+    "fresh_reduced_motion_targets": 9,
+    "passing_reduced_motion_targets": 9,
+    "comparison_focus_repair": "pass",
+    "evidence_boundary": "Fresh Wave 5 evidence covers all 21 exact routes, the complete keyboard and focus flow, exact readable-download activation, comparison selection focus restoration, all nine required reduced-motion targets, changed public copy, token-to-CSS parity, rendered palette, contrast, recovery, privacy, and direction fidelity. Unchanged Wave 4 evidence is retained only for the native advanced select, 44 CSS pixel controls, 200 percent scale, WCAG text spacing, computed contrast, live regions, and loopback privacy behavior."
+  },
+  "feedback_and_friction": {
+    "status": "pass",
+    "product_feedback_items": 7,
+    "build_friction_items": 18,
+    "open_items": 0,
+    "public_safe": true,
+    "receipt": ".design/quality/benchmark-2-feedback-and-friction-ledger.md"
+  },
+  "commands": [
+    "python3 corpus/scripts/validate_corpus.py",
+    "python3 corpus/scripts/audit_originality.py",
+    "python3 corpus/scripts/audit_sources.py",
+    "python3 corpus/scripts/build_catalog.py --visibility public",
+    "python3 -m unittest tests.test_wave11_evidence_exchange tests.test_wave11_site",
+    "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "python3.12 -m unittest discover -s tests -p 'test_*.py'",
+    "node --check site/app.js",
+    "python3 corpus/scripts/build_catalog.py --visibility public --corpus-out <clean-root>/corpus --site-out <clean-root>/site",
+    "python3 corpus/scripts/build_catalog.py --visibility public --corpus-out <second-clean-root>/corpus --site-out <second-clean-root>/site"
+  ],
+  "completion_criteria": [
+    {
+      "criterion": "All automated tests pass with exact counts recorded, and no required test is skipped without an approved reason.",
+      "status": "pass",
+      "evidence": "45 focused tests and 288 full-suite tests on both Python 3.9.6 and Python 3.12.13 passed with zero failures, errors, or skips."
+    },
+    {
+      "criterion": "All 60 public cases produce validated readable and structured downloads with semantic parity, deterministic bytes, public-only fields, and matching manifests.",
+      "status": "pass",
+      "evidence": "The accepted-only projection contains 60 Markdown files, 60 JSON files, and 60 matching manifests. Two clean builds produced the same 1,766 paths, bytes, hashes, and tree digest."
+    },
+    {
+      "criterion": "All 21 required targets and complete keyboard flows pass fresh rendered review with no unresolved accessibility, responsive, recovery, privacy, or direction-fidelity blockers.",
+      "status": "pass",
+      "evidence": "The Wave 5 browser receipt passes 21 of 21 exact routes, a fresh native keyboard and focus flow, exact readable-download activation, comparison focus restoration after repair, and all nine required reduced-motion targets, with zero unresolved blocker, overflow, console, privacy, accessible-name, ARIA-reference, heading-order, hidden-focusable, or dialog-label failures."
+    },
+    {
+      "criterion": "All three independent reviewers pass the final same-hash result, and the worker repairs every blocker before recording acceptance.",
+      "status": "pass",
+      "evidence": "Plan, technical, and Unslop reviewers independently reproduced candidate ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff, matched all 18 bound hashes, and returned PASS. Each reviewer then confirmed the final mutable receipt hash after these decisions were recorded."
+    },
+    {
+      "criterion": "The receipt states that deployment, push, release, active-host installation, and Figma writes were not performed.",
+      "status": "pass",
+      "evidence": "No deployment, push, release, active-host installation, or Figma write was performed during Wave 5. Public publication is a separately authorized post-Wave-5 action."
+    }
+  ],
+  "review_results": [
+    {
+      "reviewer_id": "wave11_gate_verifier",
+      "mandate": "approved plan and Evidence Exchange direction",
+      "status": "pass",
+      "evidence": "Reproduced the exact no-trailing-newline candidate ID and all 18 hashes; verified manifest scope, 21 planned routes, five fresh keyboard and focus flows, all nine reduced-motion targets, tests, Evidence Exchange direction, IBM Carbon role, publication boundary, and remaining limits."
+    },
+    {
+      "reviewer_id": "codex_install_verifier",
+      "mandate": "technical, browser, and evidence behavior",
+      "status": "pass",
+      "evidence": "Reproduced the exact candidate ID and all 18 hashes; verified 45 focused tests, 288 tests on both supported Python versions, two deterministic 1,766-file builds, 60 cases, 80 of 80 sources, 21 routes, nine reduced-motion targets, comparison focus repair, native keyboard and download flows, package parity, and privacy."
+    },
+    {
+      "reviewer_id": "claude_install_verifier",
+      "mandate": "Unslop, human factors, and public copy boundary",
+      "status": "pass",
+      "evidence": "Reproduced the exact candidate ID and all 18 hashes; verified context, intent, value, quality, claim boundaries, public-safe language, visual wording, seven feedback items, eighteen friction items, and no Gmail, email address, private identity, local path, credential, private repository detail, banned cliche, or misleading completion claim."
+    }
+  ],
+  "remaining_limits": [
+    "Public deployment, push, and release were not performed during Wave 5. The user separately authorized public publication after Wave 5 acceptance.",
+    "Active-host installation and Figma writes were not performed.",
+    "R04 remains partial and is explicitly accepted as a nonblocking evidence gap for this work.",
+    "R22 remains partial until all three benchmarks and later acceptance gates pass.",
+    "Wave 11 Benchmarks 1 and 3 have not started."
+  ],
+  "blocking_findings": []
+}

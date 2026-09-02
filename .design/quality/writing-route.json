@@ -1,0 +1,7 @@
+{
+  "route": "intent-architecture",
+  "operation": "Create an operating specification and project plan that let the user approve and later execute the Evidence Exchange direction without changing its factual scope.",
+  "audience": "The project owner, future implementers, and independent reviewers",
+  "rationale": "The system definition and implementation plan are new structured documents whose job is to preserve approved decisions, expose risks, and support one repository-change decision.",
+  "claim_check_required": false
+}

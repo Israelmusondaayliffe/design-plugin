@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0",
+  "approved_understanding_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+  "mode": "substantial",
+  "direction_strategy": "single-foundation-adaptations",
+  "directions": [
+    {
+      "id": "guided-fieldbook",
+      "title": "Guided Fieldbook",
+      "thesis": "Lead with a clear case story, then reveal the evidence and downloads needed to adapt it responsibly.",
+      "adaptation_axis": "reader-led case understanding",
+      "primary_reference": {
+        "slug": "ibm-carbon",
+        "responsibility": "dominant visual foundation"
+      },
+      "preserved_primary_traits": [
+        "Productive utility type paired with selective expressive hierarchy",
+        "A visible alignment grid across narrative, evidence, and actions",
+        "Role-based color and contextual surface layers",
+        "Compact scanning regions separated from calmer reading regions"
+      ],
+      "secondary_references": [
+        {
+          "slug": "guardian-source",
+          "role": "content hierarchy",
+          "scope": "Long-form case order and distinct narrative, reading, and utility roles only."
+        },
+        {
+          "slug": "github-primer",
+          "role": "mobile behavior",
+          "scope": "Reflow named content regions without removing evidence, comparison, or download actions."
+        }
+      ],
+      "dimension_signatures": {
+        "composition": "A narrative lead occupies the opening grid, followed by aligned context, evidence, limitations, and download regions.",
+        "typography": "Expressive case thesis and section heads contrast with productive metadata, evidence labels, and controls.",
+        "color": "Neutral layers carry structure while one original accent marks actions and restrained lane color marks classification.",
+        "density": "Open reading passages alternate with compact evidence, metadata, and related-case strips.",
+        "imagery": "Original abstract previews and data diagrams act as evidence when useful; the reading sequence remains complete without them.",
+        "motion": "Small state transitions disclose evidence and preserve reading position; reduced motion removes nonessential movement.",
+        "interaction": "Readers move from thesis to evidence to download, with filters and comparison available as supporting paths.",
+        "hierarchy": "Context, intent, value, quality, and limitations precede file choices and machine-readable detail.",
+        "surfaces": "Rules, spacing, and a small number of contextual layers separate narrative, proof, and actions without card repetition."
+      },
+      "role_invariants": [
+        {
+          "domain": "color",
+          "source_role": "Carbon uses neutral layers for structure and reserves semantic color for action and state.",
+          "target_role": "Original neutrals organize the reading path; one action accent and bounded lane colors keep stable meanings.",
+          "action": "adapt",
+          "reason": "Semantic restraint transfers without copying IBM blue or Guardian section colors."
+        },
+        {
+          "domain": "media",
+          "source_role": "The selected Carbon evidence does not establish a transferable image identity.",
+          "target_role": "Only original case previews and evidence diagrams may support the narrative, and core meaning remains textual.",
+          "action": "reject",
+          "reason": "This prevents borrowed source identity and keeps unsupported imagery out of the design logic."
+        },
+        {
+          "domain": "density",
+          "source_role": "Productive work stays compact while expressive explanation receives more scale and space.",
+          "target_role": "Case reading is calm, while provenance, evidence, related cases, and downloads remain compact and scannable.",
+          "action": "preserve",
+          "reason": "The productive and expressive contrast is the primary Carbon relationship for this direction."
+        },
+        {
+          "domain": "typography",
+          "source_role": "Carbon separates productive and expressive type by task.",
+          "target_role": "Original fonts distinguish case thesis, sustained reading, metadata, evidence labels, and controls.",
+          "action": "adapt",
+          "reason": "The task-based hierarchy transfers while IBM Plex and Guardian font families remain excluded."
+        }
+      ],
+      "signature_traits": [
+        "A case thesis that orients the reader before controls",
+        "Visible transitions from explanation to evidence to download",
+        "Productive and expressive density used on the same page",
+        "Editorial hierarchy without newspaper styling"
+      ],
+      "forbidden_drift": [
+        "Do not turn every section into a rounded card.",
+        "Do not copy IBM Plex, IBM blue, Guardian fonts, or newspaper identity.",
+        "Do not bury limitations or provenance below download controls.",
+        "Do not make the human-readable path depend on imagery or animation."
+      ],
+      "risks": [
+        "The narrative opening can delay a repeat visitor who wants a file immediately.",
+        "Long case pages can become heavy if evidence is not disclosed progressively."
+      ],
+      "rejected_alternatives": [
+        {
+          "alternative": "Magazine-style gallery",
+          "reason": "Large imagery would outrun the available evidence and weaken the download-first job."
+        },
+        {
+          "alternative": "Pure documentation portal",
+          "reason": "It would flatten the expressive case thesis that makes the reference useful to a human reader."
+        }
+      ],
+      "evidence_refs": [
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E01"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E02"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E03"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E06"},
+        {"slug": "guardian-source", "evidence_id": "GUARDIAN-E04"},
+        {"slug": "guardian-source", "evidence_id": "GUARDIAN-E05"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E02"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E05"}
+      ],
+      "feasibility": "Fits the existing dependency-free static Site. It requires new content hierarchy and download views but no backend or new software.",
+      "presentation": {
+        "summary": "A human-first field guide that turns each case into an understandable path from design problem to evidence to download.",
+        "fit": "Best when understanding and responsible adaptation should feel as important as finding and downloading a file.",
+        "risk": "Repeat users may find the narrative layer slower than a dense work surface.",
+        "expert_detail": "Carbon owns the grid, semantic layers, and productive versus expressive relationship. Guardian informs long-form hierarchy, and Primer supplies mobile reflow only."
+      }
+    },
+    {
+      "id": "analyst-workbench",
+      "title": "Analyst Workbench",
+      "thesis": "Make search, comparison, evidence inspection, and download one compact working environment for repeated use.",
+      "adaptation_axis": "operator-led comparison and retrieval",
+      "primary_reference": {
+        "slug": "ibm-carbon",
+        "responsibility": "dominant visual foundation"
+      },
+      "preserved_primary_traits": [
+        "A visible grid for dense controls, results, and evidence",
+        "Productive typography as the dominant working register",
+        "Role-based action, state, border, and layer colors",
+        "Component choice based on whether information is grouped, switched, or compared"
+      ],
+      "secondary_references": [
+        {
+          "slug": "elastic-eui",
+          "role": "density treatment",
+          "scope": "Complete behavior for compact filters, result rows, selection, sorting, pagination, and row actions."
+        },
+        {
+          "slug": "github-primer",
+          "role": "mobile behavior",
+          "scope": "Recombine filter, result, comparison, metadata, and action regions without losing function."
+        }
+      ],
+      "dimension_signatures": {
+        "composition": "A persistent control rail, dense result region, and visible comparison or detail region share one aligned workspace.",
+        "typography": "Compact productive type dominates controls, rows, counts, provenance, and values; expressive type is limited to route titles.",
+        "color": "Neutral working layers dominate; action, focus, selection, warning, and error roles use explicit original semantic colors.",
+        "density": "High information density supports scanning and repeated operations, with touch-safe spacing and a less dense mobile sequence.",
+        "imagery": "Small original abstract previews act as recognition cues, never as the primary catalog structure.",
+        "motion": "Productive microinteractions explain selection, filtering, sorting, panel changes, and download status without page choreography.",
+        "interaction": "Keyboard-ready filters, sort, multi-select comparison, evidence inspection, and downloads stay close to the records they affect.",
+        "hierarchy": "Current query, result count, selected cases, evidence state, and available actions lead the workspace; case details and downloads still retain context, intent, value, evidence quality, and limitations.",
+        "surfaces": "Contextual layers and borders define control, result, comparison, and status regions with little decorative elevation."
+      },
+      "role_invariants": [
+        {
+          "domain": "color",
+          "source_role": "Carbon assigns stable semantic roles to action, focus, status, border, and layer tokens.",
+          "target_role": "Original tokens distinguish actions, selection, focus, data quality, download state, and workspace layers.",
+          "action": "preserve",
+          "reason": "Dense work becomes ambiguous when color is decorative or changes meaning between regions."
+        },
+        {
+          "domain": "media",
+          "source_role": "The selected Carbon and EUI working patterns do not depend on decorative media.",
+          "target_role": "Catalog operations work without imagery; original previews appear only as optional recognition evidence.",
+          "action": "preserve",
+          "reason": "Records, state, and controls must remain the visual focus in a working surface."
+        },
+        {
+          "domain": "density",
+          "source_role": "Carbon productive surfaces and EUI data controls remain compact while preserving complete state behavior.",
+          "target_role": "Filters, results, comparison, evidence, and download actions remain compact and fully operable across viewports.",
+          "action": "preserve",
+          "reason": "Throughput is the adaptation axis, but missing behavior cannot be traded for density."
+        },
+        {
+          "domain": "interaction",
+          "source_role": "Information relationships determine whether content is grouped, switched, or shown concurrently.",
+          "target_role": "Related case sections may group, data formats may switch, and compared cases remain concurrently visible.",
+          "action": "preserve",
+          "reason": "This prevents tabs and switches from hiding content that must be compared."
+        }
+      ],
+      "signature_traits": [
+        "A persistent query and result workspace",
+        "Comparison visible beside or directly after results",
+        "Complete compact control behavior",
+        "Explicit operational and download states"
+      ],
+      "forbidden_drift": [
+        "Do not hide compared cases behind separate tabs.",
+        "Do not create dense rows without keyboard, mobile, empty, loading, and failure behavior.",
+        "Do not use color as the only state signal.",
+        "Do not copy Carbon or EUI component shapes, product shells, or palettes."
+      ],
+      "risks": [
+        "First-time visitors may need stronger orientation before entering a dense workspace.",
+        "Mobile can become a stack of controls unless the region order and disclosure rules are strict."
+      ],
+      "rejected_alternatives": [
+        {
+          "alternative": "Dashboard card grid",
+          "reason": "Repeated cards would waste space and weaken the relationship between filters, records, evidence, and actions."
+        },
+        {
+          "alternative": "Separate comparison route only",
+          "reason": "It would interrupt the repeated research loop and hide current selection context."
+        }
+      ],
+      "evidence_refs": [
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E01"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E02"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E03"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E04"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E05"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E07"},
+        {"slug": "elastic-eui", "evidence_id": "EUI-E03"},
+        {"slug": "elastic-eui", "evidence_id": "EUI-E04"},
+        {"slug": "elastic-eui", "evidence_id": "EUI-E05"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E02"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E04"}
+      ],
+      "feasibility": "Fits the current static application and data model. The main work is coordinated state, keyboard behavior, responsive region reflow, and download feedback in existing JavaScript.",
+      "presentation": {
+        "summary": "A dense research station for people who repeatedly filter, compare, inspect, and download cases.",
+        "fit": "Best when speed, comparison, and repeated retrieval are the dominant jobs after initial orientation.",
+        "risk": "Its density can feel demanding to a first-time reader and requires careful mobile sequencing.",
+        "expert_detail": "Carbon owns the workspace grid, component relationships, tokens, and productive character. EUI contributes behavioral completeness for density, and Primer contributes responsive region parity."
+      }
+    },
+    {
+      "id": "evidence-exchange",
+      "title": "Evidence Exchange",
+      "thesis": "Treat every case as an evidence-bounded, well-explained data package with visible provenance, limits, formats, and recovery paths.",
+      "adaptation_axis": "download-led evidence delivery",
+      "primary_reference": {
+        "slug": "ibm-carbon",
+        "responsibility": "dominant visual foundation"
+      },
+      "preserved_primary_traits": [
+        "Grid-aligned context, evidence, metadata, and action regions",
+        "Productive and expressive typography assigned by information job",
+        "Semantic color roles across action, focus, status, border, and layer",
+        "Contextual surfaces without decorative card elevation",
+        "Component states chosen from the relationship between readable and structured outputs"
+      ],
+      "secondary_references": [
+        {
+          "slug": "vercel-geist",
+          "role": "typography detail",
+          "scope": "Separate explanation, labels, provenance, tabular values, file details, and machine-readable identifiers."
+        },
+        {
+          "slug": "govuk-design-system",
+          "role": "form behavior",
+          "scope": "Name the exact download, validation, or availability problem and give a specific recovery action."
+        },
+        {
+          "slug": "github-primer",
+          "role": "mobile behavior",
+          "scope": "Keep package context, evidence, format choice, limitations, and download actions complete after reflow."
+        }
+      ],
+      "dimension_signatures": {
+        "composition": "A package header leads into context and value, evidence and provenance, readable and JSON format details, limitations, and final download actions.",
+        "typography": "Readable explanation leads; compact labels, tabular values, file metadata, evidence IDs, and code identifiers form separate technical registers.",
+        "color": "Original semantic roles distinguish ready, incomplete, unavailable, stale, warning, error, focus, and primary download states.",
+        "density": "Explanation uses bounded reading width while manifests, provenance, schemas, and file details use compact aligned rows.",
+        "imagery": "Original data previews and abstract case previews may demonstrate package contents; no image stands in for provenance or quality.",
+        "motion": "Direct feedback confirms format changes, validation, copy, and download status; failure and reduced-motion states remain complete without animation.",
+        "interaction": "Users inspect what a file contains, choose readable or structured output, verify limits, download, and recover from a specific failure without losing context.",
+        "hierarchy": "Context, intent, value, evidence quality, provenance, limitations, format, and file action appear in that decision order.",
+        "surfaces": "Evidence, manifest, limitations, and action bands use role-based contrast and borders rather than repeated floating containers."
+      },
+      "role_invariants": [
+        {
+          "domain": "color",
+          "source_role": "Carbon uses stable semantic roles while literal values may change by theme.",
+          "target_role": "Original colors distinguish package readiness, evidence quality, download state, warnings, errors, focus, and actions.",
+          "action": "preserve",
+          "reason": "Package trust depends on stable state meaning, not on IBM or Vercel color values."
+        },
+        {
+          "domain": "media",
+          "source_role": "The selected evidence does not authorize a borrowed visual identity, while technical examples can support claims.",
+          "target_role": "Only original previews derived from approved public case data may demonstrate what a package contains.",
+          "action": "adapt",
+          "reason": "Evidence can be shown, but fabricated or third-party proof would contradict the product's quality claim."
+        },
+        {
+          "domain": "density",
+          "source_role": "Carbon separates productive compactness from expressive reading space.",
+          "target_role": "Context and limitations are readable, while manifests, evidence records, and file specifications remain compact.",
+          "action": "preserve",
+          "reason": "People need explanation and tools need precision, so neither density mode can flatten the other."
+        },
+        {
+          "domain": "interaction",
+          "source_role": "Carbon selects components by content relationship, while GOV.UK names the exact problem and remedy in error states.",
+          "target_role": "Readable and structured views can switch, comparisons stay visible, and failed downloads retain context with a precise next action.",
+          "action": "adapt",
+          "reason": "The combination supports honest format choice and complete recovery without changing the dominant visual foundation."
+        }
+      ],
+      "signature_traits": [
+        "A visible package contract before download",
+        "Human explanation paired with exact technical metadata",
+        "Evidence quality and limitations treated as primary content",
+        "Specific recovery paths for unavailable or failed downloads",
+        "Readable and structured formats presented as equivalent projections"
+      ],
+      "forbidden_drift": [
+        "Do not present a download before its context, contents, evidence boundary, and limitations are visible.",
+        "Do not make metadata visually equal to the human-readable explanation.",
+        "Do not use fabricated previews, copied source assets, or decorative code blocks as proof.",
+        "Do not write a generic failure message without the exact problem and next action.",
+        "Do not copy Carbon geometry, IBM blue, Geist monochrome identity, or GOV.UK styling."
+      ],
+      "risks": [
+        "The product can feel like a file registry if discovery and visual case character become secondary.",
+        "Provenance and format detail can overwhelm readers unless disclosure follows the decision order."
+      ],
+      "rejected_alternatives": [
+        {
+          "alternative": "One-click download catalog",
+          "reason": "It would make the files fast to obtain but fail the approved requirement for context, intent, value, and quality before download."
+        },
+        {
+          "alternative": "Developer documentation clone",
+          "reason": "It would privilege schemas and code over the human-readable design understanding that both people and language-model workflows need."
+        }
+      ],
+      "evidence_refs": [
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E01"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E02"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E03"},
+        {"slug": "ibm-carbon", "evidence_id": "CARBON-E05"},
+        {"slug": "vercel-geist", "evidence_id": "GEIST-E03"},
+        {"slug": "vercel-geist", "evidence_id": "GEIST-E05"},
+        {"slug": "govuk-design-system", "evidence_id": "GOVUK-E04"},
+        {"slug": "govuk-design-system", "evidence_id": "GOVUK-E05"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E02"},
+        {"slug": "github-primer", "evidence_id": "PRIMER-E05"}
+      ],
+      "feasibility": "Fits the current static Site. Deterministic readable and JSON projections, privacy filtering, validation, and browser download states are substantial but need no backend.",
+      "presentation": {
+        "summary": "A download-first evidence exchange where each file arrives with the explanation and proof needed to use it responsibly.",
+        "fit": "Best when portable evidence, matching meaning across readable and structured outputs, and dependable download behavior are the product's clearest value.",
+        "risk": "The technical contract can overshadow discovery and visual inspiration if the hierarchy is not disciplined.",
+        "expert_detail": "Carbon owns the grid, layers, state roles, and productive versus expressive split. Geist sharpens technical type roles, GOV.UK sharpens recovery, and Primer preserves the complete mobile task."
+      }
+    }
+  ]
+}

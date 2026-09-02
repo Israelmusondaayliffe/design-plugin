@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "status": "approved",
+  "created_at": "2026-09-01T20:53:52Z",
+  "rounds": [
+    {
+      "round": 1,
+      "questions": [
+        {
+          "id": "reference-foundation",
+          "impact": "high",
+          "text": "Should IBM Carbon be the single forensic reference for rebuilding the Design Reference Library into a working design-intelligence tool, while preserving the library's own identity and content?",
+          "answer": "IBM Carbon Design System confirmed."
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "questions": [
+        {
+          "id": "primary-product-job",
+          "impact": "high",
+          "text": "Should the expanded Library's main new job be helping a designer turn one reference case into an original adaptation brief for their own project?",
+          "answer": "Yes. IBM Carbon remains dominant, with other designs allowed only for narrow roles needed to fulfill the product properly."
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "questions": [
+        {
+          "id": "data-delivery-model",
+          "impact": "high",
+          "text": "Should the first version keep project data only on the user's device, with no accounts or backend? This keeps the benchmark smaller, but it means no automatic cross-device sync or server recovery.",
+          "answer": "No saved project workspace. The product is more a Site where people download the data, with context, intent, value, and quality."
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "questions": [
+        {
+          "id": "download-audiences",
+          "impact": "high",
+          "text": "Should each case support both a readable brief for people and structured data for software tools?",
+          "answer": "Yes. Human-readable material is useful to tools too, and every piece of written information must be verified."
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    {
+      "item": "Single forensic reference",
+      "classification": "confirmed",
+      "evidence": "The user answered sure to the IBM Carbon proposal.",
+      "resolution": "Use IBM Carbon Design System as the only forensic reference."
+    },
+    {
+      "item": "Benchmark target",
+      "classification": "confirmed",
+      "evidence": "The user proposed expanding the existing Design Reference Library and then authorized Benchmark 2.",
+      "resolution": "Rebuild and expand the existing Site through a fresh Benchmark 2 evidence chain."
+    },
+    {
+      "item": "Primary new product job",
+      "classification": "confirmed",
+      "evidence": "The user first approved case-to-adaptation help, then clarified that the product is more a Site where people understand and download the data.",
+      "resolution": "Preserve browsing, evidence inspection, and comparison; make trustworthy case downloads the main new action and use them to support original adaptation."
+    },
+    {
+      "item": "Secondary reference use",
+      "classification": "confirmed",
+      "evidence": "The user explicitly authorized ideas from other designs when needed to fulfill the product properly.",
+      "resolution": "Keep IBM Carbon dominant. Give each secondary source one narrow, documented role and prohibit averaging."
+    },
+    {
+      "item": "Data model",
+      "classification": "confirmed",
+      "evidence": "The user clarified that the product is a download Site rather than a saved project workspace.",
+      "resolution": "Do not add accounts, a backend, automatic sync, server recovery, or long-term project storage in version one."
+    },
+    {
+      "item": "Download content principles",
+      "classification": "confirmed",
+      "evidence": "The user explicitly required context, intent, value, and quality.",
+      "resolution": "Define context as source and use setting; intent as the problem and adaptation purpose; value as reusable guidance and limits; quality as evidence, confidence, provenance, review state, and unknowns without claiming blanket certification."
+    },
+    {
+      "item": "Download audiences",
+      "classification": "confirmed",
+      "evidence": "A downloadable design-intelligence Site can serve readers with a brief and software tools with structured data.",
+      "resolution": "Provide a self-contained readable brief for people and language-model workflows, plus semantically equivalent structured data for deterministic software processing."
+    },
+    {
+      "item": "Claim verification",
+      "classification": "confirmed",
+      "evidence": "The user required every piece of written information to be verified.",
+      "resolution": "Generate only from canonical accepted public records; preserve evidence IDs, source links, retrieval dates, evidence classes, confidence, limitations, unknowns, and review state."
+    },
+    {
+      "item": "Download container",
+      "classification": "deferred",
+      "evidence": "Human-readable and structured outputs are confirmed, but one archive versus separate downloads does not change the approved product outcome.",
+      "resolution": "Choose the safest dependency-free mechanic during implementation planning and document it."
+    },
+    {
+      "item": "Publication boundary",
+      "classification": "confirmed",
+      "evidence": "The existing Wave 11 Site and Benchmark 2 contract prohibit deployment without separate authorization.",
+      "resolution": "Keep Sites local-only."
+    },
+    {
+      "item": "Generated catalog contract",
+      "classification": "known",
+      "evidence": "Current case details load progressive relative routes beneath site/generated-data/.",
+      "resolution": "Preserve progressive routes and rebuild the catalog after tests that remove generated output."
+    },
+    {
+      "item": "Sites compatibility",
+      "classification": "unresolved",
+      "evidence": "The current static Site passes its own tests, but Sites import and rendered output have not been proved.",
+      "resolution": "Verify during the approved implementation and render phases."
+    }
+  ],
+  "approval": {
+    "phrase": "Approved",
+    "artifact": ".design/shared-understanding.md",
+    "artifact_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced"
+  },
+  "skip": null
+}

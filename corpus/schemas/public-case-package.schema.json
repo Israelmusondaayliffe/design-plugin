@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design.local/schemas/public-case-package.schema.json",
+  "title": "Public Design Reference Case Package",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "package_type",
+    "slug",
+    "name",
+    "publication_status",
+    "context",
+    "intent",
+    "value",
+    "quality",
+    "analysis",
+    "evidence_boundary",
+    "evidence",
+    "provenance",
+    "limitations",
+    "unknowns"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "package_type": {"const": "design-reference-public-case"},
+    "slug": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "name": {"type": "string", "minLength": 1},
+    "publication_status": {"const": "public"},
+    "context": {
+      "type": "object",
+      "required": ["source_identity", "study_context"],
+      "properties": {
+        "source_identity": {
+          "type": "object",
+          "required": ["truth_class", "source_name", "source_kind", "source_url", "studied_at"],
+          "properties": {
+            "truth_class": {"const": "observed"},
+            "source_name": {"type": "string", "minLength": 1},
+            "source_kind": {"type": "string", "minLength": 1},
+            "source_url": {"type": "string", "pattern": "^https://"},
+            "studied_at": {"type": "string", "format": "date"}
+          },
+          "additionalProperties": false
+        },
+        "study_context": {
+          "type": "object",
+          "required": ["truth_class", "summary", "audience", "corpus_lane", "platforms", "product_types", "industries", "archetypes", "density", "media_strategy"],
+          "properties": {
+            "truth_class": {"const": "inferred"},
+            "summary": {"type": "string", "minLength": 40},
+            "audience": {
+              "type": "object",
+              "required": ["truth_class", "statement"],
+              "properties": {
+                "truth_class": {"const": "unknown"},
+                "statement": {"type": "string", "minLength": 3}
+              },
+              "additionalProperties": false
+            },
+            "corpus_lane": {"type": "string", "minLength": 1},
+            "platforms": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "product_types": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "industries": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "archetypes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+            "density": {"type": "string", "minLength": 1},
+            "media_strategy": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "intent": {
+      "type": "object",
+      "required": ["truth_class", "visual_thesis", "journeys", "signature_relationships"],
+      "properties": {
+        "truth_class": {"const": "inferred"},
+        "visual_thesis": {"type": "string", "minLength": 20},
+        "journeys": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "signature_relationships": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 3}}
+      },
+      "additionalProperties": false
+    },
+    "value": {
+      "type": "object",
+      "required": ["truth_class", "best_for", "avoid_for", "failure_modes"],
+      "properties": {
+        "truth_class": {"const": "recommended"},
+        "best_for": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 3}},
+        "avoid_for": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "failure_modes": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 3}}
+      },
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "required": ["truth_class", "evidence_quality", "coverage_confidence", "accessibility_maturity", "accessibility_note", "evidence_count"],
+      "properties": {
+        "truth_class": {"const": "inferred"},
+        "evidence_quality": {"type": "string", "minLength": 1},
+        "coverage_confidence": {"enum": ["low", "medium", "high"]},
+        "accessibility_maturity": {"type": "string", "minLength": 1},
+        "accessibility_note": {"type": "string", "minLength": 20},
+        "evidence_count": {"type": "integer", "minimum": 1}
+      },
+      "additionalProperties": false
+    },
+    "analysis": {
+      "type": "object",
+      "required": ["truth_classes", "brand_posture", "layout", "grid", "container", "responsive_behavior", "typography", "color", "spacing", "surfaces", "components", "states", "navigation", "forms", "flows", "motion", "interaction", "imagery", "accessibility"],
+      "properties": {
+        "truth_classes": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {"enum": ["inferred", "recommended"]}
+        },
+        "brand_posture": {"type": "string", "minLength": 10},
+        "layout": {"type": "string", "minLength": 10},
+        "grid": {"type": "string", "minLength": 10},
+        "container": {"type": "string", "minLength": 10},
+        "responsive_behavior": {"type": "string", "minLength": 10},
+        "typography": {"type": "string", "minLength": 10},
+        "color": {"type": "string", "minLength": 10},
+        "spacing": {"type": "string", "minLength": 10},
+        "surfaces": {"type": "string", "minLength": 10},
+        "components": {"type": "string", "minLength": 10},
+        "states": {"type": "string", "minLength": 10},
+        "navigation": {"type": "string", "minLength": 10},
+        "forms": {"type": "string", "minLength": 10},
+        "flows": {"type": "string", "minLength": 10},
+        "motion": {"type": "string", "minLength": 10},
+        "interaction": {"type": "string", "minLength": 10},
+        "imagery": {"type": "string", "minLength": 10},
+        "accessibility": {"type": "string", "minLength": 10}
+      },
+      "additionalProperties": false
+    },
+    "evidence_boundary": {
+      "type": "object",
+      "required": ["observed", "inferred", "recommended", "unknown", "evidence_scope", "date_boundary", "public_projection"],
+      "properties": {
+        "observed": {"type": "string", "minLength": 10},
+        "inferred": {"type": "string", "minLength": 10},
+        "recommended": {"type": "string", "minLength": 10},
+        "unknown": {"type": "string", "minLength": 10},
+        "evidence_scope": {"type": "string", "minLength": 10},
+        "date_boundary": {"type": "string", "minLength": 20},
+        "public_projection": {"type": "string", "minLength": 20}
+      },
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "claim", "truth_class", "source_url", "retrieved_at", "captured_at", "confidence", "locator", "qualification"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^E[0-9]{2,}$"},
+          "claim": {"type": "string", "minLength": 30},
+          "truth_class": {"enum": ["observed", "measured", "inferred", "estimated", "recommended", "unknown"]},
+          "source_url": {"type": "string", "pattern": "^https://"},
+          "retrieved_at": {"type": "string", "format": "date"},
+          "captured_at": {"type": "string", "format": "date"},
+          "confidence": {"enum": ["low", "medium", "high"]},
+          "locator": {"type": ["string", "null"], "minLength": 3},
+          "qualification": {"type": "string", "minLength": 3}
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["truth_class", "owner_url", "retrieved_at", "rights_basis", "permitted_use_basis", "terms_or_license_url", "third_party_assets_stored"],
+      "properties": {
+        "truth_class": {"const": "observed"},
+        "owner_url": {"type": "string", "pattern": "^https://"},
+        "retrieved_at": {"type": "string", "format": "date"},
+        "rights_basis": {"type": "string", "minLength": 3},
+        "permitted_use_basis": {"type": "string", "minLength": 3},
+        "terms_or_license_url": {"type": ["string", "null"]},
+        "third_party_assets_stored": {"const": false}
+      },
+      "additionalProperties": false
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["kind", "statement"],
+        "properties": {
+          "kind": {"const": "source-limitation"},
+          "statement": {"type": "string", "minLength": 3}
+        },
+        "additionalProperties": false
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["truth_class", "statement"],
+        "properties": {
+          "truth_class": {"const": "unknown"},
+          "statement": {"type": "string", "minLength": 3}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

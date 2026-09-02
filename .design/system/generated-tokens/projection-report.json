@@ -1,0 +1,16 @@
+{
+  "css_skipped_composite_tokens": [],
+  "css_token_count": 96,
+  "dtcg_schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "outputs": [
+    "tokens.json",
+    "variables.css",
+    "tailwind.css",
+    "figma.json",
+    "mobile.json",
+    "projection-report.json"
+  ],
+  "semantic_token_count": 47,
+  "status": "pass",
+  "token_count": 96
+}

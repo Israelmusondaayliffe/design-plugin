@@ -12,6 +12,10 @@
 
 ### Primary foundation
 
+### Adaptation axis
+
+Required only when the direction set uses `single-foundation-adaptations`.
+
 ### Supporting references
 
 ### Clear risk

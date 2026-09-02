@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "approved_understanding_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+  "mode": "substantial",
+  "decision_to_make": "Choose the evidence-backed IBM Carbon relationships, narrowly assigned supporting roles, and three distinct adaptations for the download-first Design Reference Library.",
+  "research_questions": [
+    "Which Carbon relationships remain essential across dense catalog browsing, readable case analysis, comparison, and downloads?",
+    "What states, device coverage, responsive behavior, and evidence limitations can be directly observed in current official Carbon sources?",
+    "How should productive and expressive hierarchy divide the catalog, case detail, methodology, and download actions?",
+    "Which component, interaction, color, media, and density roles transfer safely without copying IBM identity?",
+    "Which secondary references can solve narrow needs in search and filtering, readable analysis, accessibility, and mobile behavior?",
+    "What makes three Carbon-derived adaptations meaningfully different while preserving one primary foundation?",
+    "Which claims must remain inferred, estimated, recommended, or unknown?"
+  ],
+  "search_axes": [
+    "product type",
+    "primary job",
+    "density",
+    "platform",
+    "accessibility",
+    "content hierarchy",
+    "component states",
+    "originality"
+  ],
+  "source_lanes": [
+    "project-local",
+    "corpus",
+    "live-public"
+  ],
+  "targets": {
+    "candidates": 10,
+    "dossiers": 6,
+    "directions": 3
+  },
+  "thresholds": {
+    "evidence_quality": 50,
+    "craft_threshold": 65
+  },
+  "known_evidence_limitations": [
+    "The current Carbon corpus case contains four observed claims but does not cover every required forensic dimension.",
+    "Live owner sources may change after their recorded retrieval dates.",
+    "Current Site source and tests do not prove ChatGPT Sites compatibility.",
+    "The direction validator may reject three adaptations that share IBM Carbon as the approved primary reference."
+  ],
+  "stop_conditions": [
+    "A source contradicts the approved product or originality boundary.",
+    "Current evidence cannot support a consequential Carbon claim.",
+    "A secondary reference needs a broad or co-equal role.",
+    "The direction system cannot represent three adaptations from the one approved primary reference without a runtime repair.",
+    "A useful direction requires an unapproved dependency, deployment, account, external write, or asset batch."
+  ]
+}

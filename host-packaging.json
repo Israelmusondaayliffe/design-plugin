@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "plugin": "design",
-  "version": "0.1.0-dev.10",
-  "previous_test_version": "0.1.0-dev.9",
+  "version": "0.1.0-dev.11",
+  "previous_test_version": "0.1.0-dev.10",
   "visible_workflows": ["audit", "resume", "run"],
   "internal_skills": [
     "build-wave",

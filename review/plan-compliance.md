@@ -4,13 +4,11 @@ Status: Wave 11 is active. The 60-case personal-alpha corpus and local undeploye
 
 This file is the acceptance ledger for Design Plugin Build Plan v1.0. Update it only from fresh repository and test evidence.
 
-Pre-Wave 10 commit and CI identifiers below are private-archive evidence with no public locator. Fresh public qualification begins with Wave 10.
-
 Latest installed public runtime baseline: `41d849aeef0b0104cf0fe6ff1e0420843dbf172f`, tree `58a6ce33015c852c443fe9ea1f411e88213c7458`.
 
 Public CI evidence: Design Plugin CI run `33353752204`. Python 3.11 and Python 3.13 each passed compilation, corpus validation, catalog generation, 204 regression tests, both host builds, 125-file parity verification, installable package checks, lifecycle simulation, and bundled entrypoint checks.
 
-Wave 11 CI evidence: Public run `33548219494` and private run `33548217993` pass 242 regression tests on Python 3.11 and Python 3.13, accepted-only 60-case catalog generation, both host builds, shared-core parity, deterministic archives, package limits, lifecycle checks, and bundled entrypoints.
+Wave 11 pre-benchmark CI evidence: Public run `33548219494` passes 242 regression tests on Python 3.11 and Python 3.13, accepted-only 60-case catalog generation, both host builds, shared-core parity, deterministic archives, package limits, lifecycle checks, and bundled entrypoints.
 
 | Requirement | Planned location | Implemented location | Test | Evidence | Result |
 |---|---|---|---|---|---|
@@ -248,7 +246,6 @@ A separate additive write stream appeared while Wave 4 was being authored. The q
 - Independent plan review: Pass after source-date and durable-state repairs.
 - Benchmarks: 0 of 3. Wave 11 remains partial.
 - Public CI run `33548219494`: Pass on Python 3.11 and Python 3.13.
-- Private CI run `33548217993`: Pass on Python 3.11 and Python 3.13.
 - Evidence: `review/wave-11-alpha-allocation.json`, `review/wave-11-source-health.json`, `review/wave-11-originality-audit.json`, and the current Wave 11 candidate receipt.
 
 The evidence-only commit is accepted only when the public Design Plugin CI check attached to the current HEAD succeeds. That post-commit result is owned by GitHub Actions and is intentionally not embedded in the commit it verifies.

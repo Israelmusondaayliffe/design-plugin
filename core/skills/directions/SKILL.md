@@ -1,6 +1,6 @@
 ---
 name: directions
-description: Internal decision phase for active Design runs. Build 3–5 genuinely distinct evidence-backed directions from forensic dossiers, keep one dominant primary foundation per direction, assign secondary references narrow responsibilities, enforce anti-averaging and color/media/density role preservation, and present the decision through progressive disclosure. Not a standalone user workflow.
+description: Internal decision phase for active Design runs. Build 3 to 5 genuinely distinct evidence-backed directions from forensic dossiers, keep one dominant primary foundation per direction, assign secondary references narrow responsibilities, enforce anti-averaging and color/media/density role preservation, and present the decision through progressive disclosure. Not a standalone user workflow.
 user-invocable: false
 ---
 
@@ -14,11 +14,13 @@ The direction set must carry the same `approved_understanding_sha256` used by th
 
 ## Count
 
-For substantial work, present 3 directions by default and 4–5 only when ambiguity, experimentation, or reinvention genuinely warrants it.
+For substantial work, present 3 directions by default and 4 to 5 only when ambiguity, experimentation, or reinvention genuinely warrants it.
 
 For a bounded repair inside an approved system, one direction is allowed.
 
-Do not create cosmetic variants to inflate the count. Substantial directions use distinct dominant primary foundations as an additional guard against cosmetic variation.
+Do not create cosmetic variants to inflate the count. Substantial directions use distinct dominant primary foundations by default as an additional guard against cosmetic variation.
+
+When the approved brief explicitly requires several adaptations of one dominant foundation, use the `single-foundation-adaptations` direction strategy. Give every direction a unique, specific `adaptation_axis`, keep the same primary slug across the set, and preserve the four-of-nine dimension difference floor. Do not use this strategy for bounded repairs.
 
 ## Direction anatomy
 
@@ -26,7 +28,8 @@ Each direction must contain:
 
 - a concise title and one-line thesis
 - one dominant primary reference foundation
-- 3–5 primary traits that must survive adaptation
+- one adaptation axis when the set uses `single-foundation-adaptations`
+- 3 to 5 primary traits that must survive adaptation
 - zero to three secondary references
 - one narrow responsibility for each secondary reference
 - a nine-dimension signature profile covering composition, typography, color, density, imagery, motion, interaction, hierarchy, and surfaces
@@ -88,13 +91,13 @@ Default user presentation for each direction:
 
 1. title and one-line thesis
 2. why it fits
-3. 3–5 signature traits
+3. 3 to 5 signature traits
 4. one clear risk
 5. primary source and narrowly named supporting sources
 
 Keep full scores, evidence IDs, forensic details, rejected candidates, role maps, and feasibility notes in the structured artifact and expose them when the user asks or when a consequential choice needs proof.
 
-Do not dump 8–12 research candidates on the user.
+Do not dump 8 to 12 research candidates on the user.
 
 ## Approval
 

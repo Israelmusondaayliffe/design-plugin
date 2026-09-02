@@ -1,0 +1,20 @@
+{
+  "changed_files": [
+    "site/README.md",
+    "site/app.js",
+    "site/index.html",
+    "site/styles.css",
+    "tests/test_wave11_site.py"
+  ],
+  "handoff": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.json",
+  "handoff_markdown": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.md",
+  "handoff_markdown_sha256": "b77b938849b40cd207e4fe2b038c5e45baee48682546ff1361e69f00e4f99f4f",
+  "handoff_sha256": "f7227a3f2e9fccbad13c860c0bab776302abb32e895645a999efaf61864a17bd",
+  "manifest": ".design/implementation/waves/wave-2-evidence-exchange-structure/manifest.json",
+  "manifest_sha256": "95ed3eb117f3ca344499bd0b7870a1a8f3851ea8338fa2ab8804ef9c1a4fcd86",
+  "next_state_command": "design_state.py complete-wave",
+  "ready_for_state_completion": true,
+  "status": "pass",
+  "wave_id": "wave-2-evidence-exchange-structure",
+  "wave_number": 2
+}

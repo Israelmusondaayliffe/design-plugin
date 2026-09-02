@@ -101,14 +101,14 @@ Canonical corpus source: version-controlled Markdown and JSON. ChatGPT Site is t
 - Wave 10 host packaging and public repository publication: Passed.
 - Public repository: `https://github.com/Israelmusondaayliffe/design-plugin`.
 - Installed host baseline: Public commit `41d849aeef0b0104cf0fe6ff1e0420843dbf172f`, version `0.1.0-dev.10`, is installed in Codex and Claude Code. Installation does not count as harness-independent selection proof.
-- Wave 11: Active by explicit user authorization. The personal-alpha corpus milestone now contains 60 independently accepted original cases in the exact 15/15/10/8/7/5 lane allocation.
+- Wave 11: Active by explicit user authorization. Benchmark 2 has passed all five implementation waves with a state-bound handoff. Benchmarks 1 and 3 have not started.
 - Corpus evidence: 80 of 80 owner URLs pass, locator mismatches and redirect collisions are zero, the originality audit passes, and no source binary assets are stored.
-- Local Site: Qualified against the accepted-only 60-case public catalog at desktop and mobile widths. Search, all six lanes, deeper filters, progressive analysis and evidence, source retrieval dates, URL state, and comparison of up to five cases pass. The Site remains undeployed.
-- Published Wave 11 candidate: Public commit `93908428c8949cf57f77f374fab13659e803bd80` and private counterpart `457c825f6498887b0e5bf43eaa964f2499e79de8` contain byte-identical shared project files.
-- Regression evidence: 242 tests pass locally under Python 3.9.6 and in both repositories under Python 3.11 and Python 3.13. Public CI run `33548219494` and private CI run `33548217993` pass.
+- Reference Site: Qualified against the accepted-only 60-case public catalog across 21 required routes, five native keyboard and focus flows, and nine reduced-motion targets. Search, all six lanes, deeper filters, progressive analysis and evidence, source retrieval dates, URL state, downloads, recovery, and comparison of up to five cases pass. Public deployment is authorized and pending production verification.
+- Benchmark 2 candidate: `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff` passed all three independent same-hash reviews.
+- Regression evidence: 45 focused tests and 288 complete tests pass locally under Python 3.9.6 and Python 3.12.13 with zero failures, errors, or skips. New public CI evidence is required for the publication commit.
 - Activation boundary: R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. The probe restrictions are not plugin runtime restrictions and cannot reject an ordinary installation.
-- Acceptance boundary: Wave 11 remains partial until all three benchmarks pass. R22 remains partial until those benchmarks and later acceptance gates pass.
-- Next: Run the three approved benchmarks and repair any critical workflow failure within the authorized scope. Public Site deployment still requires separate authorization.
+- Acceptance boundary: Benchmark 2 passes. Wave 11 remains partial until Benchmarks 1 and 3 and the later acceptance gates pass. R22 remains partial.
+- Next: Publish and anonymously verify the Reference Site under the existing authorization. Do not start Benchmarks 1 or 3 as part of that release step.
 
 ## Benchmarks
 

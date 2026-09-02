@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "github-primer",
+    "source_url": "https://primer.style/",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "PRIMER-E01",
+      "class": "observed",
+      "claim": "Primer defines header, content, left pane, right pane, and footer as distinct page-layout regions.",
+      "source_locator": "https://primer.style/product/getting-started/foundations/layout/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "PRIMER-E02",
+      "class": "observed",
+      "claim": "Primer requires multi-column pages to become simpler mobile layouts without losing functionality.",
+      "source_locator": "https://primer.style/product/getting-started/foundations/layout/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "PRIMER-E03",
+      "class": "observed",
+      "claim": "Primer separates broad viewport ranges from finer breakpoints and uses layout regions to adapt content by available space.",
+      "source_locator": "https://primer.style/product/getting-started/foundations/layout/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "PRIMER-E04",
+      "class": "observed",
+      "claim": "Primer requires text resizing and custom spacing to avoid clipped, truncated, obscured, or broken content and controls.",
+      "source_locator": "https://primer.style/accessibility/design-guidance/text-resize-and-spacing/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "PRIMER-E05",
+      "class": "inferred",
+      "claim": "For this library, Primer's useful contribution is preserving complete search, detail, comparison, and download work as regions reflow.",
+      "source_locator": "PRIMER-E01 through PRIMER-E04; project synthesis",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "Define stable header, primary content, filter or navigation pane, metadata or action pane, and footer roles, then recombine them by viewport.",
+      "evidence_ids": ["PRIMER-E01", "PRIMER-E03", "PRIMER-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "typography": {
+      "finding": "Type and spacing must tolerate browser resizing without clipping or breaking controls; Primer is not used to choose the target's font character.",
+      "evidence_ids": ["PRIMER-E04"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "color": {
+      "finding": "No consequential color rule was established from the inspected Primer layout and accessibility pages.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "density": {
+      "finding": "Dense desktop regions may become separate or stacked mobile views, but no search, compare, or download function may disappear.",
+      "evidence_ids": ["PRIMER-E02", "PRIMER-E03", "PRIMER-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "imagery": {
+      "finding": "The inspected Primer sources do not establish a transferable media rule for the target.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "The inspected Primer sources do not establish a consequential motion rule.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "interaction": {
+      "finding": "Responsive behavior must preserve complete task capability and readable controls instead of merely shrinking the desktop layout.",
+      "evidence_ids": ["PRIMER-E02", "PRIMER-E04", "PRIMER-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "hierarchy": {
+      "finding": "Primary content remains dominant while filtering, navigation, metadata, and actions occupy named supporting regions.",
+      "evidence_ids": ["PRIMER-E01", "PRIMER-E03"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "surfaces": {
+      "finding": "Region boundaries should come from task grouping and layout, not from copying GitHub's borders, cards, or application shell.",
+      "evidence_ids": ["PRIMER-E01", "PRIMER-E05"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    }
+  },
+  "essential_traits": [
+    "Named page regions with stable responsibilities",
+    "Functional parity across viewport changes",
+    "Responsive simplification of multi-column layouts",
+    "Text and control resilience under resizing"
+  ],
+  "incidental_traits": [
+    "GitHub's navigation shell",
+    "Primer component styling and literal neutral palette",
+    "GitHub-specific labels and repository metaphors"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Color was not the inspected reason for selecting Primer.",
+      "target_role": "Carbon-derived semantic action, status, and surface roles remain authoritative.",
+      "action": "reject",
+      "reason": "Adding Primer color would broaden its supporting role and dilute the primary reference."
+    },
+    {
+      "domain": "media",
+      "source_role": "The inspected layout guidance is independent of decorative media.",
+      "target_role": "Responsive regions must work whether evidence media is present or absent.",
+      "action": "preserve",
+      "reason": "Layout integrity should not depend on a particular image treatment."
+    },
+    {
+      "domain": "density",
+      "source_role": "Complex multi-region content simplifies by viewport without losing function.",
+      "target_role": "Desktop comparison and metadata reflow into readable mobile sequences with equivalent actions.",
+      "action": "preserve",
+      "reason": "This is Primer's narrow, evidence-backed role."
+    },
+    {
+      "domain": "layout",
+      "source_role": "Header, content, panes, and footer have named responsibilities.",
+      "target_role": "Catalog, detail, evidence, and download regions retain stable responsibilities across routes and widths.",
+      "action": "adapt",
+      "reason": "The region model fits, while GitHub's shell does not."
+    }
+  ],
+  "misuse_risks": [
+    "Copying GitHub's borders, gray palette, icons, or navigation shell.",
+    "Hiding filters, comparison, or download actions on mobile instead of reflowing them.",
+    "Using visual order that disagrees with document and focus order.",
+    "Hard-coding dimensions that fail text resize or zoom."
+  ],
+  "evidence_limitations": [
+    "No current Primer color, motion, or media guidance was used.",
+    "No target mobile viewport or zoom behavior has been tested in this research phase.",
+    "The dossier transfers region and reflow logic only."
+  ],
+  "confidence": "high"
+}

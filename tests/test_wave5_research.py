@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MODULE_PATH = ROOT / "core/scripts/design_research.py"
+SCHEMA_PATH = ROOT / "core/schemas/direction-set.schema.json"
 spec = importlib.util.spec_from_file_location("design_research", MODULE_PATH)
 research = importlib.util.module_from_spec(spec)
 assert spec.loader
@@ -318,6 +319,134 @@ class Wave5ResearchTests(unittest.TestCase):
         with self.assertRaises(research.ValidationError):
             research.validate_direction_set(payload)
 
+    def test_single_foundation_adaptations_accept_distinct_axes(self) -> None:
+        directions = [
+            direction("A", "shared-primary", "editorial"),
+            direction("B", "shared-primary", "technical"),
+            direction("C", "shared-primary", "spatial"),
+        ]
+        for item, axis in zip(directions, ("reader-first", "operator-first", "download-first")):
+            item["adaptation_axis"] = axis
+        payload = {
+            "schema_version": "1.0",
+            "approved_understanding_sha256": UNDERSTANDING_HASH,
+            "mode": "substantial",
+            "direction_strategy": "single-foundation-adaptations",
+            "directions": directions,
+        }
+        research.validate_direction_set(payload)
+
+    def test_single_foundation_adaptations_reject_mixed_primaries(self) -> None:
+        directions = [
+            direction("A", "shared-primary", "editorial"),
+            direction("B", "other-primary", "technical"),
+            direction("C", "shared-primary", "spatial"),
+        ]
+        for item, axis in zip(directions, ("reader-first", "operator-first", "download-first")):
+            item["adaptation_axis"] = axis
+        payload = {
+            "schema_version": "1.0",
+            "approved_understanding_sha256": UNDERSTANDING_HASH,
+            "mode": "substantial",
+            "direction_strategy": "single-foundation-adaptations",
+            "directions": directions,
+        }
+        with self.assertRaisesRegex(research.ValidationError, "exactly one primary"):
+            research.validate_direction_set(payload)
+
+    def test_single_foundation_adaptations_require_unique_nonempty_string_axes(self) -> None:
+        base = [
+            direction("A", "shared-primary", "editorial"),
+            direction("B", "shared-primary", "technical"),
+            direction("C", "shared-primary", "spatial"),
+        ]
+        for invalid_axes in (
+            ("reader-first", "operator-first", None),
+            ("reader-first", "operator-first", 7),
+            ("reader-first", "operator-first", "   "),
+            ("Reader-First", "operator-first", " reader-first "),
+        ):
+            directions = copy.deepcopy(base)
+            for item, axis in zip(directions, invalid_axes):
+                if axis is not None:
+                    item["adaptation_axis"] = axis
+            payload = {
+                "schema_version": "1.0",
+                "approved_understanding_sha256": UNDERSTANDING_HASH,
+                "mode": "substantial",
+                "direction_strategy": "single-foundation-adaptations",
+                "directions": directions,
+            }
+            with self.subTest(axes=invalid_axes), self.assertRaises(research.ValidationError):
+                research.validate_direction_set(payload)
+
+    def test_explicit_invalid_direction_strategies_fail(self) -> None:
+        for strategy in ("unknown", None, "", [], {}):
+            payload = {
+                "schema_version": "1.0",
+                "approved_understanding_sha256": UNDERSTANDING_HASH,
+                "mode": "substantial",
+                "direction_strategy": strategy,
+                "directions": [
+                    direction("A", "primary-a", "editorial"),
+                    direction("B", "primary-b", "technical"),
+                    direction("C", "primary-c", "spatial"),
+                ],
+            }
+            with self.subTest(strategy=strategy), self.assertRaises(research.ValidationError):
+                research.validate_direction_set(payload)
+
+    def test_single_foundation_strategy_rejects_bounded_repair(self) -> None:
+        item = direction("A", "shared-primary", "editorial")
+        item["adaptation_axis"] = "reader-first"
+        payload = {
+            "schema_version": "1.0",
+            "approved_understanding_sha256": UNDERSTANDING_HASH,
+            "mode": "bounded-repair",
+            "direction_strategy": "single-foundation-adaptations",
+            "directions": [item],
+        }
+        with self.assertRaisesRegex(research.ValidationError, "only for substantial"):
+            research.validate_direction_set(payload)
+
+    def test_single_foundation_strategy_keeps_four_dimension_floor(self) -> None:
+        first = direction("A", "shared-primary", "base")
+        second = copy.deepcopy(first)
+        second["id"] = "B"
+        second["title"] = "Direction B"
+        third = direction("C", "shared-primary", "third")
+        for item, axis in zip((first, second, third), ("reader-first", "operator-first", "download-first")):
+            item["adaptation_axis"] = axis
+        for name in ("color", "surfaces", "motion"):
+            second["dimension_signatures"][name] = f"variant-{name}"
+        payload = {
+            "schema_version": "1.0",
+            "approved_understanding_sha256": UNDERSTANDING_HASH,
+            "mode": "substantial",
+            "direction_strategy": "single-foundation-adaptations",
+            "directions": [first, second, third],
+        }
+        with self.assertRaisesRegex(research.ValidationError, "at least 4 required"):
+            research.validate_direction_set(payload)
+
+    def test_direction_schema_declares_strategy_and_conditional_axis(self) -> None:
+        schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
+        self.assertEqual(
+            schema["properties"]["direction_strategy"]["enum"],
+            ["distinct-primary-foundations", "single-foundation-adaptations"],
+        )
+        conditional = schema["allOf"][0]
+        self.assertEqual(
+            conditional["if"]["properties"]["direction_strategy"]["const"],
+            "single-foundation-adaptations",
+        )
+        axis = conditional["then"]["properties"]["directions"]["items"]["properties"]["adaptation_axis"]
+        self.assertEqual(axis, {"type": "string", "minLength": 1})
+        self.assertIn(
+            "adaptation_axis",
+            conditional["then"]["properties"]["directions"]["items"]["required"],
+        )
+
     def test_cosmetic_direction_variants_fail_four_dimension_floor(self) -> None:
         first = direction("A", "primary-a", "base")
         second = copy.deepcopy(first)
@@ -370,7 +499,7 @@ class Wave5ResearchTests(unittest.TestCase):
             root = Path(tmp)
             plan_path = root / "plan.json"
             plan_path.write_text(json.dumps(valid_plan()), encoding="utf-8")
-            plan_run = subprocess.run([sys.executable, str(MODULE_PATH), "validate-plan", str(plan_path)], cwd=ROOT, text=True, capture_output=True)
+            plan_run = subprocess.run([sys.executable, str(MODULE_PATH), "validate-plan", str(plan_path), "--project-root", str(root)], cwd=ROOT, text=True, capture_output=True)
             self.assertEqual(plan_run.returncode, 0, plan_run.stderr)
 
             directions_path = root / "directions.json"
@@ -385,7 +514,7 @@ class Wave5ResearchTests(unittest.TestCase):
                 ],
             }
             directions_path.write_text(json.dumps(payload), encoding="utf-8")
-            direction_run = subprocess.run([sys.executable, str(MODULE_PATH), "validate-directions", str(directions_path)], cwd=ROOT, text=True, capture_output=True)
+            direction_run = subprocess.run([sys.executable, str(MODULE_PATH), "validate-directions", str(directions_path), "--project-root", str(root)], cwd=ROOT, text=True, capture_output=True)
             self.assertEqual(direction_run.returncode, 0, direction_run.stderr)
             report = json.loads(direction_run.stdout)
             self.assertEqual(len(report["pairwise_distinctness"]), 3)

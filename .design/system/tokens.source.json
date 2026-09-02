@@ -1,0 +1,221 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$extensions": {
+    "com.houseofcuriosity.design": {
+      "approved_direction_sha256": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+      "existing_token_strategy": "map",
+      "existing_token_map": {
+        "--paper": "semantic.color.canvas",
+        "--paper-deep": "semantic.color.surface-secondary",
+        "--ink": "semantic.color.text-primary",
+        "--muted": "semantic.color.text-muted",
+        "--line": "semantic.color.border-strong",
+        "--soft-line": "semantic.color.border-default",
+        "--orange": "semantic.color.action-primary",
+        "--blue": "semantic.color.focus",
+        "--acid": "semantic.color.status-warning",
+        "--white": "foundation.color.white",
+        "--serif": "semantic.type.family-human",
+        "--sans": "semantic.type.family-interface"
+      }
+    }
+  },
+  "foundation": {
+    "color": {
+      "$type": "color",
+      "canvas": {
+        "$value": {"colorSpace": "srgb", "components": [0.953, 0.957, 0.949], "alpha": 1, "hex": "#F3F4F2"},
+        "$description": "Cool neutral page foundation."
+      },
+      "surface-1": {
+        "$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"},
+        "$description": "Primary reading and working surface."
+      },
+      "surface-2": {
+        "$value": {"colorSpace": "srgb", "components": [0.91, 0.925, 0.914], "alpha": 1, "hex": "#E8ECE9"},
+        "$description": "Secondary contextual surface."
+      },
+      "ink": {
+        "$value": {"colorSpace": "srgb", "components": [0.114, 0.145, 0.133], "alpha": 1, "hex": "#1D2522"},
+        "$description": "Primary text and strong boundary color."
+      },
+      "muted": {
+        "$value": {"colorSpace": "srgb", "components": [0.345, 0.38, 0.365], "alpha": 1, "hex": "#58615D"},
+        "$description": "Secondary text color for supporting information."
+      },
+      "border": {
+        "$value": {"colorSpace": "srgb", "components": [0.78, 0.804, 0.792], "alpha": 1, "hex": "#C7CDCA"},
+        "$description": "Default boundary on cool neutral surfaces."
+      },
+      "border-strong": {
+        "$value": {"colorSpace": "srgb", "components": [0.467, 0.506, 0.486], "alpha": 1, "hex": "#77817C"},
+        "$description": "Strong boundary and selected-region divider."
+      },
+      "action": {
+        "$value": {"colorSpace": "srgb", "components": [0.545, 0.227, 0.106], "alpha": 1, "hex": "#8B3A1B"},
+        "$description": "Restrained rust action color for the original project palette."
+      },
+      "action-hover": {
+        "$value": {"colorSpace": "srgb", "components": [0.392, 0.157, 0.059], "alpha": 1, "hex": "#64280F"},
+        "$description": "Darker action color for pointer hover and active feedback."
+      },
+      "focus": {
+        "$value": {"colorSpace": "srgb", "components": [0, 0.384, 0.471], "alpha": 1, "hex": "#006278"},
+        "$description": "Focus indicator and keyboard location color."
+      },
+      "ready": {
+        "$value": {"colorSpace": "srgb", "components": [0.169, 0.42, 0.271], "alpha": 1, "hex": "#2B6B45"},
+        "$description": "Ready or successful validation color."
+      },
+      "incomplete": {
+        "$value": {"colorSpace": "srgb", "components": [0.463, 0.349, 0], "alpha": 1, "hex": "#765900"},
+        "$description": "Incomplete content or pending requirement color."
+      },
+      "unavailable": {
+        "$value": {"colorSpace": "srgb", "components": [0.345, 0.38, 0.365], "alpha": 1, "hex": "#58615D"},
+        "$description": "Unavailable or intentionally disabled state color."
+      },
+      "stale": {
+        "$value": {"colorSpace": "srgb", "components": [0.478, 0.298, 0.529], "alpha": 1, "hex": "#7A4C87"},
+        "$description": "Stale evidence or outdated source state color."
+      },
+      "warning": {
+        "$value": {"colorSpace": "srgb", "components": [0.576, 0.376, 0], "alpha": 1, "hex": "#936000"},
+        "$description": "Warning state color that requires text support."
+      },
+      "error": {
+        "$value": {"colorSpace": "srgb", "components": [0.631, 0.184, 0.184], "alpha": 1, "hex": "#A12F2F"},
+        "$description": "Error and blocking validation state color."
+      },
+      "white": {
+        "$value": {"colorSpace": "srgb", "components": [1, 1, 1], "alpha": 1, "hex": "#FFFFFF"},
+        "$description": "White value for text or controls on dark action colors."
+      }
+    },
+    "space": {
+      "$type": "dimension",
+      "2": {"$value": {"value": 2, "unit": "px"}, "$description": "Fine alignment step."},
+      "4": {"$value": {"value": 4, "unit": "px"}, "$description": "Base spacing unit."},
+      "8": {"$value": {"value": 8, "unit": "px"}, "$description": "Tight related-content gap."},
+      "12": {"$value": {"value": 12, "unit": "px"}, "$description": "Compact control and metadata gap."},
+      "16": {"$value": {"value": 16, "unit": "px"}, "$description": "Default component gap."},
+      "24": {"$value": {"value": 24, "unit": "px"}, "$description": "Package and component-group gap."},
+      "32": {"$value": {"value": 32, "unit": "px"}, "$description": "Small section gap."},
+      "44": {"$value": {"value": 44, "unit": "px"}, "$description": "Minimum primary mobile target size."},
+      "48": {"$value": {"value": 48, "unit": "px"}, "$description": "Default section gap."},
+      "64": {"$value": {"value": 64, "unit": "px"}, "$description": "Major transition between information jobs."}
+    },
+    "type": {
+      "family": {
+        "$type": "fontFamily",
+        "sans": {"$value": ["ui-sans-serif", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"], "$description": "Original interface and body stack with system fallbacks."},
+        "serif": {"$value": ["Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Palatino", "serif"], "$description": "Original human explanation and thesis stack."},
+        "mono": {"$value": ["SFMono-Regular", "Consolas", "Liberation Mono", "monospace"], "$description": "Exact identifiers, filenames, and machine values stack."}
+      },
+      "size": {
+        "$type": "dimension",
+        "12": {"$value": {"value": 12, "unit": "px"}, "$description": "Compact metadata size."},
+        "14": {"$value": {"value": 14, "unit": "px"}, "$description": "Control and supporting text size."},
+        "16": {"$value": {"value": 16, "unit": "px"}, "$description": "Default readable body size."},
+        "20": {"$value": {"value": 20, "unit": "px"}, "$description": "Compact section title size."},
+        "28": {"$value": {"value": 28, "unit": "px"}, "$description": "Screen title size."},
+        "44": {"$value": {"value": 44, "unit": "px"}, "$description": "Wide case thesis size."}
+      },
+      "weight": {
+        "$type": "fontWeight",
+        "regular": {"$value": 400, "$description": "Default reading weight."},
+        "medium": {"$value": 550, "$description": "Control and label emphasis."},
+        "bold": {"$value": 700, "$description": "Strong heading and status emphasis."}
+      },
+      "line-height": {
+        "$type": "number",
+        "compact": {"$value": 1.25, "$description": "Compact metadata and heading line height."},
+        "interface": {"$value": 1.4, "$description": "Control and interface line height."},
+        "reading": {"$value": 1.6, "$description": "Human explanation line height."}
+      }
+    },
+    "radius": {
+      "$type": "dimension",
+      "none": {"$value": {"value": 0, "unit": "px"}, "$description": "Square structural region radius."},
+      "small": {"$value": {"value": 4, "unit": "px"}, "$description": "Small control and dialog radius."},
+      "pill": {"$value": {"value": 2, "unit": "px"}, "$description": "Compact status and selected-filter radius."}
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "instant": {"$value": {"value": 0, "unit": "ms"}, "$description": "No-motion state change."},
+        "fast": {"$value": {"value": 120, "unit": "ms"}, "$description": "Direct control feedback."},
+        "moderate": {"$value": {"value": 200, "unit": "ms"}, "$description": "Larger bounded region feedback."}
+      },
+      "easing": {
+        "$type": "cubicBezier",
+        "standard": {"$value": [0.2, 0, 0, 1], "$description": "Direct state-change easing without flourish."}
+      }
+    }
+  },
+  "semantic": {
+    "color": {
+      "$type": "color",
+      "canvas": {"$value": "{foundation.color.canvas}", "$description": "Page canvas behind all library content."},
+      "surface-primary": {"$value": "{foundation.color.surface-1}", "$description": "Primary reading and working region."},
+      "surface-secondary": {"$value": "{foundation.color.surface-2}", "$description": "Evidence, limitation, manifest, or contextual region."},
+      "text-primary": {"$value": "{foundation.color.ink}", "$description": "Default human explanation and interface text."},
+      "text-muted": {"$value": "{foundation.color.muted}", "$description": "Supporting text that must still meet contrast requirements."},
+      "text-on-action": {"$value": "{foundation.color.white}", "$description": "Text and icon color on the primary action surface."},
+      "border-default": {"$value": "{foundation.color.border}", "$description": "Default region and control boundary."},
+      "border-strong": {"$value": "{foundation.color.border-strong}", "$description": "Selected, emphasized, or major section boundary."},
+      "action-primary": {"$value": "{foundation.color.action}", "$description": "Primary download and direct action role."},
+      "action-hover": {"$value": "{foundation.color.action-hover}", "$description": "Hover and active feedback for the primary action."},
+      "focus": {"$value": "{foundation.color.focus}", "$description": "Visible keyboard focus indicator on every approved surface."},
+      "status-ready": {"$value": "{foundation.color.ready}", "$description": "Ready or successful validation status, always paired with text."},
+      "status-incomplete": {"$value": "{foundation.color.incomplete}", "$description": "Incomplete package or unmet requirement status, always paired with text."},
+      "status-unavailable": {"$value": "{foundation.color.unavailable}", "$description": "Unavailable or disabled status, always paired with text."},
+      "status-stale": {"$value": "{foundation.color.stale}", "$description": "Stale evidence status, always paired with text and retrieval context."},
+      "status-warning": {"$value": "{foundation.color.warning}", "$description": "Warning status that names the risk and required decision."},
+      "status-error": {"$value": "{foundation.color.error}", "$description": "Blocking error status that names the problem and recovery action."}
+    },
+    "space": {
+      "$type": "dimension",
+      "fine": {"$value": "{foundation.space.2}", "$description": "Fine alignment or border offset."},
+      "inline-gap": {"$value": "{foundation.space.8}", "$description": "Gap between a label, value, icon, or related inline control."},
+      "control-gap": {"$value": "{foundation.space.12}", "$description": "Gap between compact related controls."},
+      "component-gap": {"$value": "{foundation.space.16}", "$description": "Default gap inside a component group."},
+      "package-gap": {"$value": "{foundation.space.24}", "$description": "Gap between package contract regions."},
+      "section-gap": {"$value": "{foundation.space.48}", "$description": "Default transition between major information jobs."},
+      "major-gap": {"$value": "{foundation.space.64}", "$description": "Largest transition between catalog, evidence, and action regions."},
+      "touch-target": {"$value": "{foundation.space.44}", "$description": "Minimum width and height for primary mobile controls."
+      }
+    },
+    "type": {
+      "family-human": {"$type": "fontFamily", "$value": "{foundation.type.family.serif}", "$description": "Case thesis and restrained human explanation emphasis."},
+      "family-interface": {"$type": "fontFamily", "$value": "{foundation.type.family.sans}", "$description": "Body copy, controls, navigation, and labels."},
+      "family-code": {"$type": "fontFamily", "$value": "{foundation.type.family.mono}", "$description": "Evidence IDs, filenames, hashes, paths, and machine values."},
+      "size-metadata": {"$type": "dimension", "$value": "{foundation.type.size.12}", "$description": "Compact metadata and evidence identifier size."},
+      "size-control": {"$type": "dimension", "$value": "{foundation.type.size.14}", "$description": "Control, label, and supporting text size."},
+      "size-body": {"$type": "dimension", "$value": "{foundation.type.size.16}", "$description": "Default readable explanation size."},
+      "size-section": {"$type": "dimension", "$value": "{foundation.type.size.20}", "$description": "Compact section-heading size."},
+      "size-screen": {"$type": "dimension", "$value": "{foundation.type.size.28}", "$description": "Screen and package title size."},
+      "size-thesis": {"$type": "dimension", "$value": "{foundation.type.size.44}", "$description": "Wide case thesis size that must scale down responsively."},
+      "weight-regular": {"$type": "fontWeight", "$value": "{foundation.type.weight.regular}", "$description": "Default reading weight."},
+      "weight-medium": {"$type": "fontWeight", "$value": "{foundation.type.weight.medium}", "$description": "Label, control, and metadata emphasis."},
+      "weight-bold": {"$type": "fontWeight", "$value": "{foundation.type.weight.bold}", "$description": "Strong heading and blocking-status emphasis."},
+      "line-height-compact": {"$type": "number", "$value": "{foundation.type.line-height.compact}", "$description": "Compact heading, evidence ID, and metadata line height."},
+      "line-height-interface": {"$type": "number", "$value": "{foundation.type.line-height.interface}", "$description": "Control and interface copy line height."},
+      "line-height-reading": {"$type": "number", "$value": "{foundation.type.line-height.reading}", "$description": "Human explanation and method reading line height."}
+    },
+    "radius": {
+      "$type": "dimension",
+      "region": {"$value": "{foundation.radius.none}", "$description": "Square structural catalog, evidence, and action regions."},
+      "control": {"$value": "{foundation.radius.small}", "$description": "Small-radius input, button, and dialog controls."},
+      "status": {"$value": "{foundation.radius.pill}", "$description": "Compact status or selected-filter label only."
+      }
+    },
+    "motion": {
+      "duration-instant": {"$type": "duration", "$value": "{foundation.motion.duration.instant}", "$description": "Reduced-motion replacement for every optional transition."},
+      "duration-control": {"$type": "duration", "$value": "{foundation.motion.duration.fast}", "$description": "Direct control and selection feedback duration."},
+      "duration-region": {"$type": "duration", "$value": "{foundation.motion.duration.moderate}", "$description": "Bounded region disclosure or dialog feedback duration."},
+      "easing-state": {"$type": "cubicBezier", "$value": "{foundation.motion.easing.standard}", "$description": "State change easing that avoids decorative overshoot."
+      }
+    }
+  }
+}

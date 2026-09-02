@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "approved_understanding_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+  "approved_direction": {
+    "id": "evidence-exchange",
+    "decision_artifact": ".design/directions/decision.md",
+    "decision_sha256": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+    "direction_set_artifact": ".design/directions/direction-set.json",
+    "direction_set_sha256": "1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb"
+  },
+  "dominant_reference": {
+    "slug": "ibm-carbon",
+    "responsibility": "dominant visual foundation"
+  },
+  "supporting_references": [
+    {
+      "slug": "vercel-geist",
+      "responsibility": "typography detail",
+      "scope": "Separate human explanation, labels, provenance, tabular values, file details, and machine-readable identifiers."
+    },
+    {
+      "slug": "govuk-design-system",
+      "responsibility": "form behavior",
+      "scope": "Name each download, validation, or availability problem and provide a specific recovery action."
+    },
+    {
+      "slug": "github-primer",
+      "responsibility": "mobile behavior",
+      "scope": "Preserve package context, evidence, format choice, limitations, and download actions when regions reflow."
+    }
+  ],
+  "frozen_visual_traits": [
+    "Use a visible alignment grid to connect context, evidence, metadata, limitations, and file actions.",
+    "Separate productive compactness from expressive reading space according to the information job.",
+    "Assign stable semantic roles to action, focus, status, border, and contextual surface colors.",
+    "Use contextual layers, borders, and spacing instead of decorative elevation or repeated floating cards.",
+    "Choose grouped, switched, or concurrent components according to the relationship between readable, structured, and comparison content."
+  ],
+  "allowed_variation": [
+    "Use original system and serif font stacks instead of IBM Plex or Geist fonts.",
+    "Use an original warm neutral palette with a narrow action accent instead of IBM, Vercel, GOV.UK, or GitHub colors.",
+    "Adapt spacing, grid columns, radius, and component dimensions to the current static Site while preserving their approved roles.",
+    "Use original abstract previews derived from approved public case data or omit imagery when it does not clarify evidence.",
+    "Use implementation-specific controls and HTML semantics when they preserve the required state, comparison, and recovery behavior."
+  ],
+  "prohibited_drift": [
+    "Do not present a download before its context, contents, evidence boundary, and limitations are visible.",
+    "Do not make metadata, evidence IDs, or file details visually equal to the human-readable explanation.",
+    "Do not use fabricated previews, copied source assets, borrowed fonts, logos, or decorative code as proof.",
+    "Do not write generic failure messages without the exact problem and next recovery action.",
+    "Do not copy Carbon geometry, IBM blue, Geist monochrome identity, GOV.UK styling, GitHub's shell, or any source brand identity.",
+    "Do not hide comparison content that users need to inspect concurrently."
+  ],
+  "evidence_links": [
+    {"slug": "ibm-carbon", "evidence_id": "CARBON-E01"},
+    {"slug": "ibm-carbon", "evidence_id": "CARBON-E02"},
+    {"slug": "ibm-carbon", "evidence_id": "CARBON-E03"},
+    {"slug": "ibm-carbon", "evidence_id": "CARBON-E05"},
+    {"slug": "vercel-geist", "evidence_id": "GEIST-E03"},
+    {"slug": "vercel-geist", "evidence_id": "GEIST-E05"},
+    {"slug": "govuk-design-system", "evidence_id": "GOVUK-E04"},
+    {"slug": "govuk-design-system", "evidence_id": "GOVUK-E05"},
+    {"slug": "github-primer", "evidence_id": "PRIMER-E02"},
+    {"slug": "github-primer", "evidence_id": "PRIMER-E05"}
+  ],
+  "assumptions": [
+    "Literal token values created in system definition are project recommendations, not measurements copied from the references.",
+    "The existing dependency-free static architecture remains suitable unless implementation testing exposes a browser or accessibility blocker.",
+    "The current original abstract-preview contract remains public-safe unless the public projection and privacy tests expose a gap."
+  ],
+  "confidence": "high"
+}

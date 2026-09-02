@@ -1,0 +1,73 @@
+name: Design Reference Library Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: design-reference-library-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build and qualify public Site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPYCACHEPREFIX: /tmp/design-reference-library-pycache
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: Validate accepted public corpus
+        run: python corpus/scripts/validate_corpus.py
+
+      - name: Audit original writing
+        run: python corpus/scripts/audit_originality.py
+
+      - name: Build public catalog and downloads
+        run: python corpus/scripts/build_catalog.py --visibility public
+
+      - name: Check Site JavaScript
+        run: node --check site/app.js
+
+      - name: Run regression suite
+        run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Upload Site artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: site
+
+  deploy:
+    name: Deploy public Site
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

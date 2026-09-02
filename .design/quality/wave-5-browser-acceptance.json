@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "wave-5-browser-acceptance",
+  "visibility": "public",
+  "status": "pass",
+  "review_mode": "fresh-worker-acceptance-awaiting-independent-review",
+  "reviewed_at": "2026-09-02T04:23:21Z",
+  "runtime": {
+    "origin": "http://127.0.0.1:4173/",
+    "browser": "in-app Chromium scanner plus native Chrome keyboard session",
+    "catalog_visibility": "public",
+    "reviewed_case_count": 60,
+    "generated_catalog_rebuilt_with": "python3 corpus/scripts/build_catalog.py --visibility public"
+  },
+  "artifact_hashes": {
+    "site/index.html": "62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249",
+    "site/styles.css": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1",
+    "site/app.js": "67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be",
+    "site/README.md": "f23ff1a04c3621f147dc45b5691db11eb930e423ff073a586bc9928f3b5a4df0",
+    ".design/system/tokens.source.json": "1dbe108e4280c7ed2503c100f47ab94c77a29b1c8ab19c6675b0e0000383b190",
+    "tests/test_wave11_site.py": "a25f6ca6f2689978f4e0da28bdd08acaaa2fa3765c55327718372f5b7b985379",
+    "tests/test_wave11_evidence_exchange.py": "8e3ec74795ba69fb4146f051f2a9145f8469b58a6eba9667ed10548069ce32d6",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff"
+  },
+  "fresh_route_matrix": {
+    "status": "pass",
+    "required_targets": 21,
+    "passed_targets": 21,
+    "root_overflow_failures": 0,
+    "duplicate_id_failures": 0,
+    "missing_accessible_name_failures": 0,
+    "broken_aria_reference_failures": 0,
+    "heading_order_failures": 0,
+    "focusable_aria_hidden_failures": 0,
+    "dialog_label_failures": 0,
+    "targets": [
+      {"id":"catalog-default-wide","route":"/","viewport":"1440x1000","result":"pass"},
+      {"id":"catalog-default-mobile","route":"/","viewport":"390x844","result":"pass"},
+      {"id":"catalog-default-tablet","route":"/","viewport":"834x1112","result":"pass"},
+      {"id":"catalog-empty-mobile","route":"/?q=no-such-reviewed-case","viewport":"390x844","result":"pass"},
+      {"id":"catalog-loading-mobile","route":"/?test-state=catalog-loading","viewport":"390x844","result":"pass"},
+      {"id":"catalog-error-wide","route":"/?test-state=catalog-error","viewport":"1440x1000","result":"pass"},
+      {"id":"case-default-wide","route":"/?case=ibm-carbon","viewport":"1440x1000","result":"pass"},
+      {"id":"case-default-tablet","route":"/?case=ibm-carbon","viewport":"834x1112","result":"pass"},
+      {"id":"case-loading-mobile","route":"/?case=ibm-carbon&test-state=case-loading","viewport":"390x844","result":"pass"},
+      {"id":"case-error-mobile","route":"/?case=missing-case","viewport":"390x844","result":"pass"},
+      {"id":"package-default-wide","route":"/?case=ibm-carbon#download-package","viewport":"1440x1000","result":"pass"},
+      {"id":"package-default-mobile","route":"/?case=ibm-carbon#download-package","viewport":"390x844","result":"pass"},
+      {"id":"package-default-tablet","route":"/?case=ibm-carbon#download-package","viewport":"834x1112","result":"pass"},
+      {"id":"package-error-mobile","route":"/?case=ibm-carbon&test-state=download-error#download-package","viewport":"390x844","result":"pass"},
+      {"id":"package-denied-wide","route":"/?case=private-test-case#download-package","viewport":"1440x1000","result":"pass"},
+      {"id":"comparison-default-wide","route":"/?compare=ibm-carbon,vercel-geist","viewport":"1440x1000","result":"pass"},
+      {"id":"comparison-default-mobile","route":"/?compare=ibm-carbon,vercel-geist","viewport":"390x844","result":"pass"},
+      {"id":"comparison-default-tablet","route":"/?compare=ibm-carbon,vercel-geist","viewport":"834x1112","result":"pass"},
+      {"id":"method-default-wide","route":"/#method","viewport":"1440x1000","result":"pass"},
+      {"id":"method-default-mobile","route":"/#method","viewport":"390x844","result":"pass"},
+      {"id":"method-default-tablet","route":"/#method","viewport":"834x1112","result":"pass"}
+    ]
+  },
+  "fresh_observations": {
+    "mobile_catalog": {
+      "viewport": "390x844",
+      "public_case_rows": 60,
+      "root_overflow_css_px": 0,
+      "visual_result": "pass"
+    },
+    "wide_catalog": {
+      "viewport": "1440x1000",
+      "public_case_rows": 60,
+      "root_overflow_css_px": 0,
+      "visual_result": "pass"
+    },
+    "tablet_package": {
+      "viewport": "834x1112",
+      "package_visible": true,
+      "enabled_downloads": 2,
+      "root_overflow_css_px": 0,
+      "visual_result": "pass"
+    },
+    "mobile_comparison": {
+      "viewport": "390x844",
+      "root_overflow_css_px": 0,
+      "comparison_region_client_width_css_px": 356,
+      "comparison_region_scroll_width_css_px": 760,
+      "comparison_region_label": "Selected case comparison table",
+      "comparison_region_tabindex": "0",
+      "only_intentional_horizontal_scroll_region": true
+    },
+    "catalog_error": {
+      "recovery_status_visible": true,
+      "retry_control_visible": true,
+      "results_aria_busy": "false"
+    }
+  },
+  "fresh_keyboard_and_focus": {
+    "status": "pass",
+    "runtime": "Fresh Chrome tab against http://127.0.0.1:4173/ after the Wave 5 comparison-focus repair",
+    "input_boundary": "Search text, navigation, activation, selection, retry, return, download, and dialog close used native keyboard events. The advanced-filter disclosure remains covered by the unchanged Wave 4 native-select proof; no new claim is made for that control in this run.",
+    "flows": [
+      {
+        "name": "search and lane filtering",
+        "result": "pass",
+        "evidence": "Tab reached the public search field, typed a matching query, updated the URL and one-result status, then reached and selected the Design systems lane with Space."
+      },
+      {
+        "name": "case detail and evidence section",
+        "result": "pass",
+        "evidence": "Tab reached Study case, Enter opened IBM Carbon with Close focused, and Tab plus Enter reached the exact Evidence and limits anchor."
+      },
+      {
+        "name": "package selection and verified download",
+        "result": "pass",
+        "evidence": "Tab reached Review package, Enter opened the validated package, Tab reached Download readable brief, and Enter downloaded ibm-carbon-design-reference.md at 9.0 KB while the interface announced Download requested."
+      },
+      {
+        "name": "retry, return, and focus restoration",
+        "result": "pass",
+        "evidence": "The controlled package-error route exposed Retry package validation. Enter retried, the repeated failure restored focus to Retry, Tab plus Enter returned to the case with Review package focused, and Escape closed the dialog with catalog search focused."
+      },
+      {
+        "name": "two-case comparison",
+        "result": "pass",
+        "evidence": "The first selection exposed a focus-loss defect. After repair, Space selected Adobe Spectrum 2 and restored focus to its replacement Selected control; four Tabs reached Android Mobile UI Guidance; Space selected it and restored focus again; 236 Tabs reached Compare cases; Enter opened the two-column comparison with Close focused; Escape closed it and returned focus to Compare cases."
+      }
+    ],
+    "repair": {
+      "finding": "A comparison selection rerendered the catalog and dropped focus to the page.",
+      "change": "The catalog comparison handler now asks toggleCompare to restore focus to the replacement control for the same case.",
+      "regression_test": "tests/test_wave11_site.py asserts the focus-restoration call and replacement-control focus."
+    }
+  },
+  "fresh_reduced_motion": {
+    "status": "pass",
+    "runtime": "Fresh in-app Chromium tab with prefers-reduced-motion set to reduce",
+    "viewport": "390x844",
+    "required_targets": 9,
+    "passing_targets": 9,
+    "max_animation_duration_seconds": 0.00001,
+    "max_transition_duration_seconds": 0.00001,
+    "root_overflow_failures": 0,
+    "targets": [
+      "catalog-default-mobile",
+      "catalog-empty-mobile",
+      "catalog-loading-mobile",
+      "case-loading-mobile",
+      "case-error-mobile",
+      "package-default-mobile",
+      "package-error-mobile",
+      "comparison-default-mobile",
+      "method-default-mobile"
+    ],
+    "evidence": "Every target matched the reduced-motion media query, rendered its required state, limited visible animation and transition durations to 0.01 milliseconds, and retained zero document-root horizontal overflow."
+  },
+  "automated_scanner": {
+    "status": "pass",
+    "scope": "All 21 fresh targets",
+    "rules": [
+      "duplicate IDs",
+      "missing accessible names on visible controls and links",
+      "broken aria-labelledby and aria-describedby references",
+      "visible heading-order jumps",
+      "focusable controls inside visible aria-hidden subtrees",
+      "open-dialog label integrity",
+      "target-specific state",
+      "root horizontal overflow"
+    ],
+    "limitation": "This focused DOM scan is not a complete accessibility-tree, assistive-technology, keyboard, contrast, zoom, motion, or usability review. Fresh keyboard and reduced-motion results are recorded separately, while unchanged Wave 4 scale, text-spacing, touch-target, and contrast evidence keeps its stated boundary."
+  },
+  "unchanged_runtime_binding": {
+    "wave_4_receipt": ".design/quality/wave-4-browser-accessibility.json",
+    "wave_4_receipt_sha256": "ddff2cc0acc13ada167408c152256706022b14922362887e47ec492c541ea0ed",
+    "site_styles_unchanged": true,
+    "site_app_unchanged": false,
+    "categories_retained_from_the_unchanged_style_and_content_contract": [
+      "native advanced-select keyboard change",
+      "44 by 44 mobile controls",
+      "200 percent browser scale",
+      "WCAG text spacing",
+      "computed text and non-text contrast",
+      "live regions",
+      "loopback privacy fail-closed behavior"
+    ],
+    "categories_freshly_reproved_after_the_app_change": [
+      "complete keyboard and focus flows",
+      "comparison selection focus restoration",
+      "reduced motion on all nine required targets",
+      "exact readable download activation",
+      "all 21 required route states and scanner rules"
+    ],
+    "wave_5_changes_receiving_fresh_confirmation": [
+      "reader-facing index copy",
+      "publication boundary wording",
+      "durable token-source parity",
+      "comparison replacement-control focus restoration"
+    ]
+  },
+  "independent_verification": {
+    "status": "pending",
+    "result": "pending",
+    "evidence_boundary": "The prior independent decision is superseded because Wave 5 changed site/app.js, site/index.html, and the Site regression test after a fresh keyboard run exposed comparison focus loss. The repaired browser candidate now has fresh 21-target scanner, keyboard, focus, exact-download, and nine-target reduced-motion evidence and awaits a new independent technical decision.",
+    "exact_evidence": [
+      "All 21 manifest routes passed again after the focus repair with zero root-overflow, duplicate-ID, accessible-name, ARIA-reference, heading-order, hidden-focusable, dialog-label, console-warning, or console-error failures.",
+      "site/app.js is 67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be, site/index.html is 62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249, and site/styles.css remains a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1.",
+      "The changed index copy rendered at 390 by 844 with zero root overflow and zero clipped text under the WCAG text-spacing override; the public-package, evidence-boundary, preview-boundary, and privacy wording remained present.",
+      "All 17 durable source-color tokens and the status radius match their CSS variables. Nineteen required text, action, status, divider, and focus contrast pairs pass their 4.5-to-1 or 3-to-1 thresholds; the minimum normal-text ratio is 4.86, the strong-divider ratio is 3.65, and the minimum focus ratio is 5.83.",
+      "Both IBM Carbon downloads were enabled and manifest-bound: Markdown 9189 bytes at 1ca2e4d928ec4709d76037d2e8a239ee66fe63d57222860dd05562b973215a41 and JSON 10533 bytes at ad7448dc40708e2d0904db9d4820441bde74ee0a59c3941e59c55d61d4a6e9ed, both bound to model 754b227f0e38eb970bb6c2bb937d803763183bd128d649265ff6981432f6a153.",
+      "The fresh native keyboard flow covers search, lane filtering, case and evidence navigation, package selection, verified download, retry focus, return focus, dialog close, two-case selection, comparison open, and comparison close.",
+      "All nine required reduced-motion targets passed at 390 by 844 with the media preference active, 0.01 millisecond maximum visible animation and transition durations, and zero root overflow.",
+      "The current receipt binds Wave 5 manifest 870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff and the repaired product, token, and test hashes."
+    ]
+  },
+  "privacy": {
+    "contains_private_identifiers": false,
+    "contains_absolute_local_paths": false,
+    "contains_browser_session_identifiers": false,
+    "contains_download_blob_urls": false,
+    "contains_only_public_case_names": true
+  },
+  "blocking_findings": []
+}

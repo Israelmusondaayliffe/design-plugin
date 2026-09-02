@@ -16,8 +16,7 @@
   },
   "published_candidate": {
     "public_commit": "93908428c8949cf57f77f374fab13659e803bd80",
-    "private_commit": "457c825f6498887b0e5bf43eaa964f2499e79de8",
-    "shared_source_parity": "pass"
+    "public_snapshot_qualification": "pass"
   },
   "corpus": {
     "case_count": 60,
@@ -100,15 +99,6 @@
     "fresh_public_ci": {
       "status": "pass",
       "run_id": 33548219494,
-      "python_versions": [
-        "3.11",
-        "3.13"
-      ],
-      "tests_per_version": 242
-    },
-    "fresh_private_ci": {
-      "status": "pass",
-      "run_id": 33548217993,
       "python_versions": [
         "3.11",
         "3.13"

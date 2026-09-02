@@ -1,0 +1,21 @@
+{
+  "changed_files": [
+    ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+    ".design/quality/wave-4-browser-accessibility.json",
+    "site/app.js",
+    "site/index.html",
+    "site/styles.css",
+    "tests/test_wave11_site.py"
+  ],
+  "handoff": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json",
+  "handoff_markdown": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.md",
+  "handoff_markdown_sha256": "0074bb6b5507795b2669df462e1c8b731ef5550db48802f08537d3ea176948ed",
+  "handoff_sha256": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42",
+  "manifest": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json",
+  "manifest_sha256": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18",
+  "next_state_command": "design_state.py complete-wave",
+  "ready_for_state_completion": true,
+  "status": "pass",
+  "wave_id": "wave-4-responsive-accessibility-and-copy",
+  "wave_number": 4
+}

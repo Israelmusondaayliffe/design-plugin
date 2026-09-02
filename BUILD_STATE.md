@@ -1,17 +1,13 @@
 # Design Plugin Build State
 
-Last updated: 2026-09-01
+Last updated: 2026-09-02
 Approved plan: Design Plugin Build Plan v1.0
 Canonical development repository: `Israelmusondaayliffe/design-plugin`
 Canonical development path: repository root
 Branch: `main`
-Historical pre-migration source: Retained in a private archive outside the public project.
-
-Historical commit IDs and CI run IDs in this ledger are private-archive evidence with no public locator. Fresh public qualification begins with Wave 10.
-
 ## Current phase
 
-Wave 11 is active by explicit user authorization. The 60-case personal-alpha corpus and the local undeployed reference Site have passed their scoped qualification. The three approved benchmarks have not started, so Wave 11 is partial. R04 remains partial and is explicitly deferred as a nonblocking evidence gap for this work. R22 remains partial until the benchmarks and later acceptance gates pass.
+Wave 11 is active by explicit user authorization. Benchmark 2 passes all five implementation waves with verified state-bound handoffs. The Design state is now in `rendering`, with no active build wave. The 60-case public corpus, Evidence Exchange interface, package downloads, responsive behavior, accessibility work, reader-facing copy, deterministic builds, two-version regression, 21-target browser matrix, fresh keyboard and focus flow, nine-target reduced-motion matrix, and feedback ledger pass on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`. All three independent reviewers passed and confirmed the final acceptance receipt. Public Site publication is authorized and is the next release step. Benchmark 2 is complete; Benchmarks 1 and 3 have not started. Wave 11, R04, and R22 remain partial.
 
 ## Current Wave 11 candidate
 
@@ -22,14 +18,65 @@ Wave 11 is active by explicit user authorization. The 60-case personal-alpha cor
 - Source binary assets stored: None.
 - Accepted-only public catalog: 60 cases.
 - Local Site: Search, six lane filters, advanced facets, progressive case analysis and evidence, source retrieval dates, URL state, and up-to-five comparison pass.
-- Browser evidence: Desktop 1280 by 720 and mobile 390 by 844 pass with no page-level horizontal overflow and no console warnings or errors.
-- Local regression suite: 242 tests pass under the locally available Python 3.9.6.
-- Published candidate: Public commit `93908428c8949cf57f77f374fab13659e803bd80`; private counterpart `457c825f6498887b0e5bf43eaa964f2499e79de8`.
-- GitHub Actions: Public run `33548219494` and private run `33548217993` pass 242 tests on Python 3.11 and Python 3.13 plus both host builds and package qualification.
-- Public Site deployment: Not authorized and not performed.
-- Benchmarks complete: 0 of 3.
+- Browser evidence: All 21 exact targets, a native keyboard and focus flow, exact readable-download activation, comparison focus restoration after repair, and all nine required reduced-motion targets pass fresh Wave 5 review. There is no page-level horizontal overflow, console warning, console error, or unresolved accessibility blocker.
+- Wave 5 regression: 45 focused tests pass. The complete 288-test suite passes under Python 3.9.6 and Python 3.12.13 with zero skips.
+- Deterministic public builds: Two clean 1,766-file builds have identical paths, bytes, hashes, and tree SHA-256 `bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e`.
+- Public downloads: 60 readable Markdown files and 60 structured JSON files, each with a matching manifest.
+- Feedback and build friction: Seven product feedback items and 18 build-friction items are preserved in a public-safe improvement ledger; every named repair has terminal evidence.
+- Historical public candidate: Commit `93908428c8949cf57f77f374fab13659e803bd80`.
+- Historical GitHub Actions: Public run `33548219494` passed 242 tests on Python 3.11 and Python 3.13 plus both host builds and package qualification.
+- Public Site deployment: Authorized; production release and anonymous verification are pending.
+- Benchmarks complete: 1 of 3.
 - R04: Partial, deferred and nonblocking for this work by explicit user direction.
 - R22: Partial.
+
+## Wave 11 Benchmark 2 validator repair
+
+PASS. The research workflow can now express several genuinely distinct adaptations of one approved dominant foundation without weakening the default anti-variation rule.
+
+- Approved repair plan: `.design/research/direction-validator-repair-plan.md`, SHA-256 `bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc`.
+- User decision text recorded in Design state: `approved`.
+- Candidate source and package version: `0.1.0-dev.11`.
+- Previous isolated update version: `0.1.0-dev.10`.
+- Default substantial strategy: distinct primary foundations.
+- Explicit exception: 3 to 5 substantial directions with one shared primary slug, unique normalized adaptation axes, and at least four different signature dimensions per pair.
+- Invalid, null, empty, array, and object strategy values fail through the controlled validation contract.
+- Focused research and system-definition suite: 50 tests pass under local Python 3.9.6.
+- Complete local suite: 249 tests pass under local Python 3.9.6.
+- Generated OpenAI and Claude packages: Pass, 125 shared files byte-identical.
+- Isolated updates from dev.10 to dev.11: Pass on both hosts; active registries unchanged and temporary roots deleted.
+- Independent final reviews: Plan and Benchmark pass; technical and evidence pass; Unslop and human-factors pass.
+- Active Codex and Claude installations remain at the qualified `0.1.0-dev.10` baseline. No active-host installation was authorized or performed.
+- Commit, push, release, tag, deployment, publication, corpus, and Site changes: None.
+- Evidence: `review/wave-11-benchmark-2-validator-repair-evidence.json`.
+
+## Wave 11 Benchmark 2 direction and system-definition gates
+
+SUPERSEDED CHECKPOINT. Research, direction selection, reference lock, UX definition, design system, token projections, and implementation planning completed here. Repository changes were later approved, and all five implementation waves completed.
+
+- Current state phase: `rendering`, no active build wave, revision 28.
+- Direction set: `.design/directions/direction-set.json`, SHA-256 `1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb`.
+- Dominant foundation in all directions: IBM Carbon.
+- Options reviewed: Guided Fieldbook, Analyst Workbench, and Evidence Exchange.
+- Approved direction: Evidence Exchange.
+- Decision record: `.design/directions/decision.md`, SHA-256 `ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5`.
+- Direction approval text: `Direction approved`.
+- Evidence references: 29 checked against the six forensic dossiers; zero missing.
+- Pairwise mechanical difference: 9 of 9 signature dimensions for every pair.
+- Reference lock: `.design/system/reference-lock.json`, SHA-256 `1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449`.
+- UX definition: `.design/system/ux-definition.json`, SHA-256 `cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502`.
+- Compiled project `DESIGN.md`: SHA-256 `8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a`, 30 canonical sections.
+- Token source: `.design/system/tokens.source.json`, SHA-256 `1dbe108e4280c7ed2503c100f47ab94c77a29b1c8ab19c6675b0e0000383b190`.
+- Token projections: 96 total tokens, 47 semantic tokens, 96 CSS definitions, and zero undefined CSS references. The existing `--shadow` value remains explicitly unmapped until removal or a tested dialog-only replacement.
+- Structured implementation plan: `.design/implementation/plan.json`, SHA-256 `e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412`.
+- Compiled implementation plan: `.design/implementation/plan.md`, SHA-256 `15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e`.
+- Planned implementation: Five bounded waves with 21 required targets across wide, tablet, and mobile viewports.
+- Aggregate system-definition verification: Pass.
+- Focused system-definition tests: 26 pass.
+- Complete local suite: 249 tests pass under Python 3.9.6 and Python 3.12.13.
+- Independent final reviews: Plan and Benchmark pass; technical and evidence pass; Unslop and claim-boundary pass on the exact final hashes above.
+- Repository-change gate: Approved and current. Waves 1 through 5 are complete.
+- Public push and deployment: Authorized. Active-host installation and Figma writes were not performed by this benchmark.
 
 ## Latest qualified installed runtime baseline
 
@@ -332,7 +379,7 @@ PARTIAL. Host packaging and public repository publication passed. Automatic acti
 
 ## Wave 11 checkpoint
 
-PARTIAL. The personal-alpha corpus and local reference Site are qualified. The three benchmarks remain.
+PARTIAL. The 60-case public corpus and local reference Site are qualified as the current Wave 5 review candidate. Benchmark 2 remains pending until the three independent same-hash reviews and state-bound handoff pass.
 
 - Authorization and lane contract: `review/wave-11-alpha-allocation.json`.
 - Canonical case count: 60.
@@ -347,15 +394,12 @@ PARTIAL. The personal-alpha corpus and local reference Site are qualified. The t
 - Public catalog generation: Pass, accepted-only, 60 cases.
 - Site features: Search, six lane filters, six advanced facets, sort, progressive case analysis and evidence, canonical source retrieval date, owner-source link, URL filter state, and comparison of two to five cases.
 - Site visual treatment: Original CSS-only abstract previews generated from canonical preview specifications. No remote visual dependency or source asset is loaded.
-- Desktop browser: 60 cards, seven lane controls including All, detail routes, evidence routes, and five-case comparison pass at 1280 by 720. Page-level horizontal overflow: None. Console warnings or errors: None.
-- Mobile browser: Single-column cards and dialogs fit a 390 by 844 viewport. Page-level horizontal overflow: None. The wide comparison table scrolls inside its own container.
-- Site deployment: Not authorized and not performed.
-- Local tests: 242 passed under Python 3.9.6.
-- Public CI run `33548219494`: Pass, 242 tests on Python 3.11 and Python 3.13.
-- Private CI run `33548217993`: Pass, 242 tests on Python 3.11 and Python 3.13.
-- Independent technical Site review: Pass.
-- Independent Site writing and Unslop review: Pass after six exact wording repairs.
-- Independent plan review: Pass after source-date and durable-state repairs.
+- Browser matrix: All 21 exact routes pass at approved wide, tablet, and mobile viewports. Page-level horizontal overflow, console warnings, console errors, duplicate IDs, missing accessible names, broken ARIA references, heading jumps, visible hidden-focusable controls, and dialog-label failures: None.
+- Keyboard and focus: Search, lane selection, case navigation, evidence navigation, package selection, exact readable download, failure retry, return, dialog close, two-case selection, comparison open, and comparison close pass in a fresh native-keyboard run. A comparison rerender focus defect was repaired and regression-covered.
+- Reduced motion: All nine required mobile targets pass with the preference active, 0.01 millisecond maximum visible animation and transition durations, and zero root overflow.
+- Site deployment: Authorized after Wave 5 completion and not yet performed.
+- Local tests: 45 focused tests and 288 complete-suite tests pass under Python 3.9.6 and Python 3.12.13 with zero failures, errors, or skips.
+- Independent Wave 5 reviews: Pending for plan fidelity, technical evidence, and Unslop/public copy on candidate `ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff`.
 - Benchmarks: 0 of 3 complete.
 - Wave 11: Partial.
 - R04: Partial, explicitly deferred as a nonblocking evidence gap for this work.
@@ -365,7 +409,7 @@ The evidence-only commit is accepted only when the public Design Plugin CI check
 
 ## Next required work
 
-Run the three approved Wave 11 benchmarks and repair any critical workflow failure within scope. Public Site deployment remains a separate authorization gate.
+Obtain three independent same-hash reviews of the repaired Wave 5 candidate, close the state-bound handoff, publish the Site under the user’s explicit approval, verify anonymous production access, and record the public URL and deployment evidence. The other two approved Wave 11 benchmarks remain unstarted.
 
 R04 cannot pass until both hosts produce native selection evidence for all explicit, automatic, negative, and precedence cases. The runner refuses the active harness and contains no credential-copy operation. Codex credential provenance still requires external attestation. These qualification restrictions are absent from the distributed runtime, so they cannot reject an ordinary installation. Normal multi-plugin compatibility is not proved by R04. The user explicitly accepted this as a noncritical, nonblocking evidence gap for Wave 11 work. It remains partial and is not silently converted to a pass.
 

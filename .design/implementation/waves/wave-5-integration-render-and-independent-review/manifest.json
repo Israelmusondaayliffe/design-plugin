@@ -1,0 +1,566 @@
+{
+  "allowed_files": [
+    ".design/system/tokens.source.json",
+    "site/index.html",
+    "site/styles.css",
+    "site/app.js",
+    "site/README.md",
+    "corpus/scripts/build_catalog.py",
+    "corpus/scripts/build_public_packages.py",
+    "corpus/schemas/public-case-package.schema.json",
+    "corpus/README.md",
+    "tests/test_wave11_site.py",
+    "tests/test_wave11_evidence_exchange.py",
+    ".design/quality",
+    "review/wave-11-source-health.json",
+    "review/wave-11-benchmark-2-acceptance-evidence.json",
+    "BUILD_STATE.md"
+  ],
+  "approved_plan_artifact": ".design/implementation/plan.md",
+  "approved_plan_sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+  "approved_requirements": [
+    "Completion requires evidence for all 60 public cases, both formats, semantic parity, deterministic builds, privacy exclusions, required states, responsive behavior, accessibility behavior, and rendered direction fidelity.",
+    "The worker cannot serve as the independent verifier.",
+    "One reviewer verifies the approved plan and direction, one verifies technical and evidence behavior, and one performs an independent Unslop and copy-boundary review.",
+    "A validator pass, test count, or filesystem presence cannot replace fresh rendered and runtime proof.",
+    "Any unresolved blocker reopens the owning implementation wave before acceptance is recorded."
+  ],
+  "artifact_inputs": [
+    {
+      "path": ".design/shared-understanding.md",
+      "purpose": "approved shared understanding",
+      "sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced"
+    },
+    {
+      "path": ".design/system/reference-lock.json",
+      "purpose": "approved reference lock",
+      "sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449"
+    },
+    {
+      "path": ".design/system/ux-definition.json",
+      "purpose": "approved UX definition",
+      "sha256": "cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502"
+    },
+    {
+      "path": "DESIGN.md",
+      "purpose": "approved design system",
+      "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+    },
+    {
+      "path": ".design/implementation/plan.json",
+      "purpose": "structured implementation plan",
+      "sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412"
+    },
+    {
+      "path": ".design/implementation/plan.md",
+      "purpose": "approved compiled implementation plan",
+      "sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e"
+    },
+    {
+      "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json",
+      "purpose": "previous wave handoff",
+      "sha256": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42"
+    }
+  ],
+  "completion_criteria": [
+    "All automated tests pass with exact counts recorded, and no required test is skipped without an approved reason.",
+    "All 60 public cases produce validated readable and structured downloads with semantic parity, deterministic bytes, public-only fields, and matching manifests.",
+    "All 21 required targets and complete keyboard flows pass fresh rendered review with no unresolved accessibility, responsive, recovery, privacy, or direction-fidelity blockers.",
+    "All three independent reviewers pass the final same-hash result, and the worker repairs every blocker before recording acceptance.",
+    "The receipt states that deployment, push, release, active-host installation, and Figma writes were not performed."
+  ],
+  "control_files": [
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.json",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.md",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/verification.json"
+  ],
+  "declared_inputs": [
+    ".design/directions/decision.md",
+    ".design/system/reference-lock.json",
+    ".design/system/ux-definition.json",
+    "DESIGN.md",
+    ".design/implementation/plan.md",
+    "corpus/scripts/build_catalog.py",
+    "site/index.html",
+    "site/styles.css",
+    "site/app.js"
+  ],
+  "dependencies": [
+    "wave-4-responsive-accessibility-and-copy"
+  ],
+  "design_sections": [
+    "Provenance and Confidence",
+    "Reference Lock",
+    "Accessibility",
+    "Implementation Rules",
+    "Decision Ledger",
+    "Known Deviations",
+    "Unknowns and Future Decisions"
+  ],
+  "goal": "Prove the complete Benchmark 2 corpus and Site outcome against the approved direction, privacy boundary, runtime behavior, and all required quality targets.",
+  "plan_json_sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412",
+  "planned_risks": [
+    "Pause if different Python versions, clean builds, or browser sessions produce different public package bytes or visible claims.",
+    "Pause if a reviewer evaluates a different artifact hash than the final candidate.",
+    "Pause if any required target, case, format, state, privacy scan, or independent review lacks terminal evidence."
+  ],
+  "previous_handoff": {
+    "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json",
+    "sha256": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42"
+  },
+  "render_targets": [
+    "catalog-default-wide",
+    "catalog-default-mobile",
+    "catalog-default-tablet",
+    "catalog-empty-mobile",
+    "catalog-loading-mobile",
+    "catalog-error-wide",
+    "case-default-wide",
+    "case-default-tablet",
+    "case-loading-mobile",
+    "case-error-mobile",
+    "package-default-wide",
+    "package-default-mobile",
+    "package-default-tablet",
+    "package-error-mobile",
+    "package-denied-wide",
+    "comparison-default-wide",
+    "comparison-default-mobile",
+    "comparison-default-tablet",
+    "method-default-wide",
+    "method-default-mobile",
+    "method-default-tablet"
+  ],
+  "repository_baseline": {
+    "dirty_files": [
+      {
+        "path": ".design/directions/01-guided-fieldbook.md",
+        "sha256": "85393e71930dfae4bdbbdaeb050d8cf82f0e5ac87e509302e54ddb7b6069e930",
+        "status": "??"
+      },
+      {
+        "path": ".design/directions/02-analyst-workbench.md",
+        "sha256": "c95b45db6751eab31c8265ed418689f5506856bec80a06a04b7642a4078d2cc4",
+        "status": "??"
+      },
+      {
+        "path": ".design/directions/03-evidence-exchange.md",
+        "sha256": "916bfe3b1348e93c386be54763ab9f92203ac3c8084fdb5b4dc6f045615e1a4f",
+        "status": "??"
+      },
+      {
+        "path": ".design/directions/decision.md",
+        "sha256": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+        "status": "??"
+      },
+      {
+        "path": ".design/directions/direction-set.json",
+        "sha256": "1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb",
+        "status": "??"
+      },
+      {
+        "path": ".design/environment.json",
+        "sha256": "ab9187474aa51c9b54e13801022137fc5466c9a19620f515fa7c27673c209402",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/plan.json",
+        "sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/plan.md",
+        "sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-1-public-package-contract/handoff.json",
+        "sha256": "caada9fd8c83de54af2192a2e19fc992deab0f1c14d19fc5684775c033b99b2f",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-1-public-package-contract/handoff.md",
+        "sha256": "cf9017b91a57900bdb5445c8b9482edc76be9ec6e7f26a22be616fc77cfeaa6c",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-1-public-package-contract/manifest.json",
+        "sha256": "7dfd2e884e880c8701f9b7e0c2c1d177bbd48cacaaf026fa38b3efa19aae3817",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-1-public-package-contract/verification.json",
+        "sha256": "9e3010007f5fbd4418a4dbe7f021f129ed56d141447cde814a98b635bdf65247",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.json",
+        "sha256": "f7227a3f2e9fccbad13c860c0bab776302abb32e895645a999efaf61864a17bd",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.md",
+        "sha256": "b77b938849b40cd207e4fe2b038c5e45baee48682546ff1361e69f00e4f99f4f",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-2-evidence-exchange-structure/manifest.json",
+        "sha256": "95ed3eb117f3ca344499bd0b7870a1a8f3851ea8338fa2ab8804ef9c1a4fcd86",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-2-evidence-exchange-structure/verification.json",
+        "sha256": "099b53dee14a1058447eccf78255082e19e525ec477f0d92b5cebd2d80b22236",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.json",
+        "sha256": "6048fff7cb74b317789790467d6ae737081972e035b47b7e7fe271b04bceeec0",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.md",
+        "sha256": "da3b4a736a06f136ea6e43274c0cce76be927ac54cf40f5e1047534ad1746dff",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/manifest.json",
+        "sha256": "bdede0a8dd98b54744d821e737bb8997f16593dcf79715ca777deaabca3aed01",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/verification.json",
+        "sha256": "e923f362ac2d408d8d0b30b23e4b3b251424bfeef4278fcc522acf3cff40b1fd",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json",
+        "sha256": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.md",
+        "sha256": "0074bb6b5507795b2669df462e1c8b731ef5550db48802f08537d3ea176948ed",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json",
+        "sha256": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18",
+        "status": "??"
+      },
+      {
+        "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/verification.json",
+        "sha256": "8d0b82380ac17a6ac5f4bfcc6a038d4d2262452768a5997f484193f3506c2813",
+        "status": "??"
+      },
+      {
+        "path": ".design/interview/answers.md",
+        "sha256": "6dbfbe7fc68b67499f3a403bcbf3c8641b233b65984bf92b509da0ea2d40892e",
+        "status": "??"
+      },
+      {
+        "path": ".design/interview/assumption-ledger.md",
+        "sha256": "ad90b1eb6769cf93fb86fa7022e35aab00c44a9731e1c58e4985d5c6702417f0",
+        "status": "??"
+      },
+      {
+        "path": ".design/interview/questions.md",
+        "sha256": "15531cb2d37b0cef39b2819d8e58c991a1297cee33619b48d563aa67d8865477",
+        "status": "??"
+      },
+      {
+        "path": ".design/interview/session.json",
+        "sha256": "f0e59d8111f54f0bb8ca64408a3777f1768d39d5efeb8ce570577202b519cc40",
+        "status": "??"
+      },
+      {
+        "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "sha256": "eea9de79f4e56dcaf565c4581f44a00346605fb456069bbac713a1beddf0de83",
+        "status": "??"
+      },
+      {
+        "path": ".design/quality/wave-4-browser-accessibility.json",
+        "sha256": "ddff2cc0acc13ada167408c152256706022b14922362887e47ec492c541ea0ed",
+        "status": "??"
+      },
+      {
+        "path": ".design/quality/writing-route.json",
+        "sha256": "cfde8d659481ff2c05b96396a3f2700451526fda10d5459becace210c9e8386c",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/candidates.json",
+        "sha256": "a7bb9ba14272743b785b6ba824bb766b7dfc51ed32d9f6796807e737ba15caf6",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/direction-validator-repair-plan.md",
+        "sha256": "bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/elastic-eui.json",
+        "sha256": "709e6c40279c9fddb507d8dc0b756f912a086ec6e939ebfe3ed5a55e8c1cd5db",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/github-primer.json",
+        "sha256": "ab438cdbe7d6e7b044f4eae921c8a06088e266d470fc6325358dc5b4a3ae8c30",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/govuk-design-system.json",
+        "sha256": "1107883f3bd394d0fdd71c5df93734a54ec9aa81cb8e79721b3e04812b10fb80",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/guardian-source.json",
+        "sha256": "daa5a1be02c3e8b269581d9bc0771e81912bc467e46526a686498353f6d3380b",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/ibm-carbon.json",
+        "sha256": "bf5609560b369fdf03349a393b03596ef3d1f06c302caf7ef77162b0826eb614",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/dossiers/vercel-geist.json",
+        "sha256": "4178dcaaa0dbf49be76f778d0b57fb82f4e5341637a12e47c47b0bb7c3a21025",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/plan.json",
+        "sha256": "308a22a2dbb4cee2a201f8696f37822026f04baa70e83a6ff7a7f76c74a120bd",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/plan.md",
+        "sha256": "6bb046c369855dc2a9d10c2558da0430a9f36b8f7340804dfe3a19e11be66d7d",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/sources.json",
+        "sha256": "9e3db61f62ce794c8954ae5338e790e5f009a0050f561547f0fd02d7baa9f015",
+        "status": "??"
+      },
+      {
+        "path": ".design/research/writing-route.json",
+        "sha256": "c951949e64c57b6b0dd1b779338e0d46bec304dabc36f0b8e7051668cac88772",
+        "status": "??"
+      },
+      {
+        "path": ".design/shared-understanding.md",
+        "sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+        "status": "??"
+      },
+      {
+        "path": ".design/state.json",
+        "sha256": "0cbef546c5a9931939fc5998ac0a6618b76f12c2a7f68898f58aad5b00e949e8",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/design-system.json",
+        "sha256": "b6c78d2c52a40feed0814ddd97d0098120bbad2a5c1d45528c19be495c5686e6",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/figma.json",
+        "sha256": "f4b138b04b7260a39de0505caf82e308bcffc7345646adc959499b5d1e7c5ba1",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/mobile.json",
+        "sha256": "976871acfd01e26e467052c726c81d5453ab977c11e2a755ac2854845dffd05c",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/projection-report.json",
+        "sha256": "a9a6c068396fbde58e85f4c4e662144a9cd799ad87a3994dd241864da0b24bd0",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/tailwind.css",
+        "sha256": "5fddcd9cbc46d4cd8d1cf7966e28ddd078be630c9e356b5efcfcbe2525838133",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/tokens.json",
+        "sha256": "30967e9420bf46eeb436f67194c6653ab0dd7cbdf25f2fbcb0ce8b9a72d97cf3",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/generated-tokens/variables.css",
+        "sha256": "68cd1174a5bc5b08c16f64de58819d541f470bef26b2ab62802e32fa685d681b",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/reference-lock.json",
+        "sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/tokens.source.json",
+        "sha256": "91545a419ef1fae296f2089f596ff715e90a47ece937e8a6b195855ea8733afc",
+        "status": "??"
+      },
+      {
+        "path": ".design/system/ux-definition.json",
+        "sha256": "cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502",
+        "status": "??"
+      },
+      {
+        "path": "BUILD_STATE.md",
+        "sha256": "8aa31f5cbe00b5175cd0e50b0fac9140957805add0acd0af18c4e643e9158842",
+        "status": " M"
+      },
+      {
+        "path": "DESIGN.md",
+        "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a",
+        "status": "??"
+      },
+      {
+        "path": "bundle-spec.json",
+        "sha256": "a3e9e4ad33ba59dee46dc877e253eec7b538e55ef9e5f7f88f43aced98701003",
+        "status": " M"
+      },
+      {
+        "path": "core/references/research-method.md",
+        "sha256": "fb2f481d8c658291eb1f83e2a51322432ca67f6c2f7853004e96ab83548e99a0",
+        "status": " M"
+      },
+      {
+        "path": "core/schemas/direction-set.schema.json",
+        "sha256": "1827f9dc3ab1988177d8c7ec9def3222ba731fc8d94412379d9cde6c33d74828",
+        "status": " M"
+      },
+      {
+        "path": "core/scripts/design_research.py",
+        "sha256": "d591e76ccb4dc630a7f995bcdcf644f82d1f9cf726d26602cc045e76cbe925ec",
+        "status": " M"
+      },
+      {
+        "path": "core/skills/directions/SKILL.md",
+        "sha256": "892a1ea4707fc4fcd706cbce216425cdd50d3d03620777b990d47a056ed5a543",
+        "status": " M"
+      },
+      {
+        "path": "core/templates/direction.template.md",
+        "sha256": "35164075438d552b14a46f3e94edc81a824b1fabc0eee5a0ca5d2af044e4f6f4",
+        "status": " M"
+      },
+      {
+        "path": "corpus/README.md",
+        "sha256": "413cf14f3b6a3cd7d77c234eaeb6432a58a1306e50fc5fb4a4ca52a382ee7972",
+        "status": " M"
+      },
+      {
+        "path": "corpus/schemas/public-case-package.schema.json",
+        "sha256": "24a301a100d2178925ef68bf73c18bf28b88c98d8f4b1d9b54a2d7d7ca0dd614",
+        "status": "??"
+      },
+      {
+        "path": "corpus/scripts/build_catalog.py",
+        "sha256": "eb0bb2591f7bf84f90de68b72adbb473485b3e68600b63ebe43592d1110e981e",
+        "status": " M"
+      },
+      {
+        "path": "corpus/scripts/build_public_packages.py",
+        "sha256": "0608944c8654a3bbc986c48a2c9b377c7187e08de69e095ad8b07fb5462e6cfa",
+        "status": "??"
+      },
+      {
+        "path": "host-packaging.json",
+        "sha256": "837f327e7fa34c98f4a9d1f5a45f36164c16a0655107226d0561e377d2939c44",
+        "status": " M"
+      },
+      {
+        "path": "hosts/claude/.claude-plugin/plugin.json",
+        "sha256": "778b94a19de0d5eef36fcd4f932d0abc8ff95d3bc7058969aa8abc39e0ad5330",
+        "status": " M"
+      },
+      {
+        "path": "hosts/openai/.codex-plugin/plugin.json",
+        "sha256": "5fb4d7cb5c54843316449ea6ff561240844818bca9715c6959203311def4d5eb",
+        "status": " M"
+      },
+      {
+        "path": "requirements/traceability.yaml",
+        "sha256": "fa9a94e5210589e545a4e6f92e7b4412e6712ecbe7763de0df07e2a619628845",
+        "status": " M"
+      },
+      {
+        "path": "review/wave-11-benchmark-2-validator-repair-evidence.json",
+        "sha256": "947acc44ab890017dbc0d23ab077f1ecbc6217139a544db921f62a73125d55b1",
+        "status": "??"
+      },
+      {
+        "path": "site/README.md",
+        "sha256": "33c3a590e3f197a81648ba2838674891fa2e518fe5d1daaaf6f7f7a71963554f",
+        "status": " M"
+      },
+      {
+        "path": "site/app.js",
+        "sha256": "cc4fac7ee7c5432467f0efebc27930871c789e06c9e4362f683aa7b799a64f14",
+        "status": " M"
+      },
+      {
+        "path": "site/index.html",
+        "sha256": "3f178ebcfe0a61980fac86d1ad7d11eb3f9438c153ad7981bf8cbf72dbd0cdb1",
+        "status": " M"
+      },
+      {
+        "path": "site/styles.css",
+        "sha256": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave10_host_qualification.py",
+        "sha256": "4cd9b3ce7fd781af7197994a3f44c7f53ebf1e90a2bd10ee8ca0a56eb65a5f5f",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave11_evidence_exchange.py",
+        "sha256": "8e3ec74795ba69fb4146f051f2a9145f8469b58a6eba9667ed10548069ce32d6",
+        "status": "??"
+      },
+      {
+        "path": "tests/test_wave11_site.py",
+        "sha256": "afbb812befc4ed325c192ea19306b36863c2d15002b7f9a4c1808c1a2bfd508c",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave5_research.py",
+        "sha256": "76b1f75c66bf60ffb26fab6dde14588251fefe837fff76545d97d19c3c050de2",
+        "status": " M"
+      }
+    ],
+    "head": "783d21f0f759036b8c250f84381cce53106e04f4",
+    "recorded_at": "2026-09-02T03:23:37Z"
+  },
+  "rollback": [
+    "Use the last passing wave boundary and scoped patches to remove only the failed integration changes while preserving canonical corpus evidence and approved system-definition artifacts.",
+    "Do not publish or install a partially accepted result. Reopen the exact owning wave and keep the acceptance receipt incomplete until repaired."
+  ],
+  "schema_version": "1.0",
+  "started_at": "2026-09-02T03:23:37Z",
+  "status": "active",
+  "tests": [
+    "Run python3 -m unittest discover -s tests -p 'test_*.py' and repeat under the second supported Python version when available.",
+    "Run accepted-only corpus validation, public catalog build, public package schema validation, prohibited-field scan, semantic parity checks, and two-clean-build hash comparison.",
+    "Use a fresh local server and browser session for all 21 required quality targets, keyboard flows, downloaded-byte checks, page-overflow checks, and reduced-motion checks.",
+    "Run the repository harness quality gate on changed human-facing text and use the independent Unslop reviewer for interface copy.",
+    "Require written pass or exact blocker findings from the plan verifier, technical verifier, and Unslop reviewer after the final repair."
+  ],
+  "wave_id": "wave-5-integration-render-and-independent-review",
+  "wave_number": 5,
+  "work_items": [
+    "Rebuild the public corpus and package trees twice from clean temporary roots and record deterministic path and hash evidence.",
+    "Run the entire Python test suite on both supported Python versions when both are available, plus corpus validation, public-only scans, schema checks, parity checks, and manifest-byte checks.",
+    "Serve the Site locally and capture fresh wide, tablet, and mobile evidence for every required quality target, including loading, empty, error, permission-denied, comparison, method, and reduced-motion states.",
+    "Compare renders with the approved Evidence Exchange direction and reference lock, checking relationship fidelity and copied-identity exclusions.",
+    "Send the complete result to three independent reviewers with separate plan, technical, and Unslop mandates. Repair exact blockers and rerun the affected checks.",
+    "Write one acceptance receipt with commands, test counts, target evidence, hashes, reviewer decisions, remaining limits, and external actions still awaiting approval. Update BUILD_STATE.md only after every required item has a terminal result."
+  ],
+  "worker_id": "root"
+}

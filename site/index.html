@@ -4,158 +4,318 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="A reviewed library of design systems, product interfaces, mobile patterns, and editorial references.">
+  <meta name="description" content="A public library of 60 reviewed design references with evidence, provenance, limitations, and matching readable and structured downloads.">
   <title>Design Reference Library</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=benchmark2-wave5">
 </head>
 <body>
-  <a class="skip-link" href="#catalog">Skip to the reference catalog</a>
+  <a class="skip-link" href="#catalog-screen">Skip to the public catalog</a>
 
-  <header class="hero shell">
-    <nav class="masthead" aria-label="Site">
+  <header class="site-header">
+    <nav class="shell masthead" aria-label="Site">
       <a class="wordmark" href="./" aria-label="Design Reference Library home">
         <span class="wordmark-mark" aria-hidden="true">DR</span>
-        <span>Reference Library</span>
+        <span>Design Reference Library</span>
       </a>
-      <a class="method-link" href="#method">Method</a>
+      <p class="public-count"><strong id="public-count">60</strong> reviewed public cases</p>
+      <div class="site-links">
+        <a href="#catalog-screen">Catalog</a>
+        <a href="#method">Method</a>
+      </div>
     </nav>
 
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Reviewed design corpus / alpha</p>
-        <h1>Borrow the<br><em>relationship,</em><br>not the skin.</h1>
+    <div class="shell hero-grid">
+      <div class="hero-index technical-label" aria-hidden="true">Evidence Exchange / 01</div>
+      <div class="hero-title">
+        <p class="kicker">Public design evidence, organized for study</p>
+        <h1>Design references with their <em>evidence attached.</em></h1>
       </div>
-      <div class="hero-copy">
-        <p class="lede">A working library of design systems, product interfaces, mobile patterns, and editorial references. Each case turns public evidence into original, reusable design reasoning.</p>
-        <dl class="hero-stats" aria-label="Corpus status">
-          <div><dt id="case-count">60</dt><dd>reviewed cases</dd></div>
-          <div><dt>6</dt><dd>coverage lanes</dd></div>
-          <div><dt>0</dt><dd>copied assets</dd></div>
-        </dl>
+      <div class="hero-copy measure">
+        <p>Study how public design references address recurring problems. Each case separates source observations from our analysis, names what remains unknown, and offers matching readable and structured files.</p>
+        <a class="text-link" href="#method">Read the method</a>
       </div>
     </div>
+
+    <dl class="shell proof-strip" aria-label="Library contract">
+      <div><dt id="case-count">60</dt><dd>reviewed cases</dd></div>
+      <div><dt>6</dt><dd>coverage lanes</dd></div>
+      <div><dt>2</dt><dd>matching formats</dd></div>
+      <div><dt>0</dt><dd>copied source assets</dd></div>
+    </dl>
   </header>
 
-  <main id="catalog" class="shell" tabindex="-1">
-    <section class="catalog-intro" aria-labelledby="catalog-title">
-      <p class="section-number" aria-hidden="true">01</p>
-      <div>
-        <p class="kicker">Explore the corpus</p>
-        <h2 id="catalog-title">Find a useful starting point.</h2>
+  <main>
+    <section id="catalog-screen" class="screen shell" data-screen="catalog" aria-labelledby="catalog-title" tabindex="-1">
+      <header class="section-heading grid-12">
+        <p class="section-index technical-label">01 / Catalog</p>
+        <div class="section-title">
+          <p class="kicker">Find a useful reference</p>
+          <h2 id="catalog-title">Start with the problem, then inspect the evidence.</h2>
+        </div>
+        <p class="section-copy measure">Search all 60 cases, use one of six lanes, or narrow by the six approved facets. Full evidence loads only when you open a case.</p>
+      </header>
+
+      <section class="catalog-tools" aria-label="Catalog controls">
+        <div class="search-wrap">
+          <label for="search">Search all 60 public cases</label>
+          <div class="search-field">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+            <input id="search" type="search" autocomplete="off" placeholder="Try dashboard, civic service, mobile commerce">
+            <button id="clear-search" class="compact-button" type="button" hidden>Clear search</button>
+          </div>
+        </div>
+
+        <div id="lane-filters" class="lane-filters" aria-label="Six corpus lanes"></div>
+
+        <details id="advanced-filters" class="advanced-filters">
+          <summary>
+            <span>Six advanced facets</span>
+            <span id="active-filter-count" class="status-chip" hidden>0 active</span>
+          </summary>
+          <div class="filter-grid">
+            <label for="platform">Platform<select id="platform"><option value="">All platforms</option></select></label>
+            <label for="product-type">Product type<select id="product-type"><option value="">All product types</option></select></label>
+            <label for="archetype">Archetype<select id="archetype"><option value="">All archetypes</option></select></label>
+            <label for="media">Media strategy<select id="media"><option value="">All media strategies</option></select></label>
+            <label for="density">Density<select id="density"><option value="">All densities</option></select></label>
+            <label for="evidence">Evidence quality<select id="evidence"><option value="">All evidence levels</option></select></label>
+          </div>
+          <button id="reset-filters" class="text-button" type="button">Reset every filter</button>
+        </details>
+      </section>
+
+      <div class="results-head">
+        <p id="status" role="status" aria-live="polite">Loading the public catalog.</p>
+        <p class="preview-boundary">Abstract previews are generated from public case fields. They are recognition cues, not evidence.</p>
+        <label class="sort-control" for="sort">Sort<select id="sort"><option value="name">A to Z</option><option value="lane">Coverage lane</option><option value="evidence">Evidence quality</option></select></label>
       </div>
-      <p>Search by a design problem, narrow by evidence and context, then open a case to inspect what transfers and what does not.</p>
+
+      <div id="catalog-recovery" class="catalog-recovery" hidden>
+        <button id="retry-catalog" class="button" type="button">Retry public catalog</button>
+      </div>
+
+      <section id="results" class="results" role="list" aria-label="Public reference cases" aria-busy="true"></section>
+      <div id="empty-state" class="empty-state" hidden>
+        <p class="kicker">No public cases match</p>
+        <h2>Widen the current search.</h2>
+        <p>The active filters remain intact. Clear them to return to all 60 public cases.</p>
+        <button id="empty-reset" class="button" type="button">Show all public cases</button>
+      </div>
     </section>
 
-    <section class="catalog-tools" aria-label="Catalog controls">
-      <div class="search-wrap">
-        <label for="search">Search all 60 cases</label>
-        <div class="search-field">
-          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.1-5.4a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
-          <input id="search" type="search" autocomplete="off" placeholder="Try dashboard, civic service, mobile commerce">
-          <button id="clear-search" class="clear-search" type="button" hidden>Clear</button>
+    <section id="method" class="screen method-screen" data-screen="method" aria-labelledby="method-title">
+      <div class="shell section-heading grid-12">
+        <p class="section-index technical-label">02 / Method</p>
+        <div class="section-title">
+          <p class="kicker">How to read and use the library</p>
+          <h2 id="method-title">Evidence is a boundary, not a badge.</h2>
         </div>
+        <p class="section-copy measure">The library records what a public source supports, what the corpus infers, what it recommends, and what it cannot establish. A public package does not certify an adaptation or guarantee an outcome.</p>
       </div>
 
-      <div id="lane-filters" class="lane-filters" aria-label="Corpus lanes"></div>
+      <div class="shell method-grid">
+        <section aria-labelledby="truth-title">
+          <p class="technical-label">Truth classes</p>
+          <h3 id="truth-title">Keep each claim’s evidence status visible.</h3>
+          <dl class="method-definitions">
+            <div><dt>Observed</dt><dd>Directly supported by a cited public source.</dd></div>
+            <div><dt>Inferred</dt><dd>Corpus analysis of source patterns, not the source owner’s stated intent.</dd></div>
+            <div><dt>Recommended</dt><dd>Adaptation guidance, not a source claim or outcome guarantee.</dd></div>
+            <div><dt>Unknown</dt><dd>Not established by the inspected public material.</dd></div>
+          </dl>
+        </section>
 
-      <details class="advanced-filters">
-        <summary>
-          <span>More filters</span>
-          <span id="active-filter-count" class="filter-count" hidden>0</span>
-        </summary>
-        <div class="filter-grid">
-          <label for="platform">Platform<select id="platform"><option value="">All platforms</option></select></label>
-          <label for="product-type">Product type<select id="product-type"><option value="">All product types</option></select></label>
-          <label for="archetype">Archetype<select id="archetype"><option value="">All archetypes</option></select></label>
-          <label for="media">Media strategy<select id="media"><option value="">All media strategies</option></select></label>
-          <label for="density">Density<select id="density"><option value="">All densities</option></select></label>
-          <label for="evidence">Evidence<select id="evidence"><option value="">All evidence levels</option></select></label>
-        </div>
-        <button id="reset-filters" class="text-button" type="button">Reset every filter</button>
-      </details>
-    </section>
+        <section aria-labelledby="originality-title">
+          <p class="technical-label">Originality boundary</p>
+          <h3 id="originality-title">Borrow relationships, not identity.</h3>
+          <p class="measure">Use the documented hierarchy, density, state logic, or component relationship as a starting point. Do not copy source geometry, branded colors, fonts, logos, screenshots, or decorative assets.</p>
+        </section>
 
-    <div class="results-head">
-      <p id="status" role="status" aria-live="polite">Loading the reviewed catalog...</p>
-      <label class="sort-control" for="sort">Sort<select id="sort"><option value="name">A to Z</option><option value="lane">Coverage lane</option><option value="evidence">Evidence quality</option></select></label>
-    </div>
+        <section aria-labelledby="package-method-title">
+          <p class="technical-label">Package use</p>
+          <h3 id="package-method-title">Understand, verify, choose, download.</h3>
+          <ol class="decision-sequence">
+            <li><span>01</span><p>Read the case context, intent, value, and quality.</p></li>
+            <li><span>02</span><p>Inspect claim-level evidence, provenance, limitations, and unknowns.</p></li>
+            <li><span>03</span><p>Compare the readable and structured file contents.</p></li>
+            <li><span>04</span><p>Choose the format that fits the next task.</p></li>
+          </ol>
+        </section>
 
-    <section id="results" class="results" aria-label="Reference cases" aria-busy="true"></section>
-    <div id="empty-state" class="empty-state" hidden>
-      <p class="kicker">No match</p>
-      <h2>Try a wider search.</h2>
-      <p>Remove one filter or search for a broader design problem.</p>
-      <button id="empty-reset" class="button" type="button">Show all cases</button>
-    </div>
-
-    <section id="method" class="method" aria-labelledby="method-title">
-      <p class="section-number" aria-hidden="true">02</p>
-      <div class="method-title">
-        <p class="kicker">How to use this library</p>
-        <h2 id="method-title">Evidence in.<br>Design judgment out.</h2>
+        <section class="privacy-band" aria-labelledby="privacy-title">
+          <p class="technical-label">What stays private</p>
+          <h3 id="privacy-title">Only reviewed public fields belong here.</h3>
+          <p class="measure">Downloads exclude source notes, reviewer identities, internal paths, archive details, operational values, non-public cases, and third-party assets. Evidence IDs are scoped to each case.</p>
+        </section>
       </div>
-      <ol class="method-steps">
-        <li><span>01</span><div><h3>Observe the owner source</h3><p>Record visible behavior, structure, and system choices without copying its assets.</p></div></li>
-        <li><span>02</span><div><h3>Name the relationship</h3><p>Explain why the parts work together, including limits and failure modes.</p></div></li>
-        <li><span>03</span><div><h3>Adapt with intent</h3><p>Transfer the useful logic into a new context. Do not reproduce the original surface.</p></div></li>
-      </ol>
-      <p class="method-note">Every case links back to its owner-published source. Inferences are labeled separately from observations.</p>
     </section>
   </main>
 
   <aside id="compare-tray" class="compare-tray" aria-label="Comparison selection" hidden>
-    <div>
-      <p><strong id="compare-count">0</strong> of 5 selected</p>
+    <div class="compare-selection">
+      <p id="comparison-limit-note"><strong id="compare-count">0</strong> of 5 selected. Choose at least 2.</p>
       <div id="comparison" class="comparison" aria-live="polite"></div>
     </div>
     <div class="compare-actions">
-      <button id="clear-compare" class="text-button" type="button">Clear</button>
-      <button id="open-compare" class="button button-dark" type="button">Compare cases</button>
+      <button id="clear-compare" class="text-button" type="button">Clear selection</button>
+      <button id="open-compare" class="button button-primary" type="button" disabled>Compare cases</button>
     </div>
   </aside>
 
-  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title">
+  <dialog id="case-dialog" class="detail-dialog" aria-labelledby="case-title">
     <div class="dialog-shell">
       <div class="dialog-topbar">
-        <p id="case-lane" class="kicker"></p>
-        <button class="icon-button" type="button" data-close="case-dialog" aria-label="Close case">Close</button>
+        <p id="dialog-context" class="technical-label">Public case</p>
+        <button class="compact-button" type="button" data-close="case-dialog">Close</button>
       </div>
-      <div id="case-preview" class="detail-preview" aria-hidden="true"></div>
-      <header class="case-heading">
-        <div><p id="case-source" class="source-line"></p><h2 id="case-title"></h2></div>
-        <button id="dialog-compare" class="button" type="button"></button>
-      </header>
-      <div class="dialog-tabs" role="tablist" aria-label="Case sections">
-        <button id="tab-overview" type="button" role="tab" aria-selected="true" aria-controls="panel-overview" tabindex="0">Overview</button>
-        <button id="tab-analysis" type="button" role="tab" aria-selected="false" aria-controls="panel-analysis" tabindex="-1">Analysis</button>
-        <button id="tab-evidence" type="button" role="tab" aria-selected="false" aria-controls="panel-evidence" tabindex="-1">Evidence</button>
-      </div>
-      <div id="panel-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-overview"></div>
-      <div id="panel-analysis" class="tab-panel prose" role="tabpanel" aria-labelledby="tab-analysis" hidden></div>
-      <div id="panel-evidence" class="tab-panel" role="tabpanel" aria-labelledby="tab-evidence" hidden></div>
+
+      <article id="case-screen" data-screen="case" aria-labelledby="case-title">
+        <header class="case-heading grid-12">
+          <div class="case-identity">
+            <p id="case-lane" class="kicker"></p>
+            <h2 id="case-title"></h2>
+            <p id="case-source" class="source-line"></p>
+          </div>
+          <div id="case-preview" class="detail-preview" aria-hidden="true"></div>
+          <div class="case-heading-actions">
+            <button id="dialog-compare" class="button" type="button"></button>
+          </div>
+        </header>
+
+        <nav class="local-nav" aria-label="Case sections">
+          <a href="#case-context-region">Context and use</a>
+          <a href="#case-analysis-region">Analysis</a>
+          <a href="#case-evidence-region">Evidence and limits</a>
+        </nav>
+
+        <div id="case-loading" class="loading-region">
+          <p id="case-loading-message" role="status" aria-live="polite">Loading the public case package.</p>
+          <button id="case-loading-return" class="text-button" type="button">Return to catalog</button>
+        </div>
+        <div id="case-content" hidden>
+          <section id="case-context-region" class="case-region" aria-labelledby="case-context-title">
+            <p class="region-index technical-label">01 / Context and use</p>
+            <h3 id="case-context-title">What this case helps explain</h3>
+            <div id="case-context-content"></div>
+          </section>
+
+          <section id="case-analysis-region" class="case-region" aria-labelledby="case-analysis-title">
+            <p class="region-index technical-label">02 / Analysis</p>
+            <h3 id="case-analysis-title">Transferable design relationships</h3>
+            <div id="case-analysis-content"></div>
+          </section>
+
+          <section id="case-evidence-region" class="case-region" aria-labelledby="case-evidence-title">
+            <p class="region-index technical-label">03 / Evidence and limits</p>
+            <h3 id="case-evidence-title">What supports the case, and where it stops</h3>
+            <div id="case-evidence-content"></div>
+          </section>
+
+          <section class="package-entry-band" aria-labelledby="package-entry-title">
+            <div>
+              <p class="technical-label">Next decision</p>
+              <h3 id="package-entry-title">Review the download package</h3>
+              <p>The package screen repeats the context, evidence boundary, provenance, limitations, unknowns, and exact file details before either download becomes available.</p>
+            </div>
+            <button id="open-package" class="button button-primary" type="button">Review package</button>
+          </section>
+        </div>
+      </article>
+
+      <article id="package-screen" data-screen="package" aria-labelledby="package-title" hidden>
+        <header class="package-heading grid-12">
+          <button id="package-back" class="text-button package-back" type="button">Back to case</button>
+          <div class="package-title-block">
+            <p class="kicker">Download package</p>
+            <h2 id="package-title"></h2>
+            <p id="package-summary" class="measure"></p>
+          </div>
+          <p id="package-ready" class="status-label status-incomplete">Checking package files</p>
+        </header>
+
+        <section id="package-context-region" class="package-region" aria-labelledby="package-context-title">
+          <p class="region-index technical-label">01 / Context</p>
+          <h3 id="package-context-title">What this package is for</h3>
+          <div id="package-context-content"></div>
+        </section>
+
+        <section id="package-contents-region" class="package-region" aria-labelledby="package-contents-title">
+          <p class="region-index technical-label">02 / Contents</p>
+          <h3 id="package-contents-title">Two formats, one case record</h3>
+          <div id="format-specifications" class="format-specifications"></div>
+        </section>
+
+        <section id="package-evidence-region" class="package-region" aria-labelledby="package-boundary-title">
+          <p class="region-index technical-label">03 / Evidence boundary</p>
+          <h3 id="package-boundary-title">How to read the claims</h3>
+          <div id="package-boundary-content"></div>
+        </section>
+
+        <section id="package-provenance-region" class="package-region" aria-labelledby="package-provenance-title">
+          <p class="region-index technical-label">04 / Provenance</p>
+          <h3 id="package-provenance-title">Where the public material came from</h3>
+          <div id="package-provenance-content"></div>
+        </section>
+
+        <section id="package-limits-region" class="package-region" aria-labelledby="package-limits-title">
+          <p class="region-index technical-label">05 / Limitations and unknowns</p>
+          <h3 id="package-limits-title">What this package does not establish</h3>
+          <div id="package-limits-content"></div>
+        </section>
+
+        <section id="package-files-region" class="package-region" aria-labelledby="package-files-title">
+          <p class="region-index technical-label">06 / File details</p>
+          <h3 id="package-files-title">Exact files in this package</h3>
+          <div id="package-files-content" class="file-table-wrap" tabindex="0" aria-label="Package file details"></div>
+        </section>
+
+        <section id="package-actions-region" class="package-action-band" aria-labelledby="package-actions-title">
+          <div>
+            <p class="region-index technical-label">07 / Choose a file</p>
+            <h3 id="package-actions-title">Download after reviewing the contract</h3>
+            <p id="package-status" role="status" aria-live="polite">Downloads remain unavailable until both files match their manifest filenames, byte counts, and SHA-256 values.</p>
+            <div id="package-recovery-actions" class="recovery-actions" hidden>
+              <button id="retry-package" class="button" type="button">Retry package validation</button>
+              <button id="package-return" class="text-button" type="button">Return to case</button>
+            </div>
+          </div>
+          <div class="download-actions">
+            <a id="download-readable" class="button button-primary" href="#" aria-disabled="true">Download readable brief</a>
+            <a id="download-structured" class="button" href="#" aria-disabled="true">Download structured JSON</a>
+          </div>
+        </section>
+      </article>
     </div>
   </dialog>
 
   <dialog id="compare-dialog" class="compare-dialog" aria-labelledby="compare-title">
-    <div class="dialog-shell">
+    <div class="dialog-shell" data-screen="comparison">
       <div class="dialog-topbar">
-        <p class="kicker">Side by side</p>
-        <button class="icon-button" type="button" data-close="compare-dialog" aria-label="Close comparison">Close</button>
+        <p class="technical-label">Comparison / 2 to 5 public cases</p>
+        <button class="compact-button" type="button" data-close="compare-dialog">Close</button>
       </div>
-      <header class="compare-heading"><h2 id="compare-title">Compare selected cases</h2><p>Look for compatible relationships, not a collection of surface traits.</p></header>
-      <div id="compare-table" class="compare-table"></div>
+      <header class="compare-heading grid-12">
+        <div>
+          <p class="kicker">Side-by-side comparison</p>
+          <h2 id="compare-title">Compare relationships without blending the cases.</h2>
+        </div>
+        <p class="measure">The table keeps each case in its own column. Open any case to inspect its full evidence before applying a pattern.</p>
+      </header>
+      <div id="compare-table" class="compare-table" tabindex="0" role="region" aria-label="Selected case comparison table"></div>
     </div>
   </dialog>
 
-  <footer class="site-footer shell">
-    <p>Design Reference Library</p>
-    <p>Original analysis of public owner sources. No source assets are stored.</p>
+  <footer class="site-footer">
+    <div class="shell">
+      <p>Design Reference Library</p>
+      <p>Public evidence library. Original analysis of public owner sources. No source assets are stored.</p>
+    </div>
   </footer>
 
   <template id="loading-template">
-    <article class="case-card skeleton" aria-hidden="true"><div></div><span></span><span></span><span></span></article>
+    <article class="case-row skeleton" role="listitem" aria-hidden="true"><span></span><div></div><div></div><span></span></article>
   </template>
 
-  <script src="app.js" defer></script>
+  <script src="app.js?v=benchmark2-wave5-keyboard-focus" defer></script>
 </body>
 </html>

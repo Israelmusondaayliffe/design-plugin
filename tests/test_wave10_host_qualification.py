@@ -46,7 +46,7 @@ class Wave10HostQualificationTests(unittest.TestCase):
             json.loads((ROOT / "hosts/openai/.codex-plugin/plugin.json").read_text())["version"],
             json.loads((ROOT / "hosts/claude/.claude-plugin/plugin.json").read_text())["version"],
         }
-        self.assertEqual(versions, {"0.1.0-dev.10"})
+        self.assertEqual(versions, {"0.1.0-dev.11"})
 
     def test_installable_verifier_passes(self) -> None:
         completed = subprocess.run(

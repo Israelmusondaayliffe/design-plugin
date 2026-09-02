@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "ibm-carbon",
+    "source_url": "https://carbondesignsystem.com/",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "CARBON-E01",
+      "class": "observed",
+      "claim": "Carbon uses IBM Plex and separates productive product typography from expressive editorial typography.",
+      "source_locator": "https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E02",
+      "class": "observed",
+      "claim": "Carbon's 2x Grid uses an 8-pixel mini unit, fixed spacing multiples, and breakpoint-specific four, eight, and sixteen-column layouts.",
+      "source_locator": "https://carbondesignsystem.com/elements/2x-grid/overview/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E03",
+      "class": "observed",
+      "claim": "Carbon assigns stable semantic roles to color tokens while themes change the values, with neutral layers dominant and blue reserved for primary action.",
+      "source_locator": "https://carbondesignsystem.com/elements/color/overview/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E04",
+      "class": "observed",
+      "claim": "Carbon distinguishes productive from expressive motion, includes component microinteractions, and leaves page-level choreography to product teams.",
+      "source_locator": "https://carbondesignsystem.com/elements/motion/overview/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E05",
+      "class": "observed",
+      "claim": "Carbon assigns tabs to related content groups, content switchers to alternate views of the same content, and warns against tabs when users need to compare information in different groups.",
+      "source_locator": "https://carbondesignsystem.com/components/tabs/usage/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E06",
+      "class": "inferred",
+      "claim": "For this library, Carbon's useful identity is the relationship between dense working surfaces and selective expressive reading moments, not IBM-specific styling.",
+      "source_locator": "CARBON-E01 through CARBON-E05; project synthesis",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "CARBON-E07",
+      "class": "recommended",
+      "claim": "Keep target comparison content concurrently visible, using side-by-side columns when space permits and a complete sequential layout when it does not.",
+      "source_locator": "CARBON-E05; project recommendation",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "A visible grid and aligned regions should organize catalog controls, results, evidence, and downloads; comparison remains simultaneous rather than hidden behind tabs.",
+      "evidence_ids": ["CARBON-E02", "CARBON-E05", "CARBON-E07"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "typography": {
+      "finding": "Compact productive type should govern filters, metadata, controls, and structured data while expressive scale appears only in page-level explanation and selected case narrative.",
+      "evidence_ids": ["CARBON-E01", "CARBON-E06"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "color": {
+      "finding": "Color must be assigned by role across action, focus, status, text, border, and layer tokens; literal IBM hues are rejected.",
+      "evidence_ids": ["CARBON-E03"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "density": {
+      "finding": "Working surfaces stay compact enough for scanning while reading and explanation surfaces gain more line height and space.",
+      "evidence_ids": ["CARBON-E01", "CARBON-E02", "CARBON-E06"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "imagery": {
+      "finding": "The inspected Carbon sources do not establish a transferable imagery rule for this product; the target may use original evidence graphics or no imagery.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "Motion should explain state change and continuity in controls; expressive page motion is optional and must remain subordinate to reading and reduced-motion behavior.",
+      "evidence_ids": ["CARBON-E04"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "interaction": {
+      "finding": "Component choice follows information relationships: tabs for related groups, switches for alternate views, and persistent layouts for comparison.",
+      "evidence_ids": ["CARBON-E05", "CARBON-E07"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "hierarchy": {
+      "finding": "The hierarchy must make the user's current job visible by separating productive controls from expressive explanation and by keeping comparison content concurrently available.",
+      "evidence_ids": ["CARBON-E01", "CARBON-E05", "CARBON-E06", "CARBON-E07"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "surfaces": {
+      "finding": "Depth comes from contextual layers, borders, and spacing rather than decorative cards or shadows applied to every block.",
+      "evidence_ids": ["CARBON-E03"],
+      "confidence": "high",
+      "trait_status": "essential"
+    }
+  },
+  "essential_traits": [
+    "Productive working typography paired with selective expressive hierarchy",
+    "A visible grid that aligns dense controls, content, and evidence",
+    "Role-based color and contextual surface layers",
+    "Component selection based on information relationships",
+    "Compact scanning density without cramped reading"
+  ],
+  "incidental_traits": [
+    "The IBM Plex family",
+    "IBM's literal blue and gray values",
+    "IBM logos, naming, product copy, and source illustrations"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Neutral layers carry structure while a narrow action color and semantic states carry meaning.",
+      "target_role": "Original neutral surfaces carry hierarchy; one original action color and distinct status roles remain semantic.",
+      "action": "adapt",
+      "reason": "The role discipline transfers, while IBM's palette is source identity."
+    },
+    {
+      "domain": "media",
+      "source_role": "No single transferable media rule was established by the inspected foundation and component pages.",
+      "target_role": "Use only original diagrams, data previews, or screenshots created from the library's own public data when they clarify evidence.",
+      "action": "reject",
+      "reason": "A borrowed image treatment would exceed the evidence and risk copying identity."
+    },
+    {
+      "domain": "density",
+      "source_role": "Productive interfaces are compact; expressive moments use larger scale and more space.",
+      "target_role": "Catalog and download controls remain compact; case explanation and methodology receive a calmer reading rhythm.",
+      "action": "preserve",
+      "reason": "This is the central Carbon relationship that fits the product's two modes."
+    },
+    {
+      "domain": "typography",
+      "source_role": "Separate productive and expressive type sets by task.",
+      "target_role": "Separate utility, evidence, and narrative styles with original fonts and values.",
+      "action": "adapt",
+      "reason": "The hierarchy transfers without copying IBM Plex."
+    },
+    {
+      "domain": "interaction",
+      "source_role": "Choose tabs, switches, or concurrent layouts according to the content relationship.",
+      "target_role": "Keep case sections grouped, view modes switchable, and comparisons visible side by side.",
+      "action": "preserve",
+      "reason": "The information model directly matches the target's tasks."
+    }
+  ],
+  "misuse_risks": [
+    "Copying IBM blue, IBM Plex, square component geometry, or shell styling while losing the productive and expressive division.",
+    "Making every surface equally dense or equally spacious.",
+    "Using tabs to hide content that users need to compare.",
+    "Adding layered gray panels without assigning each layer a structural role."
+  ],
+  "evidence_limitations": [
+    "Public documentation was inspected through text extraction rather than measured screenshots.",
+    "No target-specific image system, animation duration, or easing value was established.",
+    "Owner accessibility status does not prove the target implementation."
+  ],
+  "confidence": "high"
+}

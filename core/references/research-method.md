@@ -91,9 +91,9 @@ Candidates below the evidence or craft floor are rejected from eligibility befor
 
 For substantial work:
 
-- 8–12 candidates is a useful default range
-- 5–8 receive full forensic dossiers
-- 3–5 become user-facing directions
+- 8 to 12 candidates is a useful default range
+- 5 to 8 receive full forensic dossiers
+- 3 to 5 become user-facing directions
 
 More candidates do not automatically create better research. Stop when additional sources are no longer changing the decision space.
 
@@ -147,7 +147,9 @@ Weak examples:
 
 ## Primary and secondary references
 
-Every direction has one primary foundation. For substantial work, the direction set uses distinct primary foundations as an additional anti-cosmetic-variation guard. Supporting references need named narrow jobs.
+Every direction has one primary foundation. Substantial work uses `distinct-primary-foundations` by default as an additional anti-cosmetic-variation guard. Supporting references need named narrow jobs.
+
+An approved brief may instead require several adaptations of one dominant foundation. In that case, set `direction_strategy` to `single-foundation-adaptations`. All directions must share one primary slug, carry unique non-empty `adaptation_axis` values, and still differ in at least four of the nine signature dimensions. The exception changes how distinctness is proved. It does not permit cosmetic variants or co-equal supporting foundations.
 
 Good:
 

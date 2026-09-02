@@ -1,0 +1,377 @@
+# DESIGN
+
+Generated from the approved Design system definition. Recompile after changing the structured source.
+
+## Artifact bindings
+
+- Approved understanding SHA-256: `ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced`
+- Approved direction SHA-256: `ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5`
+- Reference lock SHA-256: `1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449`
+- UX definition SHA-256: `cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502`
+
+## Provenance and Confidence
+
+- Treat the approved shared understanding, direction decision, direction set, reference lock, and UX definition as the authority chain for this system.
+- Label source observations, project inferences, recommendations, limitations, and unknowns as different truth classes. Do not promote an inference or recommendation into a source fact.
+- Bind claim-level evidence to a stable evidence ID, source URL, retrieval date, and limitation when those fields exist in the approved public projection.
+- The reference lock has high confidence. Literal token values and implementation details remain project recommendations until render, accessibility, and runtime checks pass.
+
+Evidence:
+- `.design/shared-understanding.md`
+- `.design/directions/decision.md`
+- `.design/directions/direction-set.json`
+- `.design/system/reference-lock.json`
+- `.design/system/ux-definition.json`
+
+## Approved Shared Understanding
+
+- Build a public Design Reference Library that lets a person find, understand, compare, and download each of 60 reviewed public design cases.
+- Make each case useful to people and tools through equivalent readable and structured outputs. Human-readable information is not secondary to machine-readable data.
+- Show context, intent, value, quality, evidence, provenance, limitations, and unknowns before the visitor downloads a file.
+- Keep private or operational material out of the public catalog and public downloads, including source notes, review identities, internal paths, archive URLs, redirect history, and operational notes.
+- Keep the Site dependency-free, local-only, and static during this benchmark unless a later approved plan changes that boundary.
+
+Evidence:
+- `.design/shared-understanding.md`
+
+## Design North Star
+
+- Every download is an explained evidence package, not an unexplained file action.
+- Lead with the decision a person must make: what the case is, why it matters, what the package contains, what supports it, and where its limits are.
+- Use technical detail to make the package precise after the human explanation has established meaning.
+
+Evidence:
+- `.design/directions/decision.md`
+- `.design/system/reference-lock.json`
+
+## Product and User Principles
+
+- A first-time visitor must be able to orient before encountering dense controls or file metadata.
+- A repeat visitor must be able to search, filter, compare, and reach a package without losing current state.
+- A person must be able to explain a case's useful design relationships and limits before applying it.
+- A tool must receive stable field meanings, explicit truth classes, and deterministic output without requiring private project context.
+- A failure must retain useful context and name the exact recovery action.
+
+Evidence:
+- `.design/shared-understanding.md`
+- `.design/system/ux-definition.json`
+
+## Reference Foundation
+
+- IBM Carbon is the sole dominant visual foundation for grid alignment, productive and expressive density, semantic color roles, contextual layers, and relationship-based component choice.
+- Vercel Geist contributes only typography detail: distinguish explanation, labels, provenance, tabular values, file metadata, and machine identifiers.
+- GOV.UK contributes only form behavior: name the exact validation, availability, or download problem and provide a specific remedy.
+- GitHub Primer contributes only mobile behavior: reflow the package without removing context, evidence, format choice, limitations, or actions.
+- Transfer relationships and behavior, not source identity, source geometry, branded fonts, palettes, logos, or product shells.
+
+Evidence:
+- `CARBON-E01`
+- `CARBON-E02`
+- `CARBON-E03`
+- `CARBON-E05`
+- `GEIST-E03`
+- `GEIST-E05`
+- `GOVUK-E04`
+- `GOVUK-E05`
+- `PRIMER-E02`
+- `PRIMER-E05`
+
+## Reference Lock
+
+- Preserve the visible alignment between context, evidence, metadata, limitations, and file actions.
+- Preserve the distinction between open reading space and compact technical detail.
+- Preserve stable roles for action, focus, status, border, and contextual surfaces.
+- Permit original system and serif font stacks, an original warm neutral palette, and dimensions suited to the existing static Site.
+- Forbid copied Carbon geometry, IBM blue, Geist monochrome identity, GOV.UK styling, GitHub shell patterns, source logos, borrowed fonts, and third-party assets.
+
+Evidence:
+- `.design/system/reference-lock.json`
+
+## Information Architecture
+
+- Use one public library with five task regions: catalog, case, download package, comparison, and method.
+- Keep the download package inside the case decision path so context and limitations precede file actions.
+- Keep method guidance reachable from the catalog and package without requiring a download.
+- Keep search, lane filters, six approved facets, sorting, case selection, and comparison state visible at the point where they affect results.
+- Do not expose a navigation path to private, review, blocked, or invalid case data.
+
+Evidence:
+- `.design/system/ux-definition.json`
+
+## Screens and User Flows
+
+- Implement the catalog, case-detail, download-package, comparison, and method screens defined in the UX source.
+- Preserve four complete flows: find and understand a case, compare cases, inspect and download a public case, and understand the method.
+- Every screen must implement default, loading, empty, error, and permission-denied states without clearing valid context.
+- The download flow succeeds only when the named readable or structured file is produced from the approved public projection after its package contract is visible.
+- Invalid or non-public identifiers must return to public context without revealing hidden fields.
+
+Evidence:
+- `.design/system/ux-definition.json`
+
+## Layout and Grid
+
+- Use a visible 12-column wide grid, a 6-column medium grid, and a 4-column compact grid as alignment logic rather than as decoration.
+- Align package identity, context, evidence, limitations, format detail, and action bands to shared column edges.
+- Limit sustained prose to about 68 characters per line and allow manifests, tables, and metadata to use the wider task region.
+- Use full-width rules and contextual bands to mark changes in information job. Avoid a uniform card grid.
+- Place the primary page container at a maximum readable width while allowing the bounded comparison region to use available horizontal space.
+
+Evidence:
+- `.design/system/reference-lock.json`
+- `CARBON-E01`
+- `CARBON-E03`
+
+## Responsive Strategy
+
+- Use the approved base, compact, medium, and wide breakpoints as re-composition thresholds, not device labels.
+- Keep identity, context, value, evidence quality, limitations, and the primary action in that priority order at every width.
+- Show readable and structured formats side by side only when both remain legible. Otherwise present complete sequential sections.
+- Keep only the comparison table inside a labeled bounded horizontal scroll region. The page itself must not overflow horizontally.
+- Collapse advanced filters on narrow layouts without removing any filter, active-state summary, or reset action.
+
+Evidence:
+- `.design/system/ux-definition.json`
+- `PRIMER-E02`
+- `PRIMER-E05`
+
+## Typography
+
+- Use an original serif system stack for case theses and restrained section emphasis, an original sans system stack for reading and controls, and a system monospace stack for identifiers and exact file data.
+- Human explanation must lead each screen. Labels, provenance, tabular values, file details, evidence IDs, and machine identifiers must form visibly subordinate technical registers.
+- Use sentence case for headings, labels, buttons, errors, and status text.
+- Use tabular numerals for counts, dates, sizes, and aligned values when the font supports them.
+- Do not reduce metadata below a readable size or use type weight alone to communicate state.
+
+Evidence:
+- `GEIST-E03`
+- `GEIST-E05`
+- `.design/system/reference-lock.json`
+
+## Color and Semantic Roles
+
+- Use an original warm neutral canvas and layered surfaces. Do not use IBM blue or reproduce any reference palette.
+- Reserve the primary accent for direct action and current selection, and use a distinct focus color that remains visible against every approved surface.
+- Assign stable text-backed roles for ready, incomplete, unavailable, stale, warning, and error states.
+- Use border and surface contrast to separate information jobs before adding color.
+- Treat literal colors as proposed token values until automated contrast checks and fresh rendered inspection pass.
+
+Evidence:
+- `.design/system/tokens.source.json`
+- `CARBON-E02`
+
+## Spacing and Density
+
+- Use a 4-pixel foundation with named 8, 12, 16, 24, 32, 48, and 64-pixel steps.
+- Use compact spacing for filters, manifests, evidence records, file metadata, and comparison rows.
+- Use open spacing for case context, intent, value, quality, limitations, and method explanations.
+- Increase structure through section spacing and alignment before introducing new containers.
+- Preserve at least 44 by 44 CSS pixels for primary mobile controls even when surrounding data is compact.
+
+Evidence:
+- `.design/system/tokens.source.json`
+- `.design/system/ux-definition.json`
+
+## Surfaces, Borders, Radius, and Elevation
+
+- Use canvas, primary surface, and secondary surface as the main contextual layers.
+- Use one-pixel borders and full-width rules to separate catalog, evidence, limitation, format, and action regions.
+- Use square or small-radius controls. Reserve pill geometry for compact status or selected-filter labels whose shape carries grouping meaning.
+- Avoid decorative shadows. Use elevation only when a dialog must separate from the page, and pair it with a visible border and modal semantics. Preserve --shadow as an explicitly unmapped legacy CSS value until it is removed or replaced by a tested dialog-only CSS shadow.
+- Do not wrap every case, fact, or section in a floating card.
+
+Evidence:
+- `.design/system/reference-lock.json`
+- `CARBON-E03`
+
+## Components and States
+
+- Required components are search, lane selector, advanced filters, sort, result row or tile, case detail, evidence record, status label, comparison selector, bounded comparison table, format specification, limitation notice, download action, retry action, dialog, and status announcement.
+- Each interactive component must define default, hover when relevant, focus-visible, active or selected, disabled, loading, success when relevant, and error when relevant.
+- Use grouping for related content, switching for mutually exclusive readable and structured views, and concurrent presentation for information that must be compared.
+- A disabled action must preserve its label and explain the unmet condition in nearby text or an accessible description.
+- Do not use placeholders as content or render an empty generated file as a successful state.
+
+Evidence:
+- `.design/system/ux-definition.json`
+- `CARBON-E05`
+
+## Navigation
+
+- Keep the library title, public case count, method entry, and current task context visible in the application shell.
+- Encode search, filters, sort, selected comparison cases, and open case in the existing query-string contract so refresh and back behavior preserve valid state.
+- Use stable back or close actions for detail and package views and restore focus to the invoking control.
+- Mark current lane, active filters, selected cases, open case, and active package format in text and programmatic state.
+- Do not require a separate application shell, account menu, or hidden navigation drawer for this benchmark.
+
+Evidence:
+- `.design/system/ux-definition.json`
+- `site/app.js`
+
+## Forms and Validation
+
+- Give every search, filter, sort, format, and comparison control a visible or programmatically associated label.
+- Validate case visibility and public projection before enabling a download. Never expose a file while validation is unresolved or failed.
+- Name the affected case, field, or format in an error and give one specific next action such as clear filters, retry, return, reload, or rebuild.
+- Keep valid query, selection, format, and package context after an error.
+- Announce validation and download status without moving focus unless the current focus becomes invalid.
+
+Evidence:
+- `GOVUK-E04`
+- `GOVUK-E05`
+- `.design/system/ux-definition.json`
+
+## Icons
+
+- Prefer text labels for search, compare, format, download, retry, return, and close actions.
+- If an icon is needed, use an original inline SVG with a 24-pixel view box, currentColor strokes or fills, and simple geometry.
+- Hide decorative icons from assistive technology. Give a meaningful icon an accessible name only when nearby text does not already provide it.
+- Do not copy an icon set from a reference system or use an icon as the only status signal.
+
+Evidence:
+- `.design/system/reference-lock.json`
+
+## Imagery and Media
+
+- Use only original abstract previews or data diagrams derived from approved public case fields.
+- A preview may help recognition or demonstrate package content, but it must not act as provenance or quality proof.
+- Do not copy source screenshots, logos, branded illustrations, font files, videos, or third-party binary assets into the Site or downloads.
+- Keep every task and claim complete when imagery is missing, disabled, or not rendered.
+- Label generated diagrams with the case and the public fields they summarize.
+
+Evidence:
+- `.design/system/reference-lock.json`
+- `.design/shared-understanding.md`
+
+## Motion and Feedback
+
+- Use motion only to connect a direct state change such as filter disclosure, format selection, dialog entry, validation, or download completion.
+- Use the fast token for control feedback and the moderate token only for larger region changes.
+- When reduced motion is requested, remove nonessential transitions and preserve every state through text, contrast, and position.
+- Use a polite live status for loading and successful download preparation, and an assertive message only when immediate correction is required.
+- Do not use scroll choreography, parallax, looping decoration, or motion as evidence.
+
+Evidence:
+- `.design/system/tokens.source.json`
+- `.design/system/ux-definition.json`
+
+## Accessibility
+
+- Target WCAG 2.2 AA and verify keyboard access, visible focus, semantic structure, programmatic names and states, contrast, text resizing, reduced motion, and overflow.
+- Maintain DOM order, reading order, focus order, and visual decision order across responsive layouts.
+- Restore focus after a dialog closes and keep focus inside an open modal dialog without hiding the close action.
+- Provide text with every status color and table headers for every comparison relationship.
+- Treat automated checks as support evidence. Fresh keyboard use, screen-size inspection, and rendered review remain required before acceptance.
+
+Evidence:
+- `.design/system/ux-definition.json`
+
+## Content and Interface Copy
+
+- Write in plain language for an intelligent reader who does not know the project or its internal vocabulary.
+- Name context, intent, value, quality, evidence, provenance, limitations, unknowns, format contents, and file details with stable labels.
+- Use observable statements. Do not call a package trustworthy, complete, accessible, private, or equivalent unless the relevant checks pass.
+- Keep source observations, project analysis, recommendations, and unknowns visibly distinct.
+- Use exact error copy that identifies the failed case or format and tells the visitor what to do next.
+
+Evidence:
+- `.design/shared-understanding.md`
+- `.design/system/ux-definition.json`
+
+## Mobile-Specific Rules
+
+- Use a task-first single column for catalog, case, package, and method content at the base viewport.
+- Place case identity, context, evidence quality, limitations, format choice, and download action in the same decision order as wide layouts.
+- Keep primary controls at least 44 by 44 CSS pixels and make filter disclosure, close, retry, compare, and download reachable without pointer precision.
+- Keep the comparison table in one labeled, keyboard-reachable horizontal scroll region while the page remains within the viewport.
+- Do not remove evidence, file details, limitations, recovery actions, filters, or format choices to make the layout fit.
+
+Evidence:
+- `PRIMER-E02`
+- `PRIMER-E05`
+- `.design/system/ux-definition.json`
+
+## Figma Handoff Rules
+
+- Use the repository system definition, UX source, generated DESIGN.md, token projections, implementation plan, and render evidence as the approved handoff mode for this benchmark.
+- Do not claim a Figma file, component library, variable collection, or prototype exists.
+- A future Figma write requires direct access and separate authorization, and it must preserve the approved repository bindings.
+
+Evidence:
+- `.design/system/ux-definition.json`
+
+## Implementation Rules
+
+- Keep the current dependency-free HTML, CSS, and JavaScript architecture unless implementation evidence proves it cannot meet an approved requirement.
+- Generate a separate deterministic public projection for readable and structured downloads. Do not copy or expose raw corpus directories.
+- Readable and structured outputs must carry the same supported claims, evidence IDs, provenance, limitations, and unknowns even when their presentation differs.
+- Map existing CSS variables with valid semantic projections and migrate by role. Preserve the current --shadow value outside generated token projections until it is removed or replaced by a tested dialog-only CSS shadow.
+- Add tests for exactly 60 public cases, public-only projection, privacy exclusions, semantic parity, deterministic builds, hostile content and filenames, invalid cases, missing data, failed validation, and browser download failure.
+- Do not begin Site or corpus implementation until the repository-change gate records the exact approval phrase.
+
+Evidence:
+- `.design/implementation/plan.md`
+- `.design/system/tokens.source.json`
+- `corpus/scripts/build_catalog.py`
+- `site/README.md`
+
+## Explicit Do Rules
+
+- Do show package context, contents, evidence boundary, provenance, limitations, unknowns, and file details before the download action.
+- Do preserve all 60 accepted public cases and the six-lane catalog contract.
+- Do give people a readable file and tools a structured JSON file from one approved public semantic model.
+- Do keep comparison content concurrently inspectable and preserve valid state through navigation and recovery.
+- Do verify privacy, parity, determinism, responsive behavior, accessibility behavior, and rendered fidelity before claiming acceptance.
+
+Evidence:
+- `.design/shared-understanding.md`
+- `.design/system/ux-definition.json`
+
+## Explicit Do-Not Rules
+
+- Do not offer a one-click file before the visitor can inspect its meaning and limits.
+- Do not expose source notes, reviewer identity, internal paths, archive URLs, redirect history, operational notes, private cases, or third-party assets.
+- Do not claim readable and structured parity from field counts alone. Compare their supported semantic content.
+- Do not use generic errors, placeholder prose, fabricated previews, decorative code, or copied brand identity.
+- Do not deploy, publish, push, release, install, create an account, or write to Figma under the repository-change approval. Each external action keeps its own approval boundary.
+
+Evidence:
+- `.design/system/reference-lock.json`
+- `.design/implementation/plan.md`
+
+## Decision Ledger
+
+- The approved direction is Evidence Exchange, recorded by the project owner on 2026-09-01 with the exact phrase Direction approved.
+- The direction decision SHA-256 is ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5 and the bound direction-set SHA-256 is 1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb.
+- The system-definition source binds reference lock 1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449 and UX definition cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502.
+- Repository changes remain unapproved until the state controller records the required phrase Repository changes approved against the compiled implementation plan.
+
+Evidence:
+- `.design/state.json`
+- `.design/directions/decision.md`
+- `.design/directions/direction-set.json`
+
+## Known Deviations
+
+- The current Site predates this system and is not evidence that the Evidence Exchange direction has been implemented.
+- The current public-data build copies more canonical case material than the approved download projection permits. Implementation must create a separate privacy-filtered projection before any public download is enabled.
+- Direct Figma handoff is unavailable in the current host. The repository specification is the approved handoff mode for this benchmark.
+- No deployment or public URL is part of the approved local benchmark scope.
+
+Evidence:
+- `site/index.html`
+- `site/app.js`
+- `corpus/scripts/build_catalog.py`
+- `.design/system/ux-definition.json`
+
+## Unknowns and Future Decisions
+
+- The final literal color values remain provisional until contrast tests and fresh rendered comparison pass.
+- The exact browser file-generation mechanism and filename escaping remain implementation choices that must pass deterministic output, hostile input, and failure tests.
+- Composite CSS shadow projection is unsupported in the current compiler. Preserve --shadow as an explicitly unmapped legacy value until implementation either removes it or verifies a dialog-only replacement.
+- No production host, public URL, analytics, account system, backend, sync service, offline guarantee, Figma write, or active-host plugin upgrade is approved.
+- Any later public release, repository push, deployment, or active-host installation requires its own explicit approval and evidence.
+
+Evidence:
+- `.design/system/ux-definition.json`
+- `.design/implementation/plan.md`

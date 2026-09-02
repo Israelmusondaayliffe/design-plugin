@@ -1,0 +1,510 @@
+{
+  "schema_version": "1.0",
+  "retrieved_at": "2026-09-01",
+  "approved_understanding_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+  "inspection_method": "Project files were inspected locally. Public claims were checked against owner-published documentation through text extraction. No public page was treated as a rendered viewport measurement.",
+  "owner_url_availability_check": {
+    "checked_at": "2026-09-01",
+    "method": "HTTP GET with redirects followed; status and nontrivial response size checked",
+    "checked_urls": 21,
+    "http_200": 21,
+    "nontrivial_responses": 21
+  },
+  "sources": [
+    {
+      "id": "P01",
+      "source_lane": "project-local",
+      "owner": "Design Reference Library project",
+      "locator": ".design/shared-understanding.md",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Approved artifact at the understanding gate",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The approved product is a download-first public library of 60 accepted design-reference cases with human-readable and structured-data outputs."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "IBM Carbon is the single dominant forensic reference; supporting references may have only narrow named roles."
+        }
+      ],
+      "limitations": [
+        "This source establishes project intent and authority, not facts about public reference systems."
+      ]
+    },
+    {
+      "id": "P02",
+      "source_lane": "project-local",
+      "owner": "Design Reference Library project",
+      "locator": "site/index.html; site/styles.css; site/app.js",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Current undeployed static Site source",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The current Site implements search, lane and facet filters, case detail tabs, and two-to-five-case comparison."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The current Site source does not expose a user-facing case download action."
+        }
+      ],
+      "limitations": [
+        "Source inspection does not replace a fresh rendered interaction test."
+      ]
+    },
+    {
+      "id": "C01",
+      "source_lane": "corpus",
+      "owner": "Design Knowledge Corpus",
+      "locator": "corpus/cases/ibm-carbon/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Accepted public case with source, evidence, tokens, coverage, and independent review records",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The Carbon case contains four claim-level evidence records and is marked public after independent evidence, originality, rights, and asset review."
+        }
+      ],
+      "limitations": [
+        "The corpus record does not cover every forensic dimension required by Benchmark 2, so current owner sources were also inspected."
+      ]
+    },
+    {
+      "id": "C02",
+      "source_lane": "corpus",
+      "owner": "Design Knowledge Corpus",
+      "locator": "corpus/cases/{github-primer,elastic-eui,guardian-source,govuk-design-system,vercel-geist,adobe-spectrum-2,porsche-design-system,observable-plot,material-3}/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Nine accepted public case records",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Each screened alternative has a public metadata, source, claim-level evidence, coverage, token, and review record in the canonical corpus."
+        }
+      ],
+      "limitations": [
+        "Corpus analysis is used for screening. Consequential supporting roles were checked against current owner-published sources."
+      ]
+    },
+    {
+      "id": "CARBON-TYPE",
+      "source_lane": "live-public",
+      "owner": "IBM Carbon Design System",
+      "url": "https://preview.carbondesignsystem.com/building-blocks/foundations/typography/style-strategies",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published typography strategy documentation; text extraction; no viewport measurement",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon uses IBM Plex and separates productive type styles for product work from expressive type styles for editorial web moments."
+        }
+      ],
+      "limitations": [
+        "This page explains type strategy, not the complete typography of the target Site."
+      ]
+    },
+    {
+      "id": "CARBON-GRID",
+      "source_lane": "live-public",
+      "owner": "IBM Carbon Design System",
+      "url": "https://carbondesignsystem.com/elements/2x-grid/overview/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published grid overview; text extraction; desktop and mobile values documented by the source",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon's 2x Grid uses an 8-pixel mini unit, fixed padding multiples, and breakpoint-specific four, eight, and sixteen-column structures."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon recommends testing at each standard breakpoint and permits custom breakpoints for special needs."
+        }
+      ],
+      "limitations": [
+        "The target may preserve grid relationships without copying Carbon's exact breakpoint values."
+      ]
+    },
+    {
+      "id": "CARBON-COLOR",
+      "source_lane": "live-public",
+      "owner": "IBM Carbon Design System",
+      "url": "https://carbondesignsystem.com/elements/color/overview/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published color overview; text extraction; light and dark layering described by the source",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon uses role-based color tokens whose roles remain stable while theme values change."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Neutral grays organize most surfaces, core blue carries primary action, and additional colors are assigned sparingly."
+        }
+      ],
+      "limitations": [
+        "IBM's literal palette is source identity and is not authorized for copying."
+      ]
+    },
+    {
+      "id": "CARBON-MOTION",
+      "source_lane": "live-public",
+      "owner": "IBM Carbon Design System",
+      "url": "https://carbondesignsystem.com/elements/motion/overview/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published motion overview; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon distinguishes productive and expressive motion and leaves page-level choreography to product teams."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon components include microinteraction motion while larger entrance and exit behavior requires product-specific implementation."
+        }
+      ],
+      "limitations": [
+        "No target-specific duration or easing was measured from this page."
+      ]
+    },
+    {
+      "id": "CARBON-TABS",
+      "source_lane": "live-public",
+      "owner": "IBM Carbon Design System",
+      "url": "https://carbondesignsystem.com/components/tabs/usage/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published tab guidance and listed accessibility test statuses; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Carbon assigns tabs to related content groups, content switchers to alternate views of the same content, and warns against tabs when simultaneous comparison is required."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The inspected tabs page lists tested default, advanced, screen-reader, and keyboard states for the current stable component."
+        }
+      ],
+      "limitations": [
+        "The source's test-status label does not prove the target implementation."
+      ]
+    },
+    {
+      "id": "PRIMER-LAYOUT",
+      "source_lane": "live-public",
+      "owner": "GitHub Primer",
+      "url": "https://primer.style/product/getting-started/foundations/layout/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published layout foundation; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Primer defines header, content, left pane, right pane, and footer regions and adapts multi-column pages to simpler mobile views without loss of functionality."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Primer separates coarse viewport ranges from finer custom breakpoints."
+        }
+      ],
+      "limitations": [
+        "GitHub's literal shell and product navigation are not adaptation targets."
+      ]
+    },
+    {
+      "id": "PRIMER-A11Y",
+      "source_lane": "live-public",
+      "owner": "GitHub Primer",
+      "url": "https://primer.style/accessibility/design-guidance/text-resize-and-spacing/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published accessibility guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Primer requires resized text and custom spacing to remain readable without clipping, truncation, obscuring content, or breaking controls."
+        }
+      ],
+      "limitations": [
+        "This guidance does not establish that the target Site currently passes zoom or text-spacing tests."
+      ]
+    },
+    {
+      "id": "EUI-ROOT",
+      "source_lane": "live-public",
+      "owner": "Elastic UI Framework",
+      "url": "https://eui.elastic.co/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published framework overview; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "EUI describes itself as flexible, composable, accessibility-centered, documented, and tested."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Its published component set includes responsive layout, forms with validation, tables, panels, callouts, and tokens."
+        }
+      ],
+      "limitations": [
+        "Framework claims are owner claims; target behavior requires separate testing."
+      ]
+    },
+    {
+      "id": "EUI-FLEX",
+      "source_lane": "live-public",
+      "owner": "Elastic UI Framework",
+      "url": "https://eui.elastic.co/docs/components/layout/flex/index.html",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published flex-layout guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "EUI assigns flex groups to single-row alignment, flex grids to repeated wrapping rows, and permits semantic elements in place of default div output."
+        }
+      ],
+      "limitations": [
+        "The target is not adopting EUI layout components or React APIs."
+      ]
+    },
+    {
+      "id": "EUI-TABLES",
+      "source_lane": "live-public",
+      "owner": "Elastic UI Framework",
+      "url": "https://eui.elastic.co/docs/components/tables/index.html",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published table guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "EUI distinguishes opinionated tables with built-in mobile, action, expansion, sorting, pagination, and search behavior from custom tables that transfer accessibility and mobile responsibility to the implementer."
+        }
+      ],
+      "limitations": [
+        "The target is not adopting EUI code or APIs."
+      ]
+    },
+    {
+      "id": "EUI-COLOR",
+      "source_lane": "live-public",
+      "owner": "Elastic UI Framework",
+      "url": "https://eui.elastic.co/docs/getting-started/theming/tokens/colors/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published color-token documentation; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "EUI keeps token keys stable across light and dark modes, assigns semantic color roles, and requires state meaning to use icons or copy in addition to color."
+        }
+      ],
+      "limitations": [
+        "Elastic's literal palette is not an adaptation target."
+      ]
+    },
+    {
+      "id": "GUARDIAN-SOURCE",
+      "source_lane": "live-public",
+      "owner": "The Guardian",
+      "url": "https://github.com/guardian/theguardian.design/blob/main/index.html",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner repository for the public Source site; source text inspection",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The public Source page identifies itself as The Guardian Design System and includes separate foundation, typography, color-system, and design-principle sections."
+        },
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "The page states that its color system is based on editorial sections and that each color represents a journalism pillar."
+        }
+      ],
+      "limitations": [
+        "The primary site could not be parsed directly in the research tool, so the owner-controlled repository was used."
+      ]
+    },
+    {
+      "id": "GUARDIAN-TYPE",
+      "source_lane": "live-public",
+      "owner": "The Guardian",
+      "url": "https://github.com/guardian/fonts",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published font repository documentation; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Guardian's web typography exposes distinct headline, text Egyptian, and text sans families mapped to Source typography guidance."
+        }
+      ],
+      "limitations": [
+        "Guardian font files and literal typography are not copied or bundled."
+      ]
+    },
+    {
+      "id": "GOVUK-HOME",
+      "source_lane": "live-public",
+      "owner": "Government Digital Service",
+      "url": "https://design-system.service.gov.uk/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published design-system home; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "GOV.UK combines styles, accessible components, and task patterns rather than treating page appearance as the whole service."
+        }
+      ],
+      "limitations": [
+        "Government-service identity and copy are not adaptation targets."
+      ]
+    },
+    {
+      "id": "GOVUK-LAYOUT",
+      "source_lane": "live-public",
+      "owner": "Government Digital Service",
+      "url": "https://design-system.service.gov.uk/styles/layout/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published layout guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "GOV.UK starts with a small-screen single column, limits ordinary reading width, and tells teams to design for screen sizes instead of assuming devices."
+        }
+      ],
+      "limitations": [
+        "The target Site has different content density and may require a wider working surface."
+      ]
+    },
+    {
+      "id": "GOVUK-SPACING",
+      "source_lane": "live-public",
+      "owner": "Government Digital Service",
+      "url": "https://design-system.service.gov.uk/styles/spacing/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published responsive and static spacing guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "GOV.UK's responsive spacing scale changes larger spacing units across its tablet boundary while retaining smaller spacing units."
+        }
+      ],
+      "limitations": [
+        "The target may adapt the responsive rhythm without copying GOV.UK's literal spacing values."
+      ]
+    },
+    {
+      "id": "GOVUK-ERROR",
+      "source_lane": "live-public",
+      "owner": "Government Digital Service",
+      "url": "https://design-system.service.gov.uk/components/error-message/",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published error-message guidance; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "GOV.UK requires specific error messages that explain what happened and how to fix it, with consistent wording beside the field and in the summary."
+        }
+      ],
+      "limitations": [
+        "Download and catalog errors need project-specific wording."
+      ]
+    },
+    {
+      "id": "GEIST-INTRO",
+      "source_lane": "live-public",
+      "owner": "Vercel",
+      "url": "https://vercel.com/geist/introduction",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published design-system introduction; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Geist publishes foundations, components, icons, and implementation examples for consistent web experiences."
+        }
+      ],
+      "limitations": [
+        "Vercel brand identity and product evidence are not copied."
+      ]
+    },
+    {
+      "id": "GEIST-COLOR",
+      "source_lane": "live-public",
+      "owner": "Vercel",
+      "url": "https://vercel.com/geist/colors",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published color documentation; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Geist assigns separate scale ranges to default, hover, active, border, high-contrast, and text or icon roles."
+        }
+      ],
+      "limitations": [
+        "The literal monochrome palette is not the transferable relationship."
+      ]
+    },
+    {
+      "id": "GEIST-TYPE",
+      "source_lane": "live-public",
+      "owner": "Vercel",
+      "url": "https://vercel.com/geist/typography",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published typography documentation; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Geist separates large marketing headings from dashboard headings, multiline copy, compact labels, tabular numbers, and inline-code mono styles."
+        }
+      ],
+      "limitations": [
+        "Geist Sans and Geist Mono are source choices, not required target fonts."
+      ]
+    },
+    {
+      "id": "GEIST-GRID",
+      "source_lane": "live-public",
+      "owner": "Vercel",
+      "url": "https://vercel.com/geist/grid",
+      "retrieved_at": "2026-09-01",
+      "inspected_state": "Owner-published grid component page; text extraction",
+      "claims": [
+        {
+          "class": "observed",
+          "confidence": "high",
+          "claim": "Geist's grid component provides responsive row and column behavior across three breakpoints."
+        }
+      ],
+      "limitations": [
+        "The target may use the evidence-frame relationship without using the Geist component."
+      ]
+    }
+  ]
+}

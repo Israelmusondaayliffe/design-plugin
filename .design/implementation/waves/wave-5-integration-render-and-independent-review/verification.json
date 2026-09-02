@@ -1,0 +1,26 @@
+{
+  "changed_files": [
+    ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+    ".design/quality/wave-5-browser-acceptance.json",
+    ".design/quality/wave-5-deterministic-builds.json",
+    ".design/system/tokens.source.json",
+    "BUILD_STATE.md",
+    "review/wave-11-benchmark-2-acceptance-evidence.json",
+    "review/wave-11-source-health.json",
+    "site/README.md",
+    "site/app.js",
+    "site/index.html",
+    "tests/test_wave11_site.py"
+  ],
+  "handoff": ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.json",
+  "handoff_markdown": ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.md",
+  "handoff_markdown_sha256": "3bc44229d91b5e349e3a05c02d31dbd66dc70f7064e0d2162d03a863c2d6b555",
+  "handoff_sha256": "17768ce8ed9aba882bdb9e5711aecec99344c93a84ace827edcf6829564f4404",
+  "manifest": ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json",
+  "manifest_sha256": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+  "next_state_command": "design_state.py complete-wave",
+  "ready_for_state_completion": true,
+  "status": "pass",
+  "wave_id": "wave-5-integration-render-and-independent-review",
+  "wave_number": 5
+}

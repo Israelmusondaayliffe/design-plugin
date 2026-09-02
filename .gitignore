@@ -4,3 +4,4 @@ site/generated-data/
 __pycache__/
 *.pyc
 scripts/.wave4-payload/
+.design/environment.json

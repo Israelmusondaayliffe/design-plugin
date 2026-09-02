@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "status": "pass",
+  "visibility": "public",
+  "review_mode": "accepted-only",
+  "builds": 2,
+  "case_count": 60,
+  "downloadable_files_per_site_tree": 120,
+  "readable_files_per_tree": 60,
+  "structured_files_per_tree": 60,
+  "manifests_per_tree": 60,
+  "corpus_tree_file_count": 883,
+  "site_tree_file_count": 883,
+  "combined_file_count_per_build": 1766,
+  "relative_paths_equal": true,
+  "bytes_and_hashes_equal": true,
+  "tree_sha256_a": "bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e",
+  "tree_sha256_b": "bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e",
+  "tree_digest_algorithm": "SHA-256 over each sorted relative path, byte count, and file SHA-256",
+  "commands": [
+    "python3 corpus/scripts/build_catalog.py --visibility public --corpus-out <clean-root>/corpus --site-out <clean-root>/site",
+    "python3 corpus/scripts/build_catalog.py --visibility public --corpus-out <second-clean-root>/corpus --site-out <second-clean-root>/site"
+  ],
+  "limits": [
+    "This receipt proves deterministic generated trees from the same canonical inputs.",
+    "Schema, privacy, semantic parity, browser downloads, and rendered behavior are proved separately."
+  ]
+}

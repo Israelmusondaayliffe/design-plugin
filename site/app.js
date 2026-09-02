@@ -1,5 +1,7 @@
 "use strict";
 
+const LOCAL_ONLY = true;
+
 const LANE_LABELS = {
   "design-systems-data-experimental": "Design systems",
   "saas-dashboard-admin-productivity": "Product UI",
@@ -39,13 +41,63 @@ const FACETS = {
   evidence: "evidence_quality",
 };
 
+const ANALYSIS_LABELS = {
+  brand_posture: "Brand posture",
+  layout: "Layout",
+  grid: "Grid",
+  container: "Container",
+  responsive_behavior: "Responsive behavior",
+  typography: "Typography",
+  color: "Color",
+  spacing: "Spacing",
+  surfaces: "Surfaces",
+  components: "Components",
+  states: "States",
+  navigation: "Navigation",
+  forms: "Forms",
+  flows: "Flows",
+  motion: "Motion",
+  interaction: "Interaction",
+  imagery: "Imagery",
+  accessibility: "Accessibility",
+};
+
+const BOUNDARY_ORDER = ["observed", "inferred", "recommended", "unknown", "evidence_scope", "date_boundary", "public_projection"];
+const DOWNLOAD_MEDIA_TYPES = {
+  readable: "text/markdown; charset=utf-8",
+  structured: "application/json; charset=utf-8",
+};
+const LOCAL_TEST_HOSTS = new Set(["127.0.0.1", "localhost", "::1"]);
+const LOCAL_TEST_STATES = new Set(["catalog-loading", "catalog-error", "case-loading", "case-error", "package-error", "package-denied", "download-error", "download-failure"]);
+const IS_LOCAL_TEST_HOST = LOCAL_ONLY && LOCAL_TEST_HOSTS.has(window.location.hostname);
+const PRIVATE_TEST_CASE_SLUG = "private-test-case";
+const LOCAL_CATALOG_REBUILD_HINT = "Rebuild the public catalog data, then retry.";
+
+function readLocalTestState() {
+  if (!IS_LOCAL_TEST_HOST) return "";
+  const candidate = new URLSearchParams(window.location.search).get("test-state") ?? "";
+  return LOCAL_TEST_STATES.has(candidate) ? candidate : "";
+}
+
+function readLocalTestFormat() {
+  const candidate = new URLSearchParams(window.location.search).get("test-format") ?? "readable";
+  return Object.hasOwn(DOWNLOAD_MEDIA_TYPES, candidate) ? candidate : "readable";
+}
+
+const TEST_STATE = readLocalTestState();
+const TEST_FORMAT = readLocalTestFormat();
+
 const state = {
   cases: [],
   catalog: null,
   lane: "",
   selected: new Set(),
   activeCase: null,
-  detailCache: new Map(),
+  activeView: "case",
+  activePackage: null,
+  packageCache: new Map(),
+  downloadUrls: new Map(),
+  focusReturn: new Map(),
 };
 
 const $ = id => document.getElementById(id);
@@ -57,13 +109,23 @@ const esc = value => String(value ?? "").replace(/[&<>"']/g, character => ({
   "'": "&#39;",
 }[character]));
 
-const humanize = value => VALUE_LABELS[String(value ?? "").toLowerCase()] ?? String(value ?? "")
-  .replaceAll("-", " ")
-  .replace(/\b\w/g, character => character.toUpperCase());
+function humanize(value) {
+  return VALUE_LABELS[String(value ?? "").toLowerCase()] ?? String(value ?? "")
+    .replaceAll("-", " ")
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, character => character.toUpperCase());
+}
 
 function formatDate(value) {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value ?? "")) return String(value ?? "Unknown");
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value ?? "")) return String(value ?? "Not recorded");
   return new Intl.DateTimeFormat("en", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${value}T00:00:00Z`));
+}
+
+function formatBytes(value) {
+  const bytes = Number(value);
+  if (!Number.isInteger(bytes) || bytes < 0) return "Unknown";
+  if (bytes < 1024) return `${bytes} B`;
+  return `${(bytes / 1024).toFixed(1)} KB`;
 }
 
 function validColor(value, fallback) {
@@ -71,12 +133,62 @@ function validColor(value, fallback) {
 }
 
 function validRadius(value) {
-  return /^\d+(?:\.\d+)?(?:px|rem|em|%)$/.test(value ?? "") ? value : "8px";
+  return /^\d+(?:\.\d+)?(?:px|rem|em|%)$/.test(value ?? "") ? value : "4px";
 }
 
-function setInitialLoadingCards() {
+function safeHttpsUrl(value) {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" && !parsed.username && !parsed.password ? parsed.href : "#";
+  } catch {
+    return "#";
+  }
+}
+
+function safeDownloadRoute(value) {
+  return /^[a-z0-9][a-z0-9.-]*$/.test(value ?? "") ? value : null;
+}
+
+function safeDownloadFilename(value, format) {
+  const extension = format === "readable" ? ".md" : format === "structured" ? ".json" : "";
+  return typeof value === "string"
+    && /^[a-z0-9][a-z0-9._-]+$/.test(value)
+    && !value.includes("..")
+    && value.endsWith(extension)
+    ? value
+    : null;
+}
+
+class PackageFileError extends Error {
+  constructor(message, { code = "validation-error", format = "package" } = {}) {
+    super(message);
+    this.name = "PackageFileError";
+    this.code = code;
+    this.format = format;
+  }
+}
+
+async function sha256Hex(bytes) {
+  if (!window.crypto?.subtle) {
+    throw new PackageFileError("this browser cannot verify SHA-256", { code: "browser-failure" });
+  }
+  const digest = await window.crypto.subtle.digest("SHA-256", bytes);
+  return [...new Uint8Array(digest)].map(value => value.toString(16).padStart(2, "0")).join("");
+}
+
+function revokeDownloadUrls() {
+  for (const url of state.downloadUrls.values()) URL.revokeObjectURL(url);
+  state.downloadUrls.clear();
+}
+
+function listMarkup(values, className = "") {
+  const items = Array.isArray(values) ? values : [];
+  return `<ul${className ? ` class="${esc(className)}"` : ""}>${items.map(value => `<li>${esc(value)}</li>`).join("")}</ul>`;
+}
+
+function setInitialLoadingRows() {
   const template = $("loading-template");
-  for (let index = 0; index < 6; index += 1) {
+  for (let index = 0; index < 4; index += 1) {
     $("results").append(template.content.cloneNode(true));
   }
 }
@@ -102,7 +214,7 @@ function renderLaneFilters() {
   const counts = countByLane();
   const lanes = Object.keys(LANE_LABELS).filter(lane => counts[lane]);
   $("lane-filters").innerHTML = [
-    `<button type="button" data-lane="" aria-pressed="${state.lane === ""}"><span>All</span><small>${state.cases.length}</small></button>`,
+    `<button type="button" data-lane="" aria-pressed="${state.lane === ""}"><span>All cases</span><small>${state.cases.length}</small></button>`,
     ...lanes.map(lane => `<button type="button" data-lane="${esc(lane)}" aria-pressed="${state.lane === lane}"><span>${esc(LANE_LABELS[lane])}</span><small>${counts[lane]}</small></button>`),
   ].join("");
 }
@@ -152,9 +264,9 @@ function sorted(items) {
   return copy.sort((a, b) => a.name.localeCompare(b.name));
 }
 
-function previewMarkup(item, size = "card") {
-  const primary = validColor(item.preview?.primary, "#171717");
-  const secondary = validColor(item.preview?.secondary, "#ff5a36");
+function previewMarkup(item, size = "row") {
+  const primary = validColor(item.preview?.primary, "#211f1b");
+  const secondary = validColor(item.preview?.secondary, "#9b3e12");
   const radius = validRadius(item.preview?.radius);
   const seed = [...item.slug].reduce((total, character) => total + character.charCodeAt(0), 0);
   const variant = item.corpus_lane === "mobile"
@@ -166,29 +278,33 @@ function previewMarkup(item, size = "card") {
         : item.corpus_lane === "onboarding-forms-settings-flows"
           ? 0
           : [0, 2][seed % 2];
-  const label = size === "detail" ? `<span>${esc(item.source_name)}</span>` : "";
-  return `<div class="abstract-preview preview-${variant} ${size === "detail" ? "preview-detail" : ""}" style="--case-a:${primary};--case-b:${secondary};--case-radius:${radius}">${label}<i></i><i></i><i></i><i></i><i></i></div>`;
+  return `<div class="abstract-preview preview-${variant} ${size === "detail" ? "preview-detail" : ""}" style="--case-a:${primary};--case-b:${secondary};--case-radius:${radius}"><i></i><i></i><i></i><i></i><i></i></div>`;
 }
 
-function caseCard(item, index) {
+function caseRow(item, index) {
   const selected = state.selected.has(item.slug);
+  const selectionDisabled = !selected && state.selected.size >= 5;
   return `
-    <article class="case-card" style="--card-index:${index}">
-      <button class="preview-button" type="button" data-open-case="${esc(item.slug)}" aria-label="Open ${esc(item.name)} case study">
+    <article class="case-row" role="listitem" data-case-slug="${esc(item.slug)}">
+      <p class="row-index technical-label">${String(index + 1).padStart(2, "0")}</p>
+      <button class="preview-button row-preview" type="button" data-open-case="${esc(item.slug)}" aria-label="Open ${esc(item.name)} public case">
         ${previewMarkup(item)}
       </button>
-      <div class="case-meta">
-        <span>${esc(LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane))}</span>
-        <span>${esc(humanize(item.evidence_quality))} evidence quality</span>
+      <div class="row-main">
+        <button class="case-title-button" type="button" data-open-case="${esc(item.slug)}"><h3>${esc(item.name)}</h3></button>
+        <p>${esc(item.summary)}</p>
+        ${listMarkup(item.signature_traits.slice(0, 3), "relationship-list")}
       </div>
-      <button class="case-title-button" type="button" data-open-case="${esc(item.slug)}"><h3>${esc(item.name)}</h3></button>
-      <p>${esc(item.summary)}</p>
-      <ul class="trait-list" aria-label="Signature traits">${item.signature_traits.slice(0, 3).map(trait => `<li>${esc(trait)}</li>`).join("")}</ul>
-      <div class="card-actions">
-        <button class="open-link" type="button" data-open-case="${esc(item.slug)}">Study case <span aria-hidden="true">↗</span></button>
-        <button class="compare-toggle" type="button" data-compare="${esc(item.slug)}" aria-pressed="${selected}" ${!selected && state.selected.size >= 5 ? "disabled" : ""}>
-          <span aria-hidden="true">${selected ? "−" : "+"}</span>${selected ? "Selected" : "Compare"}
-        </button>
+      <div class="row-technical">
+        <dl>
+          <div><dt>Lane</dt><dd>${esc(LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane))}</dd></div>
+          <div><dt>Evidence</dt><dd>${esc(humanize(item.evidence_quality))}</dd></div>
+          <div><dt>Case ID</dt><dd><code>${esc(item.slug)}</code></dd></div>
+        </dl>
+      </div>
+      <div class="row-actions">
+        <button class="button" type="button" data-open-case="${esc(item.slug)}">Study case</button>
+        <button class="button compare-toggle" type="button" data-compare="${esc(item.slug)}" aria-pressed="${selected}" ${selectionDisabled ? "disabled aria-describedby=\"comparison-limit-note\"" : ""}>${selected ? "Selected" : "Compare"}</button>
       </div>
     </article>`;
 }
@@ -200,8 +316,9 @@ function activeFilterCount() {
 function updateFilterSummary() {
   const count = activeFilterCount();
   $("active-filter-count").hidden = count === 0;
-  $("active-filter-count").textContent = String(count);
+  $("active-filter-count").textContent = `${count} active`;
   $("clear-search").hidden = readFilter("search").length === 0;
+  if (count > 0 && window.matchMedia("(max-width: 959px)").matches) $("advanced-filters").open = true;
 }
 
 function writeUrl() {
@@ -216,15 +333,18 @@ function writeUrl() {
   if (readFilter("sort") !== "name") params.set("sort", readFilter("sort"));
   if (state.selected.size) params.set("compare", [...state.selected].join(","));
   if (state.activeCase) params.set("case", state.activeCase);
+  if (state.activeCase && state.activeView === "package") params.set("view", "package");
+  if (TEST_STATE) params.set("test-state", TEST_STATE);
+  if (TEST_STATE && TEST_FORMAT) params.set("test-format", TEST_FORMAT);
   const queryString = params.toString();
   window.history.replaceState({}, "", `${window.location.pathname}${queryString ? `?${queryString}` : ""}${window.location.hash}`);
 }
 
 function render() {
   const visible = sorted(state.cases.filter(matches));
-  $("results").innerHTML = visible.map(caseCard).join("");
+  $("results").innerHTML = visible.map(caseRow).join("");
   $("results").setAttribute("aria-busy", "false");
-  $("status").textContent = `${visible.length} of ${state.cases.length} reviewed cases`;
+  $("status").textContent = `${visible.length} of ${state.cases.length} reviewed public cases`;
   $("empty-state").hidden = visible.length !== 0;
   renderLaneFilters();
   renderCompareTray();
@@ -232,13 +352,18 @@ function render() {
   writeUrl();
 }
 
-function toggleCompare(slug) {
+function toggleCompare(slug, { restoreCatalogFocus = false } = {}) {
   if (state.selected.has(slug)) {
     state.selected.delete(slug);
   } else if (state.selected.size<5) {
     state.selected.add(slug);
   }
   render();
+  if (restoreCatalogFocus) {
+    const restoredToggle = [...$("results").querySelectorAll("[data-compare]")]
+      .find(candidate => candidate.dataset.compare === slug);
+    restoredToggle?.focus();
+  }
   if (state.activeCase === slug) updateDialogCompareButton();
 }
 
@@ -270,197 +395,504 @@ function renderCompareDialog() {
   const items = selectedCases();
   const rows = [
     ["Coverage lane", item => LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane)],
+    ["Evidence quality", item => humanize(item.evidence_quality)],
     ["Platform", item => taxonomyValue(item.platforms)],
     ["Product type", item => taxonomyValue(item.product_types)],
     ["Archetype", item => taxonomyValue(item.archetypes)],
     ["Density", item => taxonomyValue(item.density)],
     ["Media strategy", item => taxonomyValue(item.media_strategy)],
-    ["Signature traits", item => proseValue(item.signature_traits)],
-    ["Best for", item => proseValue(item.best_for)],
-    ["Avoid for", item => proseValue(item.avoid_for)],
+    ["Signature relationships", item => proseValue(item.signature_traits)],
+    ["Useful when", item => proseValue(item.best_for)],
+    ["Avoid when", item => proseValue(item.avoid_for)],
   ];
   $("compare-table").innerHTML = `
     <table>
       <thead><tr><th scope="col">Attribute</th>${items.map(item => `<th scope="col">${esc(item.name)}</th>`).join("")}</tr></thead>
-      <tbody>${rows.map(([label, getter]) => `<tr><th scope="row">${label}</th>${items.map(item => `<td>${esc(getter(item))}</td>`).join("")}</tr>`).join("")}</tbody>
-    </table>`;
+      <tbody>${rows.map(([label, getter]) => `<tr><th scope="row">${esc(label)}</th>${items.map(item => `<td>${esc(getter(item))}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table>
+    <div class="comparison-open-actions">${items.map(item => `<button class="button" type="button" data-open-case="${esc(item.slug)}">Open ${esc(item.name)}</button>`).join("")}</div>`;
 }
 
-function openCompareDialog() {
-  if (state.selected.size < 2) return;
+function openCompareDialog(trigger) {
+  if (state.selected.size < 2 || state.selected.size > 5) return;
   renderCompareDialog();
-  openModal($("compare-dialog"));
+  openModal($("compare-dialog"), trigger);
 }
 
-function openModal(dialog) {
-  if (typeof dialog.showModal === "function") dialog.showModal();
-  else dialog.setAttribute("open", "");
+function openModal(dialog, trigger) {
+  if (!dialog.open) {
+    state.focusReturn.set(dialog.id, trigger ?? document.activeElement);
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+  }
   document.body.classList.add("modal-open");
 }
 
 function closeModal(dialog) {
-  if (typeof dialog.close === "function") dialog.close();
+  if (dialog.open && typeof dialog.close === "function") dialog.close();
   else dialog.removeAttribute("open");
-  if (!document.querySelector("dialog[open]")) document.body.classList.remove("modal-open");
 }
 
 function updateDialogCompareButton() {
+  const publicCase = state.cases.some(item => item.slug === state.activeCase && item.publication_status === "public");
   const selected = state.selected.has(state.activeCase);
-  $("dialog-compare").textContent = selected ? "Remove from comparison" : "Add to comparison";
+  $("dialog-compare").textContent = publicCase ? (selected ? "Remove from comparison" : "Add to comparison") : "Comparison unavailable";
   $("dialog-compare").setAttribute("aria-pressed", String(selected));
-  $("dialog-compare").disabled = !selected && state.selected.size >= 5;
+  $("dialog-compare").disabled = !publicCase || (!selected && state.selected.size >= 5);
 }
 
-function definitionList(item) {
+function definitionList(model) {
+  const context = model.context.study_context;
   const definitions = [
-    ["Platform", taxonomyValue(item.platforms)],
-    ["Product type", taxonomyValue(item.product_types)],
-    ["Archetype", taxonomyValue(item.archetypes)],
-    ["Task stage", taxonomyValue(item.journey)],
-    ["Density", taxonomyValue(item.density)],
-    ["Interaction", taxonomyValue(item.interaction_complexity)],
-    ["Color mode", taxonomyValue(item.color_modes)],
-    ["Confidence", taxonomyValue(item.confidence)],
+    ["Platform", taxonomyValue(context.platforms)],
+    ["Product type", taxonomyValue(context.product_types)],
+    ["Archetype", taxonomyValue(context.archetypes)],
+    ["Task stage", taxonomyValue(model.intent.journeys)],
+    ["Density", taxonomyValue(context.density)],
+    ["Evidence quality", taxonomyValue(model.quality.evidence_quality)],
+    ["Coverage confidence", taxonomyValue(model.quality.coverage_confidence)],
+    ["Accessibility maturity", taxonomyValue(model.quality.accessibility_maturity)],
   ];
-  return `<dl class="case-definitions">${definitions.map(([term, value]) => `<div><dt>${term}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>`;
+  return `<dl class="case-definitions">${definitions.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>`;
 }
 
-function listBlock(title, values, tone = "") {
-  return `<section class="decision-block ${tone}"><h3>${esc(title)}</h3><ul>${values.map(value => `<li>${esc(value)}</li>`).join("")}</ul></section>`;
+function decisionBlock(title, values) {
+  return `<section class="decision-block"><h4>${esc(title)}</h4>${listMarkup(values)}</section>`;
 }
 
-function inlineMarkdown(value) {
-  return esc(value)
-    .replace(/`([^`]+)`/g, "<code>$1</code>")
-    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*([^*]+)\*/g, "<em>$1</em>");
-}
-
-function markdownToHtml(markdown) {
-  const lines = String(markdown ?? "").replace(/\r/g, "").split("\n");
-  const output = [];
-  let list = null;
-  const closeList = () => {
-    if (list) output.push(`</${list}>`);
-    list = null;
-  };
-
-  for (const rawLine of lines) {
-    const line = rawLine.trim();
-    if (!line) {
-      closeList();
-      continue;
-    }
-    const heading = /^(#{1,4})\s+(.+)$/.exec(line);
-    if (heading) {
-      closeList();
-      const level = Math.min(heading[1].length + 1, 5);
-      output.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
-      continue;
-    }
-    const unordered = /^[-*]\s+(.+)$/.exec(line);
-    if (unordered) {
-      if (list !== "ul") {
-        closeList();
-        list = "ul";
-        output.push("<ul>");
-      }
-      output.push(`<li>${inlineMarkdown(unordered[1])}</li>`);
-      continue;
-    }
-    const ordered = /^\d+[.)]\s+(.+)$/.exec(line);
-    if (ordered) {
-      if (list !== "ol") {
-        closeList();
-        list = "ol";
-        output.push("<ol>");
-      }
-      output.push(`<li>${inlineMarkdown(ordered[1])}</li>`);
-      continue;
-    }
-    closeList();
-    output.push(`<p>${inlineMarkdown(line)}</p>`);
+function groupedAnalysis(model) {
+  const groups = new Map();
+  for (const [key, label] of Object.entries(ANALYSIS_LABELS)) {
+    const statement = String(model.analysis[key] ?? "").trim();
+    if (!statement) continue;
+    if (!groups.has(statement)) groups.set(statement, []);
+    groups.get(statement).push(label);
   }
-  closeList();
-  return output.join("");
+  return `<dl class="analysis-list">${[...groups.entries()].map(([statement, labels]) => `<div><dt>${esc(labels.join(" / "))}</dt><dd>${esc(statement)}</dd></div>`).join("")}</dl>`;
 }
 
-function renderEvidence(evidence, source) {
-  const items = evidence?.items ?? [];
-  const ownerUrl = source?.owner_url ?? state.cases.find(item => item.slug === state.activeCase)?.source_url;
-  const retrieved = formatDate(source?.retrieved_at);
+function evidenceMarkup(model) {
+  const boundary = model.evidence_boundary;
+  const ownerUrl = safeHttpsUrl(model.provenance.owner_url);
   return `
-    <div class="evidence-intro">
-      <p>${items.length} recorded claims. Source retrieved ${esc(retrieved)}. Observations describe public source material. Inferences and recommendations are corpus analysis or editorial judgment.</p>
-      <a class="button" href="${esc(ownerUrl)}" target="_blank" rel="noopener noreferrer">Visit owner source <span aria-hidden="true">↗</span></a>
+    <div class="evidence-boundary">
+      <p><strong>Observed:</strong> ${esc(boundary.observed)}</p>
+      <p><strong>Inferred and recommended:</strong> ${esc(boundary.inferred)} ${esc(boundary.recommended)}</p>
+      <p><strong>Unknown:</strong> ${esc(boundary.unknown)}</p>
     </div>
-    <ol class="evidence-list">${items.map(item => `
+    <ol class="evidence-list">${model.evidence.map(item => `
       <li>
-        <div><span class="evidence-class ${esc(item.class)}">${esc(humanize(item.class))}</span><span>${esc(humanize(item.confidence))} confidence</span></div>
-        <p>${esc(item.claim)}</p>
-        <small>${esc(item.locator)}</small>
-      </li>`).join("")}</ol>`;
+        <div class="evidence-meta"><span>${esc(item.id)}</span><span>${esc(humanize(item.truth_class))}</span><span>${esc(humanize(item.confidence))} confidence</span></div>
+        <div><h4>${esc(item.claim)}</h4><p>${esc(item.qualification)}</p></div>
+        <div><a href="${esc(safeHttpsUrl(item.source_url))}" target="_blank" rel="noopener noreferrer">Owner source</a><br><code>Retrieved ${esc(item.retrieved_at)}</code></div>
+      </li>`).join("")}</ol>
+    <div class="limits-grid">
+      <section class="limit-block"><h4>Source limitations</h4>${listMarkup(model.limitations.map(item => item.statement))}</section>
+      <section class="limit-block"><h4>Known unknowns</h4>${listMarkup(model.unknowns.map(item => item.statement))}</section>
+    </div>
+    <p class="truth-note">Owner source: <a href="${esc(ownerUrl)}" target="_blank" rel="noopener noreferrer">${esc(model.context.source_identity.source_name)}</a>. Retrieved ${esc(formatDate(model.provenance.retrieved_at))}.</p>`;
 }
 
-async function loadCaseDetail(slug) {
-  if (state.detailCache.has(slug)) return state.detailCache.get(slug);
-  const root = `generated-data/cases/${encodeURIComponent(slug)}`;
-  const requests = ["DESIGN.md", "evidence.json", "source.json"].map(async file => {
-    const response = await fetch(`${root}/${file}`);
-    if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
-    return file.endsWith(".json") ? response.json() : response.text();
-  });
-  const [analysis, evidence, source] = await Promise.all(requests);
-  const detail = { analysis, evidence, source };
-  state.detailCache.set(slug, detail);
+function renderCase(model) {
+  $("case-context-content").innerHTML = `
+    <p class="detail-summary">${esc(model.context.study_context.summary)}</p>
+    <p class="truth-note">Study-context truth class: ${esc(humanize(model.context.study_context.truth_class))}. Audience truth class: ${esc(humanize(model.context.study_context.audience.truth_class))}. ${esc(model.context.study_context.audience.statement)}</p>
+    ${definitionList(model)}
+    <div class="decision-grid">
+      ${decisionBlock("Signature relationships", model.intent.signature_relationships)}
+      ${decisionBlock("Useful when", model.value.best_for)}
+      ${decisionBlock("Avoid when", model.value.avoid_for)}
+      ${decisionBlock("Failure modes", model.value.failure_modes)}
+    </div>`;
+
+  $("case-analysis-content").innerHTML = `
+    <p class="visual-thesis">${esc(model.intent.visual_thesis)}</p>
+    <p class="truth-note">Analysis truth classes: ${model.analysis.truth_classes.map(humanize).map(esc).join(", ")}.</p>
+    ${groupedAnalysis(model)}`;
+
+  $("case-evidence-content").innerHTML = evidenceMarkup(model);
+  $("case-loading").hidden = true;
+  $("case-content").hidden = false;
+  $("open-package").disabled = false;
+}
+
+function validatePublicPackage(slug, model, manifest) {
+  if (model?.slug !== slug || manifest?.slug !== slug) throw new Error("The package identifiers do not match the requested public case");
+  if (model.publication_status !== "public" || model.package_type !== "design-reference-public-case") throw new Error("The requested case is not a valid public package");
+  if (model.schema_version !== "1.0" || manifest.schema_version !== "1.0") throw new Error("The package schema version is not supported by this Site");
+  if (!/^[0-9a-f]{64}$/.test(manifest.model_sha256 ?? "")) throw new Error("The package model hash is invalid");
+  if (!Array.isArray(manifest.files) || manifest.files.length !== 2) throw new Error("The package must contain readable and structured formats");
+  if (manifest.model_sha256 !== manifest.files[0].model_sha256 || manifest.files.some(file => file.model_sha256 !== manifest.model_sha256)) {
+    throw new Error("The package files do not share one model binding");
+  }
+  const formats = new Set(manifest.files.map(file => file.format));
+  if (formats.size !== 2 || !formats.has("readable") || !formats.has("structured")) throw new Error("The package must contain one readable and one structured format");
+  const routes = new Set();
+  const filenames = new Set();
+  for (const file of manifest.files) {
+    if (!safeDownloadRoute(file.route)) throw new PackageFileError("its route is unsafe", { format: file.format });
+    if (!safeDownloadFilename(file.download_filename, file.format)) throw new PackageFileError("its filename is unsafe", { format: file.format });
+    if (file.media_type !== DOWNLOAD_MEDIA_TYPES[file.format]) throw new PackageFileError("its media type does not match the approved format", { format: file.format });
+    if (!Number.isInteger(file.byte_size) || file.byte_size < 1) throw new PackageFileError("its byte count is invalid", { format: file.format });
+    if (!/^[0-9a-f]{64}$/.test(file.sha256 ?? "")) throw new PackageFileError("its SHA-256 is invalid", { format: file.format });
+    if (routes.has(file.route) || filenames.has(file.download_filename)) throw new PackageFileError("its route or filename is duplicated", { format: file.format });
+    routes.add(file.route);
+    filenames.add(file.download_filename);
+  }
+}
+
+async function loadPublicPackageMetadata(slug) {
+  if (state.packageCache.has(slug)) return state.packageCache.get(slug);
+  if (TEST_STATE === "case-loading") await new Promise(() => {});
+  const root = `generated-data/cases/${encodeURIComponent(slug)}/downloads`;
+  const [modelResponse, manifestResponse] = await Promise.all([
+    fetch(`${root}/case.json`),
+    fetch(`${root}/manifest.json`),
+  ]);
+  if (TEST_STATE === "case-error") throw new Error("the public model and manifest failed the local validation test");
+  if (!modelResponse.ok) throw new Error(`structured package returned HTTP ${modelResponse.status}`);
+  if (!manifestResponse.ok) throw new Error(`package manifest returned HTTP ${manifestResponse.status}`);
+  const [model, manifest] = await Promise.all([modelResponse.json(), manifestResponse.json()]);
+  validatePublicPackage(slug, model, manifest);
+  const detail = { model, manifest, root, verifiedFiles: new Map(), validationStatus: "metadata-ready", validationError: null };
+  state.packageCache.set(slug, detail);
   return detail;
 }
 
-async function openCase(slug) {
-  const item = state.cases.find(candidate => candidate.slug === slug);
-  if (!item) return;
-  state.activeCase = slug;
-  $("case-lane").textContent = LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane);
-  $("case-title").textContent = item.name;
-  $("case-source").textContent = `Source study: ${item.source_name} / Retrieved ${formatDate(item.studied_at)}`;
-  $("case-preview").innerHTML = previewMarkup(item, "detail");
-  $("panel-overview").innerHTML = `
-    <p class="detail-summary">${esc(item.summary)}</p>
-    ${definitionList(item)}
-    <div class="decision-grid">
-      ${listBlock("Signature relationships", item.signature_traits)}
-      ${listBlock("Useful when", item.best_for, "positive")}
-      ${listBlock("Avoid when", item.avoid_for, "warning")}
-    </div>
-    ${item.unknowns?.length ? listBlock("Known unknowns", item.unknowns, "unknown") : ""}`;
-  $("panel-analysis").innerHTML = `<p class="loading-line">Loading original analysis...</p>`;
-  $("panel-evidence").innerHTML = `<p class="loading-line">Loading evidence...</p>`;
-  updateDialogCompareButton();
-  activateTab("tab-overview", false);
-  openModal($("case-dialog"));
-  writeUrl();
-
+async function verifyPackageFiles(detail) {
+  detail.verifiedFiles.clear();
+  detail.validationStatus = "validating";
+  detail.validationError = null;
   try {
-    const detail = await loadCaseDetail(slug);
-    if (state.activeCase !== slug) return;
-    $("case-source").textContent = `Source study: ${item.source_name} / Retrieved ${formatDate(detail.source.retrieved_at)}`;
-    $("panel-analysis").innerHTML = markdownToHtml(detail.analysis);
-    $("panel-evidence").innerHTML = renderEvidence(detail.evidence, detail.source);
+    for (const file of detail.manifest.files) {
+      const route = safeDownloadRoute(file.route);
+      const response = await fetch(`${detail.root}/${route}`, { cache: "no-store" });
+      if (!response.ok) {
+        throw new PackageFileError(`the generated route returned HTTP ${response.status}`, { code: "missing-file", format: file.format });
+      }
+      const bytes = await response.arrayBuffer();
+      if ((TEST_STATE === "package-error" || TEST_STATE === "download-error") && file.format === TEST_FORMAT) {
+        throw new PackageFileError("its downloaded SHA-256 does not match the manifest", { format: file.format });
+      }
+      if (bytes.byteLength !== file.byte_size) {
+        throw new PackageFileError(`its downloaded byte count is ${bytes.byteLength}, not the manifest value ${file.byte_size}`, { format: file.format });
+      }
+      const digest = await sha256Hex(bytes);
+      if (digest !== file.sha256) {
+        throw new PackageFileError("its downloaded SHA-256 does not match the manifest", { format: file.format });
+      }
+      detail.verifiedFiles.set(file.format, { bytes, file });
+    }
+    if (TEST_STATE === "package-denied") {
+      throw new PackageFileError("the browser blocked local file preparation", { code: "permission-denied", format: TEST_FORMAT });
+    }
+    detail.validationStatus = "ready";
+    return detail;
   } catch (error) {
-    const message = `<div class="load-error"><h3>Detailed record unavailable</h3><p>${esc(error.message)}</p><p>The catalog summary is still available.</p></div>`;
-    $("panel-analysis").innerHTML = message;
-    $("panel-evidence").innerHTML = message;
+    detail.verifiedFiles.clear();
+    detail.validationStatus = "error";
+    detail.validationError = error;
+    throw error;
   }
 }
 
-function activateTab(tabId, focus = true) {
-  const tabs = [...$("case-dialog").querySelectorAll("[role=tab]")];
-  for (const tab of tabs) {
-    const active = tab.id === tabId;
-    tab.setAttribute("aria-selected", String(active));
-    tab.tabIndex = active ? 0 : -1;
-    $(tab.getAttribute("aria-controls")).hidden = !active;
-    if (active && focus) tab.focus();
+function packageContextMarkup(model) {
+  return `
+    <p class="detail-summary">${esc(model.context.study_context.summary)}</p>
+    <div class="decision-grid">
+      ${decisionBlock("Best used for", model.value.best_for)}
+      ${decisionBlock("Do not use as proof of", ["Accessibility conformance", "Fitness for a specific product", "The source owner’s private intent", "Guaranteed design outcomes"])}
+    </div>
+    ${definitionList(model)}`;
+}
+
+function formatSpecificationsMarkup(manifest) {
+  const descriptions = {
+    readable: ["A human-readable study brief", "Context, intent, value, quality, evidence, provenance, limitations, and unknowns", "Headings and prose suited to review or handoff"],
+    structured: ["A machine-readable JSON record", "The same supported public model and evidence bindings", "Stable field meanings for tools, analysis, or transformation"],
+  };
+  return manifest.files.map(file => `
+    <section class="format-specification">
+      <p class="technical-label">${esc(file.media_type)}</p>
+      <h4>${esc(humanize(file.format))} ${file.format === "readable" ? "brief" : "data"}</h4>
+      ${listMarkup(descriptions[file.format] ?? [])}
+      <p><code>${esc(file.download_filename)}</code><br>${esc(formatBytes(file.byte_size))}</p>
+    </section>`).join("");
+}
+
+function boundaryMarkup(model) {
+  return `<ul class="boundary-list">${BOUNDARY_ORDER.map(key => `<li><strong>${esc(humanize(key))}</strong><span>${esc(model.evidence_boundary[key])}</span></li>`).join("")}</ul>`;
+}
+
+function provenanceMarkup(model) {
+  const provenance = model.provenance;
+  const rows = [
+    ["Owner source", `<a href="${esc(safeHttpsUrl(provenance.owner_url))}" target="_blank" rel="noopener noreferrer">${esc(provenance.owner_url)}</a>`],
+    ["Retrieved", esc(formatDate(provenance.retrieved_at))],
+    ["Rights basis", `<code>${esc(provenance.rights_basis)}</code>`],
+    ["Permitted use basis", `<code>${esc(provenance.permitted_use_basis)}</code>`],
+    ["Terms or license URL", provenance.terms_or_license_url ? `<a href="${esc(safeHttpsUrl(provenance.terms_or_license_url))}" target="_blank" rel="noopener noreferrer">Open terms</a>` : "Not recorded in the public package"],
+    ["Third-party assets stored", provenance.third_party_assets_stored ? "Yes" : "No"],
+  ];
+  return `<dl class="provenance-grid">${rows.map(([term, value]) => `<div><dt>${esc(term)}</dt><dd>${value}</dd></div>`).join("")}</dl>`;
+}
+
+function limitsMarkup(model) {
+  return `<div class="limits-grid">
+    <section class="limit-block"><h4>Source limitations</h4>${listMarkup(model.limitations.map(item => item.statement))}</section>
+    <section class="limit-block"><h4>Known unknowns</h4>${listMarkup(model.unknowns.map(item => item.statement))}</section>
+  </div>`;
+}
+
+function fileTableMarkup(manifest, stage, failure = null) {
+  const verificationLabel = file => {
+    if (stage === "ready") return "SHA-256 matched";
+    if (stage === "error" && failure?.format === file.format) return "Blocked";
+    if (stage === "error") return "Not enabled";
+    return "Checking";
+  };
+  return `<table>
+    <thead><tr><th scope="col">Format</th><th scope="col">Download filename</th><th scope="col">Media type</th><th scope="col">Size</th><th scope="col">SHA-256</th><th scope="col">Verification</th></tr></thead>
+    <tbody>${manifest.files.map(file => `<tr><th scope="row" data-label="Format">${esc(humanize(file.format))}</th><td data-label="Download filename">${esc(file.download_filename)}</td><td data-label="Media type">${esc(file.media_type)}</td><td data-label="Size">${esc(formatBytes(file.byte_size))}</td><td data-label="SHA-256">${esc(file.sha256)}</td><td data-label="Verification">${esc(verificationLabel(file))}</td></tr>`).join("")}</tbody>
+  </table>`;
+}
+
+function disableDownloadActions() {
+  revokeDownloadUrls();
+  for (const id of ["download-readable", "download-structured"]) {
+    const link = $(id);
+    link.href = "#";
+    link.setAttribute("aria-disabled", "true");
+    link.removeAttribute("download");
+    delete link.dataset.format;
+  }
+}
+
+function configureVerifiedDownloads(detail) {
+  disableDownloadActions();
+  for (const [id, format] of [["download-readable", "readable"], ["download-structured", "structured"]]) {
+    const verified = detail.verifiedFiles.get(format);
+    if (!verified) throw new PackageFileError("its verified bytes are unavailable", { format });
+    const blob = new Blob([verified.bytes], { type: verified.file.media_type });
+    const url = URL.createObjectURL(blob);
+    state.downloadUrls.set(id, url);
+    const link = $(id);
+    link.href = url;
+    link.download = verified.file.download_filename;
+    link.dataset.format = format;
+    link.removeAttribute("aria-disabled");
+  }
+}
+
+function packageFailureMessage(detail, failure) {
+  const format = failure?.format === "package" ? "package" : `${humanize(failure?.format ?? "package").toLowerCase()} file`;
+  const problem = {
+    "permission-denied": "this browser blocked local file preparation",
+    "missing-file": "a required generated file could not be loaded",
+    "validation-incomplete": "file validation has not completed",
+    "browser-failure": "the browser could not prepare or start the local file transfer",
+  }[failure?.code] ?? "the file did not match its public manifest";
+  const recovery = failure?.code === "permission-denied"
+    ? "Allow downloads for this local Site, then choose Retry package validation, or return to the case."
+    : "Choose Retry package validation, or return to the case.";
+  return `The ${format} for ${detail.model.name} is unavailable because ${problem}. ${recovery} No download is available while this problem remains.`;
+}
+
+function renderPackage(detail, stage = "loading", failure = null) {
+  const { model, manifest } = detail;
+  $("package-back").textContent = "Back to case";
+  $("retry-package").hidden = false;
+  $("package-return").textContent = "Return to case";
+  $("package-title").textContent = model.name;
+  $("package-summary").textContent = "Review the full public contract before choosing a file. Both formats come from one normalized model and carry the same supported claims.";
+  $("package-context-content").innerHTML = packageContextMarkup(model);
+  $("format-specifications").innerHTML = formatSpecificationsMarkup(manifest);
+  $("package-boundary-content").innerHTML = boundaryMarkup(model);
+  $("package-provenance-content").innerHTML = provenanceMarkup(model);
+  $("package-limits-content").innerHTML = limitsMarkup(model);
+  $("package-files-content").innerHTML = fileTableMarkup(manifest, stage, failure);
+  $("package-recovery-actions").hidden = true;
+
+  if (stage === "ready") {
+    configureVerifiedDownloads(detail);
+    $("package-ready").textContent = "Validated package files";
+    $("package-ready").className = "status-label status-ready";
+    $("package-status").textContent = `The readable and structured files for ${model.name} match their manifest filenames, byte counts, and SHA-256 values. Choose either verified file.`;
+    return;
+  }
+
+  disableDownloadActions();
+  if (stage === "error") {
+    $("package-ready").textContent = failure?.code === "permission-denied" ? "Download permission blocked" : "Package validation blocked";
+    $("package-ready").className = "status-label status-error";
+    $("package-status").textContent = packageFailureMessage(detail, failure);
+    $("package-recovery-actions").hidden = false;
+    return;
+  }
+
+  $("package-ready").textContent = "Checking package files";
+  $("package-ready").className = "status-label status-incomplete";
+  $("package-status").textContent = `Validating the readable and structured files for ${model.name}. Downloads remain unavailable until both filenames, byte counts, and SHA-256 values match the manifest.`;
+}
+
+function showCaseError(item) {
+  $("case-loading").hidden = true;
+  $("case-content").hidden = false;
+  $("open-package").disabled = true;
+  $("case-context-content").innerHTML = `
+    <p class="detail-summary">${esc(item.summary)}</p>
+    <div class="load-error" role="alert">
+      <h3>${esc(item.name)} package is unavailable</h3>
+      <p><strong>Problem:</strong> The public package could not be loaded and checked.</p>
+      <p><strong>Next:</strong> Choose Retry ${esc(item.name)} to run the public package validation again, or return to the catalog. No download is available while validation is unresolved.</p>
+      <div class="recovery-actions"><button class="button" type="button" data-retry-case>Retry ${esc(item.name)}</button><button class="text-button" type="button" data-return-catalog>Return to catalog</button></div>
+    </div>`;
+  $("case-analysis-content").innerHTML = "";
+  $("case-evidence-content").innerHTML = "";
+}
+
+function showUnavailableCase(slug, trigger) {
+  const requested = /^[a-z0-9-]{1,120}$/.test(slug ?? "") ? slug : "unknown-case";
+  state.activeCase = requested;
+  state.activePackage = null;
+  $("case-lane").textContent = "Unavailable";
+  $("case-title").textContent = "Unavailable public case";
+  $("case-source").textContent = `Requested case / ${requested}`;
+  $("case-preview").innerHTML = "";
+  $("case-loading").hidden = true;
+  $("case-content").hidden = false;
+  $("open-package").disabled = true;
+  $("case-context-content").innerHTML = `
+    <div class="load-error" role="alert">
+      <h3>${esc(requested)} is not in the reviewed public catalog</h3>
+      <p><strong>Problem:</strong> This case is missing, non-public, invalid, or no longer available.</p>
+      <p><strong>Next:</strong> Choose Retry ${esc(requested)} to check the public catalog again, or return to the catalog. No package or download is exposed.</p>
+      <div class="recovery-actions"><button class="button" type="button" data-retry-case>Retry ${esc(requested)}</button><button class="text-button" type="button" data-return-catalog>Return to catalog</button></div>
+    </div>`;
+  $("case-analysis-content").innerHTML = "";
+  $("case-evidence-content").innerHTML = "";
+  updateDialogCompareButton();
+  setCaseView("case", false);
+  openModal($("case-dialog"), trigger);
+  writeUrl();
+}
+
+function showLocalPermissionDenied(slug, trigger) {
+  revokeDownloadUrls();
+  state.activeCase = slug;
+  state.activePackage = null;
+  $("package-back").textContent = "Back to catalog";
+  $("package-title").textContent = "Private test case";
+  $("package-summary").textContent = "This loopback-only route verifies that a non-public request exposes no package data or file.";
+  $("package-context-content").innerHTML = `
+    <div class="load-error" role="alert">
+      <p><strong>Case:</strong> ${esc(slug)}</p>
+      <p><strong>Problem:</strong> Access to non-public package data is denied.</p>
+      <p><strong>Next:</strong> Return to the catalog. No private fixture was loaded.</p>
+    </div>`;
+  $("format-specifications").innerHTML = "<p>No readable or structured format is available because no public package was loaded.</p>";
+  $("package-boundary-content").innerHTML = "<ul class=\"boundary-list\"><li><strong>Public boundary</strong><span>No public package data is exposed for this local sentinel.</span></li></ul>";
+  $("package-provenance-content").innerHTML = "<p>Not available. No owner source was loaded.</p>";
+  $("package-limits-content").innerHTML = "<p>This route proves the denial state only. It is not a real case or a source record.</p>";
+  $("package-files-content").innerHTML = "<p>No files are available for this route.</p>";
+  $("package-ready").textContent = "Download permission blocked";
+  $("package-ready").className = "status-label status-error";
+  $("package-status").textContent = `The package for ${slug} is unavailable because access to non-public package data is denied. Choose Return to catalog. No download is available and no private fixture was loaded.`;
+  disableDownloadActions();
+  $("retry-package").hidden = true;
+  $("package-return").textContent = "Return to catalog";
+  $("package-recovery-actions").hidden = false;
+  setCaseView("package", false);
+  $("dialog-context").textContent = "Permission boundary / Download package";
+  openModal($("case-dialog"), trigger);
+  writeUrl();
+}
+
+async function retryPackageValidation() {
+  const detail = state.activePackage;
+  if (!detail || detail.model.slug !== state.activeCase) return;
+  renderPackage(detail, "loading");
+  try {
+    await verifyPackageFiles(detail);
+    if (state.activePackage !== detail) return;
+    renderPackage(detail, "ready");
+    window.setTimeout(() => $("download-readable").focus(), 0);
+  } catch (error) {
+    if (state.activePackage !== detail) return;
+    renderPackage(detail, "error", error);
+    window.setTimeout(() => $("retry-package").focus(), 0);
+  }
+}
+
+function returnToCatalog() {
+  closeModal($("case-dialog"));
+  window.setTimeout(() => $("search").focus(), 0);
+}
+
+function retryCatalog() {
+  const next = new URL(window.location.href);
+  next.searchParams.delete("test-state");
+  next.searchParams.delete("test-format");
+  window.location.assign(`${next.pathname}${next.search}${next.hash}`);
+}
+
+function setCaseView(view, focus = true) {
+  const packageView = view === "package";
+  state.activeView = packageView ? "package" : "case";
+  $("case-screen").hidden = packageView;
+  $("package-screen").hidden = !packageView;
+  $("case-dialog").setAttribute("aria-labelledby", packageView ? "package-title" : "case-title");
+  $("dialog-context").textContent = packageView ? "Public case / Download package" : "Public case / Case detail";
+  writeUrl();
+  if (focus) (packageView ? $("package-back") : $("open-package")).focus();
+}
+
+async function openCase(slug, trigger, requestedView = "case") {
+  if (IS_LOCAL_TEST_HOST && slug === PRIVATE_TEST_CASE_SLUG && requestedView === "package") {
+    showLocalPermissionDenied(slug, trigger);
+    return;
+  }
+  const item = state.cases.find(candidate => candidate.slug === slug && candidate.publication_status === "public");
+  if (!item) {
+    showUnavailableCase(slug, trigger);
+    return;
+  }
+
+  revokeDownloadUrls();
+  state.activeCase = slug;
+  state.activePackage = null;
+  $("case-lane").textContent = LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane);
+  $("case-title").textContent = item.name;
+  $("case-source").textContent = `Public source study / ${item.source_name} / Studied ${formatDate(item.studied_at)}`;
+  $("case-preview").innerHTML = previewMarkup(item, "detail");
+  $("case-loading").hidden = false;
+  $("case-loading-message").textContent = `Loading the validated public package for ${item.name}. Downloads remain unavailable until validation finishes.`;
+  $("case-content").hidden = true;
+  $("open-package").disabled = true;
+  updateDialogCompareButton();
+  setCaseView("case", false);
+  openModal($("case-dialog"), trigger);
+  writeUrl();
+
+  try {
+    const detail = await loadPublicPackageMetadata(slug);
+    if (state.activeCase !== slug) return;
+    state.activePackage = detail;
+    renderCase(detail.model);
+    renderPackage(detail, "loading");
+    if (requestedView === "package") setCaseView("package", false);
+    try {
+      await verifyPackageFiles(detail);
+      if (state.activeCase !== slug || state.activePackage !== detail) return;
+      renderPackage(detail, "ready");
+    } catch (error) {
+      if (state.activeCase !== slug || state.activePackage !== detail) return;
+      renderPackage(detail, "error", error);
+    }
+  } catch (error) {
+    if (state.activeCase !== slug) return;
+    state.activePackage = null;
+    showCaseError(item, error);
   }
 }
 
@@ -469,6 +901,7 @@ function resetFilters() {
   $("search").value = "";
   for (const id of Object.keys(FACETS)) $(id).value = "";
   $("sort").value = "name";
+  $("advanced-filters").open = false;
   render();
   $("search").focus();
 }
@@ -476,7 +909,8 @@ function resetFilters() {
 function hydrateFromUrl() {
   const params = new URLSearchParams(window.location.search);
   $("search").value = params.get("q") ?? "";
-  state.lane = params.get("lane") ?? "";
+  const requestedLane = params.get("lane") ?? "";
+  state.lane = Object.hasOwn(LANE_LABELS, requestedLane) ? requestedLane : "";
   for (const id of Object.keys(FACETS)) {
     const value = params.get(id) ?? "";
     if ([...$(id).options].some(option => option.value === value)) $(id).value = value;
@@ -484,10 +918,15 @@ function hydrateFromUrl() {
   const sort = params.get("sort") ?? "name";
   if ([...$("sort").options].some(option => option.value === sort)) $("sort").value = sort;
   for (const slug of (params.get("compare") ?? "").split(",").filter(Boolean).slice(0, 5)) {
-    if (state.cases.some(item => item.slug === slug)) state.selected.add(slug);
+    if (state.cases.some(item => item.slug === slug && item.publication_status === "public")) state.selected.add(slug);
   }
   const initialCase = params.get("case");
-  if (initialCase && state.cases.some(item => item.slug === initialCase)) window.setTimeout(() => openCase(initialCase), 0);
+  const requestedView = params.get("view") === "package" || window.location.hash === "#download-package" ? "package" : "case";
+  if (initialCase) {
+    window.setTimeout(() => openCase(initialCase, null, requestedView), 0);
+  } else if (state.selected.size >= 2) {
+    window.setTimeout(() => openCompareDialog(null), 0);
+  }
 }
 
 function wireEvents() {
@@ -496,28 +935,87 @@ function wireEvents() {
   for (const id of [...Object.keys(FACETS), "sort"]) $(id).addEventListener("change", render);
   $("reset-filters").addEventListener("click", resetFilters);
   $("empty-reset").addEventListener("click", resetFilters);
+  $("retry-catalog").addEventListener("click", retryCatalog);
   $("clear-compare").addEventListener("click", () => { state.selected.clear(); render(); });
-  $("open-compare").addEventListener("click", openCompareDialog);
+  $("open-compare").addEventListener("click", event => openCompareDialog(event.currentTarget));
   $("dialog-compare").addEventListener("click", () => toggleCompare(state.activeCase));
+  $("open-package").addEventListener("click", () => setCaseView("package"));
+  $("package-back").addEventListener("click", () => state.activePackage ? setCaseView("case") : returnToCatalog());
+  $("retry-package").addEventListener("click", retryPackageValidation);
+  $("package-return").addEventListener("click", () => state.activePackage ? setCaseView("case") : returnToCatalog());
+  $("case-loading-return").addEventListener("click", returnToCatalog);
+  $("case-context-content").addEventListener("click", event => {
+    const retry = event.target.closest("[data-retry-case]");
+    if (retry) {
+      const slug = state.activeCase;
+      state.packageCache.delete(slug);
+      openCase(slug, retry, "case");
+      return;
+    }
+    if (event.target.closest("[data-return-catalog]")) returnToCatalog();
+  });
 
   $("lane-filters").addEventListener("click", event => {
     const button = event.target.closest("button[data-lane]");
     if (!button) return;
     state.lane = button.dataset.lane;
     render();
+    const activeButton = [...$("lane-filters").querySelectorAll("button[data-lane]")]
+      .find(candidate => candidate.dataset.lane === state.lane);
+    activeButton?.focus();
   });
 
   $("results").addEventListener("click", event => {
-    const openButton = event.target.closest("[data-open-case]");
     const compareButton = event.target.closest("[data-compare]");
-    if (openButton) openCase(openButton.dataset.openCase);
-    if (compareButton) toggleCompare(compareButton.dataset.compare);
+    if (compareButton) {
+      toggleCompare(compareButton.dataset.compare, { restoreCatalogFocus: true });
+      return;
+    }
+    const openButton = event.target.closest("[data-open-case]");
+    if (openButton) openCase(openButton.dataset.openCase, openButton);
   });
 
   $("comparison").addEventListener("click", event => {
     const button = event.target.closest("[data-remove-compare]");
     if (button) toggleCompare(button.dataset.removeCompare);
   });
+
+  $("compare-table").addEventListener("click", event => {
+    const button = event.target.closest("[data-open-case]");
+    if (!button) return;
+    closeModal($("compare-dialog"));
+    window.setTimeout(() => openCase(button.dataset.openCase, null), 0);
+  });
+
+  for (const id of ["download-readable", "download-structured"]) {
+    $(id).addEventListener("click", event => {
+      const link = event.currentTarget;
+      const format = id === "download-readable" ? "readable" : "structured";
+      const detail = state.activePackage;
+      if (link.getAttribute("aria-disabled") === "true") {
+        event.preventDefault();
+        if (detail) {
+          const failure = new PackageFileError("validation has not completed", { code: "validation-incomplete", format });
+          $("package-status").textContent = packageFailureMessage(detail, failure);
+          $("package-recovery-actions").hidden = false;
+        }
+        return;
+      }
+      if (!detail || !link.href.startsWith("blob:") || !safeDownloadFilename(link.download, format)) {
+        event.preventDefault();
+        if (detail) renderPackage(detail, "error", new PackageFileError("the verified browser file is unavailable", { code: "browser-failure", format }));
+        return;
+      }
+      if (TEST_STATE === "download-failure" && TEST_FORMAT === format) {
+        event.preventDefault();
+        renderPackage(detail, "error", new PackageFileError("the browser could not start the local file transfer", { code: "browser-failure", format }));
+        return;
+      }
+      $("package-ready").textContent = "Download requested";
+      $("package-ready").className = "status-label status-ready";
+      $("package-status").textContent = `The Site asked your browser to download the verified ${format} file ${link.download} for ${detail.model.name}. If the file does not appear, retry this ${format} download or return to the case.`;
+    });
+  }
 
   for (const button of document.querySelectorAll("[data-close]")) {
     button.addEventListener("click", () => closeModal($(button.dataset.close)));
@@ -529,35 +1027,41 @@ function wireEvents() {
     });
     dialog.addEventListener("close", () => {
       if (dialog.id === "case-dialog") {
+        revokeDownloadUrls();
         state.activeCase = null;
+        state.activeView = "case";
+        state.activePackage = null;
+        $("case-screen").hidden = false;
+        $("package-screen").hidden = true;
         writeUrl();
       }
       if (!document.querySelector("dialog[open]")) document.body.classList.remove("modal-open");
-    });
-  }
-
-  const tabs = [...$("case-dialog").querySelectorAll("[role=tab]")];
-  for (const tab of tabs) {
-    tab.addEventListener("click", () => activateTab(tab.id));
-    tab.addEventListener("keydown", event => {
-      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
-      event.preventDefault();
-      const current = tabs.indexOf(tab);
-      const next = event.key === "Home" ? 0 : event.key === "End" ? tabs.length - 1 : (current + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
-      activateTab(tabs[next].id);
+      const storedTarget = state.focusReturn.get(dialog.id);
+      state.focusReturn.delete(dialog.id);
+      const target = storedTarget instanceof HTMLElement && storedTarget !== document.body
+        ? storedTarget
+        : $("search");
+      window.setTimeout(() => {
+        if (target instanceof HTMLElement && document.contains(target) && !target.disabled) target.focus();
+      }, 0);
     });
   }
 }
 
 async function start() {
-  setInitialLoadingCards();
+  setInitialLoadingRows();
   wireEvents();
   try {
+    if (TEST_STATE === "catalog-loading") await new Promise(() => {});
+    if (TEST_STATE === "catalog-error") throw new Error("the catalog request failed the local validation test");
     const response = await fetch("generated-data/catalog/index.json");
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     state.catalog = await response.json();
-    state.cases = state.catalog.cases;
+    if (state.catalog.visibility !== "public" || state.catalog.case_count !== 60) throw new Error("expected exactly 60 reviewed public cases");
+    state.cases = state.catalog.cases.filter(item => item.publication_status === "public");
+    if (state.cases.length !== 60) throw new Error("the public catalog count does not match its case records");
     $("case-count").textContent = String(state.catalog.case_count);
+    $("public-count").textContent = String(state.catalog.case_count);
     fillSelect("platform", state.catalog.facets.platforms);
     fillSelect("product-type", state.catalog.facets.product_types);
     fillSelect("archetype", state.catalog.facets.archetypes);
@@ -569,7 +1073,9 @@ async function start() {
   } catch (error) {
     $("results").innerHTML = "";
     $("results").setAttribute("aria-busy", "false");
-    $("status").textContent = `Catalog unavailable: ${error.message}. Rebuild the public catalog data using the command in site/README.md, then reload this page.`;
+    const localHint = IS_LOCAL_TEST_HOST ? ` ${LOCAL_CATALOG_REBUILD_HINT}` : "";
+    $("status").textContent = `The public catalog is unavailable because the catalog request could not be loaded and checked. Choose Retry public catalog.${localHint} No case or download is available while the catalog is unavailable.`;
+    $("catalog-recovery").hidden = false;
   }
 }
 

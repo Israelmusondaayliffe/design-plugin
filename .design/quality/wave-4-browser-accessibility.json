@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "artifact_type": "wave-4-browser-accessibility",
+  "visibility": "public",
+  "reviewed_at": "2026-09-02T03:13:29Z",
+  "status": "pass",
+  "review_mode": "independent-rendered-browser-acceptance",
+  "runtime": {
+    "origin": "http://127.0.0.1:8765/",
+    "browser": "Chrome",
+    "catalog_visibility": "public",
+    "reviewed_case_count": 60,
+    "generated_catalog_rebuilt_with": "python3 corpus/scripts/build_catalog.py --visibility public"
+  },
+  "artifact_hashes": [
+    {
+      "path": "site/index.html",
+      "sha256": "3f178ebcfe0a61980fac86d1ad7d11eb3f9438c153ad7981bf8cbf72dbd0cdb1"
+    },
+    {
+      "path": "site/styles.css",
+      "sha256": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1"
+    },
+    {
+      "path": "site/app.js",
+      "sha256": "cc4fac7ee7c5432467f0efebc27930871c789e06c9e4362f683aa7b799a64f14"
+    },
+    {
+      "path": "site/README.md",
+      "sha256": "33c3a590e3f197a81648ba2838674891fa2e518fe5d1daaaf6f7f7a71963554f"
+    },
+    {
+      "path": "tests/test_wave11_site.py",
+      "sha256": "afbb812befc4ed325c192ea19306b36863c2d15002b7f9a4c1808c1a2bfd508c"
+    },
+    {
+      "path": "tests/test_wave11_evidence_exchange.py",
+      "sha256": "8e3ec74795ba69fb4146f051f2a9145f8469b58a6eba9667ed10548069ce32d6"
+    },
+    {
+      "path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json",
+      "sha256": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18"
+    },
+    {
+      "path": ".design/system/reference-lock.json",
+      "sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+    },
+    {
+      "path": ".design/system/ux-definition.json",
+      "sha256": "cfa1c4ff0e7dec586d23ea98680a440071aaf2e1f59f657d00c63a8c2bf20502"
+    },
+    {
+      "path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.json",
+      "sha256": "6048fff7cb74b317789790467d6ae737081972e035b47b7e7fe271b04bceeec0"
+    }
+  ],
+  "route_matrix": {
+    "status": "pass",
+    "required_targets": 21,
+    "passed_targets": 21,
+    "console_errors_or_warnings": 0,
+    "targets": [
+      {"id": "catalog-default-wide", "route": "/", "viewport": "1440x1000", "result": "pass"},
+      {"id": "catalog-default-mobile", "route": "/", "viewport": "390x844", "result": "pass"},
+      {"id": "catalog-default-tablet", "route": "/", "viewport": "834x1112", "result": "pass"},
+      {"id": "catalog-empty-mobile", "route": "/?q=no-such-reviewed-case", "viewport": "390x844", "result": "pass"},
+      {"id": "catalog-loading-mobile", "route": "/?test-state=catalog-loading", "viewport": "390x844", "result": "pass"},
+      {"id": "catalog-error-wide", "route": "/?test-state=catalog-error", "viewport": "1440x1000", "result": "pass"},
+      {"id": "case-default-wide", "route": "/?case=ibm-carbon", "viewport": "1440x1000", "result": "pass"},
+      {"id": "case-default-tablet", "route": "/?case=ibm-carbon", "viewport": "834x1112", "result": "pass"},
+      {"id": "case-loading-mobile", "route": "/?case=ibm-carbon&test-state=case-loading", "viewport": "390x844", "result": "pass"},
+      {"id": "case-error-mobile", "route": "/?case=missing-case", "viewport": "390x844", "result": "pass"},
+      {"id": "package-default-wide", "route": "/?case=ibm-carbon#download-package", "viewport": "1440x1000", "result": "pass"},
+      {"id": "package-default-mobile", "route": "/?case=ibm-carbon#download-package", "viewport": "390x844", "result": "pass"},
+      {"id": "package-default-tablet", "route": "/?case=ibm-carbon#download-package", "viewport": "834x1112", "result": "pass"},
+      {"id": "package-error-mobile", "route": "/?case=ibm-carbon&test-state=download-error#download-package", "viewport": "390x844", "result": "pass"},
+      {"id": "package-denied-wide", "route": "/?case=private-test-case#download-package", "viewport": "1440x1000", "result": "pass"},
+      {"id": "comparison-default-wide", "route": "/?compare=ibm-carbon,vercel-geist", "viewport": "1440x1000", "result": "pass"},
+      {"id": "comparison-default-mobile", "route": "/?compare=ibm-carbon,vercel-geist", "viewport": "390x844", "result": "pass"},
+      {"id": "comparison-default-tablet", "route": "/?compare=ibm-carbon,vercel-geist", "viewport": "834x1112", "result": "pass"},
+      {"id": "method-default-wide", "route": "/#method", "viewport": "1440x1000", "result": "pass"},
+      {"id": "method-default-mobile", "route": "/#method", "viewport": "390x844", "result": "pass"},
+      {"id": "method-default-tablet", "route": "/#method", "viewport": "834x1112", "result": "pass"}
+    ]
+  },
+  "responsive": {
+    "status": "pass_at_default_spacing",
+    "widths_css_px": [390, 600, 834, 960, 1280, 1440],
+    "root_overflow": "none at default spacing for catalog and comparison",
+    "comparison_overflow": [
+      {"width": 390, "client_width": 356, "scroll_width": 760},
+      {"width": 600, "client_width": 538, "scroll_width": 760},
+      {"width": 834, "client_width": 758, "scroll_width": 760},
+      {"width": 960, "client_width": 876, "scroll_width": 876},
+      {"width": 1280, "client_width": 1177, "scroll_width": 1177},
+      {"width": 1440, "client_width": 1328, "scroll_width": 1328}
+    ],
+    "comparison_region": {
+      "aria_label": "Selected case comparison table",
+      "tabindex": "0",
+      "only_intentional_horizontal_scroll_region": true
+    },
+    "mobile_primary_controls": {
+      "viewport": "390x844",
+      "minimum_width_css_px": 59.9,
+      "minimum_height_css_px": 44,
+      "controls_below_44_by_44": 0
+    }
+  },
+  "keyboard_and_focus": {
+    "status": "pass",
+    "passing_flows": [
+      "Tab order reaches skip link, navigation, search, and lane controls in DOM order.",
+      "Search filters to one case and Clear search restores 60 cases and search focus.",
+      "Case entry focuses Close; Tab reaches Add to comparison; Escape and Close restore the exact Study case opener.",
+      "Package entry focuses Back to case; Back restores Review package.",
+      "The verified readable download is keyboard-activated and reports Download requested with the manifest filename.",
+      "Two keyboard-selected cases enable comparison; comparison entry focuses Close; Tab reaches the labeled scroll region; Escape and Close restore Compare cases.",
+      "Direct comparison Escape restores search focus.",
+      "Case-error and permission-denied Return to catalog restore search focus.",
+      "Package-error Return to case restores Review package."
+    ],
+    "resolved_failures": [
+      {
+        "id": "keyboard-lane-filter-focus-loss",
+        "result": "pass",
+        "evidence": "Activating Design systems 5 with Enter updates the result set to 5 of 60 and restores focus to the newly rendered active BUTTON with data-lane=design-systems-data-experimental and aria-pressed=true."
+      },
+      {
+        "id": "keyboard-package-retry-focus-loss",
+        "result": "pass",
+        "evidence": "A persistent validation error restores focus to retry-package with both downloads disabled. A recoverable blocked-file error followed by retry focuses download-readable after both files validate, with the expected manifest filename."
+      }
+    ],
+    "advanced_filter_keyboard_evidence": [
+      {
+        "check": "native keyboard value change inside an advanced-filter select",
+        "result": "pass",
+        "method": "Keyboard-only Tab navigation, Enter to open the disclosure, Tab to focus the native Platform select, and the A key for native typeahead selection.",
+        "evidence": "Platform changed from All platforms to Android while focus remained on the SELECT. The catalog updated from 60 of 60 to 9 of 60 reviewed public cases, URL state became ?platform=android, the active-filter count became 1, root width remained 390 of 390, and the next Tab moved focus to the Product type SELECT."
+      }
+    ]
+  },
+  "live_regions": {
+    "status": "pass",
+    "observations": [
+      "Catalog loading exposes role=status, aria-live=polite, aria-busy=true, and four loading rows.",
+      "Catalog failure exposes its recovery message through role=status and aria-busy=false.",
+      "Missing-case failure exposes one role=alert with problem, next action, retry, and return text.",
+      "Package failure exposes role=status, recovery actions, and no enabled download.",
+      "Comparison selection is exposed through aria-live=polite and reports one then two selected cases."
+    ]
+  },
+  "zoom_200_percent": {
+    "status": "pass",
+    "method": "Chrome DevTools Protocol Emulation.setPageScaleFactor at pageScaleFactor 2",
+    "viewport_before": {"layout_width": 1440, "visual_width": 1440, "visual_scale": 1},
+    "viewport_at_200_percent": {"layout_width": 1440, "visual_width": 720, "visual_scale": 2},
+    "root_scroll_width": 1440,
+    "retained_reviewed_cases": 60,
+    "reset_visual_scale": 1
+  },
+  "wcag_text_spacing": {
+    "status": "pass",
+    "method": "Temporary browser-only style override: line-height 1.5, paragraph margin-bottom 2em, letter-spacing 0.12em, word-spacing 0.16em",
+    "computed_sample": {
+      "line_height_ratio": 1.5,
+      "paragraph_margin_bottom_css_px": 23.04,
+      "letter_spacing_css_px": 1.3824,
+      "word_spacing_css_px": 1.8432
+    },
+    "observations": {
+      "viewport_width_css_px": 390,
+      "root_client_width_css_px": 390,
+      "root_scroll_width_css_px": 390,
+      "body_client_width_css_px": 390,
+      "body_scroll_width_css_px": 390,
+      "hero_heading_client_width_css_px": 358,
+      "hero_heading_scroll_width_css_px": 358,
+      "clipped_text_elements": 0,
+      "screens_checked": ["catalog", "case", "comparison"],
+      "comparison_scroll_remains_bounded": true
+    },
+    "temporary_override_removed": true
+  },
+  "reduced_motion": {
+    "status": "pass",
+    "method": "Chrome DevTools Protocol Emulation.setEmulatedMedia with prefers-reduced-motion=reduce",
+    "media_query_matches": true,
+    "html_scroll_behavior": "auto",
+    "computed_animation_duration_seconds": 0.00001,
+    "computed_animation_iteration_count": 1,
+    "computed_transition_duration_seconds": 0.00001,
+    "root_overflow": "none",
+    "retained_reviewed_cases": 60,
+    "emulation_reset": true
+  },
+  "copy_and_local_boundary": {
+    "status": "pass",
+    "local_loopback_failure_includes_rebuild_hint": true,
+    "unallowlisted_hostname_failure_includes_rebuild_hint": false,
+    "public_copy": "The public catalog is unavailable because the catalog request could not be loaded and checked. Choose Retry public catalog. No case or download is available while the catalog is unavailable.",
+    "private_test_case": "Loopback-only permission-denied route exposed no download href, filename, or enabled action and returned to catalog search focus."
+  },
+  "automated_accessibility_scanner": {
+    "status": "pass",
+    "method": "Rendered DOM rule scan scoped to the active modal when present and to the document otherwise.",
+    "rules": [
+      "duplicate IDs",
+      "missing accessible names on visible controls, form fields, summaries, and links",
+      "broken aria-labelledby and aria-describedby references",
+      "visible heading-order jumps",
+      "focusable content inside aria-hidden subtrees",
+      "dialog aria-labelledby reference integrity and non-empty labels for open dialogs",
+      "target-specific state and smoke blockers"
+    ],
+    "limitation": "This focused scanner is not full accessibility acceptance and does not implement the complete accessibility-tree name algorithm, browser and assistive-technology pairing, announcement timing, keyboard behavior, contrast, zoom, motion, or human usability judgment. Those categories have separate rendered evidence in this receipt.",
+    "passed_targets": 21,
+    "required_targets": 21,
+    "targets": [
+      {"id":"catalog-default-wide","route":"/","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"catalog-default-mobile","route":"/","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"catalog-default-tablet","route":"/","viewport":"834x1112","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"catalog-empty-mobile","route":"/?q=no-such-reviewed-case","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"catalog-loading-mobile","route":"/?test-state=catalog-loading","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"catalog-error-wide","route":"/?test-state=catalog-error","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"case-default-wide","route":"/?case=ibm-carbon","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"case-default-tablet","route":"/?case=ibm-carbon","viewport":"834x1112","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"case-loading-mobile","route":"/?case=ibm-carbon&test-state=case-loading","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"case-error-mobile","route":"/?case=missing-case","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"package-default-wide","route":"/?case=ibm-carbon#download-package","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"package-default-mobile","route":"/?case=ibm-carbon#download-package","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"package-default-tablet","route":"/?case=ibm-carbon#download-package","viewport":"834x1112","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"package-error-mobile","route":"/?case=ibm-carbon&test-state=download-error#download-package","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"package-denied-wide","route":"/?case=private-test-case#download-package","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"comparison-default-wide","route":"/?compare=ibm-carbon,vercel-geist","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"comparison-default-mobile","route":"/?compare=ibm-carbon,vercel-geist","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"comparison-default-tablet","route":"/?compare=ibm-carbon,vercel-geist","viewport":"834x1112","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"method-default-wide","route":"/#method","viewport":"1440x1000","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"method-default-mobile","route":"/#method","viewport":"390x844","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0},
+      {"id":"method-default-tablet","route":"/#method","viewport":"834x1112","result":"pass","duplicate_ids":0,"missing_control_or_form_names":0,"missing_link_names":0,"broken_aria_references":0,"heading_order_jumps":0,"focusable_aria_hidden":0,"dialog_labels_valid":true,"target_specific_blockers":0}
+    ]
+  },
+  "computed_contrast": {
+    "status": "pass",
+    "method": "Fresh computed foreground, effective adjacent background, border, and focus-token colors using WCAG relative luminance. CSS Color 4 srgb values were normalized before calculation.",
+    "thresholds": {"normal_text":4.5,"large_text":3,"functional_boundaries":3,"strong_dividers":3,"focus_indicator":3},
+    "screens": [
+      {"screen":"catalog","route":"/","text_samples":914,"minimum_text_ratio":5.36,"action_samples":195,"minimum_action_ratio":14.2,"status_samples":1,"minimum_status_ratio":5.8,"heading_samples":7,"minimum_heading_ratio":13.14,"failures":0},
+      {"screen":"case","route":"/?case=ibm-carbon","text_samples":130,"minimum_text_ratio":5.8,"action_samples":11,"minimum_action_ratio":5.8,"status_samples":0,"heading_samples":15,"minimum_heading_ratio":14.2,"failures":0},
+      {"screen":"package","route":"/?case=ibm-carbon#download-package","text_samples":95,"minimum_text_ratio":5.8,"action_samples":5,"minimum_action_ratio":7.72,"status_samples":2,"minimum_status_ratio":6.38,"heading_samples":14,"minimum_heading_ratio":14.2,"failures":0},
+      {"screen":"comparison","route":"/?compare=ibm-carbon,vercel-geist","text_samples":7,"minimum_text_ratio":5.8,"action_samples":3,"minimum_action_ratio":14.2,"status_samples":0,"heading_samples":1,"minimum_heading_ratio":14.2,"failures":0},
+      {"screen":"method","route":"/#method","text_samples":914,"minimum_text_ratio":5.36,"action_samples":195,"minimum_action_ratio":14.2,"status_samples":1,"minimum_status_ratio":5.8,"heading_samples":7,"minimum_heading_ratio":13.14,"failures":0}
+    ],
+    "privacy_band_paragraph": {"foreground":"#f3f4f2","background":"#1d2522","ratio":14.2,"threshold":4.5,"result":"pass"},
+    "select_boundaries": {"count":7,"advanced_filter_ratio":3.85,"sort_ratio":3.65,"minimum_ratio":3.65,"threshold":3,"failures":0},
+    "strong_dividers": {"ratios_by_surface":[3.65,4.03,3.38],"minimum_ratio":3.38,"threshold":3,"failures":0},
+    "focus_indicator": {"ratios_by_surface":[6.31,6.96,5.83],"minimum_ratio":5.83,"threshold":3,"failures":0},
+    "unresolved_failures": []
+  },
+  "five_screen_adaptation_matrix": {
+    "status": "pass",
+    "screens": [
+      {"screen":"catalog","route":"/","zoom_200_percent":{"result":"pass","visual_scale":2,"visual_width":720,"root":"1440/1440","retained_actions":269},"wcag_text_spacing":{"result":"pass","root":"390/390","body":"390/390","clipped_text_elements":0,"retained_actions":269},"reduced_motion":{"result":"pass","root":"390/390","media_matches":true,"scroll_behavior":"auto","animation_duration_seconds":0.00001,"transition_duration_seconds":0.00001,"retained_actions":269}},
+      {"screen":"case","route":"/?case=ibm-carbon","zoom_200_percent":{"result":"pass","visual_scale":2,"visual_width":720,"root":"1440/1440","retained_actions":274},"wcag_text_spacing":{"result":"pass","root":"390/390","body":"390/390","clipped_text_elements":0,"retained_actions":274},"reduced_motion":{"result":"pass","root":"390/390","media_matches":true,"scroll_behavior":"auto","animation_duration_seconds":0.00001,"transition_duration_seconds":0.00001,"retained_actions":274}},
+      {"screen":"package","route":"/?case=ibm-carbon#download-package","zoom_200_percent":{"result":"pass","visual_scale":2,"visual_width":720,"root":"1440/1440","retained_actions":268,"enabled_downloads":2},"wcag_text_spacing":{"result":"pass","root":"390/390","body":"390/390","clipped_text_elements":0,"retained_actions":268,"enabled_downloads":2},"reduced_motion":{"result":"pass","root":"390/390","media_matches":true,"scroll_behavior":"auto","animation_duration_seconds":0.00001,"transition_duration_seconds":0.00001,"retained_actions":268}},
+      {"screen":"comparison","route":"/?compare=ibm-carbon,vercel-geist","zoom_200_percent":{"result":"pass","visual_scale":2,"visual_width":720,"root":"1440/1440","retained_actions":275},"wcag_text_spacing":{"result":"pass","root":"390/390","body":"390/390","clipped_text_elements":0,"comparison_region":"356/760","comparison_label":"Selected case comparison table","retained_actions":275},"reduced_motion":{"result":"pass","root":"390/390","media_matches":true,"scroll_behavior":"auto","animation_duration_seconds":0.00001,"transition_duration_seconds":0.00001,"retained_actions":275}},
+      {"screen":"method","route":"/#method","zoom_200_percent":{"result":"pass","visual_scale":2,"visual_width":720,"root":"1440/1440","retained_actions":269},"wcag_text_spacing":{"result":"pass","root":"390/390","body":"390/390","clipped_text_elements":0,"retained_actions":269},"reduced_motion":{"result":"pass","root":"390/390","media_matches":true,"scroll_behavior":"auto","animation_duration_seconds":0.00001,"transition_duration_seconds":0.00001,"retained_actions":269}}
+    ],
+    "text_spacing_override": {"line_height_ratio":1.5,"paragraph_margin_bottom_css_px":23.04,"letter_spacing_css_px":1.3824,"word_spacing_css_px":1.8432},
+    "root_overflow_failures": 0,
+    "allowed_nested_overflow": "Only the labeled comparison region at 390 CSS pixels, client 356 and scroll 760."
+  },
+  "native_advanced_filter_keyboard_proof": {
+    "status": "pass",
+    "method": "Keyboard-only Tab, Enter, Tab, then native A-key typeahead in the Platform select.",
+    "before": {"focused_control":"platform","value":"","result_count":60,"status":"60 of 60 reviewed public cases","url":""},
+    "after": {"focused_control":"platform","element":"SELECT","value":"android","label":"Android","result_count":9,"status":"9 of 60 reviewed public cases","url":"?platform=android","active_filter_count":1,"root":"390/390"},
+    "continuation": {"next_tab_focus":"product-type","element":"SELECT"}
+  },
+  "final_route_smoke_and_hash_integrity": {
+    "status": "pass",
+    "routes_passed": 21,
+    "routes_required": 21,
+    "console_errors_or_warnings": 0,
+    "root_overflow_failures": 0,
+    "catalog_case_count": 60,
+    "hashes": {
+      "site/index.html":"3f178ebcfe0a61980fac86d1ad7d11eb3f9438c153ad7981bf8cbf72dbd0cdb1",
+      "site/styles.css":"a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1",
+      "site/app.js":"cc4fac7ee7c5432467f0efebc27930871c789e06c9e4362f683aa7b799a64f14",
+      "tests/test_wave11_site.py":"afbb812befc4ed325c192ea19306b36863c2d15002b7f9a4c1808c1a2bfd508c"
+    }
+  },
+  "privacy": {
+    "contains_private_identifiers": false,
+    "contains_absolute_local_paths": false,
+    "contains_browser_session_identifiers": false,
+    "contains_download_blob_urls": false,
+    "contains_only_public_case_names": true
+  },
+  "repair_recheck": {
+    "status": "pass",
+    "text_spacing_390_css_px": "pass",
+    "lane_keyboard_focus_restoration": "pass",
+    "package_retry_persistent_error_focus": "pass",
+    "package_retry_success_focus": "pass",
+    "advanced_filter_native_keyboard_change": "pass",
+    "route_smoke_passed": 21,
+    "route_smoke_required": 21,
+    "route_smoke_console_errors_or_warnings": 0
+  },
+  "blocking_findings": []
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "reference_lock_sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449",
+  "information_architecture": [
+    {"id": "library", "label": "Design Reference Library", "purpose": "Provide one public entry point for finding, understanding, comparing, and downloading reviewed cases.", "parent_id": null},
+    {"id": "catalog", "label": "Catalog", "purpose": "Expose the 60 public cases through search, lanes, facets, sorting, and original previews.", "parent_id": "library"},
+    {"id": "case", "label": "Case", "purpose": "Explain one case through context, intent, value, quality, evidence, limitations, and adaptation guidance.", "parent_id": "library"},
+    {"id": "package", "label": "Download package", "purpose": "Explain readable and structured outputs before the user chooses and downloads a file.", "parent_id": "case"},
+    {"id": "comparison", "label": "Comparison", "purpose": "Keep two to five cases distinct while comparing compatible design relationships.", "parent_id": "library"},
+    {"id": "method", "label": "Method", "purpose": "Define evidence classes, originality boundaries, review status, limitations, and responsible use.", "parent_id": "library"}
+  ],
+  "screens": [
+    {
+      "id": "catalog",
+      "name": "Public catalog",
+      "purpose": "Help a visitor find a relevant public case without loading full case evidence up front.",
+      "primary_tasks": ["Search all public cases.", "Filter by lane and approved facets.", "Sort by name, lane, or evidence quality.", "Open a case or add two to five cases to comparison."],
+      "permissions": ["Available without an account.", "Only cases whose canonical publication status is public may appear."],
+      "responsive_behavior": "Wide layouts use an aligned search, lane, facet, results, and comparison structure. Narrow layouts use one content column, wrap or scroll bounded controls, collapse advanced facets, and keep status plus clear-filter actions adjacent to the results they affect."
+    },
+    {
+      "id": "case-detail",
+      "name": "Case detail",
+      "purpose": "Explain the case before offering a download and preserve the boundary between source facts and project analysis.",
+      "primary_tasks": ["Read context, intent, value, and quality.", "Inspect analysis, evidence classes, provenance, limitations, and unknowns.", "Add or remove the case from comparison.", "Continue to the download package."],
+      "permissions": ["Available without an account for public cases only.", "Private, review, blocked, missing, or invalid case identifiers must not reveal case data."],
+      "responsive_behavior": "Wide layouts align the case explanation, evidence, metadata, and package entry across a visible grid. Narrow layouts use a stable single-column decision order and keep tab or section controls keyboard accessible without horizontal page overflow."
+    },
+    {
+      "id": "download-package",
+      "name": "Case download package",
+      "purpose": "Show what each output contains, its evidence boundary, and its limitations before the file action.",
+      "primary_tasks": ["Confirm the case context and publication status.", "Compare the readable brief and structured JSON contents.", "Review provenance, evidence quality, limitations, unknowns, and file details.", "Download one output and receive a clear success or failure state."],
+      "permissions": ["Available without an account for public cases only.", "The generated files may contain only the approved public projection, never raw review or source-note fields."],
+      "responsive_behavior": "Wide layouts may compare readable and structured formats side by side. Narrow layouts present the same formats sequentially, with context and limitations before both download buttons."
+    },
+    {
+      "id": "comparison",
+      "name": "Case comparison",
+      "purpose": "Compare two to five cases without blending their source roles or hiding important differences.",
+      "primary_tasks": ["Review selected case identities and evidence quality.", "Compare platforms, product types, density, media, signature traits, best uses, and avoid uses.", "Open a case for full evidence or remove it from comparison."],
+      "permissions": ["Available without an account for public cases only.", "A comparison must contain at least two and at most five cases."],
+      "responsive_behavior": "Wide layouts use concurrent columns. Narrow layouts keep a clearly labeled table inside a bounded horizontal scroll region while page-level content remains within the viewport."
+    },
+    {
+      "id": "method",
+      "name": "Method and use guidance",
+      "purpose": "Explain how evidence, confidence, originality, public projection, and limitations govern the library and its downloads.",
+      "primary_tasks": ["Understand evidence classes and confidence.", "Understand what may be adapted and what must not be copied.", "Understand review status, retrieval dates, limitations, and unknowns.", "Learn how readable and structured downloads should be used."],
+      "permissions": ["Available without an account.", "Method content may describe public process rules but must exclude reviewer identities, internal paths, and operational notes."],
+      "responsive_behavior": "Use a bounded reading measure at every viewport. Wide layouts may align definitions beside examples; narrow layouts place each definition before its example in document order."
+    }
+  ],
+  "flows": [
+    {
+      "id": "find-understand-case",
+      "name": "Find and understand a case",
+      "entry_screen": "catalog",
+      "steps": ["catalog", "case-detail"],
+      "success_outcome": "The visitor can state the case context, useful relationships, evidence quality, and limits before deciding whether to compare or download it.",
+      "error_paths": ["If the catalog cannot load, name the missing public catalog data and provide the exact rebuild and reload action.", "If a case route is missing or invalid, preserve the catalog state, identify the unavailable case, and return focus to the originating case control."]
+    },
+    {
+      "id": "compare-cases",
+      "name": "Compare distinct cases",
+      "entry_screen": "catalog",
+      "steps": ["catalog", "comparison", "case-detail"],
+      "success_outcome": "The visitor compares two to five cases, keeps their roles distinct, and can open one case without losing the selection context.",
+      "error_paths": ["If fewer than two cases are selected, keep the comparison action disabled and state the minimum.", "If a selected case is no longer public or cannot load, identify it, remove only that unavailable item, and preserve the remaining selection."]
+    },
+    {
+      "id": "download-public-case",
+      "name": "Inspect and download a public case",
+      "entry_screen": "catalog",
+      "steps": ["catalog", "case-detail", "download-package"],
+      "success_outcome": "The visitor receives the chosen readable or structured file for the named case after seeing its context, contents, evidence boundary, and limitations.",
+      "error_paths": ["If the case is not public, do not generate or expose a file and return to the public catalog.", "If projection validation fails, identify the affected case and format, provide no file, and retain the package context.", "If the browser download fails, name the format and case, preserve the package screen, and provide a retry action."]
+    },
+    {
+      "id": "understand-method",
+      "name": "Understand the evidence and originality method",
+      "entry_screen": "catalog",
+      "steps": ["catalog", "method"],
+      "success_outcome": "The visitor can distinguish source observation from project inference or recommendation and can identify the originality and privacy limits on downloaded data.",
+      "error_paths": ["If supporting method data is unavailable, keep the stable method definitions visible and identify which live or generated evidence could not be loaded."]
+    }
+  ],
+  "states": [
+    {
+      "screen_id": "catalog",
+      "default": "Show the public case count, search, lane controls, facets, sort, results, selection status, and method entry.",
+      "loading": "Mark only the results region busy, keep the shell and method entry available, and announce that the public catalog is loading.",
+      "empty": "Explain that no public cases match the current filters, retain the active-filter summary, and provide a clear-filter action.",
+      "error": "Name that the public catalog data is unavailable, show the exact rebuild and reload action, and do not render stale or partial records as complete.",
+      "permission_denied": "Do not expose non-public cases; state that the public library contains reviewed public records only and keep the public catalog available."
+    },
+    {
+      "screen_id": "case-detail",
+      "default": "Show context, intent, value, quality, analysis, evidence, provenance, limitations, unknowns, comparison state, and the package entry for one public case.",
+      "loading": "Keep the case identity and close action available, mark analysis and evidence regions separately busy, and announce which case is loading.",
+      "empty": "State which approved case section has no recorded public content and keep the other case sections plus package decision available.",
+      "error": "Name the case and failed section, preserve the case overview and catalog state, and provide retry plus return actions.",
+      "permission_denied": "Do not display private, review, or blocked case fields; identify that the case is unavailable in the public library and return to the catalog."
+    },
+    {
+      "screen_id": "download-package",
+      "default": "Show case identity, context, intended use, evidence quality, provenance, limitations, readable and structured contents, file details, and enabled download actions.",
+      "loading": "Identify the case and format being prepared, keep context and limitations readable, and disable only the affected download action.",
+      "empty": "Explain that no approved public projection exists for the named case and format, provide no empty file, and return to case detail.",
+      "error": "Name the case, format, and exact projection, validation, availability, or browser failure; preserve package context and offer retry or return.",
+      "permission_denied": "Do not generate a file for non-public or invalid cases; state the public-only rule and return to the catalog."
+    },
+    {
+      "screen_id": "comparison",
+      "default": "Show two to five public cases concurrently with stable attribute rows and actions to inspect or remove each case.",
+      "loading": "Preserve selected case names, mark unresolved cells, and announce which comparison data remains in progress.",
+      "empty": "State that at least two cases are required and return focus to the catalog selection controls.",
+      "error": "Identify each unavailable case, preserve valid selections, and offer removal or retry without clearing the whole comparison.",
+      "permission_denied": "Remove non-public cases without revealing their data, explain the public-only boundary, and preserve remaining public selections."
+    },
+    {
+      "screen_id": "method",
+      "default": "Show evidence classes, confidence, provenance, review status, originality rules, privacy exclusions, limitations, unknowns, and download-use guidance.",
+      "loading": "Keep stable method definitions visible and mark only source-dependent examples as loading.",
+      "empty": "State that no examples are available while retaining the method definitions and public-use rules.",
+      "error": "Identify the unavailable supporting evidence, retain stable definitions, and avoid claiming that the missing material was inspected.",
+      "permission_denied": "Exclude private operational details and reviewer identities while keeping the public method and privacy rules available."
+    }
+  ],
+  "responsive_strategy": {
+    "mode": "responsive-web",
+    "breakpoints": [
+      {"name": "base", "min_width_px": 0},
+      {"name": "compact", "min_width_px": 600},
+      {"name": "medium", "min_width_px": 960},
+      {"name": "wide", "min_width_px": 1280}
+    ],
+    "content_priority": [
+      "Current case or catalog identity and primary task",
+      "Context, intent, value, evidence quality, and limitations",
+      "Search, format choice, comparison, and download actions",
+      "Provenance, file metadata, evidence IDs, and supporting detail",
+      "Original preview and optional explanatory media"
+    ],
+    "adaptation_rules": [
+      "Recompose named regions instead of uniformly shrinking the wide layout.",
+      "Keep context and limitations before download actions at every width.",
+      "Present readable and structured formats side by side only when each remains readable; otherwise use a complete sequential order.",
+      "Keep comparison concurrent on wide layouts and place only the comparison table in a bounded horizontal scroll region on narrow layouts.",
+      "Collapse advanced filters by default on narrow layouts without removing any filter or reset action.",
+      "Keep DOM, reading, and focus order aligned with the visual decision order.",
+      "Maintain touch targets of at least 44 by 44 CSS pixels for primary mobile controls.",
+      "Do not introduce page-level horizontal overflow at any approved viewport."
+    ]
+  },
+  "mobile_task_model": {
+    "primary_tasks": ["Find and open a public case.", "Understand context, value, evidence quality, and limitations.", "Choose and download a readable or structured file.", "Select and compare two to five cases."],
+    "deferred_tasks": [],
+    "device_capabilities": ["Use standard browser file download behavior.", "Respect system reduced-motion preference.", "Allow platform sharing only if implemented later under an approved plan and without replacing download."],
+    "offline_requirements": "No offline guarantee is approved. If the locally served catalog or case routes are unavailable, name the missing resource and do not present stale data as current.",
+    "navigation_model": "Use a task-first single column with stable back or close actions, visible current context, and dialogs or sections that restore focus to their opener."
+  },
+  "accessibility": {
+    "target": "WCAG 2.2 AA",
+    "requirements": [
+      "Provide keyboard access and visible focus for search, filters, case sections, comparison, format choice, downloads, retries, and dialog closure.",
+      "Restore focus to the invoking control after a dialog or bounded detail surface closes.",
+      "Use semantic landmarks, ordered headings, labels, table headers, lists, buttons, links, and status announcements.",
+      "Expose names, roles, values, expanded or selected states, busy states, and errors to assistive technology.",
+      "Meet WCAG 2.2 AA contrast for text, controls, focus indicators, and meaningful non-text boundaries.",
+      "Pair every status color with text or an icon that has an accessible name when the icon adds meaning.",
+      "Name the exact failed field, case, format, or action and provide a specific recovery step without clearing valid context.",
+      "Support browser text resizing and spacing overrides without clipping, truncating, obscuring, or losing controls.",
+      "Respect reduced motion and preserve all state meaning when transitions are removed.",
+      "Prevent page-level horizontal overflow; any comparison overflow must remain inside a labeled, keyboard-reachable region.",
+      "Use touch targets of at least 44 by 44 CSS pixels for primary mobile actions.",
+      "Do not rely on hover, motion, color, pointer precision, or imagery for essential meaning."
+    ]
+  },
+  "figma_handoff": {
+    "mode": "not-applicable",
+    "reason": "Direct Figma access is unavailable in the current host, and the approved benchmark requires a local repository specification rather than a Figma write."
+  }
+}

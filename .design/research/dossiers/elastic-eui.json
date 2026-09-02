@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "elastic-eui",
+    "source_url": "https://eui.elastic.co/",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "EUI-E01",
+      "class": "observed",
+      "claim": "EUI publishes responsive layout, form validation, table, panel, callout, token, and pattern guidance in one component framework.",
+      "source_locator": "https://eui.elastic.co/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "EUI-E02",
+      "class": "observed",
+      "claim": "EUI flex groups serve single-row alignment, flex grids serve repeated wrapping rows, and semantic output elements can replace default div elements.",
+      "source_locator": "https://eui.elastic.co/docs/components/layout/flex/index.html",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "EUI-E03",
+      "class": "observed",
+      "claim": "EUI's opinionated table components include mobile row behavior, row actions, expansion, sorting, pagination, and search according to the selected component.",
+      "source_locator": "https://eui.elastic.co/docs/components/tables/index.html",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "EUI-E04",
+      "class": "observed",
+      "claim": "EUI warns that custom table building blocks transfer data management, accessibility, and mobile behavior to the implementer.",
+      "source_locator": "https://eui.elastic.co/docs/components/tables/index.html",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "EUI-E05",
+      "class": "observed",
+      "claim": "EUI keeps semantic token keys stable across color modes and requires state meaning to use icons or copy in addition to color.",
+      "source_locator": "https://eui.elastic.co/docs/getting-started/theming/tokens/colors/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "EUI-E06",
+      "class": "recommended",
+      "claim": "Use EUI only to test whether the library's dense search, filter, comparison, and download controls expose complete mobile and accessibility behavior.",
+      "source_locator": "EUI-E01 through EUI-E05; project recommendation",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "Repeated results and compact controls can use flexible rows and wrapping grids, but the target should keep its own semantic HTML and layout system.",
+      "evidence_ids": ["EUI-E02", "EUI-E06"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "typography": {
+      "finding": "The inspected sources establish text and title components but do not provide enough current type-system evidence for a transferable typography rule.",
+      "evidence_ids": ["EUI-E01"],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "color": {
+      "finding": "State and action colors must retain semantic roles across modes and never carry meaning alone.",
+      "evidence_ids": ["EUI-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "density": {
+      "finding": "Compact table and filter density is useful only when search, sorting, actions, mobile behavior, and state meaning remain legible.",
+      "evidence_ids": ["EUI-E03", "EUI-E04", "EUI-E06"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "imagery": {
+      "finding": "No transferable imagery system was established from the inspected EUI framework pages.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "No consequential motion rule was established from the inspected EUI sources.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "interaction": {
+      "finding": "Table behavior must specify mobile selection, actions, expansion, sorting, pagination, search, and keyboard semantics instead of relying on visual rows alone.",
+      "evidence_ids": ["EUI-E03", "EUI-E04", "EUI-E06"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "hierarchy": {
+      "finding": "Controls stay close to the data they change, while flexible layout primitives preserve section and content order.",
+      "evidence_ids": ["EUI-E01", "EUI-E02"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    },
+    "surfaces": {
+      "finding": "Panels and callouts may separate data or state, but the target should add a surface only when it names a functional region.",
+      "evidence_ids": ["EUI-E01"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    }
+  },
+  "essential_traits": [
+    "Dense data controls with complete behavior",
+    "Opinionated mobile behavior for complex tables",
+    "Semantic color roles with non-color state cues",
+    "Composable layout primitives that preserve semantic output"
+  ],
+  "incidental_traits": [
+    "Elastic's literal blue, teal, pink, and gray scales",
+    "EUI component names and React APIs"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Semantic tokens assign action and status meaning while icons or copy provide redundant cues.",
+      "target_role": "Original action and status colors pair with labels, icons, or text in filters, downloads, and evidence states.",
+      "action": "adapt",
+      "reason": "Semantic redundancy is useful; Elastic's values are not."
+    },
+    {
+      "domain": "media",
+      "source_role": "The inspected control and table sources do not depend on decorative media.",
+      "target_role": "Keep operational catalog and download controls free of decorative imagery.",
+      "action": "preserve",
+      "reason": "Data interaction should remain the visual focus."
+    },
+    {
+      "domain": "density",
+      "source_role": "Dense tables remain usable through explicit search, sort, pagination, selection, actions, and mobile behavior.",
+      "target_role": "Compact catalog and structured-data views expose the same behavioral completeness.",
+      "action": "preserve",
+      "reason": "This is EUI's narrow contribution to the target."
+    },
+    {
+      "domain": "component",
+      "source_role": "Opinionated components carry behavior; custom primitives transfer responsibility to the implementer.",
+      "target_role": "Custom components must document and test every behavior that a library would otherwise supply.",
+      "action": "preserve",
+      "reason": "The responsibility boundary prevents incomplete custom controls."
+    }
+  ],
+  "misuse_risks": [
+    "Copying EUI colors or component shapes instead of its behavior completeness.",
+    "Building visually dense rows without mobile, keyboard, empty, loading, and failure states.",
+    "Treating color as the only status signal.",
+    "Importing a framework when the approved target needs only the transferable behavior."
+  ],
+  "evidence_limitations": [
+    "No target runtime was tested against EUI components.",
+    "Typography, imagery, and motion were not sufficiently evidenced for transfer.",
+    "Owner framework claims do not establish target conformance."
+  ],
+  "confidence": "high"
+}

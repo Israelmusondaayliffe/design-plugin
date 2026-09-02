@@ -1,6 +1,6 @@
 {
   "plugin": "design",
-  "version": "0.1.0-dev.10",
+  "version": "0.1.0-dev.11",
   "canonical_shared_root": "core",
   "hosts": {
     "openai": {

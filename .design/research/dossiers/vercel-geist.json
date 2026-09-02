@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "vercel-geist",
+    "source_url": "https://vercel.com/geist/introduction",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "GEIST-E01",
+      "class": "observed",
+      "claim": "Geist publishes foundations, components, icons, and implementation examples for consistent web experiences.",
+      "source_locator": "https://vercel.com/geist/introduction",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GEIST-E02",
+      "class": "observed",
+      "claim": "Geist assigns separate color-scale ranges to default, hover, active, border, high-contrast, and text or icon roles.",
+      "source_locator": "https://vercel.com/geist/colors",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GEIST-E03",
+      "class": "observed",
+      "claim": "Geist separates marketing headings, dashboard headings, multiline copy, compact labels, tabular numbers, and inline-code mono styles.",
+      "source_locator": "https://vercel.com/geist/typography",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GEIST-E04",
+      "class": "observed",
+      "claim": "Geist's published grid component supports responsive row and column behavior across three breakpoints.",
+      "source_locator": "https://vercel.com/geist/grid",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GEIST-E05",
+      "class": "inferred",
+      "claim": "For this library, Geist's transferable value is the exact relationship between evidence, metadata, technical values, and readable implementation examples rather than monochrome styling.",
+      "source_locator": "GEIST-E01 through GEIST-E04; project synthesis",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "Evidence previews, provenance, format details, and download actions can share an aligned grid without becoming generic cards.",
+      "evidence_ids": ["GEIST-E01", "GEIST-E04", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "typography": {
+      "finding": "Narrative headings, ordinary copy, metadata labels, tabular values, and code identifiers need distinct, documented roles.",
+      "evidence_ids": ["GEIST-E03", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "color": {
+      "finding": "Default, hover, active, border, high-contrast, and text roles should be explicit, but the target must use its own palette.",
+      "evidence_ids": ["GEIST-E02"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "density": {
+      "finding": "Compact metadata and technical values may sit beside more open explanatory copy when each typographic role remains clear.",
+      "evidence_ids": ["GEIST-E03", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "imagery": {
+      "finding": "The inspected sources do not establish a project-relevant image rule; any preview must be original evidence rather than fabricated product proof.",
+      "evidence_ids": ["GEIST-E05"],
+      "confidence": "medium",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "No consequential motion rule was established from the inspected Geist sources.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "interaction": {
+      "finding": "Download and evidence controls should expose distinct default, hover, active, disabled, and failure states using semantic roles.",
+      "evidence_ids": ["GEIST-E02", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "hierarchy": {
+      "finding": "Human-readable explanation leads; compact provenance, file details, and machine-readable identifiers support it without competing.",
+      "evidence_ids": ["GEIST-E03", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "surfaces": {
+      "finding": "Borders, backgrounds, and contrast levels should identify evidence, metadata, and action regions with exact states instead of decorative elevation.",
+      "evidence_ids": ["GEIST-E02", "GEIST-E04", "GEIST-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    }
+  },
+  "essential_traits": [
+    "Distinct roles for narrative, metadata, tabular values, and code",
+    "Evidence and implementation examples presented as first-class content",
+    "Explicit component state roles",
+    "Exact alignment between technical proof and supporting explanation"
+  ],
+  "incidental_traits": [
+    "Vercel's black-and-white palette",
+    "Geist Sans and Geist Mono",
+    "Vercel logos, product copy, code samples, and grid ornament"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Color-scale steps distinguish background, interaction, border, contrast, and text roles.",
+      "target_role": "The original palette assigns explicit values to equivalent evidence and download states.",
+      "action": "adapt",
+      "reason": "State separation transfers; monochrome branding does not."
+    },
+    {
+      "domain": "media",
+      "source_role": "Examples and proof surfaces support technical claims.",
+      "target_role": "Only original data previews or rendered library evidence may support a claim.",
+      "action": "adapt",
+      "reason": "Evidence presentation is useful, but fabricated or copied proof is forbidden."
+    },
+    {
+      "domain": "density",
+      "source_role": "Compact labels, values, and code coexist with larger explanatory type.",
+      "target_role": "Download metadata remains compact while context, intent, value, and limitations remain readable.",
+      "action": "adapt",
+      "reason": "This supports both people and tools without flattening the hierarchy."
+    },
+    {
+      "domain": "typography",
+      "source_role": "Headings, copy, labels, tabular values, and mono content have separate usage roles.",
+      "target_role": "Original type tokens distinguish the same information jobs.",
+      "action": "preserve",
+      "reason": "The usage distinction is the narrow transferable value."
+    }
+  ],
+  "misuse_risks": [
+    "Turning the Site monochrome and calling that a Geist adaptation.",
+    "Using fabricated code or preview images as evidence.",
+    "Making metadata visually equal to the human-readable explanation.",
+    "Adding grid ornament that does not align content or actions."
+  ],
+  "evidence_limitations": [
+    "No Geist motion guidance was used.",
+    "The dossier does not authorize Vercel brand, fonts, copy, or visual identity.",
+    "Target evidence and download surfaces have not been implemented or rendered."
+  ],
+  "confidence": "high"
+}

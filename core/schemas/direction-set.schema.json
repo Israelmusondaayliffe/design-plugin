@@ -8,6 +8,7 @@
     "schema_version": {"const": "1.0"},
     "approved_understanding_sha256": {"type": "string", "pattern": "^[0-9a-fA-F]{64}$"},
     "mode": {"enum": ["substantial", "bounded-repair"]},
+    "direction_strategy": {"enum": ["distinct-primary-foundations", "single-foundation-adaptations"]},
     "directions": {
       "type": "array",
       "minItems": 1,
@@ -33,5 +34,29 @@
         ]
       }
     }
-  }
+  },
+  "allOf": [
+    {
+      "if": {
+        "required": ["direction_strategy"],
+        "properties": {
+          "direction_strategy": {"const": "single-foundation-adaptations"}
+        }
+      },
+      "then": {
+        "properties": {
+          "mode": {"const": "substantial"},
+          "directions": {
+            "minItems": 3,
+            "items": {
+              "required": ["adaptation_axis"],
+              "properties": {
+                "adaptation_axis": {"type": "string", "minLength": 1}
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

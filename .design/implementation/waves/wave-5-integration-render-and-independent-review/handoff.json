@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "wave_id": "wave-5-integration-render-and-independent-review",
+  "wave_number": 5,
+  "status": "complete",
+  "manifest_sha256": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+  "changed_files": [
+    {
+      "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+      "change": "changed",
+      "sha256": "6ccd53520fe64ea1460851b0e65dd916486df14c4d546b00e75c83d9af65d0be",
+      "evidence": "Records seven product feedback items and eighteen build-friction findings, their repairs, evidence boundaries, and reusable Design workflow improvements without private diagnostics."
+    },
+    {
+      "path": ".design/quality/wave-5-browser-acceptance.json",
+      "change": "changed",
+      "sha256": "8debca0183c8bc1416b872b2f6dc731208ea24203d5c26e69c9caf31d5b9ed6c",
+      "evidence": "Binds current Site and token hashes to 21 fresh routes, five native keyboard and focus flows, exact download activation, the comparison-focus repair, and all nine reduced-motion targets."
+    },
+    {
+      "path": ".design/quality/wave-5-deterministic-builds.json",
+      "change": "changed",
+      "sha256": "731c9d824a408e895ed19b85a941393de74f2077a89ccd8d77c99a2ab7aa262b",
+      "evidence": "Records two clean 1,766-file builds with identical paths, bytes, hashes, and tree SHA-256."
+    },
+    {
+      "path": ".design/system/tokens.source.json",
+      "change": "changed",
+      "sha256": "1dbe108e4280c7ed2503c100f47ab94c77a29b1c8ab19c6675b0e0000383b190",
+      "evidence": "Makes the durable token source match the accepted cool-neutral Site palette, rust actions, graphite text, compact status radius, and isolated 96-token compilation."
+    },
+    {
+      "path": "BUILD_STATE.md",
+      "change": "changed",
+      "sha256": "07304267b059078398dc90014657c2d08ecb5dfdb18c7c18e162a2150e566092",
+      "evidence": "Records the exact Wave 5 candidate, current test and browser evidence, feedback counts, publication boundary, and remaining Wave 11 limits."
+    },
+    {
+      "path": "review/wave-11-benchmark-2-acceptance-evidence.json",
+      "change": "changed",
+      "sha256": "f0cd6ce62261e6217f81350149565c9eca805c4ad9599be85cb2396ce99ddbac",
+      "evidence": "Binds all eighteen candidate artifacts under a reproducible byte-level ID and records all three same-hash reviewer passes and confirmations."
+    },
+    {
+      "path": "review/wave-11-source-health.json",
+      "change": "changed",
+      "sha256": "f9317df981930184325d4f7d842c79ad40ce6546a523f7d77799a344d12e0c88",
+      "evidence": "Records 60 cases, 80 of 80 passing owner-source URLs, and zero failures, locator mismatches, stored-hash mismatches, or effective-URL collisions."
+    },
+    {
+      "path": "site/README.md",
+      "change": "changed",
+      "sha256": "f23ff1a04c3621f147dc45b5691db11eb930e423ff073a586bc9928f3b5a4df0",
+      "evidence": "Explains the Evidence Exchange reader contract, local generation, package formats, verification boundary, and publication separation."
+    },
+    {
+      "path": "site/app.js",
+      "change": "changed",
+      "sha256": "67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be",
+      "evidence": "Preserves exact route, package, recovery, privacy, and comparison behavior while restoring focus to replacement comparison controls after catalog rerenders."
+    },
+    {
+      "path": "site/index.html",
+      "change": "changed",
+      "sha256": "62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249",
+      "evidence": "Provides reader-facing context, intent, evidence classes, limitations, package value, privacy wording, and a cache-busted repaired application entrypoint."
+    },
+    {
+      "path": "tests/test_wave11_site.py",
+      "change": "changed",
+      "sha256": "a25f6ca6f2689978f4e0da28bdd08acaaa2fa3765c55327718372f5b7b985379",
+      "evidence": "Regression-covers exact routes, recovery copy, responsive composition, focus restoration, public boundaries, token parity, and the comparison replacement-control repair."
+    }
+  ],
+  "completed_checks": [
+    {
+      "name": "Run python3 -m unittest discover -s tests -p 'test_*.py' and repeat under the second supported Python version when available.",
+      "command": "Run the focused Wave 11 suites and complete unittest discovery sequentially under Python 3.9.6 and Python 3.12.13.",
+      "status": "pass",
+      "evidence": "45 focused tests passed. The complete 288-test suite passed on each supported Python version with zero failures, errors, or skips."
+    },
+    {
+      "name": "Run accepted-only corpus validation, public catalog build, public package schema validation, prohibited-field scan, semantic parity checks, and two-clean-build hash comparison.",
+      "command": "Validate the accepted corpus, audit originality and sources, generate the public catalog and packages, validate parity and prohibited fields, and compare two isolated clean builds.",
+      "status": "pass",
+      "evidence": "All 60 accepted public cases produced 60 readable files, 60 structured files, and 60 manifests. Source health passed 80 of 80 URLs. Two clean builds produced the same 1,766 files and tree SHA-256 bef1bf3417a8ea1b42d1c7c4cddb5471ec7ba1af93a26df750a8e4881feeed3e."
+    },
+    {
+      "name": "Use a fresh local server and browser session for all 21 required quality targets, keyboard flows, downloaded-byte checks, page-overflow checks, and reduced-motion checks.",
+      "command": "Inspect all exact routes in fresh browser sessions and exercise search, selection, navigation, package validation, download, retry, comparison, close, overflow, and reduced-motion behavior.",
+      "status": "pass",
+      "evidence": "All 21 routes passed. Five native keyboard and focus flows passed after the comparison-focus repair. All nine reduced-motion targets passed at 390 by 844. Exact IBM Carbon readable download activation produced the manifest-bound file."
+    },
+    {
+      "name": "Run the repository harness quality gate on changed human-facing text and use the independent Unslop reviewer for interface copy.",
+      "command": "Run the harness writing gate and inspect Site, package, state, and feedback copy against public-safety and claim-boundary requirements.",
+      "status": "pass",
+      "evidence": "The writing gate passed. The Unslop reviewer found no banned cliche, unsupported promise, Gmail, email address, identity, credential, local path, private repository detail, or misleading completion claim."
+    },
+    {
+      "name": "Require written pass or exact blocker findings from the plan verifier, technical verifier, and Unslop reviewer after the final repair.",
+      "command": "Freeze the eighteen-artifact candidate, require independent review, repair each blocker, and obtain final same-hash confirmations.",
+      "status": "pass",
+      "evidence": "All three reviewers reproduced candidate ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff, returned PASS, and confirmed final acceptance receipt SHA-256 f0cd6ce62261e6217f81350149565c9eca805c4ad9599be85cb2396ce99ddbac."
+    }
+  ],
+  "render_results": [
+    {"target": "catalog-default-wide", "status": "pass", "evidence": "At 1440 by 1000, 60 public cases, search, lanes, facets, sort, Method, and public boundary rendered with zero root overflow."},
+    {"target": "catalog-default-mobile", "status": "pass", "evidence": "At 390 by 844, catalog content and controls reflowed without root overflow; reduced motion and native keyboard search and lane selection passed."},
+    {"target": "catalog-default-tablet", "status": "pass", "evidence": "At 834 by 1112, catalog rows, filters, status, and actions remained complete with zero root overflow."},
+    {"target": "catalog-empty-mobile", "status": "pass", "evidence": "The exact no-match query retained context and recovery at 390 by 844; reduced motion and root fit passed."},
+    {"target": "catalog-loading-mobile", "status": "pass", "evidence": "The exact loading state retained catalog context, live status, busy state, reduced motion, and zero root overflow."},
+    {"target": "catalog-error-wide", "status": "pass", "evidence": "The exact failure state exposed controlled copy and retry with no case actions, console issue, or root overflow."},
+    {"target": "case-default-wide", "status": "pass", "evidence": "IBM Carbon opened with analysis, evidence, limitations, source, package action, and correct entry focus."},
+    {"target": "case-default-tablet", "status": "pass", "evidence": "IBM Carbon retained all evidence sections and actions at 834 by 1112 with zero root overflow."},
+    {"target": "case-loading-mobile", "status": "pass", "evidence": "The exact loading state announced validation, retained case identity and return action, passed reduced motion, and fit the root."},
+    {"target": "case-error-mobile", "status": "pass", "evidence": "The unavailable-case alert exposed retry and return without package data, passed reduced motion, and fit the root."},
+    {"target": "package-default-wide", "status": "pass", "evidence": "The validated package showed context, provenance, limits, exact files, verification, and both enabled downloads."},
+    {"target": "package-default-mobile", "status": "pass", "evidence": "The package contract and both formats remained readable at 390 by 844; reduced motion and root fit passed."},
+    {"target": "package-default-tablet", "status": "pass", "evidence": "The package contract, file table, and download actions fit at 834 by 1112 without page overflow."},
+    {"target": "package-error-mobile", "status": "pass", "evidence": "The blocked package announced failure, disabled files, exposed retry and return, restored retry focus, passed reduced motion, and fit the root."},
+    {"target": "package-denied-wide", "status": "pass", "evidence": "The loopback sentinel exposed no private case, source, file, Blob, or download attribute and offered only catalog return."},
+    {"target": "comparison-default-wide", "status": "pass", "evidence": "Two cases rendered side by side with complete fields, correct open and close focus, and no root overflow."},
+    {"target": "comparison-default-mobile", "status": "pass", "evidence": "The comparison remained concurrently inspectable in one labeled keyboard-reachable scroll region; reduced motion passed and the root did not overflow."},
+    {"target": "comparison-default-tablet", "status": "pass", "evidence": "The comparison remained inside one labeled bounded region at 834 by 1112 with complete actions and no root overflow."},
+    {"target": "method-default-wide", "status": "pass", "evidence": "The exact Method anchor showed truth classes, originality, package use, and privacy with accepted visual treatment and no overflow."},
+    {"target": "method-default-mobile", "status": "pass", "evidence": "All Method definitions and boundaries remained readable at 390 by 844; reduced motion and root fit passed."},
+    {"target": "method-default-tablet", "status": "pass", "evidence": "All Method content and headings remained in reading order at 834 by 1112 with zero root overflow."}
+  ],
+  "completion_criteria": [
+    {
+      "criterion": "All automated tests pass with exact counts recorded, and no required test is skipped without an approved reason.",
+      "status": "pass",
+      "evidence": "45 focused tests and 288 complete tests on each of Python 3.9.6 and Python 3.12.13 passed with zero failures, errors, or skips."
+    },
+    {
+      "criterion": "All 60 public cases produce validated readable and structured downloads with semantic parity, deterministic bytes, public-only fields, and matching manifests.",
+      "status": "pass",
+      "evidence": "The public projection contains 60 Markdown files, 60 JSON files, and 60 matching manifests. Semantic parity, prohibited-field checks, and two deterministic clean builds pass."
+    },
+    {
+      "criterion": "All 21 required targets and complete keyboard flows pass fresh rendered review with no unresolved accessibility, responsive, recovery, privacy, or direction-fidelity blockers.",
+      "status": "pass",
+      "evidence": "All 21 targets, five fresh keyboard and focus flows, exact download activation, comparison focus restoration, and all nine reduced-motion targets pass with no unresolved blocker."
+    },
+    {
+      "criterion": "All three independent reviewers pass the final same-hash result, and the worker repairs every blocker before recording acceptance.",
+      "status": "pass",
+      "evidence": "Plan, technical, and Unslop reviewers passed the exact candidate and confirmed the final receipt hash after the fresh-evidence, candidate-serialization, and volatile-report blockers were repaired."
+    },
+    {
+      "criterion": "The receipt states that deployment, push, release, active-host installation, and Figma writes were not performed.",
+      "status": "pass",
+      "evidence": "The Wave 5 receipt records that none of those actions occurred during the wave. Public publication remains a separately authorized post-Wave-5 action."
+    }
+  ],
+  "known_deviations": [
+    "R04 remains partial by explicit user acceptance and does not block this benchmark.",
+    "R22 remains partial until all three benchmarks and later acceptance gates pass.",
+    "Wave 11 Benchmarks 1 and 3 have not started.",
+    "The source-audit check-only flag still writes its default report. Later checks must use an isolated temporary report path until that tool defect is repaired."
+  ],
+  "new_risks": [
+    "Public-host qualification must prove anonymous access, project-path-safe assets, 60 cases, both download formats, and inert loopback-only diagnostics after deployment.",
+    "Future same-hash review instructions must keep volatile reports and shared generated test fixtures isolated from bound candidate files."
+  ],
+  "review_results": [
+    {
+      "reviewer_id": "wave11_gate_verifier",
+      "role": "independent-verifier",
+      "status": "pass",
+      "evidence": "Reproduced all eighteen bound hashes and the exact candidate ID; verified plan, scope, routes, fresh keyboard and motion evidence, Evidence Exchange direction, remaining limits, and final receipt hash."
+    },
+    {
+      "reviewer_id": "codex_install_verifier",
+      "role": "specialist",
+      "status": "pass",
+      "evidence": "Reproduced all bindings and independently verified tests, deterministic builds, 60 packages, 80 sources, 21 routes, nine motion targets, focus repair, keyboard and download flows, privacy, and final receipt hash."
+    },
+    {
+      "reviewer_id": "claude_install_verifier",
+      "role": "unslop-reviewer",
+      "status": "pass",
+      "evidence": "Reproduced all bindings and verified reader value, claim boundaries, public safety, visual wording, feedback and friction records, no banned cliches or private leakage, and the final receipt hash."
+    }
+  ],
+  "next_inputs": [
+    "Publish the Site through the public repository under the user’s explicit approval and verify the production URL anonymously.",
+    "Record the deployment workflow, public URL, production route and download checks, and current GitHub Actions evidence without changing the accepted Wave 5 candidate.",
+    "Keep R04 and R22 partial and do not start Wave 11 Benchmarks 1 or 3 as part of this release step."
+  ],
+  "rollback_notes": [
+    "If publication fails, keep this accepted Wave 5 boundary intact and repair only the release workflow or project-path configuration.",
+    "If production differs from the accepted local Site, do not change acceptance evidence to hide the mismatch. Restore the accepted output or reopen the owning implementation wave."
+  ],
+  "ended_at": "2026-09-02T04:41:45Z"
+}

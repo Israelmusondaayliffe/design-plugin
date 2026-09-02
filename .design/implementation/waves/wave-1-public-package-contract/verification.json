@@ -1,0 +1,20 @@
+{
+  "changed_files": [
+    "corpus/README.md",
+    "corpus/schemas/public-case-package.schema.json",
+    "corpus/scripts/build_catalog.py",
+    "corpus/scripts/build_public_packages.py",
+    "tests/test_wave11_evidence_exchange.py"
+  ],
+  "handoff": ".design/implementation/waves/wave-1-public-package-contract/handoff.json",
+  "handoff_markdown": ".design/implementation/waves/wave-1-public-package-contract/handoff.md",
+  "handoff_markdown_sha256": "cf9017b91a57900bdb5445c8b9482edc76be9ec6e7f26a22be616fc77cfeaa6c",
+  "handoff_sha256": "caada9fd8c83de54af2192a2e19fc992deab0f1c14d19fc5684775c033b99b2f",
+  "manifest": ".design/implementation/waves/wave-1-public-package-contract/manifest.json",
+  "manifest_sha256": "7dfd2e884e880c8701f9b7e0c2c1d177bbd48cacaaf026fa38b3efa19aae3817",
+  "next_state_command": "design_state.py complete-wave",
+  "ready_for_state_completion": true,
+  "status": "pass",
+  "wave_id": "wave-1-public-package-contract",
+  "wave_number": 1
+}

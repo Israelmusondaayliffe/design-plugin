@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "recorded_at": "2026-09-01T22:21:45Z",
+  "scope": "Wave 11 Benchmark 2 direction-validator repair",
+  "status": "pass",
+  "authorization": {
+    "plan_path": ".design/research/direction-validator-repair-plan.md",
+    "plan_sha256": "bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc",
+    "user_decision_text": "approved",
+    "state_revision_after_unblock": 6
+  },
+  "behavior": {
+    "default_strategy": "distinct-primary-foundations",
+    "exception_strategy": "single-foundation-adaptations",
+    "exception_mode": "substantial",
+    "direction_count": "3-5",
+    "primary_foundations": "exactly one shared slug",
+    "adaptation_axes": "non-empty strings unique after trimming and case folding",
+    "pairwise_difference_floor": "4 of 9 signature dimensions",
+    "existing_direction_rules_retained": true
+  },
+  "source_version": "0.1.0-dev.11",
+  "previous_test_version": "0.1.0-dev.10",
+  "tests": [
+    {
+      "command": "python3 -m unittest tests.test_wave5_research tests.test_wave6_system_definition",
+      "python": "3.9.6",
+      "tests": 50,
+      "result": "pass"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests",
+      "python": "3.9.6",
+      "tests": 249,
+      "result": "pass"
+    }
+  ],
+  "distribution_qualification": {
+    "build_distributions": "pass",
+    "verify_distributions": "pass",
+    "shared_files_per_host": 125,
+    "shared_files_identical": true,
+    "openai_size_bytes": 632079,
+    "claude_size_bytes": 631101,
+    "mcp_bundled": false,
+    "full_corpus_bundled": false,
+    "build_installable_packages": "pass",
+    "verify_installable_packages": "pass",
+    "openai_archive": {
+      "path": "dist/releases/design-openai-0.1.0-dev.11.zip",
+      "sha256": "75801a239efcee7c2683d7eef5603071a1db9463b6a09c2b5ef5a22d387ea1a3",
+      "size_bytes": 205750,
+      "file_count": 130
+    },
+    "claude_archive": {
+      "path": "dist/releases/design-claude-0.1.0-dev.11.zip",
+      "sha256": "4ecdd87b50425e3a1e4a22ae33e0f48fbded9a87107047469a89008a14848245",
+      "size_bytes": 205160,
+      "file_count": 129
+    }
+  },
+  "isolated_host_qualification": {
+    "result": "pass",
+    "scope": "isolated temporary host configurations only",
+    "openai_update": [
+      "0.1.0-dev.10",
+      "0.1.0-dev.11"
+    ],
+    "claude_update": [
+      "0.1.0-dev.10",
+      "0.1.0-dev.11"
+    ],
+    "cache_source_parity": true,
+    "fresh_process_discovery": true,
+    "temporary_host_roots_deleted": true,
+    "active_user_registries_unchanged": true,
+    "credentials_copied": false,
+    "external_model_inference_called": false
+  },
+  "independent_reviews": [
+    {
+      "role": "plan and Benchmark verifier",
+      "result": "pass",
+      "note": "The reviewer first found unhandled array and object strategy values. The worker repaired the type guard and added both regression cases before final review."
+    },
+    {
+      "role": "technical and evidence verifier",
+      "result": "pass",
+      "note": "The final structured-invalid matrix produces controlled ValidationError results, and no remaining technical blocker was found."
+    },
+    {
+      "role": "Unslop and human-factors reviewer",
+      "result": "pass",
+      "note": "The exception is precise, internally consistent, and cannot reasonably be read as permission for cosmetic variants or co-equal references."
+    }
+  ],
+  "source_hashes": {
+    "core/scripts/design_research.py": "d591e76ccb4dc630a7f995bcdcf644f82d1f9cf726d26602cc045e76cbe925ec",
+    "core/schemas/direction-set.schema.json": "1827f9dc3ab1988177d8c7ec9def3222ba731fc8d94412379d9cde6c33d74828",
+    "core/templates/direction.template.md": "35164075438d552b14a46f3e94edc81a824b1fabc0eee5a0ca5d2af044e4f6f4",
+    "core/references/research-method.md": "fb2f481d8c658291eb1f83e2a51322432ca67f6c2f7853004e96ab83548e99a0",
+    "core/skills/directions/SKILL.md": "892a1ea4707fc4fcd706cbce216425cdd50d3d03620777b990d47a056ed5a543",
+    "tests/test_wave5_research.py": "76b1f75c66bf60ffb26fab6dde14588251fefe837fff76545d97d19c3c050de2",
+    "bundle-spec.json": "a3e9e4ad33ba59dee46dc877e253eec7b538e55ef9e5f7f88f43aced98701003",
+    "host-packaging.json": "837f327e7fa34c98f4a9d1f5a45f36164c16a0655107226d0561e377d2939c44",
+    "hosts/openai/.codex-plugin/plugin.json": "5fb4d7cb5c54843316449ea6ff561240844818bca9715c6959203311def4d5eb",
+    "hosts/claude/.claude-plugin/plugin.json": "778b94a19de0d5eef36fcd4f932d0abc8ff95d3bc7058969aa8abc39e0ad5330",
+    "tests/test_wave10_host_qualification.py": "4cd9b3ce7fd781af7197994a3f44c7f53ebf1e90a2bd10ee8ca0a56eb65a5f5f"
+  },
+  "limits": [
+    "The dev.11 candidate was not installed into either active user host.",
+    "No repository commit, push, release, tag, deployment, publication, corpus case, or Site file was created or changed by this repair.",
+    "This receipt qualifies the validator repair. It does not approve a design direction or complete Benchmark 2.",
+    "Claude prompt selection remains outside this repair and R04 remains partial by explicit user direction."
+  ]
+}

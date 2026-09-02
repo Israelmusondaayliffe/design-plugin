@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "slug": "govuk-design-system",
+    "source_url": "https://design-system.service.gov.uk/",
+    "source_lane": "live-public"
+  },
+  "facts": [
+    {
+      "evidence_id": "GOVUK-E01",
+      "class": "observed",
+      "claim": "GOV.UK combines visual styles, accessible components, and patterns for completing common service tasks.",
+      "source_locator": "https://design-system.service.gov.uk/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GOVUK-E02",
+      "class": "observed",
+      "claim": "GOV.UK starts ordinary pages with a small-screen single column, recommends bounded reading width, and designs for screen sizes instead of assumed devices.",
+      "source_locator": "https://design-system.service.gov.uk/styles/layout/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GOVUK-E03",
+      "class": "observed",
+      "claim": "GOV.UK's responsive spacing scale changes larger spacing units across its tablet boundary while retaining smaller spacing units.",
+      "source_locator": "https://design-system.service.gov.uk/styles/spacing/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GOVUK-E04",
+      "class": "observed",
+      "claim": "GOV.UK error guidance requires specific messages that explain what happened and how to fix it, with consistent wording beside the field and in the error summary.",
+      "source_locator": "https://design-system.service.gov.uk/components/error-message/",
+      "confidence": "high"
+    },
+    {
+      "evidence_id": "GOVUK-E05",
+      "class": "recommended",
+      "claim": "Use GOV.UK only to discipline methodology, empty, invalid, unavailable, and download-failure states with direct language and recovery steps.",
+      "source_locator": "GOVUK-E01 through GOVUK-E04; project recommendation",
+      "confidence": "high"
+    }
+  ],
+  "dimension_boundary": "Dimension findings are project synthesis. Source facts remain classified above, target prescriptions are recommended, and insufficient source evidence is marked unknown.",
+  "dimensions": {
+    "composition": {
+      "finding": "Reading and recovery content should begin as a single clear sequence and expand only when side information has a distinct job.",
+      "evidence_ids": ["GOVUK-E02", "GOVUK-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "typography": {
+      "finding": "Plain headings, labels, and messages must establish task order without depending on display styling; literal GOV.UK type is rejected.",
+      "evidence_ids": ["GOVUK-E01", "GOVUK-E04", "GOVUK-E05"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    },
+    "color": {
+      "finding": "The selected evidence does not authorize transfer of GOV.UK's palette; target state color remains governed by the Carbon-derived semantic system.",
+      "evidence_ids": ["GOVUK-E05"],
+      "confidence": "high",
+      "trait_status": "incidental"
+    },
+    "density": {
+      "finding": "Methodology and recovery content should use bounded reading width and responsive spacing, while the denser catalog remains outside this reference's role.",
+      "evidence_ids": ["GOVUK-E02", "GOVUK-E03", "GOVUK-E05"],
+      "confidence": "high",
+      "trait_status": "adaptable"
+    },
+    "imagery": {
+      "finding": "No project-relevant imagery rule was established from the inspected GOV.UK pages.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "motion": {
+      "finding": "No consequential motion rule was established from the inspected GOV.UK pages.",
+      "evidence_ids": [],
+      "confidence": "low",
+      "trait_status": "unknown"
+    },
+    "interaction": {
+      "finding": "Invalid, unavailable, and failed-download states must identify the exact problem and give a specific next action without discarding user context.",
+      "evidence_ids": ["GOVUK-E04", "GOVUK-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "hierarchy": {
+      "finding": "Task completion, evidence meaning, and recovery instructions take precedence over brand display or decorative explanation.",
+      "evidence_ids": ["GOVUK-E01", "GOVUK-E04", "GOVUK-E05"],
+      "confidence": "high",
+      "trait_status": "essential"
+    },
+    "surfaces": {
+      "finding": "Error summaries and supporting guidance need visible separation only when the separation helps people find and fix a problem.",
+      "evidence_ids": ["GOVUK-E04"],
+      "confidence": "medium",
+      "trait_status": "adaptable"
+    }
+  },
+  "essential_traits": [
+    "Task and recovery content before decorative identity",
+    "Specific error messages with a named remedy",
+    "Small-screen-first reading order",
+    "Consistent wording across local and summary states"
+  ],
+  "incidental_traits": [
+    "GOV.UK's literal typeface, crown identity, palette, and service copy",
+    "Government-specific two-thirds page conventions"
+  ],
+  "role_invariants": [
+    {
+      "domain": "color",
+      "source_role": "Government service color is not the reason this reference was selected.",
+      "target_role": "Carbon-derived action, focus, support, and error roles remain in force.",
+      "action": "reject",
+      "reason": "Copying government color would add source identity without improving the selected behavior."
+    },
+    {
+      "domain": "media",
+      "source_role": "The selected task and error guidance does not depend on media.",
+      "target_role": "Recovery and methodology content must remain complete without images.",
+      "action": "preserve",
+      "reason": "The user's next action must not depend on decorative or unavailable media."
+    },
+    {
+      "domain": "density",
+      "source_role": "Reading width and spacing protect comprehension in task and recovery content.",
+      "target_role": "Methodology, caveats, and failure guidance use a readable measure and responsive vertical rhythm.",
+      "action": "adapt",
+      "reason": "The role fits explanatory states, not the full dense catalog."
+    },
+    {
+      "domain": "interaction",
+      "source_role": "Errors name the exact problem and the action needed to correct it.",
+      "target_role": "Download, filter, and data failures preserve context and offer a precise recovery action.",
+      "action": "preserve",
+      "reason": "Clear recovery is this reference's narrow contribution."
+    }
+  ],
+  "misuse_risks": [
+    "Copying GOV.UK styling or voice instead of its recovery discipline.",
+    "Applying spacious service-page density to the entire catalog.",
+    "Writing generic errors such as 'Something went wrong.'",
+    "Using a visual error treatment without an exact remedy."
+  ],
+  "evidence_limitations": [
+    "The dossier does not claim government-service patterns are broadly appropriate for the product.",
+    "Color, imagery, and motion are outside this reference's selected role.",
+    "No target error flow has been implemented or tested yet."
+  ],
+  "confidence": "high"
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "ibm-carbon",
+    "source_name": "IBM Carbon Design System",
+    "source_url": "https://carbondesignsystem.com/",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "inferred", "recommended"],
+    "scores": {
+      "evidence_quality": 96,
+      "craft_threshold": 95,
+      "project_fit": 98,
+      "feasibility": 94
+    },
+    "score_reasons": {
+      "evidence_quality": "Current official documentation exposes typography, grid, color roles, components, motion, and accessibility status.",
+      "craft_threshold": "The system resolves dense enterprise information through explicit type, grid, surface, token, and state relationships.",
+      "project_fit": "Productive and expressive modes map directly to catalog work, readable analysis, comparison, and download guidance.",
+      "feasibility": "The target can adapt role relationships with static web technology without adopting Carbon code or IBM identity."
+    },
+    "weighted_score": 96.25,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Single dominant visual and interaction foundation",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "elastic-eui",
+    "source_name": "Elastic UI Framework",
+    "source_url": "https://eui.elastic.co/",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "recommended"],
+    "scores": {
+      "evidence_quality": 92,
+      "craft_threshold": 89,
+      "project_fit": 95,
+      "feasibility": 92
+    },
+    "score_reasons": {
+      "evidence_quality": "Current owner documentation exposes layout, tables, forms, tokens, patterns, and explicit accessibility guidance.",
+      "craft_threshold": "EUI handles dense data controls and stateful tables without collapsing hierarchy or semantic roles.",
+      "project_fit": "Its narrow value is the catalog's high-density search, filter, table, and data-download behavior.",
+      "feasibility": "The behavior can inform custom static components without introducing EUI or React as a dependency."
+    },
+    "weighted_score": 92.45,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Data controls and dense table behavior",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "github-primer",
+    "source_name": "GitHub Primer",
+    "source_url": "https://primer.style/",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "inferred"],
+    "scores": {
+      "evidence_quality": 94,
+      "craft_threshold": 90,
+      "project_fit": 93,
+      "feasibility": 92
+    },
+    "score_reasons": {
+      "evidence_quality": "Current owner guidance documents responsive regions, accessibility foundations, components, and text-resize behavior.",
+      "craft_threshold": "Primer maintains compact technical clarity across dense multi-region workflows and smaller viewports.",
+      "project_fit": "Its narrow value is responsive catalog, detail, and comparison layout without loss of function.",
+      "feasibility": "Region and reflow rules can be implemented in the existing static Site without copying GitHub's shell."
+    },
+    "weighted_score": 92.3,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Responsive multi-region layout",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "govuk-design-system",
+    "source_name": "GOV.UK Design System",
+    "source_url": "https://design-system.service.gov.uk/",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "recommended"],
+    "scores": {
+      "evidence_quality": 95,
+      "craft_threshold": 88,
+      "project_fit": 89,
+      "feasibility": 95
+    },
+    "score_reasons": {
+      "evidence_quality": "Owner documentation provides current layout, spacing, component, pattern, accessibility, and error-message guidance.",
+      "craft_threshold": "The system makes content, state, and recovery behavior explicit with little decorative noise.",
+      "project_fit": "Its narrow value is plain-language download, empty, invalid, and failure states plus readable methodology content.",
+      "feasibility": "The relevant content and state rules are straightforward to adapt without copying government identity."
+    },
+    "weighted_score": 90.85,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Plain-language state, error, and recovery behavior",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "vercel-geist",
+    "source_name": "Vercel Geist",
+    "source_url": "https://vercel.com/geist/introduction",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "inferred"],
+    "scores": {
+      "evidence_quality": 90,
+      "craft_threshold": 90,
+      "project_fit": 86,
+      "feasibility": 93
+    },
+    "score_reasons": {
+      "evidence_quality": "Current owner documentation exposes foundations, typography roles, color states, responsive grid behavior, and components.",
+      "craft_threshold": "Geist distinguishes proof surfaces, compact labels, code, content, and interaction states with exact role discipline.",
+      "project_fit": "Its narrow value is technical evidence framing and readable download metadata, not monochrome styling.",
+      "feasibility": "Evidence frames and metadata relationships fit the existing static technology and source content."
+    },
+    "weighted_score": 88.85,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Technical evidence and download presentation",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "guardian-source",
+    "source_name": "Guardian Source",
+    "source_url": "https://theguardian.design/",
+    "source_lane": "live-public",
+    "evidence_classes": ["observed", "inferred", "recommended"],
+    "scores": {
+      "evidence_quality": 82,
+      "craft_threshold": 90,
+      "project_fit": 88,
+      "feasibility": 86
+    },
+    "score_reasons": {
+      "evidence_quality": "Owner repositories expose the Source page structure, section-color rule, and mapped headline, reading-text, and utility type families, though the primary site was not directly parsed.",
+      "craft_threshold": "Source preserves strong editorial hierarchy through distinct narrative, text, and utility roles.",
+      "project_fit": "Its narrow value is readable long-form case analysis and visible evidence priority.",
+      "feasibility": "The hierarchy can be adapted with system fonts and original colors without carrying Guardian assets."
+    },
+    "weighted_score": 87.0,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Long-form editorial hierarchy",
+    "selected_for_dossier": true
+  },
+  {
+    "slug": "observable-plot",
+    "source_name": "Observable Plot",
+    "source_url": "https://observablehq.github.io/plot/",
+    "source_lane": "corpus",
+    "evidence_classes": ["observed", "inferred", "recommended"],
+    "scores": {
+      "evidence_quality": 93,
+      "craft_threshold": 88,
+      "project_fit": 78,
+      "feasibility": 91
+    },
+    "score_reasons": {
+      "evidence_quality": "The accepted corpus case cites current official documentation and claim-level evidence for declarative data graphics.",
+      "craft_threshold": "Plot provides disciplined data encodings and layered explanatory graphics.",
+      "project_fit": "Visualization is useful later for corpus summaries but is not central to case discovery or downloads.",
+      "feasibility": "Small original graphics are possible, but a charting dependency is outside the current approved scope."
+    },
+    "weighted_score": 85.45,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Reserve for future corpus visualization",
+    "selected_for_dossier": false
+  },
+  {
+    "slug": "material-3",
+    "source_name": "Material Design 3",
+    "source_url": "https://m3.material.io/",
+    "source_lane": "corpus",
+    "evidence_classes": ["observed", "inferred"],
+    "scores": {
+      "evidence_quality": 95,
+      "craft_threshold": 91,
+      "project_fit": 73,
+      "feasibility": 90
+    },
+    "score_reasons": {
+      "evidence_quality": "The accepted corpus case cites official theme, type, and semantic-color documentation.",
+      "craft_threshold": "Material 3 derives component styling from named color, typography, and shape systems and assigns color through semantic roles.",
+      "project_fit": "Its mobile and adaptive guidance is useful, but its expressive shape language would pull the Site away from Carbon.",
+      "feasibility": "Semantic-role ideas are feasible, though the fuller component language is unnecessary."
+    },
+    "weighted_score": 84.45,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Rejected as a broad source; reserve for isolated mobile checks",
+    "selected_for_dossier": false
+  },
+  {
+    "slug": "adobe-spectrum-2",
+    "source_name": "Adobe Spectrum 2",
+    "source_url": "https://s2.spectrum.adobe.com/",
+    "source_lane": "corpus",
+    "evidence_classes": ["observed", "inferred"],
+    "scores": {
+      "evidence_quality": 78,
+      "craft_threshold": 90,
+      "project_fit": 77,
+      "feasibility": 82
+    },
+    "score_reasons": {
+      "evidence_quality": "Owner material confirms cross-platform adaptation and accessibility intent, but much detailed documentation requires JavaScript and was not inspected here.",
+      "craft_threshold": "Spectrum 2 coordinates color, thicker rounded icons, refreshed typography, size, and contrast across desktop, web, mobile, and mixed-reality contexts.",
+      "project_fit": "Its contextual scale could help later, but it offers less direct value for a dense download-first reference library.",
+      "feasibility": "Some relationships are portable, while the broader cross-platform system exceeds this Site's scope."
+    },
+    "weighted_score": 81.2,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Screened alternative for cross-platform scaling",
+    "selected_for_dossier": false
+  },
+  {
+    "slug": "porsche-design-system",
+    "source_name": "Porsche Design System",
+    "source_url": "https://designsystem.porsche.com/",
+    "source_lane": "corpus",
+    "evidence_classes": ["observed", "inferred"],
+    "scores": {
+      "evidence_quality": 84,
+      "craft_threshold": 89,
+      "project_fit": 69,
+      "feasibility": 81
+    },
+    "score_reasons": {
+      "evidence_quality": "The accepted corpus case records owner-published component and brand-system evidence.",
+      "craft_threshold": "The source combines framework-agnostic tokens, limited semantic color, fluid vertical rhythm, and defined regular-weight typography.",
+      "project_fit": "Automotive brand expression is less relevant than Carbon's technical density and the selected supporting roles.",
+      "feasibility": "Token roles and responsive rhythm are portable, but the automotive brand context would create unnecessary adaptation work."
+    },
+    "weighted_score": 78.8,
+    "eligible": true,
+    "rejection_reasons": [],
+    "role": "Rejected as a poor product-context fit",
+    "selected_for_dossier": false
+  }
+]

@@ -1,0 +1,356 @@
+{
+  "active_wave": null,
+  "artifacts": {
+    ".design/directions/decision.md": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+    ".design/directions/direction-set.json": "1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb",
+    ".design/implementation/plan.md": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+    ".design/implementation/waves/wave-1-public-package-contract/handoff.json": "caada9fd8c83de54af2192a2e19fc992deab0f1c14d19fc5684775c033b99b2f",
+    ".design/implementation/waves/wave-1-public-package-contract/handoff.md": "cf9017b91a57900bdb5445c8b9482edc76be9ec6e7f26a22be616fc77cfeaa6c",
+    ".design/implementation/waves/wave-1-public-package-contract/manifest.json": "7dfd2e884e880c8701f9b7e0c2c1d177bbd48cacaaf026fa38b3efa19aae3817",
+    ".design/implementation/waves/wave-1-public-package-contract/verification.json": "9e3010007f5fbd4418a4dbe7f021f129ed56d141447cde814a98b635bdf65247",
+    ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.json": "f7227a3f2e9fccbad13c860c0bab776302abb32e895645a999efaf61864a17bd",
+    ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.md": "b77b938849b40cd207e4fe2b038c5e45baee48682546ff1361e69f00e4f99f4f",
+    ".design/implementation/waves/wave-2-evidence-exchange-structure/manifest.json": "95ed3eb117f3ca344499bd0b7870a1a8f3851ea8338fa2ab8804ef9c1a4fcd86",
+    ".design/implementation/waves/wave-2-evidence-exchange-structure/verification.json": "099b53dee14a1058447eccf78255082e19e525ec477f0d92b5cebd2d80b22236",
+    ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.json": "6048fff7cb74b317789790467d6ae737081972e035b47b7e7fe271b04bceeec0",
+    ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.md": "da3b4a736a06f136ea6e43274c0cce76be927ac54cf40f5e1047534ad1746dff",
+    ".design/implementation/waves/wave-3-download-behavior-and-recovery/manifest.json": "bdede0a8dd98b54744d821e737bb8997f16593dcf79715ca777deaabca3aed01",
+    ".design/implementation/waves/wave-3-download-behavior-and-recovery/verification.json": "e923f362ac2d408d8d0b30b23e4b3b251424bfeef4278fcc522acf3cff40b1fd",
+    ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42",
+    ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.md": "0074bb6b5507795b2669df462e1c8b731ef5550db48802f08537d3ea176948ed",
+    ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18",
+    ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/verification.json": "8d0b82380ac17a6ac5f4bfcc6a038d4d2262452768a5997f484193f3506c2813",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.json": "17768ce8ed9aba882bdb9e5711aecec99344c93a84ace827edcf6829564f4404",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.md": "3bc44229d91b5e349e3a05c02d31dbd66dc70f7064e0d2162d03a863c2d6b555",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+    ".design/implementation/waves/wave-5-integration-render-and-independent-review/verification.json": "6639b531e7a01833716178f89064d7a61f43b6f3e5af56c06ed04d47585a1160",
+    ".design/shared-understanding.md": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced"
+  },
+  "blockers": [
+    {
+      "created_at": "2026-09-01T22:01:56Z",
+      "phase": "researching",
+      "reason": "Benchmark 2 requires three distinct IBM Carbon adaptations under one dominant foundation, but the current substantial direction validator rejects repeated primary slugs. Research is independently accepted. Runtime repair plan bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc awaits explicit user authorization.",
+      "resolution": "User authorized the exact repair plan bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc with decision text \"approved\".",
+      "resolved_at": "2026-09-01T22:15:05Z"
+    }
+  ],
+  "created_at": "2026-09-01T20:53:52Z",
+  "gates": {
+    "direction": {
+      "artifact_path": ".design/directions/decision.md",
+      "artifact_sha256": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+      "assumptions_accepted": [],
+      "decided_at": "2026-09-01T23:10:38Z",
+      "decision_text": "Direction approved",
+      "gate": "direction",
+      "scope": "",
+      "stale_at": null,
+      "stale_reason": null,
+      "status": "approved",
+      "warning_acknowledged": false
+    },
+    "repository_changes": {
+      "artifact_path": ".design/implementation/plan.md",
+      "artifact_sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+      "assumptions_accepted": [],
+      "decided_at": "2026-09-02T03:53:58Z",
+      "decision_text": "Repository changes approved",
+      "gate": "repository_changes",
+      "scope": "Wave 5 only: retain the fresh public-source health receipt produced by the approved live verification pass, alongside the already-approved acceptance evidence.",
+      "stale_at": null,
+      "stale_reason": null,
+      "status": "approved",
+      "warning_acknowledged": false
+    },
+    "understanding": {
+      "artifact_path": ".design/shared-understanding.md",
+      "artifact_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+      "assumptions_accepted": [],
+      "decided_at": "2026-09-01T21:29:52Z",
+      "decision_text": "Approved",
+      "gate": "understanding",
+      "scope": "",
+      "stale_at": null,
+      "stale_reason": null,
+      "status": "approved",
+      "warning_acknowledged": false
+    }
+  },
+  "history": [
+    {
+      "at": "2026-09-01T20:53:52Z",
+      "event": "initialized",
+      "route": "standard",
+      "workflow": "run"
+    },
+    {
+      "at": "2026-09-01T20:54:29Z",
+      "event": "transition",
+      "from_phase": "intake",
+      "reason": "Environment inspection confirms an existing 60-case local Site, Sites and Browser support, no Figma connection, and no deployment authority.",
+      "to_phase": "interviewing"
+    },
+    {
+      "at": "2026-09-01T21:25:49Z",
+      "event": "transition",
+      "from_phase": "interviewing",
+      "reason": "Completed verified Benchmark 2 shared understanding after four high-impact interview rounds and repaired independent plan, writing, and technical findings.",
+      "to_phase": "understanding_awaiting_approval"
+    },
+    {
+      "artifact_path": ".design/shared-understanding.md",
+      "artifact_sha256": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced",
+      "at": "2026-09-01T21:29:52Z",
+      "bound_direction_set_path": null,
+      "bound_direction_set_sha256": null,
+      "event": "gate_recorded",
+      "gate": "understanding",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-01T21:29:52Z",
+      "event": "transition",
+      "from_phase": "understanding_awaiting_approval",
+      "reason": "User approved the exact shared understanding and the approval gate is active.",
+      "to_phase": "researching"
+    },
+    {
+      "at": "2026-09-01T22:01:56Z",
+      "event": "blocked",
+      "from_phase": "researching",
+      "reason": "Benchmark 2 requires three distinct IBM Carbon adaptations under one dominant foundation, but the current substantial direction validator rejects repeated primary slugs. Research is independently accepted. Runtime repair plan bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc awaits explicit user authorization."
+    },
+    {
+      "at": "2026-09-01T22:15:05Z",
+      "event": "unblocked",
+      "reason": "User authorized the exact repair plan bde1ff2e1ded785b5b29672171cb1eff17693a488ee49df651087841b42013bc with decision text \"approved\".",
+      "to_phase": "researching"
+    },
+    {
+      "at": "2026-09-01T22:31:01Z",
+      "event": "transition",
+      "from_phase": "researching",
+      "reason": "Three IBM Carbon adaptations passed structured validation, evidence-reference checks, plan review, technical review, and Unslop review. The user must select and approve one before system definition or implementation.",
+      "to_phase": "directions_awaiting_approval"
+    },
+    {
+      "artifact_path": ".design/directions/decision.md",
+      "artifact_sha256": "ea3096da2603b09bd3af29cdefda553eebe723a8ee5c1e5ec132421cb70d0fa5",
+      "at": "2026-09-01T23:10:38Z",
+      "bound_direction_set_path": ".design/directions/direction-set.json",
+      "bound_direction_set_sha256": "1ea283119b1429e59dbd338ee24db5bef3a2eb54ba81db8e775de45cce6097bb",
+      "event": "gate_recorded",
+      "gate": "direction",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-01T23:10:38Z",
+      "event": "transition",
+      "from_phase": "directions_awaiting_approval",
+      "reason": "User approved the exact Evidence Exchange decision. The direction gate now binds decision.md and the current direction-set hash.",
+      "to_phase": "system_definition"
+    },
+    {
+      "at": "2026-09-01T23:34:03Z",
+      "event": "transition",
+      "from_phase": "system_definition",
+      "reason": "Evidence Exchange system definition and five-wave implementation plan pass aggregate verification, 249 tests on both local Python versions, and independent plan, technical, and Unslop review. Repository changes remain unapproved.",
+      "to_phase": "implementation_plan_awaiting_approval"
+    },
+    {
+      "artifact_path": ".design/implementation/plan.md",
+      "artifact_sha256": "72b13d305cffe868da139ae683f786b39cd84cd074fe6104b497d1f9c6535e91",
+      "at": "2026-09-01T23:55:16Z",
+      "bound_direction_set_path": null,
+      "bound_direction_set_sha256": null,
+      "event": "gate_recorded",
+      "gate": "repository_changes",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-01T23:55:16Z",
+      "event": "transition",
+      "from_phase": "implementation_plan_awaiting_approval",
+      "reason": "User approved the exact compiled Evidence Exchange implementation plan. Begin only wave-1-public-package-contract within its manifest scope.",
+      "to_phase": "building"
+    },
+    {
+      "at": "2026-09-01T23:55:16Z",
+      "event": "wave_started",
+      "manifest_path": ".design/implementation/waves/wave-1-public-package-contract/manifest.json",
+      "manifest_sha256": "7dfd2e884e880c8701f9b7e0c2c1d177bbd48cacaaf026fa38b3efa19aae3817",
+      "reason": "Prepared from the exact approved plan and repository baseline.",
+      "wave": 1
+    },
+    {
+      "at": "2026-09-02T00:52:09Z",
+      "event": "wave_completed",
+      "handoff_markdown_path": ".design/implementation/waves/wave-1-public-package-contract/handoff.md",
+      "handoff_markdown_sha256": "cf9017b91a57900bdb5445c8b9482edc76be9ec6e7f26a22be616fc77cfeaa6c",
+      "handoff_path": ".design/implementation/waves/wave-1-public-package-contract/handoff.json",
+      "handoff_sha256": "caada9fd8c83de54af2192a2e19fc992deab0f1c14d19fc5684775c033b99b2f",
+      "manifest_path": ".design/implementation/waves/wave-1-public-package-contract/manifest.json",
+      "manifest_sha256": "7dfd2e884e880c8701f9b7e0c2c1d177bbd48cacaaf026fa38b3efa19aae3817",
+      "reason": "Wave 1 public package contract passed scoped implementation, deterministic build, privacy, two-version regression, and three independent reviews.",
+      "verification_path": ".design/implementation/waves/wave-1-public-package-contract/verification.json",
+      "verification_sha256": "9e3010007f5fbd4418a4dbe7f021f129ed56d141447cde814a98b635bdf65247",
+      "wave": 1
+    },
+    {
+      "at": "2026-09-02T00:52:38Z",
+      "event": "wave_started",
+      "manifest_path": ".design/implementation/waves/wave-2-evidence-exchange-structure/manifest.json",
+      "manifest_sha256": "95ed3eb117f3ca344499bd0b7870a1a8f3851ea8338fa2ab8804ef9c1a4fcd86",
+      "reason": "Prepared from the exact approved plan and repository baseline.",
+      "wave": 2
+    },
+    {
+      "at": "2026-09-02T01:37:01Z",
+      "event": "wave_completed",
+      "handoff_markdown_path": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.md",
+      "handoff_markdown_sha256": "b77b938849b40cd207e4fe2b038c5e45baee48682546ff1361e69f00e4f99f4f",
+      "handoff_path": ".design/implementation/waves/wave-2-evidence-exchange-structure/handoff.json",
+      "handoff_sha256": "f7227a3f2e9fccbad13c860c0bab776302abb32e895645a999efaf61864a17bd",
+      "manifest_path": ".design/implementation/waves/wave-2-evidence-exchange-structure/manifest.json",
+      "manifest_sha256": "95ed3eb117f3ca344499bd0b7870a1a8f3851ea8338fa2ab8804ef9c1a4fcd86",
+      "reason": "Wave 2 passed exact manifest scope, 34 focused tests, two Wave 4 compatibility tests, isolated 277-test suites on both supported Python versions, all 14 fresh responsive renders, and three independent same-hash reviews.",
+      "verification_path": ".design/implementation/waves/wave-2-evidence-exchange-structure/verification.json",
+      "verification_sha256": "099b53dee14a1058447eccf78255082e19e525ec477f0d92b5cebd2d80b22236",
+      "wave": 2
+    },
+    {
+      "at": "2026-09-02T01:37:32Z",
+      "event": "wave_started",
+      "manifest_path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/manifest.json",
+      "manifest_sha256": "bdede0a8dd98b54744d821e737bb8997f16593dcf79715ca777deaabca3aed01",
+      "reason": "Prepared from the exact approved plan and repository baseline.",
+      "wave": 3
+    },
+    {
+      "at": "2026-09-02T02:21:00Z",
+      "event": "wave_completed",
+      "handoff_markdown_path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.md",
+      "handoff_markdown_sha256": "da3b4a736a06f136ea6e43274c0cce76be927ac54cf40f5e1047534ad1746dff",
+      "handoff_path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/handoff.json",
+      "handoff_sha256": "6048fff7cb74b317789790467d6ae737081972e035b47b7e7fe271b04bceeec0",
+      "manifest_path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/manifest.json",
+      "manifest_sha256": "bdede0a8dd98b54744d821e737bb8997f16593dcf79715ca777deaabca3aed01",
+      "reason": "Wave 3 exact-byte downloads, fail-closed recovery, exact approved routes, neutral visual correction, two-version regression, and three independent reviews passed; token-source reconciliation and the public-safe feedback ledger remain required before Wave 5 acceptance.",
+      "verification_path": ".design/implementation/waves/wave-3-download-behavior-and-recovery/verification.json",
+      "verification_sha256": "e923f362ac2d408d8d0b30b23e4b3b251424bfeef4278fcc522acf3cff40b1fd",
+      "wave": 3
+    },
+    {
+      "at": "2026-09-02T02:22:33Z",
+      "event": "wave_started",
+      "manifest_path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json",
+      "manifest_sha256": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18",
+      "reason": "Prepared from the exact approved plan and repository baseline.",
+      "wave": 4
+    },
+    {
+      "at": "2026-09-02T03:22:55Z",
+      "event": "wave_completed",
+      "handoff_markdown_path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.md",
+      "handoff_markdown_sha256": "0074bb6b5507795b2669df462e1c8b731ef5550db48802f08537d3ea176948ed",
+      "handoff_path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/handoff.json",
+      "handoff_sha256": "4179f687b6f6ab28e51144966527b89a4d3a26d1a97319c235e82b31e1da0a42",
+      "manifest_path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/manifest.json",
+      "manifest_sha256": "e62de86c3214244cb2af408284ce9bfe16dafd6ff086e04e6e8ce29c5597fd18",
+      "reason": "Wave 4 implementation, accessibility evidence, copy review, and three independent same-hash reviews passed; carry token-source parity into Wave 5.",
+      "verification_path": ".design/implementation/waves/wave-4-responsive-accessibility-and-copy/verification.json",
+      "verification_sha256": "8d0b82380ac17a6ac5f4bfcc6a038d4d2262452768a5997f484193f3506c2813",
+      "wave": 4
+    },
+    {
+      "at": "2026-09-02T03:23:13Z",
+      "event": "gate_stale",
+      "gate": "repository_changes",
+      "reason": "approved artifact hash changed to 186a6e695959bd9c2baab0693ed5d17cfbd6dddaf8049d5d502486039d163860"
+    },
+    {
+      "artifact_path": ".design/implementation/plan.md",
+      "artifact_sha256": "186a6e695959bd9c2baab0693ed5d17cfbd6dddaf8049d5d502486039d163860",
+      "at": "2026-09-02T03:23:25Z",
+      "bound_direction_set_path": null,
+      "bound_direction_set_sha256": null,
+      "event": "gate_recorded",
+      "gate": "repository_changes",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-02T03:23:37Z",
+      "event": "wave_started",
+      "manifest_path": ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json",
+      "manifest_sha256": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+      "reason": "Prepared from the exact approved plan and repository baseline.",
+      "wave": 5
+    },
+    {
+      "at": "2026-09-02T03:24:06Z",
+      "event": "gate_stale",
+      "gate": "repository_changes",
+      "reason": "approved artifact hash changed to f30ca5bf91dfb5277b65a6db9cc921ba01fbbef5440070989bd2a901f45aa7b6"
+    },
+    {
+      "artifact_path": ".design/implementation/plan.md",
+      "artifact_sha256": "f30ca5bf91dfb5277b65a6db9cc921ba01fbbef5440070989bd2a901f45aa7b6",
+      "at": "2026-09-02T03:24:06Z",
+      "bound_direction_set_path": null,
+      "bound_direction_set_sha256": null,
+      "event": "gate_recorded",
+      "gate": "repository_changes",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-02T03:53:51Z",
+      "event": "gate_stale",
+      "gate": "repository_changes",
+      "reason": "approved artifact hash changed to 15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e"
+    },
+    {
+      "artifact_path": ".design/implementation/plan.md",
+      "artifact_sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e",
+      "at": "2026-09-02T03:53:58Z",
+      "bound_direction_set_path": null,
+      "bound_direction_set_sha256": null,
+      "event": "gate_recorded",
+      "gate": "repository_changes",
+      "status": "approved"
+    },
+    {
+      "at": "2026-09-02T04:43:43Z",
+      "event": "wave_completed",
+      "handoff_markdown_path": ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.md",
+      "handoff_markdown_sha256": "3bc44229d91b5e349e3a05c02d31dbd66dc70f7064e0d2162d03a863c2d6b555",
+      "handoff_path": ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.json",
+      "handoff_sha256": "17768ce8ed9aba882bdb9e5711aecec99344c93a84ace827edcf6829564f4404",
+      "manifest_path": ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json",
+      "manifest_sha256": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
+      "reason": "Wave 5 candidate ecfe1ae382499345b51ad1e856b47897614238f83b2af7580e29e8c5e356d9ff passed all criteria, three independent reviews, final receipt confirmation, and handoff verification.",
+      "verification_path": ".design/implementation/waves/wave-5-integration-render-and-independent-review/verification.json",
+      "verification_sha256": "6639b531e7a01833716178f89064d7a61f43b6f3e5af56c06ed04d47585a1160",
+      "wave": 5
+    },
+    {
+      "at": "2026-09-02T04:43:43Z",
+      "event": "transition",
+      "from_phase": "building",
+      "reason": "All approved implementation waves have complete handoffs.",
+      "to_phase": "rendering"
+    }
+  ],
+  "phase": "rendering",
+  "phase_before_block": null,
+  "plugin": "design",
+  "repair_attempts": {},
+  "repair_cycle": 0,
+  "repair_pass": 0,
+  "revision": 28,
+  "route": "standard",
+  "schema_version": "1.0",
+  "status": "active",
+  "updated_at": "2026-09-02T04:43:43Z",
+  "workflow": "run"
+}
