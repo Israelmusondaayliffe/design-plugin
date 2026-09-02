@@ -41,14 +41,21 @@ jobs:
       - name: Audit original writing
         run: python corpus/scripts/audit_originality.py
 
-      - name: Build public catalog and downloads
-        run: python corpus/scripts/build_catalog.py --visibility public
-
       - name: Check Site JavaScript
         run: node --check site/app.js
 
       - name: Run regression suite
         run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Build deployable public catalog and downloads
+        run: python corpus/scripts/build_catalog.py --visibility public
+
+      - name: Verify deployable Site payload
+        run: |
+          test -f site/generated-data/catalog/index.json
+          test "$(find site/generated-data/cases -path '*/downloads/case.md' | wc -l | tr -d ' ')" = "60"
+          test "$(find site/generated-data/cases -path '*/downloads/case.json' | wc -l | tr -d ' ')" = "60"
+          test "$(find site/generated-data/cases -name manifest.json | wc -l | tr -d ' ')" = "60"
 
       - name: Configure Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
