@@ -24,6 +24,29 @@
     ".design/implementation/waves/wave-5-integration-render-and-independent-review/handoff.md": "3bc44229d91b5e349e3a05c02d31dbd66dc70f7064e0d2162d03a863c2d6b555",
     ".design/implementation/waves/wave-5-integration-render-and-independent-review/manifest.json": "870a87ace6dac711a098138786e1fcef26a7c484eddf3dd7900f127348eafbff",
     ".design/implementation/waves/wave-5-integration-render-and-independent-review/verification.json": "6639b531e7a01833716178f89064d7a61f43b6f3e5af56c06ed04d47585a1160",
+    ".design/qa/deviations.json": "c31448fe13a35dbfe8c65e49ad3a038e139cb9a1df011cac6fc9f035eeeaf906",
+    ".design/qa/repairs/cycle-1-handoff.json": "3b0ee56e1b6f6b233d96e96437fa62a8723928cd673502278976257b96635188",
+    ".design/qa/repairs/cycle-1-verification.json": "3fcc8b0b739eb092ca595ed876851e1fea31ddeac034fb8c624f197ad203e962",
+    ".design/qa/repairs/cycle-1.json": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf",
+    ".design/qa/repairs/cycle-2-handoff.json": "427a3de35bc66c90883d3115f3d53b2e79e29c3ca5218e14bb0aa05957727b65",
+    ".design/qa/repairs/cycle-2-verification.json": "e6d7171317bff78e5c96af764c9a5f11d02f9a5011825b98f8985f7e2aacbd21",
+    ".design/qa/repairs/cycle-2.json": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672",
+    ".design/qa/repairs/cycle-3-handoff.json": "dcebd7ce3662b1061578244b183d5b3359a60b264732cea46118b8b1be702ebd",
+    ".design/qa/repairs/cycle-3-verification.json": "f8e5e72bb812f13072770ef370a120edee3652637efeeb84d6ba62193ecbb790",
+    ".design/qa/repairs/cycle-3.json": "d4c8c5db7cac6770f86d43f85e9e7102d95923ddbc7bea5c54bd95c83eb96880",
+    ".design/qa/repairs/cycle-4-handoff.json": "d200982a21dc26c7711914ab251ad0c667dffec9d1550d6a679a2bc0294540e0",
+    ".design/qa/repairs/cycle-4-verification.json": "52d6a4c7dcd5e86faa6aa1be03af81926211b9b7f37641b6394fb5b5e421c449",
+    ".design/qa/repairs/cycle-4.json": "b404ef3ffbd42badfa3a01f91f729ebacc6f5d20b3ceac67bce60f48a9d2f0de",
+    ".design/qa/reports/cycle-0.json": "43f11910aeab7bbbe9a238703d1e9499da58b61c93f7241f9e4a7247e89c7150",
+    ".design/qa/reports/cycle-1.json": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2",
+    ".design/qa/reports/cycle-2.json": "ea4085b6d20c62f129407a0fb6e731f39fec0dca89300a4e78d5dd7a9b253620",
+    ".design/qa/reports/cycle-3.json": "50c07f27a9abe8741022ef36fe76b47b29645020c83b5a8a1da5be57b56405d0",
+    ".design/qa/reports/cycle-4.json": "60e9aab0ece6469fe05b7a05c5b0be99298627d25084d6411de79b3d96b9c2bc",
+    ".design/qa/scorecard.json": "37809fdda46a6045427f8e9117efd5bc8c9957010db10f6805a90202e829c47c",
+    ".design/qa/verification.json": "2a8622e3bd56f24bb728d9b4eb1fb0ec9b938e11826c1e30ddba1f4fefad2376",
+    ".design/renders/evidence.json": "75ae1255634f89c0bafbaf6f461d55ed27fd0e8f6bc3e7113bdc94f44347f6c0",
+    ".design/renders/plan.json": "2928d32177d8f664562c19c1b484b824e2789d410347c5477d9785fdf683277b",
+    ".design/renders/verification.json": "955cd3969cf7267488ef605e947ba385307585494d4cbd85bc0175a5cbd2778a",
     ".design/shared-understanding.md": "ff224a6a4a36a6b67d77be24602b5d0489d482a3cec2128ad2e3f8f5323d0ced"
   },
   "blockers": [
@@ -339,18 +362,295 @@
       "from_phase": "building",
       "reason": "All approved implementation waves have complete handoffs.",
       "to_phase": "rendering"
+    },
+    {
+      "at": "2026-09-02T12:15:46Z",
+      "event": "renders_accepted",
+      "from_phase": "rendering",
+      "reason": "Fresh browser captures reproduce the user-reported comprehension, voice, and case-visual failures across the complete approved target matrix.",
+      "render_evidence": {
+        "path": ".design/renders/evidence.json",
+        "sha256": "f8fdc30fc3a4eae77db4e0304da55f86d49eefa37289a99971463fa8c7195f2f"
+      },
+      "render_plan": {
+        "path": ".design/renders/plan.json",
+        "sha256": "d2aca8ffdb3382c2bc552d4ae01c0521d25fb2b5b8bf7bc7657f2166d03330b9"
+      },
+      "to_phase": "qa",
+      "verification_path": ".design/renders/verification.json",
+      "verification_sha256": "5fa676fc8a6d9f1a146ff3033dadc56875345e40153668fb9ed8f162a10fe74f"
+    },
+    {
+      "at": "2026-09-02T12:19:11Z",
+      "event": "repair_started",
+      "finding_ids": [
+        "F01-first-visit-context",
+        "F02-visual-maturity",
+        "F03-reference-character",
+        "F04-corpus-scale",
+        "F05-case-content-order",
+        "F06-case-visual-meaning",
+        "F07-package-reader-order",
+        "F08-voice-and-jargon",
+        "F09-preview-renderer"
+      ],
+      "qa_report_path": ".design/qa/reports/cycle-0.json",
+      "qa_report_sha256": "43f11910aeab7bbbe9a238703d1e9499da58b61c93f7241f9e4a7247e89c7150",
+      "reason": "User rejected the baseline as unclear, voiceless, visually generic, and insufficiently case-specific; validated QA found nine bounded defects within the approved Evidence Exchange direction.",
+      "repair_cycle": 1,
+      "repair_pass": 1,
+      "repair_plan_path": ".design/qa/repairs/cycle-1.json",
+      "repair_plan_sha256": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf",
+      "target_ids": [
+        "case-default-wide",
+        "catalog-default-mobile",
+        "catalog-default-wide",
+        "method-default-wide",
+        "package-default-wide",
+        "project"
+      ]
+    },
+    {
+      "at": "2026-09-02T13:25:51Z",
+      "event": "repair_completed",
+      "reason": "The v3 reader repair is bounded to the approved seven files, passes three independent frozen-candidate reviews, and is ready for fresh state-bound captures of all 21 targets.",
+      "repair_cycle": 1,
+      "repair_handoff_path": ".design/qa/repairs/cycle-1-handoff.json",
+      "repair_handoff_sha256": "3b0ee56e1b6f6b233d96e96437fa62a8723928cd673502278976257b96635188",
+      "repair_pass": 1,
+      "repair_plan_path": ".design/qa/repairs/cycle-1.json",
+      "rerender_targets": [
+        "case-default-wide",
+        "catalog-default-mobile",
+        "catalog-default-wide",
+        "method-default-wide",
+        "package-default-wide",
+        "project"
+      ],
+      "verification_path": ".design/qa/repairs/cycle-1-verification.json",
+      "verification_sha256": "3fcc8b0b739eb092ca595ed876851e1fea31ddeac034fb8c624f197ad203e962"
+    },
+    {
+      "at": "2026-09-02T14:12:17Z",
+      "event": "renders_accepted",
+      "from_phase": "rendering",
+      "reason": "All 21 approved routes reached their named states in fresh exact-viewport Chrome captures; the catalog empty, loading, and error captures now visibly show their state and recovery affordance, with zero root overflow and no console errors.",
+      "render_evidence": {
+        "path": ".design/renders/evidence.json",
+        "sha256": "3672bdea09d3a04c1e3b74bb4c049adce388d9ec388dacaed45c1f42f4d579db"
+      },
+      "render_plan": {
+        "path": ".design/renders/plan.json",
+        "sha256": "0a0f138dca6ef4b9b6f003ff2c21bb59fa96a9d6b8532f7be086aed55f6745c5"
+      },
+      "to_phase": "qa",
+      "verification_path": ".design/renders/verification.json",
+      "verification_sha256": "6989965f8366cc6a96084e1815ad1801a9387898874adf203104e50f798c4791"
+    },
+    {
+      "at": "2026-09-02T14:25:40Z",
+      "event": "repair_started",
+      "finding_ids": [
+        "F10-public-tree-projection",
+        "F11-method-deep-link-stability"
+      ],
+      "qa_report_path": ".design/qa/reports/cycle-1.json",
+      "qa_report_sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2",
+      "reason": "Independent technical review found that the deployable public tree exposes internal review and operational source records, and that the direct Method route shifts after asynchronous catalog settlement.",
+      "repair_cycle": 2,
+      "repair_pass": 2,
+      "repair_plan_path": ".design/qa/repairs/cycle-2.json",
+      "repair_plan_sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672",
+      "target_ids": [
+        "method-default-wide",
+        "project"
+      ]
+    },
+    {
+      "at": "2026-09-02T14:37:37Z",
+      "event": "repair_completed",
+      "reason": "The public detail projector and stable Method route pass two supported Python suites, exact deploy-tree privacy checks, local HTTP route checks, and fresh system-Chrome behavior at all approved widths.",
+      "repair_cycle": 2,
+      "repair_handoff_path": ".design/qa/repairs/cycle-2-handoff.json",
+      "repair_handoff_sha256": "427a3de35bc66c90883d3115f3d53b2e79e29c3ca5218e14bb0aa05957727b65",
+      "repair_pass": 2,
+      "repair_plan_path": ".design/qa/repairs/cycle-2.json",
+      "rerender_targets": [
+        "method-default-wide",
+        "project"
+      ],
+      "verification_path": ".design/qa/repairs/cycle-2-verification.json",
+      "verification_sha256": "e6d7171317bff78e5c96af764c9a5f11d02f9a5011825b98f8985f7e2aacbd21"
+    },
+    {
+      "at": "2026-09-02T14:43:23Z",
+      "event": "renders_accepted",
+      "from_phase": "rendering",
+      "reason": "All 21 approved routes reached their named states in fresh exact-viewport system-Chrome captures. The repaired Method routes align at top after catalog settlement, all targets have zero root overflow and console output, and reduced-motion targets measure at most 0.01 milliseconds.",
+      "render_evidence": {
+        "path": ".design/renders/evidence.json",
+        "sha256": "d61840638fe6b40e5fc96bbc0db0bbfd083f0f70f80edc80fa565cfadceb0507"
+      },
+      "render_plan": {
+        "path": ".design/renders/plan.json",
+        "sha256": "4979588eb394903e0d1bc73bc11f8b3b1d58bd496d8207524b4eb4ed5225ce52"
+      },
+      "to_phase": "qa",
+      "verification_path": ".design/renders/verification.json",
+      "verification_sha256": "7e24409f4dcfcc006736e2e67116e25c234bfe1b6c9202a6bd6e0285c5e83a4a"
+    },
+    {
+      "at": "2026-09-02T15:17:10Z",
+      "event": "repair_started",
+      "finding_ids": [
+        "F12-case-meaning-repetition",
+        "F13-catalog-error-readability"
+      ],
+      "qa_report_path": ".design/qa/reports/cycle-2.json",
+      "qa_report_sha256": "ea4085b6d20c62f129407a0fb6e731f39fec0dca89300a4e78d5dd7a9b253620",
+      "reason": "Independent writing review found repeated case meaning across 48 of 60 public routes and an unreadable wide catalog error header.",
+      "repair_cycle": 3,
+      "repair_pass": 2,
+      "repair_plan_path": ".design/qa/repairs/cycle-3.json",
+      "repair_plan_sha256": "d4c8c5db7cac6770f86d43f85e9e7102d95923ddbc7bea5c54bd95c83eb96880",
+      "target_ids": [
+        "case-default-wide",
+        "catalog-error-wide"
+      ]
+    },
+    {
+      "at": "2026-09-02T15:21:45Z",
+      "event": "repair_completed",
+      "reason": "Both final writing and responsive defects are implemented inside the exact repair scope, documented, and pass two-version focused and full regression checks.",
+      "repair_cycle": 3,
+      "repair_handoff_path": ".design/qa/repairs/cycle-3-handoff.json",
+      "repair_handoff_sha256": "dcebd7ce3662b1061578244b183d5b3359a60b264732cea46118b8b1be702ebd",
+      "repair_pass": 2,
+      "repair_plan_path": ".design/qa/repairs/cycle-3.json",
+      "rerender_targets": [
+        "case-default-wide",
+        "catalog-error-wide"
+      ],
+      "verification_path": ".design/qa/repairs/cycle-3-verification.json",
+      "verification_sha256": "f8e5e72bb812f13072770ef370a120edee3652637efeeb84d6ba62193ecbb790"
+    },
+    {
+      "at": "2026-09-02T15:29:45Z",
+      "event": "renders_accepted",
+      "from_phase": "rendering",
+      "reason": "All 21 approved routes reached their named states in fresh exact-viewport Chrome captures. The repaired case explanation is visibly distinct, the wide error header keeps both messages readable, every target has zero root overflow and console output, and reduced-motion targets measure 0.01 milliseconds.",
+      "render_evidence": {
+        "path": ".design/renders/evidence.json",
+        "sha256": "45ba5fab90756bf601a1656fcbb4ef089c0f68fd764523c9bbcb7b9367e0b975"
+      },
+      "render_plan": {
+        "path": ".design/renders/plan.json",
+        "sha256": "5db565380b0b514aa0af19f74274a3835619f5a5e1b2ab4fabbaa4193576cd2e"
+      },
+      "to_phase": "qa",
+      "verification_path": ".design/renders/verification.json",
+      "verification_sha256": "3c47fd336d413b9ab0cec2823ea4c369efb291c7327b99f67bef0d6468a154f5"
+    },
+    {
+      "at": "2026-09-02T15:48:27Z",
+      "event": "repair_started",
+      "finding_ids": [
+        "F14-slot-filled-practical-meaning",
+        "F15-catalog-loading-state-evidence",
+        "F16-case-loading-state-evidence",
+        "F17-package-error-state-evidence"
+      ],
+      "qa_report_path": ".design/qa/reports/cycle-3.json",
+      "qa_report_sha256": "50c07f27a9abe8741022ef36fe76b47b29645020c83b5a8a1da5be57b56405d0",
+      "reason": "Independent Writing Quality review found a repeated slot-filled case explanation, and independent plan review found that three required captures do not visibly prove their named states.",
+      "repair_cycle": 4,
+      "repair_pass": 3,
+      "repair_plan_path": ".design/qa/repairs/cycle-4.json",
+      "repair_plan_sha256": "b404ef3ffbd42badfa3a01f91f729ebacc6f5d20b3ceac67bce60f48a9d2f0de",
+      "target_ids": [
+        "case-default-wide",
+        "case-loading-mobile",
+        "catalog-loading-mobile",
+        "package-error-mobile"
+      ]
+    },
+    {
+      "at": "2026-09-02T15:55:45Z",
+      "event": "repair_completed",
+      "reason": "All four cycle-4 repairs are implemented inside the exact allowed file set, the 300-test suite passes on both supported Python versions, and the four affected targets are ready for fresh browser evidence.",
+      "repair_cycle": 4,
+      "repair_handoff_path": ".design/qa/repairs/cycle-4-handoff.json",
+      "repair_handoff_sha256": "d200982a21dc26c7711914ab251ad0c667dffec9d1550d6a679a2bc0294540e0",
+      "repair_pass": 3,
+      "repair_plan_path": ".design/qa/repairs/cycle-4.json",
+      "rerender_targets": [
+        "case-default-wide",
+        "case-loading-mobile",
+        "catalog-loading-mobile",
+        "package-error-mobile"
+      ],
+      "verification_path": ".design/qa/repairs/cycle-4-verification.json",
+      "verification_sha256": "52d6a4c7dcd5e86faa6aa1be03af81926211b9b7f37641b6394fb5b5e421c449"
+    },
+    {
+      "at": "2026-09-02T16:03:06Z",
+      "event": "renders_accepted",
+      "from_phase": "rendering",
+      "reason": "All 21 required routes were captured once in fresh exact-viewport system Chrome. The four cycle-4 targets visibly show case-specific guidance or their complete named loading and recovery state, with zero root overflow, zero console warnings or errors, and reduced-motion durations at or below 0.01 milliseconds.",
+      "render_evidence": {
+        "path": ".design/renders/evidence.json",
+        "sha256": "75ae1255634f89c0bafbaf6f461d55ed27fd0e8f6bc3e7113bdc94f44347f6c0"
+      },
+      "render_plan": {
+        "path": ".design/renders/plan.json",
+        "sha256": "2928d32177d8f664562c19c1b484b824e2789d410347c5477d9785fdf683277b"
+      },
+      "to_phase": "qa",
+      "verification_path": ".design/renders/verification.json",
+      "verification_sha256": "955cd3969cf7267488ef605e947ba385307585494d4cbd85bc0175a5cbd2778a"
+    },
+    {
+      "accepted_deviations": [],
+      "at": "2026-09-02T16:10:58Z",
+      "deviations": {
+        "path": ".design/qa/deviations.json",
+        "sha256": "c31448fe13a35dbfe8c65e49ad3a038e139cb9a1df011cac6fc9f035eeeaf906"
+      },
+      "event": "quality_completed",
+      "qa_report": {
+        "path": ".design/qa/reports/cycle-4.json",
+        "sha256": "60e9aab0ece6469fe05b7a05c5b0be99298627d25084d6411de79b3d96b9c2bc"
+      },
+      "reason": "Cycle 4 QA passes every applicable dimension with no blockers, limitations, or accepted deviations, and the exact frozen candidate received three independent PASS decisions.",
+      "scorecard": {
+        "path": ".design/qa/scorecard.json",
+        "sha256": "37809fdda46a6045427f8e9117efd5bc8c9957010db10f6805a90202e829c47c"
+      },
+      "verification_path": ".design/qa/verification.json",
+      "verification_sha256": "2a8622e3bd56f24bb728d9b4eb1fb0ec9b938e11826c1e30ddba1f4fefad2376"
     }
   ],
-  "phase": "rendering",
+  "phase": "complete",
   "phase_before_block": null,
   "plugin": "design",
-  "repair_attempts": {},
-  "repair_cycle": 0,
-  "repair_pass": 0,
-  "revision": 28,
+  "repair_attempts": {
+    "case-default-wide": 3,
+    "case-loading-mobile": 1,
+    "catalog-default-mobile": 1,
+    "catalog-default-wide": 1,
+    "catalog-error-wide": 1,
+    "catalog-loading-mobile": 1,
+    "method-default-wide": 2,
+    "package-default-wide": 1,
+    "package-error-mobile": 1,
+    "project": 2
+  },
+  "repair_cycle": 4,
+  "repair_pass": 3,
+  "revision": 42,
   "route": "standard",
   "schema_version": "1.0",
-  "status": "active",
-  "updated_at": "2026-09-02T04:43:43Z",
+  "status": "complete",
+  "updated_at": "2026-09-02T16:10:58Z",
   "workflow": "run"
 }

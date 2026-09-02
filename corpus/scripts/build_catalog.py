@@ -25,11 +25,14 @@ public_packages = importlib.util.module_from_spec(public_package_spec)
 assert public_package_spec.loader
 public_package_spec.loader.exec_module(public_packages)
 
-CASE_JSON = (
-    "metadata.json", "evidence.json", "tokens.json", "review.json", "preview-spec.json",
-    "coverage.json", "source.json",
-)
-CASE_TEXT = ("DESIGN.md", "source-notes.md")
+PUBLIC_CASE_FILE_NAMES = {
+    "summary.json",
+    "DESIGN.md",
+    "evidence.json",
+    "source.json",
+    "tokens.json",
+    "downloads",
+}
 
 
 def read_json(path: Path):
@@ -41,9 +44,42 @@ def write_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def copy_text(source: Path, destination: Path) -> None:
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    destination.write_text(source.read_text(encoding="utf-8"), encoding="utf-8")
+def build_public_case_details(source: Path) -> dict:
+    """Project canonical records into the small, public case-detail contract."""
+    model = public_packages.build_public_model(source)
+    analysis, _ = public_packages.render_markdown(model)
+    evidence = {"schema_version": "1.0", "items": model["evidence"]}
+    provenance = {"schema_version": "1.0", **model["provenance"]}
+    canonical_tokens = read_json(source / "tokens.json")
+    tokens = {
+        "schema_version": "1.0",
+        "tokens": [
+            {
+                key: item[key]
+                for key in (
+                    "name",
+                    "category",
+                    "role",
+                    "evidence_class",
+                    "exact",
+                    "value",
+                    "source_evidence_ids",
+                    "notes",
+                )
+            }
+            for item in canonical_tokens["tokens"]
+        ],
+    }
+    public_packages.scan_public_value(evidence)
+    public_packages.scan_public_value(provenance)
+    public_packages.scan_public_value(tokens)
+    public_packages.scan_generated_bytes({"DESIGN.md": analysis.encode("utf-8")})
+    return {
+        "analysis": analysis,
+        "evidence": evidence,
+        "provenance": provenance,
+        "tokens": tokens,
+    }
 
 
 def validate_output_root(path: Path) -> None:
@@ -91,6 +127,7 @@ def build(
                 continue
             preview = read_json(source / "preview-spec.json")
             coverage = read_json(source / "coverage.json")
+            public_details = build_public_case_details(source) if metadata["publication_status"] == "public" else None
             summary = {
                 key: metadata[key]
                 for key in (
@@ -113,12 +150,15 @@ def build(
             for root in staged_roots:
                 destination = root / "cases" / slug
                 write_json(destination / "summary.json", summary)
-                for name in CASE_JSON:
-                    write_json(destination / name, read_json(source / name))
-                for name in CASE_TEXT:
-                    copy_text(source / name, destination / name)
-                if metadata["publication_status"] == "public":
+                if public_details is not None:
+                    (destination / "DESIGN.md").write_text(public_details["analysis"], encoding="utf-8")
+                    write_json(destination / "evidence.json", public_details["evidence"])
+                    write_json(destination / "source.json", public_details["provenance"])
+                    write_json(destination / "tokens.json", public_details["tokens"])
                     public_packages.build_case_package(source, destination / "downloads", output_root=root)
+                    actual_files = {path.name for path in destination.iterdir()}
+                    if actual_files != PUBLIC_CASE_FILE_NAMES:
+                        raise RuntimeError(f"{slug}: public case projection differs from its allowlist: {sorted(actual_files)}")
 
         summaries.sort(key=lambda item: item["name"].casefold())
         facets = {

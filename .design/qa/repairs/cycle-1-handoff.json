@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "cycle_number": 1,
+  "pass_number": 1,
+  "status": "applied",
+  "repair_plan_sha256": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf",
+  "changed_files": [
+    {
+      "path": "site/index.html",
+      "change": "changed",
+      "sha256": "872c39468c22deaa29b54f33269412dc5c2421aca70d214e7b10911e402a2702",
+      "evidence": "Defines design in plain language, puts an original case study in the first viewport, adds problem-led entry paths, explains filters, and preserves evidence boundaries."
+    },
+    {
+      "path": "site/app.js",
+      "change": "changed",
+      "sha256": "bae6da230ad63226eb62a47e100ee85e361b2a88dcddcd5ae4ca49303ae74d2d",
+      "evidence": "Builds 60 unique source-safe visual studies, bounded progressive results, practical case ordering, human-versus-tool download guidance, and persistent focus after every result batch."
+    },
+    {
+      "path": "site/styles.css",
+      "change": "changed",
+      "sha256": "247b7db220c7ef842dda3357edf8ecabf1cbed362c7da7aa0574599eeba9e907",
+      "evidence": "Implements the mature editorial system, connected full-width case bands, responsive first-screen study, case-bound visual geometry, 44-pixel mobile actions, and accessible evidence-label contrast."
+    },
+    {
+      "path": "site/README.md",
+      "change": "changed",
+      "sha256": "57e13662cfd8264bca47006a6955e9c3749489d04c714fcc4a9c14d54785c027",
+      "evidence": "Documents the reader-first Site, original visual-study boundary, connected catalog behavior, local build, and publication-proof requirements."
+    },
+    {
+      "path": "tests/test_wave11_site.py",
+      "change": "changed",
+      "sha256": "5eb2c85ad4f2bfb4d17c894358bc46bcfe253ab2d0a95aa6880c991a4ae6e80b",
+      "evidence": "Adds regressions for first-visit context, connected results, 60 unique visual signatures, case order, filter explanations, touch targets, label contrast, and focus continuity."
+    },
+    {
+      "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+      "change": "changed",
+      "sha256": "54f499461a43307f48b8f5d3c66b718ac5d5d24c7cc9006e0fd2b59cbdb9c119",
+      "evidence": "Records the user's non-designer context, voice, visual maturity, explanatory visual, and understandability feedback."
+    },
+    {
+      "path": ".design/quality/writing-route.json",
+      "change": "changed",
+      "sha256": "332821a89b18b6f7aef07d3262622c7a27ead896c2cd7585dc855d6ff1ed6a9f",
+      "evidence": "Binds the rewrite route to the reader-first audience and preserves the approved facts and evidence boundary."
+    }
+  ],
+  "completed_actions": [
+    "Add a first-visit explanation of design, why it matters, and how a non-designer can use one case.",
+    "Add problem-led starter paths and show a bounded first set of cases without weakening search, filters, comparison, or all-60 access.",
+    "Replace generic preview motifs with deterministic original visual studies derived from approved public case fields and labeled as interpretation rather than evidence.",
+    "Reorder case detail around the problem, why it matters, what to notice, what to try, and where to be careful before technical evidence.",
+    "Explain Markdown versus JSON before hashes and other technical package details.",
+    "Apply a direct, curious teaching voice without inventing personal stories or changing factual claims.",
+    "Record the user feedback, repair, and reusable learning in the public-safe friction ledger and update the writing route."
+  ],
+  "completed_checks": [
+    {
+      "check": "Run the focused Wave 11 Site tests and the full supported Python regression suites.",
+      "status": "pass",
+      "evidence": "30 focused Site tests pass. The sequential full suite passes 294 tests on Python 3.9.6, 3.11.15, and 3.13.14; 3.11 and 3.13 are the supported CI versions."
+    },
+    {
+      "check": "Verify all 60 cases receive distinct, source-safe visual study markup from existing approved public fields.",
+      "status": "pass",
+      "evidence": "Browser inspection found 60 unique catalog study signatures across 60 cases, with six numeric geometry variables consumed by the renderer and no source assets or source brand colors."
+    },
+    {
+      "check": "Rerender all 21 approved targets at exact desktop, tablet, and mobile viewports.",
+      "status": "pass",
+      "evidence": "The repaired candidate rendered all 21 target routes at the exact planned viewports with zero root overflow. Resolution remains deferred to the state-bound capture set required after this handoff."
+    },
+    {
+      "check": "Verify first-visit comprehension, catalog scale, case reading order, package choice, keyboard use, accessibility, reduced motion, and zero root overflow.",
+      "status": "pass",
+      "evidence": "The first-screen study appears at both exact viewports; results progress 12 to 60; case and package order are explicit; final-batch focus stays visible; the mobile action is 44 pixels; label contrast is 7.227:1; reduced-motion contracts remain; inspected targets have zero root overflow."
+    },
+    {
+      "check": "Run independent plan, technical, and Writing Quality reviews on one frozen candidate hash.",
+      "status": "pass",
+      "evidence": "Three independent read-only Sol reviewers passed frozen candidate 11d25b1a2e0735ec348a43d03387125361a249d4dd1d85da86d08ac67f8cc281 for plan integrity, technical and visual behavior, and Writing Quality."
+    }
+  ],
+  "target_results": [
+    {
+      "finding_id": "F01-first-visit-context",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The first viewport now defines design, explains its practical value, provides a problem-led action, and shows one case from the 60-case atlas."
+    },
+    {
+      "finding_id": "F02-visual-maturity",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The Site now uses an editorial grid, contextual bands, disciplined typography, and full-width case relationships instead of the rejected yellow toy-like presentation."
+    },
+    {
+      "finding_id": "F03-reference-character",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The composition uses visible grid alignment, layered information jobs, connected bands, and original color roles without copying IBM identity."
+    },
+    {
+      "finding_id": "F04-corpus-scale",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The catalog shows 12 results first and progressively exposes all 60 while preserving search, filters, comparison, and focus."
+    },
+    {
+      "finding_id": "F05-case-content-order",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "Case detail leads with the problem, why it matters as the library's reading, what to notice, what to try, and cautions before optional technical analysis."
+    },
+    {
+      "finding_id": "F06-case-visual-meaning",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "Each case now carries an original interface or composition study plus a case-specific relationship caption and explicit interpretation label."
+    },
+    {
+      "finding_id": "F07-package-reader-order",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "Package view explains Markdown for people and JSON for tools before disclosing filenames, media types, sizes, hashes, and verification details."
+    },
+    {
+      "finding_id": "F08-voice-and-jargon",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The direct teaching voice passed the independent Writing Quality review, and filter taxonomy is explained in plain language where it appears."
+    },
+    {
+      "finding_id": "F09-preview-renderer",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "The deterministic renderer uses approved lane, pattern, layout, motion, platform, archetype, task-stage, density, and relationship fields to produce 60 unique study signatures without source identity."
+    }
+  ],
+  "ended_at": "2026-09-02T13:24:26Z"
+}

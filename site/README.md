@@ -1,16 +1,18 @@
 # Design Reference Library Site
 
-This dependency-free static Site presents 60 reviewed public design cases as an Evidence Exchange. A visitor can search, filter, compare, inspect claim-level evidence, and review a complete package contract before downloading either a readable Markdown brief or structured JSON.
+This dependency-free static Site teaches design through 60 reviewed public cases. It is written for curious makers, founders, developers, product owners, designers, and tools. A reader can begin with an everyday problem, inspect an original visual study, see what relationship is worth noticing, check the evidence, and download the same case as readable Markdown or structured JSON.
+
+The Site uses a plain definition: design is how choices shape what people notice, understand, trust, and do. It does not require the reader to know design-system language before they can find value.
 
 The five task regions are:
 
-1. Catalog: search, six lanes, six advanced facets, sorting, and public-case results.
-2. Case: context, intent, value, quality, analysis, evidence, limitations, and unknowns.
-3. Download package: contents, evidence boundary, provenance, limitations, unknowns, file details, then download actions.
+1. Catalog: four problem-led starting paths, search, six lanes, six optional facets, sorting, and a bounded visual atlas. The first 12 matches render as one connected list of case studies by default; every one of the 60 cases remains searchable, filterable, and available through progressive loading.
+2. Case: the problem, what to notice, where the relationship helps, where it can fail, the full technical analysis, evidence, limitations, and unknowns.
+3. Download package: the human-versus-tool file choice first, followed by contents, evidence boundary, provenance, limitations, unknowns, and exact verification details.
 4. Comparison: two to five public cases kept distinct in one bounded table.
 5. Method: truth classes, originality limits, privacy exclusions, and responsible package use.
 
-Abstract previews are generated from approved public case fields. They are optional recognition cues, not evidence or provenance. The Site does not load or store source screenshots, logos, fonts, or other owner assets.
+Each case receives an original explanatory UI or composition study. The deterministic renderer uses only approved public fields, including lane, platform, archetype, use stage, density, pattern, layout, motion, and documented relationships. These visuals explain the library's reading. They are not the source product, evidence, or a copy of the source identity. The Site does not load or store source screenshots, logos, fonts, branded colors, or other owner assets.
 
 ## Build the public data
 
@@ -63,8 +65,8 @@ python3 -m unittest tests.test_wave11_site tests.test_wave11_evidence_exchange
 
 Fresh browser review is still required for the named wide, tablet, and mobile render targets. Automated checks support that judgment but do not replace it.
 
-## Publication boundary
+## Publication status
 
-The Site is a static public-release candidate. Wave 5 acceptance runs locally and does not itself prove deployment. Public publication is authorized only after Wave 5 completes; the public URL must be added after an anonymous production check passes. The Site requires no analytics or account system.
+The accepted Wave 5 Site is published at `https://israelmusondaayliffe.github.io/design-plugin/`. A local repair is not production proof. Any later repair must pass the full local and browser checks, deploy through the repository's GitHub Pages workflow, and receive a fresh anonymous production check before it is described as live. The Site requires no analytics or account system.
 
 The public GitHub repository contains the Site source and its build instructions. Generated public data is rebuilt from the canonical corpus and remains outside the distributed plugin package.

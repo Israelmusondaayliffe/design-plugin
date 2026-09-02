@@ -1,0 +1,2790 @@
+{
+  "checks": [
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-wide.json",
+          "sha256": "8f2f2db173a56616d1ac9ad7bb64ae86d4fd4bacb8dba6dadb2c789fa9261cc7"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9"
+        }
+      ],
+      "id": "check-catalog-default-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-mobile.json",
+          "sha256": "6651298467185bbb4a5b7b5ede5c37994a1126e6b0f41df5575aed4793faf85b"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142"
+        }
+      ],
+      "id": "check-catalog-default-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-tablet.json",
+          "sha256": "b959bea5a531db8abaeb37d2d36aaf3b26bd9dc9ef16ef340f150d918fe707fe"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1"
+        }
+      ],
+      "id": "check-catalog-default-tablet-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-empty-mobile.json",
+          "sha256": "7fdddea11d1b03a69f0262d3682a0a9e9c8a86e41b3a276ee16d81c4abe622d3"
+        },
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6"
+        }
+      ],
+      "id": "check-catalog-empty-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-empty-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-loading-mobile.json",
+          "sha256": "aeb08a3a016898e436da2fc27c3b7983a46146c59a99f0a49441ed991dfc2322"
+        },
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "0df5cc48272eb6bcee37622d53d549216ca382750fd1987b880658eb04ebbdfb"
+        }
+      ],
+      "id": "check-catalog-loading-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-error-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/styles.css",
+          "sha256": "247b7db220c7ef842dda3357edf8ecabf1cbed362c7da7aa0574599eeba9e907"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-responsive",
+      "method": "Independent exact-viewport review of the named wide error state and its responsive layout rules.",
+      "notes": "The status line stretches into tiny text while the visual-boundary explanation collapses into a one-word-wide column.",
+      "reference_role": null,
+      "status": "fail",
+      "target_id": "catalog-error-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-error-wide.json",
+          "sha256": "7e76931dff7ef0187a26c3e4fdf6500f8d449dcdf973b437d2c98bde7766fc0d"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-error-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-error-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "catalog-error-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "id": "check-catalog-error-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "catalog-error-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "a08392cfd7b8cc264f18a4dbe41b305081b37d2d2259492fa096b41354d68ab9"
+        }
+      ],
+      "id": "check-case-default-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "a08392cfd7b8cc264f18a4dbe41b305081b37d2d2259492fa096b41354d68ab9"
+        }
+      ],
+      "id": "check-case-default-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-default-wide.json",
+          "sha256": "c11a32a1395ea313d13ceefda3d3d9f56d40273c067b5324ccfe3e2c82d220b7"
+        },
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "a08392cfd7b8cc264f18a4dbe41b305081b37d2d2259492fa096b41354d68ab9"
+        }
+      ],
+      "id": "check-case-default-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "a08392cfd7b8cc264f18a4dbe41b305081b37d2d2259492fa096b41354d68ab9"
+        }
+      ],
+      "id": "check-case-default-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/app.js",
+          "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a"
+        },
+        {
+          "path": "site/generated-data/cases/android-mobile/downloads/case.json",
+          "sha256": "65e0d8b980049071b3856b3f3be0d078f7b756db151031087c83409f27784791"
+        },
+        {
+          "path": "site/generated-data/cases/ant-design/downloads/case.json",
+          "sha256": "a194e09b9b0d8fcdffa5939015803ebadac75948918fd5e6520bb910d304dfce"
+        }
+      ],
+      "id": "check-case-default-wide-content",
+      "method": "Independent writing review plus a generated-model scan across all 60 public cases.",
+      "notes": "Forty-eight public cases repeat the full summary immediately as Why it matters, so the second block does not add meaning for the reader.",
+      "reference_role": null,
+      "status": "fail",
+      "target_id": "case-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "a08392cfd7b8cc264f18a4dbe41b305081b37d2d2259492fa096b41354d68ab9"
+        }
+      ],
+      "id": "check-case-default-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "case-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-loading-mobile.json",
+          "sha256": "85f81201a21387e88220709e7bcd2d02ba7bde25ab7d25b4dbebf1112a4de431"
+        },
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868"
+        }
+      ],
+      "id": "check-case-loading-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "case-loading-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-default-tablet.json",
+          "sha256": "2695dc1d31bce833af280ddca7c8f42829a457e246cd54810c4e1346a88deef2"
+        },
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709"
+        }
+      ],
+      "id": "check-case-default-tablet-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "case-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-error-mobile.json",
+          "sha256": "d9aa70aeedf3902e5b41a40293ecacc0780ed9ce92f17702fa647c4f8dd47a57"
+        },
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245"
+        }
+      ],
+      "id": "check-case-error-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "case-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-wide.json",
+          "sha256": "d86b451c57467cfba23156de0cc11e951c75c431859eb17aae2b0f8a5bbdd413"
+        },
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7"
+        }
+      ],
+      "id": "check-package-default-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "package-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-mobile.json",
+          "sha256": "5b1a2338bf499ef0433ec0feebe9c536c2b996d3bed2031440b34fec554a0d72"
+        },
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388"
+        }
+      ],
+      "id": "check-package-default-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "package-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-tablet.json",
+          "sha256": "8150437f40cd8763cd9c5cdcbea7335f31279ed159a1cc6a77d86f0c4a0ce018"
+        },
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df"
+        }
+      ],
+      "id": "check-package-default-tablet-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "package-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-error-mobile.json",
+          "sha256": "93dd91b6707518290852e05d094707c933c4517defd19525ac44b952a8e7f2ad"
+        },
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb"
+        }
+      ],
+      "id": "check-package-error-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "package-error-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-denied-wide.json",
+          "sha256": "9cd679a6314c9828ea5e75b2578439d8ceb3adb7ad64267f57200cee8185a5dc"
+        },
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404"
+        }
+      ],
+      "id": "check-package-denied-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "package-denied-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-wide.json",
+          "sha256": "ee677504e6c6b081bb275b7da235495a46d9b588d95657e614db916c51658fcd"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272"
+        }
+      ],
+      "id": "check-comparison-default-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "comparison-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-mobile.json",
+          "sha256": "4e83d4da942fa94dde6927d92ed97672af8ab7f18114cf51d591bfabcd8b5cc7"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d"
+        }
+      ],
+      "id": "check-comparison-default-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "comparison-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-tablet.json",
+          "sha256": "071d598f44b1eac76bb4d3a6960c8c599d82250239e9d36a47e231bf9b900b56"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c"
+        }
+      ],
+      "id": "check-comparison-default-tablet-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "comparison-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        }
+      ],
+      "id": "check-method-default-wide-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        }
+      ],
+      "id": "check-method-default-wide-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-wide.json",
+          "sha256": "9457f6787e7df6fd2f24a467baea572af6b3f8f5a1cffd08aec69de0c9f55f03"
+        },
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        }
+      ],
+      "id": "check-method-default-wide-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/app.js",
+          "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a"
+        },
+        {
+          "path": "tests/test_wave11_site.py",
+          "sha256": "c00b46461355fefa096b97c3bc0cebfd1d0dadf1ec79a162c27cd08ad1616d4d"
+        },
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        },
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        },
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-wide-interaction",
+      "method": "Fresh direct-route system-Chrome loads after asynchronous catalog, page-load, and font settlement.",
+      "notes": "The direct #method route remains aligned at methodTop 0 with zero overflow and console output at wide, tablet, and mobile widths.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "measured"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        }
+      ],
+      "id": "check-method-default-wide-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+        }
+      ],
+      "id": "check-method-default-wide-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "method-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-mobile.json",
+          "sha256": "b95981c6e3c72ac5dbbb50baf23fa2955c6e38c9ccdb5238cdbe7805b6a6d518"
+        },
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+        }
+      ],
+      "id": "check-method-default-mobile-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "method-default-mobile",
+      "truth_class": "observed"
+    },
+    {
+      "category": "visual",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-visual",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh rendered review confirms the repaired hierarchy, full-width evidence bands, and original case-study compositions at the planned viewport.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-responsive",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Exact viewport capture and root-width inspection confirm the repaired layout remains bounded at the planned width.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "accessibility",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-tablet.json",
+          "sha256": "d1d3456d7746b16e683807f4cd81ae851bb3910110f2c97e8cd26eded995944a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-accessibility",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "The target-specific accessibility record and current capture pass semantics, naming, focus, contrast, reflow, keyboard, touch-target, and reduced-motion checks.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "measured"
+    },
+    {
+      "category": "interaction",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-interaction",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Current Chrome behavior and regression coverage preserve search, filters, progressive loading, comparison, dialogs, downloads, and recovery for this state.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "content",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-content",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh content review confirms the repaired plain-language teaching order, factual boundaries, and state-specific guidance for this route.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "reference",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+        }
+      ],
+      "id": "check-method-default-tablet-reference",
+      "method": "Fresh exact-viewport Chrome render review against the approved screen, content, interaction, accessibility, code, and bounded design authority.",
+      "notes": "Fresh comparison to the bounded design-system authority confirms hierarchy, typography, spacing, color roles, and composition remain within the approved Evidence Exchange direction.",
+      "reference_role": "design-system",
+      "status": "pass",
+      "target_id": "method-default-tablet",
+      "truth_class": "observed"
+    },
+    {
+      "category": "code",
+      "comparison_dimensions": [],
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "corpus/scripts/build_catalog.py",
+          "sha256": "46c185978604609763b949c0ff55fcbdcccb9a040c8abc7045699df4c492bb53"
+        },
+        {
+          "path": "tests/test_wave11_evidence_exchange.py",
+          "sha256": "cbd8c1e068aad927da2742976346f6ba7a82cc387c17dd2197c3a90375acb19c"
+        },
+        {
+          "path": "site/app.js",
+          "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a"
+        },
+        {
+          "path": "tests/test_wave11_site.py",
+          "sha256": "c00b46461355fefa096b97c3bc0cebfd1d0dadf1ec79a162c27cd08ad1616d4d"
+        }
+      ],
+      "id": "check-project-code",
+      "method": "Current source inspection, exact deploy-tree inspection, local HTTP route checks, and two-version regression evidence.",
+      "notes": "The public case projector is allowlisted, prohibited records return 404, the Method route settles correctly, and 297 tests pass on both supported Python versions.",
+      "reference_role": null,
+      "status": "pass",
+      "target_id": "project",
+      "truth_class": "measured"
+    }
+  ],
+  "created_at": "2026-09-02T14:45:08Z",
+  "findings": [
+    {
+      "category": "content",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/app.js",
+          "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a"
+        },
+        {
+          "path": "site/generated-data/cases/android-mobile/downloads/case.json",
+          "sha256": "65e0d8b980049071b3856b3f3be0d078f7b756db151031087c83409f27784791"
+        },
+        {
+          "path": "site/generated-data/cases/ant-design/downloads/case.json",
+          "sha256": "a194e09b9b0d8fcdffa5939015803ebadac75948918fd5e6520bb910d304dfce"
+        }
+      ],
+      "expected": "Every case gives a distinct, plain-language reason it matters after the full source summary, without inventing claims.",
+      "finding_type": "content-defect",
+      "id": "F12-case-meaning-repetition",
+      "observed": "Forty-eight of 60 public case routes render the visual thesis byte-for-byte after the identical full case summary.",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/app.js",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P1",
+      "source_check_id": "check-case-default-wide-content",
+      "status": "open",
+      "summary": "Most case routes repeat their summary instead of explaining why the case matters.",
+      "target_id": "case-default-wide",
+      "truth_class": "observed"
+    },
+    {
+      "category": "responsive",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/styles.css",
+          "sha256": "247b7db220c7ef842dda3357edf8ecabf1cbed362c7da7aa0574599eeba9e907"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "1b8f78b95bdbdd3142c0be6489236f7ed5a459020bb3d3d87d132e2db4ad2558"
+        }
+      ],
+      "expected": "The wide catalog error state keeps its recovery and evidence-boundary text readable at the approved viewport.",
+      "finding_type": "usability-defect",
+      "id": "F13-catalog-error-readability",
+      "observed": "The three-column results header forces one paragraph into an extremely narrow column and stretches the other into a long, low-legibility line.",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/styles.css",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P2",
+      "source_check_id": "check-catalog-error-wide-responsive",
+      "status": "open",
+      "summary": "The wide catalog error header is technically bounded but not readable.",
+      "target_id": "catalog-error-wide",
+      "truth_class": "observed"
+    }
+  ],
+  "prior_qa": {
+    "path": ".design/qa/reports/cycle-1.json",
+    "sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2"
+  },
+  "qa_owner": "Independent three-reviewer acceptance panel",
+  "render_evidence": {
+    "path": ".design/renders/evidence.json",
+    "sha256": "d61840638fe6b40e5fc96bbc0db0bbfd083f0f70f80edc80fa565cfadceb0507"
+  },
+  "repair_cycle": 2,
+  "repair_evaluation": {
+    "prior_qa": {
+      "path": ".design/qa/reports/cycle-1.json",
+      "sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2"
+    },
+    "repair_plan": {
+      "path": ".design/qa/repairs/cycle-2.json",
+      "sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672"
+    },
+    "results": [
+      {
+        "evidence": [
+          {
+            "path": "corpus/scripts/build_catalog.py",
+            "sha256": "46c185978604609763b949c0ff55fcbdcccb9a040c8abc7045699df4c492bb53"
+          },
+          {
+            "path": "tests/test_wave11_evidence_exchange.py",
+            "sha256": "cbd8c1e068aad927da2742976346f6ba7a82cc387c17dd2197c3a90375acb19c"
+          }
+        ],
+        "finding_id": "F10-public-tree-projection",
+        "notes": "The deployable case tree now uses exact public field and file allowlists. Internal review records, source notes, metadata, coverage, preview records, request status, response hashes, redirect details, and source-inspection fields are absent.",
+        "status": "resolved"
+      },
+      {
+        "evidence": [
+          {
+            "path": "site/app.js",
+            "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a"
+          },
+          {
+            "path": "tests/test_wave11_site.py",
+            "sha256": "c00b46461355fefa096b97c3bc0cebfd1d0dadf1ec79a162c27cd08ad1616d4d"
+          },
+          {
+            "path": ".design/renders/captures/method-default-wide.png",
+            "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223"
+          },
+          {
+            "path": ".design/renders/captures/method-default-tablet.png",
+            "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617"
+          },
+          {
+            "path": ".design/renders/captures/method-default-mobile.png",
+            "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10"
+          }
+        ],
+        "finding_id": "F11-method-deep-link-stability",
+        "notes": "Fresh direct Method loads settle at methodTop 0 after catalog, page-load, and font layout at all three approved widths.",
+        "status": "resolved"
+      }
+    ]
+  },
+  "repair_pass": 2,
+  "repair_plan": {
+    "path": ".design/qa/repairs/cycle-2.json",
+    "sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672"
+  },
+  "schema_version": "1.0",
+  "state_binding": {
+    "path": ".design/state.json",
+    "phase": "qa",
+    "repair_attempts": {
+      "case-default-wide": 1,
+      "catalog-default-mobile": 1,
+      "catalog-default-wide": 1,
+      "method-default-wide": 2,
+      "package-default-wide": 1,
+      "project": 2
+    },
+    "repair_cycle": 2,
+    "repair_pass": 2,
+    "revision": 35,
+    "sha256": "292e394701c99702b00449d2b5c9c1683873a99efece7f22f3d56817bdd59421",
+    "workflow": "run"
+  },
+  "summary": {
+    "blockers": [],
+    "counts": {
+      "P0": 0,
+      "P1": 1,
+      "P2": 1,
+      "P3": 0,
+      "accepted_deviations": 0,
+      "blocked_checks": 0
+    },
+    "limitations": [],
+    "status": "repair-required"
+  },
+  "workflow": "run"
+}

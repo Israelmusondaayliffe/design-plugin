@@ -1,0 +1,31 @@
+{
+  "accepted_at": "2026-09-02T13:25:51Z",
+  "changed_files": [
+    ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+    ".design/quality/writing-route.json",
+    "site/README.md",
+    "site/app.js",
+    "site/index.html",
+    "site/styles.css",
+    "tests/test_wave11_site.py"
+  ],
+  "repair_handoff": {
+    "path": ".design/qa/repairs/cycle-1-handoff.json",
+    "sha256": "3b0ee56e1b6f6b233d96e96437fa62a8723928cd673502278976257b96635188"
+  },
+  "repair_plan": {
+    "path": ".design/qa/repairs/cycle-1.json",
+    "sha256": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf"
+  },
+  "rerender_targets": [
+    "case-default-wide",
+    "catalog-default-mobile",
+    "catalog-default-wide",
+    "method-default-wide",
+    "package-default-wide",
+    "project"
+  ],
+  "schema_version": "1.0",
+  "status": "applied",
+  "verified_at": "2026-09-02T13:25:51Z"
+}

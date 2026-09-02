@@ -1,0 +1,81 @@
+{
+  "changed_files": [
+    {
+      "change": "changed",
+      "evidence": "Removes the slot-filled explanation frame, presents each case's reviewed practical uses directly, labels the catalog loading state, and keeps the case loading state compact enough to show identity and recovery together.",
+      "path": "site/app.js",
+      "sha256": "0cbf8acaa38e086ee6d16882a3743f37054908f39eabb6412ce114bb90fc3be4"
+    },
+    {
+      "change": "changed",
+      "evidence": "Places package validation status, exact failure copy, retry, and return beside the package title so the planned mobile error viewport contains the full recovery state.",
+      "path": "site/index.html",
+      "sha256": "e94a86642688dc66a7ff2f6ecb1f805a9fc3f56f19200b033922a5e150a0cb75"
+    },
+    {
+      "change": "changed",
+      "evidence": "Styles the catalog loading context, compacts unavailable case-loading controls, and keeps package state copy readable inside the heading.",
+      "path": "site/styles.css",
+      "sha256": "8e89246d61932380724ff7378cc09e0c1a84c55b52b67a8af3791bd0979e073c"
+    },
+    {
+      "change": "changed",
+      "evidence": "Checks 60 distinct reviewed practical-use sets, rejects the synthetic sentence frame, and binds visible context for all three named state captures.",
+      "path": "tests/test_wave11_site.py",
+      "sha256": "914203b8e02af15556c46be93dd3a9134b7e4fb530aca8913a834eef444be6b6"
+    },
+    {
+      "change": "changed",
+      "evidence": "Records the repeated-frame defect, the three state-evidence defects, their repairs, and reusable acceptance lessons without private diagnostics.",
+      "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+      "sha256": "f2fd4e701957f40ae5fc1c919eeb0b2237e8049dac65ff93f0dd4eaa159e68ad"
+    }
+  ],
+  "completed_actions": [
+    "Replace the repeated case explanation sentence with case-specific practical guidance from the reviewed best-for field.",
+    "Render explicit catalog loading context and live status beside the busy skeleton state.",
+    "Compact the mobile case loading state so exact case identity, loading message, and return action are visible together.",
+    "Move package validation status and recovery controls into the package heading so the mobile error state visibly retains case, format, problem, retry, and return context.",
+    "Record the independent review findings and reusable lessons in the public-safe feedback and friction ledger."
+  ],
+  "completed_checks": [
+    {
+      "check": "python3 -m unittest tests.test_wave11_site",
+      "evidence": "The 34-test Site module passed. The complete 300-test repository suite passed on Python 3.9.6 and Python 3.12.13.",
+      "status": "pass"
+    },
+    {
+      "check": "node --check site/app.js",
+      "evidence": "The repaired JavaScript passed syntax validation. The feedback ledger passed the harness writing gate, the public generator rebuilt 60 cases, and git diff validation found no whitespace errors.",
+      "status": "pass"
+    }
+  ],
+  "cycle_number": 4,
+  "ended_at": "2026-09-02T15:54:54Z",
+  "pass_number": 3,
+  "repair_plan_sha256": "b404ef3ffbd42badfa3a01f91f729ebacc6f5d20b3ceac67bce60f48a9d2f0de",
+  "schema_version": "1.0",
+  "status": "applied",
+  "target_results": [
+    {
+      "evidence": "All 60 reviewed best-for sets are distinct and contain at least two practical uses. The renderer presents those reviewed phrases as bullets and no longer contains the synthetic sentence helper or frame.",
+      "finding_id": "F14-slot-filled-practical-meaning",
+      "status": "implemented-awaiting-rerender"
+    },
+    {
+      "evidence": "The loading result list now begins with public-catalog identity, a live loading announcement, and a plain description of what is being checked.",
+      "finding_id": "F15-catalog-loading-state-evidence",
+      "status": "implemented-awaiting-rerender"
+    },
+    {
+      "evidence": "The loopback case-loading route retains IBM Carbon identity while hiding unavailable preview, comparison, and local navigation so the loading message and Return to catalog action stay in the planned mobile viewport.",
+      "finding_id": "F16-case-loading-state-evidence",
+      "status": "implemented-awaiting-rerender"
+    },
+    {
+      "evidence": "Package identity, exact validation message, Retry package validation, and Return to case now share the package heading before the long evidence sections.",
+      "finding_id": "F17-package-error-state-evidence",
+      "status": "implemented-awaiting-rerender"
+    }
+  ]
+}

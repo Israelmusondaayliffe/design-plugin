@@ -1,0 +1,78 @@
+{
+  "blockers": [],
+  "created_at": "2026-09-02T16:10:11Z",
+  "dimensions": [
+    {
+      "category": "visual",
+      "evidence_checks": [
+        "check-catalog-default-wide-visual",
+        "check-catalog-loading-mobile-visual",
+        "check-case-loading-mobile-visual",
+        "check-package-error-mobile-visual"
+      ],
+      "notes": "The mature neutral system, original case studies, and repaired named states are visible in current exact-viewport captures.",
+      "status": "pass"
+    },
+    {
+      "category": "responsive",
+      "evidence_checks": [
+        "check-catalog-default-mobile-responsive",
+        "check-package-error-mobile-responsive"
+      ],
+      "notes": "Wide, tablet, and mobile targets keep their content and report zero page-root overflow.",
+      "status": "pass"
+    },
+    {
+      "category": "accessibility",
+      "evidence_checks": [
+        "check-catalog-default-mobile-accessibility",
+        "check-case-loading-mobile-accessibility"
+      ],
+      "notes": "Current evidence covers semantics, names, focus, contrast, reflow, keyboard paths, touch targets, and reduced motion.",
+      "status": "pass"
+    },
+    {
+      "category": "interaction",
+      "evidence_checks": [
+        "check-case-loading-mobile-interaction",
+        "check-package-error-mobile-interaction"
+      ],
+      "notes": "Loading and failure states retain specific return or retry actions while invalid downloads stay disabled.",
+      "status": "pass"
+    },
+    {
+      "category": "content",
+      "evidence_checks": [
+        "check-case-default-wide-content",
+        "check-package-error-mobile-content"
+      ],
+      "notes": "The Site explains design for non-designers, presents reviewed practical guidance directly, and keeps recovery copy specific.",
+      "status": "pass"
+    },
+    {
+      "category": "code",
+      "evidence_checks": [
+        "check-project-code"
+      ],
+      "notes": "The 60-case public projection remains deterministic, privacy-bounded, and fail-closed.",
+      "status": "pass"
+    },
+    {
+      "category": "reference",
+      "evidence_checks": [
+        "check-catalog-default-wide-reference",
+        "check-case-default-wide-reference"
+      ],
+      "notes": "The finished Site remains inside the approved Evidence Exchange direction and bounded design authority.",
+      "status": "pass"
+    }
+  ],
+  "limitations": [],
+  "overall": "pass",
+  "owner": "Root worker with three independent final reviewers",
+  "qa_report": {
+    "path": ".design/qa/reports/cycle-4.json",
+    "sha256": "60e9aab0ece6469fe05b7a05c5b0be99298627d25084d6411de79b3d96b9c2bc"
+  },
+  "schema_version": "1.0"
+}

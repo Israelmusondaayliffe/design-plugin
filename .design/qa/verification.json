@@ -1,0 +1,19 @@
+{
+  "accepted_at": "2026-09-02T16:10:58Z",
+  "accepted_deviations": [],
+  "deviations": {
+    "path": ".design/qa/deviations.json",
+    "sha256": "c31448fe13a35dbfe8c65e49ad3a038e139cb9a1df011cac6fc9f035eeeaf906"
+  },
+  "qa_report": {
+    "path": ".design/qa/reports/cycle-4.json",
+    "sha256": "60e9aab0ece6469fe05b7a05c5b0be99298627d25084d6411de79b3d96b9c2bc"
+  },
+  "schema_version": "1.0",
+  "scorecard": {
+    "path": ".design/qa/scorecard.json",
+    "sha256": "37809fdda46a6045427f8e9117efd5bc8c9957010db10f6805a90202e829c47c"
+  },
+  "status": "complete",
+  "verified_at": "2026-09-02T16:10:58Z"
+}

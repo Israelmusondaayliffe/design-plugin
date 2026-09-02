@@ -1,7 +1,7 @@
 {
-  "route": "intent-architecture",
-  "operation": "Create an operating specification and project plan that let the user approve and later execute the Evidence Exchange direction without changing its factual scope.",
-  "audience": "The project owner, future implementers, and independent reviewers",
-  "rationale": "The system definition and implementation plan are new structured documents whose job is to preserve approved decisions, expose risks, and support one repository-change decision.",
+  "route": "rewrite",
+  "operation": "Rewrite the public Site copy and reading order so a curious non-designer can understand design, find a useful case, judge its evidence, and choose a download without changing the factual scope.",
+  "audience": "Curious makers, founders, developers, product owners, designers, and software tools",
+  "rationale": "The factual case records and evidence boundaries stay fixed; the repair changes the explanation, hierarchy, labels, and voice that present those approved facts.",
   "claim_check_required": false
 }

@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "applicability_reason": null,
+      "id": "semantics",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "Landmarks, headings, dialogs, tables, lists, labels, status regions, and reading order remain explicit in the current Site.",
+      "status": "pass",
+      "truth_class": "observed"
+    },
+    {
+      "applicability_reason": null,
+      "id": "accessible-names",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "All visible interactive elements on comparison-default-tablet have a visible or programmatic name.",
+      "status": "pass",
+      "truth_class": "observed"
+    },
+    {
+      "applicability_reason": null,
+      "id": "focus",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "Visible focus styling, dialog containment and restoration, recovery actions, and progressive-result focus behavior remain present.",
+      "status": "pass",
+      "truth_class": "observed"
+    },
+    {
+      "applicability_reason": null,
+      "id": "contrast",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "Current token and computed-style checks preserve the accepted text and functional-boundary contrast values.",
+      "status": "pass",
+      "truth_class": "measured"
+    },
+    {
+      "applicability_reason": null,
+      "id": "zoom-reflow",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "comparison-default-tablet has zero page-root horizontal overflow at its exact planned viewport.",
+      "status": "pass",
+      "truth_class": "measured"
+    },
+    {
+      "applicability_reason": null,
+      "id": "keyboard",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "Current native controls, dialog behavior, and keyboard regression coverage preserve the planned keyboard paths.",
+      "status": "pass",
+      "truth_class": "observed"
+    },
+    {
+      "applicability_reason": null,
+      "id": "touch-targets",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "Visible buttons, inputs, selects, and button-styled links meet the planned 44 CSS pixel minimum.",
+      "status": "pass",
+      "truth_class": "measured"
+    },
+    {
+      "applicability_reason": null,
+      "id": "reduced-motion",
+      "method": "Fresh exact-viewport Chrome inspection, current source inspection, and current regression evidence.",
+      "result": "The target preserves the shared reduced-motion override; this exact target did not require media emulation.",
+      "status": "pass",
+      "truth_class": "measured"
+    }
+  ],
+  "created_at": "2026-09-02T16:01:01Z",
+  "limitations": [],
+  "performed_by": "Root worker using fresh local Google Chrome captures, DOM inspection, and current regression evidence.",
+  "schema_version": "1.0",
+  "target_id": "comparison-default-tablet"
+}

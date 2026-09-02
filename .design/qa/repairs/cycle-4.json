@@ -1,0 +1,469 @@
+{
+  "actions": [
+    "Replace the repeated case explanation sentence with case-specific practical guidance from the reviewed best-for field.",
+    "Render explicit catalog loading context and live status beside the busy skeleton state.",
+    "Compact the mobile case loading state so exact case identity, loading message, and return action are visible together.",
+    "Move package validation status and recovery controls into the package heading so the mobile error state visibly retains case, format, problem, retry, and return context.",
+    "Record the independent review findings and reusable lessons in the public-safe feedback and friction ledger."
+  ],
+  "allowed_files": [
+    "site/app.js",
+    "site/index.html",
+    "site/styles.css",
+    "tests/test_wave11_site.py",
+    ".design/quality/benchmark-2-feedback-and-friction-ledger.md"
+  ],
+  "checks": [
+    "python3 -m unittest tests.test_wave11_site",
+    "node --check site/app.js"
+  ],
+  "cycle_number": 4,
+  "pass_number": 3,
+  "qa_report": {
+    "path": ".design/qa/reports/cycle-3.json",
+    "sha256": "50c07f27a9abe8741022ef36fe76b47b29645020c83b5a8a1da5be57b56405d0"
+  },
+  "reference_lock": {
+    "path": ".design/system/reference-lock.json",
+    "sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449"
+  },
+  "repository_approval": {
+    "path": ".design/implementation/plan.md",
+    "sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e"
+  },
+  "repository_baseline": {
+    "dirty_files": [
+      {
+        "path": ".design/qa/evidence/accessibility-case-default-tablet.json",
+        "sha256": "cf5a35ec967bd864b37673d1c4b3d373be4cdf7bd495dc24da8985089143ac85",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-default-wide.json",
+        "sha256": "3ead20e695faf99a3176b03d887affbf8caec97d02ade331792feec8eca90db6",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-error-mobile.json",
+        "sha256": "a399e25e7c01536a7933476057981ecb42cf928c534d72302b055047a3049567",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-loading-mobile.json",
+        "sha256": "5ac4c381665e124ba74a54154b9968e776090f4f0b03954af96a794fa9e1d072",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-mobile.json",
+        "sha256": "744ef49fca35139b01c0d2c04523ca7ef0a1e1974b192a97a4474518f909d106",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-tablet.json",
+        "sha256": "e840e0fcca7f504bc28efccb947db15b7bda5362b3300995275270b861d9e9dd",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-wide.json",
+        "sha256": "0275e4e26a15e1a428b8d18d0c6c6fb82787fbff8f088bfb27b574eeaad8086e",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-empty-mobile.json",
+        "sha256": "cc28adcc5274441c714ed5127ec0c9fa4f0ab90444616ee2a09466a0ceaffdae",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-error-wide.json",
+        "sha256": "dad840a9bb3f270123f14e48714e5a117aaa00cdab62306b35acdc42e0920e39",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-loading-mobile.json",
+        "sha256": "e212e6d3ca0545d5702b4dca362bc9c2ba44b6821ab1a764733428887209b817",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-mobile.json",
+        "sha256": "bc523eadd3f895ad1e0cd7aa75ccdb6de6665aaa43e265ededad5a2f98d1b8f5",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-tablet.json",
+        "sha256": "4490cb525586f21f3138d1a7772a4fa4af1a483e5f7e218f786f31014bfe54cf",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-wide.json",
+        "sha256": "d5f892df672d0751e09c93aaf3f400cf770a120352b4fd5f957d037d698254f6",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-mobile.json",
+        "sha256": "be5024dfabe442db43a8f6768fc717b4613e8af0b2db72f103f5a17b29d266d4",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-tablet.json",
+        "sha256": "c27679d61f9a8aff41041fba9b7116a6626c6a1ef338acba6c8dab22bb2802bf",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-wide.json",
+        "sha256": "2c196946f0d3b73b071182421da1fa7fbde06bd455445ee2992711ad5c716909",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-mobile.json",
+        "sha256": "56c92bc20f57b26cbad350c3d99f1b186f21538ddb19e67b5d5b70f2b6cdfa6a",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-tablet.json",
+        "sha256": "d6b5b52714aac0b66d62c5fa8b5617a60d80b675fcd6218537e1fc6fbd7829df",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-wide.json",
+        "sha256": "2a221088427d30d5ad2bc2ca77f8f133942affc65179e043f56126974efa7fe8",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-denied-wide.json",
+        "sha256": "56c058e5c52f9f23365813a7ba841e38355b98b5de7358e0b18336d186b0742c",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-error-mobile.json",
+        "sha256": "f7325795d239c648e57314f8b4f8dbceecd3b41464cfe98af2f5ece8b4b25b63",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1-handoff.json",
+        "sha256": "3b0ee56e1b6f6b233d96e96437fa62a8723928cd673502278976257b96635188",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1-verification.json",
+        "sha256": "3fcc8b0b739eb092ca595ed876851e1fea31ddeac034fb8c624f197ad203e962",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1.json",
+        "sha256": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-2-handoff.json",
+        "sha256": "427a3de35bc66c90883d3115f3d53b2e79e29c3ca5218e14bb0aa05957727b65",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-2-verification.json",
+        "sha256": "e6d7171317bff78e5c96af764c9a5f11d02f9a5011825b98f8985f7e2aacbd21",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-2.json",
+        "sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-3-handoff.json",
+        "sha256": "dcebd7ce3662b1061578244b183d5b3359a60b264732cea46118b8b1be702ebd",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-3-verification.json",
+        "sha256": "f8e5e72bb812f13072770ef370a120edee3652637efeeb84d6ba62193ecbb790",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-3.json",
+        "sha256": "d4c8c5db7cac6770f86d43f85e9e7102d95923ddbc7bea5c54bd95c83eb96880",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-0.json",
+        "sha256": "43f11910aeab7bbbe9a238703d1e9499da58b61c93f7241f9e4a7247e89c7150",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-1.json",
+        "sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-2.json",
+        "sha256": "ea4085b6d20c62f129407a0fb6e731f39fec0dca89300a4e78d5dd7a9b253620",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-3.json",
+        "sha256": "50c07f27a9abe8741022ef36fe76b47b29645020c83b5a8a1da5be57b56405d0",
+        "status": "??"
+      },
+      {
+        "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "sha256": "d446112a5ff48e0c79efe02aac81abdbe9614ec49be6e362ca315fa9def789e8",
+        "status": " M"
+      },
+      {
+        "path": ".design/quality/writing-route.json",
+        "sha256": "332821a89b18b6f7aef07d3262622c7a27ead896c2cd7585dc855d6ff1ed6a9f",
+        "status": " M"
+      },
+      {
+        "path": ".design/renders/captures/case-default-tablet.png",
+        "sha256": "e412df3f076f2e397db148fe9f1ae2d98d33c4ab990ecdb7cb9f8a9d02b29a49",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-default-wide.png",
+        "sha256": "9d7229a6afcaf4cc913123c6db16770b02f167f22fd6a497fc82b0614bea3b9c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-error-mobile.png",
+        "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-loading-mobile.png",
+        "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-mobile.png",
+        "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-tablet.png",
+        "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-wide.png",
+        "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-empty-mobile.png",
+        "sha256": "1552929af8fed6f993a6419d7bf680cc95c99342d82216fea40458ab6d0c00e6",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-error-wide.png",
+        "sha256": "b03b81c6b71f857b85c8bce436a4ead7f16618f0f5db7ebfed5cc9c4cf0fcfd1",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-loading-mobile.png",
+        "sha256": "b4c1e20cc66dd341470eee8498bac52925c92e2b5f67f7943d8d4998a2a9e3ac",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-mobile.png",
+        "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-tablet.png",
+        "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-wide.png",
+        "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-mobile.png",
+        "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-tablet.png",
+        "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-wide.png",
+        "sha256": "5078eebf1f3f555395c38bd2173fb86f7e455d18e3e37ebef035b62541439ffa",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-mobile.png",
+        "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-tablet.png",
+        "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-wide.png",
+        "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-denied-wide.png",
+        "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-error-mobile.png",
+        "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/evidence.json",
+        "sha256": "45ba5fab90756bf601a1656fcbb4ef089c0f68fd764523c9bbcb7b9367e0b975",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/plan.json",
+        "sha256": "5db565380b0b514aa0af19f74274a3835619f5a5e1b2ab4fabbaa4193576cd2e",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/request.json",
+        "sha256": "7dbd8da26d08ab0baf2b1cf13c7b83d9f568c700b751f0fb2c7c6484f853391c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/verification.json",
+        "sha256": "3c47fd336d413b9ab0cec2823ea4c369efb291c7327b99f67bef0d6468a154f5",
+        "status": "??"
+      },
+      {
+        "path": ".design/state.json",
+        "sha256": "fb564a816afb9ba89fd7326be7864975fd3a38b302ccba91a2bd97dfc44887ba",
+        "status": " M"
+      },
+      {
+        "path": "core/scripts/design_quality.py",
+        "sha256": "98755d8c3c7e620ebd810db66d79962de8649ca77394e7f28058bed27052ddc2",
+        "status": " M"
+      },
+      {
+        "path": "corpus/scripts/build_catalog.py",
+        "sha256": "46c185978604609763b949c0ff55fcbdcccb9a040c8abc7045699df4c492bb53",
+        "status": " M"
+      },
+      {
+        "path": "site/README.md",
+        "sha256": "57e13662cfd8264bca47006a6955e9c3749489d04c714fcc4a9c14d54785c027",
+        "status": " M"
+      },
+      {
+        "path": "site/app.js",
+        "sha256": "e17c1669f4ef762aa3250e843dc774938dcec5052cd2744379d3201f5d761a08",
+        "status": " M"
+      },
+      {
+        "path": "site/index.html",
+        "sha256": "4fa72b2feed780a83201b970baf5042126ff993aaa00e60816405e6acbd63e47",
+        "status": " M"
+      },
+      {
+        "path": "site/styles.css",
+        "sha256": "005937869e9c1696ef8180deacd065ccfc0575a3ab7a3abfe84d8935f35927ee",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave11_evidence_exchange.py",
+        "sha256": "cbd8c1e068aad927da2742976346f6ba7a82cc387c17dd2197c3a90375acb19c",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave11_site.py",
+        "sha256": "4ea8f6411d554917c701e465e1aa3c964f36f9f977cb1c1d5990a7f810fabe1e",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave9_quality.py",
+        "sha256": "79d9a4ed05f47c09036f407c24735a5a034d242cac58dc2e824840158f444c76",
+        "status": " M"
+      }
+    ],
+    "head": "a86cc8d1e3a3649f6cdebe28934e12bb4c18f91e",
+    "recorded_at": "2026-09-02T15:48:27Z"
+  },
+  "rerender_targets": [
+    "case-default-wide",
+    "case-loading-mobile",
+    "catalog-loading-mobile",
+    "package-error-mobile"
+  ],
+  "schema_version": "1.0",
+  "started_at": "2026-09-02T15:48:27Z",
+  "state_revision": 39,
+  "status": "active",
+  "structured_plan": {
+    "path": ".design/implementation/plan.json",
+    "sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412"
+  },
+  "target_attempts": {
+    "case-default-wide": 3,
+    "case-loading-mobile": 1,
+    "catalog-loading-mobile": 1,
+    "package-error-mobile": 1
+  },
+  "target_findings": [
+    {
+      "category": "content",
+      "expected": "Every case gives plain, case-specific practical guidance without forcing source phrases into one repeated sentence frame.",
+      "finding_id": "F14-slot-filled-practical-meaning",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/app.js",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P1",
+      "target_id": "case-default-wide"
+    },
+    {
+      "category": "content",
+      "expected": "The mobile capture visibly retains catalog identity, a live loading announcement, busy state, and enough context to understand what is loading.",
+      "finding_id": "F15-catalog-loading-state-evidence",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/app.js",
+        "site/styles.css",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P1",
+      "target_id": "catalog-loading-mobile"
+    },
+    {
+      "category": "content",
+      "expected": "The mobile capture visibly retains the exact case, announces package loading, and exposes the return action.",
+      "finding_id": "F16-case-loading-state-evidence",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/app.js",
+        "site/styles.css",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P1",
+      "target_id": "case-loading-mobile"
+    },
+    {
+      "category": "content",
+      "expected": "The mobile error capture visibly names the case, affected format, exact problem, retry action, and return action.",
+      "finding_id": "F17-package-error-state-evidence",
+      "repair_scope": [
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "site/index.html",
+        "site/styles.css",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P1",
+      "target_id": "package-error-mobile"
+    }
+  ],
+  "worker_id": "root-worker"
+}

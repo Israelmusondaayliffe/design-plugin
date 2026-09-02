@@ -40,6 +40,17 @@ LANES = {
     "onboarding-forms-settings-flows",
     "design-systems-data-experimental",
 }
+PUBLIC_CASE_FILE_NAMES = {"summary.json", "DESIGN.md", "evidence.json", "source.json", "tokens.json", "downloads"}
+PUBLIC_SOURCE_KEYS = {
+    "schema_version",
+    "truth_class",
+    "owner_url",
+    "retrieved_at",
+    "rights_basis",
+    "permitted_use_basis",
+    "terms_or_license_url",
+    "third_party_assets_stored",
+}
 spec = importlib.util.spec_from_file_location("wave11_public_packages", BUILDER_PATH)
 public_packages = importlib.util.module_from_spec(spec)
 assert spec.loader
@@ -185,6 +196,52 @@ class EvidenceExchangePackageTests(unittest.TestCase):
         self.assertEqual(file_sha256(SEED_MANIFEST), self.seed_before)
         seed = read_json(SEED_MANIFEST)
         self.assertEqual(seed["case_count"], 12)
+
+    def test_public_case_detail_tree_is_an_exact_safe_projection(self) -> None:
+        prohibited_names = {"metadata.json", "review.json", "source-notes.md", "coverage.json", "preview-spec.json"}
+        prohibited_keys = {
+            "author",
+            "reviewer",
+            "method",
+            "artifact_sha256",
+            "content_sha256",
+            "http_status",
+            "effective_url",
+            "inspected_locators",
+            "source_version",
+            "archive_url",
+        }
+        for case_dir in sorted(self.site_out.glob("cases/*")):
+            self.assertEqual({path.name for path in case_dir.iterdir()}, PUBLIC_CASE_FILE_NAMES, case_dir.name)
+            self.assertFalse(prohibited_names & {path.name for path in case_dir.iterdir()}, case_dir.name)
+
+            source = read_json(case_dir / "source.json")
+            evidence = read_json(case_dir / "evidence.json")
+            tokens = read_json(case_dir / "tokens.json")
+            self.assertEqual(set(source), PUBLIC_SOURCE_KEYS, case_dir.name)
+            self.assertEqual(set(evidence), {"schema_version", "items"}, case_dir.name)
+            self.assertEqual(set(tokens), {"schema_version", "tokens"}, case_dir.name)
+            expected_token_keys = {"name", "category", "role", "evidence_class", "exact", "value", "source_evidence_ids", "notes"}
+            self.assertTrue(all(set(item) == expected_token_keys for item in tokens["tokens"]), case_dir.name)
+            public_packages.scan_public_value(source)
+            public_packages.scan_public_value(evidence)
+            public_packages.scan_public_value(tokens)
+
+            stack = [source, evidence, tokens]
+            keys = set()
+            while stack:
+                value = stack.pop()
+                if isinstance(value, dict):
+                    keys.update(key.casefold() for key in value)
+                    stack.extend(value.values())
+                elif isinstance(value, list):
+                    stack.extend(value)
+            self.assertFalse(keys & prohibited_keys, case_dir.name)
+
+            analysis = (case_dir / "DESIGN.md").read_text(encoding="utf-8")
+            self.assertIn("## Context", analysis, case_dir.name)
+            self.assertNotIn("reviewer", analysis.casefold(), case_dir.name)
+            self.assertNotIn("response hash", analysis.casefold(), case_dir.name)
 
     def test_evidence_and_provenance_are_exact_allowlisted_projections(self) -> None:
         for case_dir in sorted(path for path in CASES.iterdir() if path.is_dir()):

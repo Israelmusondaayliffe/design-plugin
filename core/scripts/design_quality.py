@@ -342,6 +342,17 @@ def _validate_reference(root: Path, value: Any, label: str) -> dict[str, Any]:
     return {**value, "path": relative}
 
 
+def _renderable_repair_targets(repair_plan: dict[str, Any]) -> set[str]:
+    """Return repair targets that can map to approved screen captures.
+
+    ``project`` is the QA sentinel for code-level findings. It remains in the
+    repair record, but it is not a screen and cannot be a render target. Run
+    workflows already require the complete approved quality-target matrix, so
+    a project-level repair still receives the full fresh capture set.
+    """
+    return {target_id for target_id in repair_plan["rerender_targets"] if target_id != "project"}
+
+
 def create_render_plan(root: Path, request_path: str | Path, output_path: str | Path, *, at: str | None = None) -> dict[str, Any]:
     request = load_json(request_path)
     _exact_keys(
@@ -580,7 +591,7 @@ def validate_render_plan(root: Path, plan: dict[str, Any], *, check_current_stat
             repair_path = root / repair_relative
             _require(repair_path.is_file() and current_state["artifacts"].get(repair_relative) == sha256(repair_path), "current repair plan is not bound in state")
             repair_plan = validate_repair_plan(root, load_json(repair_path), state=current_state)
-            _require(set(repair_plan["rerender_targets"]) <= ids, "render plan omits a required repair rerender target")
+            _require(_renderable_repair_targets(repair_plan) <= ids, "render plan omits a required repair rerender target")
     if "motion" in checks:
         _require(any(target["reduced_motion"] for target in targets), "motion QA requires a reduced-motion target")
     _text(plan["capture_owner"], "capture_owner")

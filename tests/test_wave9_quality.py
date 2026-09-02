@@ -458,6 +458,13 @@ class Wave9QualityTests(unittest.TestCase):
         with self.assertRaisesRegex(quality.QualityError, "not an approved quality target"):
             quality.create_render_plan(self.project, request_path, ".design/renders/plan.json")
 
+    def test_project_repair_finding_does_not_require_a_synthetic_render_target(self) -> None:
+        self.assertEqual(
+            quality._renderable_repair_targets({"rerender_targets": ["project", "home-default"]}),
+            {"home-default"},
+        )
+        self.assertEqual(quality._renderable_repair_targets({"rerender_targets": ["project"]}), set())
+
     def test_render_plan_rejects_stale_authority_and_changed_source_url(self) -> None:
         plan_path, plan, _ = self.prepare_renders()
         self.write("DESIGN.md", "# Changed authority\n")

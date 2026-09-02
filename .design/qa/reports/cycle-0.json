@@ -1,0 +1,2904 @@
+{
+  "schema_version": "1.0",
+  "workflow": "run",
+  "repair_cycle": 0,
+  "repair_pass": 0,
+  "state_binding": {
+    "path": ".design/state.json",
+    "sha256": "687aa8a3409e2a8c6da93d380fa785a11ff98aaa2f1358cbc1357644c11dde92",
+    "revision": 29,
+    "workflow": "run",
+    "phase": "qa",
+    "repair_cycle": 0,
+    "repair_pass": 0,
+    "repair_attempts": {}
+  },
+  "render_evidence": {
+    "path": ".design/renders/evidence.json",
+    "sha256": "f8fdc30fc3a4eae77db4e0304da55f86d49eefa37289a99971463fa8c7195f2f"
+  },
+  "prior_qa": null,
+  "repair_plan": null,
+  "repair_evaluation": null,
+  "checks": [
+    {
+      "id": "check-catalog-default-wide-visual",
+      "target_id": "catalog-default-wide",
+      "category": "visual",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-catalog-default-wide-responsive",
+      "target_id": "catalog-default-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-wide-accessibility",
+      "target_id": "catalog-default-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-wide.json",
+          "sha256": "d7f7e9a287f7118a1be6b837c43f354831e2c2a2eff163fceccb1bbef690a7a4"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-wide-interaction",
+      "target_id": "catalog-default-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-wide-content",
+      "target_id": "catalog-default-wide",
+      "category": "content",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-catalog-default-wide-reference",
+      "target_id": "catalog-default-wide",
+      "category": "reference",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-catalog-default-mobile-visual",
+      "target_id": "catalog-default-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-mobile-responsive",
+      "target_id": "catalog-default-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-mobile-accessibility",
+      "target_id": "catalog-default-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-mobile.json",
+          "sha256": "a3028a53ff77ff968510290af2169fe1e742a22bfdc55d88a6e33a58a5c3cf22"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-mobile-interaction",
+      "target_id": "catalog-default-mobile",
+      "category": "interaction",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-catalog-default-mobile-content",
+      "target_id": "catalog-default-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-mobile-reference",
+      "target_id": "catalog-default-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-visual",
+      "target_id": "catalog-default-tablet",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-responsive",
+      "target_id": "catalog-default-tablet",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-accessibility",
+      "target_id": "catalog-default-tablet",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-default-tablet.json",
+          "sha256": "127cd511e850feabe73b5eff2f10c167c7f1ac79ad26f5add2ce5646232ebde7"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-interaction",
+      "target_id": "catalog-default-tablet",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-content",
+      "target_id": "catalog-default-tablet",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-default-tablet-reference",
+      "target_id": "catalog-default-tablet",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-visual",
+      "target_id": "catalog-empty-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-responsive",
+      "target_id": "catalog-empty-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-accessibility",
+      "target_id": "catalog-empty-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-empty-mobile.json",
+          "sha256": "e1772f306cbe1842a3ac683ca3442d5f9d34b06f594e14a9d9fa47def1a553b5"
+        },
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-interaction",
+      "target_id": "catalog-empty-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-content",
+      "target_id": "catalog-empty-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-empty-mobile-reference",
+      "target_id": "catalog-empty-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-empty-mobile.png",
+          "sha256": "63a570fbb526d3da7edeccf52e75197d6140fb2ba052fddbfb027c39771cd29b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-visual",
+      "target_id": "catalog-loading-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-responsive",
+      "target_id": "catalog-loading-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-accessibility",
+      "target_id": "catalog-loading-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-loading-mobile.json",
+          "sha256": "746b72f860cffa09e54da7bfc2385697af6453bfb0fce98c231d70054cd36ff6"
+        },
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-interaction",
+      "target_id": "catalog-loading-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-content",
+      "target_id": "catalog-loading-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-loading-mobile-reference",
+      "target_id": "catalog-loading-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-loading-mobile.png",
+          "sha256": "32ce7fd3274a00871ea691b11a7677bc73de52fbe723f152bfd48e43b48409aa"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-visual",
+      "target_id": "catalog-error-wide",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-responsive",
+      "target_id": "catalog-error-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-accessibility",
+      "target_id": "catalog-error-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-catalog-error-wide.json",
+          "sha256": "5c5eb80b2e760fbed5f3379f26ce2c39bd0aaaebef1170aa9d2e9113d86f30ec"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-interaction",
+      "target_id": "catalog-error-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-content",
+      "target_id": "catalog-error-wide",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-catalog-error-wide-reference",
+      "target_id": "catalog-error-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-error-wide.png",
+          "sha256": "9570696f018871a52dc8eecf7c509ff4b45812df5b93260ddd02e42498315ceb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-wide-visual",
+      "target_id": "case-default-wide",
+      "category": "visual",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-case-default-wide-responsive",
+      "target_id": "case-default-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-wide-accessibility",
+      "target_id": "case-default-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-default-wide.json",
+          "sha256": "42cf842fcfb7ee8b4e16b4baac196be6da6d89df2aac18b6ff0200b684ec924f"
+        },
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-wide-interaction",
+      "target_id": "case-default-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-wide-content",
+      "target_id": "case-default-wide",
+      "category": "content",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-case-default-wide-reference",
+      "target_id": "case-default-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-visual",
+      "target_id": "case-loading-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-responsive",
+      "target_id": "case-loading-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-accessibility",
+      "target_id": "case-loading-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-loading-mobile.json",
+          "sha256": "82e1cdf9d2d863681697da55ff98d4ec346488b96ce22e05a4b40b0a083c8de8"
+        },
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-interaction",
+      "target_id": "case-loading-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-content",
+      "target_id": "case-loading-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-loading-mobile-reference",
+      "target_id": "case-loading-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-loading-mobile.png",
+          "sha256": "07b08b5009a84c7e7c45ffed98f6085c5ee076d7765719d459703c528ecda557"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-visual",
+      "target_id": "case-default-tablet",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-responsive",
+      "target_id": "case-default-tablet",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-accessibility",
+      "target_id": "case-default-tablet",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-default-tablet.json",
+          "sha256": "4803b5802a142906e7ecd5e155c7d465a1874a0f2364d1ae2e86ba839bc04629"
+        },
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-interaction",
+      "target_id": "case-default-tablet",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-content",
+      "target_id": "case-default-tablet",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-default-tablet-reference",
+      "target_id": "case-default-tablet",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-default-tablet.png",
+          "sha256": "5d4c944a00bcaf786d67f069fe2f086b2882fbd95d78a675002a5d16d305a066"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-visual",
+      "target_id": "case-error-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-responsive",
+      "target_id": "case-error-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-accessibility",
+      "target_id": "case-error-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-case-error-mobile.json",
+          "sha256": "357bb0b5d63d435c717a11a361266bcb72f6b7921f6b76fec496c8bdc8fffd15"
+        },
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-interaction",
+      "target_id": "case-error-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-content",
+      "target_id": "case-error-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-case-error-mobile-reference",
+      "target_id": "case-error-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/case-error-mobile.png",
+          "sha256": "2bbb1741837d18e8b538790bdc044787755b6c48e27ca5e84e5518ac4e3c7a2b"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-wide-visual",
+      "target_id": "package-default-wide",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-wide-responsive",
+      "target_id": "package-default-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-wide-accessibility",
+      "target_id": "package-default-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-wide.json",
+          "sha256": "c428a1ee68ecb371fc2791081d02e9892770851a925c58e3ac2f0bfac553c55e"
+        },
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-wide-interaction",
+      "target_id": "package-default-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-wide-content",
+      "target_id": "package-default-wide",
+      "category": "content",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-package-default-wide-reference",
+      "target_id": "package-default-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-visual",
+      "target_id": "package-default-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-responsive",
+      "target_id": "package-default-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-accessibility",
+      "target_id": "package-default-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-mobile.json",
+          "sha256": "419c988e3985a17bbdbe587b22cfe090027bfdce0d3cacef50785a445134255d"
+        },
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-interaction",
+      "target_id": "package-default-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-content",
+      "target_id": "package-default-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-mobile-reference",
+      "target_id": "package-default-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-mobile.png",
+          "sha256": "ce3de13914c2a0dfd65f1209cd8cae152dbc22dcea7c741384dc25d9a23b3dcb"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-visual",
+      "target_id": "package-default-tablet",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-responsive",
+      "target_id": "package-default-tablet",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-accessibility",
+      "target_id": "package-default-tablet",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-default-tablet.json",
+          "sha256": "08a15b5eed48723c6f3be678f1e70be4a107a79f6a8d34452c241c5aa2d2baa0"
+        },
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-interaction",
+      "target_id": "package-default-tablet",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-content",
+      "target_id": "package-default-tablet",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-default-tablet-reference",
+      "target_id": "package-default-tablet",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-default-tablet.png",
+          "sha256": "9f1e9cb7532b9329e9c57874f2aebfd2fb5e76078d487a0c61ecf1c8b689b460"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-visual",
+      "target_id": "package-error-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-responsive",
+      "target_id": "package-error-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-accessibility",
+      "target_id": "package-error-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-error-mobile.json",
+          "sha256": "674e2fcdcc26292b79ef7d07eb9d78accabe234ceeb924442590f326776b11ef"
+        },
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-interaction",
+      "target_id": "package-error-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-content",
+      "target_id": "package-error-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-error-mobile-reference",
+      "target_id": "package-error-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-error-mobile.png",
+          "sha256": "b8e082635b6c1b77fa30d01e085ef3c1252ea4d97fe7759af4ba9fa152fff71c"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-visual",
+      "target_id": "package-denied-wide",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-responsive",
+      "target_id": "package-denied-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-accessibility",
+      "target_id": "package-denied-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-package-denied-wide.json",
+          "sha256": "9a97a9e3acfe0788d16fe34802392a832165f44af9aa50a4608e307b9629f8a6"
+        },
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-interaction",
+      "target_id": "package-denied-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-content",
+      "target_id": "package-denied-wide",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-package-denied-wide-reference",
+      "target_id": "package-denied-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/package-denied-wide.png",
+          "sha256": "ce1972efe7036486783bba83fe5b51499d4fca54ed4eddab263eaf4b1374a3d1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-visual",
+      "target_id": "comparison-default-wide",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-responsive",
+      "target_id": "comparison-default-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-accessibility",
+      "target_id": "comparison-default-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-wide.json",
+          "sha256": "ab703802ac35df69f8b94b49b447d36db395341a19f5229d98d4a982ea36c2ac"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-interaction",
+      "target_id": "comparison-default-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-content",
+      "target_id": "comparison-default-wide",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-wide-reference",
+      "target_id": "comparison-default-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-wide.png",
+          "sha256": "03ccd467e538da0ff61b99d24b4759e49d26e724537550411fd37a186ed5f4b2"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-visual",
+      "target_id": "comparison-default-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-responsive",
+      "target_id": "comparison-default-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-accessibility",
+      "target_id": "comparison-default-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-mobile.json",
+          "sha256": "9ade4d59911ee342e95c5a5d6e711f573e02786910c45471ae4e5491692bce67"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-interaction",
+      "target_id": "comparison-default-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-content",
+      "target_id": "comparison-default-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-mobile-reference",
+      "target_id": "comparison-default-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-mobile.png",
+          "sha256": "b61777dba2e2462b05fb71c0477cb107d3bc93a67ee0e1bfc45fcda2af1d601f"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-visual",
+      "target_id": "comparison-default-tablet",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-responsive",
+      "target_id": "comparison-default-tablet",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-accessibility",
+      "target_id": "comparison-default-tablet",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-comparison-default-tablet.json",
+          "sha256": "260103a493ee141b1c30b6931eaa79b95608f72c37deeabe4d75f312e330e930"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-interaction",
+      "target_id": "comparison-default-tablet",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-content",
+      "target_id": "comparison-default-tablet",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-comparison-default-tablet-reference",
+      "target_id": "comparison-default-tablet",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/comparison-default-tablet.png",
+          "sha256": "6e461d36d5303ea7f172957eb851e3de05da924bd1cb6a8cc0704b9b6dcfc663"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-wide-visual",
+      "target_id": "method-default-wide",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-wide-responsive",
+      "target_id": "method-default-wide",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-wide-accessibility",
+      "target_id": "method-default-wide",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-wide.json",
+          "sha256": "36594ca9aa8a58fe28822b90e7cb70ec322d8d9a8f9c81e8a630b531794aa4c9"
+        },
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-wide-interaction",
+      "target_id": "method-default-wide",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-wide-content",
+      "target_id": "method-default-wide",
+      "category": "content",
+      "status": "fail",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline fails a user-reported acceptance condition documented in the open finding."
+    },
+    {
+      "id": "check-method-default-wide-reference",
+      "target_id": "method-default-wide",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-visual",
+      "target_id": "method-default-mobile",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-responsive",
+      "target_id": "method-default-mobile",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-accessibility",
+      "target_id": "method-default-mobile",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-mobile.json",
+          "sha256": "cfadf6d5ed411eb2d4e8d8975ab3fcd268c44e230c57d2d32f0997c576bdbf46"
+        },
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-interaction",
+      "target_id": "method-default-mobile",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-content",
+      "target_id": "method-default-mobile",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-mobile-reference",
+      "target_id": "method-default-mobile",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-mobile.png",
+          "sha256": "e1e6019be80ba0ded6e0a63f5632279f3c6a913d1f83a4e1a4dd084e8940f126"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-visual",
+      "target_id": "method-default-tablet",
+      "category": "visual",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-responsive",
+      "target_id": "method-default-tablet",
+      "category": "responsive",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-accessibility",
+      "target_id": "method-default-tablet",
+      "category": "accessibility",
+      "status": "pass",
+      "method": "Source-bound accessibility evidence and current viewport capture.",
+      "truth_class": "measured",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/qa/evidence/accessibility-method-default-tablet.json",
+          "sha256": "51d11fdb7cd0bc8a087efd83dc7602257efc6eba5a6df106264cabf8a5e340dd"
+        },
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-interaction",
+      "target_id": "method-default-tablet",
+      "category": "interaction",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-content",
+      "target_id": "method-default-tablet",
+      "category": "content",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-method-default-tablet-reference",
+      "target_id": "method-default-tablet",
+      "category": "reference",
+      "status": "pass",
+      "method": "Current viewport capture reviewed against the approved screen, content, interaction, and design authority.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": "design-system",
+      "comparison_dimensions": [
+        "hierarchy",
+        "typography",
+        "spacing",
+        "color roles",
+        "composition"
+      ],
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/method-default-tablet.png",
+          "sha256": "01ad082d8d09c6759369191586dddffae7f943c6d77971a689274cd1b669bd0a"
+        }
+      ],
+      "notes": "The rendered baseline preserves the approved behavior or boundary for this category."
+    },
+    {
+      "id": "check-project-code",
+      "target_id": "project",
+      "category": "code",
+      "status": "fail",
+      "method": "Source inspection of the current Site renderer and document structure.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "reference_role": null,
+      "comparison_dimensions": [],
+      "evidence": [
+        {
+          "path": "site/app.js",
+          "sha256": "67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be"
+        },
+        {
+          "path": "site/index.html",
+          "sha256": "62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249"
+        },
+        {
+          "path": "site/styles.css",
+          "sha256": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1"
+        }
+      ],
+      "notes": "The preview renderer ignores most case-specific visual fields and the catalog renders all 60 cases at once."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01-first-visit-context",
+      "source_check_id": "check-catalog-default-wide-content",
+      "target_id": "catalog-default-wide",
+      "category": "content",
+      "finding_type": "content-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The first screen assumes design knowledge instead of explaining design and its practical value.",
+      "observed": "The hero introduces references, evidence, lanes, and study language before defining design, the audience, or a useful first action.",
+      "expected": "A curious non-designer can explain what design is in this library, why it matters, and what to do next from the first screen.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F02-visual-maturity",
+      "source_check_id": "check-catalog-default-wide-visual",
+      "target_id": "catalog-default-wide",
+      "category": "visual",
+      "finding_type": "usability-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The Site reads as a sparse demo instead of a useful visual reference library.",
+      "observed": "The oversized hero consumes the first viewport while the 60-case corpus and its visual differences remain below the fold.",
+      "expected": "The opening combines a clear explanation, a useful starting path, and credible visual evidence of the corpus within the first viewport.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F03-reference-character",
+      "source_check_id": "check-catalog-default-wide-reference",
+      "target_id": "catalog-default-wide",
+      "category": "reference",
+      "finding_type": "design-system-drift",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The approved Evidence Exchange character is reduced to repeated decorative cards.",
+      "observed": "The baseline uses generic preview motifs and leaves the exchange, comparison, and case-study character visually weak.",
+      "expected": "The IBM Carbon foundation, visible grid, contextual layers, and evidence relationships should organize the page without copying any source identity.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "DESIGN.md",
+          "sha256": "8af31f454c86342b788674c842fed9c8ddefae02d8ef6824387a15e3f4a47d8a"
+        },
+        {
+          "path": ".design/renders/captures/catalog-default-wide.png",
+          "sha256": "c9553280277a2b98466392bd036757a5c600b0d80a1838cee532874ffd92a645"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F04-corpus-scale",
+      "source_check_id": "check-catalog-default-mobile-interaction",
+      "target_id": "catalog-default-mobile",
+      "category": "interaction",
+      "finding_type": "usability-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The default catalog turns 60 cases into an extremely long page.",
+      "observed": "All 60 rows render at once, pushing later cases far beyond the first mobile session and making browsing feel like a registry.",
+      "expected": "The catalog should expose a bounded first set, preserve the 60-case search, and let the reader request more without losing filters or comparison state.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/catalog-default-mobile.png",
+          "sha256": "8c93baf4d1d8f2bb563fb075be9b4be264664a18f352cb967198decb9c242530"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F05-case-content-order",
+      "source_check_id": "check-case-default-wide-content",
+      "target_id": "case-default-wide",
+      "category": "content",
+      "finding_type": "content-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "Case detail leads with specialist analysis instead of plain-language help.",
+      "observed": "The opening emphasizes taxonomy and technical terms before the everyday problem, what to notice, what to borrow, and where the pattern can fail.",
+      "expected": "Every case should lead with the problem, why it matters, what to notice, what to try, and where to be careful, then expose evidence and technical detail.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F06-case-visual-meaning",
+      "source_check_id": "check-case-default-wide-visual",
+      "target_id": "case-default-wide",
+      "category": "visual",
+      "finding_type": "implementation-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The case preview does not explain the design relationships described by the record.",
+      "observed": "IBM Carbon is represented by generic colored boxes that do not show grid, hierarchy, density, component, state, or responsive relationships.",
+      "expected": "Each case should show an original explanatory UI or composition study derived from its approved public fields and labeled as interpretation rather than evidence.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/case-default-wide.png",
+          "sha256": "66d668cf45d68cb3788884eb74175f7c171e4e8b322c251416d1b934c6821389"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F07-package-reader-order",
+      "source_check_id": "check-package-default-wide-content",
+      "target_id": "package-default-wide",
+      "category": "content",
+      "finding_type": "content-defect",
+      "severity": "P2",
+      "status": "open",
+      "summary": "The package view foregrounds verification details before the reader can choose a useful file.",
+      "observed": "Contract language, media types, byte counts, and hashes compete with the simple Markdown-versus-JSON decision.",
+      "expected": "Explain which file fits a human or tool first, then keep exact verification details available in a clearly secondary technical section.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/package-default-wide.png",
+          "sha256": "75cf1290ec8a092968ff372cf788fbccd5158ff0afef66a2c605680f063f3586"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F08-voice-and-jargon",
+      "source_check_id": "check-method-default-wide-content",
+      "target_id": "method-default-wide",
+      "category": "content",
+      "finding_type": "content-defect",
+      "severity": "P2",
+      "status": "open",
+      "summary": "The dominant voice is procedural and uses unexplained project vocabulary.",
+      "observed": "Terms such as evidence class, public projection, coverage lane, and recognition cue appear before or without a plain-language explanation.",
+      "expected": "Use a direct, curious teaching voice, define specialist terms where they appear, and preserve factual boundaries without sounding like an audit log.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": ".design/renders/captures/method-default-wide.png",
+          "sha256": "82dd9a1d800431d7e271faf24ae17d5bc625b57940621c538ab30e924b33b7f1"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    },
+    {
+      "id": "F09-preview-renderer",
+      "source_check_id": "check-project-code",
+      "target_id": "project",
+      "category": "code",
+      "finding_type": "implementation-defect",
+      "severity": "P1",
+      "status": "open",
+      "summary": "The renderer throws away most case-specific visual information.",
+      "observed": "Preview output uses color, radius, lane, and a slug checksum while ignoring the approved pattern, layout, motion, platform, archetype, journey, density, and relationship fields.",
+      "expected": "A deterministic renderer should use approved public fields to produce distinct original visual studies across all 60 cases without source assets or brand mimicry.",
+      "truth_class": "observed",
+      "confidence": "high",
+      "evidence": [
+        {
+          "path": "site/app.js",
+          "sha256": "67b64d1476778fbba3dbf65bb3d319abb8a0fc14675a616f36cce0f1d684f8be"
+        },
+        {
+          "path": "site/index.html",
+          "sha256": "62c9510c424c4749f4a5a81cc873feb8b15ca61d6f0f9d145a67e5da16e60249"
+        },
+        {
+          "path": "site/styles.css",
+          "sha256": "a73c66965fc743f09f30dff05a1fde13e35b405ac057a84a6cbb4752324fafe1"
+        }
+      ],
+      "repair_scope": [
+        "site/index.html",
+        "site/app.js",
+        "site/styles.css",
+        "site/README.md",
+        "tests/test_wave11_site.py",
+        ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        ".design/quality/writing-route.json"
+      ]
+    }
+  ],
+  "summary": {
+    "status": "repair-required",
+    "counts": {
+      "P0": 0,
+      "P1": 7,
+      "P2": 2,
+      "P3": 0,
+      "accepted_deviations": 0,
+      "blocked_checks": 0
+    },
+    "blockers": [],
+    "limitations": []
+  },
+  "qa_owner": "root-worker-browser-and-source-review",
+  "created_at": "2026-09-02T12:25:00Z"
+}
+

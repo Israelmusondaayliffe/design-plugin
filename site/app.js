@@ -1,6 +1,7 @@
 "use strict";
 
 const LOCAL_ONLY = true;
+const INITIAL_CASE_LIMIT = 12;
 
 const LANE_LABELS = {
   "design-systems-data-experimental": "Design systems",
@@ -98,6 +99,7 @@ const state = {
   packageCache: new Map(),
   downloadUrls: new Map(),
   focusReturn: new Map(),
+  visibleLimit: INITIAL_CASE_LIMIT,
 };
 
 const $ = id => document.getElementById(id);
@@ -188,6 +190,14 @@ function listMarkup(values, className = "") {
 
 function setInitialLoadingRows() {
   const template = $("loading-template");
+  $("results").insertAdjacentHTML("beforeend", `
+    <article class="catalog-loading-panel" role="listitem">
+      <div role="status" aria-live="polite">
+        <p class="technical-label">Public catalog / 60 reviewed cases</p>
+        <h3>Loading the reference library</h3>
+        <p>Checking the public case index before any case or download becomes available.</p>
+      </div>
+    </article>`);
   for (let index = 0; index < 4; index += 1) {
     $("results").append(template.content.cloneNode(true));
   }
@@ -264,21 +274,84 @@ function sorted(items) {
   return copy.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+function studyFamily(item) {
+  return {
+    "design-systems-data-experimental": "system",
+    "saas-dashboard-admin-productivity": "dashboard",
+    "brand-editorial-portfolio-marketing": "editorial",
+    mobile: "mobile",
+    "commerce-media-content-heavy": "commerce",
+    "onboarding-forms-settings-flows": "flow",
+  }[item.corpus_lane] ?? "system";
+}
+
+function studyDensity(item) {
+  const density = String(item.density ?? "balanced").toLowerCase();
+  if (density.includes("high") || density.includes("dense")) return "dense";
+  if (density.includes("low") || density.includes("minimal")) return "open";
+  return "balanced";
+}
+
+function studySeed(item) {
+  const source = [
+    item.slug,
+    item.preview?.pattern,
+    item.preview?.layout,
+    item.preview?.motion,
+    ...(item.platforms ?? []),
+    ...(item.archetypes ?? []),
+    ...(item.journey ?? []),
+  ].join("|");
+  let hash = 2166136261;
+  for (const character of source) {
+    hash ^= character.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
 function previewMarkup(item, size = "row") {
-  const primary = validColor(item.preview?.primary, "#211f1b");
-  const secondary = validColor(item.preview?.secondary, "#9b3e12");
-  const radius = validRadius(item.preview?.radius);
-  const seed = [...item.slug].reduce((total, character) => total + character.charCodeAt(0), 0);
-  const variant = item.corpus_lane === "mobile"
-    ? 4
-    : item.corpus_lane === "brand-editorial-portfolio-marketing"
-      ? [1, 5][seed % 2]
-      : item.corpus_lane === "commerce-media-content-heavy"
-        ? [2, 3][seed % 2]
-        : item.corpus_lane === "onboarding-forms-settings-flows"
-          ? 0
-          : [0, 2][seed % 2];
-  return `<div class="abstract-preview preview-${variant} ${size === "detail" ? "preview-detail" : ""}" style="--case-a:${primary};--case-b:${secondary};--case-radius:${radius}"><i></i><i></i><i></i><i></i><i></i></div>`;
+  const seed = studySeed(item);
+  const family = studyFamily(item);
+  const density = studyDensity(item);
+  const variant = seed % 4;
+  const caseType = {
+    system: "component system",
+    dashboard: "working dashboard",
+    editorial: "editorial page",
+    mobile: "mobile flow",
+    commerce: "shopping decision",
+    flow: "guided task",
+  }[family];
+  const focus = item.signature_traits?.[0] ?? item.summary;
+  const description = `Original ${family} study for ${item.name}, derived from the public case fields. It is an interpretation, not the source product or evidence.`;
+  const studyStyle = [
+    `--study-rail:${13 + (seed & 15)}%`,
+    `--study-feature:${34 + ((seed >>> 4) & 31)}%`,
+    `--study-toolbar:${22 + ((seed >>> 9) & 15)}%`,
+    `--study-action:${18 + ((seed >>> 13) & 15)}%`,
+    `--study-gap:${3 + ((seed >>> 17) & 7)}%`,
+    `--study-inset:${3 + ((seed >>> 20) & 7)}%`,
+  ].join(";");
+  return `
+    <figure class="visual-study study-${family} density-${density} variant-${variant} ${size === "detail" ? "study-detail" : ""}" data-study-signature="${family}-${density}-${variant}-${seed.toString(36)}" style="${studyStyle}" aria-label="${esc(description)}">
+      <div class="study-canvas" aria-hidden="true">
+        <div class="study-window-bar"><span></span><span></span><span></span><b>${esc(caseType)}</b></div>
+        <div class="study-interface">
+          <div class="study-rail"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="study-stage">
+            <div class="study-toolbar"><i></i><i></i><b></b></div>
+            <div class="study-feature"><i></i><div><b></b><span></span><span></span></div></div>
+            <div class="study-content-grid">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <div class="study-data"><i></i><i></i><i></i><i></i></div>
+            <div class="study-action"><i></i><b></b></div>
+          </div>
+        </div>
+      </div>
+      <figcaption><strong>Original ${esc(caseType)} study</strong><span>${esc(focus)}</span><small>Our interpretation, not source UI</small></figcaption>
+    </figure>`;
 }
 
 function caseRow(item, index) {
@@ -286,27 +359,49 @@ function caseRow(item, index) {
   const selectionDisabled = !selected && state.selected.size >= 5;
   return `
     <article class="case-row" role="listitem" data-case-slug="${esc(item.slug)}">
-      <p class="row-index technical-label">${String(index + 1).padStart(2, "0")}</p>
+      <div class="row-eyebrow"><p class="row-index technical-label">${String(index + 1).padStart(2, "0")}</p><p>${esc(LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane))}</p></div>
       <button class="preview-button row-preview" type="button" data-open-case="${esc(item.slug)}" aria-label="Open ${esc(item.name)} public case">
         ${previewMarkup(item)}
       </button>
       <div class="row-main">
         <button class="case-title-button" type="button" data-open-case="${esc(item.slug)}"><h3>${esc(item.name)}</h3></button>
         <p>${esc(item.summary)}</p>
-        ${listMarkup(item.signature_traits.slice(0, 3), "relationship-list")}
-      </div>
-      <div class="row-technical">
-        <dl>
-          <div><dt>Lane</dt><dd>${esc(LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane))}</dd></div>
+        <dl class="case-glance">
+          <div><dt>What to notice</dt><dd>${esc(item.signature_traits?.[0] ?? "Open the case for the reviewed relationship.")}</dd></div>
+          <div><dt>Useful when</dt><dd>${esc(item.best_for?.[0] ?? "You need a related design reference.")}</dd></div>
           <div><dt>Evidence</dt><dd>${esc(humanize(item.evidence_quality))}</dd></div>
-          <div><dt>Case ID</dt><dd><code>${esc(item.slug)}</code></dd></div>
         </dl>
       </div>
       <div class="row-actions">
-        <button class="button" type="button" data-open-case="${esc(item.slug)}">Study case</button>
+        <button class="button button-primary" type="button" data-open-case="${esc(item.slug)}">See what to borrow</button>
         <button class="button compare-toggle" type="button" data-compare="${esc(item.slug)}" aria-pressed="${selected}" ${selectionDisabled ? "disabled aria-describedby=\"comparison-limit-note\"" : ""}>${selected ? "Selected" : "Compare"}</button>
       </div>
     </article>`;
+}
+
+function renderFeaturedStudies() {
+  const lanes = [
+    "design-systems-data-experimental",
+    "mobile",
+    "onboarding-forms-settings-flows",
+  ];
+  const featured = lanes
+    .map(lane => state.cases.find(item => item.corpus_lane === lane))
+    .filter(Boolean);
+  const heroCase = state.cases.find(item => item.slug === "ibm-carbon") ?? featured[0];
+  $("hero-study").innerHTML = heroCase ? `
+    <button class="preview-button" type="button" data-open-case="${esc(heroCase.slug)}" aria-label="Open ${esc(heroCase.name)} public case">
+      ${previewMarkup(heroCase)}
+    </button>
+    <p><strong>${esc(heroCase.name)}</strong><span>Notice: ${esc(heroCase.signature_traits?.[0] ?? heroCase.summary)}</span></p>` : "";
+  $("featured-studies").innerHTML = featured.map(item => `
+    <article>
+      <button class="preview-button" type="button" data-open-case="${esc(item.slug)}" aria-label="Open ${esc(item.name)} public case">
+        ${previewMarkup(item)}
+      </button>
+      <div><p class="technical-label">${esc(LANE_LABELS[item.corpus_lane] ?? humanize(item.corpus_lane))}</p><h3>${esc(item.name)}</h3><p><strong>Notice:</strong> ${esc(item.signature_traits?.[0] ?? item.summary)}</p></div>
+      <button class="text-button" type="button" data-open-case="${esc(item.slug)}">Open this case</button>
+    </article>`).join("");
 }
 
 function activeFilterCount() {
@@ -342,10 +437,13 @@ function writeUrl() {
 
 function render() {
   const visible = sorted(state.cases.filter(matches));
-  $("results").innerHTML = visible.map(caseRow).join("");
+  const displayed = visible.slice(0, state.visibleLimit);
+  $("results").innerHTML = displayed.map(caseRow).join("");
   $("results").setAttribute("aria-busy", "false");
-  $("status").textContent = `${visible.length} of ${state.cases.length} reviewed public cases`;
+  $("status").textContent = `${visible.length} of ${state.cases.length} reviewed public cases match`;
   $("empty-state").hidden = visible.length !== 0;
+  $("catalog-pagination").hidden = visible.length === 0 || displayed.length >= visible.length;
+  $("pagination-status").textContent = `Showing ${displayed.length} of ${visible.length} matching cases.`;
   renderLaneFilters();
   renderCompareTray();
   updateFilterSummary();
@@ -476,9 +574,9 @@ function evidenceMarkup(model) {
   const ownerUrl = safeHttpsUrl(model.provenance.owner_url);
   return `
     <div class="evidence-boundary">
-      <p><strong>Observed:</strong> ${esc(boundary.observed)}</p>
-      <p><strong>Inferred and recommended:</strong> ${esc(boundary.inferred)} ${esc(boundary.recommended)}</p>
-      <p><strong>Unknown:</strong> ${esc(boundary.unknown)}</p>
+      <p><strong>What the source says:</strong> ${esc(boundary.observed)}</p>
+      <p><strong>Our reading and suggestion:</strong> ${esc(boundary.inferred)} ${esc(boundary.recommended)}</p>
+      <p><strong>What we cannot prove:</strong> ${esc(boundary.unknown)}</p>
     </div>
     <ol class="evidence-list">${model.evidence.map(item => `
       <li>
@@ -495,20 +593,22 @@ function evidenceMarkup(model) {
 
 function renderCase(model) {
   $("case-context-content").innerHTML = `
-    <p class="detail-summary">${esc(model.context.study_context.summary)}</p>
-    <p class="truth-note">Study-context truth class: ${esc(humanize(model.context.study_context.truth_class))}. Audience truth class: ${esc(humanize(model.context.study_context.audience.truth_class))}. ${esc(model.context.study_context.audience.statement)}</p>
-    ${definitionList(model)}
-    <div class="decision-grid">
-      ${decisionBlock("Signature relationships", model.intent.signature_relationships)}
-      ${decisionBlock("Useful when", model.value.best_for)}
-      ${decisionBlock("Avoid when", model.value.avoid_for)}
-      ${decisionBlock("Failure modes", model.value.failure_modes)}
+    <p class="case-start"><span>Start here</span>Begin with your own problem, not the source's look. Read the summary as a pattern, then check where this case can actually help.</p>
+    <p class="case-source-summary"><strong>The full case summary:</strong> ${esc(model.context.study_context.summary)}</p>
+    <div class="case-quick-read">
+      ${decisionBlock("Where this case can help", model.value.best_for)}
+      ${decisionBlock("What to notice", model.intent.signature_relationships)}
+      ${decisionBlock("What to try", [model.analysis.layout, model.analysis.interaction].filter(Boolean))}
+      ${decisionBlock("Where to be careful", [...model.value.avoid_for, ...model.value.failure_modes])}
     </div>`;
 
   $("case-analysis-content").innerHTML = `
-    <p class="visual-thesis">${esc(model.intent.visual_thesis)}</p>
-    <p class="truth-note">Analysis truth classes: ${model.analysis.truth_classes.map(humanize).map(esc).join(", ")}.</p>
-    ${groupedAnalysis(model)}`;
+    <details class="technical-details">
+      <summary>Open the full technical analysis</summary>
+      <p class="truth-note">This section uses design terms for readers who need them. Analysis labels: ${model.analysis.truth_classes.map(humanize).map(esc).join(", ")}.</p>
+      ${definitionList(model)}
+      ${groupedAnalysis(model)}
+    </details>`;
 
   $("case-evidence-content").innerHTML = evidenceMarkup(model);
   $("case-loading").hidden = true;
@@ -598,25 +698,26 @@ async function verifyPackageFiles(detail) {
 
 function packageContextMarkup(model) {
   return `
-    <p class="detail-summary">${esc(model.context.study_context.summary)}</p>
+    <p class="case-start"><span>Use this package for</span>${esc(model.value.best_for.slice(0, 3).join(", "))}.</p>
+    <p class="case-source-summary"><strong>The full case summary:</strong> ${esc(model.context.study_context.summary)}</p>
     <div class="decision-grid">
-      ${decisionBlock("Best used for", model.value.best_for)}
-      ${decisionBlock("Do not use as proof of", ["Accessibility conformance", "Fitness for a specific product", "The source owner’s private intent", "Guaranteed design outcomes"])}
+      ${decisionBlock("Use this package when", model.value.best_for)}
+      ${decisionBlock("This package does not prove", ["Accessibility conformance", "Fitness for a specific product", "The source owner's private intent", "Guaranteed design outcomes"])}
     </div>
-    ${definitionList(model)}`;
+    <details class="technical-details"><summary>Show the case classification</summary>${definitionList(model)}</details>`;
 }
 
 function formatSpecificationsMarkup(manifest) {
   const descriptions = {
-    readable: ["A human-readable study brief", "Context, intent, value, quality, evidence, provenance, limitations, and unknowns", "Headings and prose suited to review or handoff"],
-    structured: ["A machine-readable JSON record", "The same supported public model and evidence bindings", "Stable field meanings for tools, analysis, or transformation"],
+    readable: ["Choose this if a person will read, discuss, teach, or hand off the case", "Plain headings, context, what to notice, evidence, limits, and unknowns", "Markdown that also remains easy for many tools to parse"],
+    structured: ["Choose this if software will sort, compare, transform, or store the case", "JSON fields from the same approved public record", "Stable labels for tools that need exact structure"],
   };
   return manifest.files.map(file => `
     <section class="format-specification">
-      <p class="technical-label">${esc(file.media_type)}</p>
+      <p class="technical-label">${file.format === "readable" ? "For people first" : "For tools first"}</p>
       <h4>${esc(humanize(file.format))} ${file.format === "readable" ? "brief" : "data"}</h4>
       ${listMarkup(descriptions[file.format] ?? [])}
-      <p><code>${esc(file.download_filename)}</code><br>${esc(formatBytes(file.byte_size))}</p>
+      <details class="file-technical"><summary>Technical file details</summary><p><code>${esc(file.media_type)}</code><br><code>${esc(file.download_filename)}</code><br>${esc(formatBytes(file.byte_size))}</p></details>
     </section>`).join("");
 }
 
@@ -704,7 +805,7 @@ function renderPackage(detail, stage = "loading", failure = null) {
   $("retry-package").hidden = false;
   $("package-return").textContent = "Return to case";
   $("package-title").textContent = model.name;
-  $("package-summary").textContent = "Review the full public contract before choosing a file. Both formats come from one normalized model and carry the same supported claims.";
+  $("package-summary").textContent = "Choose Markdown when a person needs to read the case. Choose JSON when a tool needs to work with the same approved public record. Both files carry the same supported claims and limits.";
   $("package-context-content").innerHTML = packageContextMarkup(model);
   $("format-specifications").innerHTML = formatSpecificationsMarkup(manifest);
   $("package-boundary-content").innerHTML = boundaryMarkup(model);
@@ -865,6 +966,7 @@ async function openCase(slug, trigger, requestedView = "case") {
   $("case-title").textContent = item.name;
   $("case-source").textContent = `Public source study / ${item.source_name} / Studied ${formatDate(item.studied_at)}`;
   $("case-preview").innerHTML = previewMarkup(item, "detail");
+  $("case-screen").classList.toggle("case-loading-state", TEST_STATE === "case-loading");
   $("case-loading").hidden = false;
   $("case-loading-message").textContent = `Loading the validated public package for ${item.name}. Downloads remain unavailable until validation finishes.`;
   $("case-content").hidden = true;
@@ -898,6 +1000,7 @@ async function openCase(slug, trigger, requestedView = "case") {
 
 function resetFilters() {
   state.lane = "";
+  state.visibleLimit = INITIAL_CASE_LIMIT;
   $("search").value = "";
   for (const id of Object.keys(FACETS)) $(id).value = "";
   $("sort").value = "name";
@@ -929,13 +1032,48 @@ function hydrateFromUrl() {
   }
 }
 
+function restoreMethodRouteAfterCatalogRender() {
+  if (window.location.hash !== "#method") return;
+  const align = () => {
+    if (window.location.hash === "#method") {
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      $("method").scrollIntoView({ behavior: "auto", block: "start" });
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    }
+  };
+  const alignAfterLayout = () => window.requestAnimationFrame(() => window.requestAnimationFrame(align));
+  align();
+  alignAfterLayout();
+  if (document.readyState !== "complete") window.addEventListener("load", alignAfterLayout, { once: true });
+  if (document.fonts?.ready) document.fonts.ready.then(alignAfterLayout);
+}
+
 function wireEvents() {
-  $("search").addEventListener("input", render);
-  $("clear-search").addEventListener("click", () => { $("search").value = ""; render(); $("search").focus(); });
-  for (const id of [...Object.keys(FACETS), "sort"]) $(id).addEventListener("change", render);
+  $("search").addEventListener("input", () => { state.visibleLimit = INITIAL_CASE_LIMIT; render(); });
+  $("clear-search").addEventListener("click", () => { $("search").value = ""; state.visibleLimit = INITIAL_CASE_LIMIT; render(); $("search").focus(); });
+  for (const id of [...Object.keys(FACETS), "sort"]) $(id).addEventListener("change", () => { state.visibleLimit = INITIAL_CASE_LIMIT; render(); });
   $("reset-filters").addEventListener("click", resetFilters);
   $("empty-reset").addEventListener("click", resetFilters);
   $("retry-catalog").addEventListener("click", retryCatalog);
+  $("load-more").addEventListener("click", () => {
+    const previousCount = $("results").querySelectorAll(".case-row").length;
+    state.visibleLimit += INITIAL_CASE_LIMIT;
+    render();
+    const firstNewCase = $("results").querySelectorAll(".case-row")[previousCount];
+    firstNewCase?.querySelector("[data-open-case]")?.focus();
+  });
+  for (const button of document.querySelectorAll("[data-starter-lane]")) {
+    button.addEventListener("click", () => {
+      state.lane = button.dataset.starterLane;
+      state.visibleLimit = INITIAL_CASE_LIMIT;
+      $("search").value = "";
+      for (const id of Object.keys(FACETS)) $(id).value = "";
+      render();
+      $("catalog-screen").scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      window.setTimeout(() => $("status").focus?.(), 0);
+    });
+  }
   $("clear-compare").addEventListener("click", () => { state.selected.clear(); render(); });
   $("open-compare").addEventListener("click", event => openCompareDialog(event.currentTarget));
   $("dialog-compare").addEventListener("click", () => toggleCompare(state.activeCase));
@@ -959,6 +1097,7 @@ function wireEvents() {
     const button = event.target.closest("button[data-lane]");
     if (!button) return;
     state.lane = button.dataset.lane;
+    state.visibleLimit = INITIAL_CASE_LIMIT;
     render();
     const activeButton = [...$("lane-filters").querySelectorAll("button[data-lane]")]
       .find(candidate => candidate.dataset.lane === state.lane);
@@ -971,6 +1110,16 @@ function wireEvents() {
       toggleCompare(compareButton.dataset.compare, { restoreCatalogFocus: true });
       return;
     }
+    const openButton = event.target.closest("[data-open-case]");
+    if (openButton) openCase(openButton.dataset.openCase, openButton);
+  });
+
+  $("featured-studies").addEventListener("click", event => {
+    const openButton = event.target.closest("[data-open-case]");
+    if (openButton) openCase(openButton.dataset.openCase, openButton);
+  });
+
+  $("hero-study").addEventListener("click", event => {
     const openButton = event.target.closest("[data-open-case]");
     if (openButton) openCase(openButton.dataset.openCase, openButton);
   });
@@ -1031,6 +1180,7 @@ function wireEvents() {
         state.activeCase = null;
         state.activeView = "case";
         state.activePackage = null;
+        $("case-screen").classList.remove("case-loading-state");
         $("case-screen").hidden = false;
         $("package-screen").hidden = true;
         writeUrl();
@@ -1068,8 +1218,10 @@ async function start() {
     fillSelect("media", state.catalog.facets.media_strategy);
     fillSelect("density", state.catalog.facets.density);
     fillSelect("evidence", state.catalog.facets.evidence_quality);
+    renderFeaturedStudies();
     hydrateFromUrl();
     render();
+    restoreMethodRouteAfterCatalogRender();
   } catch (error) {
     $("results").innerHTML = "";
     $("results").setAttribute("aria-busy", "false");

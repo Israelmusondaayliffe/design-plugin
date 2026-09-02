@@ -1,0 +1,382 @@
+{
+  "actions": [
+    "Replace copied canonical case records with an explicit public detail allowlist and omit internal review, source-note, and operational source records.",
+    "Restore the Method hash target after the asynchronous catalog render settles without affecting other routes."
+  ],
+  "allowed_files": [
+    "corpus/scripts/build_catalog.py",
+    "tests/test_wave11_evidence_exchange.py",
+    "site/app.js",
+    "tests/test_wave11_site.py"
+  ],
+  "checks": [
+    "Verify the deployable case tree contains only approved reader-facing files and returns 404 for prohibited records.",
+    "Verify fresh #method loads remain aligned after catalog settlement at wide, tablet, and mobile widths."
+  ],
+  "cycle_number": 2,
+  "pass_number": 2,
+  "qa_report": {
+    "path": ".design/qa/reports/cycle-1.json",
+    "sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2"
+  },
+  "reference_lock": {
+    "path": ".design/system/reference-lock.json",
+    "sha256": "1ab7408df01119bb7e6194db84cf9008e62e79f0a8727f95e0cf64d2e163f449"
+  },
+  "repository_approval": {
+    "path": ".design/implementation/plan.md",
+    "sha256": "15d9d4d6f9ad6c086912c2ec94eece678e5fdb2649c70593b1cbb8a9f0e6b35e"
+  },
+  "repository_baseline": {
+    "dirty_files": [
+      {
+        "path": ".design/qa/evidence/accessibility-case-default-tablet.json",
+        "sha256": "a0b03cf10ad3763b5c6d084ff358b083748ea595139b9fb4bcbef26e14a860fb",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-default-wide.json",
+        "sha256": "541195bea8563a5d916975cf0905ebf1d36c6b5f134187cc1c050a7fd96c8a74",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-error-mobile.json",
+        "sha256": "a012176da6e82ff637f2c0772b312660343f6b77d168e44f7c93cd88657648bb",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-case-loading-mobile.json",
+        "sha256": "c3572d58eeab935cdea9901b870bff3845f9b98ebb42a84ba73e930c36303d3b",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-mobile.json",
+        "sha256": "ece1bbb6ef59cd0af3f739cbf2334503d47796e0441a5a62ce07d35546073526",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-tablet.json",
+        "sha256": "710f524854c9bfe449a9c053b1c7f0547f39be4123406fd9ce64b46ed680a53e",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-default-wide.json",
+        "sha256": "15a7c90d36418fe65d4b57528e88ef43b431cade336fa0f128dcb313d0832c28",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-empty-mobile.json",
+        "sha256": "9528877e8a95452963902c41277c9aee3fa7804b86ec3ae4b02b8da063bcc7c8",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-error-wide.json",
+        "sha256": "8e474a97de960a13eaaf1e8f8c1a3b092f976eb89336bed433fe27482e79be3f",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-catalog-loading-mobile.json",
+        "sha256": "81bbebccf71c1c624a4360dbdc1a52f5e412b4c6601a0eee0a5c5c8263a80150",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-mobile.json",
+        "sha256": "79b31ce7b658e9524e9b81007fdd431304f665e7e1b2b8c8c31d83c33f128593",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-tablet.json",
+        "sha256": "923bfe36962548e04c3df7d2a3e902810ef9fe701c989d4c5a7ead71ebfb9bab",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-comparison-default-wide.json",
+        "sha256": "f36f75ab3c26fcdc4d84309cb08ee2e23336c2f52e8f578c063a42d20ef06dcc",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-mobile.json",
+        "sha256": "9984a47e9079b5d1f6cd67394a6b4c2ba8768f03eb79ed6fed9fb3ca83f36cc6",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-tablet.json",
+        "sha256": "a03f60d687ca1d48f850ce93cf969b088dc607862b609934d71d36637585bb9b",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-method-default-wide.json",
+        "sha256": "91de6500d05170be95855e28c07ce6619f8d539131ca749fa71eb674acb86000",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-mobile.json",
+        "sha256": "3eda11132df9a8292966395faf6d3e1a178da8073b18edae484b7392fa3192ad",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-tablet.json",
+        "sha256": "a7dc204a7470549bf50351ce594b1d9c87f026bf2483b18f83f6cb2961a7e159",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-default-wide.json",
+        "sha256": "534c447699199882c0a2bf77decc84d37c1f6ecb7780fcce9e6fd14d8be15cc2",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-denied-wide.json",
+        "sha256": "92ce6fd0838a23f7992349802d64c6c6dc7b64c9c809904b6473d7ff9915176d",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/evidence/accessibility-package-error-mobile.json",
+        "sha256": "6388f2e33dfe4dd7704601e67f7285f678ecadeecba53dcd0af3d0b37ab39222",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1-handoff.json",
+        "sha256": "3b0ee56e1b6f6b233d96e96437fa62a8723928cd673502278976257b96635188",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1-verification.json",
+        "sha256": "3fcc8b0b739eb092ca595ed876851e1fea31ddeac034fb8c624f197ad203e962",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/repairs/cycle-1.json",
+        "sha256": "038e943690dd37c23f72e0cd6d9f3227e799aa1411c3910989d0c5f6788c07bf",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-0.json",
+        "sha256": "43f11910aeab7bbbe9a238703d1e9499da58b61c93f7241f9e4a7247e89c7150",
+        "status": "??"
+      },
+      {
+        "path": ".design/qa/reports/cycle-1.json",
+        "sha256": "32d0e81d5aabbdd4df73ac2f049b49c1b5f9d66978797b3b2ca2ba9b44f1f9b2",
+        "status": "??"
+      },
+      {
+        "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+        "sha256": "caa4b0a5c7898cb717b6e2d1bef8fcc8d91a195e0b788e6931d6120c32aca537",
+        "status": " M"
+      },
+      {
+        "path": ".design/quality/writing-route.json",
+        "sha256": "332821a89b18b6f7aef07d3262622c7a27ead896c2cd7585dc855d6ff1ed6a9f",
+        "status": " M"
+      },
+      {
+        "path": ".design/renders/captures/case-default-tablet.png",
+        "sha256": "bdb376cbaa7376a1d0ba6471398101cdc06b58c8a954bc73123de97622c2c709",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-default-wide.png",
+        "sha256": "62059fc2f93d7a76860c8d8b1c85971c666e1aaf088c846293a9a096b8bdd121",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-error-mobile.png",
+        "sha256": "ab4965d9e38da7bdab69f4b137dec76b8ee16835d017b92da9feb72765d17245",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/case-loading-mobile.png",
+        "sha256": "24b3e8ee37731b925576c65006c5f449ecdf911e47ee7327b0d511ca1c492868",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-mobile.png",
+        "sha256": "23077e9369f04601bd68bfb8b5fa9d0dabe2b6f42e3e9ee6fc3b615df6d3a142",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-tablet.png",
+        "sha256": "fd8c1e8331e2e49ffa8a1a017d00b4b0251b95f53e499b6f9921630bb03e4dc1",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-default-wide.png",
+        "sha256": "4c4361e3451dfcb9e5da88f540a6478a3d05c8876558634ba98c9d013d650ec9",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-empty-mobile.png",
+        "sha256": "1005027e9905e91faf0ddb8187876f70b0cd8189146664c2b8450449586e848c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-error-wide.png",
+        "sha256": "2d46b706d4137183ee8f78e42c3e6e4e778667dbbe0e0290f9884f0f7c6b2c90",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/catalog-loading-mobile.png",
+        "sha256": "c7c2fad68d4923646983d93090e8727cf25f39c116ff6cb333fa2edb665bebb1",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-mobile.png",
+        "sha256": "a1bf27006e79fd1868a49267c8e98ab8fd1de3d757c7ee306e67f5aad918373d",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-tablet.png",
+        "sha256": "51e85973d65ce451ab8c85be34070e3f42eaab80d03827783c659326d96de08c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/comparison-default-wide.png",
+        "sha256": "889d11590fbfaa417b2c4594c27e89753df68cb5f5d6291d32c8f8a7c3556272",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-mobile.png",
+        "sha256": "e8d10c257241dacd96c67a79e342624bed7b5935e216f1f6c306ae02b1d5bf10",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-tablet.png",
+        "sha256": "198aaa03fcb1c8b8197206b8720842de05744d2f01e21cf8c81963c473394617",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/method-default-wide.png",
+        "sha256": "50cd34e0c1543f73b76254878d2064046aa16121455b61e7b485cf3cb2300223",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-mobile.png",
+        "sha256": "c4fdadade69c682980d500a569582a199ed6aaa73270701af4b386c34e8fe388",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-tablet.png",
+        "sha256": "0108d1f277e133ca4ce4845e71cc5158645230d452f586261402f03e0af908df",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-default-wide.png",
+        "sha256": "ff40c365450e74c45db9cf4a7ebe0895d26e95caf86909e8559dafaa45e36ac7",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-denied-wide.png",
+        "sha256": "9849fff7fa1c4da453b16916ab0aec393f739708e3c72e4998f4248d03578404",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/captures/package-error-mobile.png",
+        "sha256": "093055e0204a539dc8813d2a5b00fd4a6d91080b8167469252a3d96fdff82ecb",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/evidence.json",
+        "sha256": "3672bdea09d3a04c1e3b74bb4c049adce388d9ec388dacaed45c1f42f4d579db",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/plan.json",
+        "sha256": "0a0f138dca6ef4b9b6f003ff2c21bb59fa96a9d6b8532f7be086aed55f6745c5",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/request.json",
+        "sha256": "7dbd8da26d08ab0baf2b1cf13c7b83d9f568c700b751f0fb2c7c6484f853391c",
+        "status": "??"
+      },
+      {
+        "path": ".design/renders/verification.json",
+        "sha256": "6989965f8366cc6a96084e1815ad1801a9387898874adf203104e50f798c4791",
+        "status": "??"
+      },
+      {
+        "path": ".design/state.json",
+        "sha256": "d4cdd92da2f79cbb87dffe8166e502e246f4425d6996a35697a9f336cf863456",
+        "status": " M"
+      },
+      {
+        "path": "core/scripts/design_quality.py",
+        "sha256": "98755d8c3c7e620ebd810db66d79962de8649ca77394e7f28058bed27052ddc2",
+        "status": " M"
+      },
+      {
+        "path": "site/README.md",
+        "sha256": "57e13662cfd8264bca47006a6955e9c3749489d04c714fcc4a9c14d54785c027",
+        "status": " M"
+      },
+      {
+        "path": "site/app.js",
+        "sha256": "bae6da230ad63226eb62a47e100ee85e361b2a88dcddcd5ae4ca49303ae74d2d",
+        "status": " M"
+      },
+      {
+        "path": "site/index.html",
+        "sha256": "4fa72b2feed780a83201b970baf5042126ff993aaa00e60816405e6acbd63e47",
+        "status": " M"
+      },
+      {
+        "path": "site/styles.css",
+        "sha256": "247b7db220c7ef842dda3357edf8ecabf1cbed362c7da7aa0574599eeba9e907",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave11_site.py",
+        "sha256": "5eb2c85ad4f2bfb4d17c894358bc46bcfe253ab2d0a95aa6880c991a4ae6e80b",
+        "status": " M"
+      },
+      {
+        "path": "tests/test_wave9_quality.py",
+        "sha256": "79d9a4ed05f47c09036f407c24735a5a034d242cac58dc2e824840158f444c76",
+        "status": " M"
+      }
+    ],
+    "head": "a86cc8d1e3a3649f6cdebe28934e12bb4c18f91e",
+    "recorded_at": "2026-09-02T14:25:40Z"
+  },
+  "rerender_targets": [
+    "method-default-wide",
+    "project"
+  ],
+  "schema_version": "1.0",
+  "started_at": "2026-09-02T14:25:40Z",
+  "state_revision": 33,
+  "status": "active",
+  "structured_plan": {
+    "path": ".design/implementation/plan.json",
+    "sha256": "e57cf083c7aec74f9a88fd755d8e3f894d9ed4477bece0668aa20c3f91ad9412"
+  },
+  "target_attempts": {
+    "method-default-wide": 2,
+    "project": 2
+  },
+  "target_findings": [
+    {
+      "category": "code",
+      "expected": "The public deploy tree contains only an explicit allowlist of reader-facing case details and validated downloads, with internal review, source notes, and operational source fields absent.",
+      "finding_id": "F10-public-tree-projection",
+      "repair_scope": [
+        "corpus/scripts/build_catalog.py",
+        "tests/test_wave11_evidence_exchange.py"
+      ],
+      "severity": "P1",
+      "target_id": "project"
+    },
+    {
+      "category": "interaction",
+      "expected": "A fresh #method route remains aligned with the Method section after public catalog rendering completes at every approved width.",
+      "finding_id": "F11-method-deep-link-stability",
+      "repair_scope": [
+        "site/app.js",
+        "tests/test_wave11_site.py"
+      ],
+      "severity": "P2",
+      "target_id": "method-default-wide"
+    }
+  ],
+  "worker_id": "root"
+}

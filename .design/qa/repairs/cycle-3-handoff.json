@@ -1,0 +1,63 @@
+{
+  "changed_files": [
+    {
+      "change": "changed",
+      "evidence": "Adds a distinct evidence-bounded explanation when the public summary and visual thesis match, while preserving the original summary and the approved reading order.",
+      "path": "site/app.js",
+      "sha256": "e17c1669f4ef762aa3250e843dc774938dcec5052cd2744379d3201f5d761a08"
+    },
+    {
+      "change": "changed",
+      "evidence": "Places status and visual-boundary copy in two readable rows beside the sort control at wide widths.",
+      "path": "site/styles.css",
+      "sha256": "005937869e9c1696ef8180deacd065ccfc0575a3ab7a3abfe84d8935f35927ee"
+    },
+    {
+      "change": "changed",
+      "evidence": "Checks all 60 public cases for a distinct why-it-matters explanation and binds the readable wide-header grid contract.",
+      "path": "tests/test_wave11_site.py",
+      "sha256": "4ea8f6411d554917c701e465e1aa3c964f36f9f977cb1c1d5990a7f810fabe1e"
+    },
+    {
+      "change": "changed",
+      "evidence": "Records the repeated-meaning defect, the wide error readability defect, both repairs, and the reusable acceptance lessons without private diagnostics.",
+      "path": ".design/quality/benchmark-2-feedback-and-friction-ledger.md",
+      "sha256": "d446112a5ff48e0c79efe02aac81abdbe9614ec49be6e362ca315fa9def789e8"
+    }
+  ],
+  "completed_actions": [
+    "Render a distinct evidence-bounded why-it-matters explanation when the source summary and visual thesis are identical.",
+    "Restructure the results header so status, visual boundary, and sort control remain readable in the wide error state.",
+    "Record both defects and their reusable lessons in the public-safe feedback and friction ledger."
+  ],
+  "completed_checks": [
+    {
+      "check": "python3 -m unittest tests.test_wave11_site",
+      "evidence": "The 33-test Site module passed on Python 3.9.6 and Python 3.12.13. The combined Wave 11 suite passed 55 tests on both versions, and the complete repository suite passed 299 tests on both versions.",
+      "status": "pass"
+    },
+    {
+      "check": "node --check site/app.js",
+      "evidence": "The repaired JavaScript passed Node syntax validation. The feedback ledger passed the harness writing gate, and git diff validation found no whitespace errors.",
+      "status": "pass"
+    }
+  ],
+  "cycle_number": 3,
+  "ended_at": "2026-09-02T15:20:37Z",
+  "pass_number": 2,
+  "repair_plan_sha256": "d4c8c5db7cac6770f86d43f85e9e7102d95923ddbc7bea5c54bd95c83eb96880",
+  "schema_version": "1.0",
+  "status": "applied",
+  "target_results": [
+    {
+      "evidence": "All 60 public models now produce a why-it-matters explanation that differs from the full summary. A real Chrome render of Android Mobile showed the distinct explanation in the intended reading order with zero root overflow.",
+      "finding_id": "F12-case-meaning-repetition",
+      "status": "implemented-awaiting-rerender"
+    },
+    {
+      "evidence": "A real Chrome render measured both wide error messages at 536.95 CSS pixels, kept the sort control separate, and reported zero root overflow.",
+      "finding_id": "F13-catalog-error-readability",
+      "status": "implemented-awaiting-rerender"
+    }
+  ]
+}

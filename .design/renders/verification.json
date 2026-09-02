@@ -1,0 +1,15 @@
+{
+  "accepted_at": "2026-09-02T16:03:06Z",
+  "render_evidence": {
+    "path": ".design/renders/evidence.json",
+    "sha256": "75ae1255634f89c0bafbaf6f461d55ed27fd0e8f6bc3e7113bdc94f44347f6c0"
+  },
+  "render_plan": {
+    "path": ".design/renders/plan.json",
+    "sha256": "2928d32177d8f664562c19c1b484b824e2789d410347c5477d9785fdf683277b"
+  },
+  "required_blockers": [],
+  "schema_version": "1.0",
+  "status": "complete",
+  "verified_at": "2026-09-02T16:03:06Z"
+}

@@ -1,0 +1,24 @@
+{
+  "accepted_at": "2026-09-02T14:37:37Z",
+  "changed_files": [
+    "corpus/scripts/build_catalog.py",
+    "site/app.js",
+    "tests/test_wave11_evidence_exchange.py",
+    "tests/test_wave11_site.py"
+  ],
+  "repair_handoff": {
+    "path": ".design/qa/repairs/cycle-2-handoff.json",
+    "sha256": "427a3de35bc66c90883d3115f3d53b2e79e29c3ca5218e14bb0aa05957727b65"
+  },
+  "repair_plan": {
+    "path": ".design/qa/repairs/cycle-2.json",
+    "sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672"
+  },
+  "rerender_targets": [
+    "method-default-wide",
+    "project"
+  ],
+  "schema_version": "1.0",
+  "status": "applied",
+  "verified_at": "2026-09-02T14:37:37Z"
+}

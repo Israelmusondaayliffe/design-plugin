@@ -1,0 +1,635 @@
+{
+  "schema_version": "1.0",
+  "workflow": "run",
+  "origin": {
+    "kind": "local",
+    "url": "http://127.0.0.1:4173"
+  },
+  "server": {
+    "mode": "already-running",
+    "command": [],
+    "cwd": ".",
+    "readiness_path": "/",
+    "limitations": []
+  },
+  "authority_artifacts": [
+    {
+      "path": ".design/system/reference-lock.json",
+      "role": "approved reference roles"
+    },
+    {
+      "path": ".design/system/ux-definition.json",
+      "role": "approved screens and states"
+    },
+    {
+      "path": ".design/implementation/plan.json",
+      "role": "approved render targets"
+    },
+    {
+      "path": "DESIGN.md",
+      "role": "project design authority"
+    }
+  ],
+  "targets": [
+    {
+      "id": "catalog-default-wide",
+      "screen_id": "catalog",
+      "route": "/",
+      "state": "default",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/catalog-default-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "catalog-default-mobile",
+      "screen_id": "catalog",
+      "route": "/",
+      "state": "default",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/catalog-default-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "catalog-default-tablet",
+      "screen_id": "catalog",
+      "route": "/",
+      "state": "default",
+      "viewport": {
+        "name": "tablet",
+        "width": 834,
+        "height": 1112,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/catalog-default-tablet.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "catalog-empty-mobile",
+      "screen_id": "catalog",
+      "route": "/?q=no-such-reviewed-case",
+      "state": "empty",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/catalog-empty-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "catalog-loading-mobile",
+      "screen_id": "catalog",
+      "route": "/?test-state=catalog-loading",
+      "state": "loading",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/catalog-loading-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "catalog-error-wide",
+      "screen_id": "catalog",
+      "route": "/?test-state=catalog-error",
+      "state": "error",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/catalog-error-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "case-default-wide",
+      "screen_id": "case-detail",
+      "route": "/?case=ibm-carbon",
+      "state": "default",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/case-default-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "case-loading-mobile",
+      "screen_id": "case-detail",
+      "route": "/?case=ibm-carbon&test-state=case-loading",
+      "state": "loading",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/case-loading-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "case-default-tablet",
+      "screen_id": "case-detail",
+      "route": "/?case=ibm-carbon",
+      "state": "default",
+      "viewport": {
+        "name": "tablet",
+        "width": 834,
+        "height": 1112,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/case-default-tablet.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "case-error-mobile",
+      "screen_id": "case-detail",
+      "route": "/?case=missing-case",
+      "state": "error",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/case-error-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "package-default-wide",
+      "screen_id": "download-package",
+      "route": "/?case=ibm-carbon#download-package",
+      "state": "default",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/package-default-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "package-default-mobile",
+      "screen_id": "download-package",
+      "route": "/?case=ibm-carbon#download-package",
+      "state": "default",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/package-default-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "package-default-tablet",
+      "screen_id": "download-package",
+      "route": "/?case=ibm-carbon#download-package",
+      "state": "default",
+      "viewport": {
+        "name": "tablet",
+        "width": 834,
+        "height": 1112,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/package-default-tablet.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "package-error-mobile",
+      "screen_id": "download-package",
+      "route": "/?case=ibm-carbon&test-state=download-error#download-package",
+      "state": "error",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/package-error-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "package-denied-wide",
+      "screen_id": "download-package",
+      "route": "/?case=private-test-case#download-package",
+      "state": "permission_denied",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/package-denied-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "comparison-default-wide",
+      "screen_id": "comparison",
+      "route": "/?compare=ibm-carbon,vercel-geist",
+      "state": "default",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/comparison-default-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "comparison-default-mobile",
+      "screen_id": "comparison",
+      "route": "/?compare=ibm-carbon,vercel-geist",
+      "state": "default",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/comparison-default-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "comparison-default-tablet",
+      "screen_id": "comparison",
+      "route": "/?compare=ibm-carbon,vercel-geist",
+      "state": "default",
+      "viewport": {
+        "name": "tablet",
+        "width": 834,
+        "height": 1112,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/comparison-default-tablet.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "method-default-wide",
+      "screen_id": "method",
+      "route": "/#method",
+      "state": "default",
+      "viewport": {
+        "name": "wide",
+        "width": 1440,
+        "height": 1000,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/method-default-wide.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "method-default-mobile",
+      "screen_id": "method",
+      "route": "/#method",
+      "state": "default",
+      "viewport": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": true,
+      "output": ".design/renders/captures/method-default-mobile.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    },
+    {
+      "id": "method-default-tablet",
+      "screen_id": "method",
+      "route": "/#method",
+      "state": "default",
+      "viewport": {
+        "name": "tablet",
+        "width": 834,
+        "height": 1112,
+        "device_scale_factor": 1
+      },
+      "theme": "light",
+      "reduced_motion": false,
+      "output": ".design/renders/captures/method-default-tablet.png",
+      "required": true,
+      "reference": {
+        "kind": "design-authority",
+        "path": "DESIGN.md",
+        "role": "design-system",
+        "comparison_dimensions": [
+          "hierarchy",
+          "typography",
+          "spacing",
+          "color roles",
+          "composition"
+        ]
+      }
+    }
+  ],
+  "applicable_checks": [
+    "visual",
+    "responsive",
+    "accessibility",
+    "interaction",
+    "content",
+    "code",
+    "reference"
+  ],
+  "capture_owner": "root-worker-browser",
+  "requested_at": "2026-09-02T12:20:00Z"
+}
+

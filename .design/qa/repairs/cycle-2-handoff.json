@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "cycle_number": 2,
+  "pass_number": 2,
+  "status": "applied",
+  "repair_plan_sha256": "9ae6a3c6ee1623f01f42a1e2eb9a6f6977b7db85c710f90b5ea1bdddc63bd672",
+  "changed_files": [
+    {
+      "path": "corpus/scripts/build_catalog.py",
+      "change": "changed",
+      "sha256": "46c185978604609763b949c0ff55fcbdcccb9a040c8abc7045699df4c492bb53",
+      "evidence": "Builds case details from explicit public allowlists, preserves the established reader-facing routes, and excludes raw review, source-note, metadata, coverage, and preview records."
+    },
+    {
+      "path": "site/app.js",
+      "change": "changed",
+      "sha256": "1924a6fc6b50950577ab3b09bff83d555168f7038106318badaf0ea2d78a5e3a",
+      "evidence": "Restores the Method hash target after catalog, load, and font layout settlement with an immediate non-animated alignment."
+    },
+    {
+      "path": "tests/test_wave11_evidence_exchange.py",
+      "change": "changed",
+      "sha256": "cbd8c1e068aad927da2742976346f6ba7a82cc387c17dd2197c3a90375acb19c",
+      "evidence": "Requires the exact public case tree, exact provenance and token field allowlists, and absence of private or operational keys."
+    },
+    {
+      "path": "tests/test_wave11_site.py",
+      "change": "changed",
+      "sha256": "c00b46461355fefa096b97c3bc0cebfd1d0dadf1ec79a162c27cd08ad1616d4d",
+      "evidence": "Binds Method restoration to post-render execution, two layout frames, load settlement, font settlement, and temporary smooth-scroll suppression."
+    }
+  ],
+  "completed_actions": [
+    "Replace copied canonical case records with an explicit public detail allowlist and omit internal review, source-note, and operational source records.",
+    "Restore the Method hash target after the asynchronous catalog render settles without affecting other routes."
+  ],
+  "completed_checks": [
+    {
+      "check": "Verify the deployable case tree contains only approved reader-facing files and returns 404 for prohibited records.",
+      "status": "pass",
+      "evidence": "All 60 generated cases use the exact safe file allowlist. Local HTTP returned 404 for review.json, source-notes.md, metadata.json, coverage.json, and preview-spec.json; approved public routes returned 200. Both supported Python versions pass all 297 tests."
+    },
+    {
+      "check": "Verify fresh #method loads remain aligned after catalog settlement at wide, tablet, and mobile widths.",
+      "status": "pass",
+      "evidence": "Fresh system-Chrome loads at 1440 by 1000, 834 by 1112, and 390 by 844 each retained #method with methodTop 0, zero horizontal overflow, and no console output after catalog settlement."
+    }
+  ],
+  "target_results": [
+    {
+      "finding_id": "F10-public-tree-projection",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "Raw canonical case folders are no longer copied. Public routes are reconstructed from explicit safe fields, while review identity, internal notes, request status, response hashes, redirects, and source-inspection details remain absent."
+    },
+    {
+      "finding_id": "F11-method-deep-link-stability",
+      "status": "implemented-awaiting-rerender",
+      "evidence": "Direct Method loads remain aligned after asynchronous catalog, page-load, and font settlement at all three approved widths."
+    }
+  ],
+  "ended_at": "2026-09-02T14:36:37Z"
+}
