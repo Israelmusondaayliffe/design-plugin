@@ -2,6 +2,8 @@
 
 `.design/state.json` is the workflow authority for Design. Conversation memory may explain context, but it may not override repository evidence.
 
+A completed workflow is immutable. The `revise` command archives its complete state and artifact hashes under `.design/archive/cycle-N/`, increments `workflow_cycle`, clears active gates, and starts a new intake cycle. Generic transitions cannot leave `complete`.
+
 ## Phases
 
 `intake` → `interviewing` → `understanding_awaiting_approval` → `researching`

@@ -130,9 +130,33 @@ class StateMachineTests(unittest.TestCase):
     def test_init_and_legal_transition(self) -> None:
         state = self.init()
         self.assertEqual(state["phase"], "intake")
+        self.assertEqual(state["workflow_cycle"], 1)
         state = self.transition("interviewing")
         self.assertEqual(state["phase"], "interviewing")
         self.assertEqual(state["revision"], 1)
+
+    def test_completed_state_revises_into_archived_new_cycle(self) -> None:
+        state = self.init()
+        artifact = self.write("accepted.txt", "accepted evidence\n")
+        state["phase"] = "complete"
+        state["status"] = "complete"
+        state["artifacts"] = {"accepted.txt": state_tool.sha256(artifact)}
+        state_tool.append_history(state, "test_completed", T0)
+        state_tool.save_state(self.project, state, T0)
+        revised = state_tool.command_revise(self.ns(reason="revise accepted work"))
+        self.assertEqual("intake", revised["phase"])
+        self.assertEqual(2, revised["workflow_cycle"])
+        self.assertEqual({}, revised["artifacts"])
+        archive = self.project / ".design/archive/cycle-1"
+        archived = json.loads((archive / "state.json").read_text(encoding="utf-8"))
+        manifest = json.loads((archive / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual("complete", archived["phase"])
+        self.assertEqual({"accepted.txt": state_tool.sha256(artifact)}, manifest["artifacts"])
+
+    def test_revise_rejects_unfinished_state(self) -> None:
+        self.init()
+        with self.assertRaisesRegex(state_tool.StateError, "only from a completed"):
+            state_tool.command_revise(self.ns(reason="too early"))
 
     def test_illegal_transition_is_blocked_without_state_change(self) -> None:
         self.init()

@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -43,6 +44,12 @@ class Wave3IntakeTests(unittest.TestCase):
             self.assertFalse(report["network_accessed"])
             self.assertFalse(report["software_installed"])
             self.assertIn("README.md", report["project"]["files_present"])
+            capabilities = report["host_connections"]["capability_classes"]
+            self.assertEqual(
+                {"browser", "computer_use", "image_generation", "image_editing", "figma", "connectors", "local_tools"},
+                set(capabilities),
+            )
+            self.assertTrue(all(item["status"] == "unverified" for item in capabilities.values()))
         finally:
             td.cleanup()
 
@@ -153,6 +160,19 @@ class Wave3IntakeTests(unittest.TestCase):
         self.assertIn("high-impact question by itself", text)
         self.assertIn("approved", text)
         self.assertIn("skipped", text)
+
+    def test_codex_and_claude_host_capability_fixtures_are_complete(self):
+        fixtures = PLUGIN_ROOT / "tests" / "fixtures"
+        for name, host in (("host-capabilities-codex.json","codex"),("host-capabilities-claude.json","claude-code")):
+            report=json.loads((fixtures/name).read_text(encoding="utf-8"))
+            self.assertEqual(host,report["host"])
+            self.assertEqual([],mod.validate_host_capabilities(report))
+
+    def test_no_image_tool_fixture_uses_local_fallback(self):
+        path=PLUGIN_ROOT/"tests"/"fixtures"/"host-capabilities-no-image.json"
+        report=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual([],mod.validate_host_capabilities(report))
+        self.assertEqual("local-imagery-scaffold-only",mod.image_tool_route(report))
 
 
 if __name__ == "__main__":

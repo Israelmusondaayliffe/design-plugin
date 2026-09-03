@@ -1,12 +1,17 @@
 {
   "schema_version": "1.0",
   "artifact_status": "scaffold",
+  "host": "generic",
   "inspected_at": "1970-01-01T00:00:00Z",
   "inspector": "replace-with-host-inspector-identity",
-  "surfaces": ["Replace with the exact host-visible capability surface inspected."],
-  "figma": {
-    "status": "unknown",
-    "provider": null,
-    "evidence": ["Replace with direct evidence from host capability inspection."]
+  "surfaces": ["Replace with each exact host-visible surface inspected."],
+  "capabilities": {
+    "browser": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "computer_use": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "image_generation": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "image_editing": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "figma": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "connectors": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]},
+    "local_tools": {"status": "unknown", "provider": null, "operations": [], "evidence": ["Replace with direct host evidence."]}
   }
 }

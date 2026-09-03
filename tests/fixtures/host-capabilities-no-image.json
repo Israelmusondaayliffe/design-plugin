@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0", "artifact_status": "ready", "host": "generic", "inspected_at": "2026-09-02T22:00:00Z", "inspector": "fixture:no-image-tools",
+  "surfaces": ["synthetic no-image-tool inventory fixture"],
+  "capabilities": {
+    "browser": {"status": "unavailable", "provider": null, "operations": ["use local captures"], "evidence": ["fixture contains no browser"]},
+    "computer_use": {"status": "unavailable", "provider": null, "operations": ["use local inspection"], "evidence": ["fixture contains no computer use"]},
+    "image_generation": {"status": "unavailable", "provider": null, "operations": ["write an imagery scaffold"], "evidence": ["fixture contains no image generator"]},
+    "image_editing": {"status": "unavailable", "provider": null, "operations": ["preserve approved source images"], "evidence": ["fixture contains no image editor"]},
+    "figma": {"status": "unavailable", "provider": null, "operations": ["write handoff scaffold"], "evidence": ["fixture contains no Figma connection"]},
+    "connectors": {"status": "unavailable", "provider": null, "operations": ["continue locally"], "evidence": ["fixture contains no connectors"]},
+    "local_tools": {"status": "available-authorized", "provider": "fixture-shell", "operations": ["write local artifacts"], "evidence": ["fixture exposes local project tools"]}
+  }
+}

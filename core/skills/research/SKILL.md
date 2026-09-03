@@ -6,7 +6,13 @@ user-invocable: false
 
 # Design Research
 
-Research answers the approved brief. It does not browse broadly for inspiration and it does not begin before the shared-understanding gate is active.
+Research has two bounded modes. `pre-grill` informs the interview before approval. `deep`, `audit`, and `bounded-repair` answer the approved brief after the shared-understanding gate is active. Neither mode browses without a decision to support.
+
+## Pre-grill scan
+
+Before interviewing, inspect current practice only when it can improve the questions or expose a material unknown. Use at most three focused queries and retain at most five useful sources. Stop after two consecutive sources add no decision-relevant evidence. Record the question each source informed and its date. Do not score candidates, choose a direction, or treat this scan as approved project research.
+
+Skip the scan when project-local evidence already answers the relevant questions, the task is a small edit, the user supplied the needed current evidence, or current external practice cannot change the plan.
 
 ## Inputs
 
@@ -19,7 +25,7 @@ Read only what is needed for this phase:
 - `catalog-manifest/catalog.json`
 - `references/research-method.md` when detailed scoring or fallback rules are needed
 
-Do not silently reinterpret an approved requirement. If research reveals a contradiction that changes the problem, stop and return to shared understanding.
+For post-approval modes, do not silently reinterpret an approved requirement. If research reveals a contradiction that changes the problem, stop and return to shared understanding.
 
 ## Required artifacts
 

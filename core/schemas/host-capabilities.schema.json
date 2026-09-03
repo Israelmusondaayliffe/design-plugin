@@ -4,22 +4,44 @@
   "title": "Design Host Capability Attestation",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "artifact_status", "inspected_at", "inspector", "surfaces", "figma"],
-  "properties": {
-    "schema_version": {"const": "1.0"},
-    "artifact_status": {"enum": ["scaffold", "ready"]},
-    "inspected_at": {"type": "string", "format": "date-time"},
-    "inspector": {"type": "string", "minLength": 1},
-    "surfaces": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-    "figma": {
+  "required": ["schema_version", "artifact_status", "host", "inspected_at", "inspector", "surfaces", "capabilities"],
+  "$defs": {
+    "capability": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["status", "provider", "evidence"],
+      "required": ["status", "provider", "operations", "evidence"],
       "properties": {
         "status": {"enum": ["unknown", "unavailable", "available-not-authorized", "available-authorized"]},
         "provider": {"type": ["string", "null"]},
+        "operations": {"type": "array", "items": {"type": "string", "minLength": 1}},
         "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}
       }
+    }
+  },
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "artifact_status": {"enum": ["scaffold", "ready"]},
+    "host": {"enum": ["codex", "claude-code", "generic"]},
+    "inspected_at": {"type": "string", "format": "date-time"},
+    "inspector": {"type": "string", "minLength": 1},
+    "surfaces": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["browser", "computer_use", "image_generation", "image_editing", "figma", "connectors", "local_tools"],
+      "properties": {
+        "browser": {"$ref": "#/$defs/capability"},
+        "computer_use": {"$ref": "#/$defs/capability"},
+        "image_generation": {"$ref": "#/$defs/capability"},
+        "image_editing": {"$ref": "#/$defs/capability"},
+        "figma": {"$ref": "#/$defs/capability"},
+        "connectors": {"$ref": "#/$defs/capability"},
+        "local_tools": {"$ref": "#/$defs/capability"}
+      }
+    },
+    "figma": {
+      "description": "Deprecated v1 compatibility field. New attestations use capabilities.figma.",
+      "$ref": "#/$defs/capability"
     }
   }
 }

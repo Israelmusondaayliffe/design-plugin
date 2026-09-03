@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-plugin.local/schemas/learning-event.schema.json",
+  "title": "Private Design feedback event",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "event_id",
+    "project_id",
+    "category",
+    "summary",
+    "impact",
+    "method",
+    "exact_quote",
+    "exact_quote_retained",
+    "fingerprint",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "event_id": {"type": "string", "pattern": "^event-[0-9a-f]{32}$"},
+    "project_id": {"type": "string", "pattern": "^project-[0-9a-f]{20}$"},
+    "category": {"enum": ["feedback", "friction", "repair", "missed-tool", "cost-decision", "user-method"]},
+    "summary": {"type": "string", "minLength": 1, "maxLength": 1200},
+    "impact": {"type": ["string", "null"], "maxLength": 1200},
+    "method": {"type": ["string", "null"], "maxLength": 1200},
+    "exact_quote": {"type": ["string", "null"], "maxLength": 1200},
+    "exact_quote_retained": {"type": "boolean"},
+    "fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "created_at": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": false
+}

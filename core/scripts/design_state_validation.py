@@ -160,14 +160,18 @@ def gate_is_active(state: dict[str, Any], name: str) -> bool:
 def validate_state(state: Any) -> dict[str, Any]:
     if not isinstance(state, dict):
         raise StateError("State root must be a JSON object")
-    if set(state) != TOP_LEVEL_KEYS:
-        missing = sorted(TOP_LEVEL_KEYS.difference(state))
+    state_keys = frozenset(state)
+    if state_keys not in {frozenset(TOP_LEVEL_KEYS), frozenset(LEGACY_TOP_LEVEL_KEYS)}:
+        missing = sorted(LEGACY_TOP_LEVEL_KEYS.difference(state))
         extra = sorted(set(state).difference(TOP_LEVEL_KEYS))
         raise StateError(f"State keys invalid; missing={missing}, extra={extra}")
     if state["schema_version"] != "1.0" or state["plugin"] != "design":
         raise StateError("Unsupported state schema or plugin identity")
     if not isinstance(state["revision"], int) or isinstance(state["revision"], bool) or state["revision"] < 0:
         raise StateError("revision must be a non-negative integer")
+    workflow_cycle = state.get("workflow_cycle", 1)
+    if not isinstance(workflow_cycle, int) or isinstance(workflow_cycle, bool) or workflow_cycle < 1:
+        raise StateError("workflow_cycle must be an integer greater than zero")
     if state["workflow"] not in {"run", "audit"}:
         raise StateError("workflow must be run or audit")
     if state["route"] not in {"standard", "lightweight_repair"}:

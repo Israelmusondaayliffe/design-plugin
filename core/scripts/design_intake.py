@@ -24,6 +24,8 @@ COMMON_FILES = ("DESIGN.md","README.md","AGENTS.md","CLAUDE.md","package.json","
 DESIGN_ARTIFACTS = ("DESIGN.md",".design/reference-lock.yaml",".design/tokens/tokens.json",".design/shared-understanding.md","figma.json","tokens.json")
 BINARY_CANDIDATES = ("git","python3","python","node","npm","npx","pnpm","yarn","bun","deno","playwright","chromium","chromium-browser","google-chrome")
 DIRECTORY_HINTS = ("src","app","pages","public","assets","components","ios","android",".git",".design")
+CAPABILITY_CLASSES = ("browser","computer_use","image_generation","image_editing","figma","connectors","local_tools")
+CAPABILITY_STATUSES = {"unknown","unavailable","available-not-authorized","available-authorized"}
 
 class IntakeError(RuntimeError): pass
 
@@ -60,7 +62,11 @@ def inspect_environment(root):
     package_manager=None
     for lock,manager in (("pnpm-lock.yaml","pnpm"),("yarn.lock","yarn"),("bun.lockb","bun"),("package-lock.json","npm")):
         if (root/lock).exists(): package_manager=manager; break
-    return {"schema_version":"1.0","inspected_at":utc_now(),"project_root":str(root),"read_only_probe":True,"network_accessed":False,"software_installed":False,"platform":{"system":platform.system(),"release":platform.release(),"machine":platform.machine(),"python":platform.python_version()},"project":{"files_present":files,"directories_present":dirs,"design_artifacts_present":artifacts,"git_repository":(root/".git").exists(),"package_manager_hint":package_manager},"binaries":binaries,"host_connections":{"status":"host_agent_must_inspect","note":"The local helper cannot see host-managed connectors or plugins. The Design environment skill must inspect those capabilities before questioning."},"permission_boundary":{"installation_authorized":False,"rule":"Any installation requires a separate explicit user approval."}}
+    capability_classes = {
+        name: {"status":"unverified","capability":None,"operations":[],"boundary":"host agent must inspect"}
+        for name in CAPABILITY_CLASSES
+    }
+    return {"schema_version":"1.0","inspected_at":utc_now(),"project_root":str(root),"read_only_probe":True,"network_accessed":False,"software_installed":False,"platform":{"system":platform.system(),"release":platform.release(),"machine":platform.machine(),"python":platform.python_version()},"project":{"files_present":files,"directories_present":dirs,"design_artifacts_present":artifacts,"git_repository":(root/".git").exists(),"package_manager_hint":package_manager},"binaries":binaries,"host_connections":{"status":"host_agent_must_inspect","capability_classes":capability_classes,"note":"The local helper cannot see host-managed connectors or plugins. The Design environment skill must inspect those capabilities before questioning."},"permission_boundary":{"installation_authorized":False,"paid_service_authorized":False,"rule":"Any installation or paid service requires separate explicit user approval."}}
 
 def write_json(path,data): path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(data,indent=2,sort_keys=True)+"\n",encoding="utf-8")
 def write_if_missing(path,content):
@@ -120,6 +126,46 @@ def validate_session(data):
         skip=data.get("skip")
         if not isinstance(skip,dict) or skip.get("warning_acknowledged") is not True: errors.append("skipped session requires acknowledged risk warning")
     return errors
+
+def validate_host_capabilities(data):
+    errors=[]
+    if not isinstance(data,dict): return ["host capability attestation must be an object"]
+    if data.get("schema_version")!="1.0": errors.append("host capability schema_version must be 1.0")
+    ready=data.get("artifact_status")=="ready"
+    if data.get("artifact_status") not in {"scaffold","ready"}: errors.append("invalid host capability artifact_status")
+    if data.get("host") not in {"codex","claude-code","generic"}: errors.append("invalid host capability host")
+    for field in ("inspected_at","inspector"):
+        if not isinstance(data.get(field),str) or not data[field].strip(): errors.append(f"host capability {field} is required")
+    surfaces=data.get("surfaces")
+    if not isinstance(surfaces,list) or not surfaces or not all(isinstance(x,str) and x.strip() for x in surfaces): errors.append("host capability surfaces require direct evidence")
+    capabilities=data.get("capabilities")
+    if not isinstance(capabilities,dict): return errors+["host capability classes are required"]
+    if set(capabilities)!=set(CAPABILITY_CLASSES): errors.append("host capability classes must match the required set")
+    for name in CAPABILITY_CLASSES:
+        item=capabilities.get(name)
+        if not isinstance(item,dict): errors.append(f"{name} capability is missing"); continue
+        status=item.get("status")
+        if status not in CAPABILITY_STATUSES: errors.append(f"{name} capability status is invalid")
+        if ready and status=="unknown": errors.append(f"ready attestation cannot leave {name} unknown")
+        provider=item.get("provider")
+        if status in {"unknown","unavailable"} and provider is not None: errors.append(f"{name} unavailable capability cannot name a provider")
+        if status in {"available-not-authorized","available-authorized"} and (not isinstance(provider,str) or not provider.strip()): errors.append(f"{name} available capability requires a provider")
+        operations=item.get("operations")
+        evidence=item.get("evidence")
+        if not isinstance(operations,list) or not all(isinstance(x,str) and x.strip() for x in operations): errors.append(f"{name} operations must be a list of strings")
+        if not isinstance(evidence,list) or not evidence or not all(isinstance(x,str) and x.strip() for x in evidence): errors.append(f"{name} evidence is required")
+    return errors
+
+def image_tool_route(data):
+    errors=validate_host_capabilities(data)
+    if errors: raise IntakeError("invalid host capability attestation: "+"; ".join(errors))
+    capabilities=data["capabilities"]
+    generation=capabilities["image_generation"]["status"]
+    editing=capabilities["image_editing"]["status"]
+    if generation=="available-authorized": return "generate-and-iterate"
+    if editing=="available-authorized": return "edit-approved-inputs-only"
+    if generation=="available-not-authorized" or editing=="available-not-authorized": return "ask-before-external-image-use"
+    return "local-imagery-scaffold-only"
 
 def validate_understanding(path):
     required=("# Shared Understanding","## What We Are Building","## Why It Needs to Exist","## Primary Users","## Primary Jobs","## Required Screens and Flows","## Brand and Desired Character","## Platforms","## Technical Environment","## Explicit Exclusions","## Success Criteria","## Confirmed Decisions","## Assumptions","## Unresolved Risks","## Approval")

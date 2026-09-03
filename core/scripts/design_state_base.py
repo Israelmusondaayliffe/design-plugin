@@ -61,6 +61,7 @@ TOP_LEVEL_KEYS = {
     "schema_version",
     "plugin",
     "revision",
+    "workflow_cycle",
     "workflow",
     "route",
     "phase",
@@ -77,6 +78,7 @@ TOP_LEVEL_KEYS = {
     "created_at",
     "updated_at",
 }
+LEGACY_TOP_LEVEL_KEYS = TOP_LEVEL_KEYS - {"workflow_cycle"}
 PRE_BUILD_PHASES = {
     "intake",
     "interviewing",

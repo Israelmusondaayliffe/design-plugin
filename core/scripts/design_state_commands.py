@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 from typing import Any
 
 from design_state_gates import *
@@ -19,6 +20,7 @@ def command_init(args: argparse.Namespace) -> dict[str, Any]:
         "schema_version": "1.0",
         "plugin": "design",
         "revision": 0,
+        "workflow_cycle": 1,
         "workflow": args.workflow,
         "route": args.route,
         "phase": "intake",
@@ -44,6 +46,54 @@ def command_init(args: argparse.Namespace) -> dict[str, Any]:
     }
     validate_state(state)
     atomic_write_json(path, state)
+    return state
+
+
+def command_revise(args: argparse.Namespace) -> dict[str, Any]:
+    root = project_root(args.project_root)
+    state = load_state(root)
+    if state["phase"] != "complete" or state["status"] != "complete":
+        raise StateError("A revision can begin only from a completed Design state")
+    at = normalize_timestamp(args.at)
+    cycle = state.get("workflow_cycle", 1)
+    archive = root / ".design" / "archive" / f"cycle-{cycle}"
+    if archive.exists():
+        raise StateError(f"Revision archive already exists: {archive.relative_to(root)}")
+    archive.mkdir(parents=True)
+    archived_state = archive / "state.json"
+    shutil.copyfile(state_path(root), archived_state)
+    manifest = {
+        "schema_version": "1.0",
+        "workflow_cycle": cycle,
+        "archived_at": at,
+        "reason": args.reason,
+        "state_path": archived_state.relative_to(root).as_posix(),
+        "state_sha256": sha256(archived_state),
+        "artifacts": dict(sorted(state["artifacts"].items())),
+    }
+    atomic_write_json(archive / "manifest.json", manifest)
+
+    state["workflow_cycle"] = cycle + 1
+    state["phase"] = "intake"
+    state["status"] = "active"
+    state["phase_before_block"] = None
+    state["gates"] = {name: None for name in GATE_NAMES}
+    state["artifacts"] = {}
+    state["active_wave"] = None
+    state["repair_cycle"] = 0
+    state["repair_pass"] = 0
+    state["repair_attempts"] = {}
+    state["blockers"] = []
+    append_history(
+        state,
+        "revision_started",
+        at,
+        prior_workflow_cycle=cycle,
+        workflow_cycle=cycle + 1,
+        archive_manifest=(archive / "manifest.json").relative_to(root).as_posix(),
+        reason=args.reason,
+    )
+    save_state(root, state, at)
     return state
 
 

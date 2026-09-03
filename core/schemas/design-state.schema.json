@@ -27,6 +27,7 @@
     "schema_version": {"const": "1.0"},
     "plugin": {"const": "design"},
     "revision": {"type": "integer", "minimum": 0},
+    "workflow_cycle": {"type": "integer", "minimum": 1},
     "workflow": {"enum": ["run", "audit"]},
     "route": {"enum": ["standard", "lightweight_repair"]},
     "phase": {

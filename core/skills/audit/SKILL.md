@@ -19,12 +19,13 @@ Use `.design/state.json` with `workflow: audit`.
 ## Sequence
 
 1. Activate the internal Environment skill. Inspect the repository, current product, available routes, renders, design files, content, local prerequisites, and host-visible connections before asking avoidable questions.
-2. Transition to `interviewing` and activate the internal Grilling skill. Run the same full shared-understanding protocol used by Design, focused on intended outcome, users, important states, known design truth, constraints, and audit success criteria.
-3. Validate `.design/shared-understanding.md` and obtain approval or an explicitly acknowledged skip.
-4. Transition to `researching` and activate internal Research in `audit` mode. Bind the plan to the exact shared-understanding SHA-256, research only the evidence needed to judge the interface, and set the direction target to zero.
-5. Activate internal Forensics for any external or corpus references that materially influence the judgment. Use claim-level evidence, all applicable design dimensions, confidence, and role invariants instead of aesthetic adjectives.
-6. Activate internal Render and inspect real rendered states when available. Bind current viewport captures and limitations. Do not audit code alone when the user-facing result can be rendered.
-7. Classify findings:
+2. Activate internal Research in `pre-grill` mode. Run only the bounded current-practice scan needed to ask informed questions. Use at most three focused queries and five useful sources, and stop after two low-yield sources.
+3. Transition to `interviewing` and activate the internal Grilling skill. Run the same full shared-understanding protocol used by Design, focused on intended outcome, users, important states, known design truth, constraints, and audit success criteria.
+4. Validate `.design/shared-understanding.md` and obtain approval or an explicitly acknowledged skip.
+5. Transition to `researching` and activate internal Research in `audit` mode. Bind the plan to the exact shared-understanding SHA-256, research only the evidence needed to judge the interface, and set the direction target to zero.
+6. Activate internal Forensics for any external or corpus references that materially influence the judgment. Use claim-level evidence, all applicable design dimensions, confidence, and role invariants instead of aesthetic adjectives.
+7. Activate internal Render and inspect real rendered states when available. Bind current viewport captures and limitations. Do not audit code alone when the user-facing result can be rendered.
+8. Classify findings:
    - implementation defect
    - usability defect
    - accessibility defect
@@ -33,9 +34,9 @@ Use `.design/state.json` with `workflow: audit`.
    - content or copy defect
    - evidence limitation
    - subjective opportunity
-8. Activate internal QA. Rank actionable findings P0 through P3 and cite the target, evidence, truth class, confidence, and expected result.
-9. Deliver the audit without modifying files unless repair is separately approved.
-10. For repair, write `.design/implementation/plan.md`, record repository-change approval, then use bounded implementation waves and internal Repair with exact finding IDs and file scope. Rerender and rerun QA after every attempt.
+9. Activate internal QA. Rank actionable findings P0 through P3 and cite the target, evidence, truth class, confidence, and expected result.
+10. Deliver the audit without modifying files unless repair is separately approved.
+11. For repair, write `.design/implementation/plan.md`, record repository-change approval, then use bounded implementation waves and internal Repair with exact finding IDs and file scope. Rerender and rerun QA after every attempt.
 
 ## Research discipline
 

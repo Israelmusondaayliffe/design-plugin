@@ -1,5 +1,12 @@
 {
   "schema_version": "1.0",
+  "completed_revision": {
+    "command": "revise",
+    "from_phase": "complete",
+    "to_phase": "intake",
+    "archive_root": ".design/archive/cycle-N",
+    "increments": "workflow_cycle"
+  },
   "awaiting_approval_phases": [
     "understanding_awaiting_approval",
     "directions_awaiting_approval",

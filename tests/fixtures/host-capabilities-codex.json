@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0", "artifact_status": "ready", "host": "codex", "inspected_at": "2026-09-02T22:00:00Z", "inspector": "fixture:codex-adapter",
+  "surfaces": ["synthetic Codex host inventory fixture"],
+  "capabilities": {
+    "browser": {"status": "available-authorized", "provider": "fixture-browser", "operations": ["open", "inspect"], "evidence": ["fixture exposes browser operations"]},
+    "computer_use": {"status": "available-authorized", "provider": "fixture-computer-use", "operations": ["observe", "act"], "evidence": ["fixture exposes computer use operations"]},
+    "image_generation": {"status": "available-authorized", "provider": "fixture-image", "operations": ["generate"], "evidence": ["fixture exposes image generation"]},
+    "image_editing": {"status": "available-authorized", "provider": "fixture-image", "operations": ["edit"], "evidence": ["fixture exposes image editing"]},
+    "figma": {"status": "unavailable", "provider": null, "operations": ["write handoff scaffold"], "evidence": ["fixture contains no Figma connection"]},
+    "connectors": {"status": "available-not-authorized", "provider": "fixture-connectors", "operations": ["inspect availability"], "evidence": ["fixture requires action-specific approval"]},
+    "local_tools": {"status": "available-authorized", "provider": "fixture-shell", "operations": ["inspect local project"], "evidence": ["fixture exposes local read-only tools"]}
+  }
+}

@@ -84,6 +84,14 @@ Read validated state:
 python3 scripts/design_state.py show --project-root "$PROJECT_ROOT"
 ```
 
+Begin a revision after a completed run or audit:
+
+```bash
+python3 scripts/design_state.py revise --project-root "$PROJECT_ROOT" --reason "USER-REQUESTED REVISION"
+```
+
+`revise` is legal only from `complete`. It writes an archive under `.design/archive/cycle-N/`, preserves the completed state and artifact hashes, increments `workflow_cycle`, clears active gates, and begins a new intake cycle. It never edits the archived evidence.
+
 ## Rules
 
 - Never initialize over an existing state file.

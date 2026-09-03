@@ -44,6 +44,9 @@ def build_parser() -> argparse.ArgumentParser:
     resume = sub.add_parser("resume", help="Resume a paused workflow")
     add_common(resume, reason=True)
 
+    revise = sub.add_parser("revise", help="Archive a completed cycle and begin a revision")
+    add_common(revise, reason=True)
+
     block = sub.add_parser("block", help="Enter blocked state")
     add_common(block, reason=True)
 
@@ -106,6 +109,9 @@ def main() -> int:
             code = 0
         elif args.command == "resume":
             result = command_resume(args)
+            code = 0
+        elif args.command == "revise":
+            result = command_revise(args)
             code = 0
         elif args.command == "block":
             result = command_block(args)

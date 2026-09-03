@@ -38,7 +38,7 @@ Do not rewrite or restructure existing Design artifacts during inspection.
 
 ## Host capability inspection
 
-The local helper cannot see host-managed tools. The agent must separately inspect what the current host exposes, including when relevant:
+The local helper cannot see host-managed tools. The agent must separately inspect what the current host exposes and record `available`, `unavailable`, or `unverified` for each relevant class:
 
 - browser or preview capability
 - image generation/editing capability
@@ -46,6 +46,8 @@ The local helper cannot see host-managed tools. The agent must separately inspec
 - filesystem/repository write authority
 - mobile build or simulator capability
 - connected design or documentation sources
+
+Use the host's actual inventory, Browser, Computer Use, plugin list, or connector list. Capability names may differ between Codex and Claude Code. Record the callable capability, its boundary, and whether it can inspect, generate, edit, download, or write. Do not assume Claude lacks image generation when an MCP or browser-accessible service is available. Do not require GPT Image, Midjourney, Figma, or any named provider.
 
 Record capability availability and limitations in `.design/environment.json`. Do not claim a connector is available merely because its software may exist on the machine.
 
@@ -59,6 +61,8 @@ Pass confirmed environment facts to Grilling. Do not ask the user:
 - for content or assets already supplied
 
 Ask only when evidence is missing, contradictory, stale, or would require a user preference rather than a technical observation.
+
+Ask about a paid image subscription only when it cannot be discovered safely and the answer would materially change the approved visual plan. Name a no-paid-tool route at the same time.
 
 ## Installation boundary
 

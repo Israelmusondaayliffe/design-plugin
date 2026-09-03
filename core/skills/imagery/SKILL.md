@@ -20,6 +20,14 @@ Decide whether the slot should use:
 
 Do not generate a bitmap when the required result should remain editable, factual, or interface-native.
 
+## Visual scratchpad
+
+Use image generation or editing as a bounded scratchpad when a viewable visual target would reduce implementation risk, clarify a UI world, or produce an approved asset. Prefer user-approved completed HD references. Draft grids, account UI, and unapproved variations are reference-only.
+
+Discover the current host's callable image tools before asking the user what they have. A browser-accessible subscription, MCP, native image tool, or local generator may be used only within its actual capabilities and approval boundary. If no image tool is available, produce the prompt and visual specification without pretending an image was made. Do not force one provider.
+
+Cost is part of the asset decision. Set the smallest useful output ceiling, reuse a valid anchor, change one meaningful property per edit, and stop a low-yield batch instead of generating more options.
+
 ## Required plan
 
 Write `.design/imagery/plan.json` from `templates/imagery-plan.template.json`. Bind it to the approved direction, reference lock, and root `DESIGN.md`. For every asset define its role, slot, dimensions, source hierarchy, output name, rights and privacy review, prompts when applicable, and an asset lock covering:

@@ -2,6 +2,7 @@
   "schema_version": "1.0",
   "plugin": "design",
   "revision": 0,
+  "workflow_cycle": 1,
   "workflow": "run",
   "route": "standard",
   "phase": "intake",

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "event_id": "event-00000000000000000000000000000000",
+  "project_id": "project-00000000000000000000",
+  "category": "feedback",
+  "summary": "A short redacted paraphrase of what should improve.",
+  "impact": null,
+  "method": null,
+  "exact_quote": null,
+  "exact_quote_retained": false,
+  "fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+  "created_at": "1970-01-01T00:00:00Z"
+}

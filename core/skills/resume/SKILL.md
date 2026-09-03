@@ -26,6 +26,8 @@ Resume from evidence, not memory.
 8. Use the controller’s `resume` command only when state is paused. Resolve blocked state explicitly rather than treating it as paused.
 9. Continue through the owning Design skill.
 
+If the state is already `complete` and the user asks to revise the accepted work, do not overwrite or reopen the completed cycle. Use the controller's `revise` command. It archives the prior state and its artifact hashes, increments `workflow_cycle`, and returns to intake for a new evidence-bound cycle.
+
 ## Rules
 
 - Never repeat completed interview rounds merely because conversation history is absent.
